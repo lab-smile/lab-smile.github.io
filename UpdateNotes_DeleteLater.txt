@@ -65,3 +65,6 @@ Notes:
 CV missing 1 journal?
 Typo in highlight for conference and workshop publications
 
+[July 15]
+Add Yao's 6 papers & presentations to News.
+
