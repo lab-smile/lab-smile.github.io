@@ -68,3 +68,7 @@ Typo in highlight for conference and workshop publications
 [July 15]
 Add Yao's 6 papers & presentations to News.
 
+[July 16]
+Add OSAA publication to News and Publications.
+Add Peng Liu's UFII Graduate Fellowship award to News.
+
