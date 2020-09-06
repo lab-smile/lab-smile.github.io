@@ -1,4 +1,26 @@
 # Changelog
+## [0.1.1] - 2020-09-06
+### Added
+- Current Teaching displays current Fall 2020 semester
+- [NSF III] Skylar listed as Graduate Student
+- [NSF III] Fall 2020 BME3053C Computer Applications for BME in "Classes related to project"
+- [NSF III] Padding for h3 tags
+- [NSF III] Patent numbering
+- [NSF III] Definition of * at bottom of publications
+- [NSF III] "Graduate PhD" category
+
+### Changed
+- Fall 2019 class moved to Teaching History
+- [NSF III] Last updated tag is now 09/2020
+- [NSF III] Yao moved to "Graduated PhD" with awards and postdoc position
+- Tagged as Presentation: "Determinants of Treatment Response to Transcranial Direct Current Stimulation"
+- Tagged as Conference: "Machine Learning for Parkinson's Disease Diagnosis Using Fundus Eye Images
+
+### Removed
+- [NSF III] Patent abstracts
+
+### Fixed
+- [NSF III] Missing * for mentored students
 
 ## [0.1.0] - 2020-09-05
 ### Added
