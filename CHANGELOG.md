@@ -1,4 +1,9 @@
 # Changelog
+## [0.1.2] - 2020-09-24
+### Removed
+- Researcher Peiwen Riley Gao
+- Researcher Jared Hixenbaugh
+
 ## [0.1.1] - 2020-09-06
 ### Added
 - Current Teaching displays current Fall 2020 semester
