@@ -78,3 +78,22 @@
 ## [0.0.0] - 2020-09-03
 ### Added
 - Added changelog.md
+
+## 2020-11
+### to be added
+- 10/14/2020: Gianna Engineering Scholarship
+- 10/2020: Brain Simulation paper accepted and published
+- 11/2020: Fang intereviewed by UFII: https://informatics.research.ufl.edu/engineering-professor-uses-ai-to-study-the-brain/
+- 12/2020 NIH U01 get funded
+- Max Diaz and Fang research get highlighted by RSNA news, Forbes, etc.
+- Add Rachel Ho to Collaborator PhD Students
+- 11/23/2020: RSNA reported our work on AI for PD diagnosis from eye exams: https://press.rsna.org/timssnet/media/pressreleases/14_pr_target.cfm?ID=2229.
+AJMC: https://www.ajmc.com/view/how-an-eye-exam-may-improve-early-diagnosis-of-parkinson-disease
+Scotechdaily: https://scitechdaily.com/simple-eye-exam-with-powerful-artificial-intelligence-could-lead-to-early-parkinsons-disease-diagnosis/
+AppliedRadiology: https://www.appliedradiology.com/communities/Artificial-Intelligence/rsna-20-ai-based-eye-exam-could-aid-early-parkinson-s-disease-diagnosis
+Forbes: https://www.forbes.com/sites/jackierocheleau/2020/11/25/scientists-are-looking-into-the-eyes-of-patients-to-diagnose-parkinsons-disease/?sh=557314f52faa
+Diagnostic Imaging: https://www.diagnosticimaging.com/view/eye-exam-plus-ai-could-replace-advanced-imaging-in-parkinson-s-detection
+
+
+
+
