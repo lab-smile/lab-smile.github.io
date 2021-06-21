@@ -80,7 +80,7 @@
 - Added changelog.md
 
 ## 2020-11
-### to be added
+### added
 - 10/14/2020: Gianna Engineering Scholarship
 - 10/2020: Brain Simulation paper accepted and published
 - 11/2020: Fang intereviewed by UFII: https://informatics.research.ufl.edu/engineering-professor-uses-ai-to-study-the-brain/
@@ -93,6 +93,12 @@ Scotechdaily: https://scitechdaily.com/simple-eye-exam-with-powerful-artificial-
 AppliedRadiology: https://www.appliedradiology.com/communities/Artificial-Intelligence/rsna-20-ai-based-eye-exam-could-aid-early-parkinson-s-disease-diagnosis
 Forbes: https://www.forbes.com/sites/jackierocheleau/2020/11/25/scientists-are-looking-into-the-eyes-of-patients-to-diagnose-parkinsons-disease/?sh=557314f52faa
 Diagnostic Imaging: https://www.diagnosticimaging.com/view/eye-exam-plus-ai-could-replace-advanced-imaging-in-parkinson-s-detection
+
+## 2021-06-01
+### to add
+- NIH RF1 $2.9 million MPI grant
+- NeuroAI Machine Learning Workshop (http://hhp.ufl.edu/articles/2021/neuroai-workshops.html)
+- Update Awards and Grants section (separate into awards and grants separately)
 
 
 
