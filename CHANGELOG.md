@@ -94,11 +94,12 @@ AppliedRadiology: https://www.appliedradiology.com/communities/Artificial-Intell
 Forbes: https://www.forbes.com/sites/jackierocheleau/2020/11/25/scientists-are-looking-into-the-eyes-of-patients-to-diagnose-parkinsons-disease/?sh=557314f52faa
 Diagnostic Imaging: https://www.diagnosticimaging.com/view/eye-exam-plus-ai-could-replace-advanced-imaging-in-parkinson-s-detection
 
-## 2021-06-01
-### to add
+## 2021-06-21
+### added
 - NIH RF1 $2.9 million MPI grant
 - NeuroAI Machine Learning Workshop (http://hhp.ufl.edu/articles/2021/neuroai-workshops.html)
 - Update Awards and Grants section (separate into awards and grants separately)
+- Lab members (2 new PhD students, research coordinator, put graduated students into Alumni section)
 
 
 
