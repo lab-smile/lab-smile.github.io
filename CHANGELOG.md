@@ -101,6 +101,9 @@ Diagnostic Imaging: https://www.diagnosticimaging.com/view/eye-exam-plus-ai-coul
 - Update Awards and Grants section (separate into awards and grants separately)
 - Lab members (2 new PhD students, research coordinator, put graduated students into Alumni section)
 
-
+## 2021-08-02
+### added
+- News and Awards: NIH NIMH R01 $2.2M Co-I
+- Publications: 4 new conference publications.
 
 
