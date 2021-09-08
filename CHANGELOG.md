@@ -1,4 +1,18 @@
 # Changelog
+## [0.1.3] - 2021-09-07
+### Added
+- Researcher Jimmy Ossa
+- Researcher Shen Kai
+- Researcher Maria Cardei
+- Researcher Michael McGaha
+- Researcher Harrison Santiago
+- Researcher Alvin Naiju
+- Researcher Eugene Li
+- Researcher Victor Polisetty
+
+### Changed
+- Updated Gianna's Picture
+
 ## [0.1.2] - 2020-09-24
 ### Removed
 - Researcher Peiwen Riley Gao
@@ -70,8 +84,6 @@
 - Researcher Ahmet
 
 ### Fixed
-
-
 - Moved around publications to better match CV
 - Updated justification for RFMiner publication 
 
