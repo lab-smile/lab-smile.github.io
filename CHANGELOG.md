@@ -1,4 +1,10 @@
 # Changelog
+## [0.1.8] - 2022-01-21
+### Changed
+- P01 (PI: Robert Cook) amount changed from $7.6M to $6.6M.
+- P01 news link
+
+
 ## [0.1.7] - 2022-01-17
 ### Added
 - Researcher Jordi Bardia
