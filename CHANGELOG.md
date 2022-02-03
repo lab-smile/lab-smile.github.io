@@ -1,4 +1,9 @@
 # Changelog
+
+## [0.1.9] - 2022-02-03
+### Add
+- UF-NVIDIA GT Hackathon news
+
 ## [0.1.8] - 2022-01-21
 ### Changed
 - P01 (PI: Robert Cook) amount changed from $7.6M to $6.6M.
