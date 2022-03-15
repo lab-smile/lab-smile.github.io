@@ -1,4 +1,7 @@
 # Changelog
+## [0.1.10] - 2022-03-14
+### Add
+- Media page
 
 ## [0.1.9] - 2022-02-03
 ### Add
@@ -8,7 +11,6 @@
 ### Changed
 - P01 (PI: Robert Cook) amount changed from $7.6M to $6.6M.
 - P01 news link
-
 
 ## [0.1.7] - 2022-01-17
 ### Added
