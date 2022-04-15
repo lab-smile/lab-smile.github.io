@@ -1119,7 +1119,7 @@ ul.grid li .comein i {
 ul.grid li .comein-bg {
 	-khtml-opacity: .70;
 	-moz-opacity: .70;
-	-ms-filter: ”alpha(opacity=70)”;
+	-ms-filter: alpha(opacity=70);
 	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.7);
 	filter: alpha(opacity=70);
 	opacity: .70;
@@ -1396,4 +1396,178 @@ hr.dark {background: #B2B0A8; color: #B2B0A8; border: none; height: 1px; margin:
   padding: 2px 5px 2px 5px;
 }
 
+/* ---------- */
+/* MEDIA PAGE */
+/* ---------- */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: "Lato", sans-serif;
+	line-height: 1.25;
+	background-color: #f4f4f4;
+	color: #2a2a2a;
+	font-weight: 500;
+}
+.container {
+	max-width: 1280px;
+	margin: 3rem auto;
+	padding: 1rem;
+}
+h1 {
+	text-align: center;
+}
+button {
+	font-size: 1rem;
+	padding: 0.35em 0.75em;
+	line-height: 1;
+	background-color: transparent;
+	border: 0.125rem solid #2a2a2a;
+	border-radius: 2rem;
+	cursor: pointer;
+	transition: 0.1s;
+	outline: 0;
+}
+button:hover {
+	background-color: #2a2a2a;
+	color: #fff;
+}
+button .fa {
+	font-size: 0.75em;
+	margin-left: 0.5em;
+}
+button.btn--primary {
+	border-color: #042a4f;
+	color: #042a4f;
+}
+button.btn--primary:hover {
+	background-color: #042a4f;
+	color: #fff;
+}
+button.btn--accent {
+	border-color: #e65891;
+	color: #e65891;
+}
+button.btn--accent:hover {
+	background-color: #e65891;
+	color: #fff;
+}
+.posts {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2.5rem;
+}
+@media (max-width: 1140px) {
+	.posts {
+		grid-template-columns: repeat(2, 1fr);
+   }
+}
+@media (max-width: 768px) {
+	.posts {
+		grid-template-columns: repeat(1, 1fr);
+   }
+}
+.post__image {
+	width: 100%;
+	height: 240px; /*default:240*/
+	position: relative;
+	overflow: hidden;
+}
+.post__image:before, .post__image:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+.post__image:before {
+	background-size: cover;
+	background-position: center center;
+	transform: scale(1);
+	filter: blur(0);
+	transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
+.post__image:after {
+	background: linear-gradient(30deg, #042a4f 0%, #e65891 100%);
+	background-size: 100% 300%;
+	background-position: bottom left;
+	opacity: 0.15;
+	transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
+}
+.post__image--1:before {
+	background-image: url('../img/media/uf.png');
+	background-size: 200px;
+	background-repeat: no-repeat;
+}
+.post__image--2:before {
+	background-image: url('../img/media/nvidia-hackathon-edited.png');
+}
+.post__image--3:before {
+	background-image: url('../img/media/ivanhoe-interview.png');
+}
+.post__image--4:before {
+	background-image: url('../img/media/uf.png');
+	background-size: 200px;
+	background-repeat: no-repeat;
+}
+
+.post__content {
+	margin: -3rem 1.5rem 0;
+	padding: 1.5rem;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+	transition: margin 0.2s ease-in-out;
+	position: relative;
+	z-index: 1;
+	user-select: none;
+}
+.post__inside {
+	overflow: hidden;
+	height: 8.85rem; /*default: 4.85rem | How many lines are viewable before hovering*/ 
+	transition: height 0.2s ease-in-out;
+}
+.post__title {
+	font-size: 1.35rem;
+	line-height: 1;
+	margin: 0 0 1rem;
+	font-weight: 300;
+	color: #042a4f;
+}
+.post__excerpt {
+	overflow: hidden;
+	margin: 0;
+	max-height: 20.25rem; /*default: 6.25rem | Amount of text allowed. Need to adjust button placement as well*/
+	position: relative;
+}
+
+.post__excerpt_title {
+	overflow: hidden;
+	margin: 1;
+	max-height: 20.25rem;
+	position: relative;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.post__button {
+	margin-top: 1rem; /*default: 1rem | Absolute placement of the button. Shouldn't be changed*/
+}
+/* ====== HOVER ====== */
+.post:hover .post__content {
+	margin-top: -18.8rem; /*default: -9.8rem | How much the content rises after hovering. Negative goes higher, positive goes lower*/
+}
+.post:hover .post__inside {
+	height: 24.65rem; /*default: 11.65rem | How big the expanded white box is*/
+}
+.post:hover .post__image:after {
+	opacity: 0.5;
+}
+.post:hover .post__image:before {
+	transform: scale(1.1);
+	filter: blur(10px);
 }

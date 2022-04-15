@@ -1,6 +1,10 @@
 # Changelog
+## [0.1.11] - 2022-04-15
+### Changed
+- Media page format
+
 ## [0.1.10] - 2022-03-14
-### Add
+### Added
 - Media page
 
 ## [0.1.9] - 2022-02-03
