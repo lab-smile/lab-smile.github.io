@@ -1,5 +1,26 @@
 # Changelog
 ## [0.1.11] - 2022-04-15
+### Added
+- [About Me] Recent News front-page gallery. Hover to view content.
+- [News] 4/14/2022: Congratulations to SMILE Lab member Garrett Fullerton on winning the Outstanding Research Award at the BME Undergraduate Research Day!
+- [Media] February 27, 2022: Our eyes may provide early warning signs of Alzheimer's and Parkinson's
+- [Media] July 19, 2021: UF researchers fight dementia using AI technology to develop new treatment
+- [Media] July 16, 2021: Staving off dementia is focus of University of Florida study
+- [Media] July 14, 2021: UF researchers using artificial intelligence to develop treatment to prevent dementia
+- [Media] July 13, 2021: UF researchers use AI to develop precision dosing for treatment aimed at preventing dementia
+- [Media] December 4, 2020: Eye Blood Vessels May Diagnose Parkinson's Disease
+- [Media] December 1, 2020: UF researchers are looking into the eyes of patients to diagnose Parkinson's Disease
+- [Media] November 29, 2020: Blood Vessels in the Eye May Diagnose Parkinson's Disease
+- [Media] November 29, 2020: Eye exam possible test to determine Parkinson's disease
+- [Media] November 25, 2020: Scientists Are Looking Into The Eyes Of Patients To Diagnose Parkinson’s Disease
+- [Media] November 23, 2020: Eye Exam Could Lead to Early Parkinson’s Disease Diagnosis
+- [Media] November 23, 2020: Simple Eye Exam With Powerful Artificial Intelligence Could Lead to Early Parkinson’s Disease Diagnosis
+- [Media] November 23, 2020: RSNA 20: AI-Based Eye Exam Could Aid Early Parkinson’s Disease Diagnosis
+- [Media] May 31, 2017: Fang selected to ACM's Future of Computer Academy
+- [Media] May 31, 2016: Researcher says head CT radiation dose can be reduced by 90 percent
+- [Media] May 25, 2016: Professor uses computer science to reduce patients' exposure to radiation from CT scans
+- [Media] December 7, 2011: Facial recognition software spots family resemblance
+
 ### Changed
 - Media page format
 

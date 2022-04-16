@@ -1499,21 +1499,69 @@ button.btn--accent:hover {
 	opacity: 0.15;
 	transition: 2s cubic-bezier(0, 0.6, 0.2, 1);
 }
-.post__image--1:before {
+
+
+/*Repeated use images include logos*/
+.post__image--appliedradiology:before {
+	background-image: url('../img/media/appliedradiology.png');
+}
+.post__image--bignewsnetwork:before {
+	background-image: url('../img/media/bignewsnetwork.png');
+}
+.post__image--eyesmart:before {
+	background-image: url('../img/media/eyesmart.png');
+}
+.post__image--dotmed:before {
+	background-image: url('../img/media/dotmed.png');
+}
+.post__image--FIU-news:before {
+	background-image: url('../img/media/FIU-news.png');
+}
+.post__image--mscp:before {
+	background-image: url('../img/media/mscp-logo.png');
+}
+.post__image--newscientist:before {
+	background-image: url('../img/media/newscientist.png');
+}
+.post__image--scitechdaily:before {
+	background-image: url('../img/media/scitechdaily.png');
+}
+.post__image--uf:before {
 	background-image: url('../img/media/uf.png');
 	background-size: 200px;
 	background-repeat: no-repeat;
 }
-.post__image--2:before {
+
+/*Imgs edited individually and tracked with MMDDYY*/
+.post__image--022722:before {
+	background-image: url('../img/media/thewashingtonpost.png');
+}
+.post__image--020222:before {
 	background-image: url('../img/media/nvidia-hackathon-edited.png');
 }
-.post__image--3:before {
+.post__image--011022:before {
 	background-image: url('../img/media/ivanhoe-interview.png');
 }
-.post__image--4:before {
-	background-image: url('../img/media/uf.png');
-	background-size: 200px;
-	background-repeat: no-repeat;
+.post__image--071921:before {
+	background-image: url('../img/media/thealligator.png');
+}
+.post__image--071621:before {
+	background-image: url('../img/media/abclocal10tv-interview.png');
+}
+.post__image--071421:before {
+	background-image: url('../img/media/abcwcjb20-interview.png');
+}
+.post__image--071321:before {
+	background-image: url('../img/media/ufhealth-interview.png');
+}
+.post__image--120120:before {
+	background-image: url('../img/media/ufengineering-news.png');
+}
+.post__image--112520:before {
+	background-image: url('../img/media/forbes.png');
+}
+.post__image--112320:before {
+	background-image: url('../img/media/rsna-interview.png');
 }
 
 .post__content {
@@ -1571,3 +1619,132 @@ button.btn--accent:hover {
 	transform: scale(1.1);
 	filter: blur(10px);
 }
+
+
+/*About Me Gallery*/
+.accordion {
+	width: 100%;
+	max-width: 1080px;
+	height: 250px;
+	overflow: hidden;
+	margin: 50px auto;
+  }
+  
+  .accordion ul {
+	width: 100%;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .accordion ul li {
+	display: table-cell;
+	vertical-align: bottom;
+	position: relative;
+	width: 16.666%;
+	height: 250px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transition: all 500ms ease;
+  }
+  
+  .accordion ul li div {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+  }
+  
+  .accordion ul li div a {
+	display: block;
+	height: 250px;
+	width: 100%;
+	position: relative;
+	z-index: 3;
+	vertical-align: bottom;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	font-family: Open Sans, sans-serif;
+	transition: all 200ms ease;
+  }
+  
+  .accordion ul li div a * {
+	opacity: 0;
+	margin: 0;
+	width: 100%;
+	text-overflow: ellipsis;
+	position: relative;
+	z-index: 5;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-transform: translateX(-20px);
+	transform: translateX(-20px);
+	-webkit-transition: all 400ms ease;
+	transition: all 400ms ease;
+  }
+  
+  .accordion ul li div a h2 {
+	font-family: Montserrat, sans-serif;
+	text-overflow: clip;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	top: 160px;
+  }
+  
+  .accordion ul li div a p {
+	top: 160px;
+	font-size: 13.5px;
+  }
+  
+  .accordion ul li:nth-child(1) { background-image: url("/img/frontpagegallery/041222_Garrett_Award.png"); }
+  
+  .accordion ul li:nth-child(2) { background-image: url("/img/frontpagegallery/031122_Fund.png"); }
+  
+  .accordion ul li:nth-child(3) { background-image: url("/img/frontpagegallery/030422_UFBME.png"); }
+  
+  .accordion ul:hover li { width: 8%; }
+  
+  .accordion ul:hover li:hover { width: 60%; }
+  
+  .accordion ul:hover li:hover a { background: rgba(0, 0, 0, 0.4); }
+  
+  .accordion ul:hover li:hover a * {
+	opacity: 1;
+	-webkit-transform: translateX(0);
+	transform: translateX(0);
+  }
+   @media screen and (max-width: 600px) {
+  
+ 
+  
+  .accordion { height: auto; }
+  
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+	position: relative;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	-webkit-transition: none;
+	transition: none;
+  }
+  }
+  
+  .about {
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #666;
+  }
+  
+  .about a {
+	color: blue;
+	text-decoration: none;
+  }
+  
+  .about a:hover { text-decoration: underline; }
