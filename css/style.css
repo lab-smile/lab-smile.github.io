@@ -1533,14 +1533,14 @@ button.btn--accent:hover {
 }
 
 /*Imgs edited individually and tracked with MMDDYY*/
-.post__image--022722:before {
-	background-image: url('../img/media/thewashingtonpost.png');
-}
 .post__image--020222:before {
 	background-image: url('../img/media/nvidia-hackathon-edited.png');
 }
 .post__image--011022:before {
 	background-image: url('../img/media/ivanhoe-interview.png');
+}
+.post__image--010022:before {
+	background-image: url('../img/media/thewashingtonpost.png');
 }
 .post__image--071921:before {
 	background-image: url('../img/media/thealligator.png');
