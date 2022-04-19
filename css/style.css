@@ -1502,6 +1502,9 @@ button.btn--accent:hover {
 
 
 /*Repeated use images include logos*/
+.post__image--alligator:before {
+	background-image: url('../img/media/alligator.png');
+}
 .post__image--appliedradiology:before {
 	background-image: url('../img/media/appliedradiology.png');
 }
@@ -1517,11 +1520,20 @@ button.btn--accent:hover {
 .post__image--FIU-news:before {
 	background-image: url('../img/media/FIU-news.png');
 }
+.post__image--forbes:before {
+	background-image: url('../img/media/forbes.png');
+}
+.post__image--ivanhoe:before {
+	background-image: url('../img/media/ivanhoe.png');
+}
 .post__image--mscp:before {
 	background-image: url('../img/media/mscp-logo.png');
 }
 .post__image--newscientist:before {
 	background-image: url('../img/media/newscientist.png');
+}
+.post__image--rsna:before {
+	background-image: url('../img/media/rsna.png');
 }
 .post__image--scitechdaily:before {
 	background-image: url('../img/media/scitechdaily.png');
@@ -1531,37 +1543,14 @@ button.btn--accent:hover {
 	background-size: 200px;
 	background-repeat: no-repeat;
 }
-
-/*Imgs edited individually and tracked with MMDDYY*/
-.post__image--020222:before {
-	background-image: url('../img/media/nvidia-hackathon-edited.png');
-}
-.post__image--011022:before {
-	background-image: url('../img/media/ivanhoe-interview.png');
-}
-.post__image--010022:before {
+.post__image--thewashingtonpost:before {
 	background-image: url('../img/media/thewashingtonpost.png');
 }
-.post__image--071921:before {
-	background-image: url('../img/media/thealligator.png');
+.post__image--wcjb:before {
+	background-image: url('../img/media/wcjb.png');
 }
-.post__image--071621:before {
-	background-image: url('../img/media/abclocal10tv-interview.png');
-}
-.post__image--071421:before {
-	background-image: url('../img/media/abcwcjb20-interview.png');
-}
-.post__image--071321:before {
-	background-image: url('../img/media/ufhealth-interview.png');
-}
-.post__image--120120:before {
-	background-image: url('../img/media/ufengineering-news.png');
-}
-.post__image--112520:before {
-	background-image: url('../img/media/forbes.png');
-}
-.post__image--112320:before {
-	background-image: url('../img/media/rsna-interview.png');
+.post__image--wplg:before {
+	background-image: url('../img/media/wplg.png');
 }
 
 .post__content {
