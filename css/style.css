@@ -1524,7 +1524,7 @@ button.btn--accent:hover {
 	background-image: url('../img/media/forbes.png');
 }
 .post__image--ivanhoe:before {
-	background-image: url('../img/media/ivanhoe.png');
+	background-image: url('../img/media/ivanhoe-interview.png');
 }
 .post__image--mscp:before {
 	background-image: url('../img/media/mscp-logo.png');
@@ -1538,6 +1538,9 @@ button.btn--accent:hover {
 .post__image--scitechdaily:before {
 	background-image: url('../img/media/scitechdaily.png');
 }
+.post__image--techtuesday:before {
+	background-image: url('../img/media/techtuesday-interview.png');
+}
 .post__image--uf:before {
 	background-image: url('../img/media/uf.png');
 	background-size: 200px;
@@ -1547,10 +1550,10 @@ button.btn--accent:hover {
 	background-image: url('../img/media/thewashingtonpost.png');
 }
 .post__image--wcjb:before {
-	background-image: url('../img/media/wcjb.png');
+	background-image: url('../img/media/abcwcjb20-interview.png');
 }
 .post__image--wplg:before {
-	background-image: url('../img/media/wplg.png');
+	background-image: url('../img/media/abclocal10tv-interview.png');
 }
 
 .post__content {

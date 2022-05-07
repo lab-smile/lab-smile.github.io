@@ -1,4 +1,11 @@
 # Changelog
+## [0.1.12] - 2022-05-07
+### Added
+- [Media] April 21, 2022: UF Innovate - Tech Tuesday
+
+### Changed
+- [Media] Interviews now use best thumbnail from the interview instead of the logo.
+
 ## [0.1.11] - 2022-04-15
 ### Added
 - [About Me] Recent News front-page gallery. Hover to view content.
