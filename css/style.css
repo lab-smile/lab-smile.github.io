@@ -1543,8 +1543,14 @@ button.btn--accent:hover {
 }
 .post__image--uf:before {
 	background-image: url('../img/media/uf.png');
-	background-size: 200px;
+    background-size: 200px;
 	background-repeat: no-repeat;
+}
+.post__image--ufdementia:before {
+	background-image: url('../img/media/ufhealth-interview.png');
+}
+.post__image--ufparkinson:before {
+	background-image: url('../img/media/ufengineering-news.png');
 }
 .post__image--thewashingtonpost:before {
 	background-image: url('../img/media/thewashingtonpost.png');
@@ -1554,6 +1560,12 @@ button.btn--accent:hover {
 }
 .post__image--wplg:before {
 	background-image: url('../img/media/abclocal10tv-interview.png');
+}
+.post__image--ufnvidia:before {
+	background-image: url('../img/media/nvidia-hackathon.png');
+}
+.post__image--hwcoeaward:before {
+	background-image: url('../img/media/hwcoe_award2022.jpg');
 }
 
 .post__content {
