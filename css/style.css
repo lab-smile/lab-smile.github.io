@@ -1567,6 +1567,9 @@ button.btn--accent:hover {
 .post__image--hwcoeaward:before {
 	background-image: url('../img/media/hwcoe_award2022.jpg');
 }
+.post__image--acm:before {
+	background-image: url('../img/personal/acm.png');
+}
 
 .post__content {
 	margin: -3rem 1.5rem 0;
