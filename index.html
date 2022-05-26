@@ -260,6 +260,8 @@
                                         <td>
                                             <div style="height: 350px; overflow: auto;">
                                                 <ul>
+                                                    <li style="margin-bottom:10px">5/25/2022: New paper published in Frontiers in Radiology entitled "PIMA-CT: Physical Model-Aware Cyclic Simulation and Denoising for Ultra-Low-Dose CT Restoration". Congrats to recent SMILE Lab PhD graduate Peng Liu and undergraduate graduate Garrett Fullerton! [<a href="https://www.frontiersin.org/articles/10.3389/fradi.2022.904601/full" target="_blank">Link</a>] </li>
+                                                    
                                                     <li style="margin-bottom:10px">5/5/2022: Our paper entitiled "DOMINO: Domain-aware Model Calibration in Medical Image Segmentation" is early accepted by <a href="https://conferences.miccai.org/2022/en/">MICCAI</a> in Singapore Sep. 18-22, 2022 (early acceptance rate=13%)! Congrats to Skylar Stolte!</li>
                                                     
                                                     <li style="margin-bottom:10px">5/3/2022: Dr. Fang was interview by ABC WCJB TV Tech Tuesday on her research using artificial intelligence (AI) to detect Alzheimer's Disesase. [<a href="https://www.wcjb.com/2022/05/04/tech-tuesday-modular-ad/?utm_source=newsfore&utm_medium=email&utm_campaign=16933&pnespid=t7s2B3tWKPwe3.vE.DeoApKGo0.1CINmM7Gg3utzvBdm3JEFixSQW_4oqGfEyyA8RU2FZT94NA" target="_blank">Interview</a>]</li>
@@ -2365,8 +2367,8 @@
                                         <div class="col-md-6">
                                             <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
                                             <!-- Publication Catergories Start-->
-                                            <option class="filter" value="all" selected>All types (106)</option>
-                                            <option class="filter" value="Journal">Journal (32)</option>
+                                            <option class="filter" value="all" selected>All types (107)</option>
+                                            <option class="filter" value="Journal">Journal (33)</option>
                                             <option class="filter" value="Conference">Conference (67)</option>
                                             <option class="filter" value="Thesis">Thesis (2)</option>
                                             <option class="filter" value="Patents">Patents (2)</option>
@@ -2480,6 +2482,34 @@
                                                 <!--Preferred Image Sizes: Width: 125px-->
                                                 
                                                 <!--2022-->
+                                                
+                                                <div class="item mix Journal" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://www.frontiersin.org/articles/10.3389/fradi.2022.904601/full" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="pubthumbnail">
+                                                            <img width="125" src="img/pubs/frontiers-radiology.png" class="attachment-medium size-medium wp-post image" alt="" align="left" hspace="20">
+                                                        </div>
+                                                        <div class="pubcontent">
+                                                            <h4 class="pubtitle">PIMA-CT: Physical Model-Aware Cyclic Simulation and Denoising for Ultra-Low-Dose CT Restoration</h4>
+                                                            <span class="label label-primary">Journal</span>
+                                                            <div class="pubauthor">Peng Liu, Linsong Xu, Garrett Fullerton, Yao Xiao, James-Bond Nguyen, Zhongyu Li, Izabella Barreto, Catherine Olguin, <b><u>Ruogu Fang</u></b></div>
+                                                            <div class="pubcite">Frontiers in Radiology</div>
+                                                            <div class="pubdate">Publication Year: May, 2022</div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                            <p>A body of studies has proposed to obtain high-quality images from low-dose and noisy Computed Tomography (CT) scans for radiation reduction. However, these studies are designed for population-level data without considering the variation in CT devices and individuals, limiting the current approaches' performance, especially for ultra-low-dose CT imaging. Here, we proposed PIMA-CT, a physical anthropomorphic phantom model integrating an unsupervised learning framework, using a novel deep learning technique called Cyclic Simulation and Denoising (CSD), to address these limitations. We first acquired paired low-dose and standard-dose CT scans of the phantom and then developed two generative neural networks: noise simulator and denoiser. The simulator extracts real low-dose noise and tissue features from two separate image spaces (e.g., low-dose phantom model scans and standard-dose patient scans) into a unified feature space. Meanwhile, the denoiser provides feedback to the simulator on the quality of the generated noise. In this way, the simulator and denoiser cyclically interact to optimize network learning and ease the denoiser to simultaneously remove noise and restore tissue features. We thoroughly evaluate our method for removing both real low-dose noise and Gaussian simulated low-dose noise. The results show that CSD outperforms one of the state-of-the-art denoising algorithms without using any labeled data (actual patients' low-dose CT scans) nor simulated low-dose CT scans. This study may shed light on incorporating physical models in medical imaging, especially for ultra-low level dose CT scans restoration.
+                                                    </div>
+                                                </div>
                                                 
                                                 <div class="item mix Conference" data-year="2022">
                                                     <div class="pubmain">
