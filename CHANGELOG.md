@@ -1,4 +1,12 @@
 # Changelog
+## [0.1.13] - 2022-08-24
+### Added 
+- [News] 08/24/2022: Congrats to SMILE Lab PhD Candidate Skylar Stolte on passing her dissertation qualification!
+- [Team] Undergraduate Hely Lin
+- 
+### Changed
+- Recent News updated as of 08/24/2022
+
 ## [0.1.12] - 2022-05-07
 ### Added
 - [Media] April 21, 2022: UF Innovate - Tech Tuesday
@@ -9,7 +17,7 @@
 ## [0.1.11] - 2022-04-15
 ### Added
 - [About Me] Recent News front-page gallery. Hover to view content.
-- [News] 4/14/2022: Congratulations to SMILE Lab member Garrett Fullerton on winning the Outstanding Research Award at the BME Undergraduate Research Day!
+- [News] 04/14/2022: Congratulations to SMILE Lab member Garrett Fullerton on winning the Outstanding Research Award at the BME Undergraduate Research Day!
 - [Media] February 27, 2022: Our eyes may provide early warning signs of Alzheimer's and Parkinson's
 - [Media] July 19, 2021: UF researchers fight dementia using AI technology to develop new treatment
 - [Media] July 16, 2021: Staving off dementia is focus of University of Florida study

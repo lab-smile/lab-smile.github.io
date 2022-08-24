@@ -1706,11 +1706,11 @@ button.btn--accent:hover {
 	font-size: 13.5px;
   }
   
-  .accordion ul li:nth-child(1) { background-image: url("/img/frontpagegallery/041222_Garrett_Award.png"); }
+  .accordion ul li:nth-child(1) { background-image: url("/img/frontpagegallery/081022_MICCAI2022.png"); }
   
-  .accordion ul li:nth-child(2) { background-image: url("/img/frontpagegallery/031122_Fund.png"); }
+  .accordion ul li:nth-child(2) { background-image: url("/img/frontpagegallery/080922_SFN2022.jpg"); }
   
-  .accordion ul li:nth-child(3) { background-image: url("/img/frontpagegallery/030422_UFBME.png"); }
+  .accordion ul li:nth-child(3) { background-image: url("/img/frontpagegallery/072722_RSNA2022.png"); }
   
   .accordion ul:hover li { width: 8%; }
   
