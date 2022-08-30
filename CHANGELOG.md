@@ -1,9 +1,14 @@
 # Changelog
+## [0.1.14] - 2022-08-30
+### Added
+- [Gallery] Added pictures from the lab retreat lunch at Chopstix Cafe (Fall 2022)
+- [Publications] Conference: "Differential Aversive and Appetitive Conditioning in Artificial Neural Networks"
+
 ## [0.1.13] - 2022-08-24
 ### Added 
 - [News] 08/24/2022: Congrats to SMILE Lab PhD Candidate Skylar Stolte on passing her dissertation qualification!
 - [Team] Undergraduate Hely Lin
-- [Gallery] Added images from the first group meeting of Fall 2022
+- [Gallery] Added pictures from the first group meeting of Fall 2022
 
 ### Changed
 - Recent News updated as of 08/24/2022
