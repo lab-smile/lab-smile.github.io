@@ -2402,8 +2402,8 @@
                                         <div class="col-md-6">
                                             <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
                                             <!-- Publication Catergories Start-->
-                                            <option class="filter" value="all" selected>All types (108)</option>
-                                            <option class="filter" value="Journal">Journal (33)</option>
+                                            <option class="filter" value="all" selected>All types (109)</option>
+                                            <option class="filter" value="Journal">Journal (34)</option>
                                             <option class="filter" value="Conference">Conference (68)</option>
                                             <option class="filter" value="Thesis">Thesis (2)</option>
                                             <option class="filter" value="Patents">Patents (2)</option>
@@ -2517,6 +2517,45 @@
                                                 <!--Preferred Image Sizes: Width: 125px-->
                                                 
                                                 <!--2022-->
+                                                
+                                                <div class="item mix Journal" data-year="2022">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-022-01996-2" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fa fa-external-link"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="pubthumbnail">
+                                                            <img width="125" src="img/pubs/BMC.jpg" class="attachment-medium size-medium wp-post image" alt="" align="left" hspace="20">
+                                                        </div>
+                                                        <div class="pubcontent">
+                                                            <h4 class="pubtitle">Identify diabetic retinopathy-related clinical concepts and their attributes using transformer-based natural language processing methods</h4>
+                                                            <span class="label label-warning">Journal</span>
+                                                            <div class="pubauthor">Zehao Yu , Xi Yang, Gianna L. Sweeting, Yinghan Ma, Skylar E. Stolte, <b>Ruogu Fang</b>, Yonghui Wu</div>
+                                                            <div class="pubcite">BMC Medical Informatics and Decision Making</div>
+                                                            <div class="pubdate">Publication Year: Sept, 2022</div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <h4>Background</h4>
+<p>Diabetic retinopathy (DR) is a leading cause of blindness in American adults. If detected, DR can be treated to prevent further damage causing blindness. There is an increasing interest in developing artificial intelligence (AI) technologies to help detect DR using electronic health records. The lesion-related information documented in fundus image reports is a valuable resource that could help diagnoses of DR in clinical decision support systems. However, most studies for AI-based DR diagnoses are mainly based on medical images; there is limited studies to explore the lesion-related information captured in the free text image reports.</p>
+
+<h4>Methods</h4>
+In this study, we examined two state-of-the-art transformer-based natural language processing (NLP) models, including BERT and RoBERTa, compared them with a recurrent neural network implemented using Long short-term memory (LSTM) to extract DR-related concepts from clinical narratives. We identified four different categories of DR-related clinical concepts including lesions, eye parts, laterality, and severity, developed annotation guidelines, annotated a DR-corpus of 536 image reports, and developed transformer-based NLP models for clinical concept extraction and relation extraction. We also examined the relation extraction under two settings including ‘gold-standard’ setting—where gold-standard concepts were used–and end-to-end setting.
+
+<h4>Results</h4>
+For concept extraction, the BERT model pretrained with the MIMIC III dataset achieve the best performance (0.9503 and 0.9645 for strict/lenient evaluation). For relation extraction, BERT model pretrained using general English text achieved the best strict/lenient F1-score of 0.9316. The end-to-end system, BERT_general_e2e, achieved the best strict/lenient F1-score of 0.8578 and 0.8881, respectively. Another end-to-end system based on the RoBERTa architecture, RoBERTa_general_e2e, also achieved the same performance as BERT_general_e2e in strict scores.
+
+<h4>Conclusions</h4>
+This study demonstrated the efficiency of transformer-based NLP models for clinical concept extraction and relation extraction. Our results show that it’s necessary to pretrain transformer models using clinical text to optimize the performance for clinical concept extraction. Whereas, for relation extraction, transformers pretrained using general English text perform better.
+                                                    </div>
+                                                </div>
+                                                
                                                 <div class="item mix Conference" data-year="2022">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
@@ -2607,7 +2646,7 @@
                                                         </div>
                                                         <div class="pubcontent">
                                                             <h4 class="pubtitle">DOMINO: Domain-aware Model Calibration in Medical Image Segmentation</h4>
-                                                            <h5><b>Oral Presentation (rate=2.3%), Early Acceptance (rate=13%), Student Travel Award</b></h5>
+                                                            <h5><b>Best Paper Presentation Award Runner Up, Women in MICCAI. Oral Presentation (rate=2.3%), Early Acceptance (rate=13%), Student Travel Award</b></h5>
                                                             <span class="label label-primary">Conference</span>
                                                             <div class="pubauthor">Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u></div>
                                                             <div class="pubcite">25th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Singapore. </div>
