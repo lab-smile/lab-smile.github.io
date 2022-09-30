@@ -1,4 +1,9 @@
 # Changelog
+## [0.1.15] - 2022-09-28
+### Added
+- [Team] Undergraduate Kevin Liu
+- [Team] Undergraduate Ethan Smith
+
 ## [0.1.14] - 2022-08-30
 ### Added
 - [Gallery] Added pictures from the lab retreat lunch at Chopstix Cafe (Fall 2022)
