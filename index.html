@@ -2402,10 +2402,10 @@
                                         <div class="col-md-6">
                                             <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
                                             <!-- Publication Catergories Start-->
-                                            <option class="filter" value="all" selected>All types (109)</option>
+                                            <option class="filter" value="all" selected>All types (110)</option>
                                             <option class="filter" value="Journal">Journal (34)</option>
                                             <option class="filter" value="Conference">Conference (68)</option>
-                                            <option class="filter" value="Thesis">Thesis (2)</option>
+                                            <option class="filter" value="Thesis">Thesis (3)</option>
                                             <option class="filter" value="Patents">Patents (2)</option>
                                             <option class="filter" value="Book Chapters">Book Chapters (2)</option>
                                             <option class="filter" value="Presentations">Presentations (1)</option>
@@ -2543,16 +2543,16 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <h4>Background</h4>
-<p>Diabetic retinopathy (DR) is a leading cause of blindness in American adults. If detected, DR can be treated to prevent further damage causing blindness. There is an increasing interest in developing artificial intelligence (AI) technologies to help detect DR using electronic health records. The lesion-related information documented in fundus image reports is a valuable resource that could help diagnoses of DR in clinical decision support systems. However, most studies for AI-based DR diagnoses are mainly based on medical images; there is limited studies to explore the lesion-related information captured in the free text image reports.</p>
+                                                        <p>Diabetic retinopathy (DR) is a leading cause of blindness in American adults. If detected, DR can be treated to prevent further damage causing blindness. There is an increasing interest in developing artificial intelligence (AI) technologies to help detect DR using electronic health records. The lesion-related information documented in fundus image reports is a valuable resource that could help diagnoses of DR in clinical decision support systems. However, most studies for AI-based DR diagnoses are mainly based on medical images; there is limited studies to explore the lesion-related information captured in the free text image reports.</p>
 
-<h4>Methods</h4>
-In this study, we examined two state-of-the-art transformer-based natural language processing (NLP) models, including BERT and RoBERTa, compared them with a recurrent neural network implemented using Long short-term memory (LSTM) to extract DR-related concepts from clinical narratives. We identified four different categories of DR-related clinical concepts including lesions, eye parts, laterality, and severity, developed annotation guidelines, annotated a DR-corpus of 536 image reports, and developed transformer-based NLP models for clinical concept extraction and relation extraction. We also examined the relation extraction under two settings including ‘gold-standard’ setting—where gold-standard concepts were used–and end-to-end setting.
+                                                        <h4>Methods</h4>
+                                                        In this study, we examined two state-of-the-art transformer-based natural language processing (NLP) models, including BERT and RoBERTa, compared them with a recurrent neural network implemented using Long short-term memory (LSTM) to extract DR-related concepts from clinical narratives. We identified four different categories of DR-related clinical concepts including lesions, eye parts, laterality, and severity, developed annotation guidelines, annotated a DR-corpus of 536 image reports, and developed transformer-based NLP models for clinical concept extraction and relation extraction. We also examined the relation extraction under two settings including ‘gold-standard’ setting—where gold-standard concepts were used–and end-to-end setting.
 
-<h4>Results</h4>
-For concept extraction, the BERT model pretrained with the MIMIC III dataset achieve the best performance (0.9503 and 0.9645 for strict/lenient evaluation). For relation extraction, BERT model pretrained using general English text achieved the best strict/lenient F1-score of 0.9316. The end-to-end system, BERT_general_e2e, achieved the best strict/lenient F1-score of 0.8578 and 0.8881, respectively. Another end-to-end system based on the RoBERTa architecture, RoBERTa_general_e2e, also achieved the same performance as BERT_general_e2e in strict scores.
+                                                        <h4>Results</h4>
+                                                        For concept extraction, the BERT model pretrained with the MIMIC III dataset achieve the best performance (0.9503 and 0.9645 for strict/lenient evaluation). For relation extraction, BERT model pretrained using general English text achieved the best strict/lenient F1-score of 0.9316. The end-to-end system, BERT_general_e2e, achieved the best strict/lenient F1-score of 0.8578 and 0.8881, respectively. Another end-to-end system based on the RoBERTa architecture, RoBERTa_general_e2e, also achieved the same performance as BERT_general_e2e in strict scores.
 
-<h4>Conclusions</h4>
-This study demonstrated the efficiency of transformer-based NLP models for clinical concept extraction and relation extraction. Our results show that it’s necessary to pretrain transformer models using clinical text to optimize the performance for clinical concept extraction. Whereas, for relation extraction, transformers pretrained using general English text perform better.
+                                                        <h4>Conclusions</h4>
+                                                        This study demonstrated the efficiency of transformer-based NLP models for clinical concept extraction and relation extraction. Our results show that it’s necessary to pretrain transformer models using clinical text to optimize the performance for clinical concept extraction. Whereas, for relation extraction, transformers pretrained using general English text perform better.
                                                     </div>
                                                 </div>
                                                 
@@ -2700,6 +2700,27 @@ This study demonstrated the efficiency of transformer-based NLP models for clini
                                                 
                                                 
                                                 <!--2021-->
+                                        
+                                                 <div class="item mix Thesis" data-year="2021">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="pubthumbnail">
+                                                            <img width="125" src="img/pubs/uf.png" class="attachment-medium size-medium wp-post-image" alt="" align="left" hspace="20">
+                                                        </div>
+                                                        <div class="pubcontent">
+                                                            <h4 class="pubtitle">Biology and Neuroscience Inspired Deep Learning</h4>
+                                                            <span class="label label-danger">PhD Thesis</span>
+                                                            <div class="pubauthor"><strong>Peng Liu</strong></div>
+                                                            <div class="pubcite">Biomedical Engineering, University of Florida</div>
+                                                            <div class="pubdate">Publication Year: 2021</div>
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
 
                                                 <div class="item mix Journal" data-year="2021">
                                                     <div class="pubmain">
@@ -5840,6 +5861,26 @@ This study demonstrated the efficiency of transformer-based NLP models for clini
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="pitems">
+                                            
+                                            
+                                             <div class="item mix Code" data-year="2022">
+                                                <div class="pubmain">
+                                                    <div class="pubassets">
+                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
+                                                        <a href="https://github.com/lab-smile/DOMINO" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    <h4 class="pubtitle">DOMINO: Domain-aware Model Calibration in Medical Image Segmentation</h4>
+                                                    <div class="pubcite">
+                                                        <span class="label label-primary">Code</span>DOMINO is an open-source package for domain-aware model calibration that leverages the semantic confusability and hierarchical similarity between class labels in multi-class classification/segmentation to improve model calibration while not sacrificing or even improving model accuracy.
+                                                    </div>
+                                                </div>
+                                                <div class="pubdetails">
+                                                    <h4>Citation</h4>
+                                                    <p>Stolte, Skylar E., Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. "DOMINO: Domain-Aware Model Calibration in Medical Image Segmentation." In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 454-463. Springer, Cham, 2022.</p>
+                                                </div>
+                                            </div>
+                                            
+                                            
                                             <div class="item mix Code" data-year="2022">
                                                 <div class="pubmain">
                                                     <div class="pubassets">
@@ -5869,6 +5910,26 @@ This study demonstrated the efficiency of transformer-based NLP models for clini
                                                 <div class="pubmain">
                                                     <div class="pubassets">
                                                         <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
+                                                        <a href="https://github.com/lab-smile/CADA" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    <h4 class="pubtitle">CADA</h4>
+                                                    <div class="pubcite">
+                                                        <span class="label label-primary">Code</span>Multi-scale Collaborative Adversarial Domain Adaptation for Unsupervised Optic Disc and Cup Segmentation
+                                                    </div>
+                                                </div>
+                                                <div class="pubdetails">
+                                                    <h4>Citation</h4>
+                                                    <ul>
+                                                        <li>Liu, Peng, Charlie T. Tran, Bin Kong, and Ruogu Fang. "CADA: Multi-scale Collaborative Adversarial Domain Adaptation for unsupervised optic disc and cup segmentation." Neurocomputing 469 (2022): 209-220.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            <div class="item mix Code" data-year="2019">
+                                                <div class="pubmain">
+                                                    <div class="pubassets">
+                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
                                                         <a href="https://github.com/cswin/AWC" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
                                                     </div>
                                                     <h4 class="pubtitle">Domain Shift</h4>
@@ -5879,7 +5940,26 @@ This study demonstrated the efficiency of transformer-based NLP models for clini
                                                 <div class="pubdetails">
                                                     <h4>Citation</h4>
                                                     <ul>
-                                                        <li>Peng Liu, Bin Kong, Zhongyu Li, Shaoting Zhang, and Ruogu Fang, 2019. CFEA: Collaborative Feature Ensembling Adaptation for Domain Adaptation in Unsupervised Optic Disc and Cup Segmentation. Medical Image Analysis and Computer Assisted Intervention.</li>
+                                                        <li>Liu, Peng, Bin Kong, Zhongyu Li, Shaoting Zhang, and Ruogu Fang. "CFEA: collaborative feature ensembling adaptation for domain adaptation in unsupervised optic disc and cup segmentation." In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 521-529. Springer, Cham, 2019.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="item mix Code" data-year="2019">
+                                                <div class="pubmain">
+                                                    <div class="pubassets">
+                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
+                                                        <a href="https://github.com/lab-smile/EvoNet" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
+                                                    </div>
+                                                    <h4 class="pubtitle">EvoNet</h4>
+                                                    <div class="pubcite">
+                                                        <span class="label label-primary">Code</span>Deep evolutionary networks with expedited genetic algorithms for medical image denoising
+                                                    </div>
+                                                </div>
+                                                <div class="pubdetails">
+                                                    <h4>Citation</h4>
+                                                    <ul>
+                                                        <li>Liu, Peng, Mohammad D. El Basha, Yangjunyi Li, Yao Xiao, Pina C. Sanelli, and Ruogu Fang. "Deep evolutionary networks with expedited genetic algorithms for medical image denoising." Medical image analysis 54 (2019): 306-315.</li>
                                                     </ul>
                                                 </div>
                                             </div>
