@@ -1,7 +1,7 @@
 # Changelog
 ## [0.1.16] - 2022-09-30
 ### Added
-- [News] 09/20/2022: Kudos to SMILE Lab PhD student Skylar Stolte for Women in MICCAI's Best Paper Presentation Award Runner up!
+- [News] 09/20/2022: Kudos to SMILE Lab PhD student Skylar Stolte for Women in MICCAI's Best Paper Presentation Award Runner up! [News]
 - [NSF] 7 Journal Publications
 - [NSF] 1 Dissertation
 - [NSF] 9 Conference Presentations
