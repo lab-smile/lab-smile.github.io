@@ -1,4 +1,8 @@
 # Changelog
+## [0.1.17] - 2022-11-01
+### Added
+- [Publications] 8 New Patents and 2 Updated Patents
+
 ## [0.1.16] - 2022-09-30
 ### Added
 - [News] 09/20/2022: Kudos to SMILE Lab PhD student Skylar Stolte for Women in MICCAI's Best Paper Presentation Award Runner up! [News]
