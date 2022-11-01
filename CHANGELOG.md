@@ -2,6 +2,7 @@
 ## [0.1.17] - 2022-11-01
 ### Added
 - [Publications] 8 New Patents and 2 Updated Patents
+- [News] 11/01/2022: SMILE Lab PhD Candidate Skylar Stolte presented her work, DOMINO: Domain-aware Calibration in Medical Image Segmentation, at the Fall 2022 HiPerGator Symposium.
 
 ## [0.1.16] - 2022-09-30
 ### Added
