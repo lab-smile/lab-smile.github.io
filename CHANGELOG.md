@@ -1,4 +1,8 @@
 # Changelog
+## [0.1.19] - 2022-11-15
+### Added
+- [Team] Undergraduate Kyle Douglas
+
 ## [0.1.18] - 2022-11-09
 ### Added
 - [Team] Undergraduate Thomas Howland
