@@ -1,4 +1,14 @@
 # Changelog
+## [0.1.19] - 2022-11-15
+### Added
+- [Team] Undergraduate Kyle Douglas
+
+## [0.1.18] - 2022-11-09
+### Added
+- [Team] Undergraduate Thomas Howland
+- [Team] Undergraduate Justin Broce
+- [Gallery] Added pictures from the 2022 BME Halloween event
+
 ## [0.1.17] - 2022-11-01
 ### Added
 - [Publications] 8 New Patents and 2 Updated Patents
