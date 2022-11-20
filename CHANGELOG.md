@@ -1,4 +1,8 @@
 # Changelog
+## [0.1.20] - 2022-11-20
+### Added
+- [Gallery] Added pictures from the 2022 SMILE Lab Thankgiving Potluck
+
 ## [0.1.19] - 2022-11-15
 ### Added
 - [Team] Undergraduate Kyle Douglas
