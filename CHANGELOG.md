@@ -1,4 +1,8 @@
 # Changelog
+## [0.1.21] - 2022-12-03
+### Added
+- [Team] M.D. Alumni Simeng Zhu
+
 ## [0.1.20] - 2022-11-20
 ### Added
 - [Gallery] Added pictures from the 2022 SMILE Lab Thankgiving Potluck
