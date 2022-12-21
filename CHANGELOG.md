@@ -1,4 +1,10 @@
 # Changelog
+## [0.1.22] - 2022-12-21
+### Added 
+- [News] Updated Recent News
+- [Gallery] Added pictures from the 2022 BME Holiday Party
+- [Gallery] Added pictures from 2022 BME3053C Class Finale
+
 ## [0.1.21] - 2022-12-03
 ### Added
 - [Team] M.D. Alumni Simeng Zhu
