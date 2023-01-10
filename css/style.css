@@ -1571,6 +1571,10 @@ button.btn--accent:hover {
 	background-image: url('../img/personal/acm.png');
 }
 
+.post__image--cvnews:before {
+	background-image: url('../img/media/cvnews.jpeg');
+}
+
 .post__content {
 	margin: -3rem 1.5rem 0;
 	padding: 1.5rem;
