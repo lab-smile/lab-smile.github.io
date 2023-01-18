@@ -1,4 +1,19 @@
 # Changelog
+## [0.1.23] - 2023-01-18
+### Added
+- [Team] Ph.D. Student Zhuobiao Qiao
+- [Team] Ph.D. Student Yu Feng
+- [Team] Ph.D. Student Tianqi Liu
+- [Team] Undergraduate Akshay Ashok
+- [Team] Undergraduate Veronica Ramos
+- [Team] Undergraduate Thrisha Acharya
+- [Team] Undergraduate Michelle Mu
+- [Team] Undergraduate Grace Cheng
+- [Team] Undergraduate Benjamin Arnold
+- [Team] Undergraduate Jason Chen
+- [Gallery] Added pictures from Spring 2023 first lab meeting
+- [News] Welcome new phd students.
+
 ## [0.1.22] - 2022-12-21
 ### Added 
 - [News] Updated Recent News
