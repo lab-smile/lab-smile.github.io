@@ -1759,3 +1759,12 @@ button.btn--accent:hover {
   }
   
   .about a:hover { text-decoration: underline; }
+
+.icon-codeocean {
+	background: url('../img/misc/codeocean.png');
+	background-size: 28px;
+	height: 15px;
+	width: 28px;
+	margin-top: 4px;
+	display: block;
+}

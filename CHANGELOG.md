@@ -1,4 +1,15 @@
 # Changelog
+## [0.1.24] - 2023-01-19
+### Added 
+- [Team] Updated profile pictures
+- [Software] Code Ocean link in DOMINO page
+
+### Changed
+- [Team] Moved Shen Kai and Jimmy Ossa to M.S. Alumni
+
+### Removed
+- [Team] Joined lab in XXYYZZ
+
 ## [0.1.23] - 2023-01-18
 ### Added
 - [Team] Ph.D. Student Zhuobiao Qiao
