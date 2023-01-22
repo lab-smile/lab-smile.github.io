@@ -1,4 +1,11 @@
 # Changelog
+## [0.1.25] - 2023-01-22
+### Added
+- [News] Welcome news for Ph.D. and M.S. students
+
+### Changed
+- [Software] Added transparency to Code Ocean logo
+
 ## [0.1.24] - 2023-01-19
 ### Added 
 - [Team] Updated profile pictures
