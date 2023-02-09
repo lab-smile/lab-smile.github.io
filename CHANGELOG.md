@@ -1,4 +1,8 @@
 # Changelog
+## [0.1.26] - 2023-02-09
+### Added
+- [Publications] Two publications 2023
+
 ## [0.1.25] - 2023-01-22
 ### Added
 - [News] Welcome news for Ph.D. and M.S. students
