@@ -3,6 +3,7 @@
 ### Added
 - [News] Accepted paper DOMINO to Software Impacts and news from ABC WFTS
 - [Media] News media from ABC WFTS
+- [AboutMe] New Video section with 3 videos
 
 ## [0.1.26] - 2023-02-09
 ### Added
