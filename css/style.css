@@ -1558,6 +1558,9 @@ button.btn--accent:hover {
 .post__image--wcjb:before {
 	background-image: url('../img/media/abcwcjb20-interview.png');
 }
+.post__image--wfts:before {
+	background-image: url('../img/media/abcwfts-interview.png');
+}
 .post__image--wplg:before {
 	background-image: url('../img/media/abclocal10tv-interview.png');
 }

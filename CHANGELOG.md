@@ -1,4 +1,9 @@
 # Changelog
+## [0.1.27] - 2023-02-16
+### Added
+- [News] Accepted paper DOMINO to Software Impacts and news from ABC WFTS
+- [Media] News media from ABC WFTS
+
 ## [0.1.26] - 2023-02-09
 ### Added
 - [Publications] Two publications 2023
