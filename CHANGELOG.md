@@ -1,4 +1,11 @@
 # Changelog
+## [0.1.28] - 2023-03-31
+### Added
+- [News] SMILE Lab featured on CoE video
+- [News] Alumnus Garrett Fullerton received NSF GRFP grant
+- [News] Alumna Neeva Sethi received Presidential Service Award
+- [Media] News media from College of Engineering
+
 ## [0.1.27] - 2023-02-16
 ### Added
 - [News] Accepted paper DOMINO to Software Impacts and news from ABC WFTS
