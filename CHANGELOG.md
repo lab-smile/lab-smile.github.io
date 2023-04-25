@@ -4,6 +4,8 @@
 - [News] R01 award Dr. Joseph Gullett
 - [Grants] R01 award Dr. Joseph Gullett
 - [Research] R01 award Dr. Joseph Gullett
+- [Gallery] 2023 Senior Design Showcase
+- [Gallery] AI4Health
 
 ## [0.2.0] - 2023-04-12
 ### Added
