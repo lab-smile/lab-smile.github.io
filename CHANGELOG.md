@@ -1,4 +1,10 @@
 # Changelog
+## [0.2.1] - 2023-04-25
+### Added
+- [News] R01 award Dr. Joseph Gullett
+- [Grants] R01 award Dr. Joseph Gullett
+- [Research] R01 award Dr. Joseph Gullett
+
 ## [0.2.0] - 2023-04-12
 ### Added
 - [Publications] One conference publication 2023
