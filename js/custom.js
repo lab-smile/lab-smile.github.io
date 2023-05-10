@@ -11,7 +11,7 @@ $.fn.exists = function () {
 }
 	//Handle window resize
 	var resizeFlag=0;  
-	$(window).resize(function(){
+	$(window).on("resize",function(){
 	    resizeFlag=1;
 	})
 	checkSizeChange();
@@ -66,7 +66,7 @@ $(document).ready(function(){
 
 		bindUiActions : function(){
 			var self = this;
-			sideS.$trigger.click(function(e){
+			sideS.$trigger.on("click", function(e){
 				e.preventDefault();
 				if (self.isIn()){
 					self.sideOut();
@@ -74,7 +74,7 @@ $(document).ready(function(){
 					self.sideIn();
 				}
 			});
-			sideS.$totaltrigger.click(function(){
+			sideS.$totaltrigger.on("click",function(){
 				if ($(window).width() < 960 && self.isIn())
 					self.sideOut(); 
 			});
@@ -515,7 +515,7 @@ $(document).ready(function(){
 });
 
 
-$(window).load(function(){
+$(window).on('load',function(){
 
 	/*++++++++++++++++++++++++++++++++++++
 		gallery masonry layout

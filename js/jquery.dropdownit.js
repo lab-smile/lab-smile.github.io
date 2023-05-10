@@ -75,7 +75,7 @@
 				var $this = $( this ),
 					val = isNaN( $this.attr( 'value' ) ) ? $this.attr( 'value' ) : Number( $this.attr( 'value' ) ) ,
 					classes = $this.attr( 'class' ),
-					selected = $this.attr( 'selected' ),
+					selected = $this.prop( 'selected' ),
 					label = $this.text();
 
 				if( val !== -1 ) {
