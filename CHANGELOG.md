@@ -1,4 +1,9 @@
 # Changelog
+## [0.2.2] - 2023-05-16
+- [Team] Undergraduate Joshua Lamb
+- [Team] Undergraduate Amy Lazarte
+- [Team] Undergraduate Surya Karthikeyan Vijayalakshmi
+
 ## [0.2.1] - 2023-04-25
 ### Added
 - [News] R01 award Dr. Joseph Gullett
