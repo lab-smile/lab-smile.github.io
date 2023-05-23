@@ -1,4 +1,8 @@
 # Changelog
+## [0.2.3] - 2023-05-23
+- [News] New publication in Brain Stimulation
+- [Publication] New publication in Brain Stimulation
+
 ## [0.2.2] - 2023-05-16
 - [Team] Undergraduate Joshua Lamb
 - [Team] Undergraduate Amy Lazarte
