@@ -1,9 +1,17 @@
 # Changelog
+## [0.2.4] - 2023-05-29
+### Added
+- [News] Update R01AG081477 Role and Funding amount
+- [Research] Update R01AG081477 link and abstract description
+- [Publication] Book Chapter in Medical Image Synthesis
+
 ## [0.2.3] - 2023-05-23
+### Added
 - [News] New publication in Brain Stimulation
 - [Publication] New publication in Brain Stimulation
 
 ## [0.2.2] - 2023-05-16
+### Added
 - [Team] Undergraduate Joshua Lamb
 - [Team] Undergraduate Amy Lazarte
 - [Team] Undergraduate Surya Karthikeyan Vijayalakshmi
