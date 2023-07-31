@@ -1,4 +1,12 @@
 # Changelog
+## [0.2.5] - 2023-07-31
+### Added
+- [News] Conference BMES 2023 for Joseph and Seowung
+- [Publication] Conference BMES 2023 for Joseph and Seowung 
+
+### Fixed
+- [Team] Profile pictures for Joshua, Amy, and Surya
+
 ## [0.2.4] - 2023-05-29
 ### Added
 - [News] Update R01AG081477 Role and Funding amount
