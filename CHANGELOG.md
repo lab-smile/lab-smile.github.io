@@ -1,4 +1,10 @@
 # Changelog
+## [0.2.6] - 2023-08-14
+### Added
+- [NSF] 11 Presentations
+- [NSF] 12 Publications
+- [NSF] 5 Patents
+
 ## [0.2.5] - 2023-07-31
 ### Added
 - [News] Conference BMES 2023 for Joseph and Seowung
