@@ -1,4 +1,11 @@
 # Changelog
+## [0.2.7] - 2023-09-07
+### Added
+- [Team] Ph.D. Student Pankaj Chand
+- [Team] Ph.D. Student Daniel Rodriguez
+- [Team] M.S. Student Travis Koenig
+- [Team] M.S. Student Pratyush Shukla
+
 ## [0.2.6] - 2023-08-14
 ### Added
 - [NSF] 11 Presentations
