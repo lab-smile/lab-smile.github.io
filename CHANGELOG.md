@@ -1,4 +1,9 @@
 # Changelog
+## [0.2.8] - 2024-01-19
+### Changed
+- [About Me] Improved front page gallery sizes.
+- [About Me] Updated front page gallery content.
+
 ## [0.2.7] - 2023-09-07
 ### Added
 - [Team] Ph.D. Student Pankaj Chand
