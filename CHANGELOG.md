@@ -1,6 +1,7 @@
 # Changelog
-## [0.2.9] - 2024-04-11
+## [0.2.9] - 2024-04-12
 ### Added
+- [Publication] 2 Book Chapters
 - [Media] News media from ScienceDaily
 
 ## [0.2.8] - 2024-01-19
