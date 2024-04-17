@@ -1538,6 +1538,9 @@ button.btn--accent:hover {
 .post__image--rsna:before {
 	background-image: url('../img/media/rsna.png');
 }
+.post__image--sciencedaily:before {
+	background-image: url('../img/media/sciencedaily.png')
+}
 .post__image--scitechdaily:before {
 	background-image: url('../img/media/scitechdaily.png');
 }
