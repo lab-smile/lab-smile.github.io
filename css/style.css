@@ -1529,6 +1529,9 @@ button.btn--accent:hover {
 .post__image--mscp:before {
 	background-image: url('../img/media/mscp-logo.png');
 }
+.post__image--nationalacademies:before {
+	background-image: url('../img/media/nationalacademies.png');
+}
 .post__image--nationalgeographic:before {
 	background-image: url('../img/media/nationalgeographic.png');
 }

@@ -1,4 +1,9 @@
 # Changelog
+## [0.2.10] - 2024-05-06
+### Added
+- [Media] Media from National Academies Workshop
+- [Video] Video from National Academies Workshop
+
 ## [0.2.9] - 2024-04-12
 ### Added
 - [Publication] 2 Book Chapters
