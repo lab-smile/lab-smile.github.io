@@ -1538,6 +1538,9 @@ button.btn--accent:hover {
 .post__image--newscientist:before {
 	background-image: url('../img/media/newscientist.png');
 }
+.post__image--rsipvision:before {
+	background-image: url('../img/media/rsipvision.jpg');
+}
 .post__image--rsna:before {
 	background-image: url('../img/media/rsna.png');
 }

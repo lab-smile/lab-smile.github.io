@@ -1,6 +1,7 @@
 # Changelog
 ## [0.2.10] - 2024-05-06
 ### Added
+- [Media] RSIP Vision Computer Vision News Magazine, May 2024
 - [Media] Media from National Academies Workshop
 - [Video] Video from National Academies Workshop
 
