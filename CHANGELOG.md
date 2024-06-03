@@ -1,4 +1,8 @@
 # Changelog
+## [0.2.11] - 2024-06-03
+### Added
+- [Publication] Journal Briefing in Bioinformatics
+
 ## [0.2.10] - 2024-05-06
 ### Added
 - [Media] RSIP Vision Computer Vision News Magazine, May 2024
