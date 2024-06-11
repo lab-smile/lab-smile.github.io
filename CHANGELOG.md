@@ -1,4 +1,9 @@
 # Changelog
+## [0.2.12] - 2024-06-11
+### Added
+- [Publication] Update two GitHub links (LAVA, RetinaPD)
+- [Software] Add two Github links (LAVA, RetinaPD)
+
 ## [0.2.11] - 2024-06-03
 ### Added
 - [Publication] Journal Briefing in Bioinformatics
