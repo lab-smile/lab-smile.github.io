@@ -1,4 +1,8 @@
 # Changelog
+## [0.2.13] - 2024-07-01
+### Changed
+- [Join] Update undergraduate recruitment process
+
 ## [0.2.12] - 2024-06-11
 ### Added
 - [Publication] Update two GitHub links (LAVA, RetinaPD)
