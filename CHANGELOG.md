@@ -1,4 +1,9 @@
 # Changelog
+## [0.2.14] - 2024-07-03
+### Added
+- [Publication] Two abstracts for Society of Psychophysiological Research
+- [Software] Add DOMINO++
+
 ## [0.2.13] - 2024-07-01
 ### Changed
 - [Join] Update undergraduate recruitment process
