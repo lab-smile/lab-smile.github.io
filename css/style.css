@@ -1553,6 +1553,9 @@ button.btn--accent:hover {
 .post__image--techtuesday:before {
 	background-image: url('../img/media/techtuesday-interview.png');
 }
+.post__image--ufepi:before {
+	background-image: url('../img/media/ufepi.png');
+}
 .post__image--uf:before {
 	background-image: url('../img/media/uf.png');
     background-size: 200px;
