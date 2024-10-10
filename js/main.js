@@ -1,190 +1,2036 @@
-$(document).ready(function(){
-    $.ajax({
-        url: 'publications.json',
-        dataType: 'json',
-        error: function(){
-            console.log('JSON FAILED for data');
+const publications = [
+    {
+        "title": "Artificial Intelligence-Optimized Non-Invasive Brain Stimulation and Treatment Response Prediction for Major Depression",
+        "type": "Journal",
+        "authors": "Alejandro Albizu, Paulo Suen, Ziqian Huang, Jori L. Waner, Skylar E. Stolte, Aprinda Indahlastari, <strong>Ruogu Fang</strong>, Andre R. Brunoni, and Adam J. Woods",
+        "citation": "Bioelectronic Medicine, 2024",
+        "publication_year": "",
+        "image_src": "img/pubs/BMC_BioelecMed.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://bioelecmed.biomedcentral.com/"
         },
-        success: function(publications) {
-            const allPubsDiv = document.getElementById('allPubs');
-            const searchInput = $('#inputPubs'); // Use the existing input with id inputPubs
+        "data_year": "2024"
+    },
+    {
+        "title": "Exploring the Bidirectional Relationship Between Artificial Intelligence and Neuroscience",
+        "type": "Workshop Proceeding",
+        "authors": "National Academies of Sciences, Engineering, and Medicine",
+        "citation": "Washington, DC: The National Academies Press, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/NASEM.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://nap.nationalacademies.org/catalog/27764/exploring-the-bidirectional-relationship-between-artificial-intelligence-and-neuroscience-proceedings"
+        },
+        "abstract": "Since artificial intelligence's (AI) inception, AI and neuroscience have influenced each other to advance models of neural circuitry, analyze large and complex datasets, and inform the development of AI algorithms. This bidirectional relationship also has implications for health care as researchers and clinicians begin to explore the role of AI in clinical diagnosis, disease monitoring, and predicting treatment outcomes of central nervous system disorders. The National Academies Forum on Neuroscience and Nervous System Disorders hosted a public workshop in March 2024 to explore safe, responsible, and equitable use of AI in neuroscience and identify collaborative strategies for increasing AI literacy, building public trust, and creating accessible user interfaces.",
+        "data_year": "2024"
+    },
+    {
+        "title": "BrainSegFounder: Towards 3D Foundation Models for Neuroimage Segmentation",
+        "type": "Journal",
+        "authors": "Joseph Cox, Peng Liu, Skylar E. Stolte, Yunchao Yang, Kang Liu, Kyle B. See, Huiwen Ju, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Image Analysis, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S1361841524002263",
+            "arxiv": "https://arxiv.org/abs/2406.10395",
+            "github": "https://github.com/lab-smile/BrainSegFounder"
+        },
+        "abstract": "The burgeoning field of brain health research increasingly leverages artificial intelligence (AI) to interpret and analyze neurological data. This study introduces a novel approach towards the creation of medical foundation models by integrating a large-scale multi-modal magnetic resonance imaging (MRI) dataset derived from 41,400 participants in its own. Our method involves a novel two-stage pretraining approach using vision transformers. The first stage is dedicated to encoding anatomical structures in generally healthy brains, identifying key features such as shapes and sizes of different brain regions. The second stage concentrates on spatial information, encompassing aspects like location and the relative positioning of brain structures. We rigorously evaluate our model, BrainFounder, using the Brain Tumor Segmentation (BraTS) challenge and Anatomical Tracings of Lesions After Stroke v2.0 (ATLAS v2.0) datasets. BrainFounder demonstrates a significant performance gain, surpassing the achievements of the previous winning solutions using fully supervised learning. Our findings underscore the impact of scaling up both the complexity of the model and the volume of unlabeled training data derived from generally healthy brains, which enhances the accuracy and predictive capabilities of the model in complex neuroimaging tasks with MRI. The implications of this research provide transformative insights and practical applications in healthcare and make substantial steps towards the creation of foundation models for Medical AI.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Implementation of an AI Generated Affective Picture Set: Self-report and Psychophysiological Validation",
+        "type": "Conference",
+        "authors": "Faith E Gilbert, Fan Yang, Andrew Farkas, Sarah M Gardy, Hannah M Engle, Angie Cordova, Ricky Cheng, Dean Sabatinelli, Mingzhou Ding, <b>Ruogu Fang</b>, <u>Andreas Keil</u>",
+        "citation": "Society for Psychophysiological Research 64th Annual Meeting",
+        "publication_year": "October 23-26, 2024",
+        "image_src": "img/pubs/SPR.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://sprweb.org/page/FuturePastMeetings"
+        },
+        "data_year": "2024"
+    },
+    {
+        "title": "A Comprehensive Survey of Foundation Models in Medicine",
+        "type": "Preprint",
+        "authors": "Wasif Khan, Seowung Leem, Kyle B. See, Joshua K. Wong, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
+        "citation": "",
+        "publication_year": "June 2024",
+        "image_src": "img/pubs/arxiv.png",
+        "label_class": "warning",
+        "external_links": {
+            "arxiv": "https://arxiv.org/abs/2406.10729"
+        },
+        "abstract": "Foundation models (FMs) are large-scale deep-learning models trained on extensive datasets using self-supervised techniques. These models serve as a base for various downstream tasks, including healthcare. FMs have been adopted with great success across various domains within healthcare, including natural language processing (NLP), computer vision, graph learning, biology, and omics. Existing healthcare-based surveys have not yet included all of these domains. Therefore, this survey provides a comprehensive overview of FMs in healthcare. We focus on the history, learning strategies, flagship models, applications, and challenges of FMs. We explore how FMs such as the BERT and GPT families are reshaping various healthcare domains, including clinical large language models, medical image analysis, and omics data. Furthermore, we provide a detailed taxonomy of healthcare applications facilitated by FMs, such as clinical NLP, medical computer vision, graph learning, and other biology-related tasks. Despite the promising opportunities FMs provide, they also have several associated challenges, which are explained in detail. We also outline potential future directions to provide researchers and practitioners with insights into the potential and limitations of FMs in healthcare to advance their deployment and mitigate associated risks.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Morphological Profiling for Drug Discovery in the Era of Deep Learning",
+        "type": "Journal",
+        "authors": "Qiaosi Tang, Ranjala Ratnayake, Gustavo Seabra, Zhe Jiang, <b>Ruogu Fang</b>, Lina Cui, Yousong Ding, Tamer Kahveci, Jiang Bian, Chenglong Li, Hendrik Luesch, <u>Yanjun Li</u>",
+        "citation": "Briefings in Bioinformatics (Impact factor=9.5)",
+        "publication_year": "May 2024",
+        "image_src": "img/pubs/bioinformatics.gif",
+        "label_class": "warning",
+        "abstract": "Morphological profiling is a valuable tool in phenotypic drug discovery. The advent of high-throughput automated imaging has enabled the capturing of a wide range of morphological features of cells or organisms in response to perturbations at the single-cell resolution. Concurrently, significant advances in machine learning and deep learning, especially in computer vision, have led to substantial improvements in analyzing large-scale high-content images at high-throughput. These efforts have facilitated understanding of compound mechanism-of-action (MOA), drug repurposing, characterization of cell morphodynamics under perturbation, and ultimately contributing to the development of novel therapeutics. In this review, we provide a comprehensive overview of the recent advances in the field of morphological profiling. We summarize the image profiling analysis workflow, survey a broad spectrum of analysis strategies encompassing feature engineering- and deep learning-based approaches, and introduce publicly available benchmark datasets. We place a particular emphasis on the application of deep learning in this pipeline, covering cell segmentation, image representation learning, and multimodal learning. Additionally, we illuminate the application of morphological profiling in phenotypic drug discovery and highlight potential challenges and opportunities in this field.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Deep Learning Analysis of Retinal Structures and Risk Factors of Alzheimer\u2019s Disease",
+        "type": "Conference",
+        "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "The 46th International Conference of the IEEE Engineering in Medicine and Biology Society, , Orlando, FL",
+        "publication_year": "July 15-19, 2024",
+        "image_src": "img/pubs/EMBC2024.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://embc.embs.org/2024/"
+        },
+        "data_year": "2024"
+    },
+    {
+        "title": "Analysis and Visualization of Single-Cell Sequencing Data with Scanpy and MetaCell: A Tutorial",
+        "type": "Book Chapter",
+        "authors": "Yanjun Li, Chaoyue Sun, Daria Y. Romanova, Dapeng O. Wu, <u><b>Ruogu Fang</b></u>, Leonid L. Moroz.",
+        "citation": "Ctenophores, Methods and Protocols, Springer Publisher",
+        "publication_year": "2024",
+        "image_src": "img/pubs/Ctenophores.jpg",
+        "label_class": "success",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/book/9781071636411"
+        },
+        "data_year": "2024"
+    },
+    {
+        "title": "DeepDynaForecast: Phylogenetic-informed graph deep learning for epidemic transmission dynamic prediction",
+        "type": "Journal",
+        "authors": "Chaoyue Sun, <u><b>Ruogu Fang</b></u>, Marco Salemi, Mattia Prosperi, Brittany Rife Magalis",
+        "citation": "PLOS Computational Biology",
+        "publication_year": "2024",
+        "image_src": "img/pubs/PLOS_CB.PNG",
+        "label_class": "warning",
+        "external_links": {
+            "github": "https://github.com/lab-smile/DeepDynaForcast"
+        },
+        "abstract": "In the midst of an outbreak or sustained epidemic, reliable prediction of transmission risks and patterns of spread is critical to inform public health programs. Projections of transmission growth or decline among specific risk groups can aid in optimizing interventions, particularly when resources are limited. Phylogenetic trees have been widely used in the detection of transmission chains and high-risk populations. Moreover, tree topology and the incorporation of population parameters (phylodynamics) can be useful in reconstructing the evolutionary dynamics of an epidemic across space and time among individuals. We now demonstrate the utility of phylodynamic trees for transmission modeling and forecasting, developing a phylogeny-based deep learning system, referred to as \\textit{DeepDynaForecast}. Our approach leverages a primal-dual graph learning structure with shortcut multi-layer aggregation, which is suited for the early identification and prediction of transmission dynamics in emerging high-risk groups. We demonstrate the accuracy of \\textit{DeepDynaForecast} using simulated outbreak data and the utility of the learned model using empirical, large-scale data from the human immunodeficiency virus epidemic in Florida between 2012 and 2020. Our framework is available as open-source software (MIT license) at github.com/lab-smile/DeepDynaForcast.",
+        "data_year": "2024"
+    },
+    {
+        "title": "LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images",
+        "type": "Journal",
+        "authors": "Nooshin Yousefzadeh, Charlie Tran, Adolfo Ramirez-Zamora, Jinghua Chen, <u><b>Ruogu Fang</b></u>, <u>My T. Thai</u>",
+        "citation": "Nature Scientific Reports",
+        "publication_year": "April 2024",
+        "image_src": "img/pubs/SciReports.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.nature.com/articles/s41598-024-58121-8",
+            "arxiv": "https://arxiv.org/abs/2302.03008",
+            "github": "https://github.com/lab-smile/LAVA"
+        },
+        "abstract": "Alzheimer\u2019s Disease (AD) is a progressive neurodegenerative disease and the leading cause of dementia. Early diagnosis is critical for patients to benefit from potential intervention and treatment. The retina has emerged as a plausible diagnostic site for AD detection owing to its anatomical connection with the brain. However, existing AI models for this purpose have yet to provide a rational explanation behind their decisions and have not been able to infer the stage of the disease\u2019s progression. Along this direction, we propose a novel model-agnostic explainable-AI framework, called Granur Neuron-leel Expliner (LAVA), an interpretation prototype that probes into intermediate layers of the Convolutional Neural Network (CNN) models to directly assess the continuum of AD from the retinal imaging without the need for longitudinal or clinical evaluations. This innovative approach aims to validate retinal vasculature as a biomarker and diagnostic modality for evaluating Alzheimer\u2019s Disease. Leveraged UK Biobank cognitive tests and vascular morphological features demonstrate significant promise and effectiveness of LAVA in identifying AD stages across the progression continuum.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Emergence of Emotion Selectivity in A Deep Neural Network Trained to Recognize Visual Objects",
+        "type": "Journal",
+        "authors": "Peng Liu, Ke Bo, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
+        "citation": "PLOS Computational Biology",
+        "publication_year": "2024",
+        "image_src": "img/pubs/PLOS_CB.PNG",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011943"
+        },
+        "abstract": "Recent neuroimaging studies have shown that the visual cortex plays an important role in representing the affective significance of visual input. The origin of these affect-specific visual representations is debated: they are intrinsic to the visual system versus they arise through reentry from frontal emotion processing structures such as the amygdala. We examined this problem by combining convolutional neural network (CNN) models of the human ventral visual cortex pre-trained on ImageNet with two datasets of affective images. Our results show that in all layers of the CNN models, there were artificial neurons that responded consistently and selectively to neutral, pleasant, or unpleasant images and lesioning these neurons by setting their output to zero or enhancing these neurons by increasing their gain led to decreased or increased emotion recognition performance respectively. These results support the idea that the visual system may have the intrinsic ability to represent the affective significance of visual input and suggest that CNNs offer a fruitful platform for testing neuroscientific theories.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Learning on Forecasting HIV Epidemic Based on Individuals' Contact Networks",
+        "type": "Conference",
+        "authors": "Chaoyue Sun, Yiyang Liu, Christina Parisi, Rebecca Fisk-Hoffman, Marco Salemi, <b>Ruogu Fang</b>, Brandi Danforth, Mattia Prosperi and Simone Marini",
+        "citation": "The 17th International Conference on Health Informatics (HEALTHINF/BIOSTEC), Rome - Italy",
+        "publication_year": "February 21 - 23, 2024",
+        "image_src": "img/pubs/scitepress.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://doi.org/10.5220/0012375400003657"
+        },
+        "abstract": "Improving the diagnosis of HIV is a fundamental objective of the Ending the HIV Epidemic initiative, as it represents the initial step toward treatment and achieving undetectable status, thereby reducing transmission. To attain these objectives effectively, it is crucial to identify the groups most susceptible to HIV, allowing interventions to be tailored to their specific needs. In this study, we developed a predictive model designed to assess individual HIV risk within a high-risk contact network predicting treatment or at-risk leveraging surveillance data collected through routine HIV case interviews in Florida. Unique to our analysis, we explored the incorporation of behavioral network information with Graph Neural Networks to enhance the predictive capacity for identifying individuals within the treatment or intervention categories, when compared to models that mainly consider conventional HIV risk factors. Our deployed Graph Isomorphism Network achieved 77.3% and 73.2% balanced accuracy in inductive and transductive learning scenarios respectively, outperforming the traditional prediction algorithms that do not leverage the network structure. We then used our model to further investigate the importance of demographic and behavioral factors in the HIV risk prediction process. Our findings provide valuable insights for healthcare practitioners and policymakers in their efforts to combat HIV infection.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Deep Learning Predicts Prevalent and Incident Parkinson\u2019s Disease From UK Biobank Fundus Imaging",
+        "type": "Journal",
+        "authors": "Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora4 Jinghua Chen, Yulin Li, <u><b>Ruogu Fang</b></u>",
+        "citation": "Nature Scientific Reports",
+        "publication_year": "2024",
+        "image_src": "img/pubs/SciReports.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/article/10.1038/s41598-024-54251-1?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240213&utm_content=10.1038/s41598-024-54251-1",
+            "github": "https://github.com/lab-smile/RetinaPD"
+        },
+        "abstract": "Parkinson\u2019s disease is the world\u2019s fastest-growing neurological disorder. Research to elucidate the mechanisms of Parkinson\u2019s disease and automate diagnostics would greatly improve the treatment of patients with Parkinson\u2019s disease. Current diagnostic methods are expensive and have limited availability. Considering the insidious and preclinical onset and progression of the disease, a desirable screening should be diagnostically accurate even before the onset of symptoms to allow medical interventions. We highlight retinal fundus imaging, often termed a window to the brain, as a diagnostic screening modality for Parkinson\u2019s disease. We conducted a systematic evaluation of conventional machine learning and deep learning techniques to classify Parkinson\u2019s disease from UK Biobank fundus imaging. Our results suggest Parkinson\u2019s disease individuals can be differentiated from age and gender-matched healthy subjects with 68% accuracy. This accuracy is maintained when predicting either prevalent or incident Parkinson\u2019s disease. Explainability and trustworthiness are enhanced by visual attribution maps of localized biomarkers and quantified metrics of model robustness to data perturbations.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Precise and Rapid Whole-Head Segmentation from Magnetic Resonance Images of Older Adults using Deep Learning",
+        "type": "Journal",
+        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Jason Chen, Alejandro Albizu, Ayden Dunn, Samantha Pedersen, Kyle B. See, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "Imaging Neuroscience-Inspired",
+        "publication_year": "2024",
+        "image_src": "img/pubs/IMAGNeuro.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00090/119208/Precise-and-Rapid-Whole-Head-Segmentation-from"
+        },
+        "abstract": "Whole-head segmentation from Magnetic Resonance Images (MRI) establishes the foundation for individualized computational models using finite element method (FEM). This foundation paves the path for computer-aided solutions in fields, particularly in non-invasive brain stimulation. Most current automatic head segmentation tools are developed using healthy young adults. Thus, they may neglect the older population that is more prone to age-related structural decline such as brain atrophy. In this work, we present a new deep learning method called GRACE, which stands for General, Rapid, And Comprehensive whole-hEad tissue segmentation. GRACE is trained and validated on a novel dataset that consists of 177 manually corrected MR-derived reference segmentations that have undergone meticulous manual review. Each T1-weighted MRI volume is segmented into 11 tissue types, including white matter, grey matter, eyes, cerebrospinal fluid, air, blood vessel, cancellous bone, cortical bone, skin, fat, and muscle. To the best of our knowledge, this work contains the largest manually corrected dataset to date in terms of number of MRIs and segmented tissues. GRACE outperforms five freely available software tools and a traditional 3D U-Net on a five-tissue segmentation task. On this task, GRACE achieves an average Hausdorff Distance of 0.21, which exceeds the runner-up at an average Hausdorff Distance of 0.36. GRACE can segment a whole-head MRI in about 3 seconds, while the fastest software tool takes about 3 minutes. In summary, GRACE segments a spectrum of tissue types from older adults T1-MRI scans at favorable accuracy and speed. The trained GRACE model is optimized on older adult heads to enable high-precision modeling in age-related brain disorders. To support open science, the GRACE code and trained weights will be made available online and open to the research community upon publication.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Texture and motion aware perception in-loop filter for AV1",
+        "type": "Journal",
+        "authors": "Tianqi Liu, Hong Huang, Zhijun Lei, <b>Ruogu Fang</b>, Dapeng Wu",
+        "citation": "Journal of Visual Communication and Image Representation",
+        "publication_year": "February 2024",
+        "image_src": "img/pubs/JVCIR.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1047320323002754?dgcid=coauthor"
+        },
+        "abstract": "Lossy compression introduces artifacts, and many conventional in-loop filters have been adopted in the AV1 standard to reduce these artifacts. Researchers have explored deep learning-based filters to remove artifacts in the compression loop. However, the high computational complexity of CNN-based filters remains a challenge. In this paper, a Texture- and Motion-Aware Perception (TMAP) in-loop filter is proposed to addresses this issue by selectively applying CNNs to texture-rich and high-motion regions, while utilizing non-learning methods to detect these regions. The proposed method introduces a new CNN structure, the Dense-Dual-Field Network (DDFN), which leverages a larger receptive field to enhance the quality of reconstructed frames by incorporating more contextual information. Furthermore, to improve perceptual quality, a novel loss function integrating wavelet-based perceptual information is presented. Experimental results demonstrate the superiority of our proposed models over other lightweight CNN models, and the effectiveness of the perceptual loss function is validated using the VMAF metric.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Medical Imaging Denoising",
+        "type": "Book Chapter",
+        "authors": "Yao Xiao, Kai Huang, Hely Lin, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Image Synthesis: Methods and Clinical Applications, Taylor & Francis group",
+        "publication_year": "2024",
+        "image_src": "img/pubs/TaylorFrancis.jpg",
+        "label_class": "success",
+        "external_links": {
+            "sciencedirect": "https://www.routledge.com/Medical-Image-Synthesis-Methods-and-Clinical-Applications/Yang/p/book/9781032152844"
+        },
+        "data_year": "2024"
+    },
+    {
+        "title": "Ethnic disparity in diagnosing asymptomatic bacterial vaginosis using machine learning",
+        "type": "Journal",
+        "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra P. Ojo, Emma Drobina, Adetola F. Louis-Jacques, Juan E. Gilbert, <u><b>Ruogu Fang</b></u>\u2020, Ivana Parker \u2020 <br/>\n            (\u2020 co-corresponding authors)",
+        "citation": "Nature npj Digital Medicine",
+        "publication_year": "November 2023",
+        "image_src": "img/pubs/nature.digitalmedicine.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.nature.com/articles/s41746-023-00953-1?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20231117&utm_content=10.1038/s41746-023-00953-1"
+        },
+        "abstract": "A handheld near-infrared optical scanner (NIROS) was recently developed to map for effective changes in oxy- and deoxyhemoglobin concentration in diabetic foot ulcers (DFUs) across weeks of treatment. Herein, a coregistration and image segmentation approach was implemented to overlay hemoglobin maps onto the white light images of ulcers. Validation studies demonstrated over 97% accuracy in coregistration. Coregistration was further applied to a healing DFU across weeks of healing. The potential to predict changes in wound healing was observed when comparing the coregistered and segmented hemoglobin concentration area maps to the visual area of the wound.",
+        "data_year": "2023"
+    },
+    {
+        "title": "Ethnic Disparity in Diagnosing Asymptomatic Bacterial Vaginosis Using Machine Learning",
+        "type": "Conference",
+        "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra Ojo, Emma Drobina, Juan Gilbert, <b>Ruogu Fang</b>, Ivana Parker",
+        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "publication_year": "October 11-14, 2023",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "Feature selection in ML identifies unique bacteria to consider for fair BV diagnosis among ethnicities",
+        "type": "Conference",
+        "authors": "Dion Ming, Cameron Celeste, Emma Drobina, Justin Broce, Diandra Ojo, <b>Ruogu Fang</b>, Ivana Parker",
+        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "publication_year": "October 11-14, 2023",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability",
+        "type": "Conference",
+        "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
+        "citation": "26th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Vancouver, Canada.",
+        "publication_year": "October 08-12, 2023",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "github": "https://github.com/lab-smile/DOMINOplusplus"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "Large Brain Models: Large-scale 3D Pretrained Deep Learning Models for Neuroimages",
+        "type": "Conference",
+        "authors": "Joseph Cox, Yunchao Yang, Huiwen Ju, Justin Broce, <u><b>Ruogu Fang</b></u>.",
+        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "publication_year": "October 11-14, 2023",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "Can Deep Convolutional Neural Network Associate Emotions with Gabor Patches?",
+        "type": "Conference",
+        "authors": "Seowung Leem, Andreas Keil, Peng Liu, Mingzhou Ding, <u><b>Ruogu Fang</b></u>.",
+        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "publication_year": "October 11-14, 2023",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "Building and Evaluating an AI Generated, Standardized Affective Picture Dataset",
+        "type": "Conference",
+        "authors": "Faith E Gilbert, Ethan Smith, Hannah M Engle, Caitlin M Traiser, Arash Mirifar, Christian Panitz, Jourdan Pouliot, Laura C Ahumada Hernandez, , Mingzhou Ding, <b>Ruogu Fang</b>, <u>Andreas Keil</u>",
+        "citation": "Society for Psychophysiological Research 63rd Annual Meeting",
+        "publication_year": "September 27 - October 1, 2023",
+        "image_src": "img/pubs/SPR.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://sprweb.org/page/FuturePastMeetings"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "Machine-Learning Defined Precision tDCS for Improving Cognitive Function",
+        "type": "Journal",
+        "authors": "Alejandro Albizu, Aprinda Indahlastari, Ziqian Huang, Jori Waner, Skylar E. Stolte, <u><b>Ruogu Fang</b></u>, <u>Adam J. Woods</u>",
+        "citation": "",
+        "publication_year": "June, 2023",
+        "image_src": "img/pubs/brainstim.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.brainstimjrnl.com/article/S1935-861X(23)01787-4/fulltext"
+        },
+        "data_year": "2023"
+    },
+    {
+        "title": "Editorial: Frontiers of women in brain imaging and brain stimulation",
+        "type": "Journal",
+        "authors": "<strong>Ruogu Fang</strong>, Lijun Bai, Wen Li",
+        "citation": "",
+        "publication_year": "May, 2023",
+        "image_src": "img/pubs/Frontiers.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/articles/10.3389/fnhum.2023.1208253/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Human_Neuroscience&id=1208253"
+        },
+        "abstract": "Advancements in brain imaging and stimulation have revolutionized our understanding of the human brain, its functioning, and the associated disorders. However, the historical male-dominated culture and practice in this field and the underrepresentation of women researchers and leaders could curb its development and limit its full potential. As such, this Research Topic, \u201cWomen in brain imaging and stimulation,\u201d aims to showcase the work led by female researchers in the field and highlight their scholarship and scientific achievements at the frontier of interdisciplinary research of brain imaging and stimulation.",
+        "data_year": "2023"
+    },
+    {
+        "title": "Distributed Pruning Towards Tiny Neural Networks in Federated Learning",
+        "type": "Conference",
+        "authors": "Hong Huang, Lan Zhang, Chaoyue Sun, <u><b>Ruogu Fang</b></u>, Xiaoyong Yuan, and Dapeng Wu.",
+        "citation": "43rd IEEE International Conference on Distributed Computing Systems (ICDCS 2023).",
+        "publication_year": "July 18-21, 2023",
+        "image_src": "img/pubs/IEEE.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://icdcs2023.icdcs.org/"
+        },
+        "abstract": "Neural network pruning is an essential technique for reducing the size and complexity of deep neural networks, enabling large-scale models on devices with limited resources. However, existing pruning approaches heavily rely on training data for guiding the pruning strategies, making them ineffective for federated learning over distributed and confidential datasets. Additionally, the memory- and computation-intensive pruning process becomes infeasible for recourse-constrained devices in federated learning. To address these challenges, we propose FedTiny, a distributed pruning framework for federated learning that generates specialized tiny models for memory- and computing-constrained devices. We introduce two key modules in FedTiny to adaptively search coarse- and finer-pruned specialized models to fit deployment scenarios with sparse and cheap local computation. First, an adaptive batch normalization selection module is designed to mitigate biases in pruning caused by the heterogeneity of local data. Second, a lightweight progressive pruning module aims to finer prune the models under strict memory and computational budgets, allowing the pruning policy for each layer to be gradually determined rather than evaluating the overall model structure. The experimental results demonstrate the effectiveness of FedTiny, which outperforms state-of-the-art approaches, particularly when compressing deep models to extremely sparse tiny models. FedTiny achieves an accuracy improvement of 2.61% while significantly reducing the computational cost by 95.91% and the memory footprint by 94.01% compared to state-of-the-art methods.",
+        "data_year": "2023"
+    },
+    {
+        "title": "DOMINO: Domain-aware Model Calibration in Medical Image Segmentation",
+        "type": "Journal",
+        "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
+        "citation": "Software Impacts",
+        "publication_year": "Feb, 2023",
+        "image_src": "img/pubs/SoftwareImpacts.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "github": "https://github.com/lab-smile/DOMINO"
+        },
+        "abstract": "Model calibration measures the agreement between the predicted probability estimates and the true correctness likelihood. Proper model calibration is vital for high-risk applications. Unfortunately, modern deep neural networks are poorly calibrated, compromising trustworthiness and reliability. Medical image segmentation particularly suffers from this due to the natural uncertainty of tissue boundaries. This is exasperated by their loss functions, which favor overconfidence in the majority classes. We address these challenges with DOMINO, a domain-aware model calibration method that leverages the semantic confusability and hierarchical similarity between class labels. Our experiments demonstrate that our DOMINO-calibrated deep neural networks outperform non-calibrated models and state-of-the-art morphometric methods in head image segmentation. Our results show that our method can consistently achieve better calibration, higher accuracy, and faster inference times than these methods, especially on rarer classes. This performance is attributed to our domain-aware regularization to inform semantic model calibration. These findings show the importance of semantic ties between class labels in building confidence in deep learning models. The framework has the potential to improve the trustworthiness and reliability of generic medical image segmentation models.",
+        "data_year": "2023"
+    },
+    {
+        "title": "Association of Longitudinal Cognitive Decline with Diffusion Changes in Gray Matter, and Amyloid and Tau Deposition",
+        "type": "Journal",
+        "authors": "Wei-en Wang, Rob Chen, Robin Perry Mayrand, Malek Adjouadi, <b>Ruogu Fang</b>, Steven T. DeKosky, Ranjan Duara, Stephen A. Coombes, David E. Vaillancourt, for the Alzheimer's Disease Neuroimaging Initiative",
+        "citation": "Neurobiology of Aging,",
+        "publication_year": "2022",
+        "image_src": "img/pubs/NoA.jpeg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S0197458022002299?via%3Dihub"
+        },
+        "abstract": "Extracellular amyloid plaques in gray matter are the earliest pathological marker for Alzheimer\u2019s disease (AD), followed by abnormal intraneuronal tau protein accumulation. Diffusion MRI (dMRI) is an imaging technique that estimates diffusion properties of the extracellular and tissue compartments. The link between diffusion changes and amyloid and tau pathology in gray matter is not well understood. We aimed to characterize the relationship between diffusion measures and amyloid and tau deposits in the gray matter across Braak stages, as assessed by tau PET imaging, in mild cognitive impairment (MCI) and AD patients.",
+        "data_year": "2022"
+    },
+    {
+        "title": "Augmenting cognitive training in older adults with transcranial direct current stimulation: Initial results from the Phase III ACT trial and new directions",
+        "type": "Journal",
+        "authors": "<u>Adam J. Woods</u>, Gene Alexander, Ronald Cohen, Michael Marsiske, Steven T DeKosky, Georg A. Hishaw, Samuel S. Wu, Aprinda Indahlastari, Alejandro Albizu, <b>Ruogu Fang</b>",
+        "citation": "Alzheimer's Association",
+        "publication_year": "20 Dec, 2022",
+        "image_src": "img/pubs/AA.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://alz-journals.onlinelibrary.wiley.com/doi/abs/10.1002/alz.067612"
+        },
+        "abstract": "Effective non-pharmacological interventions to remediate age-related cognitive decline and alter trajectories toward dementia are limited. The Augmenting Cognitive Training in Older Adults trial (ACT) was the first phase III randomized clinical trial initiated for transcranial direct current stimulation.",
+        "data_year": "2022"
+    },
+    {
+        "title": "Identify diabetic retinopathy-related clinical concepts and their attributes using transformer-based natural language processing methods",
+        "type": "Journal",
+        "authors": "Zehao Yu , Xi Yang, Gianna L. Sweeting, Yinghan Ma, Skylar E. Stolte, <b>Ruogu Fang</b>, Yonghui Wu",
+        "citation": "BMC Medical Informatics and Decision Making",
+        "publication_year": "Sept, 2022",
+        "image_src": "img/pubs/BMC.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-022-01996-2"
+        },
+        "abstract": "Diabetic retinopathy (DR) is a leading cause of blindness in American adults. If detected, DR can be treated to prevent further damage causing blindness. There is an increasing interest in developing artificial intelligence (AI) technologies to help detect DR using electronic health records. The lesion-related information documented in fundus image reports is a valuable resource that could help diagnoses of DR in clinical decision support systems. However, most studies for AI-based DR diagnoses are mainly based on medical images; there is limited studies to explore the lesion-related information captured in the free text image reports.",
+        "data_year": "2022"
+    },
+    {
+        "title": "Differential Aversive and Appetitive Conditioning in Artificial Neural Networks",
+        "type": "Conference",
+        "authors": "Seowung Leem, Andreas Keil, Peng Liu, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
+        "citation": "Neuroscience 2022, San Diego, USA",
+        "publication_year": "Nov.12 - Nov.16, 2022",
+        "image_src": "img/pubs/SfN.jpeg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2022"
+        },
+        "data_year": "2022"
+    },
+    {
+        "title": "PIMA-CT: Physical Model-Aware Cyclic Simulation and Denoising for Ultra-Low-Dose CT Restoration",
+        "type": "Journal",
+        "authors": "Peng Liu, Linsong Xu, Garrett Fullerton, Yao Xiao, James-Bond Nguyen, Zhongyu Li, Izabella Barreto, Catherine Olguin, <b><u>Ruogu Fang</u></b>",
+        "citation": "Frontiers in Radiology",
+        "publication_year": "May, 2022",
+        "image_src": "img/pubs/frontiers-radiology.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/articles/10.3389/fradi.2022.904601/full"
+        },
+        "abstract": "A body of studies has proposed to obtain high-quality images from low-dose and noisy Computed Tomography (CT) scans for radiation reduction. However, these studies are designed for population-level data without considering the variation in CT devices and individuals, limiting the current approaches' performance, especially for ultra-low-dose CT imaging. Here, we proposed PIMA-CT, a physical anthropomorphic phantom model integrating an unsupervised learning framework, using a novel deep learning technique called Cyclic Simulation and Denoising (CSD), to address these limitations. We first acquired paired low-dose and standard-dose CT scans of the phantom and then developed two generative neural networks: noise simulator and denoiser. The simulator extracts real low-dose noise and tissue features from two separate image spaces (e.g., low-dose phantom model scans and standard-dose patient scans) into a unified feature space. Meanwhile, the denoiser provides feedback to the simulator on the quality of the generated noise. In this way, the simulator and denoiser cyclically interact to optimize network learning and ease the denoiser to simultaneously remove noise and restore tissue features. We thoroughly evaluate our method for removing both real low-dose noise and Gaussian simulated low-dose noise. The results show that CSD outperforms one of the state-of-the-art denoising algorithms without using any labeled data (actual patients' low-dose CT scans) nor simulated low-dose CT scans. This study may shed light on incorporating physical models in medical imaging, especially for ultra-low level dose CT scans restoration.",
+        "data_year": "2022"
+    },
+    {
+        "title": "DOMINO: Domain-aware Model Calibration in Medical Image Segmentation",
+        "type": "Conference",
+        "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
+        "citation": "25th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Singapore.",
+        "publication_year": "September 18-22, 2022",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "github": "https://github.com/lab-smile/DOMINO"
+        },
+        "data_year": "2022"
+    },
+    {
+        "title": "Associations between Post-Discharge Care (PDC) and Cognitive Impairment-Related Hospital Readmissions for Ketoacidosis and Severe Hypoglycemia in Adults with Diabetes",
+        "type": "Journal",
+        "authors": "Yehua Wang, Ping Zhang, <strong>Ruogu Fang</strong>, Joshua Brown, Jingchuan Guo, Tianze Jiao, Hui Shao",
+        "citation": "Diabetes 71, no. Supplement_1",
+        "publication_year": "June 01, 2022",
+        "image_src": "img/pubs/Diabetes.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://diabetesjournals.org/diabetes/article/71/Supplement_1/173-OR/146043/173-OR-Associations-between-Post-Discharge-Care"
+        },
+        "data_year": "2022"
+    },
+    {
+        "title": "Incremental Health Care Utilizations and Medical Expenditures Associated with Cognitive Impairment among Older Adults with Diabetes",
+        "type": "Journal",
+        "authors": "Dawei Guan, Ping Zhang, Shichao Tang, Joshua Brown, <strong>Ruogu Fang</strong>, Jingchuan Guo, Yongkang Zhang, Hui Shao",
+        "citation": "Diabetes 71, no. Supplement_1",
+        "publication_year": "June 01, 2022",
+        "image_src": "img/pubs/Diabetes.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://diabetesjournals.org/diabetes/article/71/Supplement_1/893-P/145410"
+        },
+        "data_year": "2022"
+    },
+    {
+        "title": "System and Method for Precision Dosing For Electrical Stimulation of the Brain",
+        "type": "Patents",
+        "authors": "Adam Woods, Alejandro Albizu, <u><b>Ruogu Fang</b></u>, Aprinda Indahlastari",
+        "citation": "WO 2022/026573 A1",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2022"
+    },
+    {
+        "title": "Machine Learning For Predicting Parkinson\u2019s Disease Based On Retinal Fundus Images",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Max Diaz",
+        "citation": "U.S. Patent Recorded on December 22, 2021",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2021"
+    },
+    {
+        "title": "A Machine Learning System And Method For Predicting Alzheimer\u2019s Disease Based On Retinal Fundus Images",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Jianqiao Tian",
+        "citation": "T18201US001 (222107-8215). International Patent. WO 2021/243246 A1",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2021"
+    },
+    {
+        "title": "Systems And Methods For Reconstructing Realistic Noisy Medical Images",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Peng Liu",
+        "citation": "WO 2021/202170 A1. International patent",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2021"
+    },
+    {
+        "title": "Multimodal CT Image Super-Resolution Via Transfer Generative Adversarial Network",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Yao Xiao",
+        "citation": "U.S-2021-0272237-A1",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2021"
+    },
+    {
+        "title": "Neural Network Evolution Using Expedited Genetic Algorithm for Medical Image Denoising",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Peng Liu",
+        "citation": "U.S. Utility Patent US 11,069,033 B2",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2021"
+    },
+    {
+        "title": "Biology and Neuroscience Inspired Deep Learning",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Peng Liu</strong>",
+        "citation": "Biomedical Engineering, University of Florida",
+        "publication_year": "2021",
+        "image_src": "img/pubs/uf.png",
+        "label_class": "success",
+        "data_year": "2021"
+    },
+    {
+        "title": "Unraveling Somatotopic Organization in the Human Brain using Machine Learning and Adaptive Supervoxel-based Parcellations",
+        "type": "Journal",
+        "authors": "Kyle B. See, David J. Arpin, David E. Vaillancourt, <u><b>Ruogu Fang</b></u>, Stephen A. Coombes",
+        "citation": "NeuroImage",
+        "publication_year": "November, 2021",
+        "image_src": "img/pubs/NeuroImage.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1053811921009824"
+        },
+        "abstract": "In addition to the well-established somatotopy in the pre- and post-central gyrus, there is now strong evidence that somatotopic organization is evident across other regions in the sensorimotor network. This raises several experimental questions: To what extent is activity in the sensorimotor network effector-dependent and effector-independent? How important is the sensorimotor cortex when predicting the motor effector? Is there redundancy in the distributed somatotopically organized network such that removing one region has little impact on classification accuracy? To answer these questions, we developed a novel experimental approach. fMRI data were collected while human subjects performed a precisely controlled force generation task separately with their hand, foot, and mouth. We used a simple linear iterative clustering (SLIC) algorithm to segment whole-brain beta coefficient maps to build an adaptive brain parcellation and then classified effectors using extreme gradient boosting (XGBoost) based on parcellations at various spatial resolutions. This allowed us to understand how data-driven adaptive brain parcellation granularity altered classification accuracy. Results revealed effector-dependent activity in regions of the post-central gyrus, precentral gyrus, and paracentral lobule. SMA, regions of the inferior and superior parietal lobule, and cerebellum each contained effector-dependent and effector-independent representations. Machine learning analyses showed that increasing the spatial resolution of the data-driven model increased classification accuracy, which reached 94% with over 1,755 supervoxels. Our SLIC-based supervoxel parcellation outperformed classification analyses using established brain templates and random simulations. Occlusion experiments further demonstrated redundancy across the sensorimotor network when classifying effectors. Our observations extend our understanding of effector-dependent and effector-independent organization within the human brain and provide new insight into the functional neuroanatomy required to predict the motor effector used in a motor control task.",
+        "data_year": "2021"
+    },
+    {
+        "title": "Baseline neuroimaging predicts decline to dementia from amnestic mild cognitive impairment",
+        "type": "Journal",
+        "authors": "Joseph M Gullett, Alejandro Albizu, <b>Ruogu Fang</b>, David A Loewenstein, Ranjan Duara, Monica Rosselli, Melissa J Armstrong, Tatjana Rundek, Hanna K Hausman, Steven T Dekosky, Adam J Woods, Ronald A Cohen",
+        "citation": "Frontiers in Aging Neuroscience",
+        "publication_year": "November, 2021",
+        "image_src": "img/pubs/frontiers-in-aging-neuroscience.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/articles/10.3389/fnagi.2021.758298/full"
+        },
+        "abstract": "Background and Objectives: Prediction of decline to dementia using objective biomarkers in high-risk patients with amnestic mild cognitive impairment (aMCI) has immense utility. Our objective was to use multimodal MRI to 1) determine whether accurate and precise prediction of dementia conversion could be achieved using baseline data alone, and 2) generate a map of the brain regions implicated in longitudinal decline to dementia.",
+        "data_year": "2021"
+    },
+    {
+        "title": "CADA: Multi-scale Collaborative Adversarial Domain Adaptation for Unsupervised Optic Disc and Cup Segmentation",
+        "type": "Journal",
+        "authors": "Peng Liu, Charlie Tran, Bin Kong, <u><b>Ruogu Fang</b></u>",
+        "citation": "Neurocomputing",
+        "publication_year": "October 29, 2021",
+        "image_src": "img/pubs/Neurocomputing.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S0925231221015642"
+        },
+        "abstract": "Recently, deep neural networks have demonstrated comparable and even better performance than board-certified ophthalmologists in well-annotated datasets. However, the diversity of retinal imaging devices poses a significant challenge: domain shift, which leads to performance degradation when applying the deep learning models trained on one domain to new testing domains. In this paper, we propose a multi-scale input along with multiple domain adaptors applied hierarchically in both feature and output spaces. The proposed training strategy and novel unsupervised domain adaptation framework, called Collaborative Adversarial Domain Adaptation (CADA), can effectively overcome the challenge. Multi-scale inputs can reduce the information loss due to the pooling layers used in the network for feature extraction, while our proposed CADA is an interactive paradigm that presents an exquisite collaborative adaptation through both adversarial learning and ensembling weights at different network layers. In particular, to produce a better prediction for the unlabeled target domain data, we simultaneously achieve domain invariance and model generalizability via adversarial learning at multi-scale outputs from different levels of network layers and maintaining an exponential moving average (EMA) of the historical weights during training. Without annotating any sample from the target domain, multiple adversarial losses in encoder and decoder layers guide the extraction of domain-invariant features to confuse the domain classifier. Meanwhile, the ensembling of weights via EMA reduces the uncertainty of adapting multiple discriminator learning. Comprehensive experimental results demonstrate that our CADA model incorporating multi-scale input training can overcome performance degradation and outperform state-of-the-art domain adaptation methods in segmenting retinal optic disc and cup from fundus images stemming from the REFUGE, Drishti-GS, and Rim-One-r3 datasets. The code will be available at https://github.com/cswin/CADA",
+        "data_year": "2021"
+    },
+    {
+        "title": "Rotational and Reflectional Equivariant Convolutional Neural Network for data-limited applications: Multiphase Flow demonstration",
+        "type": "Journal",
+        "authors": "Bhargav Siddani, S. Balachandar, <b>Ruogu Fang</b>",
+        "citation": "Physics of Fluids",
+        "publication_year": "October 22, 2021",
+        "image_src": "img/pubs/Physics_of_Fluids.jpeg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://aip.scitation.org/doi/10.1063/5.0066049"
+        },
+        "abstract": "This article deals with approximating steady-state particle-resolved fluid flow around a fixed particle of interest under the influence of randomly distributed stationary particles in a dispersed multiphase setup using convolutional neural network (CNN). The considered problem involves rotational symmetry about the mean velocity (streamwise) direction. Thus, this work enforces this symmetry using SE(3)-equivariant, special Euclidean group of dimension 3, CNN architecture, which is translation and three-dimensional rotation equivariant. This study mainly explores the generalization capabilities and benefits of a SE(3)-equivariant network. Accurate synthetic flow fields for Reynolds number and particle volume fraction combinations spanning over a range of [86.22, 172.96] and [0.11, 0.45], respectively, are produced with careful application of symmetry-aware data-driven approach.",
+        "data_year": "2021"
+    },
+    {
+        "title": "Machine Learning for Physics-Informed Generation of Dispersed Multiphase Flow Using Generative Adversarial Networks",
+        "type": "Journal",
+        "authors": "Bhargav Siddani, S. Balachandar., William C. Moore, Yunchao Yang, <b>Ruogu Fang</b>",
+        "citation": "Theoretical and Computational Fluid Dynamics",
+        "publication_year": "October 28, 2021",
+        "image_src": "img/pubs/TCFD.jpeg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/article/10.1007/s00162-021-00593-9"
+        },
+        "abstract": "Fluid flow around a random distribution of stationary spherical particles is a problem of substantial importance in the study of dispersed multiphase flows. In this paper we present a machine learning methodology using Generative Adversarial Network framework and Convolutional Neural Network architecture to recreate particle-resolved fluid flow around a random distribution of monodispersed particles. The model was applied to various Reynolds number and par- ticle volume fraction combinations spanning over a range of [2.69, 172.96] and [0.11, 0.45] respectively. Test performance of the model for the studied cases is very promising. \nKeywords: Pseudo-turbulence, Multiphase Flow prediction, Generative Adversarial Network (GAN), Convolutional Neural Network (CNN)",
+        "data_year": "2021"
+    },
+    {
+        "title": "A deep neural network for emotion perception",
+        "type": "Conference",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020, <br/>\n                (\u2020 co-corresponding authors)",
+        "citation": "Montreal AI & Neuroscience Annual Meeting \n                November 29-30, Montreal, Canada",
+        "publication_year": "November 29-30, 2021",
+        "image_src": "img/pubs/MAIN2021.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.main2021.org/home"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "Emergence of emotion selectivity in deep neural networks trained to recognize visual objects",
+        "type": "Conference",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020,  <br/>\n                (\u2020 co-corresponding authors)",
+        "citation": "Society of Neuroscience (SfN) Annual Meeting \n                Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
+        "publication_year": "November 8-16, 2021",
+        "image_src": "img/pubs/SfN.jpeg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2021"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "A deep neural network model for emotion perception",
+        "type": "Conference",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>\u2020, Mingzhou Ding\u2020 <br/>\n                (\u2020 co-corresponding authors)",
+        "citation": "Society of Neuroscience (SfN) Annual Meeting \n                Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
+        "publication_year": "November 8-16, 2021",
+        "image_src": "img/pubs/SfN.jpeg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2021"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "Machine-Learning Defined Precision tDCS for Improving Cognitive Function",
+        "type": "Conference",
+        "authors": "Alejandro Albizu, <b>Ruogu Fang</b>, Aprinda Indahlastari, Andrew O\u2019Shea, Skylar E. Stolte, Kyle B. See, Emanuel M. Boutzoukas, Jessica N. Kraft, Nicole R. Nissim, and Adam J. Woods",
+        "citation": "Society of Neuroscience (SfN) Annual Meeting \n                Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
+        "publication_year": "November 8-16, 2021",
+        "image_src": "img/pubs/SfN.jpeg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2021"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "Identify Diabetic Retinopathy-related Clinical Concepts Using Transformer-based Natural Language Processing Methods",
+        "type": "Conference",
+        "authors": "Zehao Yu, Xi Yang, Gianna L Sweeting, Yinghan Ma, Skylar E Stolte, <b>Ruogu Fang</b>, Yonghui Wu",
+        "citation": "The Fourth International Workshop on Health Natural Language Processing, Victoria, Canada (virtual)",
+        "publication_year": "August 9, 2021",
+        "image_src": "https://ohnlp.github.io/HealthNLP2021/Health%20NLP%202021_files/vbc.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://ieeexplore.ieee.org/abstract/document/9565706/authors#authors"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "Predicting Treatment Outcome in Spinal Cord Stimulation with EEG",
+        "type": "Conference",
+        "authors": "Kyle See, Rachel Judy, Stephen Coombes, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Orlando, FL.",
+        "publication_year": "October 6-9, 2021",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/annualmeeting"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "Ensemble Machine Learning for Alzheimer\u2019s disease Classification from Retinal Vasculature",
+        "type": "Conference",
+        "authors": "Hely Lin, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Orlando, FL.",
+        "publication_year": "October 6-9, 2021",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/annualmeeting"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "TL1 Team Approach to Predicting Response to Spinal Cord Stimulation for Chronic Low Back Pain",
+        "type": "Conference",
+        "authors": "Kyle See, Rachel Ho, Steven Coombes, <u><b>Ruogu Fang</b></u>",
+        "citation": "Journal of Clinical and Translational Sciences",
+        "publication_year": "March 30, 2021",
+        "image_src": "img/pubs/journal_of%20clinical%20and%20translational%20science.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/66361-tl1-team-approach-to-predicting-response-to-spinal-cord-stimulation-for-chronic-low-back-pain/DDE70E18EAF3E88623DFC9F5645CC278"
+        },
+        "data_year": "2021"
+    },
+    {
+        "title": "Modular machine learning for Alzheimer's disease classification from retinal vasculature",
+        "type": "Journal",
+        "authors": "Jianqiao Tian, Glenn Smith, Han Guo, Boya Liu, Zehua Pan, Zijie Wang, Shuangyu Xiong, <u><b>Ruogu Fang</b></u>",
+        "citation": "Nature Scientific Reports",
+        "publication_year": "January 8, 2021",
+        "image_src": "img/pubs/SciReports.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.nature.com/articles/s41598-020-80312-2"
+        },
+        "abstract": "Alzheimer's disease is the leading cause of dementia. The long progression period in Alzheimer's disease provides a possibility for patients to get early treatment by having routine screenings. However, current clinical diagnostic imaging tools do not meet the specific requirements for screening procedures due to high cost and limited availability. In this work, we took the initiative to evaluate the retina, especially the retinal vasculature, as an alternative for conducting screenings for dementia patients caused by Alzheimer's disease. Highly modular machine learning techniques were employed throughout the whole pipeline. Utilizing data from the UK Biobank, the pipeline achieved an average classification accuracy of 82.44%. Besides the high classification accuracy, we also added a saliency analysis to strengthen this pipeline's interpretability. The saliency analysis indicated that within retinal images, small vessels carry more information for diagnosing Alzheimer's diseases, which aligns with related studies.",
+        "data_year": "2021"
+    },
+    {
+        "title": "CFEA: Collaborative Feature Ensembling Adaptation For Domain Adaptation In Unsupervised Optic Disc and Cup Segmentation",
+        "type": "Patents",
+        "authors": "Peng Liu and <u><b>Ruogu Fang</b></u>",
+        "citation": "Ref No.: T18094US001 (222107-8940) U.S. Provisional Patent Application Serial No. 63/001,771",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2020"
+    },
+    {
+        "title": "Prediction of Functional Motor Tasks with Dynamic Supervoxel Parcellations",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Kyle See, Steven Coombes",
+        "citation": "Provisional patent pending.",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2020"
+    },
+    {
+        "title": "System and Methods for Predicting Perfusion Images from Non-Contrast Scans",
+        "type": "Patents",
+        "authors": "<u><b>Ruogu Fang</b></u>, Garrett Fullerton, Simon Kato.",
+        "citation": "Provisional patent pending.",
+        "publication_year": "",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "data_year": "2020"
+    },
+    {
+        "title": "Machine learning and individual variability in electric field characteristics predict tDCS treatment response.",
+        "type": "Journal",
+        "authors": "Alejandro Albizu, <strong>Ruogu Fang</strong>, Aprinda Indahlastari, Andrew OShea, Skylar E. Stolte, Kyle B. See, Emanuel M. Boutzoukas, Jessica N. Kraft, Nicole R. Nissim and Adam J. Woods",
+        "citation": "Brain Stimulation",
+        "publication_year": "November/December, 2020",
+        "image_src": "img/pubs/brainstim.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1935861X20302680"
+        },
+        "abstract": "Transcranial direct current stimulation (tDCS) is widely investigated as a therapeutic tool to enhance cognitive function in older adults with and without neurodegenerative disease. Prior research demonstrates that electric current delivery to the brain can vary significantly across individuals. Quantification of this variability could enable person-specific optimization of tDCS outcomes. This pilot study used machine learning and MRI-derived electric field models to predict working memory improvements as a proof of concept for precision cognitive intervention.",
+        "data_year": "2020"
+    },
+    {
+        "title": "Machine Learning for Parkinsons Disease Diagnosis Using Fundus Eye Images",
+        "type": "Conference",
+        "authors": "Maximillian Diaz, Jianqiao Tian, Adolfo Ramirez-Zamora, <u><b>Ruogu Fang</b></u>",
+        "citation": "Annual Meeting of Radiology Society of North America",
+        "publication_year": "December, 2020",
+        "image_src": "img/pubs/RSNA.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://press.rsna.org/timssnet/media/pressreleases/14_pr_target.cfm?ID=2229"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "Artificial Intelligence For Characterizing Heart Failure In Cardiac Magnetic Resonance Images",
+        "type": "Conference",
+        "authors": "Skylar Stolte, Yonghui Wu, William R Hogan, Yan Gong, <u><b>Ruogu Fang</b></u>",
+        "citation": "American Heart Association Scientific Session",
+        "publication_year": "November 13-17, 2020",
+        "image_src": "img/pubs/AHA.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.ahajournals.org/doi/abs/10.1161/circ.142.suppl_3.15036?af=R"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "Physiological wound assessment from coregistered and segmented tissue hemoglobin maps",
+        "type": "Journal",
+        "authors": "E. A. Robledo, R. Schutzman, <strong>R. Fang</strong>, C. Fernandez, R. Kwasinski, K. Leiva, F. Perez-Clavijo, and A. Godavarty",
+        "citation": "Journal of the Optical Society of America A",
+        "publication_year": "July, 2020",
+        "image_src": "img/pubs/osa-josaa.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.osapublishing.org/josaa/abstract.cfm?uri=josaa-37-8-1249"
+        },
+        "abstract": "A handheld near-infrared optical scanner (NIROS) was recently developed to map for effective changes in oxy- and deoxyhemoglobin concentration in diabetic foot ulcers (DFUs) across weeks of treatment. Herein, a coregistration and image segmentation approach was implemented to overlay hemoglobin maps onto the white light images of ulcers. Validation studies demonstrated over 97% accuracy in coregistration. Coregistration was further applied to a healing DFU across weeks of healing. The potential to predict changes in wound healing was observed when comparing the coregistered and segmented hemoglobin concentration area maps to the visual area of the wound.",
+        "data_year": "2020"
+    },
+    {
+        "title": "TL1 Team Approach to Predicting Short-term and Long-term Effects of Spinal Cord Stimulation",
+        "type": "Journal",
+        "authors": "Kyle See, Rachel Louise Mahealani Judy, Stephen Coombes, <u><b>Ruogu Fang</b></u>",
+        "citation": "Journal of Clinical and Translational Science",
+        "publication_year": "July, 2020",
+        "image_src": "img/pubs/journal_of%20clinical%20and%20translational%20science.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/4085-tl1-team-approach-to-predicting-shortterm-and-longterm-effects-of-spinal-cord-stimulation/9040EFDA2EB3ABE295E5B662DC0F4C33#article"
+        },
+        "abstract": "OBJECTIVES/GOALS: Spinal cord stimulation (SCS) is an intervention for patients with chronic back pain. Technological advances have led to renewed optimism in the field, but mechanisms of action in the brain remain poorly understood. We hypothesize that SCS outcomes will be associated with changes in neural oscillations.\n\n            METHODS/STUDY POPULATION: The goal of our team project is to test patients who receive SCS at 3 times points: baseline, at day 7 during the trial period, and day 180 after a permanent system has been implanted. At each time point participants will complete 10 minutes of eyes closed, resting electroencephalography (EEG). EEG will be collected with the ActiveTwo system, a 128-electrode cap, and a 256 channel AD box from BioSemi. Traditional machine learning methods such as support vector machine and more complex models including deep learning will be used to generate interpretable features within resting EEG signals.\n\n            RESULTS/ANTICIPATED RESULTS: Through machine learning, we anticipate that SCS will have a significant effect on resting alpha and beta power in sensorimotor cortex. DISCUSSION/SIGNIFICANCE OF\n\n            IMPACT: This collaborative project will further the application of machine learning in cognitive neuroscience and allow us to better understand how therapies for chronic pain alter resting brain activity.",
+        "data_year": "2020"
+    },
+    {
+        "title": "Deep Learning For Multimodal CT Image Quality Enhancement and Radiation Exposure Optimization",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Yao Xiao</strong>",
+        "citation": "Biomedical Engineering, University of Florida",
+        "publication_year": "2020",
+        "image_src": "img/pubs/uf.png",
+        "label_class": "success",
+        "data_year": "2020"
+    },
+    {
+        "title": "A Survey on Medical Image Analysis in Diabetic Retinopathy",
+        "type": "Journal",
+        "authors": "Skylar Stolte, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Image Analysis, In Press",
+        "publication_year": "May 30, 2020",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841520301067"
+        },
+        "abstract": "Diabetic Retinopathy (DR) represents a highly-prevalent complication of diabetes in which individuals suffer from damage to the blood vessels in the retina. The disease manifests itself through lesion presence, starting with microaneurysms, at the nonproliferative stage before being characterized by neovascularization in the proliferative stage. Retinal specialists strive to detect DR early so that the disease can be treated before substantial, irreversible vision loss occurs. The level of DR severity indicates the extent of treatment necessary - vision loss may be preventable by effective diabetes management in mild (early) stages, rather than subjecting the patient to invasive laser surgery. Using artificial intelligence (AI), highly accurate and efficient systems can be developed to help assist medical professionals in screening and diagnosing DR earlier and without the full resources that are available in specialty clinics. In particular, deep learning facilitates diagnosis earlier and with higher sensitivity and specificity. Such systems make decisions based on minimally handcrafted features and pave the way for personalized therapies. Thus, this survey provides a comprehensive description of the current technology used in each step of DR diagnosis. First, it begins with an introduction to the disease and the current technologies and resources available in this space. It proceeds to discuss the frameworks that different teams have used to detect and classify DR. Ultimately, we conclude that deep learning systems offer revolutionary potential to DR identification and prevention of vision loss.",
+        "data_year": "2020"
+    },
+    {
+        "title": "Determinants of Treatment Response to Transcranial Direct Current Stimulation",
+        "type": "Conference",
+        "authors": "Albizu A, <strong>Fang R</strong>, Indahlastari A, Nissim NR, OShea A, Woods AJ",
+        "citation": "5th Annual NYC Neuromodulation Conference",
+        "publication_year": "April 20-22, 2020",
+        "image_src": "img/pubs/Neuromodec.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://neuromodec.com/nyc-neuromodulation-online-2020/index.html"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "Building Personalized Medicine Models for Therapeutic Applications of Transcranial Electrical Stimulation",
+        "type": "Conference",
+        "authors": "Albizu A, Indahlastari A, Nissim NR, OShea A, <strong>Ruogu Fang</strong>, Woods AJ",
+        "citation": "48th Annual Meeting of the International Neuropsychological Society",
+        "publication_year": "February 2020",
+        "image_src": "img/pubs/INS.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.the-ins.org/meetings/denver2020/"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "Domain-Invariant Interpretable Fundus Image Quality Assessment",
+        "type": "Journal",
+        "authors": "Yaxin Shen, Bin Sheng, <strong>Ruogu Fang</strong>, Huating Li, Ling Dai, Skylar Stolte*, Jing Qin, Weiping Jia, Dinggang Shen",
+        "citation": "Medical Image Analysis, volume 61",
+        "publication_year": "2020",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S1361841520300219"
+        },
+        "abstract": "Objective and quantitative assessment of fundus image quality is essential for the diagnosis of retinal diseases. The major factors in fundus image quality assessment are image artifact, clarity, and field definition. Unfortunately, most of existing quality assessment methods focus on the quality of overall image, without interpretable quality feedback for real-time adjustment. Furthermore, these models are often sensitive to the specific imaging devices, and cannot generalize well under different imaging conditions. This paper presents a new multi-task domain adaptation framework to automatically assess fundus image quality. The proposed framework provides interpretable quality assessment with both quantitative scores and quality visualization for potential real-time image recapture with proper adjustment. In particular, the present approach can detect optic disc and fovea structures as landmarks, to assist the assessment through coarse-to-fine feature encoding. The framework also exploit semi-tied adversarial discriminative domain adaptation to make the model generalizable across different data sources. Experimental results demonstrated that the proposed algorithm outperforms different state-of-the-art approaches and achieves an area under the ROC curve of 0.9455 for the overall quality classification.",
+        "data_year": "2020"
+    },
+    {
+        "title": "Multi-Series CT Image Super-Resolution by using Transfer Generative Adversarial Network",
+        "type": "Conference",
+        "authors": "Yao Xiao, Manuel M. Arreola, Izabella Barreto, Wesley E. Bolch, W. Christopher Fox, Keith Peters, Dhanashree A. Rajderkar, John H. Rees, <u><b>Ruogu Fang</b></u>",
+        "citation": "Society for Imaing Informatics in Medicine Annual Meeting in Austin, TX",
+        "publication_year": "June 24-26, 2020",
+        "image_src": "img/pubs/SIIM.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://siim.org/page/siim2020"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "Transfer-GAN: Multimodal CT Image Super-Resolution via Transfer Generative Adversarial Networks",
+        "type": "Conference",
+        "authors": "Yao Xiao, Keith R. Peters, W. Christopher Fox, John H. Rees, Dhanashree A. Rajderkar, Manuel M. Arreola, Izabella Barreto, Wesley E. Bolch, <u><b>Ruogu Fang</b></u>",
+        "citation": "IEEE International Symposium on Biomedical Imaging in Iowa City, IA",
+        "publication_year": "April 3-7, 2020",
+        "image_src": "img/pubs/IEEEImaging.png",
+        "label_class": "primary",
+        "data_year": "2020"
+    },
+    {
+        "title": "Transfer Generative Adversarial Network for Multimodal CT Image Super-Resolution",
+        "type": "Conference",
+        "authors": "Yao Xiao, <strong>Ruogu Fang</strong>",
+        "citation": "SPIE Medical Imaging in Houston, TX",
+        "publication_year": "February 15-20, 2020",
+        "image_src": "img/pubs/SPIE.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://spie.org/conferences-and-exhibitions/past-conferences-and-exhibitions/medical-imaging-2020"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "Monte Carlo Dosimetry For CT Brain Perfusion Studies Utilizing Volumetric Acquisitions",
+        "type": "Conference",
+        "authors": "Justin L Brown, Daniel El Basha\u2217, Nathalie Correa, Yao Xiao, Izabella Barreto, <strong>Ruogu Fang</strong>, Chan Kim, Wesley E. Bolch",
+        "citation": "Joint International Conference on Supercomputing in Nuclear Applications + Monte Carlo",
+        "publication_year": "2020",
+        "image_src": "img/pubs/SNAMC2020.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://snamc2020.jpn.org/"
+        },
+        "data_year": "2020"
+    },
+    {
+        "title": "ZMAT4 and DOCK9 Variants Associated with Heart Failure in Breast Cancer Patients in the UK Biobank data",
+        "type": "Conference",
+        "authors": "Marwa Tantawy, Sonal Singh, Guang Yang, Matt Gitzendanner, Yiqing Chen, Yonghui Wu, <strong>Ruogu Fang</strong>, William Hogan, Yan Gong",
+        "citation": "American Society for Clinical Pharmacology and Therapeutics Annual Meeting in Houston, TX",
+        "publication_year": "March 18-21, 2020",
+        "image_src": "img/pubs/ASCPT.png",
+        "label_class": "primary",
+        "data_year": "2020"
+    },
+    {
+        "title": "Low-Rise Gable Roof Buildings Pressure Prediction using Deep Neural Networks",
+        "type": "Journal",
+        "authors": "Jianqiao Tian, Kurtis Gurley, Maximillian Diaz, Pedro L. Ferna\u0301ndez Caba\u0301n, Forrest J. Masters, <u><b>Ruogu Fang</b></u>",
+        "citation": "Journal of Wind Engineering & Industrial Aerodynamics",
+        "publication_year": "2020",
+        "image_src": "img/pubs/JWEIA.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S0167610519306269"
+        },
+        "abstract": "This paper presents a deep neural network (DNN) based approach for predicting mean and peak wind pressure coefficients on the surface of a scale model low-rise, gable roof residential building. Pressure data were collected on the model at multiple prescribed wind directions and terrain roughnesses. The resultant pressure coefficients quantified from a subset of these directions and terrains were used to train an DNN to predict coefficients for directions and terrains excluded from the training. The approach is able to leverage a variety of input conditions to predict pressure coefficients with high accuracy, while the prior work has limited flexibility with the number of input variables and yielded lower prediction accuracy. A two-step nested DNN procedure is introduced to improve the prediction of peak coefficients. The optimal correlation coefficients of return predictions were 0.9993 and 0.9964, for mean and peak coefficient prediction, respectively. The concept of super resolution based on global prediction was also discussed. With a sufficiently large database, the proposed DNN-based approach can augment existing experimental methods to improve the yield of knowledge while reducing the number of tests required to gain that knowledge.",
+        "data_year": "2020"
+    },
+    {
+        "title": "IDRiD: Diabetic Retinopathy \u2013 Segmentation and Grading Challenge",
+        "type": "Journal",
+        "authors": "Prasanna Porwal, Samiksha Pachade, Manesh Kokare, Girish Deshmukh, Jaemin Son, Woong Bae, Lihong Liu, Jianzong Wang, Xinhui Liu, Liangxin Gao, TianBo Wu, Jing Xiao, Fengyan Wang, Baocai Yin, Yunzhi Wang, Gopichandh Danala, Linsheng He, Yoon Ho Choi, Yeong Chan Lee, Sang-Hyuk Jung, Zhongyu Li, Xiaodan Sui, Junyan Wu, Xiaolong Li, Ting Zhou, Janos Toth, Agnes Baran, Avinash Kori, Sai Saketh Chennamsetty, Mohammed Safwan, Varghese Alex, Xingzheng Lyu,r, Li Cheng,D, Qinhao Chu, Pengcheng Li, Xin Ji, Sanyuan Zhang, Yaxin Shen, Ling Dai$, Oindrila Saha, Rachana Sathish, Ta\u0302nia Melo, Teresa Arau\u0301jo, Balazs Harangi, Bin Sheng, <strong>Ruogu Fang</strong>, Debdoot Sheet, Andras Hajdu, Yuanjie Zheng, Ana Maria Mendonc\u0327a, Shaoting Zhang, Aure\u0301lio Campilho, Bin Zheng, Dinggang Shen, Luca Giancardo, Gwenole\u0301 Quellec, Fabrice Me\u0301riaudeau",
+        "citation": "Medical Image Analysis, volume 59",
+        "publication_year": "2020",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841519301033?via%3Dihub"
+        },
+        "abstract": "Diabetic Retinopathy (DR) is the most common cause of avoidable vision loss, predominantly affecting the working-age population across the globe. Screening for DR, coupled with timely consultation and treatment, is a globally trusted policy to avoid vision loss. However, implementation of DR screening programs is challenging due to the scarcity of medical professionals able to screen a growing global diabetic population at risk for DR. Computer-aided disease diagnosis in retinal image analysis could provide a sustainable approach for such large-scale screening effort. The recent scientific advances in computing capacity and machine learning approaches provide an avenue for biomedical scientists to reach this goal. Aiming to advance the state-of-the-art in automatic DR diagnosis, a grand challenge on \u201cDiabetic Retinopathy \u2013 Segmentation and Grading\u201d was organized in conjunction with the IEEE International Symposium on Biomedical Imaging (ISBI - 2018). In this paper, we report the set-up and results of this challenge that is primarily based on Indian Diabetic Retinopathy Image Dataset (IDRiD). There were three principal sub-challenges: lesion segmentation, disease severity grading, and localization of retinal landmarks and segmentation. These multiple tasks in this challenge allow to test the generalizability of algorithms, and this is what makes it different from existing ones. It received a positive response from the scientific community with 148 submissions from 495 registrations effectively entered in this challenge. This paper outlines the challenge, its organization, the dataset used, evaluation methods and results of top-performing participating solutions. The top-performing approaches utilized a blend of clinical information, data augmentation, and an ensemble of models. These findings have the potential to enable new developments in retinal image analysis and image-based DR screening in particular.",
+        "data_year": "2020"
+    },
+    {
+        "title": "REFUGE Challenge: A Unified Framework for Evaluating Automated Methods for Glaucoma Assessment from Fundus Photographs",
+        "type": "Journal",
+        "authors": "Jose Ignacio Orlando, Huazhu Fu, Joa \u0303o Barbossa Breda, Karel van Keer, Deepti R. Bathula, Andre \u0301s Diaz-Pinto, <strong>Ruogu Fang</strong>, Pheng-Ann Heng, Jeyoung Kim, JoonHo Lee, Joonseok Lee, Xiaoxiao Li, Peng Liu, Shuai Lu, Balamurali Murugesan, Valery Naranjo, Sai Samarth R. Phaye, Sharath M. Shankaranarayana, Apoorva Sikka, Jaemin Son, Anton van den Hengel, Shujun Wang, Junyan Wu, Zifeng Wu, Guanghui Xu, Yongli Xu, Pengshuai Yin, Fei Li, Xiulan Zhang, Yanwu Xu, Hrvoje Bogunovic \u0301",
+        "citation": "Medical Image Analysis, volume 59",
+        "publication_year": "2020",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841519301100"
+        },
+        "abstract": "Glaucoma is one of the leading causes of irreversible but preventable blindness in working age populations. Color fundus photography (CFP) is the most cost-effective imaging modality to screen for retinal disorders. However, its application to glaucoma has been limited to the computation of a few related biomarkers such as the vertical cup-to-disc ratio. Deep learning approaches, although widely applied for medical image analysis, have not been extensively used for glaucoma assessment due to the limited size of the available data sets. Furthermore, the lack of a standardize benchmark strategy makes difficult to compare existing methods in a uniform way. In order to overcome these issues we set up the Retinal Fundus Glaucoma Challenge, REFUGE (https://refuge.grand-challenge.org), held in conjunction with MICCAI 2018. The challenge consisted of two primary tasks, namely optic disc/cup segmentation and glaucoma classification. As part of REFUGE, we have publicly released a data set of 1200 fundus images with ground truth segmentations and clinical glaucoma labels, currently the largest existing one. We have also built an evaluation framework to ease and ensure fairness in the comparison of different models, encouraging the development of novel techniques in the field. 12 teams qualified and participated in the online challenge. This paper summarizes their methods and analyzes their corresponding results. In particular, we observed that two of the top-ranked teams outperformed two human experts in the glaucoma classification task. Furthermore, the segmentation results were in general consistent with the ground truth annotations, with complementary outcomes that can be further exploited by ensembling the results.",
+        "data_year": "2020"
+    },
+    {
+        "title": "Deep Spatial-Temporal Convolutional Neural Networks for Medical Image Restoration Deep Learning and Convolutional Neural Networks for Medical Image Computing",
+        "type": "Book Chapter",
+        "authors": "Yao Xiao, Skylar Stolte, Peng Liu, Yun Liang, Pina Sanelli, Ajay Gupta, Jana Ivanidze, <u><b>Ruogu Fang</b></u>",
+        "citation": "Deep Learning and Convolutional Neural Networks for Medical Image Computing, Springer Publisher",
+        "publication_year": "2019",
+        "image_src": "img/pubs/Springer.jpg",
+        "label_class": "success",
+        "external_links": {
+            "sciencedirect": "https://www.springerprofessional.de/en/deep-spatial-temporal-convolutional-neural-networks-for-medical-/17189984"
+        },
+        "data_year": "2019"
+    },
+    {
+        "title": "Big Data in Computational Health Informatics",
+        "type": "Book Chapter",
+        "authors": "<u><b>Ruogu Fang</b></u>, Samira Pouyanfar, Yimin Yang, Yao Xiao, Jianqiao Tian, Shu-Ching Chen, and S.S. Iyengar",
+        "citation": "Big Data in Multimodal Medical Imaging, CRC Publisher",
+        "publication_year": "2019",
+        "image_src": "img/pubs/CRC.jpg",
+        "label_class": "success",
+        "external_links": {
+            "sciencedirect": "https://www.taylorfrancis.com/chapters/big-data-computational-health-informatics-ruogu-fang-yao-xiao-jianqiao-tian-samira-pouyanfar-yimin-yang-shu-ching-chen-iyengar/e/10.1201/b22410-5"
+        },
+        "data_year": "2019"
+    },
+    {
+        "title": "Development and Validation of the Automated Imaging Di\ufb00erentiation in Parkinsonism (AID-P): A Multi-Site Machine Learning Study",
+        "type": "Journal",
+        "authors": "Derek B. Archer, ..., <strong>Ruogu Fang</strong>, ..., David E. Vaillancourt",
+        "citation": "The Lancet Digital Health",
+        "publication_year": "2019",
+        "image_src": "img/pubs/Lancet.png",
+        "label_class": "warning",
+        "data_year": "2019"
+    },
+    {
+        "title": "Identifying Relations of Medications with Adverse Drug Events Using Recurrent Convolutional Neural Networks and Gradient Boosting",
+        "type": "Journal",
+        "authors": "Xi Yang, Jiang Bian, <strong>Ruogu Fang</strong>, Ragnhildur I. Bjarnadottir, William R. Hogan, and Yonghui Wu",
+        "citation": "Journal of the American Medical Informatics Association",
+        "publication_year": "2019",
+        "image_src": "img/pubs/JAMIA.jpg",
+        "label_class": "warning",
+        "data_year": "2019"
+    },
+    {
+        "title": "Deep Evolutionary Networks with Expedited Genetic Algorithms for Medical Image Denoising",
+        "type": "Journal",
+        "authors": "Peng Liu, Mohammad D El Basha, Yangjunyi Li, Yao Xiao, Pina C.Sanelli, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Image Analysis, vol. 54, pp. 306-315",
+        "publication_year": "2019",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841518307734?dgcid=author"
+        },
+        "abstract": "Deep convolutional neural networks offer state-of-the-art performance for medical image analysis. However, their architectures are manually designed for particular problems. On the one hand, a manual designing process requires many trials to tune a large number of hyperparameters and is thus quite a time-consuming task. On the other hand, the fittest hyperparameters that can adapt to source data properties (e.g., sparsity, noisy features) are not able to be quickly identified for target data properties. For instance, the realistic noise in medical images is usually mixed and complicated, and sometimes unknown, leading to challenges in applying existing methods directly and creating effective denoising neural networks easily. In this paper, we present a Genetic Algorithm (GA)-based network evolution approach to search for the fittest genes to optimize network structures automatically. We expedite the evolutionary process through an experience-based greedy exploration strategy and transfer learning. Our evolutionary algorithm procedure has flexibility, which allows taking advantage of current state-of-the-art modules (e.g., residual blocks) to search for promising neural networks. We evaluate our framework on a classic medical image analysis task: denoising. The experimental results on computed tomography perfusion (CTP) image denoising demonstrate the capability of the method to select the fittest genes for building high-performance networks, named EvoNets. Our results outperform state-of-the-art methods consistently at various noise levels.",
+        "data_year": "2019"
+    },
+    {
+        "title": "STIR-Net: Spatial-Temporal Image Restoration Net for CT Perfusion Radiation Reduction",
+        "type": "Journal",
+        "authors": "Yao Xiao, Peng Liu, Yun Liang, Skylar Stolte, Pina Sanelli, Ajay Gupta, Jana Ivanidze, <u><b>Ruogu Fang</b></u>",
+        "citation": "Frontiers in Nuerology",
+        "publication_year": "2019",
+        "image_src": "img/pubs/Frontiers.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/articles/10.3389/fneur.2019.00647/full"
+        },
+        "abstract": "Computed Tomography Perfusion (CTP) imaging is a cost-effective and fast approach to provide diagnostic images for acute stroke treatment. Its cine scanning mode allows the visualization of anatomic brain structures and blood flow; however, it requires contrast agent injection and continuous CT scanning over an extended time. In fact, the accumulative radiation dose to patients will increase health risks such as skin irritation, hair loss, cataract formation, and even cancer. Solutions for reducing radiation exposure include reducing the tube current and/or shortening the X-ray radiation exposure time. However, images scanned at lower tube currents are usually accompanied by higher levels of noise and artifacts. On the other hand, shorter X-ray radiation exposure time with longer scanning intervals will lead to image information that is insufficient to capture the blood flow dynamics between frames. Thus, it is critical for us to seek a solution that can preserve the image quality when the tube current and the temporal frequency are both low. We propose STIR-Net in this paper, an end-to-end spatial-temporal convolutional neural network structure, which exploits multi-directional automatic feature extraction and image reconstruction schema to recover high-quality CT slices effectively. With the inputs of low-dose and low-resolution patches at different cross-sections of the spatio-temporal data, STIR-Net blends the features from both spatial and temporal domains to reconstruct high-quality CT volumes. In this study, we finalize extensive experiments to appraise the image restoration performance at different levels of tube current and spatial and temporal resolution scales.The results demonstrate the capability of our STIR-Net to restore high-quality scans at as low as 11% of absorbed radiation dose of the current imaging protocol, yielding an average of 10% improvement for perfusion maps compared to the patch-based log likelihood method.",
+        "data_year": "2019"
+    },
+    {
+        "title": "Automatic Choroid Layer Segmentation from Optical Coherence Tomography Images Using Deep Learning",
+        "type": "Journal",
+        "authors": "Saleha Masood, <strong>Ruogu Fang</strong>, Huating Li, Bin Sheng, Ping Li, Akash Mathavan, Xiangning Wang, Po Yang, Qiang Wu, Jing Qin, and Weiping Jia",
+        "citation": "Nature Scienti\ufb01c Reports, 9(1):3058",
+        "publication_year": "2019",
+        "image_src": "img/pubs/NATURE.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.nature.com/articles/s41598-019-39795-x"
+        },
+        "abstract": "The choroid layer is a vascular layer in human retina and its main function is to provide oxygen and support to the retina. Various studies have shown that the thickness of the choroid layer is correlated with the diagnosis of several ophthalmic diseases. For example, diabetic macular edema (DME) is a leading cause of vision loss in patients with diabetes. Despite contemporary advances, automatic segmentation of the choroid layer remains a challenging task due to low contrast, inhomogeneous intensity, inconsistent texture and ambiguous boundaries between the choroid and sclera in Optical Coherence Tomography (OCT) images. The majority of currently implemented methods manually or semi-automatically segment out the region of interest. While many fully automatic methods exist in the context of choroid layer segmentation, more effective and accurate automatic methods are required in order to employ these methods in the clinical sector. This paper proposed and implemented an automatic method for choroid layer segmentation in OCT images using deep learning and a series of morphological operations. The aim of this research was to segment out Bruch\u2019s Membrane (BM) and choroid layer to calculate the thickness map. BM was segmented using a series of morphological operations, whereas the choroid layer was segmented using a deep learning approach as more image statistics were required to segment accurately. Several evaluation metrics were used to test and compare the proposed method against other existing methodologies. Experimental results showed that the proposed method greatly reduced the error rate when compared with the other state-of-the-art methods.",
+        "data_year": "2019"
+    },
+    {
+        "title": "Multimodal CT Image Super-Resolution via Transfer Generative Adversarial Network",
+        "type": "Conference",
+        "authors": "Yao Xiao, Manual Arreola, Izabella Barrreto, W. Christopher Fox, Keith Peters, <u><b>Ruogu Fang</b></u>",
+        "citation": "Annual Meeting of Radiology Society of North American",
+        "publication_year": "2019",
+        "image_src": "img/pubs/RSNA.png",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "CFEA: Collaborative Feature Ensembling Adaptation for Domain Adaptation in Unsupervised Optic Disc and Cup Segmentation",
+        "type": "Conference",
+        "authors": "Peng Liu, Bin Kong, Zhongyu Li, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Image Analysis and Computer Assisted Intervention",
+        "publication_year": "2019",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "github": "https://github.com/cswin/AWC"
+        },
+        "data_year": "2019"
+    },
+    {
+        "title": "Abdominal Adipose Tissue Segmentation in MRI with Double Loss Function Collaborative Learning",
+        "type": "Conference",
+        "authors": "Siyuan Pan, Yuxin Xue, Bin Sheng, Xuhong Hou, Huating Li, <strong>Ruogu Fang</strong>, Weiping Jia, and Jing Qin",
+        "citation": "Medical Image Analysis and Computer Assisted Intervention",
+        "publication_year": "2019",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "Multimodal CT Image Super-Resolution via Transfer-GAN.",
+        "type": "Conference",
+        "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "publication_year": "2019",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "Deep Learning-based Alzheimers Disease Classification of FDG-PET and AV45 PET Images.",
+        "type": "Conference",
+        "authors": "Jianqiao Tian, Max Diaz, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "publication_year": "2019",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "Artificial Intelligence For Automated Diagnosis of Glaucoma In Stereoscopic Images",
+        "type": "Conference",
+        "authors": "Skylar Stolte, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "publication_year": "2019",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "Classification Of Neural Stimulations In The Brain With Super Voxels",
+        "type": "Conference",
+        "authors": "Kyle See, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "publication_year": "2019",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "Retinal Disease Diagnosis Using Mobile Devices",
+        "type": "Conference",
+        "authors": "Skylar Stolte, Kyle See, Daniel El Basha, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "publication_year": "2019",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2019"
+    },
+    {
+        "title": "Mining Big Neuron Morphological Data",
+        "type": "Journal",
+        "authors": "Maryamossadat Aghili, <u><b>Ruogu Fang</b></u>",
+        "citation": "Computational Intelligence and Neuroscience",
+        "publication_year": "2018",
+        "image_src": "img/pubs/CIN.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.hindawi.com/journals/cin/2018/8234734/"
+        },
+        "abstract": "The advent of automatic tracing and reconstruction technology has led to a surge in the number of neurons 3D reconstruction data and consequently the neuromorphology research. However, the lack of machine-driven annotation schema to automatically detect the types of the neurons based on their morphology still hinders the development of this branch of science. Neuromorphology is important because of the interplay between the shape and functionality of neurons and the far-reaching impact on the diagnostics and therapeutics in neurological disorders. This survey paper provides a comprehensive research in the field of automatic neurons classification and presents the existing challenges, methods, tools, and future directions for automatic neuromorphology analytics. We summarize the major automatic techniques applicable in the field and propose a systematic data processing pipeline for automatic neuron classification, covering data capturing, preprocessing, analyzing, classification, and retrieval. Various techniques and algorithms in machine learning are illustrated and compared to the same dataset to facilitate ongoing research in the field.",
+        "data_year": "2018"
+    },
+    {
+        "title": "Retinal Vessel Segmentation Using Minimum Spanning Superpixel Tree Detector",
+        "type": "Journal",
+        "authors": "Bin Sheng, Ping Li, Shuangjia Mo, Huating Li, Xuhong Hou, Qiang Wu, Jing Qin, <strong>Ruogu Fang</strong>, and David Dagan Feng",
+        "citation": "IEEE Transaction on Cybernetics, 99, pp.1-13",
+        "publication_year": "2018",
+        "image_src": "img/pubs/IEEECyber.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://ieeexplore.ieee.org/document/8362709"
+        },
+        "abstract": "The retinal vessel is one of the determining factors in an ophthalmic examination. Automatic extraction of retinal vessels from low-quality retinal images still remains a challenging problem. In this paper, we propose a robust and effective approach that qualitatively improves the detection of low-contrast and narrow vessels. Rather than using the pixel grid, we use a superpixel as the elementary unit of our vessel segmentation scheme. We regularize this scheme by combining the geometrical structure, texture, color, and space information in the superpixel graph. And the segmentation results are then refined by employing the efficient minimum spanning superpixel tree to detect and capture both global and local structure of the retinal images. Such an effective and structure-aware tree detector significantly improves the detection around the pathologic area. Experimental results have shown that the proposed technique achieves advantageous connectivity-area-length (CAL) scores of 80.92% and 69.06% on two public datasets, namely, DRIVE and STARE, thereby outperforming state-of-the-art segmentation methods. In addition, the tests on the challenging retinal image database have further demonstrated the effectiveness of our method. Our approach achieves satisfactory segmentation performance in comparison with state-of-the-art methods. Our technique provides an automated method for effectively extracting the vessel from fundus images",
+        "data_year": "2018"
+    },
+    {
+        "title": "Neural Network Evolution Using Expedited Genetic Algorithm for Medical Image Denoising",
+        "type": "Conference",
+        "authors": "Peng Liu, Yangjunyi Li, Mohammad D El Basha, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Image Analysis and Computer Assisted Intervention, Granada, Spain.",
+        "publication_year": "2018",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-030-00928-1_2"
+        },
+        "abstract": "Convolutional neural networks offer state-of-the-art performance for medical image denoising. However, their architectures are manually designed for different noise types. The realistic noise in medical images is usually mixed and complicated, and sometimes unknown, leading to challenges in creating effective denoising neural networks. In this paper, we present a Genetic Algorithm (GA)-based network evolution approach to search for the fittest genes to optimize network structures. We expedite the evolutionary process through an experience-based greedy exploration strategy and transfer learning. The experimental results on computed tomography perfusion (CTP) images denoising demonstrate the capability of the method to select the fittest genes for building high-performance networks, named EvoNets, and our results compare favorably with state-of-the-art methods",
+        "data_year": "2018"
+    },
+    {
+        "title": "Multi-task Fundus Image Quality Assessment via Transfer Learning and Landmarks Detection",
+        "type": "Conference",
+        "authors": "Yaxin Shen, <strong>Ruogu Fang</strong>, Bin Sheng, Ling Dai, Huating Li, Jing Qin, Qiang Wu, and Weiping Jia",
+        "citation": "Machine Learning in Medical Imaging, Granada, Spain.",
+        "publication_year": "2018",
+        "image_src": "img/pubs/MLMI.jpg",
+        "label_class": "primary",
+        "abstract": "The quality of fundus images is critical for diabetic retinopathy diagnosis. The evaluation of fundus image quality can be affected by several factors, including image artifact, clarity, and field definition. In this paper, we propose a multi-task deep learning framework for automated assessment of fundus image quality. The network can classify whether an image is gradable, together with interpretable information about quality factors. The proposed method uses images in both rectangular and polar coordinates, and fine-tunes the network from trained model grading of diabetic retinopathy. The detection of optic disk and fovea assists learning the field definition task through coarse-to-fine feature encoding. The experimental results demonstrate that our framework outperform single-task convolutional neural networks and reject ungradable images in automated diabetic retinopathy diagnostic systems.",
+        "data_year": "2018"
+    },
+    {
+        "title": "Low-Dose CT Perfusion Image Restoration and Radiation Reduction.",
+        "type": "Conference",
+        "authors": "Yao Xiao, Peng Liu, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "publication_year": "2018",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "E\ufb03cient Multi Modality Medical Image Joint Recosntruction via Vectorized Gradient",
+        "type": "Conference",
+        "authors": "Yao Xiao, Yun Liang, Yunmei Chen, Xiaojing Ye, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "publication_year": "2018",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "Multi-Modality Brain Image Co-Registration",
+        "type": "Conference",
+        "authors": "Skylar Stolte, Yao Xiao, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "publication_year": "2018",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "Decision Tree-based Classi\ufb01cation for Di\ufb00erentiating System Lupus Erythematosus and Mixed Connective Tissue Disease",
+        "type": "Conference",
+        "authors": "Kyle B. See, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "publication_year": "2018",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "STDN: Spatial-Temporal Denoising Net for Radiation Optimization in CT Perfusion",
+        "type": "Conference",
+        "authors": "Yao Xiao, Liupeng, Yun Liang, <u><b>Ruogu Fang</b></u>",
+        "citation": "ACM Richard Tapia Celebration of Diversity in Computing, September, Orlando, FL",
+        "publication_year": "2018",
+        "image_src": "img/pubs/TAPIA.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "Multi-Modality PET-MRI Image Joint Reconstruction",
+        "type": "Conference",
+        "authors": "Yao Xiao, Yun Liang, Yunmei Chen, Xiaojing Ye, <u><b>Ruogu Fang</b></u>",
+        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, Vancouver, Canada",
+        "publication_year": "2018",
+        "image_src": "img/pubs/ASNR.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "Image Super-Resolution and Radiation Reduction via Deep Learning",
+        "type": "Conference",
+        "authors": "Yao Xiao, Pina C. Sanelli, <u><b>Ruogu Fang</b></u>",
+        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, Vancouver, Canada",
+        "publication_year": "2018",
+        "image_src": "img/pubs/ASNR.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "Regulated-convolutional Networks for Low-dose Cerebral CT Perfusion Restoration",
+        "type": "Conference",
+        "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
+        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, Vancouver, Canada",
+        "publication_year": "2018",
+        "image_src": "img/pubs/ASNR.jpg",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "SDCNET: Smoothed Dense-Convolution Network For Restoring Low-Dose Cerebral CT Perfusion",
+        "type": "Conference",
+        "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
+        "citation": "IEEE International Symposium on Biomedical Imaging, Washington D.C.",
+        "publication_year": "2018",
+        "image_src": "img/pubs/IEEEImaging.png",
+        "label_class": "primary",
+        "data_year": "2018"
+    },
+    {
+        "title": "Automatic Choroid Layer Segmentation Using Normalized Graph Cut",
+        "type": "Journal",
+        "authors": "Saleha Masood, Bin Sheng, Ping Li, Ruimin Shen, <strong>Ruogu Fang</strong>, Qiang Wu",
+        "citation": "IET Image Processing. pp. 22, DOI:10.1049/iet-ipr.2017.0273, Online ISSN 1751-9667, 2017.",
+        "publication_year": "2017",
+        "image_src": "img/pubs/IET.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://digital-library.theiet.org/content/journals/10.1049/iet-ipr.2017.0273"
+        },
+        "abstract": "Optical coherence tomography (OCT) is an immersive technique for depth analysis of retinal layers. Automatic choroid layer segmentation is a challenging task because of the low contrast inputs. Existing methodologies carried choroid layer segmentation manually or semi-automatically. In this paper, we proposed automated choroid layer segmentation based on normalized cut algorithm, which aims at extracting the global impression of images and treats the segmentation as a graph partitioning problem. Due to the complexity of the layering structure of retinal layers and choroid layer, we employed a series of preprocessing to make the cut more deterministic and accurate. The proposed method divided the image into several patches and ran the normalized cut on every image patch separately. The aim was to avoid insignificant vertical cuts and focus on horizontal cutting. After processing every patch, we acquired a global cut on the original image by combining all the patches. Later we measured the choroidal thickness which is highly helpful in the diagnosis of several retinal diseases. The results were computed on a total of 525 images of 21 real patients. Experimental results showed that the mean relative error rate of the proposed method was around 0.4 as the compared the manual segmentation performed by the experts.",
+        "data_year": "2017"
+    },
+    {
+        "title": "STAR: Spatio-Temporal Architecture for super-Resolution in Low-Dose CT Perfusion.",
+        "type": "Conference",
+        "authors": "Yao Xiao, Ajay Gupta, Pina C. Sanelli, <u><b>Ruogu Fang</b></u>",
+        "citation": "Machine Learning in Medical Imaging (MIML), Medical Image Computing and Computer Assisted Intervention (MICCAI), Lecture Notes in Computer Science book series (LNCS, volume 10541), pp 97-105, Quebec, Canada, Sep. 2017.",
+        "publication_year": "2017",
+        "image_src": "img/pubs/MLMI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-319-67389-9_12"
+        },
+        "abstract": "Computed tomography perfusion (CTP) is one of the most widely used imaging modality for cerebrovascular disease diagnosis and treatment, especially in emergency situations. While cerebral CTP is ca- pable of quantifying the blood flow dynamics by continuous scanning at a focused region of the brain, the associated excessive radiation increases the patients' risk levels of developing cancer. To reduce the necessary radiation dose in CTP, decreasing the temporal sampling frequency is one promising direction. In this paper, we propose STAR, an end-to- end Spatio-Temporal Architecture for super-Resolution to significantly reduce the necessary scanning time and therefore radiation exposure. The inputs into STAR are multi-directional 2D low-resolution spatio- temporal patches at different cross sections over space and time. Via training multiple direction networks followed by a conjoint reconstruc- tion network, our approach can produce high-resolution spatio-temporal volumes. The experiment results demonstrate the capability of STAR to maintain the image quality and accuracy of cerebral hemodynamic parameters at only one-third of the original scanning time.",
+        "data_year": "2017"
+    },
+    {
+        "title": "Cardiovascular Disease Prediction and Risk Factor Mining with RFMiner.",
+        "type": "Conference",
+        "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting (BMES), 2017 Annual Meeting, Phoenix, Arizona.",
+        "publication_year": "2017",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2017"
+    },
+    {
+        "title": "Accelerated Brain Perfusion Imaging via Spatio-Temporal Super-Resolution.",
+        "type": "Conference",
+        "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting (BMES), 2017 Annual Meeting, Phoenix, Arizona.",
+        "publication_year": "2017",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2017"
+    },
+    {
+        "title": "A Simple and Realistic Simulation Method for Low-Dose CT.",
+        "type": "Conference",
+        "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>&gt;",
+        "citation": "Biomedical Engineering Society Annual Meeting (BMES), 2017 Annual Meeting, Phoenix, Arizona.",
+        "publication_year": "2017",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2017"
+    },
+    {
+        "title": "RFMiner: Risk Factors Discovery and Mining for Preventive Cardiovascular Health.",
+        "type": "Conference",
+        "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
+        "citation": "The Second IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE), Philadelphia, PA",
+        "publication_year": "2017",
+        "image_src": "img/pubs/IEEEHealth.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8010656"
+        },
+        "abstract": "Cardiovascular disease is one of the leading causes of death in the United States. It is critical to identify the risk factors associated with cardiovascular diseases and to alert individuals before they experience a heart attack. In this paper we propose RFMiner, a risk factor discovery and mining framework for identifying significant risk factors using integrated measures. We provide the blueprints for accurately predicting the possibility of heart attacks in the near future while identifying notable risk factors - especially the factors which are not well recognized.",
+        "data_year": "2017"
+    },
+    {
+        "title": "Indexing and Mining Large-Scale Neuron Databases using Maximum Inner Product Search.",
+        "type": "Journal",
+        "authors": "Zhongyu Li, <strong>Ruogu Fang</strong>, Fumin Shen, Amin Katouzian, Shaoting Zhang.",
+        "citation": "Pattern Recognition, vol. 63, pp. 680-688",
+        "publication_year": "2017",
+        "image_src": "img/pubs/Pattern_Recognition.gif",
+        "label_class": "warning",
+        "abstract": "Morphological retrieval is an effective approach to explore large-scale neuronal databases, as the morphology is correlated with neuronal types, regions, functions, etc. In this paper, we focus on the neuron identification and analysis via morphological retrieval. In our proposed framework, multiple features are extracted to represent 3D neuron data. Because each feature reflects different levels of similarity between neurons, we group features into different hierarchies to compute the similarity matrix. Then, compact binary codes are generated from hierarchical features for efficient similarity search. Since neuronal cells usually have tree-topology structure, it is hard to distinguish different types of neurons simply via traditional binary coding or hashing methods based on Euclidean distance metric and/or linear hyperplanes. Therefore, we employ an asymmetric binary coding strategy based on the maximum inner product search (MIPS), which not only makes it easier to learn the binary coding functions, but also preserves the non-linear characteristics of the neuron morphological data. We evaluate the proposed method on more than 17,000 neurons, by validating the retrieved neurons with associated cell types and brain regions. Experimental results show the superiority of our approach in neuron morphological retrieval compared with other state-of-the-art methods. Moreover, we demonstrate its potential use cases in the identification and analysis of neuron characteristics from large neuron databases.",
+        "data_year": "2017"
+    },
+    {
+        "title": "Abdominal Adipose Tissues Extraction Using Multi-Scale Deep Neural Network.",
+        "type": "Journal",
+        "authors": "Fei Jiang, Huating Li, Xuhong Hou, Bin Sheng, Ruimin Shen, Xiao-Yang Liu, Weiping Jia, Ping Li, <u><b>Ruogu Fang</b></u>",
+        "citation": "NeuroComputing, vol. 229, pp. 23-33",
+        "publication_year": "2017",
+        "image_src": "img/pubs/Neurocomputing.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S0925231216313480"
+        },
+        "abstract": "Segmentation of abdominal adipose tissues (AAT) into subcutaneous adipose tissues (SAT) and visceral adipose tissues (VAT) is of crucial interest for managing the obesity. Previous methods with raw or hand-crafted features rarely work well on large-scale subject cohorts, because of the inhomogeneous image intensities, artifacts and the diverse distributions of VAT. In this paper, we propose a novel two-stage coarse-to-fine algorithm for AAT seg- mentation. In the first stage, we formulate the AAT segmentation task as a pixel-wise classification problem. First, three types of features, intensity, spatial and contextual fea- tures, are adopted. Second, a new type of deep neural network, named multi-scale deep neural network (MSDNN), is provided to extract high-level features. In the second stage, to improve the segmentation accuracy, we refine coarse segmentation results by determining the internal boundary of SAT based on coarse segmentation results and continuous of SAT internal boundary. Finally, we demonstrate the efficacy of our algorithm for both 2D and 3D cases on a wide population range. Compared with other algorithms, our method is not only more suitable for large-scale dataset, but also achieves better segmentation results. Fur- thermore, our system takes about 2 seconds to segment an abdominal image, which implies potential clinical applications.",
+        "data_year": "2017"
+    },
+    {
+        "title": "Towards High-Throughput Abnormal Brain Screening in MRI Images",
+        "type": "Conference",
+        "authors": "Maryamossadat Aghili, <u><b>Ruogu Fang</b></u>",
+        "citation": "Women in Machine Learning Workshop, Neural Information Processing Systems (NIPS), Barcelona, Spain.",
+        "publication_year": "2016",
+        "image_src": "img/pubs/WIML.png",
+        "label_class": "primary",
+        "data_year": "2016"
+    },
+    {
+        "title": "TENDER: TEnsor Non-local Deconvolution Enabled Radiation Reduction in CT Perfusion.",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ajay Gupta, Junzhou Huang, Pina Sanelli.",
+        "citation": "NeuroComputing, vol. 229, pp. 13-22",
+        "publication_year": "2016",
+        "image_src": "img/pubs/Neurocomputing.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S0925231216313753"
+        },
+        "abstract": "Stroke is the leading cause of long-term disability and the second leading cause of mortality in the world, and exerts an enormous burden on the public health. CT remains one of the most widely used imaging modality for stroke diagnosis. However when coupled with CT perfusion, the excessive radiation exposure in repetitive imaging to assess treatment response and prognosis has raised significant public concerns regarding its potential hazards to both short- and longterm health outcomes. Tensor total variation has been proposed to reduce the necessary radiation dose in CT perfusion without comprising the image quality by fusing the information of the local anatomical structure with the temporal blood flow model. However the local search in the framework fails to leverage the non-local information in the spatio-temporal data. In this paper, we propose TENDER, an efficient framework of non-local tensor deconvolution to maintain the accuracy of the hemodynamic parameters and the diagnostic reliability in low radiation dose CT perfusion. The tensor total variation is extended using non-local spatio-temporal cubics for regularization to integrate contextual and non-local information. We also propose an efficient framework consisting of fast nearest neighbor search, accelerated optimization and parallel computing to improve the efficiency and scalability of the non-local spatio-temporal algorithm. Evaluations on clinical data of subjects with cerebrovascular disease and normal subjects demonstrate the advantage of non-local tensor deconvolution for reducing radiation dose in CT perfusion.",
+        "data_year": "2016"
+    },
+    {
+        "title": "Computational Health Informatics in the Big Data Age: A Survey",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang*</b></u>, Samira Pouyanfar*, Yimin Yang, Shu-Ching Chen, S. S. Iyengar (* indicates equal contributions)",
+        "citation": "Journal CSUR, ACM Computing Survey, Volume 49 Issue 1, Article No. 12",
+        "publication_year": "2016",
+        "image_src": "img/pubs/ACM.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://dl.acm.org/citation.cfm?id=2932707"
+        },
+        "abstract": "The explosive growth and widespread accessibility of digital health data have led to a surge of research activity in the healthcare and data sciences fields. The conventional approaches for health data management have achieved limited success as they are incapable of handling the huge amount of complex data with high volume, high velocity, and high variety. This article presents a comprehensive overview of the existing challenges, techniques, and future directions for computational health informatics in the big data age, with a structured analysis of the historical and state-of-the-art methods. We have summarized the challenges into four Vs (i.e., volume, velocity, variety, and veracity) and proposed a systematic data-processing pipeline for generic big data in health informatics, covering data capturing, storing, sharing, analyzing, searching, and decision support. Specifically, numerous techniques and algorithms in machine learning are categorized and compared. On the basis of this material, we identify and discuss the essential prospects lying ahead for computational health informatics in this big data age.",
+        "data_year": "2016"
+    },
+    {
+        "title": "Hemodynamic Imaging of Lower Extremity Ulcers.",
+        "type": "Conference",
+        "authors": "Rebecca Kwasinski, Cristianne Fernandez, Kevin Leiva, Edwin Robledo, Yuanyuan Zhu, Penelope Kallis, Francesco-Perez Clavijo, <strong>Ruogu Fang</strong>, Robert Kirsner, Anuradha Godavarty.",
+        "citation": "Innovations in Wound Healing",
+        "publication_year": "2016",
+        "image_src": "img/pubs/WoundHealing.jpg",
+        "label_class": "primary",
+        "abstract": "Clinicians employ visual inspection of the wound and reduction in its size over time to monitor its healing process. Although these are standard clinical assessments, there is a need to develop a physiological approach that can map sub-surface tissue oxygenation at and around the wound region.  Recently, a non-contact, portable, hand-held near infrared optical scanner (NIROS) has been developed to functionally image wound sites and differentiate healing from non-healing in lower extremity ulcers. Past studies using NIROS focused on differentiating healing from non-healing wounds based on NIR optical contrast between the wound and healthy surrounding tissue. However, these studies did not showcase the physiological changes in tissue oxygenation. Herein, NIROS has been modified to perform multi wavelength imaging in order to obtain the oxy and deoxy- hemoglobin maps of the wound and its surroundings. Clinical studies are currently performed at two clinical sites in Miami on lower extremity ulcers (2, diabetic foot ulcers (DFUs) and 4 venous leg ulcers (VLUs to date). Preliminary results have shown changes in oxy- and deoxy-hemoglobin maps of the wound and background across weeks of the treatment process. Image segmentation studies quantified regions of varied tissue oxygenation around and beneath the wound to potentially determine sub-surface healing regions. Ongoing efforts involve systematic 8-week imaging studies to obtain physiological indicators of healing from hemodynamic studies of DFUs and VLUs.",
+        "data_year": "2016"
+    },
+    {
+        "title": "CT perfusion image super-resolution using a deep convolutional network.",
+        "type": "Conference",
+        "authors": "Paul Naghshineh, Peng Liu, <u><b>Ruogu Fang</b></u>",
+        "citation": "BMES, Biomedical Engineering Society Annual Meeting in Minneapolis, Minnesota.",
+        "publication_year": "2016",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2016"
+    },
+    {
+        "title": "Physiological Assessment of Wound Healing using a Near-Infrared Optical Scanner.",
+        "type": "Conference",
+        "authors": "Anuradha Godavarty, Rebecca Kwasinki, Cristianne Fernandez, Yuanyuan Zhu, Edwin Robledo, F. Perez-Clavijo, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society Annual Meeting (BMES) in Minneapolis, Minnesota.",
+        "publication_year": "2016",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "data_year": "2016"
+    },
+    {
+        "title": "Maximum Inner Product Search for Morphological Retrieval of Large-Scale Neuron Data",
+        "type": "Conference",
+        "authors": "Zhongyu Li, Fumin Shen, <strong>Ruogu Fang</strong>, Sailesh Conjeti, Amin Katouzian, Shaoting Zhang.",
+        "citation": "ISBI, IEEE International Symposium on Biomedical Imaging, Prague, Czech Republic",
+        "publication_year": "2016",
+        "image_src": "img/pubs/IEEEImaging.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7493340&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7493340"
+        },
+        "abstract": "Morphological retrieval is an effective approach to explore neurons' databases, as the morphology is correlated with neuronal types, regions, functions, etc. In this paper, we focus on the neuron identification and analysis via morphological retrieval. In our proposed framework, both global and local features are extracted to represent 3D neuron data. Then, compacted binary codes are generated from original features for efficient similarity search. As neuron cells usually have tree-topology structure, it is hard to distinguish different types of neuron simply via traditional binary coding or hashing methods based on Euclidean distance metric and/or linear hyperplanes. Thus, we propose a novel binary coding method based on the maximum inner product search (MIPS), which is not only more easier to learn the binary coding function, but also preserves the non-linear characteristics of neuron morphology data. We evaluate the proposed method on more than 17,000 neurons, by validating the retrieved neurons with associated cell types and brain regions. Experimental results show the superiority of our approach in neuron morphological retrieval compared with other state-of-the-art methods. Moreover, we demonstrate its potential use case in the identification and analysis of neuron characteristics.",
+        "data_year": "2016"
+    },
+    {
+        "title": "Direct Estimation of Permeability Maps for Low-Dose CT Perfusion",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ajay Gupta, Pina C. Sanelli",
+        "citation": "ISBI, IEEE International Symposium on Biomedical Imaging, Prague, Czech Republic",
+        "publication_year": "2016",
+        "image_src": "img/pubs/IEEEImaging.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7493372&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel7%2F7486633%2F7493185%2F07493372.pdf%3Farnumber%3D7493372"
+        },
+        "abstract": "With the goal of achieving low radiation exposure from\n        medical imaging, computed tomography perfusion (CTP)\n        introduces challenging problems for both image reconstruction\n        and perfusion parameter estimation in the qualitative\n        and quantitative analyses. Conventional approaches address\n        the reconstruction and the estimation processes separately.\n        Since the hemodynamic parameter maps have much lower\n        dimensionality than the original sinogram data, estimating\n        hemodynamic parameters directly from sinogram will further\n        reduce radiation exposure and save computational resources\n        to reconstruct the intermediate time-series images. In this\n        work, we propose the first direct estimation framework for\n        CTP that integrates the time-series image reconstruction,\n        contrast conversion, hematocrit correction and hemodynamic\n        parameter estimation in one optimization function, which is\n        solved using an efficient algorithm. Evaluations on the digital\n        brain perfusion phantom and a clinical acute stroke subject\n        demonstrate that the proposed direct estimation framework\n        boosts the estimation accuracy remarkably in CTP scanning\n        with lower radiation exposure.",
+        "data_year": "2016"
+    },
+    {
+        "title": "Automatic Segmentation of Lower Extremity Ulcers in Near-Infrared Optical Imaging",
+        "type": "Conference",
+        "authors": "<strong>Ruogu Fang</strong>, Xing Pang, Arash Dadkhah, Jiali Lei, Elizabeth Solis, Suset Rodriguesz, Francisco Perez-Clavijo, Stephen Wigley, Charles Buscemi, Anuradha Godvarty.",
+        "citation": "ISBI, IEEE International Symposium on Biomedical Imaging, Prague, Czech Republic",
+        "publication_year": "2016",
+        "image_src": "img/pubs/IEEEImaging.png",
+        "label_class": "primary",
+        "data_year": "2016"
+    },
+    {
+        "title": "Near-Infrared Optical Imaging and Wound Segmentation in Lower Extremity Ulcers",
+        "type": "Conference",
+        "authors": "Xing Pang, Arash Dadkhah, Jaili Lei, Elizabeth Solis, Suset Rodriguez, Francisco Perez-Clavijo, Stephen Wigley, <strong>Ruogu Fang</strong>, Anuradha Godvarty.",
+        "citation": "OSA, Optical Society of America Annual Meeting",
+        "publication_year": "2016",
+        "image_src": "img/pubs/OSA.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://8.18.37.105/abstract.cfm?uri=OTS-2016-JTu3A.43"
+        },
+        "abstract": "Near-Infrared (NIR) optical imaging can reveal tissue oxygenation of the wound, complementing the visual inspection of the surface granulation. Herein, graph cuts algorithm is applied to segment NIR images of the wound from its peripheries.",
+        "data_year": "2016"
+    },
+    {
+        "title": "Wound Size Measurement of Lower Extremity Ulcers Using Segmentation Algorithms",
+        "type": "Conference",
+        "authors": "Arash Dadkhah, Xing Pang, Elizabeth Solis, <strong>Ruogu Fang</strong>, Anuradha Godvarty.",
+        "citation": "SPIE Proceedings in Photonics West, San Francisco",
+        "publication_year": "2016",
+        "image_src": "img/pubs/SPIE.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2501771"
+        },
+        "abstract": "Lower extremity ulcers are one of the most common complications that not only affect many people around the world but also have huge impact on economy since a large amount of resources are spent for treatment and prevention of the diseases. Clinical studies have shown that reduction in the wound size of 40% within 4 weeks is an acceptable progress in the healing process. Quantification of the wound size plays a crucial role in assessing the extent of healing and determining the treatment process. To date, wound healing is visually inspected and the wound size is measured from surface images. The extent of wound healing internally may vary from the surface. A near-infrared (NIR) optical imaging approach has been developed for non-contact imaging of wounds internally and differentiating healing from non-healing wounds. Herein, quantitative wound size measurements from NIR and white light images are estimated using a graph cuts and region growing image segmentation algorithms. The extent of the wound healing from NIR imaging of lower extremity ulcers in diabetic subjects are quantified and compared across NIR and white light images. NIR imaging and wound size measurements can play a significant role in potentially predicting the extent of internal healing, thus allowing better treatment plans when implemented for periodic imaging in future.",
+        "data_year": "2016"
+    },
+    {
+        "title": "Efficient 4D Non-Local Tensor Total-Variation for Low-Dose CT Perfusion Deconvolution",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ming Ni, Junzhou Huang, Qianmu Li, Tao Li",
+        "citation": "Medical Computer Vision: Algorithms for Big DataChapter, no.16, Lecture Notes in Computer Science",
+        "publication_year": "2015",
+        "image_src": "img/pubs/MCV.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://users.cis.fiu.edu/~rfang/projects/ttv.html"
+        },
+        "abstract": "Tensor total variation deconvolution has been recently proposed as a robust framework to accurately estimate the hemodynamic parameters in low-dose CT perfusion by fusing the local anatomicalstructure correlation and temporal blood flow continuation. However\n            the locality property in the current framework constrains the search for\n            anatomical structure similarities to the local neighborhood, missing the\n            global and long-range correlations in the whole anatomical structure.\n            This limitation has led to noticeable absence or artifact of delicate structures,\n            including the critical indicators for the clinical diagnosis of cerebrovascular\n            diseases. In this paper, we propose an extension of the TTV\n            framework by introducing 4D non-local tensor total variation into the deconvolution\n            to bridge the gap between non-adjacent regions of the same\n            tissue classes. The non-local regularization using tensor total variation\n            term is imposed on the spatio-temporal flow-scaled residue functions.\n            An efficient algorithm and implementation of the non-local tensor total\n            variation (NL-TTV) reduces the time complexity with fast similarity\n            computation, accelerated optimization and parallel operations. Extensive\n            evaluations on the clinical data with cerebrovascular diseases and normal subjects demonstrate the importance of non-local linkage and long-range connections for low-dose CT perfusion deconvolution.",
+        "data_year": "2015"
+    },
+    {
+        "title": "Robust Low-dose CT Perfusion Deconvolution via Tensor Total-Variation Regularization",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Shaoting Zhang, Tsuhan Chen, Pina C. Sanelli.",
+        "citation": "TMI, IEEE Transaction on Medical Imaging, vol.34, no.7, pp.1533-1548",
+        "publication_year": "2015",
+        "image_src": "img/pubs/IEEEMedical.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7046356"
+        },
+        "abstract": "Acute brain diseases such as acute strokes and\n        transit ischemic attacks are the leading causes of mortality and\n        morbidity worldwide, responsible for 9% of total death every\n        year. \u2018Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational\n        framework for hemodynamic parameters estimation\n        can save critical time for thrombolytic therapy. Meanwhile the\n        high level of accumulated radiation dosage due to continuous\n        image acquisition in CT perfusion (CTP) raised concerns on\n        patient safety and public health. However, low-radiation leads to\n        increased noise and artifacts which require more sophisticated\n        and time-consuming algorithms for robust estimation. In this\n        paper, we focus on developing a robust and efficient framework\n        to accurately estimate the perfusion parameters at low radiation\n        dosage. Specifically, we present a tensor total-variation (TTV)\n        technique which fuses the spatial correlation of the vascular\n        structure and the temporal continuation of the blood signal flow.\n        An efficient algorithm is proposed to find the solution with fast\n        convergence and reduced computational complexity. Extensive\n        evaluations are carried out in terms of sensitivity to noise levels,\n        estimation accuracy, contrast preservation, and performed on\n        digital perfusion phantom estimation, as well as in-vivo clinical\n        subjects. Our framework reduces the necessary radiation dose\n        to only 8% of the original level and outperforms the state-of-art\n        algorithms with peak signal-to-noise ratio improved by 32%. It\n        reduces the oscillation in the residue functions, corrects overestimation\n        of cerebral blood flow (CBF) and under-estimation of\n        mean transit time (MTT), and maintains the distinction between\n        the deficit and normal regions.",
+        "data_year": "2015"
+    },
+    {
+        "title": "Guest Editorial: Sparsity Techniques in Medical Imaging.",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Dimitris Metaxas, Pina Sanelli, Shaoting Zhang.",
+        "citation": "CMIG, Elsevier Journal of Computerized Medical Imaging and Graphics, vol. 46, no. 1",
+        "publication_year": "2015",
+        "image_src": "img/pubs/CMIG.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S0895611115000981#"
+        },
+        "abstract": "With the advent of the age for big data and complex structure,\n        sparsity has been an important modeling tool in compressed\n        sensing, machine learning, image processing, neuroscience and\n        statistics. In the medical imaging field, sparsity methods have been\n        successfully used in image reconstruction, image enhancement,\n        image segmentation, anomaly detection, disease classification, and\n        image database retrieval. Developing more powerful sparsity models\n        for a large range of medical imaging and medical image analysis\n        problems as well as efficient optimization and learning algorithm\n        will keep being a main research topic in this field. The goal of this\n        special issue is to publish original and high quality papers on innovation\n        research and development in medical imaging and medical\n        image analysis using sparsity techniques. This special issue will\n        help advance the scientific research within the field of sparsity\n        methods for medical imaging.",
+        "data_year": "2015"
+    },
+    {
+        "title": "Tissue-Specific Sparse Deconvolution for Brain CT Perfusion.",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>,Haodi Jiang, Junzhou Huang.",
+        "citation": "CMIG, Elsevier Journal of Computerized Medical Imaging and Graphics, vol.46, no.1, pp. 64-72",
+        "publication_year": "2015",
+        "image_src": "img/pubs/IEEEMedical.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S0895611115000890"
+        },
+        "abstract": "Enhancing perfusion maps in low-dose computed tomography perfusion (CTP)\n        for cerebrovascular disease diagnosis is a challenging task, especially for lowcontrast\n        tissue categories where infarct core and ischemic penumbra usually\n        occur. Sparse perfusion deconvolution has been recently proposed to effectively\n        improve the image quality and diagnostic accuracy of low-dose perfusion CT by\n        extracting the complementary information from the high-dose perfusion maps\n        to restore the low-dose using a joint spatio-temporal model. However the lowcontrast\n        tissue classes where infarct core and ischemic penumbra are likely to\n        occur in cerebral perfusion CT tend to be over-smoothed, leading to loss of\n        essential biomarkers. In this paper, we propose a tissue-specific sparse deconvolution\n        approach to preserve the subtle perfusion information in the low-contrast\n        tissue classes. We first build tissue-specific dictionaries from segmentations of\n        high-dose perfusion maps using online dictionary learning, and then perform\n        deconvolution-based hemodynamic parameters estimation for block-wise tissue\n        segments on the low-dose CTP data. Extensive validation on clinical datasets\n        of patients with cerebrovascular disease demonstrates the superior performance\n        of our proposed method compared to state-of-art, and potentially improve diagnostic accuracy by increasing the differentiation between normal and ischemic\n        tissues in the brain",
+        "data_year": "2015"
+    },
+    {
+        "title": "Wound Segmentation in Near-Infrared Optical Imaging",
+        "type": "Conference",
+        "authors": "<strong>Ruogu Fang</strong>, Xing Pang, Arash Dadkhah, Jiali Lei, Elizabeth SOlis, Suset ROdriguez, Francisco Perez-Calvijo, Stephen Wigley, Charles Buscemi, Anuradha Godvarty.",
+        "citation": "Innovation in Wound Healing, Hawks Cay, FL",
+        "publication_year": "2015",
+        "image_src": "img/pubs/WoundHealing.jpg",
+        "label_class": "primary",
+        "data_year": "2015"
+    },
+    {
+        "title": "Fast Preconditioning for Accelerated Multi-Contrast MRI Reconstruction",
+        "type": "Conference",
+        "authors": "Ruoyu Li, Yeqing Li, <strong>Ruogu Fang</strong>,Shaoting Zhang, Hao Pan, Junzhou Huang",
+        "citation": "MICCAI'15, In Proc. of the 18th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Munich, Germany",
+        "publication_year": "2015",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "data_year": "2015"
+    },
+    {
+        "title": "Efficient 4D Non-Local Tensor Total-Variation for Low-Dose CT Perfusion Deconvolution",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ming Ni, Junzhou Huang, Qianmu Li, and Tao Li",
+        "citation": "The 18th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Workshop on Medical Computer Vision, Munich, Germany",
+        "publication_year": "2015",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "data_year": "2015"
+    },
+    {
+        "title": "Robust Low-Dose CT Perfusion Deconvolution via Non-Local Tensor Total Variation",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ming Ni, Junzhou Huang, Qianmu Li, Tao Li",
+        "citation": "BMES, Biomedical Engineering Society Annual Meeting, Tampa, FL",
+        "publication_year": "2015",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "abstract": "Stroke and cerebrovascular diseases are the leading cause of serious, long-term disability in the\n        United States. Computed tomography perfusion (CTP) is one of the most widely accepted imaging modality for\n        stroke care. However, the high radiation exposure of CTP has lead to increased cancer risk. Tensor total variation\n        (TTV)[1] has been proposed to stabilize the quantification of perfusion parameters by integrating the anatomical\n        structure correlation. Yet the locality limitation of the neighborhood region has led to noticeable absence or\n        inflation of the delicate structures which are critical indicators for the clinical diagnosis. In this work, we propose\n        a non-local tensor total variation (NL-TTV) deconvolution method to by incorporating the long-range dependency\n        and the global connections in the spatio-temporal domain",
+        "data_year": "2015"
+    },
+    {
+        "title": "4-D Spatio-Temporal MR Perfusion Deconvolution via Tensor Total Variation.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>",
+        "citation": "ISMRM'15, International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting, Toronto, Canada. Oral presentation",
+        "publication_year": "2015",
+        "image_src": "img/pubs/MRM.jpg",
+        "label_class": "primary",
+        "abstract": "4-D dynamic susceptibility contrast (DSC) magnetic resonance imaging (MRI) is a well-established perfusion technique for non-invasive characterization of tissue\n        dynamics, with promising applications in assessing a wide range of diseases, as well as monitoring response of therapeutic interventions). DSC-MRI provides critical\n        real-time information by tracking the first-pass of an injected contrast-agent (e.g. gadolinium) with T2*-weighted MRI. The spatio-temproal data, consisting of contrast\n        concentration signals for each voxel of a volume, are deconvolved from the arterial input function (AIF) and then post-processed to generate perfusion parameter maps,\n        typically including the cerebral blood flow (CBF), cerebral blood volume (CBV), mean transit time (MTT) and time to peak (TTP). The most popular deconvolution\n        method is truncated singular value decomposition (TSVD)1,2 and its variants3\n        , which fail to exploit the spatio-temporal nature of the 4D data with both the anatomical\n        structure and the temporal continuation. This work adapts and demonstrates the feasibility of a 4-D tensor total variation (TTV) deconvolution approach, which has\n        been proposed for CT perfusion4\n        , to brain MR perfusion, with evaluation on synthetic data and clinical DSC-MRI data for glioblastomas, the most common type of\n        brain cancer. The method is guaranteed to convergence to global optimal because of the convex cost function and presents a more elegant framework of total variation\n        for the deconvolution, compared to recent efforts5,6 which either do not have a global optimal solution for the non-convex case or need to handcraft spatial and temporal\n        regularization terms.",
+        "data_year": "2015"
+    },
+    {
+        "title": "Leveraging Coupled Multi-Index for Scalable Retrieval of Mammographic Masses.",
+        "type": "Conference",
+        "authors": "Menglin Jiang, Shaoting Zhang, <strong>Ruogu Fang</strong>, Dimitris Metaxas.",
+        "citation": "ISBI'15, The IEEE International Symposium on Biomedical Imaging (ISBI), NYC, USA. Oral presentation 130 / 714 = 18%",
+        "publication_year": "2015",
+        "image_src": "img/pubs/Neurocomputing.png",
+        "label_class": "primary",
+        "data_year": "2015"
+    },
+    {
+        "title": "A Spatio-Temporal Low-rank Total Variation Approach for Denoising Arterial Spin Labeling MRI Data",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>,Junzhou Huang, Wen-Ming Luh.",
+        "citation": "ISBI'15, The IEEE International Symposium on Biomedical Imaging (ISBI), NYC, USA",
+        "publication_year": "2015",
+        "image_src": "img/pubs/Neurocomputing.png",
+        "label_class": "primary",
+        "abstract": "Arterial spin labeling MRI (ASL-MRI) can provide quantitative\n        signals correlated to the cerebral blood flow and neural\n        activity. However, the low signal-to-noise ratio in ASL\n        requires repeated acquisitions to improve the signal reliability,\n        leading to prolonged scanning time. At fewer repetitions,\n        noise and corruptions arise due to motion and physiological\n        artifacts, introducing errors into the cerebral blood flow estimation.\n        We propose to recover the ASL-MRI data from\n        the noisy and corrupted observations at shorter scanning time\n        with a spatio-temporal low-rank total variation method. The\n        low-rank approximation uses the similarity of the repetitive\n        scans, and the total variation regularization considers the local\n        spatial consistency. We compare with the state-of-art robust\n        M-estimator for ASL cerebral blood flow map estimation.\n        Validation on simulated and real data demonstrate the\n        robustness of the proposed method at fewer scanning repetitions\n        and with random corruption",
+        "data_year": "2015"
+    },
+    {
+        "title": "Improving Low-Dose Blood-Brain Barrier Permeability Quantification Using Sparse High-Dose Induced Prior for Patlak Model.",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Kolbeinn Karlsson, Tsuhan Chen, Pina C. Sanelli.",
+        "citation": "MedIA'14, Medical Image Analysis, Volume 18, Issue 6, Pages 866-880",
+        "publication_year": "2014",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S136184151300145X"
+        },
+        "abstract": "Blood-brain barrier permeability (BBBP) measurements extracted from the perfusion computed tomography (PCT) using the\n        Patlak model can be a valuable indicator to predict hemorrhagic transformation in patients with acute stroke. Unfortunately, the\n        standard Patlak model based PCT requires excessive radiation exposure, which raised attention on radiation safety. Minimizing\n        radiation dose is of high value in clinical practice but can degrade the image quality due to the introduced severe noise. The purpose\n        of this work is to construct high quality BBBP maps from low-dose PCT data by using the brain structural similarity between\n        different individuals and the relations between the high- and low-dose maps. The proposed sparse high-dose induced (shd-Patlak)\n        model performs by building a high-dose induced prior for the Patlak model with a set of location adaptive dictionaries, followed\n        by an optimized estimation of BBBP map with the prior regularized Patlak model. Evaluation with the simulated low-dose clinical\n        brain PCT datasets clearly demonstrate that the shd-Patlak model can achieve more significant gains than the standard Patlak model\n        with improved visual quality, higher fidelity to the gold standard and more accurate details for clinical analysis.",
+        "data_year": "2014"
+    },
+    {
+        "title": "Tensor Total-Variation Regularized Deconvolution for Efficient Low-Dose CT Perfusion.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>,Pina Sanelli, Shaoting Zhang, Tsuhan Chen.",
+        "citation": "MICCAI'14, The 17th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Boston, USA",
+        "publication_year": "2014",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "http://users.cis.fiu.edu/~rfang/projects/ttv.html"
+        },
+        "abstract": "Acute brain diseases such as acute stroke and transit ischemic attacks\n        are the leading causes of mortality and morbidity worldwide, responsible for 9%\n        of total death every year. \u2018Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational framework\n        for hemodynamic parameters estimation can save critical time for thrombolytic\n        therapy. Meanwhile the high level of accumulated radiation dosage due to\n        continuous image acquisition in CT perfusion (CTP) raised concerns on patient\n        safety and public health. However, low-radiation will lead to increased noise and\n        artifacts which require more sophisticated and time-consuming algorithms for\n        robust estimation. We propose a novel efficient framework using tensor totalvariation\n        (TTV) regularization to achieve both high efficiency and accuracy in\n        deconvolution for low-dose CTP. The method reduces the necessary radiation\n        dose to only 8% of the original level and outperforms the state-of-art algorithms\n        with estimation error reduced by 40%. It also corrects over-estimation of cerebral\n        blood flow (CBF) and under-estimation of mean transit time (MTT), at both normal\n        and reduced sampling rate. An efficient",
+        "data_year": "2014"
+    },
+    {
+        "title": "Anisotropic Tensor Total Variation Regularization For Low Dose Low CT Perfusion Deconvolution.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
+        "citation": "MICCAI'14, The 17th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Workshop on Sparsity Techniques in Medical Imaging, Boston, USA",
+        "publication_year": "2014",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "abstract": "Tensor total variation (TTV) regularized deconvolution has been proposed\n        for robust low radiation dose CT perfusion. In this paper, we extended TTV\n        algorithm with anisotropic regularization weighting for the temporal and spatial\n        dimension. We evaluated TTV algorithm on synthetic dataset for bolus delay,\n        uniform region variability and contrast preservation, and on clinical dataset for\n        reduced sampling rate with visual and quantitative comparison. The extensive\n        experiments demonstrated promising results of TTV compared to baseline and\n        state-of-art algorithms in low-dose and low sampling rate CTP deconvolution\n        with insensitivity to bolus delay. This work further demonstrates the effectiveness\n        and potential of TTV algorithm's clinical usage for cerebrovascular diseases\n        with significantly reduced radiation exposure and improved patient safety.",
+        "data_year": "2014"
+    },
+    {
+        "title": "Towards Robust Deconvolution in Medical Imaging: Informatics, Diagnosis and Treatment.",
+        "type": "PhD Dissertation",
+        "authors": "<strong> Ruogu Fang</strong>",
+        "citation": "School of Electrical and Computer Engineering, Cornell University",
+        "publication_year": "2014",
+        "image_src": "img/pubs/Cornell.png",
+        "label_class": "success",
+        "abstract": "Robust deconvolution, the task of estimating hemodynamic parameters from measured spatio-temporal data, is a key problem in computed tomography perfusion. Traditionally, this has been accomplished by solving the inverse problem of the temporal tracer enhancement curves at each voxel inde- pendently. Incorporating spatial contextual information, i.e. information other than the temporal enhancement of the contrast agent, has received significant attention in recent works. Intra-subject contextual information is often exploited to remove the noise and artifacts in the low-dose hemodynamic maps. In this thesis, we take a closer look at the role of inter-subject contextual information in robust deconvolution. Specifically, we explore its importance in three as- pects. First: Informatics acquisition. We show, through synthetic evaluation as well as in-vivo clinical data, that inter-subject similarity provides complimen- tary information to improve the accuracy of cerebral blood flow map estimation and increase the differentiation between normal and deficit tissue. Second: Dis- ease diagnosis. We show that apart from the global learned dictionary for hemo- dynamic maps, the tissue-specific dictionaries can be effectively leveraged for disease diagnosis tasks as well, especially for low-contrast tissue types where the deficits usually occur. Lastly: Treatment plan. We propose a generalized framework with inter-subject context through dictionary learning and sparse representation possible for any hemodynamic parameter estimation, such as blood-brain-barrier permeability. We also extend to include inter-subject context through tensor total variation. The diverse hemodynamic maps provide necessary information for treatment plan decision making. We present results of our approaches on a variety of datasets and clinical tasks, such as uniform regions estimation, contrast preservation, data acquired at low-sampling rate and low radiation dose levels.",
+        "data_year": "2014"
+    },
+    {
+        "title": "Towards Robust Deconvolution of Low-Dose Perfusion CT: Sparse Perfusion Deconvolution Using Online Dictionary Learning",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
+        "citation": "MedIA'13, Medical Image Analysis, Volume 17, Issue 4, Pages 417-428(5 Year Impact Factor: 4.512)",
+        "publication_year": "2013",
+        "image_src": "img/pubs/MIA.gif",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S1361841513000194"
+        },
+        "abstract": "Computed tomography perfusion (CTP) is an important functional imaging modality in the evaluation of cerebrovascular diseases,\n        particularly in acute stroke and vasospasm. However, the post-processed parametric maps of blood flow tend to be noisy,\n        especially in low-dose CTP, due to the noisy contrast enhancement profile and the oscillatory nature of the results generated by\n        the current computational methods. In this paper, we propose a robust sparse perfusion deconvolution method (SPD) to estimate\n        cerebral blood flow in CTP performed at low radiation dose. We first build a dictionary from high-dose perfusion maps using online\n        dictionary learning and then perform deconvolution-based hemodynamic parameters estimation on the low-dose CTP data. Our\n        method is validated on clinical data of patients with normal and pathological CBF maps. The results show that we achieve superior\n        performance than existing methods, and potentially improve the differentiation between normal and ischemic tissue in the brain.",
+        "data_year": "2013"
+    },
+    {
+        "title": "Tissue-Specific Sparse Deconvolution for Low-Dose CT Perfusion",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>&gt;, Tsuhan Chen, Pina C. Sanelli",
+        "citation": "MICCAI'13, The 16th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Japan",
+        "publication_year": "2013",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "abstract": "Sparse perfusion deconvolution has been recently proposed to effectively\n        improve the image quality and diagnostic accuracy of low-dose perfusion\n        CT by extracting the complementary information from the high-dose perfusion\n        maps to restore the low-dose using a joint spatio-temporal model. However the\n        low-contrast tissue classes where infarct core and ischemic penumbra usually occur\n        in cerebral perfusion CT tend to be over-smoothed, leading to loss of essential\n        biomarkers. In this paper, we extend this line of work by introducing tissuespecific\n        sparse deconvolution to preserve the subtle perfusion information in the\n        low-contrast tissue classes by learning tissue-specific dictionaries for each tissue\n        class, and restore the low-dose perfusion maps by joining the tissue segments\n        reconstructed from the corresponding dictionaries. Extensive validation on clinical\n        datasets of patients with cerebrovascular disease demonstrates the superior\n        performance of our proposed method with the advantage of better differentiation\n        between abnormal and normal tissue in these patients.",
+        "data_year": "2013"
+    },
+    {
+        "title": "Kinship Classification by Modeling Facial Feature Heredity",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Andrew C. Gallagher, Tsuhan Chen, Alexander Loui",
+        "citation": "IEEE International Conference on Image Processing, Melbourne, Australia",
+        "publication_year": "2013",
+        "image_src": "img/pubs/ICIP.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www2.securecms.com/ICIP2013/"
+        },
+        "data_year": "2013"
+    },
+    {
+        "title": "Sparsity-Based Deconvolution of Low-Dose Perfusion CT Using Learned Dictionaries.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
+        "citation": "MICCAI'12, The 15th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Nice, France. Lecture Notes in Computer Science Volume 7510, 2012, pp 272-280.",
+        "publication_year": "2012",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "data_year": "2012"
+    },
+    {
+        "title": "Sparsity-Based Deconvolution Of Low-Dose Brain Perfusion CT In Subarachnoid Hemorrhage Patients",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
+        "citation": "ISBI'12, The 9th International Symposium on Biomedical Imaging, pp. 872-875, Barcelona, Spain. Oral presentation.",
+        "publication_year": "2012",
+        "image_src": "img/pubs/IEEEImaging.png",
+        "label_class": "primary",
+        "abstract": "Functional imaging serves as an important supplement to\n        anatomical imaging modalities such as MR and CT in\n        modern health care. In perfusion CT (CTP), hemodynamic\n        parameters are derived from the tracking of the first-pass of\n        the contrast bolus entering a tissue region of interest. In\n        practice, however, the post-processed parametric maps tend\n        to be noisy, especially in low-dose CTP, in part due to the\n        noisy contrast enhancement profile and oscillatory nature of\n        results generated by current computational methods. In this\n        paper, we propose a sparsity-based perfusion parameter\n        deconvolution approach that consists of a non-linear\n        processing based on sparsity prior in terms of residue\n        function dictionaries. Our simulated results from\n        numericaldata and experiments in aneurysmal subarachnoid\n        hemorrhage patients with clinical vasospasm show that the\n        algorithm improves the quality and reduces the noise of the\n        perfusion parametric maps in low-dose CTP, compared to\n        state-of-the-art methods",
+        "data_year": "2012"
+    },
+    {
+        "title": "Radiation dose reduction in computed tomography perfusion using spatial-temporal Bayesian methods.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ashish Raj, Tsuhan Chen, Pina C. Sanelli",
+        "citation": "SPIE'12, In Proceedings of SPIE Medical Imaging, Volume 8313, Paper #831345",
+        "publication_year": "2012",
+        "image_src": "img/pubs/SPIE.png",
+        "label_class": "primary",
+        "abstract": "In current computed tomography (CT) examinations, the associated X-ray radiation dose is of significant concern to\n        patients and operators, especially CT perfusion (CTP) imaging that has higher radiation dose due to its cine scanning\n        technique. A simple and cost-effective means to perform the examinations is to lower the milliampere-seconds (mAs)\n        parameter as low as reasonably achievable in data acquisition. However, lowering the mAs parameter will unavoidably\n        increase data noise and degrade CT perfusion maps greatly if no adequate noise control is applied during image\n        reconstruction. To capture the essential dynamics of CT perfusion, a simple spatial-temporal Bayesian method that uses\n        a piecewise parametric model of the residual function is used, and then the model parameters are estimated from a\n        Bayesian formulation of prior smoothness constraints on perfusion parameters. From the fitted residual function, reliable\n        CTP parameter maps are obtained from low dose CT data. The merit of this scheme exists in the combination of\n        analytical piecewise residual function with Bayesian framework using a simpler prior spatial constrain for CT perfusion\n        application. On a dataset of 22 patients, this dynamic spatial-temporal Bayesian model yielded an increase in signal-tonoise-ratio\n        (SNR) of 78% and a decrease in mean-square-error (MSE) of 40% at low dose radiation of 43mA.",
+        "data_year": "2012"
+    },
+    {
+        "title": "System and Method For Interactive Segmentation On Mobile Devices in a Cloud Computing Environment",
+        "type": "Patents",
+        "authors": "<strong> Ruogu Fang</strong>,Leo Grady, Gianluca Paladini.",
+        "citation": "Siemens Corporation. U.S. Patent No: US20130272587 A1, WO2012027259 A2, WO2012027259 A3. Published on March 1, 2012.",
+        "publication_year": "2012",
+        "image_src": "img/pubs/Patent.jpg",
+        "label_class": "info",
+        "external_links": {
+            "sciencedirect": "http://www.google.com/patents/WO2012027259A2?cl=en"
+        },
+        "abstract": "A mobile device (160) for medical image analysis is disclosed. The mobile device (160) includes a display (162), a communication module (218), a memory (204) configured to store processor-executable instructions (224) and a processor (202) in communication with the display (162), the communication module (218) and the memory (204). The processor (202) being configured to execute the processor-executable instructions (224) to implement a compression routine to generate a compressed representation of a medical image stored in the memory (204), transmit the compressed representation to a remote device (110) via the communication module (218), receive segmented results from the remote device (110), wherein the segmented results are derived from a reconstruction of the compressed representation generated at the remote device (110), and present, via the display (162), a segmented medical image based on the received segmented results.",
+        "data_year": "2012"
+    },
+    {
+        "title": "Segmentation of Liver Tumor Using Efficient Global Optimal Tree Metrics Graph Cuts",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Ramin Zabih, Ashish Raj, Tsuhan Chen",
+        "citation": "MICCAI'11, Abdominal Imaging, International Conference on Medical Image Computing and Computer Assisted Intervention, pp. 51-59",
+        "publication_year": "2011",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "abstract": "We propose a novel approach that applies global optimal tree-metrics\n        graph cuts algorithm on multi-phase contrast enhanced contrast enhanced MRI\n        for liver tumor segmentation. To address the difficulties caused by low\n        contrasted boundaries and high variability in liver tumor segmentation, we first\n        extract a set of features in multi-phase contrast enhanced MRI data and use\n        color-space mapping to reveal spatial-temporal information invisible in MRI\n        intensity images. Then we apply efficient tree-metrics graph cut algorithm on\n        multi-phase contrast enhanced MRI data to obtain global optimal labeling in an\n        unsupervised framework. Finally we use tree-pruning method to reduce the\n        number of available labels for liver tumor segmentation. Experiments on realworld\n        clinical data show encouraging results. This approach can be applied to\n        various medical imaging modalities and organs.",
+        "data_year": "2011"
+    },
+    {
+        "title": "Towards Computational Models of Kinship Verification.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>,  Kevin D. Tang, Noah Snavely, Tsuhan Chen.",
+        "citation": "ICIP'10, The 17th IEEE International Conference on Image Processing, Hong Kong. Oral presentation ICIP 2010 Best Paper Award",
+        "publication_year": "2010",
+        "image_src": "img/pubs/IEEE.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.newscientist.com/article/mg21228424.900-facial-recognition-software-spots-family-resemblance/#.U9VZz1ZMYhG"
+        },
+        "abstract": "We tackle the challenge of kinship verification using novel\n        feature extraction and selection methods, automatically\n        classifying pairs of face images as \u201crelated\u201d or \u201cunrelated\u201d\n        (in terms of kinship). First, we conducted a controlled online\n        search to collect frontal face images of 150 pairs of public\n        figures and celebrities, along with images of their parents or\n        children. Next, we propose and evaluate a set of low-level\n        image features that for use in this classification problem.\n        After selecting the most discriminative inherited facial\n        features, we demonstrate a classification accuracy of 70.67%\n        on a test set of image pairs using K-Nearest-Neighbors.\n        Finally, we present an evaluation of human performance on\n        this problem.",
+        "data_year": "2010"
+    },
+    {
+        "title": "Tree-Metrics Graph Cuts For Brain MRI Segmentation With Tree Cutting.",
+        "type": "Conference",
+        "authors": "<u><b>Ruogu Fang</b></u>, Joyce Yu-hsin Chen, Ramin Zabih, Tsuhan Chen.",
+        "citation": "WNYIPW'10, IEEE Western New York Image Processing Workshop, pp. 10-13, Rochesester, NY. USA. Oral presentation",
+        "publication_year": "2010",
+        "image_src": "img/pubs/IEEE.png",
+        "label_class": "primary",
+        "abstract": "We tackle the problem of brain MRI image segmentation using\n        the tree-metric graph cuts (TM) algorithm, a novel image\n        segmentation algorithm, and introduce a \u201ctree-cutting\u201d\n        method to interpret the labeling returned by the TM algorithm\n        as tissue classification for the input brain MRI image.\n        The approach has three steps: 1) pre-processing, which\n        generates a tree of labels as input to the TM algorithm; 2) a\n        sweep of the TM algorithm, which returns a globally optimal\n        labeling with respect to the tree of labels; 3) post-processing,\n        which involves running the \u201ctree-cutting\u201d method to generate\n        a mapping from labels to tissue classes (GM, WM, CSF),\n        producing a meaningful brain MRI segmentation. The TM\n        algorithm produces a globally optimal labeling on tree metrics\n        in one sweep, unlike conventional methods such as EMS\n        and EM-style geo-cuts, which iterate the expectation maximization\n        algorithm to find hidden patterns and produce only\n        locally optimal labelings. When used with the \u201ctree-cutting\u201d\n        method, the TM algorithm produces brain MRI segmentations\n        that are as good as the Unified Segmentation algorithm used\n        by SPM8, using a much weaker prior. Comparison with the\n        current approaches shows that our method is faster and that\n        our overall segmentation accuracy is better.",
+        "data_year": "2010"
+    },
+    {
+        "title": "Adaptive Scale Robust Feature Density Approximation For Visual Object Representation And Tracking",
+        "type": "Conference",
+        "authors": "Chongyang Liu, <strong>Ruogu Fang</strong>, and Nelson H.C.Yung",
+        "citation": "IEEE International Conference on Computer Vision Theory and Applications, Lisboa, Portugal",
+        "publication_year": "2009",
+        "image_src": "img/pubs/IEEE.png",
+        "label_class": "primary",
+        "data_year": "2009"
+    }
+]
 
-            // Add styles to the input
-            searchInput.css({
-                'margin-top': '20px',
-                'padding': '12px 15px',
-                'border-radius': '8px',
-                'border': '1px solid #ddd',
-                'font-size': '16px',
-                'font-family': 'Lato, sans-serif',
-                'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',
-                'transition': 'border-color 0.3s, box-shadow 0.3s',
-                'display': 'flex',
-                'flex-direction':'column',
-                'align-items': 'center', // Center vertically
-                'height': '100%' // Ensure it takes full height for vertical centering
-            }).focus(function() {
-                $(this).css({
-                    'border-color': '#03cc85',
-                    'box-shadow': '0 0 5px rgba(3, 204, 133, 0.5)',
-                });
-            }).blur(function() {
-                $(this).css({
-                    'border-color': '#ddd',
-                    'box-shadow': 'none',
-                });
+$(document).ready(function(){
+    const allPubsDiv = document.getElementById('allPubs');
+    const searchInput = $('#inputPubs'); // Use the existing input with id inputPubs
+
+    // Add styles to the input
+    searchInput.css({
+        'margin-top': '20px',
+        'padding': '12px 15px',
+        'border-radius': '8px',
+        'border': '1px solid #ddd',
+        'font-size': '16px',
+        'font-family': 'Lato, sans-serif',
+        'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',
+        'transition': 'border-color 0.3s, box-shadow 0.3s',
+        'display': 'flex',
+        'flex-direction':'column',
+        'align-items': 'center', // Center vertically
+        'height': '100%' // Ensure it takes full height for vertical centering
+    }).focus(function() {
+        $(this).css({
+            'border-color': '#03cc85',
+            'box-shadow': '0 0 5px rgba(3, 204, 133, 0.5)',
+        });
+    }).blur(function() {
+        $(this).css({
+            'border-color': '#ddd',
+            'box-shadow': 'none',
+        });
+    });
+
+    searchInput.on('keyup', function() {
+        const searchTerm = $(this).val().toLowerCase();
+        $('.item').each(function() {
+            const title = $(this).find('.pubtitle').text().toLowerCase();
+            const authors = $(this).find('.pubauthor').text().toLowerCase();
+            const year = $(this).data('year').toString(); // Get the year from data attribute
+            const pubType = $(this).attr('class').match(/mix\s+(.+)/)[1].toLowerCase(); // Get the publication type
+            $(this).toggle(title.includes(searchTerm) || authors.includes(searchTerm) || year.includes(searchTerm) || pubType.includes(searchTerm));
+        });
+    });
+
+    // Create dropdown for publication types dynamically
+    const pubTypes = [...new Set(publications.map(pub => pub.type))]; // Get unique publication types
+    const dropdown = $('<select>', { id: 'cd-dropdown', name: 'cd-dropdown', class: 'cd-select cd-dropdown' })
+        .css({
+            'padding': '12px 15px',
+            'border-radius': '8px',
+            'border': '1px solid #ddd',
+            'background-color': '#ffffff',
+            'font-size': '16px',
+            'color': '#333',
+            'cursor': 'pointer',
+            'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',
+            'transition': 'background-color 0.3s, box-shadow 0.3s',
+        })
+        .on('focus', function() {
+            $(this).css({
+                'background-color': '#e0f7fa',
+                'box-shadow': '0 0 5px rgba(3, 204, 133, 0.5)',
             });
-
-            searchInput.on('keyup', function() {
-                const searchTerm = $(this).val().toLowerCase();
-                $('.item').each(function() {
-                    const title = $(this).find('.pubtitle').text().toLowerCase();
-                    const authors = $(this).find('.pubauthor').text().toLowerCase();
-                    const year = $(this).data('year').toString(); // Get the year from data attribute
-                    const pubType = $(this).attr('class').match(/mix\s+(.+)/)[1].toLowerCase(); // Get the publication type
-                    $(this).toggle(title.includes(searchTerm) || authors.includes(searchTerm) || year.includes(searchTerm) || pubType.includes(searchTerm));
-                });
+        }).on('blur', function() {
+            $(this).css({
+                'background-color': '#ffffff',
+                'box-shadow': 'none',
             });
+        })
+        .append($('<option>', { class: 'filter', value: 'all', selected: true }).text('All types (' + publications.length + ')'));
 
-            // Create dropdown for publication types dynamically
-            const pubTypes = [...new Set(publications.map(pub => pub.type))]; // Get unique publication types
-            const dropdown = $('<select>', { id: 'cd-dropdown', name: 'cd-dropdown', class: 'cd-select cd-dropdown' })
-                .css({
-                    'padding': '12px 15px',
-                    'border-radius': '8px',
-                    'border': '1px solid #ddd',
-                    'background-color': '#ffffff',
-                    'font-size': '16px',
-                    'color': '#333',
-                    'cursor': 'pointer',
-                    'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',
-                    'transition': 'background-color 0.3s, box-shadow 0.3s',
-                })
-                .on('focus', function() {
-                    $(this).css({
-                        'background-color': '#e0f7fa',
-                        'box-shadow': '0 0 5px rgba(3, 204, 133, 0.5)',
-                    });
-                }).on('blur', function() {
-                    $(this).css({
-                        'background-color': '#ffffff',
-                        'box-shadow': 'none',
-                    });
-                })
-                .append($('<option>', { class: 'filter', value: 'all', selected: true }).text('All types (' + publications.length + ')'));
+    pubTypes.forEach(type => {
+        const count = publications.filter(pub => pub.type === type).length; // Count publications of this type
+        dropdown.append($('<option>', { class: 'filter', value: type }).text(type + ' (' + count + ')'));
+    });
 
-            pubTypes.forEach(type => {
-                const count = publications.filter(pub => pub.type === type).length; // Count publications of this type
-                dropdown.append($('<option>', { class: 'filter', value: type }).text(type + ' (' + count + ')'));
-            });
+    dropdown.on('change', function() {
+        const selectedType = $(this).val();
+        $('.item').each(function() {
+            const pubType = $(this).attr('class').match(/mix\s+(.+)/)[1]; // Use regex to extract the publication type, allowing for multiple words
+            $(this).toggle(selectedType === 'all' || pubType.trim() === selectedType); // Show items of the selected type or all
+        });
+    });
 
-            dropdown.on('change', function() {
-                const selectedType = $(this).val();
-                $('.item').each(function() {
-                    const pubType = $(this).attr('class').match(/mix\s+(.+)/)[1]; // Use regex to extract the publication type, allowing for multiple words
-                    $(this).toggle(selectedType === 'all' || pubType.trim() === selectedType); // Show items of the selected type or all
-                });
-            });
+    $('#dropDownPubs').html(dropdown); // Add dropdown to the existing element with id dropDownPubs
 
-            $('#dropDownPubs').html(dropdown); // Add dropdown to the existing element with id dropDownPubs
+    const newPubDivs = publications.map(pub => {
+        const pubType = pub.type || 'Unknown';
+        var $item = $('<div>', { class: 'item mix ' + pubType, 'data-year': pub.data_year });
+        var $pubmain = $('<div>', { class: 'pubmain' });
+        var $pubassets = $('<div>', { class: 'pubassets' });
+        $pubassets.append($('<a>', { href: '#', class: 'pubcollapse' }).append($('<i>', { class: 'fa fa-expand' })));
 
-            const newPubDivs = publications.map(pub => {
-                const pubType = pub.type || 'Unknown';
-                var $item = $('<div>', { class: 'item mix ' + pubType, 'data-year': pub.data_year });
-                var $pubmain = $('<div>', { class: 'pubmain' });
-                var $pubassets = $('<div>', { class: 'pubassets' });
-                $pubassets.append($('<a>', { href: '#', class: 'pubcollapse' }).append($('<i>', { class: 'fa fa-expand' })));
+        if (pub.external_links) {
+            if (pub.external_links.sciencedirect) {
+                $pubassets.append($('<a>', { href: pub.external_links.sciencedirect, class: 'tooltips', title: 'External link', target: '_blank' }).append($('<i>', { class: 'fa fa-external-link' })));
+            }
+            if (pub.external_links.github) {
+                $pubassets.append($('<a>', { href: pub.external_links.github, class: 'tooltips', title: 'GitHub', target: '_blank' }).append($('<i>', { class: 'fa fa-github' })));
+            }
+            if (pub.external_links.arxiv) {
+                $pubassets.append($('<a>', { href: pub.external_links.arxiv, class: 'tooltips', title: 'arXiv', target: '_blank' }).append($('<i>', { class: 'fa fa-book' })));
+            }
+        }
 
-                if (pub.external_links) {
-                    if (pub.external_links.sciencedirect) {
-                        $pubassets.append($('<a>', { href: pub.external_links.sciencedirect, class: 'tooltips', title: 'External link', target: '_blank' }).append($('<i>', { class: 'fa fa-external-link' })));
-                    }
-                    if (pub.external_links.github) {
-                        $pubassets.append($('<a>', { href: pub.external_links.github, class: 'tooltips', title: 'GitHub', target: '_blank' }).append($('<i>', { class: 'fa fa-github' })));
-                    }
-                    if (pub.external_links.arxiv) {
-                        $pubassets.append($('<a>', { href: pub.external_links.arxiv, class: 'tooltips', title: 'arXiv', target: '_blank' }).append($('<i>', { class: 'fa fa-book' })));
-                    }
+        var $pubthumbnail = $('<div>', { class: 'pubthumbnail' }).append($('<img>', { width: 125, src: pub.image_src, class: 'attachment-medium size-medium wp-post image', alt: '', align: 'left', hspace: 20 }));
+        var $pubcontent = $('<div>', { class: 'pubcontent' })
+            .append($('<h4>', { class: 'pubtitle' }).text(pub.title))
+            .append($('<span>', { class: 'label label-' + pub.label_class }).text(pubType))
+            .append($('<div>', { class: 'pubauthor' }).html(pub.authors))
+            .append($('<div>', { class: 'pubcite' }).text(pub.citation))
+            .append($('<div>', { class: 'pubdate' }).text('Publication Year: ' + (pub.data_year || 'N/A')));
+
+        $pubmain.append($pubassets, $pubthumbnail, $pubcontent, $('<div>', { class: 'clearfix' }));
+
+        if (pub.abstract) {
+            var $pubdetails = $('<div>', { class: 'pubdetails' })
+                .append($('<h4>').text('Abstract'))
+                .append($('<p>').text(pub.abstract));
+            $item.append($pubmain, $pubdetails);
+        } else {
+            $item.append($pubmain);
+        }
+
+        return $item.prop('outerHTML');
+    }).join('\n');
+    allPubsDiv.innerHTML = newPubDivs;
+
+    // Sorting functionality
+    $('.sort').on('click', function() {
+        const order = $(this).data('order');
+        const sortedPublications = publications.sort((a, b) => {
+            return order === 'asc' ? a.data_year - b.data_year : b.data_year - a.data_year;
+        });
+
+        const sortedPubDivs = sortedPublications.map(pub => {
+            const pubType = pub.type || 'Unknown';
+            var $item = $('<div>', { class: 'item mix ' + pubType, 'data-year': pub.data_year });
+            var $pubmain = $('<div>', { class: 'pubmain' });
+            var $pubassets = $('<div>', { class: 'pubassets' });
+            $pubassets.append($('<a>', { href: '#', class: 'pubcollapse' }).append($('<i>', { class: 'fa fa-expand' })));
+
+            if (pub.external_links) {
+                if (pub.external_links.sciencedirect) {
+                    $pubassets.append($('<a>', { href: pub.external_links.sciencedirect, class: 'tooltips', title: 'External link', target: '_blank' }).append($('<i>', { class: 'fa fa-external-link' })));
                 }
-
-                var $pubthumbnail = $('<div>', { class: 'pubthumbnail' }).append($('<img>', { width: 125, src: pub.image_src, class: 'attachment-medium size-medium wp-post image', alt: '', align: 'left', hspace: 20 }));
-                var $pubcontent = $('<div>', { class: 'pubcontent' })
-                    .append($('<h4>', { class: 'pubtitle' }).text(pub.title))
-                    .append($('<span>', { class: 'label label-' + pub.label_class }).text(pubType))
-                    .append($('<div>', { class: 'pubauthor' }).html(pub.authors))
-                    .append($('<div>', { class: 'pubcite' }).text(pub.citation))
-                    .append($('<div>', { class: 'pubdate' }).text('Publication Year: ' + (pub.data_year || 'N/A')));
-
-                $pubmain.append($pubassets, $pubthumbnail, $pubcontent, $('<div>', { class: 'clearfix' }));
-
-                if (pub.abstract) {
-                    var $pubdetails = $('<div>', { class: 'pubdetails' })
-                        .append($('<h4>').text('Abstract'))
-                        .append($('<p>').text(pub.abstract));
-                    $item.append($pubmain, $pubdetails);
-                } else {
-                    $item.append($pubmain);
+                if (pub.external_links.github) {
+                    $pubassets.append($('<a>', { href: pub.external_links.github, class: 'tooltips', title: 'GitHub', target: '_blank' }).append($('<i>', { class: 'fa fa-github' })));
                 }
+                if (pub.external_links.arxiv) {
+                    $pubassets.append($('<a>', { href: pub.external_links.arxiv, class: 'tooltips', title: 'arXiv', target: '_blank' }).append($('<i>', { class: 'fa fa-book' })));
+                }
+            }
 
-                return $item.prop('outerHTML');
-            }).join('\n');
-            allPubsDiv.innerHTML = newPubDivs;
+            var $pubthumbnail = $('<div>', { class: 'pubthumbnail' }).append($('<img>', { width: 125, src: pub.image_src, class: 'attachment-medium size-medium wp-post image', alt: '', align: 'left', hspace: 20 }));
+            var $pubcontent = $('<div>', { class: 'pubcontent' })
+                .append($('<h4>', { class: 'pubtitle' }).text(pub.title))
+                .append($('<span>', { class: 'label label-' + pub.label_class }).text(pubType))
+                .append($('<div>', { class: 'pubauthor' }).html(pub.authors))
+                .append($('<div>', { class: 'pubcite' }).text(pub.citation))
+                .append($('<div>', { class: 'pubdate' }).text('Publication Year: ' + (pub.data_year || 'N/A')));
 
-            // Sorting functionality
-            $('.sort').on('click', function() {
-                const order = $(this).data('order');
-                const sortedPublications = publications.sort((a, b) => {
-                    return order === 'asc' ? a.data_year - b.data_year : b.data_year - a.data_year;
-                });
+            $pubmain.append($pubassets, $pubthumbnail, $pubcontent, $('<div>', { class: 'clearfix' }));
 
-                const sortedPubDivs = sortedPublications.map(pub => {
-                    const pubType = pub.type || 'Unknown';
-                    var $item = $('<div>', { class: 'item mix ' + pubType, 'data-year': pub.data_year });
-                    var $pubmain = $('<div>', { class: 'pubmain' });
-                    var $pubassets = $('<div>', { class: 'pubassets' });
-                    $pubassets.append($('<a>', { href: '#', class: 'pubcollapse' }).append($('<i>', { class: 'fa fa-expand' })));
+            if (pub.abstract) {
+                var $pubdetails = $('<div>', { class: 'pubdetails' })
+                    .append($('<h4>').text('Abstract'))
+                    .append($('<p>').text(pub.abstract));
+                $item.append($pubmain, $pubdetails);
+            } else {
+                $item.append($pubmain);
+            }
 
-                    if (pub.external_links) {
-                        if (pub.external_links.sciencedirect) {
-                            $pubassets.append($('<a>', { href: pub.external_links.sciencedirect, class: 'tooltips', title: 'External link', target: '_blank' }).append($('<i>', { class: 'fa fa-external-link' })));
-                        }
-                        if (pub.external_links.github) {
-                            $pubassets.append($('<a>', { href: pub.external_links.github, class: 'tooltips', title: 'GitHub', target: '_blank' }).append($('<i>', { class: 'fa fa-github' })));
-                        }
-                        if (pub.external_links.arxiv) {
-                            $pubassets.append($('<a>', { href: pub.external_links.arxiv, class: 'tooltips', title: 'arXiv', target: '_blank' }).append($('<i>', { class: 'fa fa-book' })));
-                        }
-                    }
+            return $item.prop('outerHTML');
+        }).join('\n');
+        allPubsDiv.innerHTML = sortedPubDivs;
 
-                    var $pubthumbnail = $('<div>', { class: 'pubthumbnail' }).append($('<img>', { width: 125, src: pub.image_src, class: 'attachment-medium size-medium wp-post image', alt: '', align: 'left', hspace: 20 }));
-                    var $pubcontent = $('<div>', { class: 'pubcontent' })
-                        .append($('<h4>', { class: 'pubtitle' }).text(pub.title))
-                        .append($('<span>', { class: 'label label-' + pub.label_class }).text(pubType))
-                        .append($('<div>', { class: 'pubauthor' }).html(pub.authors))
-                        .append($('<div>', { class: 'pubcite' }).text(pub.citation))
-                        .append($('<div>', { class: 'pubdate' }).text('Publication Year: ' + (pub.data_year || 'N/A')));
+        // Reapply filtering after sorting
+        searchInput.trigger('keyup');
+    });
 
-                    $pubmain.append($pubassets, $pubthumbnail, $pubcontent, $('<div>', { class: 'clearfix' }));
-
-                    if (pub.abstract) {
-                        var $pubdetails = $('<div>', { class: 'pubdetails' })
-                            .append($('<h4>').text('Abstract'))
-                            .append($('<p>').text(pub.abstract));
-                        $item.append($pubmain, $pubdetails);
-                    } else {
-                        $item.append($pubmain);
-                    }
-
-                    return $item.prop('outerHTML');
-                }).join('\n');
-                allPubsDiv.innerHTML = sortedPubDivs;
-
-                // Reapply filtering after sorting
-                searchInput.trigger('keyup');
-            });
-
-            // Reapply filtering after new publications are added
-            searchInput.trigger('keyup');
-        }  // end of success fn
-    }); // end of Ajax call
+    // Reapply filtering after new publications are added
+    searchInput.trigger('keyup');
 }); // end of document ready
