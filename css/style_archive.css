@@ -823,6 +823,7 @@ ul.timeline li .data .text {
 
 #sort span {
 	line-height: 30px;
+	transform: translateY(-100px);
 }
 
 .stuck {
@@ -931,13 +932,15 @@ ul.timeline li .data .text {
 
 /* publications
  **************************************************/
-#pub-grid .mix {
+/* #pub-grid .mix {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;
 	display: none;
+} */
+.pitems{
+	height: auto;
 }
-
 .pitems .item {
 	margin-bottom: 20px;
 	width: 100%;
