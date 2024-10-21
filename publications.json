@@ -1,5 +1,19 @@
 [
     {
+        "title": " Disagreement on foundational principles of biological aging",
+        "type": "Journal",
+        "authors": "Vadim N. Gladyshev, ... , <b>Ruogu Fang</b>",
+        "citation": "Proceedings of the National Academy of Sciences (PNAS) Nexus, 2024",
+        "publication_year":"2024",
+        "image_src":"img/pubs/PNAS.png",
+        "label_class":"warning",
+        "external_links" : {
+            "sciencedirect": ""
+        },
+        "abstract":"",
+        "data_year": "2024"
+    },
+    {
         "title": "Artificial Intelligence-Optimized Non-Invasive Brain Stimulation and Treatment Response Prediction for Major Depression",
         "type": "Journal",
         "authors": "Alejandro Albizu, Paulo Suen, Ziqian Huang, Jori L. Waner, Skylar E. Stolte, Aprinda Indahlastari, <strong>Ruogu Fang</strong>, Andre R. Brunoni, and Adam J. Woods",
