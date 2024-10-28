@@ -1,6 +1,28 @@
 [
     {
-        "title": " Disagreement on foundational principles of biological aging",
+        "title": "Baseline Clinical Characteristics and Machine Learning Predict tDCS Treatment Outcomes for Anxiety",
+        "type": "Conference",
+        "authors": "Daniel Rodriguez, Junfu Cheng, Skylar Stolte, Aprinda Queen, Adam Woods,<b><u>Ruogu Fang</u></b>",
+        "citation": "",
+        "publication_year": "2024",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "abstract" : "",
+        "data_year": "2024"
+    },
+    {
+        "title": "Comparison of GRACE and SynthSeg Deep Learning Models for Whole-Head Brain Segmentation",
+        "type": "Conference",
+        "authors": "Jason Chen, Veronica Ramos, Skylar Stolte, Aprinda Indahlastari, Adam Woods,<b><u>Ruogu Fang</u></b>",
+        "citation": "",
+        "publication_year": "2024",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "abstract" : "",
+        "data_year": "2024"
+    },
+    {
+        "title": "Disagreement on foundational principles of biological aging",
         "type": "Journal",
         "authors": "Vadim N. Gladyshev, ... , <b>Ruogu Fang</b>",
         "citation": "Proceedings of the National Academy of Sciences (PNAS) Nexus, 2024",
@@ -632,8 +654,8 @@
     {
         "title": "A deep neural network for emotion perception",
         "type": "Conference",
-        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020, <br/>\n                (\u2020 co-corresponding authors)",
-        "citation": "Montreal AI & Neuroscience Annual Meeting \n                November 29-30, Montreal, Canada",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020, <br/>  (\u2020 co-corresponding authors)",
+        "citation": "Montreal AI & Neuroscience Annual Meeting   November 29-30, Montreal, Canada",
         "publication_year": "November 29-30, 2021",
         "image_src": "img/pubs/MAIN2021.png",
         "label_class": "primary",
@@ -645,8 +667,8 @@
     {
         "title": "Emergence of emotion selectivity in deep neural networks trained to recognize visual objects",
         "type": "Conference",
-        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020,  <br/>\n                (\u2020 co-corresponding authors)",
-        "citation": "Society of Neuroscience (SfN) Annual Meeting \n                Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020,  <br/>  (\u2020 co-corresponding authors)",
+        "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
         "publication_year": "November 8-16, 2021",
         "image_src": "img/pubs/SfN.jpeg",
         "label_class": "primary",
@@ -658,8 +680,8 @@
     {
         "title": "A deep neural network model for emotion perception",
         "type": "Conference",
-        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>\u2020, Mingzhou Ding\u2020 <br/>\n                (\u2020 co-corresponding authors)",
-        "citation": "Society of Neuroscience (SfN) Annual Meeting \n                Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>\u2020, Mingzhou Ding\u2020 <br/>  (\u2020 co-corresponding authors)",
+        "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
         "publication_year": "November 8-16, 2021",
         "image_src": "img/pubs/SfN.jpeg",
         "label_class": "primary",
@@ -672,7 +694,7 @@
         "title": "Machine-Learning Defined Precision tDCS for Improving Cognitive Function",
         "type": "Conference",
         "authors": "Alejandro Albizu, <b>Ruogu Fang</b>, Aprinda Indahlastari, Andrew O\u2019Shea, Skylar E. Stolte, Kyle B. See, Emanuel M. Boutzoukas, Jessica N. Kraft, Nicole R. Nissim, and Adam J. Woods",
-        "citation": "Society of Neuroscience (SfN) Annual Meeting \n                Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
+        "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
         "publication_year": "November 8-16, 2021",
         "image_src": "img/pubs/SfN.jpeg",
         "label_class": "primary",
