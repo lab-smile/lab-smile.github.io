@@ -153,7 +153,7 @@ $(document).ready(async function(){
         return $item.prop('outerHTML');
     }).join('\n');
 
-    allPubsDiv.innerHTML = loading ? loader : newPubDivs;
+    allPubsDiv.innerHTML = newPubDivs;
 
     // Sorting functionality
     $('.sort').on('click', function() {
