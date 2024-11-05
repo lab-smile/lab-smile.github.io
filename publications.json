@@ -1,9 +1,37 @@
 [
     {
-        "title": "Baseline Clinical Characteristics and Machine Learning Predict tDCS Treatment Outcomes for Anxiety",
+        "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
         "type": "Conference",
+        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Ruogu Fang, 6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
+        "citation": "6th International Brain Stimulation Conference",
+        "publication_year": "2025",
+        "image_src": "img/pubs/BrainStimulation2025.png",
+        "label_class": "primary",
+        "abstract": "",
+        "external_links" : {
+            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
+        },
+        "data_year": "2025"
+    },
+    {
+        "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
+        "type": "Conference",
+        "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, Ruogu Fang",
+        "citation": "6th International Brain Stimulation Conference",
+        "publication_year": "2025",
+        "image_src": "img/pubs/BrainStimulation2025.png",
+        "label_class": "primary",
+        "abstract": "",
+        "external_links" : {
+            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
+        },
+        "data_year": "2024"
+    },
+    {
+        "title": "Baseline Clinical Characteristics and Machine Learning Predict tDCS Treatment Outcomes for Anxiety",
+        "type": "Poster Presentation",
         "authors": "Daniel Rodriguez, Junfu Cheng, Skylar Stolte, Aprinda Queen, Adam Woods,<b><u>Ruogu Fang</u></b>",
-        "citation": "",
+        "citation": "BMES 2024",
         "publication_year": "2024",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
@@ -14,7 +42,7 @@
         "title": "Comparison of GRACE and SynthSeg Deep Learning Models for Whole-Head Brain Segmentation",
         "type": "Conference",
         "authors": "Jason Chen, Veronica Ramos, Skylar Stolte, Aprinda Indahlastari, Adam Woods,<b><u>Ruogu Fang</u></b>",
-        "citation": "",
+        "citation": "BMES 2024",
         "publication_year": "2024",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
