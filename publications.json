@@ -2,7 +2,7 @@
     {
         "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
         "type": "Conference",
-        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Ruogu Fang, 6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
+        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods,<u><b> Ruogu Fang </b></u>, 6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
         "citation": "6th International Brain Stimulation Conference",
         "publication_year": "2025",
         "image_src": "img/pubs/BrainStimulation2025.png",
@@ -16,7 +16,7 @@
     {
         "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
         "type": "Conference",
-        "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, Ruogu Fang",
+        "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b> Ruogu Fang </b></u>",
         "citation": "6th International Brain Stimulation Conference",
         "publication_year": "2025",
         "image_src": "img/pubs/BrainStimulation2025.png",
@@ -72,7 +72,7 @@
         "image_src": "img/pubs/BMC_BioelecMed.png",
         "label_class": "warning",
         "external_links": {
-            "sciencedirect": "https://bioelecmed.biomedcentral.com/"
+            "sciencedirect": "https://bioelecmed.biomedcentral.com/articles/10.1186/s42234-024-00157-2"
         },
         "data_year": "2024"
     },
