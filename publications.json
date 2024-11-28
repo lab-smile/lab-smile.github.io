@@ -6,7 +6,7 @@
         "citation": "International Conference on Video Coding, 2024",
         "publication_year": "2024",
         "image_src": "img/pubs/uf.png",
-        "label_class": "info",
+        "label_class": "success",
         "data_year": "2024"
     },
     {
@@ -16,7 +16,7 @@
         "citation": "Precision Health Conference, 2024",
         "publication_year": "2024",
         "image_src": "img/pubs/uf.png",
-        "label_class": "info",
+        "label_class": "success",
         "data_year": "2024"
     },
     {
