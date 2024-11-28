@@ -1,5 +1,25 @@
 [
     {
+        "title": "Advanced Technologies for Video Coding",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Tianqi Li</strong>",
+        "citation": "International Conference on Video Coding, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/video_coding.png",
+        "label_class": "info",
+        "data_year": "2024"
+    },
+    {
+        "title": "Interpretable Artificial Intelligence for Precision Health",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Kyle See</strong>",
+        "citation": "Precision Health Conference, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/precision_health.png",
+        "label_class": "info",
+        "data_year": "2024"
+    },
+    {
         "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
         "type": "Conference",
         "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods,<u><b> Ruogu Fang </b></u>, 6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
