@@ -100,7 +100,7 @@ function createPublicationHTML(pub) {
     return `<div class="item mix ${pub.type}" data-year="${pub.data_year}">
                 <div class="pubmain">
                     <div class="pubassets">${pubAssets(pub)}</div>
-                    <div class="pubthumbnail"><img src="${pub.image_src}" width="125" alt=""></div>
+                    <div class="pubthumbnail"><img src="${pub.image_src}" alt="" style="max-width: 125px; max-height:125px;"></div>
                     <div class="pubcontent">
                         <h4 class="pubtitle">${pub.title}</h4>
                         <span class="label label-${pub.label_class}">${pub.type}</span>
