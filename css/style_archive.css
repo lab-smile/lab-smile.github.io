@@ -990,6 +990,11 @@ ul.timeline li .data .text {
 	position: relative;
 }
 
+.pubthumbnail img{
+	object-fit: contain;
+	height: 100%;
+}
+
 .pitems .pubmain .pubcontent {
 	margin-left: 175px;
 }
