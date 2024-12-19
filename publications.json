@@ -1,5 +1,19 @@
 [
     {
+        "title": "Disagreement on foundational principles of biological aging",
+        "type": "Journal",
+        "authors": "Vadim N Gladyshev, Benjamin Anderson, Hanna Barlit, Benjamin Barré, Samuel Beck, Bahareh Behrouz, Daniel W Belsky, Amandine Chaix, Manish Chamoli, Brian H Chen, Kaiyang Cheng, Jane Chuprin, Gary A Churchill, Andrea Cipriano, Alex Colville, Joris Deelen, Yuri Deigin, KeHuan K Edmonds, Bradley W English, <b>Ruogu Fang</b>, Michael Florea, Iosif M Gershteyn, Diljeet Gill, Laura H Goetz, Vera Gorbunova, Patrick T Griffin, Steve Horvath, Martin Borch Jensen, Xin Jin, Sara Jovanovska, Kathrin M Kajderowicz, Tomoko Kasahara, Csaba Kerepesi, Subhash Kulkarni, Vyacheslav M Labunskyy, Morgan E Levine, Sergiy Libert, J Yuyang Lu, Yuancheng Ryan Lu, Riccardo E Marioni, Brianah M McCoy, Wayne Mitchell, Mahdi Moqri, Farzaneh Nasirian, Peter Niimi, Hamilton Se-Hwee Oh, Brian Okundaye, Andrey A Parkhitko, Leonid Peshkin, Mia Petljak, Jesse R Poganik, Glen Pridham, Daniel E L Promislow, Weronika Prusisz, Margaux Quiniou, Ken Raj, Daniel Richard, Jose Luis Ricon, Jarod Rutledge, Morten Scheibye-Knudsen, Nicholas J Schork, Andrei Seluanov, Michael Shadpour, Anastasia V Shindyapina, Steven R Shuken, Sruthi Sivakumar, Thomas Stoeger, Ayumu Sugiura, Nadia R Sutton, Alexander Suvorov, Andrei E Tarkhov, Emma C Teeling, Alexandre Trapp, Alexander Tyshkovskiy, Maximilian Unfried, Cavin K Ward-Caviness, Sun Hee Yim, Kejun Ying, Jeffrey Yunes, Bohan Zhang, Alex Zhavoronkov",
+        "citation": "Proceedings of the National Academy of Sciences (PNAS) Nexus, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/PNAS.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://academic.oup.com/pnasnexus/article/3/12/pgae499/7913315"
+        },
+        "abstract": "To gain insight into how researchers of aging perceive the process they study, we conducted a survey among experts in the field. While highlighting some common features of aging, the survey exposed broad disagreement on the foundational issues. What is aging? What causes it? When does it begin? What constitutes rejuvenation? Not only was there no consensus on these and other core questions, but none of the questions received a majority opinion—even regarding the need for consensus itself. Despite many researchers believing they understand aging, their understanding diverges considerably. Importantly, as different processes are labeled as “aging” by researchers, different experimental approaches are prioritized. The survey shed light on the need to better define which aging processes this field should target and what its goals are. It also allowed us to categorize contemporary views on aging and rejuvenation, revealing critical, yet largely unanswered, questions that appear disconnected from the current research focus. Finally, we discuss ways to address the disagreement, which we hope will ultimately aid progress in the field.",
+        "data_year": "2024"
+    },
+    {
         "title": "Advanced Technologies for Video Coding",
         "type": "PhD Dissertation",
         "authors": "<strong>Tianqi Li</strong>",
