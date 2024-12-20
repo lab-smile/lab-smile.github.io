@@ -1,4 +1,19 @@
-[
+[   
+    {
+        "title": "Towards tDCS Digital Twins Using Deep Learning-Based Direct Estimation of Personalized Electrical Field Maps from T1-Weighted MRI",
+        "type": "Conference",
+        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, <b><u>Ruogu Fang</u></b>",
+        "citation": "27th Medical Image Computing and Computer Assisted Intervention (MICCAI) International Conference, Marrakesh, Morocco, October 6–10, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-031-72069-7_44",
+            "github": "https://github.com/lab-smile/tDCS-DT"
+        },
+        "abstract": "Transcranial Direct Current Stimulation (tDCS) is a non-invasive brain stimulation method that applies neuromodulatory effects to the brain via low-intensity, direct current. It has shown possible positive effects in areas such as depression, substance use disorder, anxiety, and pain. Unfortunately, mixed trial results have delayed the field’s progress. Electrical current field approximation provides a way for tDCS researchers to estimate how an individual will respond to specific tDCS parameters. Publicly available physics-based stimulators have led to much progress; however, they can be error-prone, susceptible to quality issues (e.g., poor segmentation), and take multiple hours to run. Digital functional twins provide a method of estimating brain function in response to stimuli using computational methods. We seek to implement this idea for individualized tDCS. Hence, this work provides a proof-of-concept for generating electrical field maps for tDCS directly from T1-weighted magnetic resonance images (MRIs). Our deep learning method employs special loss regularizations to improve the model’s generalizability and calibration across individual scans and electrode montages. Users may enter a desired electrode montage in addition to the unique MRI for a custom output. Our dataset includes 442 unique individual heads from individuals across the adult lifespan. The pipeline can generate results on the scale of minutes, unlike physics-based systems that can take 1–3 hours. Overall, our methods will help streamline the process of individual current dose estimations for improved tDCS interventions.",
+        "data_year": "2024"
+    },
     {
         "title": "Disagreement on foundational principles of biological aging",
         "type": "Journal",
@@ -81,20 +96,6 @@
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "abstract" : "",
-        "data_year": "2024"
-    },
-    {
-        "title": "Disagreement on foundational principles of biological aging",
-        "type": "Journal",
-        "authors": "Vadim N. Gladyshev, ... , <b>Ruogu Fang</b>",
-        "citation": "Proceedings of the National Academy of Sciences (PNAS) Nexus, 2024",
-        "publication_year":"2024",
-        "image_src":"img/pubs/PNAS.png",
-        "label_class":"warning",
-        "external_links" : {
-            "sciencedirect": ""
-        },
-        "abstract":"",
         "data_year": "2024"
     },
     {
@@ -316,7 +317,7 @@
         "external_links": {
             "sciencedirect": "https://www.routledge.com/Medical-Image-Synthesis-Methods-and-Clinical-Applications/Yang/p/book/9781032152844"
         },
-        "data_year": "2024"
+        "data_year": "2023"
     },
     {
         "title": "Ethnic disparity in diagnosing asymptomatic bacterial vaginosis using machine learning",
