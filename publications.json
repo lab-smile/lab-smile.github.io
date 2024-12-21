@@ -135,6 +135,16 @@
         "data_year": "2024"
     },
     {
+        "title": "Interpretable Artificial Intelligence for Precision Health",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Kyle See</strong>",
+        "citation": "Precision Health Conference, 2024",
+        "publication_year": "August 2024",
+        "image_src": "img/pubs/uf.png",
+        "label_class": "success",
+        "data_year": "2024"
+    },
+    {
         "title": "Deep Learning Analysis of Retinal Structures and Risk Factors of Alzheimer\u2019s Disease",
         "type": "Conference",
         "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
@@ -145,16 +155,6 @@
         "external_links": {
             "sciencedirect": "https://embc.embs.org/2024/"
         },
-        "data_year": "2024"
-    },
-    {
-        "title": "Interpretable Artificial Intelligence for Precision Health",
-        "type": "PhD Dissertation",
-        "authors": "<strong>Kyle See</strong>",
-        "citation": "Precision Health Conference, 2024",
-        "publication_year": "Summer 2024",
-        "image_src": "img/pubs/uf.png",
-        "label_class": "success",
         "data_year": "2024"
     },
     {
