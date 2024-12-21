@@ -1,18 +1,31 @@
 [   
     {
-        "title": "Towards tDCS Digital Twins Using Deep Learning-Based Direct Estimation of Personalized Electrical Field Maps from T1-Weighted MRI",
+        "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
         "type": "Conference",
-        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, <b><u>Ruogu Fang</u></b>",
-        "citation": "27th Medical Image Computing and Computer Assisted Intervention (MICCAI) International Conference, Marrakesh, Morocco, October 6–10, 2024",
-        "publication_year": "2024",
-        "image_src": "img/pubs/MICCAI.jpg",
+        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods,<u><b> Ruogu Fang </b></u>",
+        "citation": "6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
+        "publication_year": "23–26 February 2025",
+        "image_src": "img/pubs/BrainStimulation2025.png",
         "label_class": "primary",
-        "external_links": {
-            "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-031-72069-7_44",
-            "github": "https://github.com/lab-smile/tDCS-DT"
+        "abstract": "",
+        "external_links" : {
+            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
         },
-        "abstract": "Transcranial Direct Current Stimulation (tDCS) is a non-invasive brain stimulation method that applies neuromodulatory effects to the brain via low-intensity, direct current. It has shown possible positive effects in areas such as depression, substance use disorder, anxiety, and pain. Unfortunately, mixed trial results have delayed the field’s progress. Electrical current field approximation provides a way for tDCS researchers to estimate how an individual will respond to specific tDCS parameters. Publicly available physics-based stimulators have led to much progress; however, they can be error-prone, susceptible to quality issues (e.g., poor segmentation), and take multiple hours to run. Digital functional twins provide a method of estimating brain function in response to stimuli using computational methods. We seek to implement this idea for individualized tDCS. Hence, this work provides a proof-of-concept for generating electrical field maps for tDCS directly from T1-weighted magnetic resonance images (MRIs). Our deep learning method employs special loss regularizations to improve the model’s generalizability and calibration across individual scans and electrode montages. Users may enter a desired electrode montage in addition to the unique MRI for a custom output. Our dataset includes 442 unique individual heads from individuals across the adult lifespan. The pipeline can generate results on the scale of minutes, unlike physics-based systems that can take 1–3 hours. Overall, our methods will help streamline the process of individual current dose estimations for improved tDCS interventions.",
-        "data_year": "2024"
+        "data_year": "2025"
+    },
+    {
+        "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
+        "type": "Conference",
+        "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b> Ruogu Fang </b></u>",
+        "citation": "6th International Brain Stimulation Conference, Kobe, Japan",
+        "publication_year": "23–26 February 2025",
+        "image_src": "img/pubs/BrainStimulation2025.png",
+        "label_class": "primary",
+        "abstract": "",
+        "external_links" : {
+            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
+        },
+        "data_year": "2025"
     },
     {
         "title": "Disagreement on foundational principles of biological aging",
@@ -26,54 +39,6 @@
             "sciencedirect": "https://academic.oup.com/pnasnexus/article/3/12/pgae499/7913315"
         },
         "abstract": "To gain insight into how researchers of aging perceive the process they study, we conducted a survey among experts in the field. While highlighting some common features of aging, the survey exposed broad disagreement on the foundational issues. What is aging? What causes it? When does it begin? What constitutes rejuvenation? Not only was there no consensus on these and other core questions, but none of the questions received a majority opinion—even regarding the need for consensus itself. Despite many researchers believing they understand aging, their understanding diverges considerably. Importantly, as different processes are labeled as “aging” by researchers, different experimental approaches are prioritized. The survey shed light on the need to better define which aging processes this field should target and what its goals are. It also allowed us to categorize contemporary views on aging and rejuvenation, revealing critical, yet largely unanswered, questions that appear disconnected from the current research focus. Finally, we discuss ways to address the disagreement, which we hope will ultimately aid progress in the field.",
-        "data_year": "2024"
-    },
-    {
-        "title": "Advanced Technologies for Video Coding",
-        "type": "PhD Dissertation",
-        "authors": "<strong>Tianqi Li</strong>",
-        "citation": "International Conference on Video Coding, 2024",
-        "publication_year": "2024",
-        "image_src": "img/pubs/uf.png",
-        "label_class": "success",
-        "data_year": "2024"
-    },
-    {
-        "title": "Interpretable Artificial Intelligence for Precision Health",
-        "type": "PhD Dissertation",
-        "authors": "<strong>Kyle See</strong>",
-        "citation": "Precision Health Conference, 2024",
-        "publication_year": "2024",
-        "image_src": "img/pubs/uf.png",
-        "label_class": "success",
-        "data_year": "2024"
-    },
-    {
-        "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
-        "type": "Conference",
-        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods,<u><b> Ruogu Fang </b></u>, 6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
-        "citation": "6th International Brain Stimulation Conference",
-        "publication_year": "2025",
-        "image_src": "img/pubs/BrainStimulation2025.png",
-        "label_class": "primary",
-        "abstract": "",
-        "external_links" : {
-            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
-        },
-        "data_year": "2025"
-    },
-    {
-        "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
-        "type": "Conference",
-        "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b> Ruogu Fang </b></u>",
-        "citation": "6th International Brain Stimulation Conference",
-        "publication_year": "2025",
-        "image_src": "img/pubs/BrainStimulation2025.png",
-        "label_class": "primary",
-        "abstract": "",
-        "external_links" : {
-            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
-        },
         "data_year": "2024"
     },
     {
@@ -103,7 +68,7 @@
         "type": "Journal",
         "authors": "Alejandro Albizu, Paulo Suen, Ziqian Huang, Jori L. Waner, Skylar E. Stolte, Aprinda Indahlastari, <strong>Ruogu Fang</strong>, Andre R. Brunoni, and Adam J. Woods",
         "citation": "Bioelectronic Medicine, 2024",
-        "publication_year": "",
+        "publication_year": "2024",
         "image_src": "img/pubs/BMC_BioelecMed.png",
         "label_class": "warning",
         "external_links": {
@@ -155,6 +120,44 @@
         "data_year": "2024"
     },
     {
+        "title": "Towards tDCS Digital Twins Using Deep Learning-Based Direct Estimation of Personalized Electrical Field Maps from T1-Weighted MRI",
+        "type": "Conference",
+        "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, <b><u>Ruogu Fang</u></b>",
+        "citation": "27th Medical Image Computing and Computer Assisted Intervention (MICCAI) International Conference, Marrakesh, Morocco",
+        "publication_year": "October 6–10, 2024",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-031-72069-7_44",
+            "github": "https://github.com/lab-smile/tDCS-DT"
+        },
+        "abstract": "Transcranial Direct Current Stimulation (tDCS) is a non-invasive brain stimulation method that applies neuromodulatory effects to the brain via low-intensity, direct current. It has shown possible positive effects in areas such as depression, substance use disorder, anxiety, and pain. Unfortunately, mixed trial results have delayed the field’s progress. Electrical current field approximation provides a way for tDCS researchers to estimate how an individual will respond to specific tDCS parameters. Publicly available physics-based stimulators have led to much progress; however, they can be error-prone, susceptible to quality issues (e.g., poor segmentation), and take multiple hours to run. Digital functional twins provide a method of estimating brain function in response to stimuli using computational methods. We seek to implement this idea for individualized tDCS. Hence, this work provides a proof-of-concept for generating electrical field maps for tDCS directly from T1-weighted magnetic resonance images (MRIs). Our deep learning method employs special loss regularizations to improve the model’s generalizability and calibration across individual scans and electrode montages. Users may enter a desired electrode montage in addition to the unique MRI for a custom output. Our dataset includes 442 unique individual heads from individuals across the adult lifespan. The pipeline can generate results on the scale of minutes, unlike physics-based systems that can take 1–3 hours. Overall, our methods will help streamline the process of individual current dose estimations for improved tDCS interventions.",
+        "data_year": "2024"
+    },
+    {
+        "title": "Deep Learning Analysis of Retinal Structures and Risk Factors of Alzheimer\u2019s Disease",
+        "type": "Conference",
+        "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "The 46th International Conference of the IEEE Engineering in Medicine and Biology Society, , Orlando, FL",
+        "publication_year": "July 15-19, 2024",
+        "image_src": "img/pubs/EMBC2024.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://embc.embs.org/2024/"
+        },
+        "data_year": "2024"
+    },
+    {
+        "title": "Interpretable Artificial Intelligence for Precision Health",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Kyle See</strong>",
+        "citation": "Precision Health Conference, 2024",
+        "publication_year": "Summer 2024",
+        "image_src": "img/pubs/uf.png",
+        "label_class": "success",
+        "data_year": "2024"
+    },
+    {
         "title": "A Comprehensive Survey of Foundation Models in Medicine",
         "type": "Preprint",
         "authors": "Wasif Khan, Seowung Leem, Kyle B. See, Joshua K. Wong, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
@@ -169,6 +172,16 @@
         "data_year": "2024"
     },
     {
+        "title": "Advanced Technologies for Video Coding",
+        "type": "PhD Dissertation",
+        "authors": "<strong>Tianqi Li</strong>",
+        "citation": "International Conference on Video Coding, 2024",
+        "publication_year": "May 2024",
+        "image_src": "img/pubs/uf.png",
+        "label_class": "success",
+        "data_year": "2024"
+    },
+    {
         "title": "Morphological Profiling for Drug Discovery in the Era of Deep Learning",
         "type": "Journal",
         "authors": "Qiaosi Tang, Ranjala Ratnayake, Gustavo Seabra, Zhe Jiang, <b>Ruogu Fang</b>, Lina Cui, Yousong Ding, Tamer Kahveci, Jiang Bian, Chenglong Li, Hendrik Luesch, <u>Yanjun Li</u>",
@@ -177,19 +190,6 @@
         "image_src": "img/pubs/bioinformatics.gif",
         "label_class": "warning",
         "abstract": "Morphological profiling is a valuable tool in phenotypic drug discovery. The advent of high-throughput automated imaging has enabled the capturing of a wide range of morphological features of cells or organisms in response to perturbations at the single-cell resolution. Concurrently, significant advances in machine learning and deep learning, especially in computer vision, have led to substantial improvements in analyzing large-scale high-content images at high-throughput. These efforts have facilitated understanding of compound mechanism-of-action (MOA), drug repurposing, characterization of cell morphodynamics under perturbation, and ultimately contributing to the development of novel therapeutics. In this review, we provide a comprehensive overview of the recent advances in the field of morphological profiling. We summarize the image profiling analysis workflow, survey a broad spectrum of analysis strategies encompassing feature engineering- and deep learning-based approaches, and introduce publicly available benchmark datasets. We place a particular emphasis on the application of deep learning in this pipeline, covering cell segmentation, image representation learning, and multimodal learning. Additionally, we illuminate the application of morphological profiling in phenotypic drug discovery and highlight potential challenges and opportunities in this field.",
-        "data_year": "2024"
-    },
-    {
-        "title": "Deep Learning Analysis of Retinal Structures and Risk Factors of Alzheimer\u2019s Disease",
-        "type": "Conference",
-        "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
-        "citation": "The 46th International Conference of the IEEE Engineering in Medicine and Biology Society, , Orlando, FL",
-        "publication_year": "July 15-19, 2024",
-        "image_src": "img/pubs/EMBC2024.jpg",
-        "label_class": "primary",
-        "external_links": {
-            "sciencedirect": "https://embc.embs.org/2024/"
-        },
         "data_year": "2024"
     },
     {
@@ -579,7 +579,7 @@
         "type": "Patents",
         "authors": "Adam Woods, Alejandro Albizu, <u><b>Ruogu Fang</b></u>, Aprinda Indahlastari",
         "citation": "WO 2022/026573 A1",
-        "publication_year": "",
+        "publication_year": "2022",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2022"
@@ -589,7 +589,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Max Diaz",
         "citation": "U.S. Patent Recorded on December 22, 2021",
-        "publication_year": "",
+        "publication_year": "2021",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2021"
@@ -599,7 +599,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Jianqiao Tian",
         "citation": "T18201US001 (222107-8215). International Patent. WO 2021/243246 A1",
-        "publication_year": "",
+        "publication_year": "2021",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2021"
@@ -609,7 +609,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Peng Liu",
         "citation": "WO 2021/202170 A1. International patent",
-        "publication_year": "",
+        "publication_year": "2021",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2021"
@@ -619,7 +619,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Yao Xiao",
         "citation": "U.S-2021-0272237-A1",
-        "publication_year": "",
+        "publication_year": "2021",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2021"
@@ -629,7 +629,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Peng Liu",
         "citation": "U.S. Utility Patent US 11,069,033 B2",
-        "publication_year": "",
+        "publication_year": "2021",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2021"
@@ -837,7 +837,7 @@
         "type": "Patents",
         "authors": "Peng Liu and <u><b>Ruogu Fang</b></u>",
         "citation": "Ref No.: T18094US001 (222107-8940) U.S. Provisional Patent Application Serial No. 63/001,771",
-        "publication_year": "",
+        "publication_year": "2020",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2020"
@@ -847,7 +847,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Kyle See, Steven Coombes",
         "citation": "Provisional patent pending.",
-        "publication_year": "",
+        "publication_year": "2020",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2020"
@@ -857,7 +857,7 @@
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Garrett Fullerton, Simon Kato.",
         "citation": "Provisional patent pending.",
-        "publication_year": "",
+        "publication_year": "2020",
         "image_src": "img/pubs/Patent.jpg",
         "label_class": "info",
         "data_year": "2020"

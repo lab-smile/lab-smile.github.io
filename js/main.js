@@ -106,7 +106,7 @@ function createPublicationHTML(pub) {
                         <span class="label label-${pub.label_class}">${pub.type}</span>
                         <div class="pubauthor">${pub.authors}</div>
                         <div class="pubcite">${pub.citation}</div>
-                        <div class="pubdate">Publication Year: ${pub.data_year || 'N/A'}</div>
+                        <div class="pubdate">Publication Year: ${pub.publication_year || 'N/A'}</div>
                     </div>
                 </div>
                 ${pub.abstract ? `<div class="pubdetails"><h4>Abstract</h4><p>${pub.abstract}</p></div>` : ''}
