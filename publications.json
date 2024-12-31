@@ -28,6 +28,20 @@
         "data_year": "2025"
     },
     {
+        "title": "Paleoinspired Vision: From Exploring Colour Vision Evolution to Inspiring Camera Design",
+        "type": "Journal",
+        "authors": "Junjie Zhang, Zhimin Zong, Lin Gu, Shenghan Su, Ziteng Cui, Yan Pu, Zirui Chen, Jing Lu, Daisuke Kojima, Tatsuya Harada, <u><b>Ruogu Fang</b></u>",
+        "citation": "",
+        "publication_year": "December, 2020",
+        "image_src": "img/pubs/arxiv.png",
+        "label_class": "warning",
+        "external_links":{
+            "sciencedirect": "https://arxiv.org/abs/2412.19439"
+        },
+        "abstract": "The evolution of colour vision is captivating, as it reveals the adaptive strategies of extinct species while simultaneously inspiring innovations in modern imaging technology. In this study, we present a simplified model of visual transduction in the retina, introducing a novel opsin layer. We quantify evolutionary pressures by measuring machine vision recognition accuracy on colour images shaped by specific opsins. Building on this, we develop an evolutionary conservation optimisation algorithm to reconstruct the spectral sensitivity of opsins, enabling mutation-driven adaptations to more effectively spot fruits or predators. This model condenses millions of years of evolution within seconds on GPU, providing an experimental framework to test long-standing hypotheses in evolutionary biology, such as vision of early mammals, primate trichromacy from gene duplication, retention of colour blindness, blue-shift of fish rod and multiple rod opsins with bioluminescence. Moreover, the model enables speculative explorations of hypothetical species, such as organisms with eyes adapted to the conditions on Mars. Our findings suggest a minimalist yet effective approach to task-specific camera filter design, optimising the spectral response function to meet application-driven demands. The code will be made publicly available upon acceptance.",
+        "data_year": "2024"
+    },
+    {
         "title": "Disagreement on foundational principles of biological aging",
         "type": "Journal",
         "authors": "Vadim N Gladyshev, Benjamin Anderson, Hanna Barlit, Benjamin Barré, Samuel Beck, Bahareh Behrouz, Daniel W Belsky, Amandine Chaix, Manish Chamoli, Brian H Chen, Kaiyang Cheng, Jane Chuprin, Gary A Churchill, Andrea Cipriano, Alex Colville, Joris Deelen, Yuri Deigin, KeHuan K Edmonds, Bradley W English, <b>Ruogu Fang</b>, Michael Florea, Iosif M Gershteyn, Diljeet Gill, Laura H Goetz, Vera Gorbunova, Patrick T Griffin, Steve Horvath, Martin Borch Jensen, Xin Jin, Sara Jovanovska, Kathrin M Kajderowicz, Tomoko Kasahara, Csaba Kerepesi, Subhash Kulkarni, Vyacheslav M Labunskyy, Morgan E Levine, Sergiy Libert, J Yuyang Lu, Yuancheng Ryan Lu, Riccardo E Marioni, Brianah M McCoy, Wayne Mitchell, Mahdi Moqri, Farzaneh Nasirian, Peter Niimi, Hamilton Se-Hwee Oh, Brian Okundaye, Andrey A Parkhitko, Leonid Peshkin, Mia Petljak, Jesse R Poganik, Glen Pridham, Daniel E L Promislow, Weronika Prusisz, Margaux Quiniou, Ken Raj, Daniel Richard, Jose Luis Ricon, Jarod Rutledge, Morten Scheibye-Knudsen, Nicholas J Schork, Andrei Seluanov, Michael Shadpour, Anastasia V Shindyapina, Steven R Shuken, Sruthi Sivakumar, Thomas Stoeger, Ayumu Sugiura, Nadia R Sutton, Alexander Suvorov, Andrei E Tarkhov, Emma C Teeling, Alexandre Trapp, Alexander Tyshkovskiy, Maximilian Unfried, Cavin K Ward-Caviness, Sun Hee Yim, Kejun Ying, Jeffrey Yunes, Bohan Zhang, Alex Zhavoronkov",
