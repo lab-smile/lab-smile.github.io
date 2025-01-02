@@ -32,7 +32,7 @@
         "type": "Preprint",
         "authors": "Junjie Zhang, Zhimin Zong, Lin Gu, Shenghan Su, Ziteng Cui, Yan Pu, Zirui Chen, Jing Lu, Daisuke Kojima, Tatsuya Harada, <u><b>Ruogu Fang</b></u>",
         "citation": "",
-        "publication_year": "December, 2020",
+        "publication_year": "December, 2024",
         "image_src": "img/pubs/arxiv.png",
         "label_class": "warning",
         "external_links":{
@@ -57,7 +57,7 @@
     },
     {
         "title": "Baseline Clinical Characteristics and Machine Learning Predict tDCS Treatment Outcomes for Anxiety",
-        "type": "Poster Presentation",
+        "type": "Conference",
         "authors": "Daniel Rodriguez, Junfu Cheng, Skylar Stolte, Aprinda Queen, Adam Woods,<b><u>Ruogu Fang</u></b>",
         "citation": "BMES 2024",
         "publication_year": "2024",
