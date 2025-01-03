@@ -40,12 +40,12 @@ function setupSoftDropdown(softwares) {
         .on('focus', function() {
             $(this).css({
                 'background-color': '#e0f7fa',
-                'box-shadow': '0 0 5px rgba(3, 204, 133, 0.5)',
+                'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.3)', 
             });
         }).on('blur', function() {
             $(this).css({
                 'background-color': '#ffffff',
-                'box-shadow': 'none',
+                'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.3)',
             });
         });
 
