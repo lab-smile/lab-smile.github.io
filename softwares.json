@@ -1,0 +1,178 @@
+[
+    {
+        "year": "2024",
+        "type": "Code",
+        "title": "LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images",
+        "description": "CodeLAVA is an XAI framework that aims to exploit neuron-level explanation as auxiliary information during learning process to make a high-resolution AD continuum prediction.",
+        "citation": "Nooshin Yousefzadeh, Charlie Tran, Adolfo Ramirez-Zamora, Jinghua Chen, Ruogu Fang, My T. Thai. \"LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images\" In Nature Scientific Reports, April 2024.",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/LAVA"
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "type": "Code",
+        "title": "RetinaPD",
+        "description": "CodeThe purpose of this project is for the binary classification of Parkinson's Disease from UK Biobank Fundus Imaging.",
+        "citation": "Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora Jinghua Chen, Yulin Li, Ruogu Fang. \"Deep Learning Predicts Prevalent and Incident Parkinson\u2019s Disease From UK Biobank Fundus Imaging\" In Nature Scientific Reports, 2024.",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/RetinaPD"
+            }
+        ]
+    },
+    {
+        "year": "2023",
+        "type": "Code",
+        "title": "DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability",
+        "description": "CodeIn this work, we propose DOMINO++, a dual-guidance and dynamic domain-aware loss regularization focused on OOD generalizability.",
+        "citation": "Skylar E. Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. \"DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability\" In MICCAI, 2023",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/DOMINOPlusPlus"
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "type": "Code",
+        "title": "DOMINO: Domain-aware Model Calibration in Medical Image Segmentation",
+        "description": "CodeDOMINO is an open-source package for domain-aware model calibration that leverages the semantic confusability and hierarchical similarity between class labels in multi-class classification/segmentation to improve model calibration while not sacrificing or even improving model accuracy.",
+        "citation": "Stolte, Skylar E., Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. \"DOMINO: Domain-Aware Model Calibration in Medical Image Segmentation.\" In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 454-463. Springer, Cham, 2022.",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/DOMINO"
+            },
+            {
+                "type": "code_ocean",
+                "url": "https://codeocean.com/capsule/6022409/tree/v2"
+            }
+        ]
+    },
+    {
+        "year": "2022",
+        "type": "Code",
+        "title": "EEGAILab",
+        "description": "CodeToolbox for analyzing and visualizing dipole sources from resting electroencephalography data.",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/EEGAILab"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "type": "Code",
+        "title": "CADA",
+        "description": "CodeMulti-scale Collaborative Adversarial Domain Adaptation for Unsupervised Optic Disc and Cup Segmentation",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/CADA"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "type": "Code",
+        "title": "Domain Shift",
+        "description": "CodeAdversarial Discriminative Adaptation and Ensembling Collaborative Learning for Domain Shift in Unsupervised Optic Disc and Cup Segmentation",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/cswin/AWC"
+            }
+        ]
+    },
+    {
+        "year": "2019",
+        "type": "Code",
+        "title": "EvoNet",
+        "description": "CodeDeep evolutionary networks with expedited genetic algorithms for medical image denoising",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/EvoNet"
+            }
+        ]
+    },
+    {
+        "year": "2016",
+        "type": "Code",
+        "title": "CT Perfusion Toolbox",
+        "description": "CodeToolbox for CT perfusion image processing and computation, including image loading, preprocessing, reconstruction, quantification, and example code.",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/ruogufang/pct"
+            }
+        ]
+    },
+    {
+        "year": "2015",
+        "type": "Code",
+        "title": "Tensor Total Variation",
+        "description": "CodeToolbox for Tensor Total Variation quantfication of CT perfusion parameters in low-dose CT perfusion.",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/ruogufang/ttv"
+            }
+        ]
+    },
+    {
+        "year": "2014",
+        "type": "Code",
+        "title": "Sparse High-Dose Induced Patlak Model for Permeability",
+        "description": "CodeSparse high-dose induced Patlak model for Permeability quantification in low-dose CT perfusion.",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/ruogufang/SPD-Patlak"
+            }
+        ]
+    },
+    {
+        "year": "2013",
+        "type": "Code",
+        "title": "Sparse Perfusion Deconvolution Toolbox",
+        "description": "CodeSparse perfusion deconvolution toolbox using dictionary learning and sparse coding for low-dose CT perfusion parameters quantification.",
+        "citation": null,
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/ruogufang/SPD"
+            }
+        ]
+    },
+    {
+        "year": "2013",
+        "type": "Data",
+        "title": "Kinship Classification Dataset",
+        "description": "DataFamily101 Dataset: first large-scale dataset of families across several generations. It contains 101 different family with distinct family names, including 206 nuclear families, 607 individuals, with 14,816 images.",
+        "citation": null,
+        "links": []
+    },
+    {
+        "year": "2013",
+        "type": "Data",
+        "title": "Kinship Verification Dataset",
+        "description": "DataCornell Kinship Verification Dataset (143 pairs of parents and children)",
+        "citation": null,
+        "links": []
+    }
+]

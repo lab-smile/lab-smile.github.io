@@ -37,7 +37,8 @@
         <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
         <script type="text/javascript" src="js/magnific-popup.js"></script>
         <script type="text/javascript" src="js/custom.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/publications.js"></script>
+        <script type="text/javascript" src="js/software.js"></script>
         <!--/Javascript files-->
     </head>
 
@@ -3640,13 +3641,14 @@
                                     <div class="col-md-3">
                                         <h3>Filter by type:</h3>
                                     </div>
-                                    <div class="col-md-6">
-                                        <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                                    <div class="col-md-6" id="softwareDropdown">
+                                        <!-- <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
                                             <option class="filter" value="all" selected>All</option>
                                             <option class="filter" value="Code">Code</option>
                                             <option class="filter" value="Data">Data</option>
-                                        </select>
+                                        </select> -->
                                     </div>
+                                    <div class="col-md-3"></div>
                                 </div>
                             </div>
                         </div>
@@ -3654,7 +3656,7 @@
                             <div class="section-container">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="pitems">
+                                        <div class="pitems" id="allsoftware">
                                             
                                             <!--
                                             <div class="item mix Code" data-year="2024">
@@ -3675,276 +3677,7 @@
                                             </div>
                                             -->
 
-                                            <div class="item mix Code" data-year="2024">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/LAVA" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>LAVA is an XAI framework that aims to exploit neuron-level explanation as auxiliary information during learning process to make a high-resolution AD continuum prediction.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <p>Nooshin Yousefzadeh, Charlie Tran, Adolfo Ramirez-Zamora, Jinghua Chen, Ruogu Fang, My T. Thai. "LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images" In Nature Scientific Reports, April 2024.</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2024">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/RetinaPD" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">RetinaPD</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>The purpose of this project is for the binary classification of Parkinson's Disease from UK Biobank Fundus Imaging.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <p>Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora Jinghua Chen, Yulin Li, Ruogu Fang. "Deep Learning Predicts Prevalent and Incident Parkinson’s Disease From UK Biobank Fundus Imaging" In Nature Scientific Reports, 2024.</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2023">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/DOMINOPlusPlus" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>In this work, we propose DOMINO++, a dual-guidance and dynamic domain-aware loss regularization focused on OOD generalizability.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <p>Skylar E. Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. "DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability" In MICCAI, 2023</p>
-                                                </div>
-                                            </div>
-
-                                             <div class="item mix Code" data-year="2022">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/DOMINO" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                        <a href="https://codeocean.com/capsule/6022409/tree/v2" class="tooltips" title="CodeOcean" target="_blank"><i class="icon-codeocean"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">DOMINO: Domain-aware Model Calibration in Medical Image Segmentation</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>DOMINO is an open-source package for domain-aware model calibration that leverages the semantic confusability and hierarchical similarity between class labels in multi-class classification/segmentation to improve model calibration while not sacrificing or even improving model accuracy.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <p>Stolte, Skylar E., Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. "DOMINO: Domain-Aware Model Calibration in Medical Image Segmentation." In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 454-463. Springer, Cham, 2022.</p>
-                                                </div>
-                                            </div>
-                                            
-                                            
-                                            <div class="item mix Code" data-year="2022">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/EEGAILab" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <!--
-                                                    <div class="pubthumbnail">
-                                                        <img width="125" src="img/pubs/MICCAI.jpg" class="attachment-medium size-medium wp-post-image" alt="" align="left" hspace="20">
-                                                    </div>
-                                                    -->
-                                                    <h4 class="pubtitle">EEGAILab</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Toolbox for analyzing and visualizing dipole sources from resting electroencephalography data.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Kyle B. See, Rachel Ho, Stephen Coombes, Ruogu Fang, “TL1 Team Approach to Predicting Response to Spinal Cord Stimulation for Chronic Low Back Pain”, Journal of Clinical and Translational Science, Mar 2021.</li>
-                                                        <li>Kyle B. See, Rachel Louise Mahealani Judy, Stephen Coombes, Ruogu Fang, “TL1 Team Approach to Predicting Short-term and Long-term Effects of Spinal Cord Stimulation” Journal of Clinical and Translational Science, Jul 2020.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2019">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/CADA" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">CADA</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Multi-scale Collaborative Adversarial Domain Adaptation for Unsupervised Optic Disc and Cup Segmentation
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Liu, Peng, Charlie T. Tran, Bin Kong, and Ruogu Fang. "CADA: Multi-scale Collaborative Adversarial Domain Adaptation for unsupervised optic disc and cup segmentation." Neurocomputing 469 (2022): 209-220.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            
-                                            
-                                            <div class="item mix Code" data-year="2019">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/cswin/AWC" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">Domain Shift</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Adversarial Discriminative Adaptation and Ensembling Collaborative Learning for Domain Shift in Unsupervised Optic Disc and Cup Segmentation
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Liu, Peng, Bin Kong, Zhongyu Li, Shaoting Zhang, and Ruogu Fang. "CFEA: collaborative feature ensembling adaptation for domain adaptation in unsupervised optic disc and cup segmentation." In International Conference on Medical Image Computing and Computer-Assisted Intervention, pp. 521-529. Springer, Cham, 2019.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="item mix Code" data-year="2019">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/lab-smile/EvoNet" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">EvoNet</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Deep evolutionary networks with expedited genetic algorithms for medical image denoising
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Liu, Peng, Mohammad D. El Basha, Yangjunyi Li, Yao Xiao, Pina C. Sanelli, and Ruogu Fang. "Deep evolutionary networks with expedited genetic algorithms for medical image denoising." Medical image analysis 54 (2019): 306-315.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2016">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/ruogufang/pct" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                        <h4 class="pubtitle">CT Perfusion Toolbox</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Toolbox for CT perfusion image processing and computation, including image loading, preprocessing, reconstruction, quantification, and example code.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Fang, R., Chen, T. and Sanelli, P.C., 2013. Towards robust deconvolution of low-dose perfusion CT: Sparse perfusion deconvolution using online dictionary learning. Medical image analysis, 17(4), pp.417-428.</li>
-                                                        <li>Fang, R., Zhang, S., Chen, T. and Sanelli, P.C., 2015. Robust low-dose CT perfusion deconvolution via tensor total-variation regularization. IEEE transactions on medical imaging, 34(7), pp.1533-1548.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2015">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/ruogufang/ttv" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">Tensor Total Variation</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Toolbox for Tensor Total Variation quantfication of CT perfusion parameters in low-dose CT perfusion.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Fang, R., Zhang, S., Chen, T. and Sanelli, P.C., 2015. Robust low-dose CT perfusion deconvolution via tensor total-variation regularization. IEEE transactions on medical imaging, 34(7), pp.1533-1548.</li>
-                                                        <li>Fang, R., Sanelli, P.C., Zhang, S. and Chen, T., 2014, September. Tensor total-variation regularized deconvolution for efficient low-dose CT perfusion. In International Conference on Medical Image Computing and Computer-Assisted Intervention (pp. 154-161). Springer, Cham.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2014">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/ruogufang/SPD-Patlak" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">Sparse High-Dose Induced Patlak Model for Permeability </h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Sparse high-dose induced Patlak model for Permeability quantification in low-dose CT perfusion.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                    <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Fang, R., Karlsson, K., Chen, T. and Sanelli, P.C., 2014. Improving low-dose blood–brain barrier permeability quantification using sparse high-dose induced prior for Patlak model. Medical image analysis, 18(6), pp.866-880.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Code" data-year="2013">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="https://github.com/ruogufang/SPD" class="tooltips" title="Github" target="_blank"><i class="fa fa-github"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">Sparse Perfusion Deconvolution Toolbox </h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Code</span>Sparse perfusion deconvolution toolbox using dictionary learning and sparse coding for low-dose CT perfusion parameters quantification.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Fang, R., Chen, T. and Sanelli, P.C., 2012, October. Sparsity-based deconvolution of low-dose perfusion CT using learned dictionaries. In International Conference on Medical Image Computing and Computer-Assisted Intervention (pp. 272-280). Springer Berlin Heidelberg.</li>
-                                                        <li>Fang, R., Chen, T. and Sanelli, P.C., 2013. Towards robust deconvolution of low-dose perfusion CT: Sparse perfusion deconvolution using online dictionary learning. Medical image analysis, 17(4), pp.417-428.</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Data" data-year="2013">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="http://chenlab.ece.cornell.edu/projects/KinshipClassification/" class="tooltips" title="webpage" target="_blank"><i class="fa fa-external-link"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">Kinship Classification Dataset</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Data</span>Family101 Dataset: first large-scale dataset of families across several generations. It contains 101 different family with distinct family names, including 206 nuclear families, 607 individuals, with 14,816 images.
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                <h4>Citation</h4>
-                                                <ul>
-                                                    <li>Ruogu Fang, Andrew C. Gallagher, Tsuhan Chen, Alexander Loui. Kinship Classification by Modeling Facial Feature Heredity. IEEE International Conference on Image Processing, Australia, 2013 (ICIP '13)</li>
-                                                </ul>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="item mix Data" data-year="2013">
-                                                <div class="pubmain">
-                                                    <div class="pubassets">
-                                                        <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
-                                                        <a href="http://chenlab.ece.cornell.edu/projects/KinshipVerification/" class="tooltips" title="webpage" target="_blank"><i class="fa fa-external-link"></i></a>
-                                                    </div>
-                                                    <h4 class="pubtitle">Kinship Verification Dataset</h4>
-                                                    <div class="pubcite">
-                                                        <span class="label label-primary">Data</span>Cornell Kinship Verification Dataset (143 pairs of parents and children)
-                                                    </div>
-                                                </div>
-                                                <div class="pubdetails">
-                                                <h4>Citation</h4>
-                                                    <ul>
-                                                        <li>Ruogu Fang, Kevin D. Tang, Noah Snavely, Tsuhan Chen. Towards Computational Models of Kinship Verification. IEEE International Conference on Image Processing, Hong Kong, September 2010 (ICIP '10)</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                           
                                         </div>
                                     </div>
                                 </div>

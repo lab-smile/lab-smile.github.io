@@ -49,6 +49,8 @@ $(document).ready(async function() {
     renderPublications(publications, allPubsDiv);
     setupSearch(searchInput, publications);
     setupSorting(publications, allPubsDiv, searchInput);
+
+
 });
 
 function setupDropdown(publications) {
@@ -57,12 +59,12 @@ function setupDropdown(publications) {
         .css({
             'padding': '12px 15px',
             'border-radius': '8px',
-            'border': '1px solid #ddd',
+            'border': 'none',
             'background-color': '#ffffff',
             'font-size': '16px',
             'color': '#333',
             'cursor': 'pointer',
-            'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.1)',
+            'box-shadow': '0 2px 4px rgba(0, 0, 0, 0.2)',
             'transition': 'background-color 0.3s, box-shadow 0.3s',
         })
         .on('focus', function() {
@@ -156,3 +158,7 @@ function setupSorting(publications, allPubsDiv, searchInput) {
         searchInput.trigger('keyup'); // Reapply filtering after sorting
     });
 }
+
+
+
+
