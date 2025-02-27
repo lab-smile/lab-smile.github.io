@@ -149,6 +149,20 @@
         "data_year": "2024"
     },
     {
+        "title": "Neural Responses to Natural Versus AI-generated Affective Images",
+        "type": "Abstract",
+        "authors": "Yujun Chen, Faith Gilbert, Ethan Smith, <b><u>Ruogu Fang </u></b>, Andreas Keil, Mingzhou Ding",
+        "citation": "Vision Sciences Society Annual Meeting Abstract  |   September 2024",
+        "publication_year": "September 2024",
+        "image_src": "img/pubs/VSS.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://jov.arvojournals.org/article.aspx?articleid=2801244"
+        },
+        "abstract": "The International Affective Picture System (IAPS) contains 1,182 well-characterized photographs depicting natural scenes varying in affective content. These pictures are used extensively in affective neuroscience to investigate the neural correlates of emotional processing. Recently, in an effort to augment this dataset, we have begun to generate synthetic emotional images by combining IAPS pictures and diffusion-based AI models. The goal of this study is to compare the neural responses to IAPS pictures and matching AI-generated images. The stimulus set consisted of 60 IAPS pictures (20 pleasant, 20 neutral, 20 unpleasant) and 60 matching AI-generated images (20 pleasant, 20 neutral, 20 unpleasant). In a recording session, a total of 30 IAPS pictures and 30 matching AI-generated images were presented in random order, where each image was displayed for 3 seconds with neighboring images being separated by an interval of 2.8 to 3.5 seconds. Each experiment consisted of 10 recording sessions. The fMRI data was recorded on a 3T Siemens Prisma scanner. Pupil responses to image presentation were monitored using an MRI-compatible eyetracker. Our preliminary analysis of the fMRI data (N=3) showed that IAPS pictures and matching AI-generated images evoked similar neural responses in the visual cortex. In particular, MVPA (Multivariate Pattern Analysis) classifiers built to decode emotional categories from neural responses to IAPS pictures can be used to decode emotional categories from neural responses to AI-generated images and vice versa. Efforts to confirm these findings are underway by recruiting additional participants. Analysis is also being expanded to include the comparison of such measures as functional connectivity and pupillometry.",
+        "data_year": "2024"
+    },
+    {
         "title": "Interpretable Artificial Intelligence for Precision Health",
         "type": "PhD Dissertation",
         "authors": "<strong>Kyle See</strong>",
