@@ -1157,6 +1157,9 @@
         "publication_year": "2019",
         "image_src": "img/pubs/Lancet.png",
         "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S2589750019301050"
+        },
         "data_year": "2019"
     },
     {
