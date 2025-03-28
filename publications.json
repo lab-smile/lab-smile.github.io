@@ -23,7 +23,7 @@
         "label_class": "primary",
         "abstract": "",
         "external_links" : {
-            "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
+            "sciencedirect": "https://papers.miccai.org/miccai-2024/793-Paper1533.html"
         },
         "data_year": "2025"
     },
@@ -195,7 +195,7 @@
         "image_src": "img/pubs/EMBC2024.jpg",
         "label_class": "primary",
         "external_links": {
-            "sciencedirect": "https://embc.embs.org/2024/"
+            "sciencedirect": "https://ieeexplore.ieee.org/document/10782580"
         },
         "data_year": "2024"
     },
@@ -410,6 +410,7 @@
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "external_links": {
+            "sciencedirect": "https://conferences.miccai.org/2023/papers/219-Paper3114.html",
             "github": "https://github.com/lab-smile/DOMINOplusplus"
         },
         "data_year": "2023"
@@ -587,6 +588,7 @@
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "external_links": {
+            "sciencedirect": "https://conferences.miccai.org/2022/papers/170-Paper1693.html",
             "github": "https://github.com/lab-smile/DOMINO"
         },
         "data_year": "2022"
