@@ -78,6 +78,9 @@
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "abstract" : "",
+        "external_links":{
+            "sciencedirect": "https://www.brainstimjrnl.com/article/S1935-861X(24)01297-X/fulltext"
+        },
         "data_year": "2024"
     },
     {
@@ -231,6 +234,9 @@
         "publication_year": "May 2024",
         "image_src": "img/pubs/bioinformatics.gif",
         "label_class": "warning",
+        "external_links":{
+            "sciencedirect":"https://academic.oup.com/bib/article/25/4/bbae284/7693952"
+        },
         "abstract": "Morphological profiling is a valuable tool in phenotypic drug discovery. The advent of high-throughput automated imaging has enabled the capturing of a wide range of morphological features of cells or organisms in response to perturbations at the single-cell resolution. Concurrently, significant advances in machine learning and deep learning, especially in computer vision, have led to substantial improvements in analyzing large-scale high-content images at high-throughput. These efforts have facilitated understanding of compound mechanism-of-action (MOA), drug repurposing, characterization of cell morphodynamics under perturbation, and ultimately contributing to the development of novel therapeutics. In this review, we provide a comprehensive overview of the recent advances in the field of morphological profiling. We summarize the image profiling analysis workflow, survey a broad spectrum of analysis strategies encompassing feature engineering- and deep learning-based approaches, and introduce publicly available benchmark datasets. We place a particular emphasis on the application of deep learning in this pipeline, covering cell segmentation, image representation learning, and multimodal learning. Additionally, we illuminate the application of morphological profiling in phenotypic drug discovery and highlight potential challenges and opportunities in this field.",
         "data_year": "2024"
     },
