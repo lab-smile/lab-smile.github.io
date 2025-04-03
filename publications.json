@@ -1,5 +1,19 @@
 [   
     {
+        "title": "Phylogenetic-informed graph deep learning to classify dynamic transmission clusters in infectious disease epidemics",
+        "type": "Journal",
+        "authors": "Chaoyue Sun, Yanjun Li, Simone Marini, Alberto Riva, Dapeng Oliver Wu, <u><b> Ruogu Fang </b></u>, Marco Salemi, Brittany Rife Magalis",
+        "citation": "Bioinformatics Advances, Volume 4, Issue 1, 2024",
+        "publication_year": "2024",
+        "image_src": "img/pubs/BioinformaticsAdvances.png",
+        "label_class": "primary",
+        "abstract": "Motivation: In the midst of an outbreak, identification of groups of individuals that represent risk for transmission of the pathogen under investigation is critical to public health efforts. Dynamic transmission patterns within these clusters, whether it be the result of changes at the level of the virus (e.g. infectivity) or host (e.g. vaccination), are critical in strategizing public health interventions, particularly when resources are limited. Phylogenetic trees are widely used not only in the detection of transmission clusters, but the topological shape of the branches within can be useful sources of information regarding the dynamics of the represented population. Results We evaluated the limitation of existing tree shape metrics when dealing with dynamic transmission clusters and propose instead a phylogeny-based deep learning system –DeepDynaTree– for dynamic classification. Comprehensive experiments carried out on a variety of simulated epidemic growth models and HIV epidemic data indicate that this graph deep learning approach is effective, robust, and informative for cluster dynamic prediction. Our results confirm that DeepDynaTree is a promising tool for transmission cluster characterization that can be modified to address the existing limitations and deficiencies in knowledge regarding the dynamics of transmission trajectories for groups at risk of pathogen infection.Availability and implementation DeepDynaTree is available under an MIT Licence in https://github.com/salemilab/DeepDynaTree.",
+        "external_links": {
+            "sciencedirect": "https://doi.org/10.1093/bioadv/vbae158"
+        },
+        "data_year": "2024"
+    },
+    {
         "title": "Automated Imaging Differentiation for Parkinsonism",
         "type": "Journal",
         "authors": "David E. Vaillancourt, Angelos Barmpoutis, Samuel S. Wu, Jesse C. DeSimone, Marissa Schauder, Robin Chen, Todd B. Parrish, Wei-en Wang, Eric Molho, John C. Morgan, David K. Simon, Burton L. Scott, Liana S. Rosenthal, Stephen N. Gomperts, Rizwan S. Akhtar, David Grimes, Sol De Jesus, Natividad Stover, Ece Bayram, Adolfo Ramirez-Zamora, Stefan Prokop, <u><b> Ruogu Fang </b></u>, John T. Slevin, Prabesh Kanel, Nicolaas I. Bohnen, Paul Tuite, Stephen Aradi, Antonio P. Strafella, Mustafa S. Siddiqui, Albert A. Davis, Xuemei Huang, Jill L. Ostrem, Hubert Fernandez, Irene Litvan, Robert A. Hauser, Alexander Pantelyat, Nikolaus R. McFarland, Tao Xie, Michael S. Okun, and the AIDP Study Group",
