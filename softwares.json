@@ -2,6 +2,32 @@
     {
         "year": "2024",
         "type": "Code",
+        "title": "BrainSegFounder",
+        "description": "This repository provides the official implementation of BrainFounder Stage 1 and 2 Pretraining and Fine-tuning methods presented in the paper: BrainFounder: Towards Brain Foundation Models for Neuroimage Analysis",
+        "citation": "Joseph Cox, Peng Liu, Skylar E. Stolte, Yunchao Yang, Kang Liu, Kyle B. See, Huiwen Ju, and Ruogu Fang. \"BrainFounder: Towards Brain Foundation Models for Neuroimage Analysis\" In Medical Image Analysis, October 2024",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/BrainSegFounder"
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "type": "Code",
+        "title": "tDCS-DT",
+        "description": "This repository provides the official implementation of training and evaluation of the model as described in the following paper: Towards tDCS Digital Twins using Deep Learning-based Direct Estimation of Personalized Electrical Field Maps from T1-Weighted MRI",
+        "citation": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, and Ruogu Fang \"Towards tDCS Digital Twins using Deep Learning-based Direct Estimation of Personalized Electrical Field Maps from T1-Weighted MRI\" In MICCAI 2024",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/tDCS-DT"
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "type": "Code",
         "title": "LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images",
         "description": "CodeLAVA is an XAI framework that aims to exploit neuron-level explanation as auxiliary information during learning process to make a high-resolution AD continuum prediction.",
         "citation": "Nooshin Yousefzadeh, Charlie Tran, Adolfo Ramirez-Zamora, Jinghua Chen, Ruogu Fang, My T. Thai. \"LAVA: Granular Neuron-Level Explainable AI for Alzheimer's Disease Assessment from Fundus Images\" In Nature Scientific Reports, April 2024.",
