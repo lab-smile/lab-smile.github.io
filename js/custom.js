@@ -444,7 +444,7 @@ $(document).ready(function(){
 	++++++++++++++++++++++++++++++++++++++*/
 	
 	
-	$('div#pub-grid').mixitup({
+	$('div.pub-grid').mixitup({
 		layoutMode: 'list',
 		easing : 'snap',
 		transitionSpeed :600,
