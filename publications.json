@@ -1,4 +1,5 @@
 [   
+
     {
         "title": "A Comprehensive Survey of Foundation Models in Medicine",
         "type": "Journal",
@@ -13,19 +14,19 @@
         "abstract": "Foundation models (FMs) are large-scale deep-learning models trained on extensive datasets using self-supervised techniques. These models serve as a base for various downstream tasks, including healthcare. FMs have been adopted with great success across various domains within healthcare, including natural language processing (NLP), computer vision, graph learning, biology, and omics. Existing healthcare-based surveys have not yet included all of these domains. Therefore, this survey provides a comprehensive overview of FMs in healthcare. We focus on the history, learning strategies, flagship models, applications, and challenges of FMs. We explore how FMs such as the BERT and GPT families are reshaping various healthcare domains, including clinical large language models, medical image analysis, and omics data. Furthermore, we provide a detailed taxonomy of healthcare applications facilitated by FMs, such as clinical NLP, medical computer vision, graph learning, and other biology-related tasks. Despite the promising opportunities FMs provide, they also have several associated challenges, which are explained in detail. We also outline potential future directions to provide researchers and practitioners with insights into the potential and limitations of FMs in healthcare to advance their deployment and mitigate associated risks.",
         "data_year": "2026"
     },
-    {
-        "title": "Phylogenetic-informed graph deep learning to classify dynamic transmission clusters in infectious disease epidemics",
-        "type": "Journal",
-        "authors": "Chaoyue Sun, Yanjun Li, Simone Marini, Alberto Riva, Dapeng Oliver Wu, <u><b> Ruogu Fang </b></u>, Marco Salemi, Brittany Rife Magalis",
-        "citation": "Bioinformatics Advances, Volume 4, Issue 1, 2024",
-        "publication_year": "2024",
-        "image_src": "img/pubs/BioinformaticsAdvances.png",
+        {
+        "title": "Improving Proton Dose Calculation Accuracy Using ROI-Focused AI Deep Learning Network for CBCT Based Adaptive Proton Therapy",
+        "type": "Conference",
+        "authors": "Zhuobiao Qiao, Weiguang Yao, Zeyu Zhang, Baoshe Zhang, Chris Beltran, Byong Yong Yi, Eric Paulson, Lei Ren, <u><b>Ruogu Fang</u></b>, Mi Huang",
+        "citation": "American Society for Radiation Oncology (ASTRO) 2025",
+        "publication_year": "2025",
+        "image_src": "img/pubs/ASTRO.jpg",
         "label_class": "primary",
-        "abstract": "Motivation: In the midst of an outbreak, identification of groups of individuals that represent risk for transmission of the pathogen under investigation is critical to public health efforts. Dynamic transmission patterns within these clusters, whether it be the result of changes at the level of the virus (e.g. infectivity) or host (e.g. vaccination), are critical in strategizing public health interventions, particularly when resources are limited. Phylogenetic trees are widely used not only in the detection of transmission clusters, but the topological shape of the branches within can be useful sources of information regarding the dynamics of the represented population. Results We evaluated the limitation of existing tree shape metrics when dealing with dynamic transmission clusters and propose instead a phylogeny-based deep learning system –DeepDynaTree– for dynamic classification. Comprehensive experiments carried out on a variety of simulated epidemic growth models and HIV epidemic data indicate that this graph deep learning approach is effective, robust, and informative for cluster dynamic prediction. Our results confirm that DeepDynaTree is a promising tool for transmission cluster characterization that can be modified to address the existing limitations and deficiencies in knowledge regarding the dynamics of transmission trajectories for groups at risk of pathogen infection.Availability and implementation DeepDynaTree is available under an MIT Licence in https://github.com/salemilab/DeepDynaTree.",
         "external_links": {
-            "sciencedirect": "https://doi.org/10.1093/bioadv/vbae158"
+            "sciencedirect": "https://www.astro.org/meetings-and-education/micro-sites/2025/annual-meeting"
         },
-        "data_year": "2024"
+        "abstract": "",
+        "data_year": "2025"
     },
     {
         "title": "Automated Imaging Differentiation for Parkinsonism",
@@ -88,7 +89,7 @@
         "type": "Journal",
         "authors": "Vadim N Gladyshev, Benjamin Anderson, Hanna Barlit, Benjamin Barré, Samuel Beck, Bahareh Behrouz, Daniel W Belsky, Amandine Chaix, Manish Chamoli, Brian H Chen, Kaiyang Cheng, Jane Chuprin, Gary A Churchill, Andrea Cipriano, Alex Colville, Joris Deelen, Yuri Deigin, KeHuan K Edmonds, Bradley W English, <b>Ruogu Fang</b>, Michael Florea, Iosif M Gershteyn, Diljeet Gill, Laura H Goetz, Vera Gorbunova, Patrick T Griffin, Steve Horvath, Martin Borch Jensen, Xin Jin, Sara Jovanovska, Kathrin M Kajderowicz, Tomoko Kasahara, Csaba Kerepesi, Subhash Kulkarni, Vyacheslav M Labunskyy, Morgan E Levine, Sergiy Libert, J Yuyang Lu, Yuancheng Ryan Lu, Riccardo E Marioni, Brianah M McCoy, Wayne Mitchell, Mahdi Moqri, Farzaneh Nasirian, Peter Niimi, Hamilton Se-Hwee Oh, Brian Okundaye, Andrey A Parkhitko, Leonid Peshkin, Mia Petljak, Jesse R Poganik, Glen Pridham, Daniel E L Promislow, Weronika Prusisz, Margaux Quiniou, Ken Raj, Daniel Richard, Jose Luis Ricon, Jarod Rutledge, Morten Scheibye-Knudsen, Nicholas J Schork, Andrei Seluanov, Michael Shadpour, Anastasia V Shindyapina, Steven R Shuken, Sruthi Sivakumar, Thomas Stoeger, Ayumu Sugiura, Nadia R Sutton, Alexander Suvorov, Andrei E Tarkhov, Emma C Teeling, Alexandre Trapp, Alexander Tyshkovskiy, Maximilian Unfried, Cavin K Ward-Caviness, Sun Hee Yim, Kejun Ying, Jeffrey Yunes, Bohan Zhang, Alex Zhavoronkov",
         "citation": "Proceedings of the National Academy of Sciences (PNAS) Nexus, 2024",
-        "publication_year": "2024",
+        "publication_year": "December 2024",
         "image_src": "img/pubs/PNAS.png",
         "label_class": "warning",
         "external_links": {
@@ -109,7 +110,7 @@
         "external_links":{
             "sciencedirect": "https://www.brainstimjrnl.com/article/S1935-861X(24)01297-X/fulltext"
         },
-        "data_year": "2024"
+        "data_year": "2025"
     },
     {
         "title": "Comparison of GRACE and SynthSeg Deep Learning Models for Whole-Head Brain Segmentation",
@@ -123,11 +124,25 @@
         "data_year": "2024"
     },
     {
+        "title": "Phylogenetic-informed graph deep learning to classify dynamic transmission clusters in infectious disease epidemics",
+        "type": "Journal",
+        "authors": "Chaoyue Sun, Yanjun Li, Simone Marini, Alberto Riva, Dapeng Oliver Wu, <u><b> Ruogu Fang </b></u>, Marco Salemi, Brittany Rife Magalis",
+        "citation": "Bioinformatics Advances, Volume 4, Issue 1, 2024",
+        "publication_year": "November 2024",
+        "image_src": "img/pubs/BioinformaticsAdvances.png",
+        "label_class": "primary",
+        "abstract": "Motivation: In the midst of an outbreak, identification of groups of individuals that represent risk for transmission of the pathogen under investigation is critical to public health efforts. Dynamic transmission patterns within these clusters, whether it be the result of changes at the level of the virus (e.g. infectivity) or host (e.g. vaccination), are critical in strategizing public health interventions, particularly when resources are limited. Phylogenetic trees are widely used not only in the detection of transmission clusters, but the topological shape of the branches within can be useful sources of information regarding the dynamics of the represented population. Results We evaluated the limitation of existing tree shape metrics when dealing with dynamic transmission clusters and propose instead a phylogeny-based deep learning system –DeepDynaTree– for dynamic classification. Comprehensive experiments carried out on a variety of simulated epidemic growth models and HIV epidemic data indicate that this graph deep learning approach is effective, robust, and informative for cluster dynamic prediction. Our results confirm that DeepDynaTree is a promising tool for transmission cluster characterization that can be modified to address the existing limitations and deficiencies in knowledge regarding the dynamics of transmission trajectories for groups at risk of pathogen infection.Availability and implementation DeepDynaTree is available under an MIT Licence in https://github.com/salemilab/DeepDynaTree.",
+        "external_links": {
+            "sciencedirect": "https://doi.org/10.1093/bioadv/vbae158"
+        },
+        "data_year": "2024"
+    },
+    {
         "title": "Artificial Intelligence-Optimized Non-Invasive Brain Stimulation and Treatment Response Prediction for Major Depression",
         "type": "Journal",
         "authors": "Alejandro Albizu, Paulo Suen, Ziqian Huang, Jori L. Waner, Skylar E. Stolte, Aprinda Indahlastari, <strong>Ruogu Fang</strong>, Andre R. Brunoni, and Adam J. Woods",
         "citation": "Bioelectronic Medicine, 2024",
-        "publication_year": "2024",
+        "publication_year": "October 2024",
         "image_src": "img/pubs/BMC_BioelecMed.png",
         "label_class": "warning",
         "external_links": {
