@@ -1,5 +1,4 @@
-[   
-
+[
     {
         "title": "A Comprehensive Survey of Foundation Models in Medicine",
         "type": "Journal",
@@ -14,7 +13,21 @@
         "abstract": "Foundation models (FMs) are large-scale deep-learning models trained on extensive datasets using self-supervised techniques. These models serve as a base for various downstream tasks, including healthcare. FMs have been adopted with great success across various domains within healthcare, including natural language processing (NLP), computer vision, graph learning, biology, and omics. Existing healthcare-based surveys have not yet included all of these domains. Therefore, this survey provides a comprehensive overview of FMs in healthcare. We focus on the history, learning strategies, flagship models, applications, and challenges of FMs. We explore how FMs such as the BERT and GPT families are reshaping various healthcare domains, including clinical large language models, medical image analysis, and omics data. Furthermore, we provide a detailed taxonomy of healthcare applications facilitated by FMs, such as clinical NLP, medical computer vision, graph learning, and other biology-related tasks. Despite the promising opportunities FMs provide, they also have several associated challenges, which are explained in detail. We also outline potential future directions to provide researchers and practitioners with insights into the potential and limitations of FMs in healthcare to advance their deployment and mitigate associated risks.",
         "data_year": "2026"
     },
-        {
+    {
+        "title": "Investigating Ethnic Disparity in Machine Learning-Based Diagnosis of Symptomatic Bacterial Vaginosis",
+        "type": "Journal",
+        "authors": "Diandra P. Ojo*, Cameron Celeste, Dion Ming, <u><b>Ruogu Fang</b></u>†, Ivana K. Parker (\u2020 co-corresponding authors)",
+        "citation": "npj Women’s Health",
+        "publication_year": "2025",
+        "image_src": "img/pubs/nature.digitalmedicine.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": ""
+        },
+        "abstract": "While machine learning (ML) has shown great promise in medical diagnostics, a major challenge is that ML models do not always perform equally well among ethnic groups. This is alarming for women’s health, as there are already existing health disparities that vary by ethnicity. Bacterial Vaginosis (BV) is a common vaginal syndrome among women of reproductive age and has clear diagnostic differences among ethnic groups. Here, we investigate the ability of four ML algorithms to diagnose BV. We determine the fairness in the prediction of asymptomatic BV using 16S rRNA sequencing data from Asian, Black, Hispanic, and white women. General purpose ML model performances vary based on ethnicity. When evaluating the metric of false positive or false negative rate, we find that models perform least effectively for Hispanic and Asian women. Models generally have the highest performance for white women and the lowest for Asian women. These findings demonstrate a need for improved methodologies to increase model fairness for predicting BV.",
+        "data_year": "2025"
+    },
+    {
         "title": "Improving Proton Dose Calculation Accuracy Using ROI-Focused AI Deep Learning Network for CBCT Based Adaptive Proton Therapy",
         "type": "Conference",
         "authors": "Zhuobiao Qiao, Weiguang Yao, Zeyu Zhang, Baoshe Zhang, Chris Beltran, Byong Yong Yi, Eric Paulson, Lei Ren, <u><b>Ruogu Fang</u></b>, Mi Huang",
@@ -51,7 +64,7 @@
         "image_src": "img/pubs/BrainStimulation2025.png",
         "label_class": "primary",
         "abstract": "",
-        "external_links" : {
+        "external_links": {
             "sciencedirect": "https://papers.miccai.org/miccai-2024/793-Paper1533.html"
         },
         "data_year": "2025"
@@ -65,7 +78,7 @@
         "image_src": "img/pubs/BrainStimulation2025.png",
         "label_class": "primary",
         "abstract": "",
-        "external_links" : {
+        "external_links": {
             "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
         },
         "data_year": "2025"
@@ -78,7 +91,7 @@
         "publication_year": "December, 2024",
         "image_src": "img/pubs/arxiv.png",
         "label_class": "warning",
-        "external_links":{
+        "external_links": {
             "sciencedirect": "https://arxiv.org/abs/2412.19439"
         },
         "abstract": "The evolution of colour vision is captivating, as it reveals the adaptive strategies of extinct species while simultaneously inspiring innovations in modern imaging technology. In this study, we present a simplified model of visual transduction in the retina, introducing a novel opsin layer. We quantify evolutionary pressures by measuring machine vision recognition accuracy on colour images shaped by specific opsins. Building on this, we develop an evolutionary conservation optimisation algorithm to reconstruct the spectral sensitivity of opsins, enabling mutation-driven adaptations to more effectively spot fruits or predators. This model condenses millions of years of evolution within seconds on GPU, providing an experimental framework to test long-standing hypotheses in evolutionary biology, such as vision of early mammals, primate trichromacy from gene duplication, retention of colour blindness, blue-shift of fish rod and multiple rod opsins with bioluminescence. Moreover, the model enables speculative explorations of hypothetical species, such as organisms with eyes adapted to the conditions on Mars. Our findings suggest a minimalist yet effective approach to task-specific camera filter design, optimising the spectral response function to meet application-driven demands. The code will be made publicly available upon acceptance.",
@@ -106,8 +119,8 @@
         "publication_year": "2024",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "abstract" : "",
-        "external_links":{
+        "abstract": "",
+        "external_links": {
             "sciencedirect": "https://www.brainstimjrnl.com/article/S1935-861X(24)01297-X/fulltext"
         },
         "data_year": "2025"
@@ -120,7 +133,7 @@
         "publication_year": "2024",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "abstract" : "",
+        "abstract": "",
         "data_year": "2024"
     },
     {
@@ -263,8 +276,8 @@
         "publication_year": "May 2024",
         "image_src": "img/pubs/bioinformatics.gif",
         "label_class": "warning",
-        "external_links":{
-            "sciencedirect":"https://academic.oup.com/bib/article/25/4/bbae284/7693952"
+        "external_links": {
+            "sciencedirect": "https://academic.oup.com/bib/article/25/4/bbae284/7693952"
         },
         "abstract": "Morphological profiling is a valuable tool in phenotypic drug discovery. The advent of high-throughput automated imaging has enabled the capturing of a wide range of morphological features of cells or organisms in response to perturbations at the single-cell resolution. Concurrently, significant advances in machine learning and deep learning, especially in computer vision, have led to substantial improvements in analyzing large-scale high-content images at high-throughput. These efforts have facilitated understanding of compound mechanism-of-action (MOA), drug repurposing, characterization of cell morphodynamics under perturbation, and ultimately contributing to the development of novel therapeutics. In this review, we provide a comprehensive overview of the recent advances in the field of morphological profiling. We summarize the image profiling analysis workflow, survey a broad spectrum of analysis strategies encompassing feature engineering- and deep learning-based approaches, and introduce publicly available benchmark datasets. We place a particular emphasis on the application of deep learning in this pipeline, covering cell segmentation, image representation learning, and multimodal learning. Additionally, we illuminate the application of morphological profiling in phenotypic drug discovery and highlight potential challenges and opportunities in this field.",
         "data_year": "2024"
@@ -539,7 +552,7 @@
         "image_src": "img/pubs/SoftwareImpacts.jpg",
         "label_class": "warning",
         "external_links": {
-            "sciencedirect":"https://www.sciencedirect.com/science/article/pii/S2665963823000155",
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S2665963823000155",
             "github": "https://github.com/lab-smile/DOMINO"
         },
         "abstract": "Model calibration measures the agreement between the predicted probability estimates and the true correctness likelihood. Proper model calibration is vital for high-risk applications. Unfortunately, modern deep neural networks are poorly calibrated, compromising trustworthiness and reliability. Medical image segmentation particularly suffers from this due to the natural uncertainty of tissue boundaries. This is exasperated by their loss functions, which favor overconfidence in the majority classes. We address these challenges with DOMINO, a domain-aware model calibration method that leverages the semantic confusability and hierarchical similarity between class labels. Our experiments demonstrate that our DOMINO-calibrated deep neural networks outperform non-calibrated models and state-of-the-art morphometric methods in head image segmentation. Our results show that our method can consistently achieve better calibration, higher accuracy, and faster inference times than these methods, especially on rarer classes. This performance is attributed to our domain-aware regularization to inform semantic model calibration. These findings show the importance of semantic ties between class labels in building confidence in deep learning models. The framework has the potential to improve the trustworthiness and reliability of generic medical image segmentation models.",
