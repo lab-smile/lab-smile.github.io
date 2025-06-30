@@ -16,7 +16,7 @@
     {
         "title": "Ouroboros: Single-step Diffusion Models for Cycle-consistent Forward and Inverse Rendering",
         "type": "Conference",
-        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <b><u>Ruogu Fang</u></b>, Xiaohui Xie, Chenyu You",
+        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <b>Ruogu Fang</b>, Xiaohui Xie, Chenyu You",
         "citation": "International Conference on Computer Vision (ICCV), Hawaii, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/ICCV2025.png",
@@ -26,7 +26,7 @@
     {
         "title": "OTSurv: A Novel Multiple Instance Learning Framework for Survival Prediction with Heterogeneity-aware Optimal Transport",
         "type": "Conference",
-        "authors": "Qin Ren, Yifan Wang, <b><u>Ruogu Fang</u></b>, Haibin Ling, Chenyu You",
+        "authors": "Qin Ren, Yifan Wang, <b>Ruogu Fang</b>, Haibin Ling, Chenyu You",
         "citation": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Daejeon, Republic of Korea, 2025",
         "publication_year": "September 2025",
         "image_src": "img/pubs/MICCAI.jpg",
@@ -41,7 +41,7 @@
     {
         "title": "Editorial: Frontiers of Women in Brain Imaging and Stimulation, Volume II",
         "type": "Journal",
-        "authors": "Molly Suzanne Hermiller, <b><u> Ruogu Fang </u></b>, Wen Li",
+        "authors": "Molly Suzanne Hermiller, <b>Ruogu Fang</b>, Wen Li",
         "citation": "Frontiers in Human Neuroscience—Brain Imaging and Stimulation",
         "publication_year": "June 2025",
         "image_src": "img/pubs/frontiers-in-human-neuroscience.png",
@@ -69,7 +69,7 @@
     {
         "title": "Improving Proton Dose Calculation Accuracy Using ROI-Focused AI Deep Learning Network for CBCT Based Adaptive Proton Therapy",
         "type": "Conference",
-        "authors": "Zhuobiao Qiao, Weiguang Yao, Zeyu Zhang, Baoshe Zhang, Chris Beltran, Byong Yong Yi, Eric Paulson, Lei Ren, <u><b>Ruogu Fang</u></b>, Mi Huang",
+        "authors": "Zhuobiao Qiao, Weiguang Yao, Zeyu Zhang, Baoshe Zhang, Chris Beltran, Byong Yong Yi, Eric Paulson, Lei Ren, <b>Ruogu Fang</b>, Mi Huang",
         "citation": "American Society for Radiation Oncology (ASTRO) 2025",
         "publication_year": "2025",
         "image_src": "img/pubs/ASTRO.jpg",
@@ -83,7 +83,7 @@
     {
         "title": "Automated Imaging Differentiation for Parkinsonism",
         "type": "Journal",
-        "authors": "David E. Vaillancourt, Angelos Barmpoutis, Samuel S. Wu, Jesse C. DeSimone, Marissa Schauder, Robin Chen, Todd B. Parrish, Wei-en Wang, Eric Molho, John C. Morgan, David K. Simon, Burton L. Scott, Liana S. Rosenthal, Stephen N. Gomperts, Rizwan S. Akhtar, David Grimes, Sol De Jesus, Natividad Stover, Ece Bayram, Adolfo Ramirez-Zamora, Stefan Prokop, <u><b> Ruogu Fang </b></u>, John T. Slevin, Prabesh Kanel, Nicolaas I. Bohnen, Paul Tuite, Stephen Aradi, Antonio P. Strafella, Mustafa S. Siddiqui, Albert A. Davis, Xuemei Huang, Jill L. Ostrem, Hubert Fernandez, Irene Litvan, Robert A. Hauser, Alexander Pantelyat, Nikolaus R. McFarland, Tao Xie, Michael S. Okun, and the AIDP Study Group",
+        "authors": "David E. Vaillancourt, Angelos Barmpoutis, Samuel S. Wu, Jesse C. DeSimone, Marissa Schauder, Robin Chen, Todd B. Parrish, Wei-en Wang, Eric Molho, John C. Morgan, David K. Simon, Burton L. Scott, Liana S. Rosenthal, Stephen N. Gomperts, Rizwan S. Akhtar, David Grimes, Sol De Jesus, Natividad Stover, Ece Bayram, Adolfo Ramirez-Zamora, Stefan Prokop, <b> Ruogu Fang</b>, John T. Slevin, Prabesh Kanel, Nicolaas I. Bohnen, Paul Tuite, Stephen Aradi, Antonio P. Strafella, Mustafa S. Siddiqui, Albert A. Davis, Xuemei Huang, Jill L. Ostrem, Hubert Fernandez, Irene Litvan, Robert A. Hauser, Alexander Pantelyat, Nikolaus R. McFarland, Tao Xie, Michael S. Okun, and the AIDP Study Group",
         "citation": "JAMA Neurology | Original Investigation | AI IN NEUROLOGY",
         "publication_year": "2025",
         "image_src": "img/pubs/JAMA_Neurology.png",
