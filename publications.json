@@ -6,12 +6,51 @@
         "citation": "IEEE Reviews in Biomedical Engineering",
         "publication_year": "January 2026",
         "image_src": "img/pubs/IEEE_rbme.jpg",
-        "label_class": "primary",
+        "label_class": "warning",
         "external_links": {
-            "arxiv": "https://ieeexplore.ieee.org/document/10847310"
+            "sciencedirect": "https://ieeexplore.ieee.org/document/10847310"
         },
         "abstract": "Foundation models (FMs) are large-scale deep-learning models trained on extensive datasets using self-supervised techniques. These models serve as a base for various downstream tasks, including healthcare. FMs have been adopted with great success across various domains within healthcare, including natural language processing (NLP), computer vision, graph learning, biology, and omics. Existing healthcare-based surveys have not yet included all of these domains. Therefore, this survey provides a comprehensive overview of FMs in healthcare. We focus on the history, learning strategies, flagship models, applications, and challenges of FMs. We explore how FMs such as the BERT and GPT families are reshaping various healthcare domains, including clinical large language models, medical image analysis, and omics data. Furthermore, we provide a detailed taxonomy of healthcare applications facilitated by FMs, such as clinical NLP, medical computer vision, graph learning, and other biology-related tasks. Despite the promising opportunities FMs provide, they also have several associated challenges, which are explained in detail. We also outline potential future directions to provide researchers and practitioners with insights into the potential and limitations of FMs in healthcare to advance their deployment and mitigate associated risks.",
         "data_year": "2026"
+    },
+    {
+        "title": "Ouroboros: Single-step Diffusion Models for Cycle-consistent Forward and Inverse Rendering",
+        "type": "Conference",
+        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <b><u>Ruogu Fang</u></b>, Xiaohui Xie, Chenyu You",
+        "citation": "International Conference on Computer Vision (ICCV), Hawaii, USA",
+        "publication_year": "October 2025",
+        "image_src": "img/pubs/ICCV2025.png",
+        "label_class": "primary",
+        "data_year": "2025"
+    },
+    {
+        "title": "OTSurv: A Novel Multiple Instance Learning Framework for Survival Prediction with Heterogeneity-aware Optimal Transport",
+        "type": "Conference",
+        "authors": "Qin Ren, Yifan Wang, <b><u>Ruogu Fang</u></b>, Haibin Ling, Chenyu You",
+        "citation": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Daejeon, Republic of Korea, 2025",
+        "publication_year": "September 2025",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "arxiv": "https://arxiv.org/abs/2506.20741",
+            "github": "https://github.com/Y-Research-SBU/OTSurv"
+        },
+        "abstract": "Survival prediction using whole slide images (WSIs) can be formulated as a multiple instance learning (MIL) problem. However, existing MIL methods often fail to explicitly capture pathological heterogeneity within WSIs, both globally – through long-tailed morphological distributions, and locally – through tile-level prediction uncertainty. Optimal transport (OT) provides a principled way of modeling such heterogeneity by incorporating marginal distribution constraints. Building on this insight, we propose OTSurv, a novel MIL framework from an optimal transport perspective. Specifically, OTSurv formulates survival predictions as a heterogeneity-aware OT problem with two constraints: (1) global long-tail constraint that models prior morphological distributions to avert both mode collapse and excessive uniformity by regulating transport mass allocation, and (2) local uncertainty-aware constraint that prioritizes high-confidence patches while suppressing noise by progressively raising the total transport mass. We then recast the initial OT problem, augmented by these constraints, into an unbalanced OT formulation that can be solved with an efficient, hardware-friendly matrix scaling algorithm. Empirically, OTSurv sets new state-of-the-art results across six popular benchmarks, achieving an absolute 3.6% improvement in average C-index. In addition, OTSurv achieves statistical significance in log-rank tests and offers high interpretability, making it a powerful tool for survival prediction in digital pathology. Our codes are available at https://github.com/Y-Research-SBU/OTSurv.",
+        "data_year": "2025"
+    },
+    {
+        "title": "Editorial: Frontiers of Women in Brain Imaging and Stimulation, Volume II",
+        "type": "Journal",
+        "authors": "Molly Suzanne Hermiller, <b><u> Ruogu Fang </u></b>, Wen Li",
+        "citation": "Frontiers in Human Neuroscience—Brain Imaging and Stimulation",
+        "publication_year": "June 2025",
+        "image_src": "img/pubs/frontiers-in-human-neuroscience.png",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2025.1648769/abstract"
+        },
+        "abstract": "Indahlastari et al. compared current flow models for transcranial direct current stimulation (tDCS) generated using real electrode placements from MRI scans (\"real\" models) versus artificially placed electrodes based on virtual 10-20 EEG measurements (\"artificial\" models) in older adults (mean age = 71.8 years). Significant inverse correlations were found between current density values and brain atrophy in both models, with slightly stronger correlations in the artificial pipeline. Differences in electrode placement between the two models significantly affected current density in key brain regions, although contact area discrepancies did not show significant effects. The findings highlight potential inaccuracies in current density predictions when relying on artificial models. The study underscores the importance of documenting physical electrode placement during tDCS for more accurate modeling and treatment planning.Wei et al. evaluated the feasibility, safety, and blinding efficacy of a transcranial direct current stimulation (tDCS) paradigm designed to enhance attention by increasing excitability in the dorsal attention network (DAN) and inhibiting the default network (DN) (DAN+/DN-tDCS). Forty participants were randomized into either a DAN+/DN-tDCS or sham group and completed a single 20-minute stimulation session followed by the Attention Network Test. Results showed significant improvement in executive effect performance in the DAN+/DN-tDCS group but not in the sham group. Notably, blinding was effective, with participants correctly identifying stimulation type at chance levels. The findings suggest DAN+/DN-tDCS enhances attention function and warrant further research into its mechanisms and applications.MS Hermiller investigated the effects of continuous (cTBS) and intermittent theta-burst stimulation (iTBS) on network connectivity using resting-state fMRI, focusing on the hippocampal-cortical network. Contrary to the conventional theory that cTBS is inhibitory and iTBS is excitatory, both protocols caused local decreases in connectivity at the stimulated parietal site. cTBS produced both increases and decreases in connectivity within the hippocampal-cortical network, while iTBS primarily caused decreases. cTBS appeared to entrain the hippocampal-cortical network, potentially supporting long-lasting effects observed shortly after stimulation, whereas iTBS failed to maintain this entrainment. These effects were specific to the hippocampal-cortical network, which exhibits an endogenous, functionally relevant, theta rhythm. The findings challenge traditional excitatory/inhibitory models of theta-burst stimulation and highlight the need for further research on its local and network-level impacts.Mitchell & Nugiel explored how pubertal development, sleep disturbances, and brain network connectivity interact to predict mental health problems in adolescents. Using data from the ABCD Study (N ~ 3,000-10,000), researchers found that advanced pubertal status predicted sleep disturbances. In contrast, both pubertal status and tempo interacted with sleep disturbances to influence mental health outcomes. Three-way interactions between pubertal development, sleep disturbances, and brain network organization also predicted mental health problems. Adolescents with less advanced pubertal status and slower tempo showed stronger links between sleep disturbances, brain connectivity, and mental health issues. The findings highlight the importance of considering these interactions in designing targeted interventions for internalizing and externalizing disorders.Ho et al. explored the effects of combining transcranial direct current stimulation (tDCS) with exercise on frontal plane kinematics in individuals with patellofemoral pain. The hypothesis was that tDCS targeting gluteal corticomotor function would enhance the impact of hip strengthening exercises compared to sham stimulation. Participants completed two sessions involving either tDCS or sham stimulation during weight-bearing tasks and hip exercises. Frontal plane kinematics and pain (i.e., VAS scores) were assessed pre-and post-session. Results showed no significant improvements in kinematics or pain following a single session of tDCS. The study concludes that while immediate effects were not observed, further research on multi-session tDCS is needed to investigate potential cumulative benefits for patellofemoral pain.These contributions exemplify the innovative advancements by women scientists in brain imaging and stimulation research, shedding light on critical interactions between brain networks, neurodevelopment, and noninvasive stimulation techniques. They reveal the complex relationships between pubertal development, sleep disturbances, and mental health, while also demonstrating the importance of precise computational modeling and accurate electrode placement for transcranial stimulation efficacy. By investigating cutting-edge noninvasive interventions like tDCS and TMS, these findings challenge traditional paradigms and emphasize the need for targeted, personalized approaches across diverse populations. It is essential that we continue to foster rigorous, inclusive, and collaborative research environments to ensure these discoveries translate into improved outcomes, advancing the fields of neuroscience and brain health for all.",
+        "label_class": "warning",
+        "data_year": "2025"
     },
     {
         "title": "Population-Level Predictive Variation in Machine Learning Diagnosis of Symptomatic Bacterial Vaginosis",
@@ -20,7 +59,7 @@
         "citation": "npj Women’s Health",
         "publication_year": "2025",
         "image_src": "img/pubs/nature.digitalmedicine.png",
-        "label_class": "primary",
+        "label_class": "warning",
         "external_links": {
             "sciencedirect": ""
         },
@@ -48,7 +87,7 @@
         "citation": "JAMA Neurology | Original Investigation | AI IN NEUROLOGY",
         "publication_year": "2025",
         "image_src": "img/pubs/JAMA_Neurology.png",
-        "label_class": "primary",
+        "label_class": "warning",
         "abstract": "IMPORTANCE Magnetic resonance imaging (MRI) paired with appropriate disease-specific machine learning holds promise for the clinical differentiation of Parkinson disease (PD), multiple system atrophy (MSA) parkinsonian variant, and progressive supranuclear palsy (PSP). A prospective study is needed to test whether the approach meets primary end points to be considered in a diagnostic workup. OBJECTIVE To assess the discriminative performance of Automated Imaging Differentiation for Parkinsonism (AIDP) using 3-T diffusion MRI and support vector machine (SVM) learning. DESIGN, SETTING, AND PARTICIPANTS This was a prospective, multicenter cohort study conducted from July 2021 to January 2024 across 21 Parkinson Study Group sites (US/Canada). Included were patients with PD, MSA, and PSP with established criteria and unanimous agreement in the clinical diagnosis among 3 independent, blinded neurologists who specialize in movement disorders. Patients were assigned to a training set or an independent testing set. EXPOSURE MRI. MAIN OUTCOMES AND MEASURES Area under the receiver operating characteristic curve (AUROC) in the testing set for primary model end points of PD vs atypical parkinsonism, MSA vs PSP, PD vs MSA, and PD vs PSP. AIDP was also paired with antemortem MRI to test against postmortem neuropathology in a subset of autopsy cases. RESULTS A total of 316 patients were screened and 249 patients (mean [SD] age, 67.8 [7.7] years; 155 male [62.2%]) met inclusion criteria. Of these patients, 99 had PD, 53 had MSA, and 97 had PSP. A retrospective cohort of 396 patients (mean [SD] age, 65.8 [8.9] years; 234 male [59.1%]) was also included. Of these patients, 211 had PD, 98 had MSA, and 87 had PSP. Patients were assigned to the training set (78%; 104 prospective, 396 retrospective) or independent testing set, which included 145 (22%; 60 PD, 27 MSA, 58 PSP) prospective patients (mean age, 67.4 [SD 7.7] years; 95 male [65.5%]). The model was robust in differentiating PD vs atypical parkinsonism (AUROC, 0.96; 95% CI, 0.93-0.99; positive predictive value [PPV], 0.91; negative predictive value [NPV], 0.83), MSA vs PSP (AUROC, 0.98; 95% CI, 0.96-1.00; PPV, 0.98; NPV, 0.81), PD vs MSA (AUROC, 0.98; 95% CI, 0.96-1.00; PPV, 0.97; NPV, 0.97), and PD vs PSP (AUROC, 0.98; 95% CI, 0.96-1.00; PPV, 0.92; NPV, 0.98). AIDP predictions were confirmed neuropathologically in 46 of 49 brains (93.9%). CONCLUSIONS AND RELEVANCE This prospective multicenter cohort study of AIDP met its primary end points. Results suggest using AIDP in the diagnostic workup for common parkinsonian syndromes.",
         "external_links": {
             "sciencedirect": "https://doi.org/10.1001/jamaneurol.2025.0112"
@@ -143,7 +182,7 @@
         "citation": "Bioinformatics Advances, Volume 4, Issue 1, 2024",
         "publication_year": "November 2024",
         "image_src": "img/pubs/BioinformaticsAdvances.png",
-        "label_class": "primary",
+        "label_class": "warning",
         "abstract": "Motivation: In the midst of an outbreak, identification of groups of individuals that represent risk for transmission of the pathogen under investigation is critical to public health efforts. Dynamic transmission patterns within these clusters, whether it be the result of changes at the level of the virus (e.g. infectivity) or host (e.g. vaccination), are critical in strategizing public health interventions, particularly when resources are limited. Phylogenetic trees are widely used not only in the detection of transmission clusters, but the topological shape of the branches within can be useful sources of information regarding the dynamics of the represented population. Results We evaluated the limitation of existing tree shape metrics when dealing with dynamic transmission clusters and propose instead a phylogeny-based deep learning system –DeepDynaTree– for dynamic classification. Comprehensive experiments carried out on a variety of simulated epidemic growth models and HIV epidemic data indicate that this graph deep learning approach is effective, robust, and informative for cluster dynamic prediction. Our results confirm that DeepDynaTree is a promising tool for transmission cluster characterization that can be modified to address the existing limitations and deficiencies in knowledge regarding the dynamics of transmission trajectories for groups at risk of pathogen infection.Availability and implementation DeepDynaTree is available under an MIT Licence in https://github.com/salemilab/DeepDynaTree.",
         "external_links": {
             "sciencedirect": "https://doi.org/10.1093/bioadv/vbae158"
@@ -1016,7 +1055,7 @@
         "citation": "Journal of Clinical and Translational Science",
         "publication_year": "July, 2020",
         "image_src": "img/pubs/journal_of%20clinical%20and%20translational%20science.jpg",
-        "label_class": "primary",
+        "label_class": "warning",
         "external_links": {
             "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/4085-tl1-team-approach-to-predicting-shortterm-and-longterm-effects-of-spinal-cord-stimulation/9040EFDA2EB3ABE295E5B662DC0F4C33#article"
         },
