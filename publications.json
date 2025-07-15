@@ -95,10 +95,24 @@
         "data_year": "2025"
     },
     {
+        "title": "Practical considerations in modeling tDCS in older adults",
+        "type": "Conference",
+        "authors": "Aprinda Indahlastari, Alejandro Albizu, Skylar Stolte, <b>Ruogu Fang</b>, Adam Woods",
+        "citation": "6th International Brain Stimulation Conference | Kobe, Japan <br> Brain Stimulation, volume 18, issue 1, pages 332-333 (2025)",
+        "publication_year": "February 23–26, 2025",
+        "image_src": "img/pubs/BrainStimulation2025.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://doi.org/10.1016/j.brs.2024.12.356"
+        },
+        "abstract":"Over the past few decades, the aging population has dramatically increased making it a public health concern. Cognitive aging refers to the normal trajectory of cognitive decline associated with healthy aging process. Research shows that transcranial direct current stimulation (tDCS) is a promising intervention to remediate cognitive aging non-invasively. Due to limited in-vivo measurements, MRI-derived finite element method (FEM) models have been utilized to approximate tDCS current delivery. Variation of outcomes from tDCS application can be sourced from inter-individual variability, especially the anatomical differences associated with aging. Therefore, incorporating age-related anatomical decline in older adults, such as brain atrophy and white matter hyperintensity, into electric field models is important to produce a more accurate tDCS estimation. We found significant negative correlation (p<0.001) for brain atrophy and isolated current densities in selected subregions conducted in a large sample of older adults (N=587). Integrating white matter lesions into the model resulted an overall decrease of computed current densities in the intact brain tissue by 7%. In addition, accurately representing electrode location in tDCS models is also important for estimating current distribution in the aging brain. For instance, artificially created electrodes versus real electrodes segmented from imaging data resulted in up to a 35% difference in current density in the brain. While both electrode models showed significant correlation to brain volumes, their correlation coefficients were not identical. This serves as a practical application of electric field models and demonstrates the impact of electrode selection on results. Overall, inter-individual variability and model set-up remain crucial in current dose delivery from electrical stimulation at the brain level, especially in older adults. Future studies may consider practical applications to model tDCS in the aging population to compensate for age-related factors and increase the accuracy of predictions with these models.",
+        "data_year": "2025"
+    },
+    {
         "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
         "type": "Conference",
         "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods,<u><b> Ruogu Fang </b></u>",
-        "citation": "6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
+        "citation": "6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan ",
         "publication_year": "23–26 February 2025",
         "image_src": "img/pubs/BrainStimulation2025.png",
         "label_class": "primary",
@@ -112,7 +126,7 @@
         "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
         "type": "Conference",
         "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b> Ruogu Fang </b></u>",
-        "citation": "6th International Brain Stimulation Conference, Kobe, Japan",
+        "citation": "6th International Brain Stimulation Conference | Kobe, Japan",
         "publication_year": "23–26 February 2025",
         "image_src": "img/pubs/BrainStimulation2025.png",
         "label_class": "primary",
