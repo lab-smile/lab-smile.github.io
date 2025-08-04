@@ -14,6 +14,45 @@
         "data_year": "2026"
     },
     {
+        "title": "Attention-Based Multimodal Modeling of Electric Field and Clinico-Demographic Features Predicts State Anxiety Response to tDCS in Older Adults",
+        "type": "Conference",
+        "authors": "Junfu Cheng, Aprinda Indahlastari, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, San Diego, October 2025",
+        "publication_year": "October 2025",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/2025/annualmeeting"
+        },
+        "data_year": "2025"
+    },
+    {
+        "title": "Physical Activity Supports Subcortical Brain Health in Older Adults: Insights from the UK Biobank",
+        "type": "Conference",
+        "authors": "Wasif Khan, <u><b>Ruogu Fang</b></u>",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, San Diego, October 2025",
+        "publication_year": "October 2025",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/2025/annualmeeting"
+        },
+        "data_year": "2025"
+    },
+    {
+        "title": "Impacts of Head Tissue Variability on Predicted Current Density in Aging Brains",
+        "type": "Conference",
+        "authors": "Hart G.M., Silva G. L., Busch T.A., Iversen K. D., <b> Fang R.</b>, Woods A., Queen A. I.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, San Diego, October 2025",
+        "publication_year": "October 2025",
+        "image_src": "img/pubs/BMES.jpg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.bmes.org/2025/annualmeeting"
+        },
+        "data_year": "2025"
+    },
+    {
         "title": "Ouroboros: Single-step Diffusion Models for Cycle-consistent Forward and Inverse Rendering",
         "type": "Conference",
         "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <b>Ruogu Fang</b>, Xiaohui Xie, Chenyu You",
