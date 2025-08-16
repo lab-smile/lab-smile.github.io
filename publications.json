@@ -55,7 +55,7 @@
     {
         "title": "Ouroboros: Single-step Diffusion Models for Cycle-consistent Forward and Inverse Rendering",
         "type": "Conference",
-        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <b>Ruogu Fang</b>, Xiaohui Xie, Chenyu You",
+        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <u><b>Ruogu Fang</b></u>\u2020, Xiaohui Xie, <u>Chenyu You</u>\u2020 (\u2020 co-corresponding authors)",
         "citation": "International Conference on Computer Vision (ICCV), Hawaii, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/ICCV2025.png",
@@ -94,7 +94,7 @@
     {
         "title": "Population-Level Predictive Variation in Machine Learning Diagnosis of Symptomatic Bacterial Vaginosis",
         "type": "Journal",
-        "authors": "Diandra P. Ojo*, Cameron Celeste, Dion Ming, <u><b>Ruogu Fang</b></u>†, Ivana K. Parker (\u2020 co-corresponding authors)",
+        "authors": "Diandra P. Ojo*, Cameron Celeste, Dion Ming, <u><b>Ruogu Fang</b></u>†, <u>Ivana K. Parker</u>\u2020 (\u2020 co-corresponding authors)",
         "citation": "npj Women’s Health",
         "publication_year": "2025",
         "image_src": "img/pubs/nature.digitalmedicine.png",
