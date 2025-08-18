@@ -10,7 +10,6 @@
     <meta name="description" content="Ruogu Fang Homepage" />
     <meta name="keywords"
         content="Ruogu Fang, medical image, machine learning, deep learning, computer vision, health analysis, SMILE group, big data" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="shortcut icon" href="img/misc/ufl.png">
 
     <!--CSS styles-->
@@ -40,6 +39,17 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/publications.js"></script>
     <script type="text/javascript" src="js/software.js"></script>
+
+    <!-- Disabling secure policy for local development -->
+    <script>
+    // Only add the 'upgrade-insecure-requests' meta tag if we are NOT on a local server.
+    if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        var meta = document.createElement('meta');
+        meta.httpEquiv = 'Content-Security-Policy';
+        meta.content = 'upgrade-insecure-requests';
+        document.head.appendChild(meta);
+    }
+    </script>
     <!--/Javascript files-->
 </head>
 

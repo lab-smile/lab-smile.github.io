@@ -63,6 +63,20 @@
         "data_year": "2025"
     },
     {
+        "title": "TRACE: An AI-Powered Tool for Ancestry Meta-Analysis to Promote Transparency and Representation in Biomedical Research",
+        "type": "Journal",
+        "authors": "Alison M. Veintimilla#, Chintan K. Acharya#*, Connie J. Mulligan, <b><u>Ruogu Fang</u></b>†, Erika Moore† (#: co-first authors, †: co-corresponding)",
+        "citation": "Frontiers in Digital Health",
+        "publication_year": "2025",
+        "image_src": "img/pubs/frontiers-in-digital-health.png",
+        "label_class": "warning",
+        "external_links": {
+            "github": "https://github.com/lab-smile/TRACE"
+        },
+        "abstract": "",
+        "data_year": "2025"
+    },
+    {
         "title": "OTSurv: A Novel Multiple Instance Learning Framework for Survival Prediction with Heterogeneity-aware Optimal Transport",
         "type": "Conference",
         "authors": "Qin Ren, Yifan Wang, <b>Ruogu Fang</b>, Haibin Ling, Chenyu You",
@@ -75,6 +89,20 @@
             "github": "https://github.com/Y-Research-SBU/OTSurv"
         },
         "abstract": "Survival prediction using whole slide images (WSIs) can be formulated as a multiple instance learning (MIL) problem. However, existing MIL methods often fail to explicitly capture pathological heterogeneity within WSIs, both globally – through long-tailed morphological distributions, and locally – through tile-level prediction uncertainty. Optimal transport (OT) provides a principled way of modeling such heterogeneity by incorporating marginal distribution constraints. Building on this insight, we propose OTSurv, a novel MIL framework from an optimal transport perspective. Specifically, OTSurv formulates survival predictions as a heterogeneity-aware OT problem with two constraints: (1) global long-tail constraint that models prior morphological distributions to avert both mode collapse and excessive uniformity by regulating transport mass allocation, and (2) local uncertainty-aware constraint that prioritizes high-confidence patches while suppressing noise by progressively raising the total transport mass. We then recast the initial OT problem, augmented by these constraints, into an unbalanced OT formulation that can be solved with an efficient, hardware-friendly matrix scaling algorithm. Empirically, OTSurv sets new state-of-the-art results across six popular benchmarks, achieving an absolute 3.6% improvement in average C-index. In addition, OTSurv achieves statistical significance in log-rank tests and offers high interpretability, making it a powerful tool for survival prediction in digital pathology. Our codes are available at https://github.com/Y-Research-SBU/OTSurv.",
+        "data_year": "2025"
+    },
+    {
+        "title": "Concept2Brain: An AI model for predicting subject-level neurophysiological responses to text and pictures",
+        "type": "Preprint",
+        "authors": "Alejandro Santos-Mayo, Faith Gilbert, Arash Mirifar, Anna-Lena Tebbe, <b>Ruogu Fang</b>, Mingzhou Ding, Andreas Keil",
+        "citation": "",
+        "publication_year": "August 2025",
+        "image_src": "img/pubs/arxiv.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.biorxiv.org/content/10.1101/2025.08.04.668476v1"
+        },
+        "abstract": "The current growth of artificial intelligence (AI) tools provides an unprecedented opportunity to extract deeper insights from neurophysiological data while also enabling the reproduction and prediction of brain responses to a wide range of events and situations. Here, we introduce the Concept2Brain model, a deep network architecture designed to generate synthetic electrophysiological responses to semantic/emotional information conveyed through pictures or text. Leveraging AI solutions like CLIP from OpenAI, the model generates a representation of pictorial or language input and maps it into an electrophysiological latent space. We demonstrate that this openly available resource generates synthetic neural responses that closely resemble those observed in studies of naturalistic scene perception. The Concept2Brain model is provided as a web service tool for creating open and reproducible EEG datasets, allowing users to predict brain responses to any semantic concept or picture. Beyond its applied functionality, it also paves the way for AI-driven modeling of brain activity, offering new possibilities for studying how the brain represents the world.",
         "data_year": "2025"
     },
     {
