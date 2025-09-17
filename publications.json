@@ -92,6 +92,21 @@
         "data_year": "2025"
     },
     {
+        "title": "Association of Timing and Duration of Moderate-to-Vigorous Physical Activity with Cognitive Function and Brain Aging: A Population-Based Study Using the UK Biobank",
+        "type": "Preprint",
+        "authors": "Wasif Khan, Lin Gu, Noah Hammarlund, Lei Xing, Joshua K. Wong, <u><b>Ruogu Fang</b></u>",
+        "citation": "",
+        "publication_year": "August 2025",
+        "image_src": "img/pubs/arxiv.png",
+        "label_class": "warning",
+        "external_links": {
+            "arxiv": "https://arxiv.org/abs/2509.06969",
+            "sciencedirect": "https://doi.org/10.48550/arXiv.2509.06969"
+        },
+        "abstract": "Physical activity is a modifiable lifestyle factor with potential to support cognitive resilience. However, the association of moderate-to-vigorous physical activity (MVPA) intensity, and timing, with cognitive function and region-specific brain structure remain poorly understood. We analyzed data from 45,892 UK Biobank participants aged 60 years and older with valid wrist-worn accelerometer data, cognitive testing, and structural brain MRI. MVPA was measured both continuously (mins per week) and categorically (thresholded using >=150 min/week based on WHO guidelines). Associations with cognitive performance and regional brain volumes were evaluated using multivariable linear models adjusted for demographic, socioeconomic, and health-related covariates. We conducted secondary analyses on MVPA timing and subgroup effects. Higher MVPA was associated with better performance across cognitive domains, including reasoning, memory, executive function, and processing speed. These associations persisted in fully adjusted models and were higher among participants meeting WHO guidelines. Greater MVPA was also associated with subcortical brain regions (caudate, putamen, pallidum, thalamus), as well as regional gray matter volumes involved in emotion, working memory, and perceptual processing. Secondary analyses showed that MVPA at any time of day was associated with cognitive functions and brain volume particularly in the midday-afternoon and evening. Sensitivity analysis shows consistent findings across subgroups, with evidence of dose-response relationships. Higher MVPA is associated with preserved brain structure and enhanced cognitive function in later life. Public health strategies to increase MVPA may support healthy cognitive aging and generate substantial economic benefits, with global gains projected to reach USD 760 billion annually by 2050.",
+        "data_year": "2025"
+    },
+    {
         "title": "Concept2Brain: An AI model for predicting subject-level neurophysiological responses to text and pictures",
         "type": "Preprint",
         "authors": "Alejandro Santos-Mayo, Faith Gilbert, Arash Mirifar, Anna-Lena Tebbe, <b>Ruogu Fang</b>, Mingzhou Ding, Andreas Keil",
