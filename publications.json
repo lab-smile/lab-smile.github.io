@@ -55,7 +55,7 @@
     {
         "title": "Ouroboros: Single-step Diffusion Models for Cycle-consistent Forward and Inverse Rendering",
         "type": "Conference",
-        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <u><b>Ruogu Fang</b></u>\u2020, Xiaohui Xie, <u>Chenyu You</u>\u2020 (\u2020 co-corresponding authors)",
+        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <u><b>Ruogu Fang</b></u>\u2020, <u>Xiaohui Xie</u>\u2020, <u>Chenyu You</u>\u2020 (\u2020 co-corresponding authors)",
         "citation": "International Conference on Computer Vision (ICCV), Hawaii, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/ICCV2025.png",
