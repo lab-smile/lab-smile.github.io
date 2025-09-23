@@ -63,17 +63,18 @@
         "data_year": "2025"
     },
     {
-        "title": "TRACE: An AI-Powered Tool for Ancestry Meta-Analysis to Promote Transparency and Representation in Biomedical Research",
+        "title": "TRACE: applying AI language models to extract ancestry information from curated biomedical literature",
         "type": "Journal",
         "authors": "Alison M. Veintimilla#, Chintan K. Acharya#*, Connie J. Mulligan, <b><u>Ruogu Fang</u></b>†, Erika Moore† (#: co-first authors, †: co-corresponding)",
         "citation": "Frontiers in Digital Health",
-        "publication_year": "2025",
+        "publication_year": "September 2025",
         "image_src": "img/pubs/frontiers-in-digital-health.png",
         "label_class": "warning",
         "external_links": {
-            "github": "https://github.com/lab-smile/TRACE"
+            "github": "https://github.com/lab-smile/TRACE",
+            "sciencedirect": "https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1608370/full"
         },
-        "abstract": "",
+        "abstract": "Introduction: Ancestry reporting is essential to ensure transparency and proper representation in biomedical studies. However, manually extracting this information from study texts is time-consuming and inefficient. In this paper, we present TRACE (Tool for Researching Ancestry and Cell Extraction), powered by GPT-4 and web-crawling, to automate ancestry identification by detecting cell lines or cultures in texts and tracing their ancestry.Methods: TRACE extracts cell lines and primary cultures from research articles and follows web sources to determine their ancestry. We compared TRACE's outputs to a manually generated database to confirm its performance in identifying and verifying ancestry information.Results: The results reveal an overrepresentation of European/White samples and significant underreporting. TRACE enables large-scale, systematic ancestry analysis—a valuable resource for researchers and agencies assessing biases in sample selection.Conclusions: As an open-source tool, TRACE it facilitates broader use to evaluate and improve ancestry representation in biomedical research.",
         "data_year": "2025"
     },
     {
