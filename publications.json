@@ -144,7 +144,7 @@
         "image_src": "img/pubs/nature.digitalmedicine.png",
         "label_class": "warning",
         "external_links": {
-            "sciencedirect": ""
+            "sciencedirect": "https://www.nature.com/articles/s44294-025-00092-w"
         },
         "abstract": "While machine learning (ML) has shown great promise in medical diagnostics, a major challenge is that ML models do not always perform equally well among ethnic groups. This is alarming for women’s health, as there are already existing health disparities that vary by ethnicity. Bacterial Vaginosis (BV) is a common vaginal syndrome among women of reproductive age and has clear diagnostic differences among ethnic groups. Here, we investigate the ability of four ML algorithms to diagnose BV. We determine the fairness in the prediction of asymptomatic BV using 16S rRNA sequencing data from Asian, Black, Hispanic, and white women. General purpose ML model performances vary based on ethnicity. When evaluating the metric of false positive or false negative rate, we find that models perform least effectively for Hispanic and Asian women. Models generally have the highest performance for white women and the lowest for Asian women. These findings demonstrate a need for improved methodologies to increase model fairness for predicting BV.",
         "data_year": "2025"
