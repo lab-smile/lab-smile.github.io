@@ -15,6 +15,20 @@
         "data_year": "2026"
     },
     {
+        "title": "The Importance of Tissue Identity in Modeling Transcranial Direct Current Stimulation",
+        "type": "Journal",
+        "authors": "Giovana Silva, Tyler Busch, Samantha Pedersen, Kevin Iversen, Priya Sambasivan, <b>Ruogu Fang</b>, Adam Woods, Aprinda Indahlastari Queen",
+        "citation": "UF Journal of Undergraduate Research, Volume 27",
+        "publication_year": "November 2025",
+        "image_src": "img/pubs/UFJournalofUndergraduateResearch.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://journals.flvc.org/UFJUR/article/view/138665"
+        },
+        "abstract": "Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation technique that uses scalp electrodes to deliver electrical currents, altering neuronal activity. Research suggests that tDCS can enhance cognitive functions (e.g., working memory) in older adults by modulating brain activity, but outcomes have varied due to inter-individual anatomical differences. This study investigates how head tissue segmentation affects delivered current density (J) in the brain. Six models (M1–M6) were createdfrom T1-weighed MRIs of four older adults (2M, 2F, Mage = 73 years). The reference model ( M6) included the six commonly used tissue types: white matter, grey matter, CSF, skin, and bone. Models M2–M5 each added one additional tissue type (blood, eye, fat, and the separation of bone into cancellous and cortical bone) to assess their effects on current density. Model M1 included all eleven tissue types. Conductivity values were assigned using literature-derived data. Electric fields were simulated in COMSOL Multiphysics®, and brain current density (Jbrain) was calculated by combining the resulting white and gray matter. Electrodes were placed at the F3 (cathode) - F4 (anode) montage with a  2mA input current. Jbrain values in models M1-M5 were compared to M6 using Welch’s t-tests in RStudio.Results showed significant differences in models M1 (median Jbrain = 0.020381 Am-2), M4 (median Jbrain = 0.018377 Am-2), and M5 (median Jbrain = 0.015608 Am-2) compared to the reference model, M6 (p-value <0.001). This study highlights the importance of segmenting fat, cortical, and cancellous bone on resulting current density in the brain, as well as considering individual variability to model tDCS in aging populations.",
+        "data_year": "2025"
+    },
+    {
         "title": "Biologically Inspired Deep Neural Network Models for Visual Emotion Processing",
         "type": "Preprint",
         "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
