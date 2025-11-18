@@ -41,6 +41,19 @@
     {
         "year": "2024",
         "type": "Code",
+        "title": "GRACE",
+        "description": "This repository provides the official implementation of GRACE: General, Rapid, And Comprehensive whole-hEad tissue segmentation",
+        "citation": "Stolte, Skylar E. and Indahlastari, Aprinda and Chen, Jason and Albizu, Alejandro and Dunn, Ayden and Pederson, Samantha and See, Kyle B. and Woods, Adam J. and Fang, Ruogu. \"Precise and Rapid Whole-Head Segmentation from Magnetic Resonance Images of Older Adults using Deep Learning\" Imaging NeuroScience, March 2024",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/GRACE"
+            }
+        ]
+    },
+    {
+        "year": "2024",
+        "type": "Code",
         "title": "RetinaPD",
         "description": "CodeThe purpose of this project is for the binary classification of Parkinson's Disease from UK Biobank Fundus Imaging.",
         "citation": "Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora Jinghua Chen, Yulin Li, Ruogu Fang. \"Deep Learning Predicts Prevalent and Incident Parkinson\u2019s Disease From UK Biobank Fundus Imaging\" In Nature Scientific Reports, 2024.",
@@ -55,7 +68,7 @@
         "year": "2023",
         "type": "Code",
         "title": "DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability",
-        "description": "CodeIn this work, we propose DOMINO++, a dual-guidance and dynamic domain-aware loss regularization focused on OOD generalizability.",
+        "description": "Code in this work, we propose DOMINO++, a dual-guidance and dynamic domain-aware loss regularization focused on OOD generalizability.",
         "citation": "Skylar E. Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. \"DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability\" In MICCAI, 2023",
         "links": [
             {
