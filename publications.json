@@ -15,6 +15,20 @@
         "data_year": "2026"
     },
     {
+        "title": "The Role of Artificial Intelligence in Deep Brain Stimulation",
+        "type": "Journal",
+        "authors": "Tejas Mehta, Venkat Lavu, Hao Gao, Tania Banerjee, Renjie Hu, <b>Ruogu Fang</b>, Joshua Wong",
+        "citation": "Seminars in Neurology",
+        "publication_year": "November 2025",
+        "image_src": "img/pubs/SeminarsInNeurology.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/a-2753-6166"
+        },
+        "abstract": "Deep brain stimulation (DBS) is a highly effective treatment for movement disorders like Parkinson'sdisease, essential tremor, and dystonia. However, the current multidisciplinary workflow for implantingand programming DBS is often complex, which can lead to improperly placed leads, suboptimalsymptom management, and increased procedure time, ultimately resulting in poor patient outcomes.There is a pressing need for a more streamlined, accurate, reproducible, and personalized approachto DBS therapy. Artificial intelligence (AI), which can analyze complex data and identify patterns withremarkable speed, holds significant promise as a tool to address these challenges. This narrativereview explores the current and future applications of AI in improving the entire DBS workflow, fromsurgical planning and lead placement to post-operative programming, with the goal of enhancingclinical efficiency and achieving better, more personalized outcomes for patients with movementdisorders",
+        "data_year": "2025"
+    },
+    {
         "title": "The Importance of Tissue Identity in Modeling Transcranial Direct Current Stimulation",
         "type": "Journal",
         "authors": "Giovana Silva, Tyler Busch, Samantha Pedersen, Kevin Iversen, Priya Sambasivan, <b>Ruogu Fang</b>, Adam Woods, Aprinda Indahlastari Queen",
@@ -39,7 +53,7 @@
         "external_links": {
             "arxiv": "https://www.biorxiv.org/content/10.1101/2025.10.20.683439v1"
         },
-        "abstract":"The perception of opportunities and threats in complex visual scenes represents one of the main functions of the human visual system. The underlying neurophysiology is often studied by having observers view pictures varying in affective content. While deep neural networks (DNNs) have shown promise in modeling visual recognition of objects, their capacity to model visual affective processing remains to be better understood. In this study, we proposed a biologically inspired deep neural network model, referred to as the Visual Cortex Amygdala (VCA) model, that integrates a vision transformer with an amygdala-mimetic module designed to reflect both the anatomical hierarchy and self-attention-based computational mechanisms of the human brain. We evaluated the model along three dimensions: (1) predictive accuracy for emotional valence and arousal, (2) representational alignment with human amygdala activity, and (3)neural mechanisms of emotion representation. Our results showed that (1) the model can predict with high accuracy human emotion ratings on 1,182 images from the International Affective Picture System (IAPS) dataset (valence: r ≈ 0.9; arousal: r ≈ 0.7), (2) the model’s internal representations aligned with functional Magnetic Resonance Imaging (fMRI) data from the human amygdala, and (3) at the single neuron level, the amygdala module evolved emotion selectivity, and at the neuronal population level, the representational geometry became progressively more aligned with psychological models of emotion. Additional issues explored included (1) the effect of visual encoding and (2) the effect of structure and computational mechanisms on emotional assessment.",
+        "abstract": "The perception of opportunities and threats in complex visual scenes represents one of the main functions of the human visual system. The underlying neurophysiology is often studied by having observers view pictures varying in affective content. While deep neural networks (DNNs) have shown promise in modeling visual recognition of objects, their capacity to model visual affective processing remains to be better understood. In this study, we proposed a biologically inspired deep neural network model, referred to as the Visual Cortex Amygdala (VCA) model, that integrates a vision transformer with an amygdala-mimetic module designed to reflect both the anatomical hierarchy and self-attention-based computational mechanisms of the human brain. We evaluated the model along three dimensions: (1) predictive accuracy for emotional valence and arousal, (2) representational alignment with human amygdala activity, and (3)neural mechanisms of emotion representation. Our results showed that (1) the model can predict with high accuracy human emotion ratings on 1,182 images from the International Affective Picture System (IAPS) dataset (valence: r ≈ 0.9; arousal: r ≈ 0.7), (2) the model’s internal representations aligned with functional Magnetic Resonance Imaging (fMRI) data from the human amygdala, and (3) at the single neuron level, the amygdala module evolved emotion selectivity, and at the neuronal population level, the representational geometry became progressively more aligned with psychological models of emotion. Additional issues explored included (1) the effect of visual encoding and (2) the effect of structure and computational mechanisms on emotional assessment.",
         "data_year": "2025"
     },
     {
@@ -288,7 +302,7 @@
         "external_links": {
             "sciencedirect": "https://www.brainstimjrnl.com/article/S1935-861X(24)01297-X/fulltext"
         },
-        "data_year": "2025"
+        "data_year": "2024"
     },
     {
         "title": "Comparison of GRACE and SynthSeg Deep Learning Models for Whole-Head Brain Segmentation",
