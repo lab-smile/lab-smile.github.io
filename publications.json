@@ -1,5 +1,19 @@
 [
     {
+        "title": "Integrating Retinal Fundus Imaging and Computable Phenotypes for Subphenotype Discovery and LLM-Assisted Early and Late Onset Alzheimer's Diagnosis",
+        "type": "Conference",
+        "authors": "Zhimin Zong, <u><b>Ruogu Fang</b></u>",
+        "citation": "SPIE Medical Imaging, Vancouver, Canada. Feb. 15-19, 2026",
+        "publication_year": "February 2026",
+        "image_src": "img/pubs/SPIE.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://spie.org/medical-imaging/presentation/Integrating-retinal-fundus-imaging-and-computable-phenotypes-for-subphenotype-discovery/13926-89"
+        },
+        "abstract": "Alzheimer’s disease (AD) exhibits clinical heterogeneity, necessitating improved subtyping methods. We combine fundus imaging and computable phenotypes to identify AD subphenotypes linked to early- and late-onset disease. Retinal biomarkers are extracted and analyzed using machine learning, revealing distinct associations with disease progression. A large language model (LLM) then integrates these features to classify AD subphenotypes and suggest clinical next steps. Our approach demonstrates how non-invasive retinal imaging and AI-driven diagnostics can enhance early AD detection and personalized care. This work bridges ophthalmology, neurology, and AI, offering a scalable tool for precision medicine in neurodegenerative disease.",
+        "data_year": "2026"
+    },
+    {
         "title": "A Comprehensive Survey of Foundation Models in Medicine",
         "type": "Journal",
         "authors": "Wasif Khan, Seowung Leem, Kyle B. See, Joshua K. Wong, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
@@ -19,7 +33,7 @@
         "type": "Journal",
         "authors": "Tejas Mehta, Venkat Lavu, Hao Gao, Tania Banerjee, Renjie Hu, <b>Ruogu Fang</b>, Joshua Wong",
         "citation": "Seminars in Neurology",
-        "publication_year": "November 2025",
+        "publication_year": "December 2025",
         "image_src": "img/pubs/SeminarsInNeurology.png",
         "label_class": "warning",
         "external_links": {
@@ -40,6 +54,20 @@
             "sciencedirect": "https://journals.flvc.org/UFJUR/article/view/138665"
         },
         "abstract": "Transcranial direct current stimulation (tDCS) is a non-invasive brain stimulation technique that uses scalp electrodes to deliver electrical currents, altering neuronal activity. Research suggests that tDCS can enhance cognitive functions (e.g., working memory) in older adults by modulating brain activity, but outcomes have varied due to inter-individual anatomical differences. This study investigates how head tissue segmentation affects delivered current density (J) in the brain. Six models (M1–M6) were createdfrom T1-weighed MRIs of four older adults (2M, 2F, Mage = 73 years). The reference model ( M6) included the six commonly used tissue types: white matter, grey matter, CSF, skin, and bone. Models M2–M5 each added one additional tissue type (blood, eye, fat, and the separation of bone into cancellous and cortical bone) to assess their effects on current density. Model M1 included all eleven tissue types. Conductivity values were assigned using literature-derived data. Electric fields were simulated in COMSOL Multiphysics®, and brain current density (Jbrain) was calculated by combining the resulting white and gray matter. Electrodes were placed at the F3 (cathode) - F4 (anode) montage with a  2mA input current. Jbrain values in models M1-M5 were compared to M6 using Welch’s t-tests in RStudio.Results showed significant differences in models M1 (median Jbrain = 0.020381 Am-2), M4 (median Jbrain = 0.018377 Am-2), and M5 (median Jbrain = 0.015608 Am-2) compared to the reference model, M6 (p-value <0.001). This study highlights the importance of segmenting fat, cortical, and cancellous bone on resulting current density in the brain, as well as considering individual variability to model tDCS in aging populations.",
+        "data_year": "2025"
+    },
+    {
+        "title": "Revealing Neurocognitive and Behavioral Patterns by Self-Supervised Manifold Learning from Dynamic Brain Data",
+        "type": "Journal",
+        "authors": "Zixia Zhou, Junyan Liu, Wei Emma Wu, <b>Ruogu Fang</b>, Sheng Liu, Qingyue Wei, Rui Yan, Yi Guo, Qian Tao, Yuanyuan Wang, Md Tauhidul Islam, Lei Xing",
+        "citation": "Nature Computational Science (IF=18)",
+        "publication_year": "October 2025",
+        "image_src": "img/pubs/NatureCS.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://doi.org/10.1038/s43588-025-00911-9"
+        },
+        "abstract": "Dynamic brain data are becoming increasingly accessible, providing a gateway to understanding the inner workings of the brain in living participants. However, the size and complexity of the data pose a challenge in extracting meaningful information across various data sources. Here we introduce a generalizable unsupervised deep manifold learning for exploration of neurocognitive and behavioral patterns. Unlike existing methods that extract patterns directly from the input data, the proposed brain-dynamic convolutional-network-based embedding (BCNE) captures brain-state trajectories by analyzing temporospatial correlations within the data and applying manifold learning. The results demonstrate that BCNE effectively delineates scene transitions, underscores the involvement of different brain regions in memory and narrative processing, distinguishes dynamic learning processes and identifies differences between active and passive behaviors. BCNE provides an effective tool for exploring general neuroscience inquiries or individual-specific patterns.",
         "data_year": "2025"
     },
     {
@@ -103,6 +131,11 @@
         "publication_year": "October 2025",
         "image_src": "img/pubs/ICCV2025.png",
         "label_class": "primary",
+        "external_links":{
+            "arxiv": "https://arxiv.org/pdf/2508.14461",
+            "github": "https://siwensun.github.io/ouroboros-project/"
+        },
+        "abstract": "While multi-step diffusion models have advanced both forward and inverse rendering, existing approaches often treat these problems independently, leading to cycle inconsistency and slow inference speed. In this work, we presentOuroboros, a framework composed of two single-step diffusion models that handle forward and inverse rendering with mutual reinforcement. Our approach extends intrinsic decomposition to both indoor and outdoor scenes and introduces a cycle consistency mechanism that ensures coherence between forward and inverse rendering outputs. Experimental results demonstrate state-of-the-art performance across diverse scenes while achieving substantially faster inference speed compared to other diffusion-based methods. We also demonstrate that Ouroboroscan transfer*Equal contribution.†Corresponding authors.to video decomposition in a training-free manner, reducing temporal inconsistency in video sequences while maintaining high-quality per-frame inverse rendering.",
         "data_year": "2025"
     },
     {
