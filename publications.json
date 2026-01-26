@@ -14,6 +14,21 @@
         "data_year": "2026"
     },
     {
+        "title": "Diagnostically competitive performance of a physiology-informed generative multi-task network for contrast-free CT perfusion",
+        "type": "Journal",
+        "authors": "Wasif Khan, Kyle B. See, Simon Kato, Ziqian Huang, Amy Lazarte, Kyle Douglas, Xiangyang Lou, Teng J. Peng, Dhanashree Rajderkar, John Rees, Pina Sanelli,Amita Singh, Ibrahim Tuna, Christina A. Wilson, <b><u>Ruogu Fang</b></u>",
+        "citation": "Frontiers in Human Neuroscience",
+        "publication_year": "January 2026",
+        "image_src": "img/pubs/frontiers-in-human-neuroscience.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1703004/full",
+            "arxiv": "https://arxiv.org/html/2505.22673v1"
+        },
+        "abstract": "Perfusion imaging is extensively utilized to assess hemodynamic status and tissue perfusion in various organs. Computed tomography perfusion (CTP) imaging plays a key role in the early assessment and planning of stroke treatment. While CTP provides essential perfusion parameters to identify abnormal blood flow in the brain. However, CTP can be expensive with limited accessibility, and the use of contrast agents in CTP can lead to allergic reactions and adverse side effects. To address these challenges, we propose a novel deep learning framework called Multitask Automated Generation of Intermodal CT perfusion maps (MAGIC). This framework combines generative artificial intelligence and physiological information to map non-contrast computed tomography (CT) imaging to multiple contrast-free CTP imaging maps. We demonstrate enhanced image fidelity by incorporating physiological characteristics into the loss terms. Our network was trained and validated using CT image data from patients referred for stroke at UF Health and demonstrated robustness to abnormalities in brain perfusion activity. A double-blinded study was conducted involving seven experienced neuroradiologists and vascular neurologists. This study validated MAGIC's visual quality and diagnostic accuracy showing favorable performance compared to clinical perfusion imaging with intravenous contrast injection. Overall, MAGIC holds great promise in revolutionizing healthcare by offering contrast-free, cost-effective, and rapid perfusion imaging.",
+        "data_year": "2026"
+    },
+    {
         "title": "A Comprehensive Survey of Foundation Models in Medicine",
         "type": "Journal",
         "authors": "Wasif Khan, Seowung Leem, Kyle B. See, Joshua K. Wong, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
@@ -34,7 +49,7 @@
         "authors": "Tejas Mehta, Venkat Lavu, Hao Gao, Tania Banerjee, Renjie Hu, <b>Ruogu Fang</b>, Joshua Wong",
         "citation": "Seminars in Neurology",
         "publication_year": "December 2025",
-        "image_src": "img/pubs/SeminarsInNeurology.png",
+        "image_src": "img/pub/SeminarsInNeurology.png",
         "label_class": "warning",
         "external_links": {
             "sciencedirect": "https://www.thieme-connect.com/products/ejournals/abstract/10.1055/a-2753-6166"
