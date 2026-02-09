@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SMILE Lab - Statistical Machine Intelligence & LEarning Lab at the University of Florida, led by Dr. Ruogu Fang. AI-empowered precision brain health and brain-inspired AI.">
+  <meta name="keywords" content="Ruogu Fang, SMILE Lab, medical AI, deep learning, brain health, University of Florida, biomedical engineering">
+  <meta name="author" content="Ruogu Fang">
+  <title>SMILE Lab | Dr. Ruogu Fang — University of Florida</title>
+  <link rel="shortcut icon" href="../img/misc/ufl.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            stone: {
+              50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+              400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+              800: '#292524', 900: '#1c1917', 950: '#0c0a09',
+            },
+            gold: { DEFAULT: '#b8860b', light: '#d4a843', tint: '#f5e6c8', bg: '#faf6ee' },
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- GSAP 3 + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-white text-stone-700 antialiased">
+
+  <!-- Header -->
+  <div id="site-header"></div>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════
+         HERO SECTION — Split layout
+         ═══════════════════════════════════════════ -->
+    <section class="relative bg-stone-950 overflow-hidden" id="hero">
+      <!-- Subtle background pattern -->
+      <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 py-20 md:py-28 lg:py-32">
+
+          <!-- Left: Text content -->
+          <div class="lg:w-7/12 text-center lg:text-left">
+            <div class="hero-tag gsap-fade-up mb-6">University of Florida &middot; SMILE Lab</div>
+            <div class="hero-gold-line gsap-fade-up mb-6 mx-auto lg:mx-0"></div>
+
+            <h1 class="font-serif font-bold text-white leading-tight gsap-fade-up mb-5" style="font-size: clamp(2.25rem, 4.5vw, 4rem); letter-spacing: -0.03em;">
+              Dr. Ruogu "Rena" Fang
+            </h1>
+
+            <p class="text-white/60 text-base md:text-lg gsap-fade-up mb-3 font-light max-w-xl mx-auto lg:mx-0">
+              Tenured Associate Professor &amp; Pruitt Family Endowed Fellow
+            </p>
+            <p class="text-white/40 text-sm gsap-fade-up mb-8 max-w-xl mx-auto lg:mx-0">
+              J. Crayton Pruitt Family Department of Biomedical Engineering
+            </p>
+
+            <p class="text-white/70 text-base leading-relaxed gsap-fade-up mb-10 max-w-xl mx-auto lg:mx-0">
+              Pioneering <strong class="text-gold-light">AI-empowered precision brain health</strong> &amp; <strong class="text-gold-light">brain-inspired AI</strong>. Ranked <span class="text-gold-light font-semibold">Top 100 (top 0.4%)</span> worldwide in image analysis.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-wrap gap-4 gsap-fade-up justify-center lg:justify-start">
+              <a href="publications.html" class="btn-hero-primary">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+                View Publications
+              </a>
+              <a href="team.html" class="btn-hero-secondary">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                Meet the Team
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Photo + stats card -->
+          <div class="lg:w-5/12 gsap-fade-up">
+            <div class="relative">
+              <!-- Profile image -->
+              <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img src="../img/personal/personal-ufl.jpg" alt="Dr. Ruogu Fang" class="w-full aspect-[4/5] object-cover object-top" loading="eager">
+                <!-- Gold gradient overlay at bottom -->
+                <div class="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-stone-950/80 to-transparent"></div>
+                <!-- Stats overlay -->
+                <div class="absolute bottom-0 left-0 right-0 p-6">
+                  <div class="flex justify-around text-center">
+                    <div>
+                      <div class="text-2xl font-serif font-bold text-gold" data-counter="300">300+</div>
+                      <div class="text-xs text-white/70 uppercase tracking-wider mt-1">Publications</div>
+                    </div>
+                    <div class="w-px bg-white/20"></div>
+                    <div>
+                      <div class="text-2xl font-serif font-bold text-gold" data-counter="30">30+</div>
+                      <div class="text-xs text-white/70 uppercase tracking-wider mt-1">Team Members</div>
+                    </div>
+                    <div class="w-px bg-white/20"></div>
+                    <div>
+                      <div class="text-2xl font-serif font-bold text-gold" data-counter="10">10+</div>
+                      <div class="text-xs text-white/70 uppercase tracking-wider mt-1">Years</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Gold accent corner -->
+              <div class="absolute -top-3 -right-3 w-24 h-24 border-t-2 border-r-2 border-gold rounded-tr-2xl pointer-events-none"></div>
+              <div class="absolute -bottom-3 -left-3 w-24 h-24 border-b-2 border-l-2 border-gold rounded-bl-2xl pointer-events-none"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom gold line -->
+      <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         RESEARCH HIGHLIGHTS (moved up — most important)
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding" id="research">
+      <div class="container">
+        <div class="text-center mb-12 gsap-fade-up">
+          <span class="section-label">Focus Areas</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Research Highlights</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <a href="research.html" class="research-card gsap-fade-up">
+            <div class="research-card-visual">
+              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </div>
+            <div class="p-5">
+              <h3 class="font-sans font-semibold text-base text-stone-900">AI-Empowered Brain Health</h3>
+              <p class="text-sm text-stone-500 mt-2">Machine learning for brain dynamics, early Alzheimer's diagnosis, and precision interventions.</p>
+            </div>
+          </a>
+
+          <a href="research.html" class="research-card gsap-fade-up">
+            <div class="research-card-visual">
+              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            </div>
+            <div class="p-5">
+              <h3 class="font-sans font-semibold text-base text-stone-900">Brain-Inspired AI</h3>
+              <p class="text-sm text-stone-500 mt-2">Leveraging neuroscience principles to develop next-generation artificial intelligence.</p>
+            </div>
+          </a>
+
+          <a href="research.html" class="research-card gsap-fade-up">
+            <div class="research-card-visual">
+              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
+            </div>
+            <div class="p-5">
+              <h3 class="font-sans font-semibold text-base text-stone-900">Medical Image Analysis</h3>
+              <p class="text-sm text-stone-500 mt-2">Deep learning for CT perfusion, retinal imaging, brain segmentation, and more.</p>
+            </div>
+          </a>
+
+          <a href="research.html" class="research-card gsap-fade-up">
+            <div class="research-card-visual">
+              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            </div>
+            <div class="p-5">
+              <h3 class="font-sans font-semibold text-base text-stone-900">Foundation Models</h3>
+              <p class="text-sm text-stone-500 mt-2">3D vision foundation models, digital twins, and generative AI for biomedical applications.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         ABOUT / BIO
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding section-alt" id="about">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+          <!-- Left: Lab banner + quick links -->
+          <div class="lg:w-5/12 flex flex-col gap-6 gsap-slide-left">
+            <div class="rounded-xl overflow-hidden shadow-md">
+              <img src="../img/misc/smilebanner.png" alt="SMILE Lab Banner" class="w-full" loading="lazy">
+            </div>
+
+            <!-- Featured in -->
+            <div class="bg-white rounded-xl border border-stone-200 p-5">
+              <h3 class="font-sans text-xs font-bold text-stone-400 uppercase tracking-wider mb-4">Featured In</h3>
+              <div class="flex flex-wrap gap-3">
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">Forbes</span>
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">Washington Post</span>
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">National Geographic</span>
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">ABC News</span>
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">Nature</span>
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">JAMA</span>
+                <span class="text-xs font-semibold text-stone-600 bg-stone-50 px-3 py-1.5 rounded-full border border-stone-100">The Lancet</span>
+              </div>
+            </div>
+
+            <!-- Open Positions -->
+            <div class="about-positions-box">
+              <h3 class="font-sans font-bold text-base text-stone-900 mb-3">Open Positions</h3>
+              <p class="text-sm text-stone-600 mb-2"><strong>Postdoc:</strong> Fully funded in Medical AI, brain-inspired AI, and precision brain health.</p>
+              <p class="text-sm text-stone-600 mb-3"><strong>Ph.D.:</strong> Multiple fully-funded positions in generative AI, foundation models, and digital twins.</p>
+              <a href="openings.html" class="inline-flex items-center gap-1 text-gold font-semibold text-sm hover:gap-2 transition-all">
+                Learn more
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Bio -->
+          <div class="lg:w-7/12 gsap-slide-right">
+            <span class="section-label">About</span>
+            <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-950 mb-8 heading-accent">The SMILE Lab</h2>
+            <div class="prose prose-stone max-w-none text-base leading-relaxed space-y-5">
+              <p>An AI researcher in medicine and healthcare, <strong>Dr. Ruogu Fang</strong> is a tenured Associate Professor and Pruitt Family Endowed Faculty Fellow in the J. Crayton Pruitt Family Department of Biomedical Engineering at the University of Florida. Her research encompasses two principal themes: <strong>AI-empowered precision brain health</strong> and <strong>brain/bio-inspired AI</strong>.</p>
+              <p>Her work involves addressing compelling questions, such as using machine learning techniques to quantify brain dynamics, facilitating early Alzheimer's disease diagnosis through novel imagery, predicting personalized treatment outcomes, designing precision interventions, and leveraging principles from neuroscience to develop the next generation of AI.</p>
+              <p>She is the President of <a href="https://miccai.org/index.php/about-miccai/women-in-miccai/" target="_blank" rel="noopener">Women in MICCAI (WiM)</a>, an Associate Editor of <a href="https://www.sciencedirect.com/journal/medical-image-analysis" target="_blank" rel="noopener">Medical Image Analysis</a>, and a reviewer for The Lancet, Nature Machine Intelligence, and Science Advances. Her research has been supported by NSF, NIH, ORAU, DHS, DoD, NVIDIA, and the University of Florida.</p>
+              <p>At the heart of her work is the <strong>Smart Medical Informatics Learning and Evaluation (SMILE)</strong> lab, where she is dedicated to creating groundbreaking brain and neuroscience-inspired medical AI and deep learning models to comprehend, diagnose, and treat brain disorders.</p>
+            </div>
+
+            <!-- Education inline -->
+            <div class="mt-8 pt-8 border-t border-stone-200">
+              <h3 class="font-sans font-bold text-sm text-stone-400 uppercase tracking-wider mb-4">Education</h3>
+              <div class="flex flex-col sm:flex-row gap-6">
+                <div class="flex items-start gap-3">
+                  <div class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-stone-900 text-sm">Ph.D. Electrical &amp; Computer Engineering</p>
+                    <p class="text-xs text-stone-500">Cornell University</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <div class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
+                  <div>
+                    <p class="font-semibold text-stone-900 text-sm">B.E. Information Engineering</p>
+                    <p class="text-xs text-stone-500">Zhejiang University</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         LATEST NEWS
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding" id="news">
+      <div class="container">
+        <div class="text-center mb-12 gsap-fade-up">
+          <span class="section-label">Updates</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Latest News</h2>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-3" id="news-list">
+          <div class="news-item gsap-fade-up"><div class="flex gap-4"><span class="news-date">12/2025</span><p class="news-text">A collaborative paper entitled "The Role of Artificial Intelligence in Deep Brain Stimulation" published in <em>Seminars in Neurology</em>. <a href="https://www.thieme-connect.com/products/ejournals/abstract/10.1055/a-2753-6166" target="_blank" rel="noopener">[Paper]</a></p></div></div>
+          <div class="news-item gsap-fade-up"><div class="flex gap-4"><span class="news-date">12/2025</span><p class="news-text">Dr. Fang gave a talk on "Intelligence in Nature, Insight in Machines" at Center for Machine Learning, Harvard University.</p></div></div>
+          <div class="news-item gsap-fade-up"><div class="flex gap-4"><span class="news-date">10/2025</span><p class="news-text">Paper "Revealing Neurocognitive and Behavioral Patterns by Self-Supervised Manifold Learning from Dynamic Brain Data" published in <em>Nature Computational Science</em>. <a href="https://doi.org/10.1038/s43588-025-00911-9" target="_blank" rel="noopener">[Paper]</a></p></div></div>
+          <div class="news-item gsap-fade-up"><div class="flex gap-4"><span class="news-date">09/2025</span><p class="news-text">Congratulations to SMILE Lab student Chintan Acharya on the publication of "TRACE: Applying AI Language Models to Extract Ancestry Information from Curated Biomedical Literature". <a href="https://www.frontiersin.org/journals/digital-health/articles/10.3389/fdgth.2025.1608370/full" target="_blank" rel="noopener">[Paper]</a></p></div></div>
+          <div class="news-item gsap-fade-up"><div class="flex gap-4"><span class="news-date">07/2025</span><p class="news-text">Dr. Fang invited to give a talk at the Athinoula A. Martinos Center for Biomedical Imaging, MGH &amp; HMS &amp; MIT.</p></div></div>
+          <div class="news-item gsap-fade-up"><div class="flex gap-4"><span class="news-date">06/2025</span><p class="news-text">Dr. Fang ranked among the Top 100 (top 0.4%) researchers worldwide in image analysis. One paper accepted by ICCV 2025. One paper accepted by MICCAI 2025.</p></div></div>
+        </div>
+
+        <!-- View all toggle -->
+        <div class="text-center mt-8">
+          <button id="toggle-news" class="btn-toggle" aria-expanded="false">
+            View All News
+            <svg class="w-4 h-4" id="news-chevron" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+        </div>
+
+        <!-- Additional news (hidden by default) -->
+        <div id="more-news" class="max-w-4xl mx-auto space-y-3 mt-4 hidden">
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">06/2025</span><p class="news-text">Dr. Fang gave invited talk at Harvard Medical School and Massachusetts General Brigham. Visiting Harvard as Visiting Associate Professor.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">04/2025</span><p class="news-text">SMILE Lab Student Gavin Hart won second place for best poster at the CAM Research Day.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">03/2025</span><p class="news-text">Collaborative paper "Automated Imaging Differentiation for Parkinsonism" published in <em>JAMA Neurology</em>. <a href="https://jamanetwork.com/journals/jamaneurology/fullarticle/2831631" target="_blank" rel="noopener">[Paper]</a></p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">02/2025</span><p class="news-text">Ph.D. Student Skylar Stolte awarded AAW Emerging Scholar Award. Dr. Fang receives HWCOE Doctoral Dissertation Advisor/Mentoring Award.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">01/2025</span><p class="news-text">Paper accepted by IEEE Reviews in Biomedical Engineering (RBME): "A Comprehensive Survey of Foundation Models in Medicine". Dr. Fang to serve as Area Chair of MICCAI 2025.</p></div></div>
+
+          <div class="gold-separator my-6"></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">12/2024</span><p class="news-text">Dr. Fang receives UF BME Departmental Faculty Teaching Excellence Award. Skylar Stolte receives Graduate Student Excellence Award.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">11/2024</span><p class="news-text">Dr. Fang started sabbatical visit at Stanford University as Visiting Associate Professor. Skylar Stolte awarded CAM Dissertation Award.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">10/2024</span><p class="news-text">Dr. Fang received Stanford Science Visiting Professorship (SSVP) from Stanford University.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">09/2024</span><p class="news-text">Seowung Leem won Best Poster Award at Graduate Pruitt Research Day. Dr. Fang's insights featured in National Academy publication on AI and Neuroscience.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">08/2024</span><p class="news-text">Ph.D. Alumna Yao Xiao starts position as Assistant Professor at Mayo Clinic. Joseph Cox's paper "BrainSegFounder" accepted by Medical Image Analysis.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">07/2024</span><p class="news-text">Skylar Stolte receives prestigious NIH F31 Ruth L. Kirschstein Predoctoral Individual National Research Service Award.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">04/2024</span><p class="news-text">Dr. Fang awarded Inaugural "AI Course Award". Joseph Cox selected as NIAAA T32 Fellow.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">03/2024</span><p class="news-text">Named to Class of 2024 Senior Members by NAI. Chaoyue Sun wins Best Paper Award at HEALTHINF 2024.</p></div></div>
+
+          <div class="gold-separator my-6"></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">10/2023</span><p class="news-text">Dr. Fang selected as Rising Star by Academy of Science, Engineering and Medicine of Florida (ASEMFL).</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">04/2023</span><p class="news-text">Dr. Fang appears in National Geographic: "Your eyes may be a window into early Alzheimer's detection".</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">12/2022</span><p class="news-text">Pruitt Family Endowed Faculty Fellow 2023&ndash;2026. Keynote at NeurIPS 2022 workshop. Invited talk at Stanford Medicine.</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">06/2022</span><p class="news-text"><strong>Dr. Fang awarded Tenure and Promotion to Associate Professor.</strong></p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">09/2021</span><p class="news-text">Three major NIH grants funded: 5-year U24 ($2.5M), 5-year P01 ($6.6M), 4-year SCH ($1.2M).</p></div></div>
+          <div class="news-item"><div class="flex gap-4"><span class="news-date">05/2021</span><p class="news-text">4-Year MPI RF1/R01 ($2.9M) funded by NIH. 5-year ($5M) NIH U01 on AI for Parkinson's diagnosis.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         AFFILIATIONS (compact)
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding section-alt" id="affiliations">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <!-- Left: Primary positions -->
+          <div class="lg:w-1/2 gsap-fade-up">
+            <span class="section-label">Academic Positions</span>
+            <h2 class="text-3xl font-serif font-bold text-stone-950 mb-8 heading-accent">Affiliations</h2>
+
+            <div class="space-y-4">
+              <div class="affiliation-card">
+                <span class="affiliation-badge mb-2 inline-block">Primary</span>
+                <h3 class="font-sans font-bold text-sm text-stone-900 mt-1">Tenured Associate Professor</h3>
+                <p class="text-xs text-stone-500 mt-1">J. Crayton Pruitt Family Dept. of Biomedical Engineering, UF</p>
+              </div>
+              <div class="affiliation-card">
+                <span class="affiliation-badge mb-2 inline-block">Visiting</span>
+                <h3 class="font-sans font-bold text-sm text-stone-900 mt-1">Visiting Associate Professor</h3>
+                <p class="text-xs text-stone-500 mt-1">Stanford University, School of Medicine &amp; Humanities and Sciences (2024&ndash;2025)</p>
+              </div>
+              <div class="affiliation-card">
+                <span class="affiliation-badge mb-2 inline-block">Visiting</span>
+                <h3 class="font-sans font-bold text-sm text-stone-900 mt-1">Visiting Associate Professor</h3>
+                <p class="text-xs text-stone-500 mt-1">Harvard Medical School &amp; Massachusetts General Brigham (2025)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Affiliated positions -->
+          <div class="lg:w-1/2 gsap-fade-up">
+            <h3 class="font-sans font-semibold text-sm text-stone-500 uppercase tracking-wider mb-4 mt-2">Affiliated Faculty</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Associate Director</h4><p class="text-xs text-stone-500 mt-0.5">UF Intelligent Critical Care Center</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">Dept. of ECE</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">Dept. of Radiology, College of Medicine</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">Dept. of CISE</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">Center for Cognitive Aging and Memory</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">UF Genetics Institute</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">UF Health Cancer Center</p></div>
+              <div class="affiliation-card"><h4 class="font-sans font-semibold text-sm text-stone-900">Affiliated Faculty</h4><p class="text-xs text-stone-500 mt-0.5">Norman Fixel Institute</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         HONORS (compact horizontal)
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding" id="awards">
+      <div class="container">
+        <div class="text-center mb-12 gsap-fade-up">
+          <span class="section-label">Recognition</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Selected Honors</h2>
+        </div>
+
+        <div class="max-w-5xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gsap-fade-up">
+            <div class="card text-center py-6">
+              <div class="text-2xl font-serif font-bold text-gold mb-1">2025</div>
+              <p class="font-semibold text-sm text-stone-900">Stanford Science Faculty Fellowship</p>
+              <p class="text-xs text-stone-500 mt-1">Stanford University</p>
+            </div>
+            <div class="card text-center py-6">
+              <div class="text-2xl font-serif font-bold text-gold mb-1">2024</div>
+              <p class="font-semibold text-sm text-stone-900">NAI Senior Member</p>
+              <p class="text-xs text-stone-500 mt-1">National Academy of Inventors</p>
+            </div>
+            <div class="card text-center py-6">
+              <div class="text-2xl font-serif font-bold text-gold mb-1">2023</div>
+              <p class="font-semibold text-sm text-stone-900">Rising Star Award</p>
+              <p class="text-xs text-stone-500 mt-1">ASEMFL (Engineering)</p>
+            </div>
+            <div class="card text-center py-6">
+              <div class="text-2xl font-serif font-bold text-gold mb-1">2022</div>
+              <p class="font-semibold text-sm text-stone-900">Pruitt Endowed Fellowship &amp; Tenure</p>
+              <p class="text-xs text-stone-500 mt-1">University of Florida</p>
+            </div>
+            <div class="card text-center py-6">
+              <div class="text-2xl font-serif font-bold text-gold mb-1">2020</div>
+              <p class="font-semibold text-sm text-stone-900">AI Catalyst Award</p>
+              <p class="text-xs text-stone-500 mt-1">NVIDIA &ndash; University of Florida</p>
+            </div>
+            <div class="card text-center py-6">
+              <div class="text-2xl font-serif font-bold text-gold mb-1">2017</div>
+              <p class="font-semibold text-sm text-stone-900">Robin Sidhu Young Scientist Award</p>
+              <p class="text-xs text-stone-500 mt-1">Society for Brain Mapping</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SERVICE (compact)
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding section-alt" id="service">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2 gsap-fade-up">
+            <span class="section-label">Leadership</span>
+            <h2 class="text-3xl font-serif font-bold text-stone-950 mb-8 heading-accent">Professional Service</h2>
+
+            <div>
+              <div class="service-item">
+                <span class="service-years mt-0.5">2023&ndash;</span>
+                <div><div class="service-role">President, Women in MICCAI (WiM)</div><div class="service-org">MICCAI Society</div></div>
+              </div>
+              <div class="service-item">
+                <span class="service-years mt-0.5">2022&ndash;</span>
+                <div><div class="service-role">Area Chair</div><div class="service-org">MICCAI Conference</div></div>
+              </div>
+              <div class="service-item">
+                <span class="service-years mt-0.5">2021&ndash;</span>
+                <div><div class="service-role">Associate Editor</div><div class="service-org">Medical Image Analysis</div></div>
+              </div>
+              <div class="service-item">
+                <span class="service-years mt-0.5">2024&ndash;</span>
+                <div><div class="service-role">Section Editor, AI in Biomedical Engineering</div><div class="service-org">Current Opinion in Biomedical Engineering</div></div>
+              </div>
+              <div class="service-item">
+                <span class="service-years mt-0.5">2015&ndash;</span>
+                <div><div class="service-role">Editorial Board</div><div class="service-org">Computerized Medical Imaging and Graphics</div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2 gsap-fade-up">
+            <h3 class="font-sans font-semibold text-sm text-stone-500 uppercase tracking-wider mb-4 mt-2">Reviewer For</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">Nature Neuroscience</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">npj Digital Medicine</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">Nature Machine Intelligence</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">The Lancet</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">Science Advances</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">IEEE TPAMI</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">IEEE TNNLS</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">Medical Image Analysis</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">IEEE TMI</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">IEEE TIP</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">IEEE RBME</span>
+              <span class="text-xs font-medium text-stone-600 bg-white px-3 py-1.5 rounded-full border border-stone-200">Scientific Data</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         OPEN POSITIONS CTA
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding" id="positions">
+      <div class="container">
+        <div class="cta-box text-center gsap-scale-in">
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-white mb-4">Join the SMILE Lab</h2>
+          <p class="text-stone-400 max-w-2xl mx-auto mb-8 text-base leading-relaxed">
+            We are looking for passionate researchers. Fully funded Postdoc and Ph.D. positions available in Medical AI, brain-inspired AI, generative AI, foundation models, LLMs, and digital twins.
+          </p>
+          <a href="openings.html" class="btn-cta">
+            View Open Positions
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         FUNDING & PARTNERS
+         ═══════════════════════════════════════════ -->
+    <section class="section-padding section-alt" id="partners">
+      <div class="container">
+        <div class="text-center mb-12 gsap-fade-up">
+          <span class="section-label">Support</span>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Funding &amp; Partners</h2>
+        </div>
+        <div class="logo-bar gsap-fade-up">
+          <img src="../img/acknowlegements/nih.jpg" alt="National Institutes of Health" loading="lazy">
+          <img src="../img/acknowlegements/nsf_logo.gif" alt="National Science Foundation" loading="lazy">
+          <img src="../img/acknowlegements/DoD.png" alt="Department of Defense" loading="lazy">
+          <img src="../img/acknowlegements/DHS.png" alt="Department of Homeland Security" loading="lazy">
+          <img src="../img/acknowlegements/nvidia.jpg" alt="NVIDIA" loading="lazy">
+          <img src="../img/acknowlegements/orau.jpg" alt="Oak Ridge Associated Universities" loading="lazy">
+          <img src="../img/acknowlegements/Oracle.png" alt="Oracle" loading="lazy">
+          <img src="../img/acknowlegements/UFII.png" alt="UF Informatics Institute" loading="lazy">
+          <img src="../img/acknowlegements/CTSI.png" alt="Clinical and Translational Science Institute" loading="lazy">
+          <img src="../img/acknowlegements/uf.png" alt="University of Florida" loading="lazy">
+          <img src="../img/acknowlegements/MBRF.png" alt="MBRF" loading="lazy">
+          <img src="../img/acknowlegements/sbmt.png" alt="Society for Brain Mapping and Therapeutics" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts -->
+  <script defer src="js/nav.js"></script>
+  <script defer src="js/reveal.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // News toggle
+      const btn = document.getElementById('toggle-news');
+      const moreNews = document.getElementById('more-news');
+      const chevron = document.getElementById('news-chevron');
+      if (btn && moreNews) {
+        btn.addEventListener('click', () => {
+          const expanded = moreNews.classList.toggle('hidden') === false;
+          btn.setAttribute('aria-expanded', expanded);
+          chevron.style.transform = expanded ? 'rotate(180deg)' : '';
+          btn.childNodes[0].textContent = expanded ? 'Show Less ' : 'View All News ';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

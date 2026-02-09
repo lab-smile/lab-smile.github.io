@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="SMILE Lab photo gallery - lab events, conferences, and team photos">
+ <title>Gallery | SMILE Lab</title>
+ <link rel="shortcut icon" href="../img/misc/ufl.png">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ stone: {
+ 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+ 400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+ 800: '#292524', 900: '#1c1917', 950: '#0c0a09',
+ },
+ gold: { DEFAULT: '#b8860b', light: '#d4a843', tint: '#f5e6c8', bg: '#faf6ee' },
+ },
+ fontFamily: {
+ sans: ['Inter', 'system-ui', 'sans-serif'],
+ serif: ['Playfair Display', 'Georgia', 'serif'],
+ },
+ },
+ },
+ }
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+ <!-- GSAP 3 + ScrollTrigger -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+ <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-white text-stone-700 antialiased">
+ <div id="site-header"></div>
+
+ <main id="main-content">
+ <!-- Page Header -->
+ <section class="bg-stone-900 text-white py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h1 class="text-3xl md:text-4xl font-bold">Gallery</h1>
+ <p class="mt-2 text-white/70 text-lg">Moments from lab events, conferences, and celebrations.</p>
+ </div>
+ </section>
+
+ <!-- Gallery Grid -->
+ <section class="py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="gallery-masonry">
+ <!-- 2024 -->
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2024-10-29_MBIGroupPhotoLunch.jpg" data-caption="MBI Group Photo Lunch - October 2024" tabindex="0" role="button" aria-label="View: MBI Group Photo Lunch - October 2024">
+ <img src="../img/gallery/2024-10-29_MBIGroupPhotoLunch.jpg" alt="MBI Group Photo Lunch - October 2024" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Oct 2024 - MBI Group Photo</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2024-10-29_MBIGroupPhotoEdited.png" data-caption="MBI Group Photo - October 2024" tabindex="0" role="button" aria-label="View: MBI Group Photo - October 2024">
+ <img src="../img/gallery/2024-10-29_MBIGroupPhotoEdited.png" alt="MBI Group Photo - October 2024" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Oct 2024 - MBI Group</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2024-09-24_Seowung_Best_Poster_Award.jpeg" data-caption="Seowung Leem wins Best Poster Award - September 2024" tabindex="0" role="button" aria-label="View: Seowung Best Poster Award">
+ <img src="../img/gallery/2024-09-24_Seowung_Best_Poster_Award.jpeg" alt="Seowung Leem wins Best Poster Award at Graduate Pruitt Research Day" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Sep 2024 - Seowung Best Poster Award</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2024-09-06_SmileLab10YearAnniversary.jpeg" data-caption="SMILE Lab 10 Year Anniversary - September 2024" tabindex="0" role="button" aria-label="View: SMILE Lab 10 Year Anniversary">
+ <img src="../img/gallery/2024-09-06_SmileLab10YearAnniversary.jpeg" alt="SMILE Lab 10 Year Anniversary celebration" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Sep 2024 - 10 Year Anniversary</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2024-04-22_SkylarStolte_GatorAttributeCreativity.JPG" data-caption="Skylar Stolte - Gator Attribute Award for Creativity - April 2024" tabindex="0" role="button" aria-label="View: Skylar Stolte Gator Attribute Creativity Award">
+ <img src="../img/gallery/2024-04-22_SkylarStolte_GatorAttributeCreativity.JPG" alt="Skylar Stolte receiving Gator Attribute Award for Creativity" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Apr 2024 - Skylar Stolte Award</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2024-04-17_AI Course Award.jpg" data-caption="AI Course Award - April 2024" tabindex="0" role="button" aria-label="View: AI Course Award">
+ <img src="../img/gallery/2024-04-17_AI Course Award.jpg" alt="Dr. Fang receiving AI Course Award" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Apr 2024 - AI Course Award</p>
+ </div>
+
+ <!-- 2023 -->
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2023-10-11_WILL Prize_MICCAI 2023.jpg" data-caption="WILL Prize at MICCAI 2023" tabindex="0" role="button" aria-label="View: WILL Prize at MICCAI 2023">
+ <img src="../img/gallery/2023-10-11_WILL Prize_MICCAI 2023.jpg" alt="WILL Prize at MICCAI 2023" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Oct 2023 - WILL Prize MICCAI</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2023-04-19_AI4Health.jpg" data-caption="AI4Health Conference - April 2023" tabindex="0" role="button" aria-label="View: AI4Health Conference">
+ <img src="../img/gallery/2023-04-19_AI4Health.jpg" alt="AI4Health Conference" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Apr 2023 - AI4Health Conference</p>
+ </div>
+
+ <!-- 2022 -->
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2022-08-27_Fall2022LabRetreatLunch_1.png" data-caption="Fall 2022 Lab Retreat" tabindex="0" role="button" aria-label="View: Fall 2022 Lab Retreat">
+ <img src="../img/gallery/2022-08-27_Fall2022LabRetreatLunch_1.png" alt="SMILE Lab Fall 2022 Lab Retreat" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Aug 2022 - Lab Retreat</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2022-04-14_Garrett_Award_UFBME_Undergrad_Research.png" data-caption="Garrett Fullerton Outstanding Research Award - April 2022" tabindex="0" role="button" aria-label="View: Garrett Fullerton Award">
+ <img src="../img/gallery/2022-04-14_Garrett_Award_UFBME_Undergrad_Research.png" alt="Garrett Fullerton receiving Outstanding Research Award" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Apr 2022 - Garrett Award</p>
+ </div>
+
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2022-02-19_EscapeRoom.png" data-caption="Team Escape Room - February 2022" tabindex="0" role="button" aria-label="View: Team Escape Room">
+ <img src="../img/gallery/2022-02-19_EscapeRoom.png" alt="SMILE Lab team at escape room" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Feb 2022 - Team Escape Room</p>
+ </div>
+
+ <!-- 2021 -->
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2021-12-21_PhDGraduation.jpg" data-caption="PhD Graduation - December 2021" tabindex="0" role="button" aria-label="View: PhD Graduation">
+ <img src="../img/gallery/2021-12-21_PhDGraduation.jpg" alt="PhD Graduation ceremony" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">Dec 2021 - PhD Graduation</p>
+ </div>
+
+ <!-- Earlier -->
+ <div class="gallery-item" data-gallery data-full="../img/gallery/2019-02-01_SMILELab.jpg" data-caption="SMILE Lab - 2019" tabindex="0" role="button" aria-label="View: SMILE Lab 2019">
+ <img src="../img/gallery/2019-02-01_SMILELab.jpg" alt="SMILE Lab group photo 2019" loading="lazy" class="w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity">
+ <p class="text-xs text-stone-500 mt-1">2019 - SMILE Lab</p>
+ </div>
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <!-- Lightbox -->
+ <div id="lightbox" class="lightbox" role="dialog" aria-label="Image viewer" aria-hidden="true">
+ <button id="lightbox-close" class="absolute top-4 right-4 text-white p-2 hover:bg-white/10 rounded-lg z-10" aria-label="Close lightbox">
+ <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+ </button>
+ <button id="lightbox-prev" class="absolute left-4 top-1/2 -translate-y-1/2 text-white p-2 hover:bg-white/10 rounded-lg z-10" aria-label="Previous image">
+ <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+ </button>
+ <button id="lightbox-next" class="absolute right-4 top-1/2 -translate-y-1/2 text-white p-2 hover:bg-white/10 rounded-lg z-10" aria-label="Next image">
+ <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+ </button>
+ <div class="flex flex-col items-center gap-4">
+ <img id="lightbox-img" src="" alt="" class="max-w-[90vw] max-h-[80vh] object-contain rounded-lg">
+ <p id="lightbox-caption" class="text-white text-sm text-center"></p>
+ </div>
+ </div>
+
+ <div id="site-footer"></div>
+ <script defer src="js/nav.js"></script>
+ <script defer src="js/reveal.js"></script>
+ <script defer src="js/gallery.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Open positions at the SMILE Lab - PhD, Postdoc, MS, Undergraduate, and REU opportunities">
+ <title>Openings | SMILE Lab</title>
+ <link rel="shortcut icon" href="../img/misc/ufl.png">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ stone: {
+ 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+ 400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+ 800: '#292524', 900: '#1c1917', 950: '#0c0a09',
+ },
+ gold: { DEFAULT: '#b8860b', light: '#d4a843', tint: '#f5e6c8', bg: '#faf6ee' },
+ },
+ fontFamily: {
+ sans: ['Inter', 'system-ui', 'sans-serif'],
+ serif: ['Playfair Display', 'Georgia', 'serif'],
+ },
+ },
+ },
+ }
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+ <!-- GSAP 3 + ScrollTrigger -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+ <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-white text-stone-700 antialiased">
+ <div id="site-header"></div>
+
+ <main id="main-content">
+ <!-- Page Header -->
+ <section class="bg-stone-900 text-white py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h1 class="text-3xl md:text-4xl font-bold">Open Positions</h1>
+ <p class="mt-2 text-white/70 text-lg">Join our team at the intersection of AI and brain health.</p>
+ </div>
+ </section>
+
+ <!-- Priority Note -->
+ <section class="py-6 bg-gold-bg">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <p class="text-sm text-stone-700"><strong>We give priority to:</strong> 1) top-ranking students from top universities, 2) world-level programming competition/challenge winners, and 3) students who have published high-quality papers in this field.</p>
+ </div>
+ </section>
+
+ <!-- Positions -->
+ <section class="py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+ <!-- Postdoc -->
+ <div class="bg-white rounded-xl border border-stone-100 p-6 md:p-8 shadow-sm">
+ <div class="flex flex-wrap items-center gap-3 mb-4">
+ <span class="px-3 py-1 text-xs font-bold rounded-full bg-red-100 text-red-700">Hiring</span>
+ <h2 class="text-xl font-bold">Postdoctoral Associate</h2>
+ </div>
+ <p class="text-sm text-stone-600 mb-4">Fully funded positions in Medical Artificial Intelligence (MAI), brain-inspired AI, and AI for precision brain health.</p>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">Requirements</h3>
+ <ul class="text-sm text-stone-600 space-y-1 mb-4">
+ <li class="flex gap-2"><span class="text-gold">&bull;</span>Proficiency in Python and deep learning frameworks</li>
+ <li class="flex gap-2"><span class="text-gold">&bull;</span>Experience with PyTorch, TensorFlow, FSL, FreeSurfer, or SPM preferred</li>
+ </ul>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">To Apply</h3>
+ <p class="text-sm text-stone-600 mb-4">Send CV, transcript, cover letter, and 3 references to <a href="mailto:smilefanglab@gmail.com" class="text-gold hover:underline">smilefanglab@gmail.com</a></p>
+ <a href="https://explore.jobs.ufl.edu/cw/en-us/job/519971/postdoctoral-associate" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors text-sm">
+ Apply Now
+ <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+ </a>
+ </div>
+
+ <!-- PhD -->
+ <div class="bg-white rounded-xl border border-stone-100 p-6 md:p-8 shadow-sm">
+ <div class="flex flex-wrap items-center gap-3 mb-4">
+ <span class="px-3 py-1 text-xs font-bold rounded-full bg-red-100 text-red-700">Hiring</span>
+ <h2 class="text-xl font-bold">Ph.D. Students</h2>
+ </div>
+ <p class="text-sm text-stone-600 mb-4">Multiple fully-funded Ph.D. positions in generative AI, foundation models, LLM, and digital twins. Apply through BME, ECE, CS, or related programs at UF.</p>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">To Apply</h3>
+ <p class="text-sm text-stone-600 mb-4">Email CV, transcript, and overview of research experiences to <a href="mailto:smilefanglab@gmail.com" class="text-gold hover:underline">smilefanglab@gmail.com</a> before submitting your official application.</p>
+ <a href="https://docs.google.com/forms/d/e/1FAIpQLSfJalAy7HSU1mxuJJpF65kMBqeIZG_xZCCa4BIzBFNOVlQcwA/viewform" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 bg-gold text-white font-semibold rounded-lg hover:bg-gold-dark transition-colors text-sm">
+ Application Form
+ <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+ </a>
+ </div>
+
+ <!-- MS Students -->
+ <div class="bg-white rounded-xl border border-stone-100 p-6 md:p-8 shadow-sm">
+ <div class="flex flex-wrap items-center gap-3 mb-4">
+ <h2 class="text-xl font-bold">Master's Students</h2>
+ <span class="px-3 py-1 text-xs font-semibold rounded-full bg-yellow-100 text-yellow-700">Volunteer Only</span>
+ </div>
+ <p class="text-sm text-stone-600 mb-4">Currently hiring volunteers. Current or incoming UF Master's students are welcome to apply.</p>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">To Apply</h3>
+ <p class="text-sm text-stone-600 mb-4">Complete the application form and email <a href="mailto:smilefanglab@gmail.com" class="text-gold hover:underline">smilefanglab@gmail.com</a>.</p>
+ <a href="https://forms.gle/cPheVDB1Esj5Hdt68" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 border border-gold text-gold font-semibold rounded-lg hover:bg-gold hover:text-white transition-colors text-sm">
+ Application Form
+ <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+ </a>
+ </div>
+
+ <!-- Undergraduates -->
+ <div class="bg-white rounded-xl border border-stone-100 p-6 md:p-8 shadow-sm">
+ <div class="flex flex-wrap items-center gap-3 mb-4">
+ <h2 class="text-xl font-bold">Undergraduate Students</h2>
+ </div>
+ <p class="text-sm text-stone-600 mb-4">All years welcome. Prefer students with strong math/coding background.</p>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">Recruitment Timeline</h3>
+ <ul class="text-sm text-stone-600 space-y-1 mb-4">
+ <li class="flex gap-2"><span class="text-gold">&bull;</span><strong>Fall review:</strong> begins June 15th (deadline June 14)</li>
+ <li class="flex gap-2"><span class="text-gold">&bull;</span><strong>Spring review:</strong> begins December 15th (deadline December 14)</li>
+ </ul>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">Prerequisites</h3>
+ <ul class="text-sm text-stone-600 space-y-1 mb-4">
+ <li class="flex gap-2"><span class="text-gold">&bull;</span>Coursera Machine Learning course by Andrew Ng (free)</li>
+ <li class="flex gap-2"><span class="text-gold">&bull;</span>Co-requisites: Deep Learning Specialization, Stanford CS231n</li>
+ </ul>
+ <a href="https://forms.gle/cPheVDB1Esj5Hdt68" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 border border-gold text-gold font-semibold rounded-lg hover:bg-gold hover:text-white transition-colors text-sm">
+ Application Form
+ <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+ </a>
+ </div>
+
+ <!-- NSF REU -->
+ <div class="bg-white rounded-xl border border-stone-100 p-6 md:p-8 shadow-sm">
+ <div class="flex flex-wrap items-center gap-3 mb-4">
+ <h2 class="text-xl font-bold">NSF REU Program</h2>
+ <span class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-700">NSF Funded</span>
+ </div>
+ <p class="text-sm text-stone-600 mb-4">6-month to 1-year research program for U.S. citizens or permanent residents (undergraduate students). Work on AI for brain health and brain-inspired AI. Aims to broaden participation of underrepresented groups.</p>
+ <h3 class="text-sm font-semibold text-stone-700 mb-2">To Apply</h3>
+ <p class="text-sm text-stone-600 mb-4">Email CV, research skills summary, goals, and 2 references to <a href="mailto:smilefanglab@gmail.com" class="text-gold hover:underline">smilefanglab@gmail.com</a>. Applications accepted on a rolling basis until filled.</p>
+ </div>
+
+ </div>
+ </section>
+ </main>
+
+ <div id="site-footer"></div>
+ <script defer src="js/nav.js"></script>
+ <script defer src="js/reveal.js"></script>
+</body>
+</html>

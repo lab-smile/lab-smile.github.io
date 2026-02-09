@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="Software, tools, and datasets from the SMILE Lab at the University of Florida">
+ <title>Software | SMILE Lab</title>
+ <link rel="shortcut icon" href="../img/misc/ufl.png">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ stone: {
+ 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+ 400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+ 800: '#292524', 900: '#1c1917', 950: '#0c0a09',
+ },
+ gold: { DEFAULT: '#b8860b', light: '#d4a843', tint: '#f5e6c8', bg: '#faf6ee' },
+ },
+ fontFamily: {
+ sans: ['Inter', 'system-ui', 'sans-serif'],
+ serif: ['Playfair Display', 'Georgia', 'serif'],
+ },
+ },
+ },
+ }
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+ <!-- GSAP 3 + ScrollTrigger -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+ <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-white text-stone-700 antialiased">
+ <div id="site-header"></div>
+
+ <main id="main-content">
+ <!-- Page Header -->
+ <section class="bg-stone-900 text-white py-12 md:py-16" aria-labelledby="page-title">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h1 id="page-title" class="text-3xl md:text-4xl font-bold">Software</h1>
+ <p class="mt-2 text-white/70 text-lg">Open-source code, tools, and datasets from <span id="software-count">0</span> projects developed at the SMILE Lab.</p>
+ </div>
+ </section>
+
+ <!-- Filter Bar -->
+ <section class="sticky top-0 z-20 bg-white border-b border-stone-200 shadow-sm" aria-label="Software filters">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+ <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+ <div class="flex flex-wrap gap-3 flex-1">
+ <label for="filter-type" class="sr-only">Filter by type</label>
+ <select id="filter-type" aria-label="Filter by type" class="px-3 py-2 border border-stone-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-gold">
+ <option value="">All Types</option>
+ </select>
+ </div>
+ <div class="flex items-center gap-3">
+ <span id="result-count" class="text-sm text-stone-500 whitespace-nowrap" aria-live="polite"></span>
+ <button id="clear-filters" class="text-sm text-gold hover:underline font-medium whitespace-nowrap">Clear</button>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Software Cards -->
+ <section class="py-8" aria-label="Software list">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div id="software-loading" class="text-center py-12">
+ <div class="spinner mx-auto" role="status" aria-label="Loading software">
+ <span class="sr-only">Loading software...</span>
+ </div>
+ <p class="mt-3 text-sm text-stone-500">Loading software...</p>
+ </div>
+ <div id="software-list"></div>
+ </div>
+ </section>
+ </main>
+
+ <div id="site-footer"></div>
+ <script defer src="js/nav.js"></script>
+ <script defer src="js/reveal.js"></script>
+ <script defer src="js/software.js"></script>
+</body>
+</html>

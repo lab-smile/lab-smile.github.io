@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="SMILE Lab Team - Current members, alumni, and collaborators">
+ <title>Team | SMILE Lab</title>
+ <link rel="shortcut icon" href="../img/misc/ufl.png">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ stone: {
+ 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+ 400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+ 800: '#292524', 900: '#1c1917', 950: '#0c0a09',
+ },
+ gold: { DEFAULT: '#b8860b', light: '#d4a843', tint: '#f5e6c8', bg: '#faf6ee' },
+ },
+ fontFamily: {
+ sans: ['Inter', 'system-ui', 'sans-serif'],
+ serif: ['Playfair Display', 'Georgia', 'serif'],
+ },
+ },
+ },
+ }
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+ <!-- GSAP 3 + ScrollTrigger -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+ <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-white text-stone-700 antialiased">
+ <div id="site-header"></div>
+
+ <main id="main-content">
+ <!-- Page Header -->
+ <section class="bg-stone-900 text-white py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h1 class="text-3xl md:text-4xl font-bold">Our Team</h1>
+ <p class="mt-2 text-white/70 text-lg">Meet the researchers and students of the SMILE Lab.</p>
+ </div>
+ </section>
+
+ <!-- PI Section -->
+ <section class="py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="bg-white rounded-2xl shadow-sm border border-stone-100 p-6 md:p-8">
+ <div class="flex flex-col md:flex-row gap-6 md:gap-10 items-center md:items-start">
+ <img src="../img/personal/personal-ufl.jpg" alt="Dr. Ruogu Fang" class="w-40 h-40 rounded-full object-cover shadow-md" loading="lazy">
+ <div>
+ <h2 class="text-2xl font-bold">Dr. Ruogu"Rena" Fang</h2>
+ <p class="text-gold font-semibold mt-1">Principal Investigator</p>
+ <p class="text-sm text-stone-600 mt-1">Associate Professor &middot; Pruitt Family Endowed Fellow</p>
+ <p class="text-sm text-stone-600">J. Crayton Pruitt Family Department of Biomedical Engineering</p>
+ <p class="text-sm text-stone-500 mt-3 max-w-2xl leading-relaxed">Research focus: AI-empowered precision brain health and brain/bio-inspired AI. President of Women in MICCAI, Associate Editor of Medical Image Analysis. Ranked Top 100 (top 1%) worldwide in image analysis.</p>
+ <div class="flex gap-3 mt-4">
+ <a href="https://scholar.google.com/citations?user=LVb46zEAAAAJ&hl=en" target="_blank" rel="noopener" class="text-stone-400 hover:text-gold transition-colors" aria-label="Google Scholar">
+ <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+ </a>
+ <a href="https://github.com/lab-smile" target="_blank" rel="noopener" class="text-stone-400 hover:text-gold transition-colors" aria-label="GitHub">
+ <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+ </a>
+ <a href="https://www.linkedin.com/in/ruogu-fang-a015bb15" target="_blank" rel="noopener" class="text-stone-400 hover:text-gold transition-colors" aria-label="LinkedIn">
+ <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+ </a>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- Current Members -->
+ <section class="pb-12 md:pb-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h2 class="text-2xl font-bold mb-8 fade-up">Current Members</h2>
+
+ <!-- Postdoc Researchers -->
+ <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Postdoctoral Researchers</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 stagger-children">
+ <a href="https://rocmind.com/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/pengliu.jpg" alt="Peng Liu" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Peng Liu</h4>
+ <p class="text-sm text-stone-500">Postdoc, 2023 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">Ph.D. BME, UF 2021</p>
+ </a>
+ <a href="#" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/WasifKhan.png" alt="Wasif Khan" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Wasif Khan</h4>
+ <p class="text-sm text-stone-500">Postdoc, 2024 - Present</p>
+ </a>
+ </div>
+
+ <!-- PhD Students -->
+ <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Ph.D. Students</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 stagger-children">
+ <a href="https://www.linkedin.com/in/seowung-leem-1254951ba/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/seowung.jpg" alt="Seowung Leem" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Seowung Leem</h4>
+ <p class="text-sm text-stone-500">Ph.D. Candidate, 2021 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ <p class="text-xs text-gold mt-1">IEEE NextGen Scholar, UF Outstanding Merit</p>
+ </a>
+ <div class="bg-white rounded-xl border border-stone-100 p-5 text-center">
+ <img src="../img/lab/JosephCox.png" alt="Joseph Cox" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold">Joseph Cox</h4>
+ <p class="text-sm text-stone-500">Ph.D. Student, 2022 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ <p class="text-xs text-gold mt-1">NIH NIAAA T32 Fellow</p>
+ </div>
+ <a href="https://www.linkedin.com/in/junfu-cheng-215744273/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/JunfuCheng.jpeg" alt="Junfu Cheng" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Junfu Cheng</h4>
+ <p class="text-sm text-stone-500">Ph.D. Student, 2024 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">ECE</p>
+ </a>
+ <div class="bg-white rounded-xl border border-stone-100 p-5 text-center">
+ <img src="../img/lab/ZhiminZong.jpg" alt="Zhimin Zong" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold">Zhimin Zong</h4>
+ <p class="text-sm text-stone-500">Ph.D. Student, 2022 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">ECE</p>
+ </div>
+ <a href="https://www.linkedin.com/in/zeyun-zhao-b04057286" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/ZeyunZhao.jpeg" alt="Zeyun Zhao" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Zeyun Zhao</h4>
+ <p class="text-sm text-stone-500">Ph.D. Student, 2025 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ </a>
+ </div>
+
+ <!-- Co-advise PhD -->
+ <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Co-advised / Collaborating Ph.D. Students</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 stagger-children">
+ <div class="bg-white rounded-xl border border-stone-100 p-5 text-center">
+ <img src="../img/lab/BoxiaoYu.jpeg" alt="Boxiao Yu" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold">Boxiao Yu</h4>
+ <p class="text-sm text-stone-500">Ph.D. Student, 2022 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ </div>
+ <div class="bg-white rounded-xl border border-stone-100 p-5 text-center">
+ <img src="../img/lab/ZiqianHuang.jpeg" alt="Ziqian Huang" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold">Ziqian Huang</h4>
+ <p class="text-sm text-stone-500">Ph.D. Student, 2022 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ </div>
+ </div>
+
+ <!-- MS Students -->
+ <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">M.S. Students</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 stagger-children">
+ <a href="https://www.linkedin.com/in/sk124" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/Sivaramakrishnan.png" alt="Sivaramakrishnan (Siva)" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Sivaramakrishnan (Siva)</h4>
+ <p class="text-sm text-stone-500">M.S. Student, Sep 2025</p>
+ <p class="text-xs text-stone-400 mt-1">CISE</p>
+ </a>
+ <a href="https://www.linkedin.com/in/lakksh-tyagi-9297b6230/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/LakkshTyagi.jpg" alt="Lakksh Tyagi" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Lakksh Tyagi</h4>
+ <p class="text-sm text-stone-500">M.S. Student, Aug 2025</p>
+ <p class="text-xs text-stone-400 mt-1">CISE</p>
+ </a>
+ <div class="bg-white rounded-xl border border-stone-100 p-5 text-center">
+ <img src="../img/lab/JunfanBai.png" alt="Junfan Bai" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold">Junfan Bai</h4>
+ <p class="text-sm text-stone-500">M.S. Student, Aug 2025</p>
+ <p class="text-xs text-stone-400 mt-1">ECE</p>
+ </div>
+ <a href="https://pateldev.tech" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/DevPatel.png" alt="Dev Patel" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Dev Patel</h4>
+ <p class="text-sm text-stone-500">M.S. Student, Jan 2025</p>
+ <p class="text-xs text-stone-400 mt-1">CISE</p>
+ </a>
+ <a href="https://thecka.tech" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/ChintanAcharya.jpeg" alt="Chintan Acharya" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Chintan Acharya</h4>
+ <p class="text-sm text-stone-500">M.S. Student, 2024 - Present</p>
+ <p class="text-xs text-stone-400 mt-1">CISE</p>
+ </a>
+ </div>
+
+ <!-- PostBac Researchers -->
+ <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Post-Baccalaureate Researchers</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 stagger-children">
+ <a href="https://www.linkedin.com/in/gavin-hart-uf/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/GavinHart.jpeg" alt="Gavin Hart" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Gavin Hart</h4>
+ <p class="text-sm text-stone-500">Post-Baccalaureate</p>
+ <p class="text-xs text-stone-400 mt-1">Neuroscience</p>
+ <p class="text-xs text-gold mt-1">GATORAADE Fellow</p>
+ </a>
+ </div>
+
+ <!-- Undergraduate Students -->
+ <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Undergraduate Students</h3>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 stagger-children">
+ <a href="https://www.linkedin.com/in/brady-stemac" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/BradyStemac.png" alt="Brady Stemac" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Brady Stemac</h4>
+ <p class="text-sm text-stone-500">Undergraduate Student</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ </a>
+ <a href="https://www.linkedin.com/in/yixuan-zoey-cao" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/YixuanZoeyCao.jpg" alt="Yixuan (Zoey) Cao" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Yixuan (Zoey) Cao</h4>
+ <p class="text-sm text-stone-500">Undergraduate Student</p>
+ <p class="text-xs text-stone-400 mt-1">Mathematics, Statistics</p>
+ </a>
+ <a href="https://www.linkedin.com/in/sanjana-dundigalla/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/sanjanadundigalla.png" alt="Sanjana Dundigalla" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Sanjana Dundigalla</h4>
+ <p class="text-sm text-stone-500">Undergraduate Student</p>
+ <p class="text-xs text-stone-400 mt-1">Data Science and Psychology</p>
+ </a>
+ <a href="https://www.linkedin.com/in/shao-samuel-zheng/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/ShaoZheng.jpeg" alt="Samuel Zheng" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Samuel Zheng</h4>
+ <p class="text-sm text-stone-500">Undergraduate Student</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ <p class="text-xs text-gold mt-1">NSF REU Awardee</p>
+ </a>
+ <div class="bg-white rounded-xl border border-stone-100 p-5 text-center">
+ <img src="../img/lab/veronicaramos.png" alt="Veronica Ramos" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold">Veronica Ramos</h4>
+ <p class="text-sm text-stone-500">Undergraduate Student</p>
+ <p class="text-xs text-stone-400 mt-1">BME</p>
+ </div>
+ </div>
+
+ <!-- Collaborators -->
+ <h2 class="text-2xl font-bold mb-8 mt-16">Collaborators</h2>
+ <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+ <a href="https://jiangbian.me/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/JiangBian.png" alt="Jiang Bian" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Jiang Bian</h4>
+ <p class="text-sm text-stone-500">Indiana University</p>
+ <p class="text-xs text-stone-400">Health Department</p>
+ </a>
+ <a href="https://bme.ufl.edu/dept-member/ding_mingzhou/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/MingzhouDing.png" alt="Mingzhou Ding" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Mingzhou Ding</h4>
+ <p class="text-sm text-stone-500">University of Florida</p>
+ <p class="text-xs text-stone-400">Dept. of Biomedical Engineering</p>
+ </a>
+ <a href="https://people.clas.ufl.edu/akeil/research/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/AndreasKeil.png" alt="Andreas Keil" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Andreas Keil</h4>
+ <p class="text-sm text-stone-500">University of Florida</p>
+ <p class="text-xs text-stone-400">Dept. of Psychology</p>
+ </a>
+ <a href="https://neuroscience.ufl.edu/profile/woods-adam/" target="_blank" rel="noopener" class="group block bg-white rounded-xl border border-stone-100 p-5 text-center hover:shadow-md transition-shadow">
+ <img src="../img/lab/AdamWoods.png" alt="Adam Woods" class="w-24 h-24 rounded-full object-cover mx-auto mb-3" loading="lazy">
+ <h4 class="font-semibold group-hover:text-gold transition-colors">Adam Woods</h4>
+ <p class="text-sm text-stone-500">UT Dallas</p>
+ <p class="text-xs text-stone-400">Dept. of Neuroscience</p>
+ </a>
+ </div>
+ </div>
+ </section>
+
+ <!-- Alumni Section -->
+ <section class="py-12 md:py-16 bg-stone-50">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <h2 class="text-2xl font-bold mb-2 fade-up">Alumni</h2>
+     <p class="text-stone-500 mb-10">Former members of the SMILE Lab who have gone on to impactful careers.</p>
+
+     <!-- M.D. Alumni -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">M.D. Alumni</h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Simeng Zhu</h4>
+         <p class="text-sm text-stone-500">Doctor of Medicine, 2018 - 2022</p>
+         <p class="text-xs text-stone-400 mt-1">Medical Resident, Henry Ford Hospital Radiation Oncology</p>
+         <p class="text-xs text-gold mt-1">Assistant Professor, Ohio State University</p>
+       </div>
+     </div>
+
+     <!-- PostDoc Alumni -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">PostDoc Alumni</h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Diandra Ojo</h4>
+         <p class="text-sm text-stone-500">Postdoc, 2023 - 2024</p>
+         <p class="text-xs text-stone-400 mt-1">Co-mentor with Dr. Ivana Parker, ECE</p>
+       </div>
+     </div>
+
+     <!-- Ph.D. Alumni -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Ph.D. Alumni</h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Skylar Stolte</h4>
+         <p class="text-sm text-stone-500">Ph.D. BME, 2020 - 2025</p>
+         <p class="text-xs text-stone-400 mt-1">NIH F31 Fellow, UF Graduate Student Preeminence Award</p>
+         <p class="text-xs text-gold mt-1">PostDoc Associate, University of Florida</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Chaoyue Sun</h4>
+         <p class="text-sm text-stone-500">Ph.D. ECE, 2020 - 2024</p>
+         <p class="text-xs text-stone-400 mt-1">Best Paper Award, HEALTHINF 2024</p>
+         <p class="text-xs text-gold mt-1">Applied Scientist, Amazon</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Yao Xiao</h4>
+         <p class="text-sm text-stone-500">Ph.D. BME, 2017 - 2020</p>
+         <p class="text-xs text-stone-400 mt-1">BMES 2020 Career Development Award, Commencement Speaker</p>
+         <p class="text-xs text-gold mt-1">Assistant Professor, Mayo Clinic</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Peng Liu</h4>
+         <p class="text-sm text-stone-500">Ph.D. BME, 2016 - 2021</p>
+         <p class="text-xs text-stone-400 mt-1">Best Abstract Award, Montreal AI &amp; Neuroscience Conference</p>
+         <p class="text-xs text-gold mt-1">Postdoc Associate, University of Florida</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Kyle See</h4>
+         <p class="text-sm text-stone-500">Ph.D. BME, 2019 - 2024</p>
+         <p class="text-xs text-stone-400 mt-1">UF Graduate Student Preeminence Award, NIH CTSI TL1 Fellowship</p>
+         <p class="text-xs text-gold mt-1">Postdoc Associate, University of Florida</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Tianqi Liu</h4>
+         <p class="text-sm text-stone-500">Ph.D. ECE, 2019 - 2024</p>
+         <p class="text-xs text-gold mt-1">Senior Researcher, Tencent Americas</p>
+       </div>
+     </div>
+
+     <!-- M.S. Alumni -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">M.S. Alumni</h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Yuetong Lu</h4>
+         <p class="text-sm text-stone-500">M.S., May 2025</p>
+         <p class="text-xs text-stone-400 mt-1">DeveloperWeek 2024 Overall Winner</p>
+         <p class="text-xs text-gold mt-1">University of Washington, Technology Innovation</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Dong-You (Sam) Jhong</h4>
+         <p class="text-sm text-stone-500">M.S. ECE, Jan 2025</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Travis Koenig</h4>
+         <p class="text-sm text-stone-500">M.S. BME, 2023 - 2025</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Pratyush Shukla</h4>
+         <p class="text-sm text-stone-500">M.S. Computer Science, 2023 - 2025</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Everett J. Schwieg</h4>
+         <p class="text-sm text-stone-500">M.S. BME, 2022 - 2024</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Fan Yang</h4>
+         <p class="text-sm text-stone-500">M.S., 2022 - 2024</p>
+         <p class="text-xs text-gold mt-1">Ph.D. student, NJIT</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Ayesha Naikodi</h4>
+         <p class="text-sm text-stone-500">M.S. CISE, 2022 - 2023</p>
+         <p class="text-xs text-gold mt-1">Ph.D. student, University of Florida</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Huang Hong</h4>
+         <p class="text-sm text-stone-500">M.Eng. ECE, 2021 - 2023</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Jimmy Ossa</h4>
+         <p class="text-sm text-stone-500">M.Eng., 2020 - 2022</p>
+         <p class="text-xs text-gold mt-1">Software Engineer, Infotech</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Shen Kai</h4>
+         <p class="text-sm text-stone-500">M.Eng., 2021 - 2022</p>
+         <p class="text-xs text-gold mt-1">PhD Student, University of Florida</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Jiaqing Zhang</h4>
+         <p class="text-sm text-stone-500">M.Eng. ECE, 2020 - 2022</p>
+         <p class="text-xs text-gold mt-1">PhD student, University of Florida</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Shreya Verma</h4>
+         <p class="text-sm text-stone-500">M.Eng. BME, 2019 - 2021</p>
+         <p class="text-xs text-gold mt-1">Ph.D. student, Penn State University</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Bhavin Soni</h4>
+         <p class="text-sm text-stone-500">M.Eng. BME, 2019 - 2021</p>
+         <p class="text-xs text-gold mt-1">Neuroimaging Engineer, Washington University at St. Louis</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Yangjunyi Li</h4>
+         <p class="text-sm text-stone-500">M.S. BME, 2017 - 2018</p>
+         <p class="text-xs text-gold mt-1">Senior Scientist, Eli Lilly and Company</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Yun Liang</h4>
+         <p class="text-sm text-stone-500">M.S. BME, 2018 - 2019</p>
+         <p class="text-xs text-gold mt-1">PhD student, UF BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Micheal Adeyosoye</h4>
+         <p class="text-sm text-stone-500">MS-PhD, FIU Bridge to PhD Fellowship, 2016 - 2017</p>
+         <p class="text-xs text-gold mt-1">PhD Student, FIU</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Jingan Qu</h4>
+         <p class="text-sm text-stone-500">M.S., 2015 - 2017</p>
+         <p class="text-xs text-gold mt-1">Data Scientist, Applied Research Center FIU</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Daniel Parra</h4>
+         <p class="text-sm text-stone-500">M.S., 2015 - 2016</p>
+         <p class="text-xs text-gold mt-1">Software Engineer, ProActive Technologies</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Haodi Jiang</h4>
+         <p class="text-sm text-stone-500">M.S., 2014 - 2015</p>
+         <p class="text-xs text-gold mt-1">PhD student, NJIT</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Sherman Ng</h4>
+         <p class="text-sm text-stone-500">M.Eng. ECE, 2010 - 2011 (Cornell)</p>
+         <p class="text-xs text-gold mt-1">Software Engineer, Microsoft</p>
+       </div>
+     </div>
+
+     <!-- Undergraduate Alumni -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Undergraduate Alumni</h3>
+     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mb-10">
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Ritika Samanta</p>
+         <p class="text-xs text-stone-400">CS &amp; Psychology</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Sanandan Ojha</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Thrisha Acharya</p>
+         <p class="text-xs text-stone-400">Microbiology</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Jason Chen</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Amy Lazarte</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Surya K. Vijayalakshmi</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Tara Sahni</p>
+         <p class="text-xs text-stone-400">Cognitive Science</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Minhyeok Wi</p>
+         <p class="text-xs text-stone-400">EE</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Akshay Ashok</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Grace Cheng</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Michelle Mu</p>
+         <p class="text-xs text-stone-400">Biology</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Thomas Howland</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Kevin Liu</p>
+         <p class="text-xs text-stone-400">Physics</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Ethan Smith</p>
+         <p class="text-xs text-stone-400">Psychology</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Justin Broce</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Kyle Douglas</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Joshua Lamb</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Cynthia Liu</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Jordi Bardia</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Benjamin Arnold</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Hely Lin</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Yiru Mu</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Garrett Fullerton</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Gianna Sweeting</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Simon Kato</p>
+         <p class="text-xs text-stone-400">Math &amp; Statistics</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Brian &ldquo;John&rdquo; Braddock</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Maria Cardei</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Alvin Naiju</p>
+         <p class="text-xs text-stone-400">Biochemistry</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Michael McGaha</p>
+         <p class="text-xs text-stone-400">CS &amp; Statistics</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Nathan Barkdull</p>
+         <p class="text-xs text-stone-400">Math</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Keyur Patel</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Jason Chen</p>
+         <p class="text-xs text-stone-400">CS (2019-2021)</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Maximillian Diaz</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Neeva Sethi</p>
+         <p class="text-xs text-stone-400">CS</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Daniel El Basha</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Akshay Mathavan</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-3 text-center">
+         <p class="font-medium text-sm text-stone-900">Akash Mathavan</p>
+         <p class="text-xs text-stone-400">BME</p>
+       </div>
+     </div>
+
+     <!-- Visiting Students Alumni -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">Visiting Students Alumni</h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Yuanyuan Zhu</h4>
+         <p class="text-sm text-stone-500">Visiting Undergraduate Student, 2016 Summer</p>
+         <p class="text-xs text-gold mt-1">Software Engineer, Indeed.com</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Xing Pang</h4>
+         <p class="text-sm text-stone-500">Visiting Graduate Student, 2015 - 2016</p>
+         <p class="text-xs text-stone-400 mt-1">Nanjing University of Science and Technology</p>
+       </div>
+     </div>
+
+     <!-- K-12 Teachers -->
+     <h3 class="text-lg font-semibold text-stone-700 mb-4 border-b border-stone-200 pb-2">K-12 Teachers</h3>
+     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Edda Rivera</h4>
+         <p class="text-sm text-stone-500">NSF DoD RET Teacher, 2016 Summer</p>
+         <p class="text-xs text-stone-400 mt-1">Best NSF RET Poster Award</p>
+         <p class="text-xs text-gold mt-1">High School Teacher, John A. Ferguson Senior High School</p>
+       </div>
+       <div class="bg-white rounded-lg border border-stone-100 p-4">
+         <h4 class="font-semibold text-stone-900">Christian McDonald</h4>
+         <p class="text-sm text-stone-500">NSF DoD RET Teacher, 2016 Summer</p>
+         <p class="text-xs text-stone-400 mt-1">Best NSF RET Poster Award</p>
+         <p class="text-xs text-gold mt-1">High School Teacher, Miami Jackson Senior High School</p>
+       </div>
+     </div>
+   </div>
+ </section>
+ </main>
+
+ <div id="site-footer"></div>
+ <script defer src="js/nav.js"></script>
+ <script defer src="js/reveal.js"></script>
+</body>
+</html>
