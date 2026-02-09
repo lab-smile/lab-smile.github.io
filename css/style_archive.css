@@ -1572,7 +1572,7 @@ button.btn--accent:hover {
 	background-image: url('../img/media/ufai.png');
 }
 .post__image--cph:before {
-	background-image: url('../img/media/cph.png');
+	background-image: url('../img/media/CPH.jpg');
 }
 .post__image--uf:before {
 	background-image: url('../img/media/uf.png');
@@ -1612,6 +1612,9 @@ button.btn--accent:hover {
 
 .post__image--cvnews:before {
 	background-image: url('../img/media/cvnews.jpeg');
+}
+.post__image--inside:before {
+	background-image: url('../img/media/inside.jpg');
 }
 
 .post__content {
