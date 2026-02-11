@@ -108,27 +108,34 @@
         lastYear = year;
       }
 
+      const imgSrc = pub.image_src ? `../${pub.image_src}` : '';
+
       html += `
         <article class="card card-gold-top mb-4">
-          <div class="flex flex-wrap items-start gap-3">
-            <span class="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full ${badgeClass}">${escapeHtml(pub.type)}</span>
-            <span class="text-xs text-stone-400 font-mono">${escapeHtml(pub.publication_year || pub.data_year)}</span>
-          </div>
-          <h3 class="mt-2 font-semibold text-base text-stone-900 leading-snug">${pub.title}</h3>
-          <p class="mt-1 text-sm text-stone-600">${pub.authors}</p>
-          <p class="mt-1 text-sm text-stone-500 italic">${escapeHtml(pub.citation)}</p>
-          ${links ? `<div class="mt-3 flex flex-wrap gap-2">${links}</div>` : ''}
-          ${hasAbstract ? `
-            <div class="mt-3 border-t border-stone-100 pt-3">
-              <button onclick="toggleAbstract(${globalIdx})" class="text-sm font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gold/5 text-gold hover:bg-gold/10 transition-colors" aria-expanded="false" aria-controls="abstract-${globalIdx}">
-                <svg class="w-4 h-4 transition-transform" id="abstract-icon-${globalIdx}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                Abstract
-              </button>
-              <div id="abstract-${globalIdx}" class="abstract-content mt-2 text-sm text-stone-600 leading-relaxed">
-                <p>${escapeHtml(pub.abstract)}</p>
+          <div class="flex gap-5">
+            ${imgSrc ? `<div class="pub-thumb-wrap hidden sm:block flex-shrink-0"><img src="${escapeHtml(imgSrc)}" alt="" class="pub-thumb" loading="lazy"></div>` : ''}
+            <div class="flex-1 min-w-0">
+              <div class="flex flex-wrap items-start gap-3">
+                <span class="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full ${badgeClass}">${escapeHtml(pub.type)}</span>
+                <span class="text-xs text-stone-400 font-mono">${escapeHtml(pub.publication_year || pub.data_year)}</span>
               </div>
+              <h3 class="mt-2 font-semibold text-base text-stone-900 leading-snug">${pub.title}</h3>
+              <p class="mt-1 text-sm text-stone-600">${pub.authors}</p>
+              <p class="mt-1 text-sm text-stone-500 italic">${escapeHtml(pub.citation)}</p>
+              ${links ? `<div class="mt-3 flex flex-wrap gap-2">${links}</div>` : ''}
+              ${hasAbstract ? `
+                <div class="mt-3 border-t border-stone-100 pt-3">
+                  <button onclick="toggleAbstract(${globalIdx})" class="text-sm font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gold/5 text-gold hover:bg-gold/10 transition-colors" aria-expanded="false" aria-controls="abstract-${globalIdx}">
+                    <svg class="w-4 h-4 transition-transform" id="abstract-icon-${globalIdx}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    Abstract
+                  </button>
+                  <div id="abstract-${globalIdx}" class="abstract-content mt-2 text-sm text-stone-600 leading-relaxed">
+                    <p>${escapeHtml(pub.abstract)}</p>
+                  </div>
+                </div>
+              ` : ''}
             </div>
-          ` : ''}
+          </div>
         </article>
       `;
     });

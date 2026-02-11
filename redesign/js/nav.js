@@ -52,16 +52,21 @@
     function open() {
       drawer.classList.add('active');
       overlay.classList.add('active');
+      overlay.setAttribute('aria-hidden', 'false');
       toggle.setAttribute('aria-expanded', 'true');
       document.body.style.overflow = 'hidden';
-      // Focus trap - focus first link
-      const firstLink = drawer.querySelector('a');
-      if (firstLink) firstLink.focus();
+      // Focus trap - focus close button first
+      if (closeBtn) closeBtn.focus();
+      else {
+        const firstLink = drawer.querySelector('a');
+        if (firstLink) firstLink.focus();
+      }
     }
 
     function close() {
       drawer.classList.remove('active');
       overlay.classList.remove('active');
+      overlay.setAttribute('aria-hidden', 'true');
       toggle.setAttribute('aria-expanded', 'false');
       document.body.style.overflow = '';
       toggle.focus();
@@ -71,19 +76,49 @@
     overlay.addEventListener('click', close);
     if (closeBtn) closeBtn.addEventListener('click', close);
 
-    // Close on Escape
+    // Close on Escape + focus trapping
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && drawer.classList.contains('active')) {
+      if (!drawer.classList.contains('active')) return;
+
+      if (e.key === 'Escape') {
         close();
+        return;
+      }
+
+      // Focus trap within drawer
+      if (e.key === 'Tab') {
+        const focusable = drawer.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])');
+        if (focusable.length === 0) return;
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+
+        if (e.shiftKey && document.activeElement === first) {
+          e.preventDefault();
+          last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault();
+          first.focus();
+        }
       }
     });
   }
 
   function initStickyHeader() {
-    const header = document.getElementById('site-header');
-    if (!header) return;
+    const headerContainer = document.getElementById('site-header');
+    if (!headerContainer) return;
+    const header = headerContainer.querySelector('header') || headerContainer;
+    const isHomepage = document.body.classList.contains('header-transparent');
+    const hero = document.getElementById('hero');
+
     window.addEventListener('scroll', () => {
-      header.classList.toggle('header-scrolled', window.scrollY > 10);
+      const scrollY = window.scrollY;
+      header.classList.toggle('header-scrolled', scrollY > 10);
+
+      // Toggle transparent/solid state on homepage
+      if (isHomepage && hero) {
+        const heroBottom = hero.offsetHeight - 80;
+        document.body.classList.toggle('header-solid', scrollY > heroBottom);
+      }
     }, { passive: true });
   }
 

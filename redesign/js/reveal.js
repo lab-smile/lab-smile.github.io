@@ -4,14 +4,23 @@
  */
 (function () {
   function init() {
-    // Check if GSAP is loaded
-    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
-      // Fallback: show everything immediately
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    // Check if GSAP is loaded or user prefers reduced motion
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined' || prefersReducedMotion) {
+      // Fallback: show everything immediately without animation
       document.querySelectorAll('.gsap-fade-up, .gsap-fade-in, .gsap-slide-left, .gsap-slide-right, .gsap-scale-in, .fade-up, .stagger-children').forEach(function (el) {
         el.style.opacity = '1';
         el.style.transform = 'none';
         el.classList.add('visible');
       });
+      // Still run counters immediately (no animation) if reduced motion
+      if (prefersReducedMotion) {
+        document.querySelectorAll('[data-counter]').forEach(function (el) {
+          var target = parseInt(el.getAttribute('data-counter'), 10);
+          el.textContent = target + '+';
+        });
+      }
       return;
     }
 
