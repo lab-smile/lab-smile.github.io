@@ -202,22 +202,17 @@ h1, h2, h3, .heading {
 }
 
 .site-nav-bar {
-  backdrop-filter: blur(24px) saturate(200%);
-  -webkit-backdrop-filter: blur(24px) saturate(200%);
-  background: rgba(255, 255, 255, 0.45);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: rgba(255, 255, 255, 0.65);
+  border-bottom: 1px solid rgba(0, 33, 165, 0.08);
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
 .site-nav-bar.header-scrolled {
-  backdrop-filter: blur(24px) saturate(200%);
-  -webkit-backdrop-filter: blur(24px) saturate(200%);
-  background: rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(0, 33, 165, 0.06);
-  box-shadow: 0 4px 30px rgba(0, 33, 165, 0.06),
-              0 1px 2px rgba(0, 0, 0, 0.04),
-              inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 /* Transparent header for homepage hero overlay */
@@ -1193,7 +1188,7 @@ footer a[aria-label]:hover svg {
 
 
 /* ═══════════════════════════════════════════════════
-   21. PAGE HEADERS (Subpages) — Cinematic Glassmorphism
+   21. PAGE HEADERS (Subpages)
    ═══════════════════════════════════════════════════ */
 
 .page-header {
@@ -1201,73 +1196,38 @@ footer a[aria-label]:hover svg {
   color: var(--white);
   position: relative;
   overflow: hidden;
-  padding: 5rem 0 4rem;
+  padding: 6rem 0 3rem;
 }
 
-/* Animated gradient orbs */
-.page-header::before {
-  content: '';
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  top: -200px;
-  right: -100px;
-  background: radial-gradient(circle, rgba(250, 70, 22, 0.15) 0%, transparent 70%);
-  border-radius: 50%;
-  animation: headerOrb1 8s ease-in-out infinite alternate;
-  pointer-events: none;
-}
-.page-header::after {
-  content: '';
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  bottom: -300px;
-  left: -150px;
-  background: radial-gradient(circle, rgba(0, 33, 165, 0.25) 0%, transparent 70%);
-  border-radius: 50%;
-  animation: headerOrb2 10s ease-in-out infinite alternate;
-  pointer-events: none;
-}
-@keyframes headerOrb1 {
-  0%   { transform: translate(0, 0) scale(1); opacity: 0.6; }
-  100% { transform: translate(-40px, 30px) scale(1.15); opacity: 1; }
-}
-@keyframes headerOrb2 {
-  0%   { transform: translate(0, 0) scale(1); opacity: 0.5; }
-  100% { transform: translate(30px, -20px) scale(1.1); opacity: 0.8; }
-}
-
-/* Dot grid pattern overlay */
+/* Subtle dot grid */
 .page-header-grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 24px 24px;
   pointer-events: none;
 }
 
-/* Glass panel for header content */
-.page-header-glass {
-  position: relative;
-  z-index: 2;
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 1rem;
-  padding: 2rem 2.5rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
-              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+/* Soft orange glow top-right */
+.page-header::before {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -180px;
+  right: -80px;
+  background: radial-gradient(circle, rgba(250, 70, 22, 0.12) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
 }
 
-/* Breadcrumb / page label */
+/* Page label */
 .page-header-label {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   font-family: 'Inter', system-ui, sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -1280,10 +1240,10 @@ footer a[aria-label]:hover svg {
   opacity: 0.7;
 }
 
-/* Page title in header */
+/* Page title */
 .page-header h1 {
   font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
@@ -1292,45 +1252,40 @@ footer a[aria-label]:hover svg {
 
 /* Subtitle */
 .page-header-subtitle {
-  margin-top: 0.75rem;
-  font-size: 1.05rem;
-  color: rgba(255, 255, 255, 0.65);
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
   line-height: 1.5;
   max-width: 36rem;
 }
 
-/* Orange accent line under title */
+/* Accent line */
 .page-header-accent {
-  width: 48px;
+  width: 40px;
   height: 3px;
-  background: var(--gradient-blue-orange);
+  background: var(--uf-orange);
   border-radius: 2px;
   margin-top: 1rem;
 }
 
-/* Bottom gradient separator */
+/* Bottom separator */
 .page-header-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 4px;
+  height: 3px;
   background: var(--gradient-blue-orange);
   z-index: 3;
 }
 
-/* Responsive */
 @media (max-width: 640px) {
   .page-header {
-    padding: 4rem 0 3rem;
-  }
-  .page-header-glass {
-    padding: 1.5rem 1.5rem;
-    border-radius: 0.75rem;
+    padding: 5rem 0 2.5rem;
   }
 }
 
-/* Legacy subpage header selector (hide old styles, now using .page-header) */
+/* Legacy subpage header selector */
 section[class*="bg-stone-900"][class*="text-white"][class*="py-12"] {
   background: var(--stone-950) !important;
 }
