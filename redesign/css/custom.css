@@ -194,27 +194,30 @@ h1, h2, h3, .heading {
    4. HEADER
    ═══════════════════════════════════════════════════ */
 
+/* ── Sticky frosted-glass nav ── */
 #site-header {
   position: sticky;
   top: 0;
   z-index: 30;
 }
-#site-header header,
-header#site-header {
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  background: rgba(255, 255, 255, 0.72) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+
+.site-nav-bar {
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-.header-scrolled {
-  backdrop-filter: blur(40px) saturate(200%) !important;
-  -webkit-backdrop-filter: blur(40px) saturate(200%) !important;
-  background: rgba(255, 255, 255, 0.78) !important;
-  border-bottom: 0.5px solid rgba(0, 33, 165, 0.08) !important;
-  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.04),
-              0 4px 16px rgba(0, 33, 165, 0.04) !important;
+.site-nav-bar.header-scrolled {
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid rgba(0, 33, 165, 0.08);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9),
+              0 4px 30px rgba(0, 33, 165, 0.07),
+              0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 /* Transparent header for homepage hero overlay */
@@ -458,14 +461,14 @@ header#site-header {
 
 /* Stats card — Apple-style dark glass */
 .hero-stats-glass {
-  background: rgba(0, 15, 60, 0.45);
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  border: 0.5px solid rgba(255,255,255,0.15);
+  background: rgba(0, 15, 60, 0.5);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  border: 1px solid rgba(255,255,255,0.15);
   border-radius: var(--radius-lg);
   padding: 1.25rem 1.5rem;
-  box-shadow: inset 0 0.5px 0 rgba(255, 255, 255, 0.1),
-              0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12),
+              0 8px 32px rgba(0, 0, 0, 0.2);
 }
 
 /* Hero parallax layer */
@@ -479,10 +482,11 @@ header#site-header {
    ═══════════════════════════════════════════════════ */
 
 .stats-bar {
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  background: rgba(255, 255, 255, 0.6);
-  border-bottom: 0.5px solid rgba(0, 33, 165, 0.06);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(255, 255, 255, 0.55);
+  border-bottom: 1px solid rgba(0, 33, 165, 0.08);
+  box-shadow: 0 2px 16px rgba(0, 33, 165, 0.04);
   position: relative;
 }
 
@@ -576,15 +580,21 @@ section[class*="bg-stone-900"] h3 {
    ═══════════════════════════════════════════════════ */
 
 .card {
-  background: var(--white);
-  border: 1px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   border-radius: var(--radius-lg);
   padding: 2rem;
   transition: all var(--duration) var(--ease);
+  box-shadow: 0 1px 3px rgba(0, 33, 165, 0.04),
+              inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 .card:hover {
-  box-shadow: 0 4px 16px rgba(0, 33, 165, 0.1);
-  border-color: var(--border-hover);
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px rgba(0, 33, 165, 0.1),
+              inset 0 1px 0 rgba(255, 255, 255, 1);
+  border-color: rgba(0, 33, 165, 0.12);
   transform: translateY(-2px);
 }
 
@@ -1044,14 +1054,14 @@ footer a[aria-label]:hover svg {
   z-index: 50;
   width: 300px;
   max-width: 85vw;
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(255, 255, 255, 0.65);
   transform: translateX(100%);
   transition: transform 0.35s var(--ease);
   overflow-y: auto;
-  box-shadow: -10px 0 40px rgba(0, 0, 0, 0.08);
-  border-left: 0.5px solid rgba(255, 255, 255, 0.5);
+  box-shadow: -4px 0 30px rgba(0, 33, 165, 0.08);
+  border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
 .mobile-drawer.active {
   transform: translateX(0);
@@ -1079,11 +1089,11 @@ footer a[aria-label]:hover svg {
   transform: translateY(1rem);
   transition: all 0.3s ease;
   pointer-events: none;
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  background: rgba(0, 10, 40, 0.55);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(0, 10, 40, 0.5);
   color: var(--white);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), inset 0 0.5px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
@@ -1091,7 +1101,7 @@ footer a[aria-label]:hover svg {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  border: 0.5px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 .back-to-top.visible {
   opacity: 1;
@@ -1273,11 +1283,12 @@ section[class*="bg-stone-900"][class*="text-white"][class*="py-12"] {
 
 /* Filter bar — glass */
 section[class*="sticky"][class*="top-"] {
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  background: rgba(255, 255, 255, 0.72) !important;
-  border-bottom: 0.5px solid rgba(0, 33, 165, 0.06) !important;
-  box-shadow: 0 4px 16px rgba(0, 33, 165, 0.03);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(255, 255, 255, 0.6) !important;
+  border-bottom: 1px solid rgba(0, 33, 165, 0.08) !important;
+  box-shadow: 0 4px 24px rgba(0, 33, 165, 0.05),
+              inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 select, input[type="search"] {
@@ -1553,24 +1564,27 @@ h3[class*="border-b"]::after {
 }
 
 .glass {
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  background: rgba(255, 255, 255, 0.72);
-  border: 0.5px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 24px rgba(0, 33, 165, 0.06),
+              inset 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 .glass-dark {
-  backdrop-filter: blur(40px) saturate(200%);
-  -webkit-backdrop-filter: blur(40px) saturate(200%);
-  background: rgba(0, 10, 40, 0.6);
-  border: 0.5px solid rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 0.5px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px) saturate(200%);
+  -webkit-backdrop-filter: blur(20px) saturate(200%);
+  background: rgba(0, 10, 40, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+              0 4px 24px rgba(0, 0, 0, 0.2);
 }
 .glass-subtle {
-  backdrop-filter: blur(24px) saturate(180%);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  background: rgba(255, 255, 255, 0.5);
-  border: 0.5px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 12px rgba(0, 33, 165, 0.04);
 }
 
 /* Subtle grain texture */
