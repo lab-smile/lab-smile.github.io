@@ -104,14 +104,14 @@
       // Year group header
       if (year !== lastYear) {
         if (lastYear !== null) html += '</div>'; // close previous year group
-        html += `<div class="mb-2"><h3 class="text-xl font-bold text-stone-900 font-serif mb-4 mt-8 flex items-center gap-3"><span class="inline-flex items-center justify-center w-16 h-8 rounded-md bg-gold/10 text-gold text-sm font-bold">${escapeHtml(year)}</span><span class="flex-1 h-px bg-stone-200"></span></h3>`;
+        html += `<div class="mb-2"><h3 class="text-xl font-bold text-stone-900 font-display mb-4 mt-8 flex items-center gap-3"><span class="inline-flex items-center justify-center w-16 h-8 rounded-md bg-uf-blue/10 text-uf-blue text-sm font-bold">${escapeHtml(year)}</span><span class="flex-1 h-px bg-stone-200"></span></h3>`;
         lastYear = year;
       }
 
       const imgSrc = pub.image_src ? `../${pub.image_src}` : '';
 
       html += `
-        <article class="card card-gold-top mb-4">
+        <article class="card card-uf-top mb-4">
           <div class="flex gap-5">
             ${imgSrc ? `<div class="pub-thumb-wrap hidden sm:block flex-shrink-0"><img src="${escapeHtml(imgSrc)}" alt="" class="pub-thumb" loading="lazy"></div>` : ''}
             <div class="flex-1 min-w-0">
@@ -125,7 +125,7 @@
               ${links ? `<div class="mt-3 flex flex-wrap gap-2">${links}</div>` : ''}
               ${hasAbstract ? `
                 <div class="mt-3 border-t border-stone-100 pt-3">
-                  <button onclick="toggleAbstract(${globalIdx})" class="text-sm font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gold/5 text-gold hover:bg-gold/10 transition-colors" aria-expanded="false" aria-controls="abstract-${globalIdx}">
+                  <button onclick="toggleAbstract(${globalIdx})" class="text-sm font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-uf-blue/5 text-uf-blue hover:bg-uf-blue/10 transition-colors" aria-expanded="false" aria-controls="abstract-${globalIdx}">
                     <svg class="w-4 h-4 transition-transform" id="abstract-icon-${globalIdx}" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
                     Abstract
                   </button>
@@ -181,7 +181,7 @@
       if (!url) return '';
       const label = key.charAt(0).toUpperCase() + key.slice(1);
       const icon = key === 'arxiv' ? 'arXiv' : label;
-      return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-md border border-stone-200 text-stone-600 hover:border-gold hover:text-gold hover:bg-gold/5 transition-colors">
+      return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-md border border-stone-200 text-stone-600 hover:border-uf-blue hover:text-uf-blue hover:bg-uf-blue/5 transition-colors">
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         ${icon}
       </a>`;

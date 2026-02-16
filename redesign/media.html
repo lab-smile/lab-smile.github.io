@@ -17,11 +17,11 @@
  400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
  800: '#292524', 900: '#1c1917', 950: '#0c0a09',
  },
- gold: { DEFAULT: '#996f0a', light: '#d4a843', dark: '#7a5908', tint: '#f5e6c8', bg: '#faf6ee' },
+ uf: { blue: { DEFAULT: '#0021A5', light: '#1a3fbf', dark: '#001580', tint: '#dbe4f8', bg: '#f0f3fb' }, orange: { DEFAULT: '#FA4616', light: '#ff6a3d', dark: '#d13a12', tint: '#fde0d8', bg: '#fff5f2' }, },
  },
  fontFamily: {
  sans: ['Inter', 'system-ui', 'sans-serif'],
- serif: ['Playfair Display', 'Georgia', 'serif'],
+ display: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
  },
  },
  },
@@ -29,7 +29,7 @@
  </script>
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
- <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
  <!-- GSAP 3 + ScrollTrigger -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
@@ -115,7 +115,7 @@
  <span class="text-xs font-semibold text-stone-500">April 2023</span>
  <h3 class="font-semibold mt-2">Your Eyes May Be a Window Into Early Alzheimer's Detection</h3>
  <p class="text-sm text-stone-600 mt-2">Dr. Fang's research on AI for Alzheimer's detection through retinal imaging featured in National Geographic.</p>
- <a href="https://www.nationalgeographic.com/premium/article/eyes-early-stage-alzheimers-retina" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-gold font-medium hover:underline">
+ <a href="https://www.nationalgeographic.com/premium/article/eyes-early-stage-alzheimers-retina" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-uf-blue font-medium hover:underline">
  Read on National Geographic
  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
  </a>
@@ -124,7 +124,7 @@
  <span class="text-xs font-semibold text-stone-500">November 2023</span>
  <h3 class="font-semibold mt-2">Bias in AI Tools for Women's Health</h3>
  <p class="text-sm text-stone-600 mt-2">Paper published in npj Digital Medicine on bias and disparity of AI in diagnosing women's health issues.</p>
- <a href="https://news.ufl.edu/2023/11/bias-in-ai-womens-health/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-gold font-medium hover:underline">
+ <a href="https://news.ufl.edu/2023/11/bias-in-ai-womens-health/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-uf-blue font-medium hover:underline">
  Read UF News coverage
  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
  </a>
@@ -133,7 +133,7 @@
  <span class="text-xs font-semibold text-stone-500">February 2023</span>
  <h3 class="font-semibold mt-2">Supercomputer at UF Harnessing the Awesome Power of AI</h3>
  <p class="text-sm text-stone-600 mt-2">SMILE Lab's research using HiPerGator for healthcare featured on ABC Action News.</p>
- <a href="https://www.abcactionnews.com/news/local-news/supercomputer-at-the-university-of-florida-is-harnessing-the-awesome-power-of-ai" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-gold font-medium hover:underline">
+ <a href="https://www.abcactionnews.com/news/local-news/supercomputer-at-the-university-of-florida-is-harnessing-the-awesome-power-of-ai" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-uf-blue font-medium hover:underline">
  Watch on ABC Action News
  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
  </a>
@@ -142,7 +142,7 @@
  <span class="text-xs font-semibold text-stone-500">January 2023</span>
  <h3 class="font-semibold mt-2">Computer Vision News Feature</h3>
  <p class="text-sm text-stone-600 mt-2">Dr. Fang and SMILE Lab Ph.D. student Skylar Stolte featured in the Medical Imaging section of Computer Vision News.</p>
- <a href="https://www.rsipvision.com/ComputerVisionNews-2023January/32/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-gold font-medium hover:underline">
+ <a href="https://www.rsipvision.com/ComputerVisionNews-2023January/32/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-uf-blue font-medium hover:underline">
  Read the feature
  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
  </a>
@@ -151,7 +151,7 @@
  <span class="text-xs font-semibold text-stone-500">December 2020</span>
  <h3 class="font-semibold mt-2">Scientists Looking Into Eyes to Diagnose Parkinson's</h3>
  <p class="text-sm text-stone-600 mt-2">Research on AI for Parkinson's Disease diagnosis via eye exam covered by Forbes, RSNA, and Diagnostic Imaging.</p>
- <a href="https://www.forbes.com/sites/jackierocheleau/2020/11/25/scientists-are-looking-into-the-eyes-of-patients-to-diagnose-parkinsons-disease/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-gold font-medium hover:underline">
+ <a href="https://www.forbes.com/sites/jackierocheleau/2020/11/25/scientists-are-looking-into-the-eyes-of-patients-to-diagnose-parkinsons-disease/" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-uf-blue font-medium hover:underline">
  Read on Forbes
  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
  </a>
@@ -160,7 +160,7 @@
  <span class="text-xs font-semibold text-stone-500">February 2021</span>
  <h3 class="font-semibold mt-2">Retinal Changes in Early Alzheimer's</h3>
  <p class="text-sm text-stone-600 mt-2">Dr. Fang's work on AI in Parkinson's Disease diagnosis featured in The Washington Post.</p>
- <a href="https://www.washingtonpost.com/health/retiina-changes-in-early-alzheimers/2021/02/26/24c57bfa-6bba-11eb-9ead-673168d5b874_story.html" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-gold font-medium hover:underline">
+ <a href="https://www.washingtonpost.com/health/retiina-changes-in-early-alzheimers/2021/02/26/24c57bfa-6bba-11eb-9ead-673168d5b874_story.html" target="_blank" rel="noopener" class="inline-flex items-center gap-1 mt-3 text-sm text-uf-blue font-medium hover:underline">
  Read on The Washington Post
  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
  </a>

@@ -112,7 +112,7 @@
 
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
-      header.classList.toggle('header-scrolled', scrollY > 10);
+      header.classList.toggle('header-scrolled', scrollY > 1);
 
       // Toggle transparent/solid state on homepage
       if (isHomepage && hero) {

@@ -84,8 +84,8 @@
     yearOrder.forEach(function (year) {
       var items = grouped[year];
       html += '<div class="mb-8">' +
-        '<h3 class="text-xl font-bold text-stone-900 font-serif mb-4 mt-6 flex items-center gap-3">' +
-          '<span class="inline-flex items-center justify-center w-16 h-8 rounded-md bg-gold/10 text-gold text-sm font-bold">' + escapeHtml(year) + '</span>' +
+        '<h3 class="text-xl font-bold text-stone-900 font-display mb-4 mt-6 flex items-center gap-3">' +
+          '<span class="inline-flex items-center justify-center w-16 h-8 rounded-md bg-uf-blue/10 text-uf-blue text-sm font-bold">' + escapeHtml(year) + '</span>' +
           '<span class="flex-1 h-px bg-stone-200"></span>' +
         '</h3>' +
         '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">';
@@ -109,7 +109,7 @@
       citationHtml =
         '<div class="mt-3 border-t border-stone-100 pt-3">' +
           '<button onclick="toggleCitation(\'' + cardId + '\', \'' + iconId + '\')" ' +
-            'class="text-sm font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-gold/5 text-gold hover:bg-gold/10 transition-colors" ' +
+            'class="text-sm font-semibold flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-uf-blue/5 text-uf-blue hover:bg-uf-blue/10 transition-colors" ' +
             'aria-expanded="false" aria-controls="' + cardId + '">' +
             '<svg class="w-4 h-4 transition-transform" id="' + iconId + '" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
               '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>' +
@@ -123,7 +123,7 @@
     }
 
     return (
-      '<article class="card card-gold-top">' +
+      '<article class="card card-uf-top">' +
           '<div class="flex flex-wrap items-start gap-3">' +
             '<span class="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full ' + badgeClass + '">' + escapeHtml(soft.type) + '</span>' +
             '<span class="text-xs text-stone-400 font-mono">' + escapeHtml(soft.year) + '</span>' +
@@ -177,7 +177,7 @@
 
       return (
         '<a href="' + escapeHtml(link.url) + '" target="_blank" rel="noopener noreferrer" ' +
-          'class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold rounded-md border-2 border-stone-200 text-stone-700 hover:border-gold hover:text-gold hover:bg-gold/5 transition-colors" ' +
+          'class="inline-flex items-center gap-1.5 px-4 py-2 text-sm font-semibold rounded-md border-2 border-stone-200 text-stone-700 hover:border-uf-blue hover:text-uf-blue hover:bg-uf-blue/5 transition-colors" ' +
           'aria-label="' + label + ' - ' + escapeHtml(link.url) + '">' +
           icon +
           label +

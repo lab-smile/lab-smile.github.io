@@ -21,11 +21,14 @@
               400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
               800: '#292524', 900: '#1c1917', 950: '#0c0a09',
             },
-            gold: { DEFAULT: '#996f0a', light: '#d4a843', dark: '#7a5908', tint: '#f5e6c8', bg: '#faf6ee' },
+            uf: {
+              blue: { DEFAULT: '#0021A5', light: '#1a3fbf', dark: '#001580', tint: '#dbe4f8', bg: '#f0f3fb' },
+              orange: { DEFAULT: '#FA4616', light: '#ff6a3d', dark: '#d13a12', tint: '#fde0d8', bg: '#fff5f2' },
+            },
           },
           fontFamily: {
             sans: ['Inter', 'system-ui', 'sans-serif'],
-            serif: ['Playfair Display', 'Georgia', 'serif'],
+            display: ['Space Grotesk', 'Inter', 'system-ui', 'sans-serif'],
           },
         },
       },
@@ -35,7 +38,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- GSAP 3 + ScrollTrigger -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
@@ -53,17 +56,9 @@
   <main id="main-content">
 
     <!-- ═══════════════════════════════════════════
-         HERO SECTION — Split layout
+         HERO SECTION — Cinematic Split layout
          ═══════════════════════════════════════════ -->
-    <section class="relative bg-stone-950 overflow-hidden min-h-screen flex flex-col justify-center" id="hero" aria-label="Hero introduction">
-      <!-- Gradient mesh background -->
-      <div class="hero-gradient-mesh" aria-hidden="true"></div>
-      <!-- Floating geometric shapes -->
-      <div class="hero-shapes" aria-hidden="true">
-        <span></span><span></span><span></span><span></span>
-      </div>
-      <!-- Subtle dot pattern -->
-      <div class="absolute inset-0 opacity-[0.03]" aria-hidden="true" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23ffffff&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+    <section class="relative overflow-hidden min-h-screen flex flex-col justify-center" id="hero" aria-label="Hero introduction">
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 pt-28 md:pt-36 lg:pt-32 pb-20 md:pb-28 lg:pb-32">
@@ -71,9 +66,9 @@
           <!-- Left: Text content -->
           <div class="lg:w-7/12 text-center lg:text-left">
             <div class="hero-tag gsap-fade-up mb-6">University of Florida &middot; SMILE Lab</div>
-            <div class="hero-gold-line gsap-fade-up mb-6 mx-auto lg:mx-0"></div>
 
-            <h1 class="font-serif font-bold text-white leading-tight gsap-fade-up mb-5" style="font-size: clamp(2.25rem, 4.5vw, 4rem); letter-spacing: -0.03em;">
+
+            <h1 class="font-display font-bold text-white leading-none gsap-fade-up mb-5" style="font-size: clamp(3.25rem, 7vw, 6rem); letter-spacing: -0.04em;">
               Dr. Ruogu "Rena" Fang
             </h1>
 
@@ -85,7 +80,7 @@
             </p>
 
             <p class="text-white/70 text-base leading-relaxed gsap-fade-up mb-10 max-w-xl mx-auto lg:mx-0">
-              Pioneering <strong class="text-gold-light">AI-empowered precision brain health</strong> &amp; <strong class="text-gold-light">brain-inspired AI</strong>. Ranked <span class="text-gold-light font-semibold">Top 100</span> worldwide in image analysis.
+              Pioneering <strong class="text-uf-orange-light">AI-empowered precision brain health</strong> &amp; <strong class="text-uf-orange-light">brain-inspired AI</strong>. Ranked <span class="text-uf-orange-light font-semibold">Top 100</span> worldwide in image analysis.
             </p>
 
             <!-- CTA Buttons -->
@@ -104,43 +99,38 @@
           <!-- Right: Photo + stats card -->
           <div class="lg:w-5/12 gsap-fade-up">
             <div class="relative">
-              <!-- Glow effect behind photo -->
-              <div class="hero-photo-glow" aria-hidden="true"></div>
               <!-- Profile image -->
               <div class="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img src="../img/personal/personal-ufl.jpg" alt="Dr. Ruogu Fang, Associate Professor of Biomedical Engineering at the University of Florida" class="w-full aspect-[4/5] object-cover object-top" loading="eager">
-                <!-- Gold gradient overlay at bottom -->
-                <div class="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-stone-950/90 via-stone-950/40 to-transparent" aria-hidden="true"></div>
+                <!-- Gradient overlay at bottom -->
+                <div class="absolute bottom-0 left-0 right-0 h-2/5 bg-gradient-to-t from-[#001580]/90 via-[#001580]/40 to-transparent" aria-hidden="true"></div>
               </div>
               <!-- Glassmorphism stats card (offset below photo) -->
               <div class="hero-stats-glass relative -mt-10 mx-4 z-10">
                 <div class="flex justify-around text-center">
                   <div>
-                    <div class="text-2xl font-serif font-bold text-gold" data-counter="300">300+</div>
+                    <div class="text-2xl font-display font-bold text-uf-orange" data-counter="300">300+</div>
                     <div class="text-xs text-white/70 uppercase tracking-wider mt-1">Publications</div>
                   </div>
                   <div class="w-px bg-white/15" aria-hidden="true"></div>
                   <div>
-                    <div class="text-2xl font-serif font-bold text-gold" data-counter="30">30+</div>
+                    <div class="text-2xl font-display font-bold text-uf-orange" data-counter="30">30+</div>
                     <div class="text-xs text-white/70 uppercase tracking-wider mt-1">Team Members</div>
                   </div>
                   <div class="w-px bg-white/15" aria-hidden="true"></div>
                   <div>
-                    <div class="text-2xl font-serif font-bold text-gold" data-counter="10">10+</div>
+                    <div class="text-2xl font-display font-bold text-uf-orange" data-counter="10">10+</div>
                     <div class="text-xs text-white/70 uppercase tracking-wider mt-1">Years</div>
                   </div>
                 </div>
               </div>
-              <!-- Gold accent corners (decorative) -->
-              <div class="absolute -top-3 -right-3 w-24 h-24 border-t-2 border-r-2 border-gold rounded-tr-2xl pointer-events-none" aria-hidden="true"></div>
-              <div class="absolute -bottom-8 -left-3 w-24 h-24 border-b-2 border-l-2 border-gold rounded-bl-2xl pointer-events-none" aria-hidden="true"></div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Bottom gold line -->
-      <div class="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+      <!-- Bottom gradient separator line -->
+      <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-uf-blue to-uf-orange/60"></div>
     </section>
 
 
@@ -151,13 +141,13 @@
       <div class="container">
         <div class="text-center mb-12 gsap-fade-up">
           <span class="section-label">Focus Areas</span>
-          <h2 id="research-heading" class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Research Highlights</h2>
+          <h2 id="research-heading" class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-stone-950 heading-accent-center">Research Highlights</h2>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <a href="research.html" class="research-card gsap-fade-up">
             <div class="research-card-visual">
-              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
             </div>
             <div class="p-5">
               <h3 class="font-sans font-semibold text-base text-stone-900">AI-Empowered Brain Health</h3>
@@ -167,7 +157,7 @@
 
           <a href="research.html" class="research-card gsap-fade-up">
             <div class="research-card-visual">
-              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
             </div>
             <div class="p-5">
               <h3 class="font-sans font-semibold text-base text-stone-900">Brain-Inspired AI</h3>
@@ -177,7 +167,7 @@
 
           <a href="research.html" class="research-card gsap-fade-up">
             <div class="research-card-visual">
-              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
+              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
             </div>
             <div class="p-5">
               <h3 class="font-sans font-semibold text-base text-stone-900">Medical Image Analysis</h3>
@@ -187,7 +177,7 @@
 
           <a href="research.html" class="research-card gsap-fade-up">
             <div class="research-card-visual">
-              <svg class="w-12 h-12 text-gold research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
             </div>
             <div class="p-5">
               <h3 class="font-sans font-semibold text-base text-stone-900">Foundation Models</h3>
@@ -230,7 +220,7 @@
               <h3 class="font-sans font-bold text-base text-stone-900 mb-3">Open Positions</h3>
               <p class="text-sm text-stone-600 mb-2"><strong>Postdoc:</strong> Fully funded in Medical AI, brain-inspired AI, and precision brain health.</p>
               <p class="text-sm text-stone-600 mb-3"><strong>Ph.D.:</strong> Multiple fully-funded positions in generative AI, foundation models, and digital twins.</p>
-              <a href="openings.html" class="inline-flex items-center gap-1 text-gold font-semibold text-sm hover:gap-2 transition-all">
+              <a href="openings.html" class="inline-flex items-center gap-1 text-uf-blue font-semibold text-sm hover:gap-2 transition-all">
                 Learn more
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               </a>
@@ -240,7 +230,7 @@
           <!-- Right: Bio -->
           <div class="lg:w-7/12 gsap-slide-right">
             <span class="section-label">About</span>
-            <h2 id="about-heading" class="text-3xl md:text-4xl font-serif font-bold text-stone-950 mb-8 heading-accent">The SMILE Lab</h2>
+            <h2 id="about-heading" class="text-4xl md:text-5xl font-display font-bold text-stone-950 mb-8 heading-accent">The SMILE Lab</h2>
             <div class="prose prose-stone max-w-none text-base leading-relaxed space-y-5">
               <p>An AI researcher in medicine and healthcare, <strong>Dr. Ruogu Fang</strong> is a tenured Associate Professor and Pruitt Family Endowed Faculty Fellow in the J. Crayton Pruitt Family Department of Biomedical Engineering at the University of Florida. Her research encompasses two principal themes: <strong>AI-empowered precision brain health</strong> and <strong>brain/bio-inspired AI</strong>.</p>
 
@@ -257,14 +247,14 @@
               <h3 class="font-sans font-bold text-sm text-stone-500 uppercase tracking-wider mb-4">Education</h3>
               <div class="flex flex-col sm:flex-row gap-6">
                 <div class="flex items-start gap-3">
-                  <div class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
+                  <div class="w-2 h-2 rounded-full bg-uf-blue mt-2 flex-shrink-0"></div>
                   <div>
                     <p class="font-semibold text-stone-900 text-sm">Ph.D. Electrical &amp; Computer Engineering</p>
                     <p class="text-xs text-stone-500">Cornell University</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-3">
-                  <div class="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0"></div>
+                  <div class="w-2 h-2 rounded-full bg-uf-blue mt-2 flex-shrink-0"></div>
                   <div>
                     <p class="font-semibold text-stone-900 text-sm">B.E. Information Engineering</p>
                     <p class="text-xs text-stone-500">Zhejiang University</p>
@@ -285,7 +275,7 @@
       <div class="container">
         <div class="text-center mb-12 gsap-fade-up">
           <span class="section-label">Updates</span>
-          <h2 id="news-heading" class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Latest News</h2>
+          <h2 id="news-heading" class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-stone-950 heading-accent-center">Latest News</h2>
         </div>
 
         <div class="max-w-4xl mx-auto space-y-3" id="news-list">
@@ -344,7 +334,7 @@
           <!-- Left: Primary positions -->
           <div class="lg:w-1/2 gsap-fade-up">
             <span class="section-label">Academic Positions</span>
-            <h2 id="affiliations-heading" class="text-3xl font-serif font-bold text-stone-950 mb-8 heading-accent">Affiliations</h2>
+            <h2 id="affiliations-heading" class="text-4xl font-display font-bold text-stone-950 mb-8 heading-accent">Affiliations</h2>
 
             <div class="space-y-4">
               <div class="affiliation-card">
@@ -391,38 +381,38 @@
       <div class="container relative z-10">
         <div class="text-center mb-12 gsap-fade-up">
           <span class="section-label">Recognition</span>
-          <h2 id="awards-heading" class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Selected Honors</h2>
+          <h2 id="awards-heading" class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-stone-950 heading-accent-center">Selected Honors</h2>
         </div>
 
         <div class="max-w-5xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gsap-fade-up">
             <div class="card award-card text-center py-6">
-              <div class="text-2xl font-serif font-bold text-gold mb-1">2025</div>
+              <div class="text-2xl font-display font-bold text-uf-blue mb-1">2025</div>
               <p class="font-semibold text-sm text-stone-900">Stanford Science Faculty Fellowship</p>
               <p class="text-xs text-stone-500 mt-1">Stanford University</p>
             </div>
             <div class="card award-card text-center py-6">
-              <div class="text-2xl font-serif font-bold text-gold mb-1">2024</div>
+              <div class="text-2xl font-display font-bold text-uf-blue mb-1">2024</div>
               <p class="font-semibold text-sm text-stone-900">NAI Senior Member</p>
               <p class="text-xs text-stone-500 mt-1">National Academy of Inventors</p>
             </div>
             <div class="card award-card text-center py-6">
-              <div class="text-2xl font-serif font-bold text-gold mb-1">2023</div>
+              <div class="text-2xl font-display font-bold text-uf-blue mb-1">2023</div>
               <p class="font-semibold text-sm text-stone-900">Rising Star Award</p>
               <p class="text-xs text-stone-500 mt-1">ASEMFL (Engineering)</p>
             </div>
             <div class="card award-card text-center py-6">
-              <div class="text-2xl font-serif font-bold text-gold mb-1">2022</div>
+              <div class="text-2xl font-display font-bold text-uf-blue mb-1">2022</div>
               <p class="font-semibold text-sm text-stone-900">Pruitt Endowed Fellowship &amp; Tenure</p>
               <p class="text-xs text-stone-500 mt-1">University of Florida</p>
             </div>
             <div class="card award-card text-center py-6">
-              <div class="text-2xl font-serif font-bold text-gold mb-1">2020</div>
+              <div class="text-2xl font-display font-bold text-uf-blue mb-1">2020</div>
               <p class="font-semibold text-sm text-stone-900">AI Catalyst Award</p>
               <p class="text-xs text-stone-500 mt-1">NVIDIA &ndash; University of Florida</p>
             </div>
             <div class="card award-card text-center py-6">
-              <div class="text-2xl font-serif font-bold text-gold mb-1">2017</div>
+              <div class="text-2xl font-display font-bold text-uf-blue mb-1">2017</div>
               <p class="font-semibold text-sm text-stone-900">Robin Sidhu Young Scientist Award</p>
               <p class="text-xs text-stone-500 mt-1">Society for Brain Mapping</p>
             </div>
@@ -440,7 +430,7 @@
         <div class="flex flex-col lg:flex-row gap-12">
           <div class="lg:w-1/2 gsap-fade-up">
             <span class="section-label">Leadership</span>
-            <h2 id="service-heading" class="text-3xl font-serif font-bold text-stone-950 mb-8 heading-accent">Professional Service</h2>
+            <h2 id="service-heading" class="text-4xl font-display font-bold text-stone-950 mb-8 heading-accent">Professional Service</h2>
 
             <div>
               <div class="service-item">
@@ -494,7 +484,7 @@
     <section class="section-padding bg-white" id="positions" aria-label="Open positions call to action">
       <div class="container">
         <div class="cta-box text-center gsap-scale-in">
-          <h2 class="text-2xl md:text-3xl font-serif font-bold text-white mb-4">Join the SMILE Lab</h2>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-white mb-4">Join the SMILE Lab</h2>
           <p class="text-stone-400 max-w-2xl mx-auto mb-8 text-base leading-relaxed">
             We are looking for passionate researchers. Fully funded Postdoc and Ph.D. positions available in Medical AI, brain-inspired AI, generative AI, foundation models, LLMs, and digital twins.
           </p>
@@ -514,7 +504,7 @@
       <div class="container">
         <div class="text-center mb-12 gsap-fade-up">
           <span class="section-label">Support</span>
-          <h2 id="partners-heading" class="text-3xl md:text-4xl font-serif font-bold text-stone-950 heading-accent-center">Funding &amp; Partners</h2>
+          <h2 id="partners-heading" class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-stone-950 heading-accent-center">Funding &amp; Partners</h2>
         </div>
         <div class="logo-marquee-wrapper gsap-fade-up" role="marquee" aria-label="Funding and partner organization logos">
           <div class="logo-marquee">
