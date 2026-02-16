@@ -202,22 +202,22 @@ h1, h2, h3, .heading {
 }
 
 .site-nav-bar {
-  backdrop-filter: blur(20px) saturate(200%);
-  -webkit-backdrop-filter: blur(20px) saturate(200%);
-  background: rgba(255, 255, 255, 0.55);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  background: rgba(255, 255, 255, 0.45);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
 .site-nav-bar.header-scrolled {
-  backdrop-filter: blur(20px) saturate(200%);
-  -webkit-backdrop-filter: blur(20px) saturate(200%);
-  background: rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid rgba(0, 33, 165, 0.08);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9),
-              0 4px 30px rgba(0, 33, 165, 0.07),
-              0 1px 3px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(24px) saturate(200%);
+  -webkit-backdrop-filter: blur(24px) saturate(200%);
+  background: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(0, 33, 165, 0.06);
+  box-shadow: 0 4px 30px rgba(0, 33, 165, 0.06),
+              0 1px 2px rgba(0, 0, 0, 0.04),
+              inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 /* Transparent header for homepage hero overlay */
@@ -231,7 +231,8 @@ h1, h2, h3, .heading {
   margin-top: -4rem;
 }
 .header-transparent:not(.header-solid) #site-header header,
-.header-transparent:not(.header-solid) header#site-header {
+.header-transparent:not(.header-solid) header#site-header,
+.header-transparent:not(.header-solid) .site-nav-bar {
   background: transparent !important;
   border-bottom-color: transparent !important;
   backdrop-filter: none !important;
@@ -549,15 +550,6 @@ h1, h2, h3, .heading {
 section[class*="bg-stone-900"] {
   background: linear-gradient(135deg, var(--uf-blue-dark) 0%, var(--uf-blue) 60%, #1a3fbf 100%) !important;
   position: relative;
-}
-section[class*="bg-stone-900"]::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--gradient-blue-orange);
 }
 section[class*="bg-stone-900"] h1,
 section[class*="bg-stone-900"] h2,
@@ -1201,28 +1193,144 @@ footer a[aria-label]:hover svg {
 
 
 /* ═══════════════════════════════════════════════════
-   21. PAGE HEADERS (Subpages)
+   21. PAGE HEADERS (Subpages) — Cinematic Glassmorphism
    ═══════════════════════════════════════════════════ */
 
 .page-header {
-  background: var(--stone-950);
+  background: linear-gradient(135deg, #000d4d 0%, var(--uf-blue-dark) 30%, var(--uf-blue) 70%, #1a3fbf 100%);
   color: var(--white);
   position: relative;
   overflow: hidden;
+  padding: 5rem 0 4rem;
 }
+
+/* Animated gradient orbs */
 .page-header::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background:
-    radial-gradient(ellipse 50% 80% at 70% 50%, rgba(0, 33, 165, 0.08) 0%, transparent 60%);
+  width: 500px;
+  height: 500px;
+  top: -200px;
+  right: -100px;
+  background: radial-gradient(circle, rgba(250, 70, 22, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: headerOrb1 8s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+.page-header::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  bottom: -300px;
+  left: -150px;
+  background: radial-gradient(circle, rgba(0, 33, 165, 0.25) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: headerOrb2 10s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+@keyframes headerOrb1 {
+  0%   { transform: translate(0, 0) scale(1); opacity: 0.6; }
+  100% { transform: translate(-40px, 30px) scale(1.15); opacity: 1; }
+}
+@keyframes headerOrb2 {
+  0%   { transform: translate(0, 0) scale(1); opacity: 0.5; }
+  100% { transform: translate(30px, -20px) scale(1.1); opacity: 0.8; }
+}
+
+/* Dot grid pattern overlay */
+.page-header-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.07) 1px, transparent 1px);
+  background-size: 24px 24px;
   pointer-events: none;
 }
 
-/* Legacy subpage header selector */
+/* Glass panel for header content */
+.page-header-glass {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2),
+              inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+/* Breadcrumb / page label */
+.page-header-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--uf-orange);
+  margin-bottom: 0.75rem;
+}
+.page-header-label svg {
+  width: 14px;
+  height: 14px;
+  opacity: 0.7;
+}
+
+/* Page title in header */
+.page-header h1 {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--white);
+}
+
+/* Subtitle */
+.page-header-subtitle {
+  margin-top: 0.75rem;
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.5;
+  max-width: 36rem;
+}
+
+/* Orange accent line under title */
+.page-header-accent {
+  width: 48px;
+  height: 3px;
+  background: var(--gradient-blue-orange);
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+
+/* Bottom gradient separator */
+.page-header-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-blue-orange);
+  z-index: 3;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .page-header {
+    padding: 4rem 0 3rem;
+  }
+  .page-header-glass {
+    padding: 1.5rem 1.5rem;
+    border-radius: 0.75rem;
+  }
+}
+
+/* Legacy subpage header selector (hide old styles, now using .page-header) */
 section[class*="bg-stone-900"][class*="text-white"][class*="py-12"] {
   background: var(--stone-950) !important;
 }
