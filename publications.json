@@ -1,5 +1,33 @@
 [
     {
+        "title": "REVEAL: Multimodal Vision\u2013Language Alignment of Retinal Morphometry and Clinical Risks for Incident AD and Dementia Prediction",
+        "type": "Conference",
+        "authors": "Seowung Leem, Lin Gu, Chenyu You, Kuang Gong, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Imaging with Deep Learning (MIDL), Jul 8\u2013Jul 10, 2026, Taipei, Taiwan, ROC",
+        "publication_year": "July 2026",
+        "image_src": "img/pubs/MIDL.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://openreview.net/pdf/0de734cdf86d227b9299e18d23ff9f7b01af97eb.pdf"
+        },
+        "abstract": "The retina provides a unique, noninvasive window into Alzheimer’s disease and dementia, capturing early structural changes through morphometric features, while systemic and lifestyle risk factors reflect well-established contributors to AD and dementia susceptibility long before clinical symptom onset. However, current retinal analysis frameworks typically model imaging and risk factors separately, preventing them from capturing the joint multimodal patterns that are critical for early risk prediction. Moreover, existing methods rarely incorporate mechanisms to organize or align patients with similar retinal and clinical characteristics, limiting their ability to learn coherent cross-modal associations. To address these limitations, we introduce REVEAL (REtinal-risk Vision-language Early Alzheimer’sLearning) that aligns color fundus photographs with individualized disease-specific risk profiles for incident AD and dementia prediction on average 8 years before diagnosis (range: 1–11 years). Because real-world risk factors are structured questionnaire data, we first translate them into clinically interpretable narratives compatible with pretrained visionlanguage models (VLMs). We further propose a group-aware contrastive learning (GACL) strategy that clusters patients with similar retinal morphometry and risk factors as positive pairs, strengthening multimodal alignment. This unified representation-learning framework substantially outperforms state-of-the-art retinal imaging models paired with clinical text encoders, as well as general VLMs, demonstrating the value of jointly modeling retinal biomarkers and clinical risk factors. By providing a generalizable, noninvasive approach for early AD and dementia risk stratification, REVEAL has the potential to enable earlier interventions and improve preventive care at the population level.",
+        "data_year": "2026"
+    },
+    {
+        "title": "BETA: Resting-state fMRI Biotypes for tDCS Efficacy in Anxiety among Older Adults at Risk for Alzheimer\u2019s Disease",
+        "type": "Conference",
+        "authors": "Skylar Stolte\u2020, Junfu Cheng\u2020, Chintan Acharya, Lin Gu, Andrew O\u2019Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Imaging with Deep Learning (MIDL), Jul 8\u2013Jul 10, 2026, Taipei, Taiwan, ROC (\u2020: co-first authors)",
+        "publication_year": "July 2026",
+        "image_src": "img/pubs/MIDL.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://openreview.net/pdf/547422b30c5c062965d31f8aaf7923e293d3fd14.pdf"
+        },
+        "abstract": "Anxiety is usually gauged by self-report, yet a single symptom level can reflect disparate neural circuitry. In Alzheimer’s disease and related dementias (ADRD) this heterogeneity becomes a barrier to effective neuromodulation: some patients may benefit from transcranial direct-current stimulation (tDCS), while others may not. To overcome this obstacle, we introduced BETA (Biotypes for tDCS Efficacy in Anxiety), a data-driven pipeline that uses resting-state fMRI functional connectivity to derive anxiety subtypes that are intrinsically linked to tDCS response. A transformer-based variational autoencoder compresses high-dimensional connectivity into a 50-dimensional latent embedding that emphasizes networks implicated in cognitive aging and anxiety. A deep-embedded clustering loss, regularized by a clinically informed term that pulls together individuals who exhibit similar post-tDCS anxiety change, yields four distinct subtypes. Across all subtypes, disrupted coupling between sensory-processing and higher-order cognitive regions emerges as a common hallmark. Crucially, one cluster is resistant to frontal-lobe tDCS, whereas two clusters demonstrate significant anxiety reduction following stimulation. The responsive subtypes are defined by strengthened connectivity between the lateral occipital cortex—superior division (sLOC) and medial frontal cortex (MedFC), and between sLOC and the intracalcarine cortex (ICC). BETA demonstrates that fMRI-based subtyping can directly identify which patients are likely to benefit from tDCS, providing a concrete roadmap for precision psychiatry in ADRD and facilitating tailored therapeutic strategies for anxiety.",
+        "data_year": "2026"
+    },
+    {
         "title": "Integrating Retinal Fundus Imaging and Computable Phenotypes for Subphenotype Discovery and LLM-Assisted Early and Late Onset Alzheimer's Diagnosis",
         "type": "Conference",
         "authors": "Zhimin Zong, <u><b>Ruogu Fang</b></u>",
