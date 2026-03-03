@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="SMILE Lab Research - AI-empowered brain health, brain-inspired AI, deep learning, and medical image analysis at the University of Florida">
+ <title>Research | SMILE Lab</title>
+ <link rel="shortcut icon" href="../img/misc/ufl.png">
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script>
+ tailwind.config = {
+ theme: {
+ extend: {
+ colors: {
+ stone: {
+ 50: '#fafaf9', 100: '#f5f5f4', 200: '#e7e5e4', 300: '#d6d3d1',
+ 400: '#a8a29e', 500: '#78716c', 600: '#57534e', 700: '#44403c',
+ 800: '#292524', 900: '#1c1917', 950: '#0c0a09',
+ },
+ uf: { blue: { DEFAULT: '#111111', light: '#2a2a2a', dark: '#0a0a0a', tint: '#f0ebe0', bg: '#f5f0e8' }, orange: { DEFAULT: '#C9A84C', light: '#D4B96A', dark: '#A8891F', tint: '#FBF0D0', bg: '#FFF8E8' }, },
+ },
+ fontFamily: {
+ sans: ['Lora', 'Georgia', 'serif'],
+ display: ['Playfair Display', 'Georgia', 'serif'],
+ },
+ },
+ },
+ }
+ </script>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+ <!-- GSAP 3 + ScrollTrigger -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+ <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="font-sans bg-white text-stone-700 antialiased">
+ <div id="site-header"></div>
+
+ <main id="main-content">
+ <!-- Page Header -->
+ <section class="page-header">
+   <div class="page-header-grid"></div>
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+       <div class="page-header-label">
+         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+         SMILE Lab
+       </div>
+       <h1>Research</h1>
+       <p class="page-header-subtitle">Advancing AI for brain health and drawing inspiration from the brain to build better AI.</p>
+       <div class="page-header-accent"></div>
+   </div>
+   <div class="page-header-bottom"></div>
+ </section>
+
+ <!-- Research Overview -->
+ <section class="py-12 md:py-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="bg-white rounded-2xl shadow-sm border border-stone-100 p-6 md:p-10">
+ <h2 class="text-2xl font-bold mb-4">Overview</h2>
+ <p class="text-stone-700 leading-relaxed mb-6">
+ The SMILE Lab's research encompasses two principal themes: <strong class="text-stone-900">AI-Empowered Precision Brain Health</strong> and <strong class="text-stone-900">Brain-Inspired AI</strong>. We develop novel machine learning and deep learning methods to understand, diagnose, and treat neurological conditions, while simultaneously leveraging principles from neuroscience to design next-generation AI architectures. Our interdisciplinary approach bridges biomedical engineering, computer science, and clinical neuroscience to create translational impact.
+ </p>
+ <figure class="mt-6">
+ <img src="../img/research/overvew.png" alt="Overview diagram of SMILE Lab research themes showing the intersection of AI-empowered brain health and brain-inspired AI" class="w-full rounded-lg" loading="lazy">
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <!-- Research Tree -->
+ <section class="pb-12 md:pb-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <div class="bg-white rounded-2xl shadow-sm border border-stone-100 p-6 md:p-10">
+ <h2 class="text-2xl font-bold mb-4">Research Tree</h2>
+ <p class="text-stone-700 leading-relaxed mb-6">
+ Our research spans multiple interconnected areas, from foundational AI methods to clinical applications. The research tree below illustrates how our projects and expertise areas connect and build upon one another.
+ </p>
+ <figure>
+ <img src="../img/research/Tree.png" alt="Research tree diagram showing the interconnected areas of SMILE Lab research including AI methods, brain health applications, and neuroscience-inspired models" class="w-full rounded-lg" loading="lazy">
+ </figure>
+ </div>
+ </div>
+ </section>
+
+ <!-- Research Areas -->
+ <section class="pb-12 md:pb-16">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h2 class="text-2xl font-bold mb-10">Research Areas</h2>
+
+ <!-- Area 1: AI-Empowered Brain Health (image left, text right) -->
+ <article class="mb-12 fade-up">
+ <div class="flex flex-col md:flex-row gap-8 items-center">
+ <div class="md:w-1/2">
+ <div class="bg-uf-blue/5 rounded-2xl p-8 flex items-center justify-center">
+ <svg class="w-32 h-32 text-uf-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/>
+ </svg>
+ </div>
+ </div>
+ <div class="md:w-1/2">
+ <h3 class="text-xl font-bold mb-3">AI-Empowered Brain Health</h3>
+ <p class="text-stone-700 leading-relaxed">
+ We develop machine learning models to decode complex brain dynamics from neuroimaging data, enabling early diagnosis and personalized treatment of neurological conditions. Our work includes early Alzheimer's disease diagnosis through retinal imaging biomarkers, predicting personalized treatment outcomes for brain disorders, and designing precision interventions via transcranial direct current stimulation (tDCS). By combining advanced AI with clinical neuroscience, we aim to transform how brain diseases are detected and treated.
+ </p>
+ </div>
+ </div>
+ </article>
+
+ <!-- Area 2: Brain-Inspired AI (text left, image right) -->
+ <article class="mb-12 fade-up">
+ <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+ <div class="md:w-1/2">
+ <div class="bg-uf-blue/5 rounded-2xl p-8 flex items-center justify-center">
+ <svg class="w-32 h-32 text-uf-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+ </svg>
+ </div>
+ </div>
+ <div class="md:w-1/2">
+ <h3 class="text-xl font-bold mb-3">Brain-Inspired AI</h3>
+ <p class="text-stone-700 leading-relaxed">
+ Drawing from how the human brain processes information, we leverage neuroscience principles such as emotion perception and visual processing to develop next-generation AI architectures. By understanding neural mechanisms underlying cognition, attention, and emotion, we design computational models that are more robust, interpretable, and efficient. This bidirectional approach not only advances AI capabilities but also deepens our understanding of the brain itself.
+ </p>
+ </div>
+ </div>
+ </article>
+
+ <!-- Area 3: Deep Learning & Foundation Models (image left, text right) -->
+ <article class="mb-12 fade-up">
+ <div class="flex flex-col md:flex-row gap-8 items-center">
+ <div class="md:w-1/2">
+ <div class="bg-uf-blue/5 rounded-2xl p-8 flex items-center justify-center">
+ <svg class="w-32 h-32 text-uf-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
+ </svg>
+ </div>
+ </div>
+ <div class="md:w-1/2">
+ <h3 class="text-xl font-bold mb-3">Deep Learning &amp; Foundation Models</h3>
+ <p class="text-stone-700 leading-relaxed">
+ We pioneer the development and application of cutting-edge deep learning techniques for biomedical challenges. Our work includes 3D vision foundation models such as BrainFounder for neuroimaging analysis, generative AI for synthesizing and augmenting medical data, digital twins for patient-specific modeling, and large language models (LLMs) for biomedical text understanding and clinical decision support. These foundation models enable scalable, generalizable solutions across diverse healthcare applications.
+ </p>
+ </div>
+ </div>
+ </article>
+
+ <!-- Area 4: Medical Image Analysis (text left, image right) -->
+ <article class="mb-12 fade-up">
+ <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+ <div class="md:w-1/2">
+ <div class="bg-uf-blue/5 rounded-2xl p-8 flex items-center justify-center">
+ <svg class="w-32 h-32 text-uf-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+ <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5A2.25 2.25 0 0022.5 18.75V5.25A2.25 2.25 0 0020.25 3H3.75A2.25 2.25 0 001.5 5.25v13.5A2.25 2.25 0 003.75 21zM10.5 8.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"/>
+ </svg>
+ </div>
+ </div>
+ <div class="md:w-1/2">
+ <h3 class="text-xl font-bold mb-3">Medical Image Analysis</h3>
+ <p class="text-stone-700 leading-relaxed">
+ Our lab has deep expertise in medical image analysis spanning CT perfusion imaging, brain segmentation, retinal imaging, domain adaptation, and image super-resolution. We develop algorithms that improve diagnostic accuracy, reduce radiation dose, and enable new clinical workflows. Our research in this area has been published in leading journals including <em>The Lancet Digital Health</em>, <em>JAMA</em>, <em>PNAS</em>, and <em>Nature Computational Science</em>, reflecting the translational impact and clinical relevance of our work.
+ </p>
+ </div>
+ </div>
+ </article>
+ </div>
+ </section>
+
+ <!-- Funded Projects -->
+ <section class="pb-12 md:pb-20">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h2 class="text-2xl font-bold mb-8">Funded Projects</h2>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+ <!-- Grant 1: NIH -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nih.jpg" alt="NIH" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NIH</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">AI Passport for Biomedical Research</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">R25GM155478</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ A workforce development initiative funded by the National Institutes of Health to train the next generation of researchers at the intersection of artificial intelligence and biomedical science.
+ </p>
+ </div>
+
+ <!-- Grant 2: UF -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/uf.png" alt="University of Florida" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">UF</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">AI for Critical Care Hypotension Treatment</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">DRPD-ROF2023</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Learning optimal treatment strategies for hypotension in critical care patients with acute kidney injury using artificial intelligence.
+ </p>
+ </div>
+
+ <!-- Grant 3: NSF -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nsf_logo.gif" alt="NSF" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NSF</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">Brain-Informed Bidirectional Deep Emotion Inference</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">NCS-FO-2318984</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Exploring the intersection of neuroscience and AI for understanding and modeling human emotion through brain-informed goal-oriented inference.
+ </p>
+ </div>
+
+ <!-- Grant 4: NIH -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nih.jpg" alt="NIH" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NIH &middot; $2.9M</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">AI for tDCS in Cognitive Aging</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">RF1/R01</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Developing AI-driven approaches to optimize transcranial direct current stimulation (tDCS) protocols for combating cognitive decline in aging populations.
+ </p>
+ </div>
+
+ <!-- Grant 5: NIH -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nih.jpg" alt="NIH" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NIH &middot; $5M</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">AI Tool for Parkinson's Diagnosis</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">U01</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Building an AI-powered diagnostic tool for early and accurate identification of Parkinson's disease using multimodal neuroimaging data.
+ </p>
+ </div>
+
+ <!-- Grant 6: NIH NIMH -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nih.jpg" alt="NIH" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NIH NIMH &middot; $2.3M</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">Attention Biases to Threat</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">R01</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Investigating attention biases to threat using AI and neuroimaging, advancing understanding and treatment of anxiety-related disorders.
+ </p>
+ </div>
+
+ <!-- Grant 7: NSF -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nsf_logo.gif" alt="NSF" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NSF &middot; $1.2M</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">Trustworthy AI for Neurodegenerative Diseases</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">SCH</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Developing trustworthy and interpretable AI systems for diagnosis, monitoring, and treatment of neurodegenerative diseases.
+ </p>
+ </div>
+
+ <!-- Grant 8: NIH NIAAA -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/nih.jpg" alt="NIH" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">NIH NIAAA &middot; $6.6M</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">Gut-Brain Axis in HIV</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">P01</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Multi-PI project investigating the gut-brain axis in HIV through AI-powered analysis, leveraging neuroimaging and multi-omics data integration.
+ </p>
+ </div>
+
+ <!-- Grant 9: Oracle -->
+ <div class="card card-uf-top flex flex-col">
+ <div class="flex items-center gap-3 mb-4">
+ <img src="../img/acknowlegements/Oracle.png" alt="Oracle" class="w-10 h-10 object-contain rounded-lg bg-white flex-shrink-0">
+ <span class="text-xs font-semibold text-uf-blue uppercase tracking-wider">Oracle</span>
+ </div>
+ <h3 class="font-bold text-lg mb-1">Explainable AI for Alzheimer's from Retinal Imaging</h3>
+ <p class="text-sm text-stone-500 mb-3 font-mono">Oracle Research Award</p>
+ <p class="text-stone-700 text-sm leading-relaxed flex-grow">
+ Developing explainable AI methods to detect early signs of Alzheimer's disease from retinal imaging, enabling non-invasive screening at scale.
+ </p>
+ </div>
+
+ </div>
+ </div>
+ </section>
+
+ <!-- Patents -->
+ <section class="pb-12 md:pb-20">
+ <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+ <h2 class="text-2xl font-bold mb-8">Patents</h2>
+ <div class="space-y-4">
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">Systems And Methods For Predicting Perfusion Images From Non-contrast Scans</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Garrett Carlton Fullerton, Simon Kato</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">U.S. Patent No. 18/230,835 &middot; Filed August 7, 2023</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">System And Methods of Predicting Parkinson's Disease Based on Retinal Images Using Machine Learning</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Maximillian Diaz</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">U.S. Patent No. 18/038,517 &middot; Filed March 24, 2023</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">System and Method for Precision Dosing For Electrical Stimulation of the Brain</h3>
+ <p class="text-sm text-stone-500 mt-1">Adam Woods, Aprinda Indahlastari, Alejandro Albizu, Ruogu Fang</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">U.S. Patent No. 18/018,734 &middot; Filed January 30, 2023</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">Collaborative Feature Ensembling Adaptation For Domain Adaptation In Unsupervised Optic Disc And Cup Segmentation</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Peng Liu</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">U.S. Patent Application No. 18/007,366 &middot; Filed January 30, 2023</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">A Machine Learning System And Method For Predicting Alzheimer's Disease Based On Retinal Fundus Images</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Jianqiao Tian</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">U.S. Patent No. 17/928,345 &middot; Filed November 29, 2022</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">Systems And Methods For Functional Task Prediction Using Dynamic Supervoxel Parcellations</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Kyle B. See, Stephen Coombes</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">PCT/US2022/081801 &middot; Filed December 16, 2022</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">Systems And Methods For Image Denoising via Adversarial Learning</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Peng Liu</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">PCT/US2021/043635</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">Multimodal CT Image Super-Resolution Via Transfer Generative Adversarial Network</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Yao Xiao</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">Provisional Patent &middot; Filed March 25, 2020</p>
+ </div>
+
+ <div class="card card-uf-top">
+ <h3 class="font-bold text-base">Neural Network Evolution Using Expedited Genetic Algorithm for Medical Image Denoising</h3>
+ <p class="text-sm text-stone-500 mt-1">Ruogu Fang, Peng Liu</p>
+ <p class="text-xs text-stone-400 mt-1 font-mono">U.S. Patent Application No. 16/558,779 &middot; Filed September 3, 2019</p>
+ </div>
+
+ </div>
+ </div>
+ </section>
+ </main>
+
+ <div id="site-footer"></div>
+ <script defer src="js/nav.js"></script>
+ <script defer src="js/reveal.js"></script>
+</body>
+</html>
