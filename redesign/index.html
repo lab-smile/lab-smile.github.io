@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="SMILE Lab - Statistical Machine Intelligence & LEarning Lab at the University of Florida, led by Dr. Ruogu Fang. AI-empowered precision brain health and brain-inspired AI.">
+  <meta name="description" content="SMILE Lab - Smart Medical Informatics Learning and Evaluation (SMILE) Lab at the University of Florida, led by Dr. Ruogu Fang. AI-empowered precision brain health and brain-inspired AI.">
   <meta name="keywords" content="Ruogu Fang, SMILE Lab, medical AI, deep learning, brain health, University of Florida, biomedical engineering">
   <meta name="author" content="Ruogu Fang">
   <title>SMILE Lab | Dr. Ruogu Fang — University of Florida</title>
@@ -46,8 +46,13 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/custom.css">
+  <!-- Visual Enhancement Layer -->
+  <link rel="stylesheet" href="css/enhancements.css">
 </head>
 <body class="font-sans bg-white text-stone-700 antialiased header-transparent">
+
+<!-- Scroll progress bar -->
+<div class="scroll-progress-bar" id="scroll-progress" aria-hidden="true"></div>
 
   <!-- Header -->
   <div id="site-header"></div>
@@ -59,6 +64,9 @@
          HERO SECTION — Cinematic Split layout
          ═══════════════════════════════════════════ -->
     <section class="relative overflow-hidden min-h-screen flex flex-col justify-center" id="hero" aria-label="Hero introduction">
+
+      <!-- Grain texture overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
 
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 pt-28 md:pt-36 lg:pt-32 pb-20 md:pb-28 lg:pb-32">
@@ -144,46 +152,98 @@
           <h2 id="research-heading" class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-stone-950 heading-accent-center">Research Highlights</h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          <a href="research.html" class="research-card gsap-fade-up">
-            <div class="research-card-visual">
-              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+
+          <!-- 1: Brain Health -->
+          <a href="research.html" class="research-feat-card gsap-fade-up">
+            <div class="flex items-start justify-between mb-5">
+              <div class="feat-icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M9.663 17h4.674M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+              </div>
+              <span class="feat-num">01</span>
             </div>
-            <div class="p-5">
-              <h3 class="font-sans font-semibold text-base text-stone-900">AI-Empowered Brain Health</h3>
-              <p class="text-sm text-stone-500 mt-2">Machine learning for brain dynamics, early Alzheimer's diagnosis, and precision interventions.</p>
-            </div>
+            <h3 class="feat-title">AI-Empowered Brain Health</h3>
+            <p class="feat-desc">Machine learning for brain dynamics, early Alzheimer's diagnosis, and precision interventions.</p>
+            <span class="feat-link">
+              Explore research
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
           </a>
 
-          <a href="research.html" class="research-card gsap-fade-up">
-            <div class="research-card-visual">
-              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          <!-- 2: Brain-Inspired AI -->
+          <a href="research.html" class="research-feat-card gsap-fade-up">
+            <div class="flex items-start justify-between mb-5">
+              <div class="feat-icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              </div>
+              <span class="feat-num">02</span>
             </div>
-            <div class="p-5">
-              <h3 class="font-sans font-semibold text-base text-stone-900">Brain-Inspired AI</h3>
-              <p class="text-sm text-stone-500 mt-2">Leveraging neuroscience principles to develop next-generation artificial intelligence.</p>
-            </div>
+            <h3 class="feat-title">Brain-Inspired AI</h3>
+            <p class="feat-desc">Leveraging neuroscience principles to develop next-generation artificial intelligence systems.</p>
+            <span class="feat-link">
+              Explore research
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
           </a>
 
-          <a href="research.html" class="research-card gsap-fade-up">
-            <div class="research-card-visual">
-              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/></svg>
+          <!-- 3: Medical Image Analysis -->
+          <a href="research.html" class="research-feat-card gsap-fade-up">
+            <div class="flex items-start justify-between mb-5">
+              <div class="feat-icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+              </div>
+              <span class="feat-num">03</span>
             </div>
-            <div class="p-5">
-              <h3 class="font-sans font-semibold text-base text-stone-900">Medical Image Analysis</h3>
-              <p class="text-sm text-stone-500 mt-2">Deep learning for CT perfusion, retinal imaging, brain segmentation, and more.</p>
-            </div>
+            <h3 class="feat-title">Medical Image Analysis</h3>
+            <p class="feat-desc">Deep learning for CT perfusion, retinal imaging, brain segmentation, and biomedical vision.</p>
+            <span class="feat-link">
+              Explore research
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
           </a>
 
-          <a href="research.html" class="research-card gsap-fade-up">
-            <div class="research-card-visual">
-              <svg class="w-12 h-12 text-uf-blue research-card-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          <!-- 4: Foundation Models -->
+          <a href="research.html" class="research-feat-card gsap-fade-up">
+            <div class="flex items-start justify-between mb-5">
+              <div class="feat-icon-box">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+              </div>
+              <span class="feat-num">04</span>
             </div>
-            <div class="p-5">
-              <h3 class="font-sans font-semibold text-base text-stone-900">Foundation Models</h3>
-              <p class="text-sm text-stone-500 mt-2">3D vision foundation models, digital twins, and generative AI for biomedical applications.</p>
-            </div>
+            <h3 class="feat-title">Foundation Models</h3>
+            <p class="feat-desc">3D vision foundation models, digital twins, and generative AI for biomedical applications.</p>
+            <span class="feat-link">
+              Explore research
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </span>
           </a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         LAB IN ACTION — YouTube Video
+         ═══════════════════════════════════════════ -->
+    <section class="video-section section-padding" id="lab-video" aria-labelledby="video-heading">
+      <div class="container relative z-10">
+        <div class="text-center mb-12 gsap-fade-up">
+          <span class="section-label">Behind the Science</span>
+          <h2 id="video-heading" class="text-4xl md:text-5xl font-display font-bold text-white heading-accent-center">Inside the SMILE Lab</h2>
+          <p class="text-stone-400 mt-6 max-w-xl mx-auto text-base leading-relaxed">A look inside the Smart Medical Informatics Learning and Evaluation (SMILE) Lab at the University of Florida.</p>
+        </div>
+        <div class="max-w-4xl mx-auto gsap-fade-up">
+          <div class="video-embed-wrap">
+            <!-- Replace NPq9THkVquw with the actual YouTube video ID -->
+            <iframe
+              src="https://www.youtube.com/embed/NPq9THkVquw?rel=0&modestbranding=1&color=white"
+              title="Inside the SMILE Lab — University of Florida"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
@@ -695,6 +755,20 @@
         });
       }
     });
+  </script>
+
+  <!-- Scroll progress bar -->
+  <script>
+    (function() {
+      var bar = document.getElementById('scroll-progress');
+      if (!bar) return;
+      function onScroll() {
+        var scrolled = window.scrollY;
+        var total = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.transform = 'scaleX(' + (total > 0 ? scrolled / total : 0) + ')';
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
   </script>
 </body>
 </html>
