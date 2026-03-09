@@ -1,5 +1,19 @@
 [
     {
+        "title": "Recent Advancements of Transcranial Direct Current Stimulation and Machine Learning: Methods, Challenges, and Opportunities",
+        "type": "Journal",
+        "authors": "Junfu Cheng, Tara Sahni, Zeyun Zhao, Skylar E. Stolte, Chenyu You, Adam J. Woods, Aprinda Indahlastari, <u><b>Ruogu Fang</b></u>",
+        "citation": "Transactions on Artificial Intelligence (TAI), Vol. 2, No. 1, 2026. DOI: 10.53941/tai.2026.100005",
+        "publication_year": "2026",
+        "image_src": "img/pubs/TAI.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciltp.com/journals/tai/articles/2602003087"
+        },
+        "abstract": "This systematic review examines how machine learning can transform transcranial direct current stimulation (tDCS) from a largely heuristic practice into a quantitatively informed, adaptive intervention paradigm. A review of 2020–2025 literature identified 16 eligible studies applying ML to tDCS research. ML techniques analyzed heterogeneous datasets—including EEG, neuroimaging, and clinical demographics—to forecast treatment outcomes and identify responsiveness markers. Support vector machines and random forests dominated the studies, reflecting limited dataset scope and exploratory work focused on early clinical phases. The authors emphasize emerging evidence showing how ML can uncover physiological patterns and optimize dose-response relationships, and advocate for multimodal data integration, physics-informed deep learning models, and closed-loop adaptive systems to advance precision neuromodulation toward real-world clinical application.",
+        "data_year": "2026"
+    },
+    {
         "title": "REVEAL: Multimodal Vision\u2013Language Alignment of Retinal Morphometry and Clinical Risks for Incident AD and Dementia Prediction",
         "type": "Conference",
         "authors": "Seowung Leem, Lin Gu, Chenyu You, Kuang Gong, <u><b>Ruogu Fang</b></u>",
