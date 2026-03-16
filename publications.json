@@ -1,5 +1,18 @@
 [
     {
+        "title": "Editorial: Artificial Intelligence in Biomedical Engineering",
+        "type": "Journal",
+        "authors": "<u><b>Ruogu Fang</b></u>, Parisa Rashidi",
+        "citation": "Current Opinion in Biomedical Engineering, March 16, 2026, Article 100661",
+        "publication_year": "2026",
+        "image_src": "img/pubs/COBE.png",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S2468451126000139"
+        },
+        "data_year": "2026"
+    },
+    {
         "title": "Recent Advancements of Transcranial Direct Current Stimulation and Machine Learning: Methods, Challenges, and Opportunities",
         "type": "Journal",
         "authors": "Junfu Cheng, Tara Sahni, Zeyun Zhao, Skylar E. Stolte, Chenyu You, Adam J. Woods, Aprinda Indahlastari, <u><b>Ruogu Fang</b></u>",
