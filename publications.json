@@ -127,6 +127,20 @@
         "data_year": "2025"
     },
     {
+        "title": "Emotional Responses to Naturalistic and AI-generated Affective Pictures: A Systematic Comparison",
+        "type": "Preprint",
+        "authors": "Faith Gilbert, Fan Yang, Ethan Smith, Sarah Gardy, Andrew Farkas, Mingzhou Ding, <u><b>Ruogu Fang</b></u>, Andreas Keil",
+        "citation": "",
+        "publication_year": "November 2025",
+        "image_src": "img/pubs/BIORXIV.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "arxiv": "https://www.biorxiv.org/content/10.1101/2025.11.03.686276v1"
+        },
+        "abstract": "Pictures depicting naturalistic scenes are widely used in studies of human emotion. However, the practical use of affective pictures is limited by several factors, including the difficulty of obtaining content-diverse, high-quality, openly accessible, and standardized stimuli that are necessary for specific research questions. The use of artificially generated (AI) pictures could address this limitation, but it is unclear if AI-generated pictures evoke reliable emotional responses. The present study sought to address these challenges by comparing emotional responses to AI-generated pictures with responses to original, standardized, pictures. In two study iterations, standardized pictures containing pleasant, neutral, and unpleasant content were selected from the International Affective Picture System (IAPS) and other sources. Then, a matched AI-counterpart was created for each original picture using generative deep neural networks. A total of 109 participants viewed the picture sets while pupil diameter and electroencephalogram (EEG) were recorded. Evaluative ratings of hedonic valence and emotional arousal were also collected. For both AI and original exemplars, pictures depicting emotional content elicited stronger responses than neutral content for ratings and EEG-derived variables, with weaker effect sizes for the AI-generated pictures. Furthermore, picture-level analyses found that ratings and EEG measures were strongly correlated between matched AI and original pictures. Pupil data also showed the expected content effects in study iteration 2, but not in iteration 1. Together, this initial study suggests that AI-generated picture sets can effectively elicit well-established self-reported affect and physiological responses, presenting a promising avenue for future studies of human emotion.",
+        "data_year": "2025"
+    },
+    {
         "title": "Revealing Neurocognitive and Behavioral Patterns by Self-Supervised Manifold Learning from Dynamic Brain Data",
         "type": "Journal",
         "authors": "Zixia Zhou, Junyan Liu, Wei Emma Wu, <b>Ruogu Fang</b>, Sheng Liu, Qingyue Wei, Rui Yan, Yi Guo, Qian Tao, Yuanyuan Wang, Md Tauhidul Islam, Lei Xing",
