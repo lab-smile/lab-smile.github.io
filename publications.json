@@ -1,5 +1,35 @@
 [
     {
+        "title": "Machine Learning Prediction of Anxiety Response to Combined tDCS and Cognitive Training Using MRI-Derived Current Density Modeling in Older Adults",
+        "type": "Conference",
+        "authors": "Junfu Cheng, Skylar E. Stolte, Zeyun Zhao, Andrew O'Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "NYC Neuromodulation Conference, 2026",
+        "publication_year": "2026",
+        "image_src": "img/pubs/Neuromodec.png",
+        "label_class": "primary",
+        "data_year": "2026"
+    },
+    {
+        "title": "Predicting Response to Combined BAT and tDCS in Knee Osteoarthritis Using Machine Learning and Baseline Neuroimaging",
+        "type": "Conference",
+        "authors": "Zeyun Zhao, Junfu Cheng, Roger Fillingim, Burel Goodin, Kim Sibille, Sam Wu, Selenia Rubio, Roland Staud, Robert Sorge, Kevin Riggs, Angela Mickle, Fadel Zeidan, Hyochol Ahn, Adam Woods, Jared Tanner, Song Lai, <u><b>Ruogu Fang</b></u>",
+        "citation": "NYC Neuromodulation Conference, 2026",
+        "publication_year": "2026",
+        "image_src": "img/pubs/Neuromodec.png",
+        "label_class": "primary",
+        "data_year": "2026"
+    },
+    {
+        "title": "Comprehensive Reconstruction Of Whole-head Neuromodulation (CROWN): A Browser-Based Platform for Automated 11-Tissue MRI Segmentation and Individualized tDCS Current Density Modeling",
+        "type": "Conference",
+        "authors": "Chintan K. Acharya, Dev Rakesh Patel, Skylar E. Stolte, Aprinda Indahlastari, <u><b>Ruogu Fang</b></u>",
+        "citation": "NYC Neuromodulation Conference, 2026",
+        "publication_year": "2026",
+        "image_src": "img/pubs/Neuromodec.png",
+        "label_class": "primary",
+        "data_year": "2026"
+    },
+    {
         "title": "Editorial: Artificial Intelligence in Biomedical Engineering",
         "type": "Journal",
         "authors": "<b>Ruogu Fang</b>, Parisa Rashidi",
