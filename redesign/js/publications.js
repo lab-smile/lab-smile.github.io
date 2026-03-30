@@ -110,6 +110,9 @@
 
       const imgSrc = pub.image_src ? `../${pub.image_src}` : '';
 
+      const dateMeta = pub.dates || pub.publication_year || pub.data_year;
+      const locationMeta = pub.location || '';
+
       html += `
         <article class="card card-uf-top mb-4">
           <div class="flex gap-5">
@@ -117,7 +120,8 @@
             <div class="flex-1 min-w-0">
               <div class="flex flex-wrap items-start gap-3">
                 <span class="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full ${badgeClass}">${escapeHtml(pub.type)}</span>
-                <span class="text-xs text-stone-400 font-mono">${escapeHtml(pub.publication_year || pub.data_year)}</span>
+                ${dateMeta ? `<span class="inline-flex items-center gap-1 text-xs text-stone-500"><svg class="w-3.5 h-3.5 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>${escapeHtml(dateMeta)}</span>` : ''}
+                ${locationMeta ? `<span class="inline-flex items-center gap-1 text-xs text-stone-500"><svg class="w-3.5 h-3.5 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>${escapeHtml(locationMeta)}</span>` : ''}
               </div>
               <h3 class="mt-2 font-semibold text-base text-stone-900 leading-snug">${pub.title}</h3>
               <p class="mt-1 text-sm text-stone-600">${pub.authors}</p>
