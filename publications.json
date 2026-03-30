@@ -3,31 +3,37 @@
         "title": "Machine Learning Prediction of Anxiety Response to Combined tDCS and Cognitive Training Using MRI-Derived Current Density Modeling in Older Adults",
         "type": "Conference",
         "authors": "Junfu Cheng, Skylar E. Stolte, Zeyun Zhao, Andrew O'Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
-        "citation": "NYC Neuromodulation Conference, 2026",
+        "citation": "NYC Neuromodulation Conference, July 31 – August 2, 2026, New York, NY, USA",
         "publication_year": "2026",
-        "image_src": "img/pubs/NYCN2026.png",
+        "image_src": "img/pubs/Neuromodec.png",
         "label_class": "primary",
-        "data_year": "2026"
+        "data_year": "2026",
+        "location": "New York, NY, USA",
+        "dates": "July 31 – August 2, 2026"
     },
     {
         "title": "Predicting Response to Combined BAT and tDCS in Knee Osteoarthritis Using Machine Learning and Baseline Neuroimaging",
         "type": "Conference",
         "authors": "Zeyun Zhao, Junfu Cheng, Roger Fillingim, Burel Goodin, Kim Sibille, Sam Wu, Selenia Rubio, Roland Staud, Robert Sorge, Kevin Riggs, Angela Mickle, Fadel Zeidan, Hyochol Ahn, Adam Woods, Jared Tanner, Song Lai, <u><b>Ruogu Fang</b></u>",
-        "citation": "NYC Neuromodulation Conference, 2026",
+        "citation": "NYC Neuromodulation Conference, July 31 – August 2, 2026, New York, NY, USA",
         "publication_year": "2026",
-        "image_src": "img/pubs/NYCN2026.png",
+        "image_src": "img/pubs/Neuromodec.png",
         "label_class": "primary",
-        "data_year": "2026"
+        "data_year": "2026",
+        "location": "New York, NY, USA",
+        "dates": "July 31 – August 2, 2026"
     },
     {
         "title": "Comprehensive Reconstruction Of Whole-head Neuromodulation (CROWN): A Browser-Based Platform for Automated 11-Tissue MRI Segmentation and Individualized tDCS Current Density Modeling",
         "type": "Conference",
         "authors": "Chintan K. Acharya, Dev Rakesh Patel, Skylar E. Stolte, Aprinda Indahlastari, <u><b>Ruogu Fang</b></u>",
-        "citation": "NYC Neuromodulation Conference, 2026",
+        "citation": "NYC Neuromodulation Conference, July 31 – August 2, 2026, New York, NY, USA",
         "publication_year": "2026",
-        "image_src": "img/pubs/NYCN2026.png",
+        "image_src": "img/pubs/Neuromodec.png",
         "label_class": "primary",
-        "data_year": "2026"
+        "data_year": "2026",
+        "location": "New York, NY, USA",
+        "dates": "July 31 – August 2, 2026"
     },
     {
         "title": "Editorial: Artificial Intelligence in Biomedical Engineering",
@@ -57,10 +63,10 @@
         "data_year": "2026"
     },
     {
-        "title": "REVEAL: Multimodal Vision\u2013Language Alignment of Retinal Morphometry and Clinical Risks for Incident AD and Dementia Prediction",
+        "title": "REVEAL: Multimodal Vision–Language Alignment of Retinal Morphometry and Clinical Risks for Incident AD and Dementia Prediction",
         "type": "Conference",
         "authors": "Seowung Leem, Lin Gu, Chenyu You, Kuang Gong, <u><b>Ruogu Fang</b></u>",
-        "citation": "Medical Imaging with Deep Learning (MIDL), Jul 8\u2013Jul 10, 2026, Taipei, Taiwan, ROC",
+        "citation": "Medical Imaging with Deep Learning (MIDL), Jul 8–Jul 10, 2026, Taipei, Taiwan, ROC",
         "publication_year": "July 2026",
         "image_src": "img/pubs/MIDL.png",
         "label_class": "primary",
@@ -68,13 +74,15 @@
             "sciencedirect": "https://openreview.net/pdf/0de734cdf86d227b9299e18d23ff9f7b01af97eb.pdf"
         },
         "abstract": "The retina provides a unique, noninvasive window into Alzheimer’s disease and dementia, capturing early structural changes through morphometric features, while systemic and lifestyle risk factors reflect well-established contributors to AD and dementia susceptibility long before clinical symptom onset. However, current retinal analysis frameworks typically model imaging and risk factors separately, preventing them from capturing the joint multimodal patterns that are critical for early risk prediction. Moreover, existing methods rarely incorporate mechanisms to organize or align patients with similar retinal and clinical characteristics, limiting their ability to learn coherent cross-modal associations. To address these limitations, we introduce REVEAL (REtinal-risk Vision-language Early Alzheimer’sLearning) that aligns color fundus photographs with individualized disease-specific risk profiles for incident AD and dementia prediction on average 8 years before diagnosis (range: 1–11 years). Because real-world risk factors are structured questionnaire data, we first translate them into clinically interpretable narratives compatible with pretrained visionlanguage models (VLMs). We further propose a group-aware contrastive learning (GACL) strategy that clusters patients with similar retinal morphometry and risk factors as positive pairs, strengthening multimodal alignment. This unified representation-learning framework substantially outperforms state-of-the-art retinal imaging models paired with clinical text encoders, as well as general VLMs, demonstrating the value of jointly modeling retinal biomarkers and clinical risk factors. By providing a generalizable, noninvasive approach for early AD and dementia risk stratification, REVEAL has the potential to enable earlier interventions and improve preventive care at the population level.",
-        "data_year": "2026"
+        "data_year": "2026",
+        "location": "Taipei, Taiwan, ROC",
+        "dates": "July 8–10, 2026"
     },
     {
-        "title": "BETA: Resting-state fMRI Biotypes for tDCS Efficacy in Anxiety among Older Adults at Risk for Alzheimer\u2019s Disease",
+        "title": "BETA: Resting-state fMRI Biotypes for tDCS Efficacy in Anxiety among Older Adults at Risk for Alzheimer’s Disease",
         "type": "Conference",
-        "authors": "Skylar Stolte\u2020, Junfu Cheng\u2020, Chintan Acharya, Lin Gu, Andrew O\u2019Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
-        "citation": "Medical Imaging with Deep Learning (MIDL), Jul 8\u2013Jul 10, 2026, Taipei, Taiwan, ROC (\u2020: co-first authors)",
+        "authors": "Skylar Stolte†, Junfu Cheng†, Chintan Acharya, Lin Gu, Andrew O’Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "Medical Imaging with Deep Learning (MIDL), Jul 8–Jul 10, 2026, Taipei, Taiwan, ROC (†: co-first authors)",
         "publication_year": "July 2026",
         "image_src": "img/pubs/MIDL.png",
         "label_class": "primary",
@@ -82,7 +90,9 @@
             "sciencedirect": "https://openreview.net/pdf/547422b30c5c062965d31f8aaf7923e293d3fd14.pdf"
         },
         "abstract": "Anxiety is usually gauged by self-report, yet a single symptom level can reflect disparate neural circuitry. In Alzheimer’s disease and related dementias (ADRD) this heterogeneity becomes a barrier to effective neuromodulation: some patients may benefit from transcranial direct-current stimulation (tDCS), while others may not. To overcome this obstacle, we introduced BETA (Biotypes for tDCS Efficacy in Anxiety), a data-driven pipeline that uses resting-state fMRI functional connectivity to derive anxiety subtypes that are intrinsically linked to tDCS response. A transformer-based variational autoencoder compresses high-dimensional connectivity into a 50-dimensional latent embedding that emphasizes networks implicated in cognitive aging and anxiety. A deep-embedded clustering loss, regularized by a clinically informed term that pulls together individuals who exhibit similar post-tDCS anxiety change, yields four distinct subtypes. Across all subtypes, disrupted coupling between sensory-processing and higher-order cognitive regions emerges as a common hallmark. Crucially, one cluster is resistant to frontal-lobe tDCS, whereas two clusters demonstrate significant anxiety reduction following stimulation. The responsive subtypes are defined by strengthened connectivity between the lateral occipital cortex—superior division (sLOC) and medial frontal cortex (MedFC), and between sLOC and the intracalcarine cortex (ICC). BETA demonstrates that fMRI-based subtyping can directly identify which patients are likely to benefit from tDCS, providing a concrete roadmap for precision psychiatry in ADRD and facilitating tailored therapeutic strategies for anxiety.",
-        "data_year": "2026"
+        "data_year": "2026",
+        "location": "Taipei, Taiwan, ROC",
+        "dates": "July 8–10, 2026"
     },
     {
         "title": "Integrating Retinal Fundus Imaging and Computable Phenotypes for Subphenotype Discovery and LLM-Assisted Early and Late Onset Alzheimer's Diagnosis",
@@ -96,7 +106,9 @@
             "sciencedirect": "https://spie.org/medical-imaging/presentation/Integrating-retinal-fundus-imaging-and-computable-phenotypes-for-subphenotype-discovery/13926-89"
         },
         "abstract": "Alzheimer’s disease (AD) exhibits clinical heterogeneity, necessitating improved subtyping methods. We combine fundus imaging and computable phenotypes to identify AD subphenotypes linked to early- and late-onset disease. Retinal biomarkers are extracted and analyzed using machine learning, revealing distinct associations with disease progression. A large language model (LLM) then integrates these features to classify AD subphenotypes and suggest clinical next steps. Our approach demonstrates how non-invasive retinal imaging and AI-driven diagnostics can enhance early AD detection and personalized care. This work bridges ophthalmology, neurology, and AI, offering a scalable tool for precision medicine in neurodegenerative disease.",
-        "data_year": "2026"
+        "data_year": "2026",
+        "location": "Vancouver, BC, Canada",
+        "dates": "February 15–19, 2026"
     },
     {
         "title": "Diagnostically competitive performance of a physiology-informed generative multi-task network for contrast-free CT perfusion",
@@ -159,7 +171,7 @@
     {
         "title": "Emotional Responses to Naturalistic and AI-generated Affective Pictures: A Systematic Comparison",
         "type": "Preprint",
-        "authors": "Faith Gilbert, Fan Yang, Ethan Smith, Sarah Gardy, Andrew Farkas, Mingzhou Ding, b>Ruogu Fang</b>, Andreas Keil",
+        "authors": "Faith Gilbert, Fan Yang, Ethan Smith, Sarah Gardy, Andrew Farkas, Mingzhou Ding, <b>Ruogu Fang</b>, Andreas Keil",
         "citation": "",
         "publication_year": "November 2025",
         "image_src": "img/pubs/BIORXIV.jpg",
@@ -202,55 +214,63 @@
         "title": "Attention-Based Multimodal Modeling of Electric Field and Clinico-Demographic Features Predicts State Anxiety Response to tDCS in Older Adults",
         "type": "Conference",
         "authors": "Junfu Cheng, Aprinda Indahlastari, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, San Diego, October 2025",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 8–12, 2025, San Diego, CA, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/2025/annualmeeting"
         },
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "San Diego, CA, USA",
+        "dates": "October 8–12, 2025"
     },
     {
         "title": "Physical Activity Supports Subcortical Brain Health in Older Adults: Insights from the UK Biobank",
         "type": "Conference",
         "authors": "Wasif Khan, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, San Diego, October 2025",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 8–12, 2025, San Diego, CA, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/2025/annualmeeting"
         },
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "San Diego, CA, USA",
+        "dates": "October 8–12, 2025"
     },
     {
         "title": "Impacts of Head Tissue Variability on Predicted Current Density in Aging Brains",
         "type": "Conference",
         "authors": "Hart G.M., Silva G. L., Busch T.A., Iversen K. D., <b> Fang R.</b>, Woods A., Queen A. I.",
-        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, San Diego, October 2025",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 8–12, 2025, San Diego, CA, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/2025/annualmeeting"
         },
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "San Diego, CA, USA",
+        "dates": "October 8–12, 2025"
     },
     {
         "title": "Ouroboros: Single-step Diffusion Models for Cycle-consistent Forward and Inverse Rendering",
         "type": "Conference",
-        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <u><b>Ruogu Fang</b></u>\u2020, <u>Xiaohui Xie</u>\u2020, <u>Chenyu You</u>\u2020 (\u2020 co-corresponding authors)",
-        "citation": "International Conference on Computer Vision (ICCV), Hawaii, USA",
+        "authors": "Shanlin Sun, Yifan Wang, Hanwen Zhang, Yifeng Xiong, Qin Ren, <u><b>Ruogu Fang</b></u>†, <u>Xiaohui Xie</u>†, <u>Chenyu You</u>† († co-corresponding authors)",
+        "citation": "IEEE/CVF International Conference on Computer Vision (ICCV), October 19–23, 2025, Honolulu, HI, USA",
         "publication_year": "October 2025",
         "image_src": "img/pubs/ICCV2025.png",
         "label_class": "primary",
-        "external_links":{
+        "external_links": {
             "arxiv": "https://arxiv.org/pdf/2508.14461",
             "github": "https://siwensun.github.io/ouroboros-project/"
         },
         "abstract": "While multi-step diffusion models have advanced both forward and inverse rendering, existing approaches often treat these problems independently, leading to cycle inconsistency and slow inference speed. In this work, we presentOuroboros, a framework composed of two single-step diffusion models that handle forward and inverse rendering with mutual reinforcement. Our approach extends intrinsic decomposition to both indoor and outdoor scenes and introduces a cycle consistency mechanism that ensures coherence between forward and inverse rendering outputs. Experimental results demonstrate state-of-the-art performance across diverse scenes while achieving substantially faster inference speed compared to other diffusion-based methods. We also demonstrate that Ouroboroscan transfer*Equal contribution.†Corresponding authors.to video decomposition in a training-free manner, reducing temporal inconsistency in video sequences while maintaining high-quality per-frame inverse rendering.",
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "Honolulu, HI, USA",
+        "dates": "October 19–23, 2025"
     },
     {
         "title": "TRACE: applying AI language models to extract ancestry information from curated biomedical literature",
@@ -271,7 +291,7 @@
         "title": "OTSurv: A Novel Multiple Instance Learning Framework for Survival Prediction with Heterogeneity-aware Optimal Transport",
         "type": "Conference",
         "authors": "Qin Ren, Yifan Wang, <b>Ruogu Fang</b>, Haibin Ling, Chenyu You",
-        "citation": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Daejeon, Republic of Korea, 2025",
+        "citation": "28th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), September 23–27, 2025, Daejeon, Republic of Korea",
         "publication_year": "September 2025",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
@@ -280,7 +300,9 @@
             "github": "https://github.com/Y-Research-SBU/OTSurv"
         },
         "abstract": "Survival prediction using whole slide images (WSIs) can be formulated as a multiple instance learning (MIL) problem. However, existing MIL methods often fail to explicitly capture pathological heterogeneity within WSIs, both globally – through long-tailed morphological distributions, and locally – through tile-level prediction uncertainty. Optimal transport (OT) provides a principled way of modeling such heterogeneity by incorporating marginal distribution constraints. Building on this insight, we propose OTSurv, a novel MIL framework from an optimal transport perspective. Specifically, OTSurv formulates survival predictions as a heterogeneity-aware OT problem with two constraints: (1) global long-tail constraint that models prior morphological distributions to avert both mode collapse and excessive uniformity by regulating transport mass allocation, and (2) local uncertainty-aware constraint that prioritizes high-confidence patches while suppressing noise by progressively raising the total transport mass. We then recast the initial OT problem, augmented by these constraints, into an unbalanced OT formulation that can be solved with an efficient, hardware-friendly matrix scaling algorithm. Empirically, OTSurv sets new state-of-the-art results across six popular benchmarks, achieving an absolute 3.6% improvement in average C-index. In addition, OTSurv achieves statistical significance in log-rank tests and offers high interpretability, making it a powerful tool for survival prediction in digital pathology. Our codes are available at https://github.com/Y-Research-SBU/OTSurv.",
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "Daejeon, Republic of Korea",
+        "dates": "September 23–27, 2025"
     },
     {
         "title": "Association of Timing and Duration of Moderate-to-Vigorous Physical Activity with Cognitive Function and Brain Aging: A Population-Based Study Using the UK Biobank",
@@ -328,7 +350,7 @@
     {
         "title": "Population-Level Predictive Variation in Machine Learning Diagnosis of Symptomatic Bacterial Vaginosis",
         "type": "Journal",
-        "authors": "Diandra P. Ojo*, Cameron Celeste, Dion Ming, <u><b>Ruogu Fang</b></u>†, <u>Ivana K. Parker</u>\u2020 (\u2020 co-corresponding authors)",
+        "authors": "Diandra P. Ojo*, Cameron Celeste, Dion Ming, <u><b>Ruogu Fang</b></u>†, <u>Ivana K. Parker</u>† († co-corresponding authors)",
         "citation": "npj Women’s Health",
         "publication_year": "2025",
         "image_src": "img/pubs/nature.digitalmedicine.png",
@@ -343,7 +365,7 @@
         "title": "Improving Proton Dose Calculation Accuracy Using ROI-Focused AI Deep Learning Network for CBCT Based Adaptive Proton Therapy",
         "type": "Conference",
         "authors": "Zhuobiao Qiao, Weiguang Yao, Zeyu Zhang, Baoshe Zhang, Chris Beltran, Byong Yong Yi, Eric Paulson, Lei Ren, <b>Ruogu Fang</b>, Mi Huang",
-        "citation": "American Society for Radiation Oncology (ASTRO) 2025",
+        "citation": "American Society for Radiation Oncology (ASTRO) Annual Meeting, September 27 – October 1, 2025, San Francisco, CA, USA",
         "publication_year": "2025",
         "image_src": "img/pubs/ASTRO.jpg",
         "label_class": "primary",
@@ -351,7 +373,9 @@
             "sciencedirect": "https://www.astro.org/meetings-and-education/micro-sites/2025/annual-meeting"
         },
         "abstract": "",
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "San Francisco, CA, USA",
+        "dates": "September 27 – October 1, 2025"
     },
     {
         "title": "Automated Imaging Differentiation for Parkinsonism",
@@ -379,7 +403,9 @@
             "sciencedirect": "https://doi.org/10.1016/j.brs.2024.12.356"
         },
         "abstract": "Over the past few decades, the aging population has dramatically increased making it a public health concern. Cognitive aging refers to the normal trajectory of cognitive decline associated with healthy aging process. Research shows that transcranial direct current stimulation (tDCS) is a promising intervention to remediate cognitive aging non-invasively. Due to limited in-vivo measurements, MRI-derived finite element method (FEM) models have been utilized to approximate tDCS current delivery. Variation of outcomes from tDCS application can be sourced from inter-individual variability, especially the anatomical differences associated with aging. Therefore, incorporating age-related anatomical decline in older adults, such as brain atrophy and white matter hyperintensity, into electric field models is important to produce a more accurate tDCS estimation. We found significant negative correlation (p<0.001) for brain atrophy and isolated current densities in selected subregions conducted in a large sample of older adults (N=587). Integrating white matter lesions into the model resulted an overall decrease of computed current densities in the intact brain tissue by 7%. In addition, accurately representing electrode location in tDCS models is also important for estimating current distribution in the aging brain. For instance, artificially created electrodes versus real electrodes segmented from imaging data resulted in up to a 35% difference in current density in the brain. While both electrode models showed significant correlation to brain volumes, their correlation coefficients were not identical. This serves as a practical application of electric field models and demonstrates the impact of electrode selection on results. Overall, inter-individual variability and model set-up remain crucial in current dose delivery from electrical stimulation at the brain level, especially in older adults. Future studies may consider practical applications to model tDCS in the aging population to compensate for age-related factors and increase the accuracy of predictions with these models.",
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "Kobe, Japan",
+        "dates": "February 23–26, 2025"
     },
     {
         "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
@@ -393,13 +419,15 @@
         "external_links": {
             "sciencedirect": "https://papers.miccai.org/miccai-2024/793-Paper1533.html"
         },
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "Kobe, Japan",
+        "dates": "February 23–26, 2025"
     },
     {
         "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
         "type": "Conference",
         "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b> Ruogu Fang </b></u>",
-        "citation": "6th International Brain Stimulation Conference | Kobe, Japan",
+        "citation": "6th International Brain Stimulation Conference, February 23–26, 2025, Kobe, Japan",
         "publication_year": "23–26 February 2025",
         "image_src": "img/pubs/BrainStimulation2025.png",
         "label_class": "primary",
@@ -407,9 +435,10 @@
         "external_links": {
             "sciencedirect": "https://www.elsevier.com/events/conferences/all/international-brain-stimulation-conference"
         },
-        "data_year": "2025"
+        "data_year": "2025",
+        "location": "Kobe, Japan",
+        "dates": "February 23–26, 2025"
     },
-    
     {
         "title": "Disagreement on foundational principles of biological aging",
         "type": "Journal",
@@ -428,7 +457,7 @@
         "title": "Baseline Clinical Characteristics and Machine Learning Predict tDCS Treatment Outcomes for Anxiety",
         "type": "Conference",
         "authors": "Daniel Rodriguez, Junfu Cheng, Skylar Stolte, Aprinda Queen, Adam Woods,<b><u>Ruogu Fang</u></b>",
-        "citation": "BMES 2024",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 23–26, 2024, Baltimore, MD, USA",
         "publication_year": "2024",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
@@ -436,18 +465,22 @@
         "external_links": {
             "sciencedirect": "https://www.brainstimjrnl.com/article/S1935-861X(24)01297-X/fulltext"
         },
-        "data_year": "2024"
+        "data_year": "2024",
+        "location": "Baltimore, MD, USA",
+        "dates": "October 23–26, 2024"
     },
     {
         "title": "Comparison of GRACE and SynthSeg Deep Learning Models for Whole-Head Brain Segmentation",
         "type": "Conference",
         "authors": "Jason Chen, Veronica Ramos, Skylar Stolte, Aprinda Indahlastari, Adam Woods,<b><u>Ruogu Fang</u></b>",
-        "citation": "BMES 2024",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 23–26, 2024, Baltimore, MD, USA",
         "publication_year": "2024",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "abstract": "",
-        "data_year": "2024"
+        "data_year": "2024",
+        "location": "Baltimore, MD, USA",
+        "dates": "October 23–26, 2024"
     },
     {
         "title": "Phylogenetic-informed graph deep learning to classify dynamic transmission clusters in infectious disease epidemics",
@@ -510,20 +543,22 @@
         "title": "Implementation of an AI Generated Affective Picture Set: Self-report and Psychophysiological Validation",
         "type": "Conference",
         "authors": "Faith E Gilbert, Fan Yang, Andrew Farkas, Sarah M Gardy, Hannah M Engle, Angie Cordova, Ricky Cheng, Dean Sabatinelli, Mingzhou Ding, <b>Ruogu Fang</b>, <u>Andreas Keil</u>",
-        "citation": "Society for Psychophysiological Research 64th Annual Meeting",
+        "citation": "Society for Psychophysiological Research 64th Annual Meeting, October 23–26, 2024, Prague, Czech Republic",
         "publication_year": "October 23-26, 2024",
         "image_src": "img/pubs/SPR.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://sprweb.org/page/FuturePastMeetings"
         },
-        "data_year": "2024"
+        "data_year": "2024",
+        "location": "Prague, Czech Republic",
+        "dates": "October 23–26, 2024"
     },
     {
         "title": "Towards tDCS Digital Twins Using Deep Learning-Based Direct Estimation of Personalized Electrical Field Maps from T1-Weighted MRI",
         "type": "Conference",
         "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, <b><u>Ruogu Fang</u></b>",
-        "citation": "27th Medical Image Computing and Computer Assisted Intervention (MICCAI) International Conference, Marrakesh, Morocco",
+        "citation": "27th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 6–10, 2024, Marrakesh, Morocco",
         "publication_year": "October 6–10, 2024",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
@@ -532,7 +567,9 @@
             "github": "https://github.com/lab-smile/tDCS-DT"
         },
         "abstract": "Transcranial Direct Current Stimulation (tDCS) is a non-invasive brain stimulation method that applies neuromodulatory effects to the brain via low-intensity, direct current. It has shown possible positive effects in areas such as depression, substance use disorder, anxiety, and pain. Unfortunately, mixed trial results have delayed the field’s progress. Electrical current field approximation provides a way for tDCS researchers to estimate how an individual will respond to specific tDCS parameters. Publicly available physics-based stimulators have led to much progress; however, they can be error-prone, susceptible to quality issues (e.g., poor segmentation), and take multiple hours to run. Digital functional twins provide a method of estimating brain function in response to stimuli using computational methods. We seek to implement this idea for individualized tDCS. Hence, this work provides a proof-of-concept for generating electrical field maps for tDCS directly from T1-weighted magnetic resonance images (MRIs). Our deep learning method employs special loss regularizations to improve the model’s generalizability and calibration across individual scans and electrode montages. Users may enter a desired electrode montage in addition to the unique MRI for a custom output. Our dataset includes 442 unique individual heads from individuals across the adult lifespan. The pipeline can generate results on the scale of minutes, unlike physics-based systems that can take 1–3 hours. Overall, our methods will help streamline the process of individual current dose estimations for improved tDCS interventions.",
-        "data_year": "2024"
+        "data_year": "2024",
+        "location": "Marrakesh, Morocco",
+        "dates": "October 6–10, 2024"
     },
     {
         "title": "Neural Responses to Natural Versus AI-generated Affective Images",
@@ -559,17 +596,19 @@
         "data_year": "2024"
     },
     {
-        "title": "Deep Learning Analysis of Retinal Structures and Risk Factors of Alzheimer\u2019s Disease",
+        "title": "Deep Learning Analysis of Retinal Structures and Risk Factors of Alzheimer’s Disease",
         "type": "Conference",
         "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
-        "citation": "The 46th International Conference of the IEEE Engineering in Medicine and Biology Society, , Orlando, FL",
+        "citation": "46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC), July 15–19, 2024, Orlando, FL, USA",
         "publication_year": "July 15-19, 2024",
         "image_src": "img/pubs/EMBC2024.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://ieeexplore.ieee.org/document/10782580"
         },
-        "data_year": "2024"
+        "data_year": "2024",
+        "location": "Orlando, FL, USA",
+        "dates": "July 15–19, 2024"
     },
     {
         "title": "Advanced Technologies for Video Coding",
@@ -635,7 +674,7 @@
             "arxiv": "https://arxiv.org/abs/2302.03008",
             "github": "https://github.com/lab-smile/LAVA"
         },
-        "abstract": "Alzheimer\u2019s Disease (AD) is a progressive neurodegenerative disease and the leading cause of dementia. Early diagnosis is critical for patients to benefit from potential intervention and treatment. The retina has emerged as a plausible diagnostic site for AD detection owing to its anatomical connection with the brain. However, existing AI models for this purpose have yet to provide a rational explanation behind their decisions and have not been able to infer the stage of the disease\u2019s progression. Along this direction, we propose a novel model-agnostic explainable-AI framework, called Granur Neuron-leel Expliner (LAVA), an interpretation prototype that probes into intermediate layers of the Convolutional Neural Network (CNN) models to directly assess the continuum of AD from the retinal imaging without the need for longitudinal or clinical evaluations. This innovative approach aims to validate retinal vasculature as a biomarker and diagnostic modality for evaluating Alzheimer\u2019s Disease. Leveraged UK Biobank cognitive tests and vascular morphological features demonstrate significant promise and effectiveness of LAVA in identifying AD stages across the progression continuum.",
+        "abstract": "Alzheimer’s Disease (AD) is a progressive neurodegenerative disease and the leading cause of dementia. Early diagnosis is critical for patients to benefit from potential intervention and treatment. The retina has emerged as a plausible diagnostic site for AD detection owing to its anatomical connection with the brain. However, existing AI models for this purpose have yet to provide a rational explanation behind their decisions and have not been able to infer the stage of the disease’s progression. Along this direction, we propose a novel model-agnostic explainable-AI framework, called Granur Neuron-leel Expliner (LAVA), an interpretation prototype that probes into intermediate layers of the Convolutional Neural Network (CNN) models to directly assess the continuum of AD from the retinal imaging without the need for longitudinal or clinical evaluations. This innovative approach aims to validate retinal vasculature as a biomarker and diagnostic modality for evaluating Alzheimer’s Disease. Leveraged UK Biobank cognitive tests and vascular morphological features demonstrate significant promise and effectiveness of LAVA in identifying AD stages across the progression continuum.",
         "data_year": "2024"
     },
     {
@@ -656,7 +695,7 @@
         "title": "Learning on Forecasting HIV Epidemic Based on Individuals' Contact Networks",
         "type": "Conference",
         "authors": "Chaoyue Sun, Yiyang Liu, Christina Parisi, Rebecca Fisk-Hoffman, Marco Salemi, <b>Ruogu Fang</b>, Brandi Danforth, Mattia Prosperi and Simone Marini",
-        "citation": "The 17th International Conference on Health Informatics (HEALTHINF/BIOSTEC), Rome - Italy",
+        "citation": "17th International Conference on Health Informatics (HEALTHINF/BIOSTEC), February 21–23, 2024, Rome, Italy",
         "publication_year": "February 21 - 23, 2024",
         "image_src": "img/pubs/scitepress.png",
         "label_class": "primary",
@@ -664,10 +703,12 @@
             "sciencedirect": "https://doi.org/10.5220/0012375400003657"
         },
         "abstract": "Improving the diagnosis of HIV is a fundamental objective of the Ending the HIV Epidemic initiative, as it represents the initial step toward treatment and achieving undetectable status, thereby reducing transmission. To attain these objectives effectively, it is crucial to identify the groups most susceptible to HIV, allowing interventions to be tailored to their specific needs. In this study, we developed a predictive model designed to assess individual HIV risk within a high-risk contact network predicting treatment or at-risk leveraging surveillance data collected through routine HIV case interviews in Florida. Unique to our analysis, we explored the incorporation of behavioral network information with Graph Neural Networks to enhance the predictive capacity for identifying individuals within the treatment or intervention categories, when compared to models that mainly consider conventional HIV risk factors. Our deployed Graph Isomorphism Network achieved 77.3% and 73.2% balanced accuracy in inductive and transductive learning scenarios respectively, outperforming the traditional prediction algorithms that do not leverage the network structure. We then used our model to further investigate the importance of demographic and behavioral factors in the HIV risk prediction process. Our findings provide valuable insights for healthcare practitioners and policymakers in their efforts to combat HIV infection.",
-        "data_year": "2024"
+        "data_year": "2024",
+        "location": "Rome, Italy",
+        "dates": "February 21–23, 2024"
     },
     {
-        "title": "Deep Learning Predicts Prevalent and Incident Parkinson\u2019s Disease From UK Biobank Fundus Imaging",
+        "title": "Deep Learning Predicts Prevalent and Incident Parkinson’s Disease From UK Biobank Fundus Imaging",
         "type": "Journal",
         "authors": "Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora4 Jinghua Chen, Yulin Li, <u><b>Ruogu Fang</b></u>",
         "citation": "Nature Scientific Reports",
@@ -678,7 +719,7 @@
             "sciencedirect": "https://link.springer.com/article/10.1038/s41598-024-54251-1?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240213&utm_content=10.1038/s41598-024-54251-1",
             "github": "https://github.com/lab-smile/RetinaPD"
         },
-        "abstract": "Parkinson\u2019s disease is the world\u2019s fastest-growing neurological disorder. Research to elucidate the mechanisms of Parkinson\u2019s disease and automate diagnostics would greatly improve the treatment of patients with Parkinson\u2019s disease. Current diagnostic methods are expensive and have limited availability. Considering the insidious and preclinical onset and progression of the disease, a desirable screening should be diagnostically accurate even before the onset of symptoms to allow medical interventions. We highlight retinal fundus imaging, often termed a window to the brain, as a diagnostic screening modality for Parkinson\u2019s disease. We conducted a systematic evaluation of conventional machine learning and deep learning techniques to classify Parkinson\u2019s disease from UK Biobank fundus imaging. Our results suggest Parkinson\u2019s disease individuals can be differentiated from age and gender-matched healthy subjects with 68% accuracy. This accuracy is maintained when predicting either prevalent or incident Parkinson\u2019s disease. Explainability and trustworthiness are enhanced by visual attribution maps of localized biomarkers and quantified metrics of model robustness to data perturbations.",
+        "abstract": "Parkinson’s disease is the world’s fastest-growing neurological disorder. Research to elucidate the mechanisms of Parkinson’s disease and automate diagnostics would greatly improve the treatment of patients with Parkinson’s disease. Current diagnostic methods are expensive and have limited availability. Considering the insidious and preclinical onset and progression of the disease, a desirable screening should be diagnostically accurate even before the onset of symptoms to allow medical interventions. We highlight retinal fundus imaging, often termed a window to the brain, as a diagnostic screening modality for Parkinson’s disease. We conducted a systematic evaluation of conventional machine learning and deep learning techniques to classify Parkinson’s disease from UK Biobank fundus imaging. Our results suggest Parkinson’s disease individuals can be differentiated from age and gender-matched healthy subjects with 68% accuracy. This accuracy is maintained when predicting either prevalent or incident Parkinson’s disease. Explainability and trustworthiness are enhanced by visual attribution maps of localized biomarkers and quantified metrics of model robustness to data perturbations.",
         "data_year": "2024"
     },
     {
@@ -725,7 +766,7 @@
     {
         "title": "Ethnic disparity in diagnosing asymptomatic bacterial vaginosis using machine learning",
         "type": "Journal",
-        "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra P. Ojo, Emma Drobina, Adetola F. Louis-Jacques, Juan E. Gilbert, <u><b>Ruogu Fang</b></u>\u2020, Ivana Parker \u2020 <br/>\n            (\u2020 co-corresponding authors)",
+        "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra P. Ojo, Emma Drobina, Adetola F. Louis-Jacques, Juan E. Gilbert, <u><b>Ruogu Fang</b></u>†, Ivana Parker † <br/>\n            († co-corresponding authors)",
         "citation": "Nature npj Digital Medicine",
         "publication_year": "November 2023",
         "image_src": "img/pubs/nature.digitalmedicine.png",
@@ -740,33 +781,37 @@
         "title": "Ethnic Disparity in Diagnosing Asymptomatic Bacterial Vaginosis Using Machine Learning",
         "type": "Conference",
         "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra Ojo, Emma Drobina, Juan Gilbert, <b>Ruogu Fang</b>, Ivana Parker",
-        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2023, Seattle, WA, USA",
         "publication_year": "October 11-14, 2023",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
         },
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "Seattle, WA, USA",
+        "dates": "October 11–14, 2023"
     },
     {
         "title": "Feature selection in ML identifies unique bacteria to consider for fair BV diagnosis among ethnicities",
         "type": "Conference",
         "authors": "Dion Ming, Cameron Celeste, Emma Drobina, Justin Broce, Diandra Ojo, <b>Ruogu Fang</b>, Ivana Parker",
-        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2023, Seattle, WA, USA",
         "publication_year": "October 11-14, 2023",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
         },
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "Seattle, WA, USA",
+        "dates": "October 11–14, 2023"
     },
     {
         "title": "DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability",
         "type": "Conference",
         "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
-        "citation": "26th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Vancouver, Canada.",
+        "citation": "26th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 8–12, 2023, Vancouver, BC, Canada",
         "publication_year": "October 08-12, 2023",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
@@ -774,46 +819,54 @@
             "sciencedirect": "https://conferences.miccai.org/2023/papers/219-Paper3114.html",
             "github": "https://github.com/lab-smile/DOMINOplusplus"
         },
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "Vancouver, BC, Canada",
+        "dates": "October 8–12, 2023"
     },
     {
         "title": "Large Brain Models: Large-scale 3D Pretrained Deep Learning Models for Neuroimages",
         "type": "Conference",
         "authors": "Joseph Cox, Yunchao Yang, Huiwen Ju, Justin Broce, <u><b>Ruogu Fang</b></u>.",
-        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2023, Seattle, WA, USA",
         "publication_year": "October 11-14, 2023",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
         },
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "Seattle, WA, USA",
+        "dates": "October 11–14, 2023"
     },
     {
         "title": "Can Deep Convolutional Neural Network Associate Emotions with Gabor Patches?",
         "type": "Conference",
         "authors": "Seowung Leem, Andreas Keil, Peng Liu, Mingzhou Ding, <u><b>Ruogu Fang</b></u>.",
-        "citation": "Biomedical Engineering Society Annual Meeting, Seattle, WA.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2023, Seattle, WA, USA",
         "publication_year": "October 11-14, 2023",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/meetings/2023-bmes-annual-meeting"
         },
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "Seattle, WA, USA",
+        "dates": "October 11–14, 2023"
     },
     {
         "title": "Building and Evaluating an AI Generated, Standardized Affective Picture Dataset",
         "type": "Conference",
         "authors": "Faith E Gilbert, Ethan Smith, Hannah M Engle, Caitlin M Traiser, Arash Mirifar, Christian Panitz, Jourdan Pouliot, Laura C Ahumada Hernandez, , Mingzhou Ding, <b>Ruogu Fang</b>, <u>Andreas Keil</u>",
-        "citation": "Society for Psychophysiological Research 63rd Annual Meeting",
+        "citation": "Society for Psychophysiological Research 63rd Annual Meeting, September 27 – October 1, 2023, New Orleans, LA, USA",
         "publication_year": "September 27 - October 1, 2023",
         "image_src": "img/pubs/SPR.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://sprweb.org/page/FuturePastMeetings"
         },
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "New Orleans, LA, USA",
+        "dates": "September 27 – October 1, 2023"
     },
     {
         "title": "Machine-Learning Defined Precision tDCS for Improving Cognitive Function",
@@ -839,14 +892,14 @@
         "external_links": {
             "sciencedirect": "https://www.frontiersin.org/articles/10.3389/fnhum.2023.1208253/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Human_Neuroscience&id=1208253"
         },
-        "abstract": "Advancements in brain imaging and stimulation have revolutionized our understanding of the human brain, its functioning, and the associated disorders. However, the historical male-dominated culture and practice in this field and the underrepresentation of women researchers and leaders could curb its development and limit its full potential. As such, this Research Topic, \u201cWomen in brain imaging and stimulation,\u201d aims to showcase the work led by female researchers in the field and highlight their scholarship and scientific achievements at the frontier of interdisciplinary research of brain imaging and stimulation.",
+        "abstract": "Advancements in brain imaging and stimulation have revolutionized our understanding of the human brain, its functioning, and the associated disorders. However, the historical male-dominated culture and practice in this field and the underrepresentation of women researchers and leaders could curb its development and limit its full potential. As such, this Research Topic, “Women in brain imaging and stimulation,” aims to showcase the work led by female researchers in the field and highlight their scholarship and scientific achievements at the frontier of interdisciplinary research of brain imaging and stimulation.",
         "data_year": "2023"
     },
     {
         "title": "Distributed Pruning Towards Tiny Neural Networks in Federated Learning",
         "type": "Conference",
         "authors": "Hong Huang, Lan Zhang, Chaoyue Sun, <u><b>Ruogu Fang</b></u>, Xiaoyong Yuan, and Dapeng Wu.",
-        "citation": "43rd IEEE International Conference on Distributed Computing Systems (ICDCS 2023).",
+        "citation": "43rd IEEE International Conference on Distributed Computing Systems (ICDCS), July 18–21, 2023, Hong Kong, China",
         "publication_year": "July 18-21, 2023",
         "image_src": "img/pubs/IEEE.png",
         "label_class": "primary",
@@ -854,7 +907,9 @@
             "sciencedirect": "https://icdcs2023.icdcs.org/"
         },
         "abstract": "Neural network pruning is an essential technique for reducing the size and complexity of deep neural networks, enabling large-scale models on devices with limited resources. However, existing pruning approaches heavily rely on training data for guiding the pruning strategies, making them ineffective for federated learning over distributed and confidential datasets. Additionally, the memory- and computation-intensive pruning process becomes infeasible for recourse-constrained devices in federated learning. To address these challenges, we propose FedTiny, a distributed pruning framework for federated learning that generates specialized tiny models for memory- and computing-constrained devices. We introduce two key modules in FedTiny to adaptively search coarse- and finer-pruned specialized models to fit deployment scenarios with sparse and cheap local computation. First, an adaptive batch normalization selection module is designed to mitigate biases in pruning caused by the heterogeneity of local data. Second, a lightweight progressive pruning module aims to finer prune the models under strict memory and computational budgets, allowing the pruning policy for each layer to be gradually determined rather than evaluating the overall model structure. The experimental results demonstrate the effectiveness of FedTiny, which outperforms state-of-the-art approaches, particularly when compressing deep models to extremely sparse tiny models. FedTiny achieves an accuracy improvement of 2.61% while significantly reducing the computational cost by 95.91% and the memory footprint by 94.01% compared to state-of-the-art methods.",
-        "data_year": "2023"
+        "data_year": "2023",
+        "location": "Hong Kong, China",
+        "dates": "July 18–21, 2023"
     },
     {
         "title": "DOMINO: Domain-aware loss for deep learning calibration",
@@ -882,7 +937,7 @@
         "external_links": {
             "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S0197458022002299?via%3Dihub"
         },
-        "abstract": "Extracellular amyloid plaques in gray matter are the earliest pathological marker for Alzheimer\u2019s disease (AD), followed by abnormal intraneuronal tau protein accumulation. Diffusion MRI (dMRI) is an imaging technique that estimates diffusion properties of the extracellular and tissue compartments. The link between diffusion changes and amyloid and tau pathology in gray matter is not well understood. We aimed to characterize the relationship between diffusion measures and amyloid and tau deposits in the gray matter across Braak stages, as assessed by tau PET imaging, in mild cognitive impairment (MCI) and AD patients.",
+        "abstract": "Extracellular amyloid plaques in gray matter are the earliest pathological marker for Alzheimer’s disease (AD), followed by abnormal intraneuronal tau protein accumulation. Diffusion MRI (dMRI) is an imaging technique that estimates diffusion properties of the extracellular and tissue compartments. The link between diffusion changes and amyloid and tau pathology in gray matter is not well understood. We aimed to characterize the relationship between diffusion measures and amyloid and tau deposits in the gray matter across Braak stages, as assessed by tau PET imaging, in mild cognitive impairment (MCI) and AD patients.",
         "data_year": "2022"
     },
     {
@@ -917,14 +972,16 @@
         "title": "Differential Aversive and Appetitive Conditioning in Artificial Neural Networks",
         "type": "Conference",
         "authors": "Seowung Leem, Andreas Keil, Peng Liu, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
-        "citation": "Neuroscience 2022, San Diego, USA",
+        "citation": "Society for Neuroscience (SfN) Annual Meeting (Neuroscience 2022), November 12–16, 2022, San Diego, CA, USA",
         "publication_year": "Nov.12 - Nov.16, 2022",
         "image_src": "img/pubs/SfN.jpeg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2022"
         },
-        "data_year": "2022"
+        "data_year": "2022",
+        "location": "San Diego, CA, USA",
+        "dates": "November 12–16, 2022"
     },
     {
         "title": "PIMA-CT: Physical Model-Aware Cyclic Simulation and Denoising for Ultra-Low-Dose CT Restoration",
@@ -944,7 +1001,7 @@
         "title": "DOMINO: Domain-aware Model Calibration in Medical Image Segmentation",
         "type": "Conference",
         "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
-        "citation": "25th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Singapore.",
+        "citation": "25th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), September 18–22, 2022, Singapore",
         "publication_year": "September 18-22, 2022",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
@@ -952,7 +1009,9 @@
             "sciencedirect": "https://conferences.miccai.org/2022/papers/170-Paper1693.html",
             "github": "https://github.com/lab-smile/DOMINO"
         },
-        "data_year": "2022"
+        "data_year": "2022",
+        "location": "Singapore",
+        "dates": "September 18–22, 2022"
     },
     {
         "title": "Associations between Post-Discharge Care (PDC) and Cognitive Impairment-Related Hospital Readmissions for Ketoacidosis and Severe Hypoglycemia in Adults with Diabetes",
@@ -991,7 +1050,7 @@
         "data_year": "2022"
     },
     {
-        "title": "Machine Learning For Predicting Parkinson\u2019s Disease Based On Retinal Fundus Images",
+        "title": "Machine Learning For Predicting Parkinson’s Disease Based On Retinal Fundus Images",
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Max Diaz",
         "citation": "U.S. Patent Recorded on December 22, 2021",
@@ -1001,7 +1060,7 @@
         "data_year": "2021"
     },
     {
-        "title": "A Machine Learning System And Method For Predicting Alzheimer\u2019s Disease Based On Retinal Fundus Images",
+        "title": "A Machine Learning System And Method For Predicting Alzheimer’s Disease Based On Retinal Fundus Images",
         "type": "Patents",
         "authors": "<u><b>Ruogu Fang</b></u>, Jianqiao Tian",
         "citation": "T18201US001 (222107-8215). International Patent. WO 2021/243246 A1",
@@ -1123,7 +1182,7 @@
     {
         "title": "A deep neural network for emotion perception",
         "type": "Conference",
-        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020, <br/>  (\u2020 co-corresponding authors)",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding†, <u><b>Ruogu Fang</b></u>†, <br/>  († co-corresponding authors)",
         "citation": "Montreal AI & Neuroscience Annual Meeting   November 29-30, Montreal, Canada",
         "publication_year": "November 29-30, 2021",
         "image_src": "img/pubs/MAIN2021.png",
@@ -1131,12 +1190,14 @@
         "external_links": {
             "sciencedirect": "https://www.main2021.org/home"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Montreal, QC, Canada",
+        "dates": "November 29–30, 2021"
     },
     {
         "title": "Emergence of emotion selectivity in deep neural networks trained to recognize visual objects",
         "type": "Conference",
-        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding\u2020, <u><b>Ruogu Fang</b></u>\u2020,  <br/>  (\u2020 co-corresponding authors)",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding†, <u><b>Ruogu Fang</b></u>†,  <br/>  († co-corresponding authors)",
         "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
         "publication_year": "November 8-16, 2021",
         "image_src": "img/pubs/SfN.jpeg",
@@ -1144,12 +1205,14 @@
         "external_links": {
             "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2021"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Chicago, IL, USA (hybrid)",
+        "dates": "November 8–16, 2021"
     },
     {
         "title": "A deep neural network model for emotion perception",
         "type": "Conference",
-        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>\u2020, Mingzhou Ding\u2020 <br/>  (\u2020 co-corresponding authors)",
+        "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>†, Mingzhou Ding† <br/>  († co-corresponding authors)",
         "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
         "publication_year": "November 8-16, 2021",
         "image_src": "img/pubs/SfN.jpeg",
@@ -1157,12 +1220,14 @@
         "external_links": {
             "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2021"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Chicago, IL, USA (hybrid)",
+        "dates": "November 8–16, 2021"
     },
     {
         "title": "Machine-Learning Defined Precision tDCS for Improving Cognitive Function",
         "type": "Conference",
-        "authors": "Alejandro Albizu, <b>Ruogu Fang</b>, Aprinda Indahlastari, Andrew O\u2019Shea, Skylar E. Stolte, Kyle B. See, Emanuel M. Boutzoukas, Jessica N. Kraft, Nicole R. Nissim, and Adam J. Woods",
+        "authors": "Alejandro Albizu, <b>Ruogu Fang</b>, Aprinda Indahlastari, Andrew O’Shea, Skylar E. Stolte, Kyle B. See, Emanuel M. Boutzoukas, Jessica N. Kraft, Nicole R. Nissim, and Adam J. Woods",
         "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
         "publication_year": "November 8-16, 2021",
         "image_src": "img/pubs/SfN.jpeg",
@@ -1170,7 +1235,9 @@
         "external_links": {
             "sciencedirect": "https://www.sfn.org/meetings/neuroscience-2021"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Chicago, IL, USA (hybrid)",
+        "dates": "November 8–16, 2021"
     },
     {
         "title": "Identify Diabetic Retinopathy-related Clinical Concepts Using Transformer-based Natural Language Processing Methods",
@@ -1183,33 +1250,39 @@
         "external_links": {
             "sciencedirect": "https://ieeexplore.ieee.org/abstract/document/9565706/authors#authors"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Victoria, BC, Canada (virtual)",
+        "dates": "August 9, 2021"
     },
     {
         "title": "Predicting Treatment Outcome in Spinal Cord Stimulation with EEG",
         "type": "Conference",
         "authors": "Kyle See, Rachel Judy, Stephen Coombes, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Orlando, FL.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 6–9, 2021, Orlando, FL, USA",
         "publication_year": "October 6-9, 2021",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/annualmeeting"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Orlando, FL, USA",
+        "dates": "October 6–9, 2021"
     },
     {
-        "title": "Ensemble Machine Learning for Alzheimer\u2019s disease Classification from Retinal Vasculature",
+        "title": "Ensemble Machine Learning for Alzheimer’s disease Classification from Retinal Vasculature",
         "type": "Conference",
         "authors": "Hely Lin, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Orlando, FL.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 6–9, 2021, Orlando, FL, USA",
         "publication_year": "October 6-9, 2021",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.bmes.org/annualmeeting"
         },
-        "data_year": "2021"
+        "data_year": "2021",
+        "location": "Orlando, FL, USA",
+        "dates": "October 6–9, 2021"
     },
     {
         "title": "TL1 Team Approach to Predicting Response to Spinal Cord Stimulation for Chronic Low Back Pain",
@@ -1286,27 +1359,31 @@
         "title": "Machine Learning for Parkinsons Disease Diagnosis Using Fundus Eye Images",
         "type": "Conference",
         "authors": "Maximillian Diaz, Jianqiao Tian, Adolfo Ramirez-Zamora, <u><b>Ruogu Fang</b></u>",
-        "citation": "Annual Meeting of Radiology Society of North America",
+        "citation": "Annual Meeting of the Radiological Society of North America (RSNA 2020), November 29 – December 5, 2020, Virtual",
         "publication_year": "December, 2020",
         "image_src": "img/pubs/RSNA.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://press.rsna.org/timssnet/media/pressreleases/14_pr_target.cfm?ID=2229"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Virtual (Chicago, IL, USA)",
+        "dates": "November 29 – December 5, 2020"
     },
     {
         "title": "Artificial Intelligence For Characterizing Heart Failure In Cardiac Magnetic Resonance Images",
         "type": "Conference",
         "authors": "Skylar Stolte, Yonghui Wu, William R Hogan, Yan Gong, <u><b>Ruogu Fang</b></u>",
-        "citation": "American Heart Association Scientific Session",
+        "citation": "American Heart Association Scientific Sessions 2020, November 13–17, 2020, Virtual",
         "publication_year": "November 13-17, 2020",
         "image_src": "img/pubs/AHA.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.ahajournals.org/doi/abs/10.1161/circ.142.suppl_3.15036?af=R"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Virtual",
+        "dates": "November 13–17, 2020"
     },
     {
         "title": "Physiological wound assessment from coregistered and segmented tissue hemoglobin maps",
@@ -1364,27 +1441,31 @@
         "title": "Determinants of Treatment Response to Transcranial Direct Current Stimulation",
         "type": "Conference",
         "authors": "Albizu A, <strong>Fang R</strong>, Indahlastari A, Nissim NR, OShea A, Woods AJ",
-        "citation": "5th Annual NYC Neuromodulation Conference",
+        "citation": "5th Annual NYC Neuromodulation Conference, April 20–22, 2020, New York, NY, USA",
         "publication_year": "April 20-22, 2020",
         "image_src": "img/pubs/Neuromodec.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://neuromodec.com/nyc-neuromodulation-online-2020/index.html"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "New York, NY, USA",
+        "dates": "April 20–22, 2020"
     },
     {
         "title": "Building Personalized Medicine Models for Therapeutic Applications of Transcranial Electrical Stimulation",
         "type": "Conference",
         "authors": "Albizu A, Indahlastari A, Nissim NR, OShea A, <strong>Ruogu Fang</strong>, Woods AJ",
-        "citation": "48th Annual Meeting of the International Neuropsychological Society",
+        "citation": "48th Annual Meeting of the International Neuropsychological Society (INS), February 5–8, 2020, Denver, CO, USA",
         "publication_year": "February 2020",
         "image_src": "img/pubs/INS.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.the-ins.org/meetings/denver2020/"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Denver, CO, USA",
+        "dates": "February 5–8, 2020"
     },
     {
         "title": "Domain-Invariant Interpretable Fundus Image Quality Assessment",
@@ -1404,65 +1485,75 @@
         "title": "Multi-Series CT Image Super-Resolution by using Transfer Generative Adversarial Network",
         "type": "Conference",
         "authors": "Yao Xiao, Manuel M. Arreola, Izabella Barreto, Wesley E. Bolch, W. Christopher Fox, Keith Peters, Dhanashree A. Rajderkar, John H. Rees, <u><b>Ruogu Fang</b></u>",
-        "citation": "Society for Imaing Informatics in Medicine Annual Meeting in Austin, TX",
+        "citation": "Society for Imaging Informatics in Medicine (SIIM) Annual Meeting, June 24–26, 2020, Austin, TX, USA",
         "publication_year": "June 24-26, 2020",
         "image_src": "img/pubs/SIIM.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://siim.org/page/siim2020"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Austin, TX, USA",
+        "dates": "June 24–26, 2020"
     },
     {
         "title": "Transfer-GAN: Multimodal CT Image Super-Resolution via Transfer Generative Adversarial Networks",
         "type": "Conference",
         "authors": "Yao Xiao, Keith R. Peters, W. Christopher Fox, John H. Rees, Dhanashree A. Rajderkar, Manuel M. Arreola, Izabella Barreto, Wesley E. Bolch, <u><b>Ruogu Fang</b></u>",
-        "citation": "IEEE International Symposium on Biomedical Imaging in Iowa City, IA",
+        "citation": "IEEE International Symposium on Biomedical Imaging (ISBI), April 3–7, 2020, Iowa City, IA, USA",
         "publication_year": "April 3-7, 2020",
         "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Iowa City, IA, USA",
+        "dates": "April 3–7, 2020"
     },
     {
         "title": "Transfer Generative Adversarial Network for Multimodal CT Image Super-Resolution",
         "type": "Conference",
         "authors": "Yao Xiao, <strong>Ruogu Fang</strong>",
-        "citation": "SPIE Medical Imaging in Houston, TX",
+        "citation": "SPIE Medical Imaging, February 15–20, 2020, Houston, TX, USA",
         "publication_year": "February 15-20, 2020",
         "image_src": "img/pubs/SPIE.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://spie.org/conferences-and-exhibitions/past-conferences-and-exhibitions/medical-imaging-2020"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Houston, TX, USA",
+        "dates": "February 15–20, 2020"
     },
     {
         "title": "Monte Carlo Dosimetry For CT Brain Perfusion Studies Utilizing Volumetric Acquisitions",
         "type": "Conference",
-        "authors": "Justin L Brown, Daniel El Basha\u2217, Nathalie Correa, Yao Xiao, Izabella Barreto, <strong>Ruogu Fang</strong>, Chan Kim, Wesley E. Bolch",
-        "citation": "Joint International Conference on Supercomputing in Nuclear Applications + Monte Carlo",
+        "authors": "Justin L Brown, Daniel El Basha∗, Nathalie Correa, Yao Xiao, Izabella Barreto, <strong>Ruogu Fang</strong>, Chan Kim, Wesley E. Bolch",
+        "citation": "Joint International Conference on Supercomputing in Nuclear Applications + Monte Carlo (SNA+MC 2020), May 18–22, 2020, Chiba, Japan",
         "publication_year": "2020",
         "image_src": "img/pubs/SNAMC2020.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "http://snamc2020.jpn.org/"
         },
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Chiba, Japan",
+        "dates": "May 18–22, 2020"
     },
     {
         "title": "ZMAT4 and DOCK9 Variants Associated with Heart Failure in Breast Cancer Patients in the UK Biobank data",
         "type": "Conference",
         "authors": "Marwa Tantawy, Sonal Singh, Guang Yang, Matt Gitzendanner, Yiqing Chen, Yonghui Wu, <strong>Ruogu Fang</strong>, William Hogan, Yan Gong",
-        "citation": "American Society for Clinical Pharmacology and Therapeutics Annual Meeting in Houston, TX",
+        "citation": "American Society for Clinical Pharmacology and Therapeutics (ASCPT) Annual Meeting, March 18–21, 2020, Houston, TX, USA",
         "publication_year": "March 18-21, 2020",
         "image_src": "img/pubs/ASCPT.png",
         "label_class": "primary",
-        "data_year": "2020"
+        "data_year": "2020",
+        "location": "Houston, TX, USA",
+        "dates": "March 18–21, 2020"
     },
     {
         "title": "Low-Rise Gable Roof Buildings Pressure Prediction using Deep Neural Networks",
         "type": "Journal",
-        "authors": "Jianqiao Tian, Kurtis Gurley, Maximillian Diaz, Pedro L. Ferna\u0301ndez Caba\u0301n, Forrest J. Masters, <u><b>Ruogu Fang</b></u>",
+        "authors": "Jianqiao Tian, Kurtis Gurley, Maximillian Diaz, Pedro L. Fernández Cabán, Forrest J. Masters, <u><b>Ruogu Fang</b></u>",
         "citation": "Journal of Wind Engineering & Industrial Aerodynamics",
         "publication_year": "2020",
         "image_src": "img/pubs/JWEIA.jpg",
@@ -1474,9 +1565,9 @@
         "data_year": "2020"
     },
     {
-        "title": "IDRiD: Diabetic Retinopathy \u2013 Segmentation and Grading Challenge",
+        "title": "IDRiD: Diabetic Retinopathy – Segmentation and Grading Challenge",
         "type": "Journal",
-        "authors": "Prasanna Porwal, Samiksha Pachade, Manesh Kokare, Girish Deshmukh, Jaemin Son, Woong Bae, Lihong Liu, Jianzong Wang, Xinhui Liu, Liangxin Gao, TianBo Wu, Jing Xiao, Fengyan Wang, Baocai Yin, Yunzhi Wang, Gopichandh Danala, Linsheng He, Yoon Ho Choi, Yeong Chan Lee, Sang-Hyuk Jung, Zhongyu Li, Xiaodan Sui, Junyan Wu, Xiaolong Li, Ting Zhou, Janos Toth, Agnes Baran, Avinash Kori, Sai Saketh Chennamsetty, Mohammed Safwan, Varghese Alex, Xingzheng Lyu,r, Li Cheng,D, Qinhao Chu, Pengcheng Li, Xin Ji, Sanyuan Zhang, Yaxin Shen, Ling Dai$, Oindrila Saha, Rachana Sathish, Ta\u0302nia Melo, Teresa Arau\u0301jo, Balazs Harangi, Bin Sheng, <strong>Ruogu Fang</strong>, Debdoot Sheet, Andras Hajdu, Yuanjie Zheng, Ana Maria Mendonc\u0327a, Shaoting Zhang, Aure\u0301lio Campilho, Bin Zheng, Dinggang Shen, Luca Giancardo, Gwenole\u0301 Quellec, Fabrice Me\u0301riaudeau",
+        "authors": "Prasanna Porwal, Samiksha Pachade, Manesh Kokare, Girish Deshmukh, Jaemin Son, Woong Bae, Lihong Liu, Jianzong Wang, Xinhui Liu, Liangxin Gao, TianBo Wu, Jing Xiao, Fengyan Wang, Baocai Yin, Yunzhi Wang, Gopichandh Danala, Linsheng He, Yoon Ho Choi, Yeong Chan Lee, Sang-Hyuk Jung, Zhongyu Li, Xiaodan Sui, Junyan Wu, Xiaolong Li, Ting Zhou, Janos Toth, Agnes Baran, Avinash Kori, Sai Saketh Chennamsetty, Mohammed Safwan, Varghese Alex, Xingzheng Lyu,r, Li Cheng,D, Qinhao Chu, Pengcheng Li, Xin Ji, Sanyuan Zhang, Yaxin Shen, Ling Dai$, Oindrila Saha, Rachana Sathish, Tânia Melo, Teresa Araújo, Balazs Harangi, Bin Sheng, <strong>Ruogu Fang</strong>, Debdoot Sheet, Andras Hajdu, Yuanjie Zheng, Ana Maria Mendonça, Shaoting Zhang, Aurélio Campilho, Bin Zheng, Dinggang Shen, Luca Giancardo, Gwenolé Quellec, Fabrice Mériaudeau",
         "citation": "Medical Image Analysis, volume 59",
         "publication_year": "2020",
         "image_src": "img/pubs/MIA.gif",
@@ -1484,13 +1575,13 @@
         "external_links": {
             "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841519301033?via%3Dihub"
         },
-        "abstract": "Diabetic Retinopathy (DR) is the most common cause of avoidable vision loss, predominantly affecting the working-age population across the globe. Screening for DR, coupled with timely consultation and treatment, is a globally trusted policy to avoid vision loss. However, implementation of DR screening programs is challenging due to the scarcity of medical professionals able to screen a growing global diabetic population at risk for DR. Computer-aided disease diagnosis in retinal image analysis could provide a sustainable approach for such large-scale screening effort. The recent scientific advances in computing capacity and machine learning approaches provide an avenue for biomedical scientists to reach this goal. Aiming to advance the state-of-the-art in automatic DR diagnosis, a grand challenge on \u201cDiabetic Retinopathy \u2013 Segmentation and Grading\u201d was organized in conjunction with the IEEE International Symposium on Biomedical Imaging (ISBI - 2018). In this paper, we report the set-up and results of this challenge that is primarily based on Indian Diabetic Retinopathy Image Dataset (IDRiD). There were three principal sub-challenges: lesion segmentation, disease severity grading, and localization of retinal landmarks and segmentation. These multiple tasks in this challenge allow to test the generalizability of algorithms, and this is what makes it different from existing ones. It received a positive response from the scientific community with 148 submissions from 495 registrations effectively entered in this challenge. This paper outlines the challenge, its organization, the dataset used, evaluation methods and results of top-performing participating solutions. The top-performing approaches utilized a blend of clinical information, data augmentation, and an ensemble of models. These findings have the potential to enable new developments in retinal image analysis and image-based DR screening in particular.",
+        "abstract": "Diabetic Retinopathy (DR) is the most common cause of avoidable vision loss, predominantly affecting the working-age population across the globe. Screening for DR, coupled with timely consultation and treatment, is a globally trusted policy to avoid vision loss. However, implementation of DR screening programs is challenging due to the scarcity of medical professionals able to screen a growing global diabetic population at risk for DR. Computer-aided disease diagnosis in retinal image analysis could provide a sustainable approach for such large-scale screening effort. The recent scientific advances in computing capacity and machine learning approaches provide an avenue for biomedical scientists to reach this goal. Aiming to advance the state-of-the-art in automatic DR diagnosis, a grand challenge on “Diabetic Retinopathy – Segmentation and Grading” was organized in conjunction with the IEEE International Symposium on Biomedical Imaging (ISBI - 2018). In this paper, we report the set-up and results of this challenge that is primarily based on Indian Diabetic Retinopathy Image Dataset (IDRiD). There were three principal sub-challenges: lesion segmentation, disease severity grading, and localization of retinal landmarks and segmentation. These multiple tasks in this challenge allow to test the generalizability of algorithms, and this is what makes it different from existing ones. It received a positive response from the scientific community with 148 submissions from 495 registrations effectively entered in this challenge. This paper outlines the challenge, its organization, the dataset used, evaluation methods and results of top-performing participating solutions. The top-performing approaches utilized a blend of clinical information, data augmentation, and an ensemble of models. These findings have the potential to enable new developments in retinal image analysis and image-based DR screening in particular.",
         "data_year": "2020"
     },
     {
         "title": "REFUGE Challenge: A Unified Framework for Evaluating Automated Methods for Glaucoma Assessment from Fundus Photographs",
         "type": "Journal",
-        "authors": "Jose Ignacio Orlando, Huazhu Fu, Joa \u0303o Barbossa Breda, Karel van Keer, Deepti R. Bathula, Andre \u0301s Diaz-Pinto, <strong>Ruogu Fang</strong>, Pheng-Ann Heng, Jeyoung Kim, JoonHo Lee, Joonseok Lee, Xiaoxiao Li, Peng Liu, Shuai Lu, Balamurali Murugesan, Valery Naranjo, Sai Samarth R. Phaye, Sharath M. Shankaranarayana, Apoorva Sikka, Jaemin Son, Anton van den Hengel, Shujun Wang, Junyan Wu, Zifeng Wu, Guanghui Xu, Yongli Xu, Pengshuai Yin, Fei Li, Xiulan Zhang, Yanwu Xu, Hrvoje Bogunovic \u0301",
+        "authors": "Jose Ignacio Orlando, Huazhu Fu, Joa ̃o Barbossa Breda, Karel van Keer, Deepti R. Bathula, Andre ́s Diaz-Pinto, <strong>Ruogu Fang</strong>, Pheng-Ann Heng, Jeyoung Kim, JoonHo Lee, Joonseok Lee, Xiaoxiao Li, Peng Liu, Shuai Lu, Balamurali Murugesan, Valery Naranjo, Sai Samarth R. Phaye, Sharath M. Shankaranarayana, Apoorva Sikka, Jaemin Son, Anton van den Hengel, Shujun Wang, Junyan Wu, Zifeng Wu, Guanghui Xu, Yongli Xu, Pengshuai Yin, Fei Li, Xiulan Zhang, Yanwu Xu, Hrvoje Bogunovic ́",
         "citation": "Medical Image Analysis, volume 59",
         "publication_year": "2020",
         "image_src": "img/pubs/MIA.gif",
@@ -1528,7 +1619,7 @@
         "data_year": "2019"
     },
     {
-        "title": "Development and Validation of the Automated Imaging Di\ufb00erentiation in Parkinsonism (AID-P): A Multi-Site Machine Learning Study",
+        "title": "Development and Validation of the Automated Imaging Diﬀerentiation in Parkinsonism (AID-P): A Multi-Site Machine Learning Study",
         "type": "Journal",
         "authors": "Derek B. Archer, ..., <strong>Ruogu Fang</strong>, ..., David E. Vaillancourt",
         "citation": "The Lancet Digital Health",
@@ -1582,98 +1673,114 @@
         "title": "Automatic Choroid Layer Segmentation from Optical Coherence Tomography Images Using Deep Learning",
         "type": "Journal",
         "authors": "Saleha Masood, <strong>Ruogu Fang</strong>, Huating Li, Bin Sheng, Ping Li, Akash Mathavan, Xiangning Wang, Po Yang, Qiang Wu, Jing Qin, and Weiping Jia",
-        "citation": "Nature Scienti\ufb01c Reports, 9(1):3058",
+        "citation": "Nature Scientiﬁc Reports, 9(1):3058",
         "publication_year": "2019",
         "image_src": "img/pubs/NATURE.jpg",
         "label_class": "warning",
         "external_links": {
             "sciencedirect": "https://www.nature.com/articles/s41598-019-39795-x"
         },
-        "abstract": "The choroid layer is a vascular layer in human retina and its main function is to provide oxygen and support to the retina. Various studies have shown that the thickness of the choroid layer is correlated with the diagnosis of several ophthalmic diseases. For example, diabetic macular edema (DME) is a leading cause of vision loss in patients with diabetes. Despite contemporary advances, automatic segmentation of the choroid layer remains a challenging task due to low contrast, inhomogeneous intensity, inconsistent texture and ambiguous boundaries between the choroid and sclera in Optical Coherence Tomography (OCT) images. The majority of currently implemented methods manually or semi-automatically segment out the region of interest. While many fully automatic methods exist in the context of choroid layer segmentation, more effective and accurate automatic methods are required in order to employ these methods in the clinical sector. This paper proposed and implemented an automatic method for choroid layer segmentation in OCT images using deep learning and a series of morphological operations. The aim of this research was to segment out Bruch\u2019s Membrane (BM) and choroid layer to calculate the thickness map. BM was segmented using a series of morphological operations, whereas the choroid layer was segmented using a deep learning approach as more image statistics were required to segment accurately. Several evaluation metrics were used to test and compare the proposed method against other existing methodologies. Experimental results showed that the proposed method greatly reduced the error rate when compared with the other state-of-the-art methods.",
+        "abstract": "The choroid layer is a vascular layer in human retina and its main function is to provide oxygen and support to the retina. Various studies have shown that the thickness of the choroid layer is correlated with the diagnosis of several ophthalmic diseases. For example, diabetic macular edema (DME) is a leading cause of vision loss in patients with diabetes. Despite contemporary advances, automatic segmentation of the choroid layer remains a challenging task due to low contrast, inhomogeneous intensity, inconsistent texture and ambiguous boundaries between the choroid and sclera in Optical Coherence Tomography (OCT) images. The majority of currently implemented methods manually or semi-automatically segment out the region of interest. While many fully automatic methods exist in the context of choroid layer segmentation, more effective and accurate automatic methods are required in order to employ these methods in the clinical sector. This paper proposed and implemented an automatic method for choroid layer segmentation in OCT images using deep learning and a series of morphological operations. The aim of this research was to segment out Bruch’s Membrane (BM) and choroid layer to calculate the thickness map. BM was segmented using a series of morphological operations, whereas the choroid layer was segmented using a deep learning approach as more image statistics were required to segment accurately. Several evaluation metrics were used to test and compare the proposed method against other existing methodologies. Experimental results showed that the proposed method greatly reduced the error rate when compared with the other state-of-the-art methods.",
         "data_year": "2019"
     },
     {
         "title": "Multimodal CT Image Super-Resolution via Transfer Generative Adversarial Network",
         "type": "Conference",
         "authors": "Yao Xiao, Manual Arreola, Izabella Barrreto, W. Christopher Fox, Keith Peters, <u><b>Ruogu Fang</b></u>",
-        "citation": "Annual Meeting of Radiology Society of North American",
+        "citation": "Annual Meeting of the Radiological Society of North America (RSNA 2019), December 1–6, 2019, Chicago, IL, USA",
         "publication_year": "2019",
         "image_src": "img/pubs/RSNA.png",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Chicago, IL, USA",
+        "dates": "December 1–6, 2019"
     },
     {
         "title": "CFEA: Collaborative Feature Ensembling Adaptation for Domain Adaptation in Unsupervised Optic Disc and Cup Segmentation",
         "type": "Conference",
         "authors": "Peng Liu, Bin Kong, Zhongyu Li, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
-        "citation": "Medical Image Analysis and Computer Assisted Intervention",
+        "citation": "22nd International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 13–17, 2019, Shenzhen, China",
         "publication_year": "2019",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "external_links": {
             "github": "https://github.com/cswin/AWC"
         },
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Shenzhen, China",
+        "dates": "October 13–17, 2019"
     },
     {
         "title": "Abdominal Adipose Tissue Segmentation in MRI with Double Loss Function Collaborative Learning",
         "type": "Conference",
         "authors": "Siyuan Pan, Yuxin Xue, Bin Sheng, Xuhong Hou, Huating Li, <strong>Ruogu Fang</strong>, Weiping Jia, and Jing Qin",
-        "citation": "Medical Image Analysis and Computer Assisted Intervention",
+        "citation": "22nd International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 13–17, 2019, Shenzhen, China",
         "publication_year": "2019",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Shenzhen, China",
+        "dates": "October 13–17, 2019"
     },
     {
         "title": "Multimodal CT Image Super-Resolution via Transfer-GAN.",
         "type": "Conference",
         "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 16–19, 2019, Philadelphia, PA, USA",
         "publication_year": "2019",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Philadelphia, PA, USA",
+        "dates": "October 16–19, 2019"
     },
     {
         "title": "Deep Learning-based Alzheimers Disease Classification of FDG-PET and AV45 PET Images.",
         "type": "Conference",
         "authors": "Jianqiao Tian, Max Diaz, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 16–19, 2019, Philadelphia, PA, USA",
         "publication_year": "2019",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Philadelphia, PA, USA",
+        "dates": "October 16–19, 2019"
     },
     {
         "title": "Artificial Intelligence For Automated Diagnosis of Glaucoma In Stereoscopic Images",
         "type": "Conference",
         "authors": "Skylar Stolte, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 16–19, 2019, Philadelphia, PA, USA",
         "publication_year": "2019",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Philadelphia, PA, USA",
+        "dates": "October 16–19, 2019"
     },
     {
         "title": "Classification Of Neural Stimulations In The Brain With Super Voxels",
         "type": "Conference",
         "authors": "Kyle See, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 16–19, 2019, Philadelphia, PA, USA",
         "publication_year": "2019",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Philadelphia, PA, USA",
+        "dates": "October 16–19, 2019"
     },
     {
         "title": "Retinal Disease Diagnosis Using Mobile Devices",
         "type": "Conference",
         "authors": "Skylar Stolte, Kyle See, Daniel El Basha, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Philadelphia, PA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 16–19, 2019, Philadelphia, PA, USA",
         "publication_year": "2019",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2019"
+        "data_year": "2019",
+        "location": "Philadelphia, PA, USA",
+        "dates": "October 16–19, 2019"
     },
     {
         "title": "Mining Big Neuron Morphological Data",
@@ -1707,7 +1814,7 @@
         "title": "Neural Network Evolution Using Expedited Genetic Algorithm for Medical Image Denoising",
         "type": "Conference",
         "authors": "Peng Liu, Yangjunyi Li, Mohammad D El Basha, <u><b>Ruogu Fang</b></u>",
-        "citation": "Medical Image Analysis and Computer Assisted Intervention, Granada, Spain.",
+        "citation": "21st International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), September 16–20, 2018, Granada, Spain",
         "publication_year": "2018",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
@@ -1715,108 +1822,130 @@
             "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-030-00928-1_2"
         },
         "abstract": "Convolutional neural networks offer state-of-the-art performance for medical image denoising. However, their architectures are manually designed for different noise types. The realistic noise in medical images is usually mixed and complicated, and sometimes unknown, leading to challenges in creating effective denoising neural networks. In this paper, we present a Genetic Algorithm (GA)-based network evolution approach to search for the fittest genes to optimize network structures. We expedite the evolutionary process through an experience-based greedy exploration strategy and transfer learning. The experimental results on computed tomography perfusion (CTP) images denoising demonstrate the capability of the method to select the fittest genes for building high-performance networks, named EvoNets, and our results compare favorably with state-of-the-art methods",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Granada, Spain",
+        "dates": "September 16–20, 2018"
     },
     {
         "title": "Multi-task Fundus Image Quality Assessment via Transfer Learning and Landmarks Detection",
         "type": "Conference",
         "authors": "Yaxin Shen, <strong>Ruogu Fang</strong>, Bin Sheng, Ling Dai, Huating Li, Jing Qin, Qiang Wu, and Weiping Jia",
-        "citation": "Machine Learning in Medical Imaging, Granada, Spain.",
+        "citation": "9th International Workshop on Machine Learning in Medical Imaging (MLMI), September 16, 2018, Granada, Spain",
         "publication_year": "2018",
         "image_src": "img/pubs/MLMI.jpg",
         "label_class": "primary",
         "abstract": "The quality of fundus images is critical for diabetic retinopathy diagnosis. The evaluation of fundus image quality can be affected by several factors, including image artifact, clarity, and field definition. In this paper, we propose a multi-task deep learning framework for automated assessment of fundus image quality. The network can classify whether an image is gradable, together with interpretable information about quality factors. The proposed method uses images in both rectangular and polar coordinates, and fine-tunes the network from trained model grading of diabetic retinopathy. The detection of optic disk and fovea assists learning the field definition task through coarse-to-fine feature encoding. The experimental results demonstrate that our framework outperform single-task convolutional neural networks and reject ungradable images in automated diabetic retinopathy diagnostic systems.",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Granada, Spain",
+        "dates": "September 16, 2018"
     },
     {
         "title": "Low-Dose CT Perfusion Image Restoration and Radiation Reduction.",
         "type": "Conference",
         "authors": "Yao Xiao, Peng Liu, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 17–20, 2018, Atlanta, GA, USA",
         "publication_year": "2018",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Atlanta, GA, USA",
+        "dates": "October 17–20, 2018"
     },
     {
-        "title": "E\ufb03cient Multi Modality Medical Image Joint Recosntruction via Vectorized Gradient",
+        "title": "Eﬃcient Multi Modality Medical Image Joint Recosntruction via Vectorized Gradient",
         "type": "Conference",
         "authors": "Yao Xiao, Yun Liang, Yunmei Chen, Xiaojing Ye, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 17–20, 2018, Atlanta, GA, USA",
         "publication_year": "2018",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Atlanta, GA, USA",
+        "dates": "October 17–20, 2018"
     },
     {
         "title": "Multi-Modality Brain Image Co-Registration",
         "type": "Conference",
         "authors": "Skylar Stolte, Yao Xiao, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 17–20, 2018, Atlanta, GA, USA",
         "publication_year": "2018",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Atlanta, GA, USA",
+        "dates": "October 17–20, 2018"
     },
     {
-        "title": "Decision Tree-based Classi\ufb01cation for Di\ufb00erentiating System Lupus Erythematosus and Mixed Connective Tissue Disease",
+        "title": "Decision Tree-based Classiﬁcation for Diﬀerentiating System Lupus Erythematosus and Mixed Connective Tissue Disease",
         "type": "Conference",
         "authors": "Kyle B. See, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting, Atlanta, GA",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 17–20, 2018, Atlanta, GA, USA",
         "publication_year": "2018",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Atlanta, GA, USA",
+        "dates": "October 17–20, 2018"
     },
     {
         "title": "STDN: Spatial-Temporal Denoising Net for Radiation Optimization in CT Perfusion",
         "type": "Conference",
         "authors": "Yao Xiao, Liupeng, Yun Liang, <u><b>Ruogu Fang</b></u>",
-        "citation": "ACM Richard Tapia Celebration of Diversity in Computing, September, Orlando, FL",
+        "citation": "ACM Richard Tapia Celebration of Diversity in Computing, September 19–22, 2018, Orlando, FL, USA",
         "publication_year": "2018",
         "image_src": "img/pubs/TAPIA.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Orlando, FL, USA",
+        "dates": "September 19–22, 2018"
     },
     {
         "title": "Multi-Modality PET-MRI Image Joint Reconstruction",
         "type": "Conference",
         "authors": "Yao Xiao, Yun Liang, Yunmei Chen, Xiaojing Ye, <u><b>Ruogu Fang</b></u>",
-        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, Vancouver, Canada",
+        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, June 2–7, 2018, Vancouver, BC, Canada",
         "publication_year": "2018",
         "image_src": "img/pubs/ASNR.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Vancouver, BC, Canada",
+        "dates": "June 2–7, 2018"
     },
     {
         "title": "Image Super-Resolution and Radiation Reduction via Deep Learning",
         "type": "Conference",
         "authors": "Yao Xiao, Pina C. Sanelli, <u><b>Ruogu Fang</b></u>",
-        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, Vancouver, Canada",
+        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, June 2–7, 2018, Vancouver, BC, Canada",
         "publication_year": "2018",
         "image_src": "img/pubs/ASNR.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Vancouver, BC, Canada",
+        "dates": "June 2–7, 2018"
     },
     {
         "title": "Regulated-convolutional Networks for Low-dose Cerebral CT Perfusion Restoration",
         "type": "Conference",
         "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
-        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, Vancouver, Canada",
+        "citation": "ASNR 56th Annual Meeting & The Foundation of the ASNR Symposium, June 2–7, 2018, Vancouver, BC, Canada",
         "publication_year": "2018",
         "image_src": "img/pubs/ASNR.jpg",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Vancouver, BC, Canada",
+        "dates": "June 2–7, 2018"
     },
     {
         "title": "SDCNET: Smoothed Dense-Convolution Network For Restoring Low-Dose Cerebral CT Perfusion",
         "type": "Conference",
         "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
-        "citation": "IEEE International Symposium on Biomedical Imaging, Washington D.C.",
+        "citation": "15th IEEE International Symposium on Biomedical Imaging (ISBI), April 4–7, 2018, Washington, D.C., USA",
         "publication_year": "2018",
         "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
-        "data_year": "2018"
+        "data_year": "2018",
+        "location": "Washington, D.C., USA",
+        "dates": "April 4–7, 2018"
     },
     {
         "title": "Automatic Choroid Layer Segmentation Using Normalized Graph Cut",
@@ -1844,43 +1973,51 @@
             "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-319-67389-9_12"
         },
         "abstract": "Computed tomography perfusion (CTP) is one of the most widely used imaging modality for cerebrovascular disease diagnosis and treatment, especially in emergency situations. While cerebral CTP is ca- pable of quantifying the blood flow dynamics by continuous scanning at a focused region of the brain, the associated excessive radiation increases the patients' risk levels of developing cancer. To reduce the necessary radiation dose in CTP, decreasing the temporal sampling frequency is one promising direction. In this paper, we propose STAR, an end-to- end Spatio-Temporal Architecture for super-Resolution to significantly reduce the necessary scanning time and therefore radiation exposure. The inputs into STAR are multi-directional 2D low-resolution spatio- temporal patches at different cross sections over space and time. Via training multiple direction networks followed by a conjoint reconstruc- tion network, our approach can produce high-resolution spatio-temporal volumes. The experiment results demonstrate the capability of STAR to maintain the image quality and accuracy of cerebral hemodynamic parameters at only one-third of the original scanning time.",
-        "data_year": "2017"
+        "data_year": "2017",
+        "location": "Quebec City, QC, Canada",
+        "dates": "September 10, 2017"
     },
     {
         "title": "Cardiovascular Disease Prediction and Risk Factor Mining with RFMiner.",
         "type": "Conference",
         "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting (BMES), 2017 Annual Meeting, Phoenix, Arizona.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2017, Phoenix, AZ, USA",
         "publication_year": "2017",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2017"
+        "data_year": "2017",
+        "location": "Phoenix, AZ, USA",
+        "dates": "October 11–14, 2017"
     },
     {
         "title": "Accelerated Brain Perfusion Imaging via Spatio-Temporal Super-Resolution.",
         "type": "Conference",
         "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting (BMES), 2017 Annual Meeting, Phoenix, Arizona.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2017, Phoenix, AZ, USA",
         "publication_year": "2017",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2017"
+        "data_year": "2017",
+        "location": "Phoenix, AZ, USA",
+        "dates": "October 11–14, 2017"
     },
     {
         "title": "A Simple and Realistic Simulation Method for Low-Dose CT.",
         "type": "Conference",
         "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>&gt;",
-        "citation": "Biomedical Engineering Society Annual Meeting (BMES), 2017 Annual Meeting, Phoenix, Arizona.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2017, Phoenix, AZ, USA",
         "publication_year": "2017",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2017"
+        "data_year": "2017",
+        "location": "Phoenix, AZ, USA",
+        "dates": "October 11–14, 2017"
     },
     {
         "title": "RFMiner: Risk Factors Discovery and Mining for Preventive Cardiovascular Health.",
         "type": "Conference",
         "authors": "Yao Xiao, <u><b>Ruogu Fang</b></u>",
-        "citation": "The Second IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE), Philadelphia, PA",
+        "citation": "2nd IEEE/ACM Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE), July 17–19, 2017, Philadelphia, PA, USA",
         "publication_year": "2017",
         "image_src": "img/pubs/IEEEHealth.png",
         "label_class": "primary",
@@ -1888,7 +2025,9 @@
             "sciencedirect": "http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8010656"
         },
         "abstract": "Cardiovascular disease is one of the leading causes of death in the United States. It is critical to identify the risk factors associated with cardiovascular diseases and to alert individuals before they experience a heart attack. In this paper we propose RFMiner, a risk factor discovery and mining framework for identifying significant risk factors using integrated measures. We provide the blueprints for accurately predicting the possibility of heart attacks in the near future while identifying notable risk factors - especially the factors which are not well recognized.",
-        "data_year": "2017"
+        "data_year": "2017",
+        "location": "Philadelphia, PA, USA",
+        "dates": "July 17–19, 2017"
     },
     {
         "title": "Indexing and Mining Large-Scale Neuron Databases using Maximum Inner Product Search.",
@@ -1919,11 +2058,13 @@
         "title": "Towards High-Throughput Abnormal Brain Screening in MRI Images",
         "type": "Conference",
         "authors": "Maryamossadat Aghili, <u><b>Ruogu Fang</b></u>",
-        "citation": "Women in Machine Learning Workshop, Neural Information Processing Systems (NIPS), Barcelona, Spain.",
+        "citation": "Women in Machine Learning (WiML) Workshop at Neural Information Processing Systems (NIPS), December 5–10, 2016, Barcelona, Spain",
         "publication_year": "2016",
         "image_src": "img/pubs/WIML.png",
         "label_class": "primary",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Barcelona, Spain",
+        "dates": "December 5–10, 2016"
     },
     {
         "title": "TENDER: TEnsor Non-local Deconvolution Enabled Radiation Reduction in CT Perfusion.",
@@ -1962,33 +2103,39 @@
         "image_src": "img/pubs/WoundHealing.jpg",
         "label_class": "primary",
         "abstract": "Clinicians employ visual inspection of the wound and reduction in its size over time to monitor its healing process. Although these are standard clinical assessments, there is a need to develop a physiological approach that can map sub-surface tissue oxygenation at and around the wound region.  Recently, a non-contact, portable, hand-held near infrared optical scanner (NIROS) has been developed to functionally image wound sites and differentiate healing from non-healing in lower extremity ulcers. Past studies using NIROS focused on differentiating healing from non-healing wounds based on NIR optical contrast between the wound and healthy surrounding tissue. However, these studies did not showcase the physiological changes in tissue oxygenation. Herein, NIROS has been modified to perform multi wavelength imaging in order to obtain the oxy and deoxy- hemoglobin maps of the wound and its surroundings. Clinical studies are currently performed at two clinical sites in Miami on lower extremity ulcers (2, diabetic foot ulcers (DFUs) and 4 venous leg ulcers (VLUs to date). Preliminary results have shown changes in oxy- and deoxy-hemoglobin maps of the wound and background across weeks of the treatment process. Image segmentation studies quantified regions of varied tissue oxygenation around and beneath the wound to potentially determine sub-surface healing regions. Ongoing efforts involve systematic 8-week imaging studies to obtain physiological indicators of healing from hemodynamic studies of DFUs and VLUs.",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Florida, USA",
+        "dates": "2016"
     },
     {
         "title": "CT perfusion image super-resolution using a deep convolutional network.",
         "type": "Conference",
         "authors": "Paul Naghshineh, Peng Liu, <u><b>Ruogu Fang</b></u>",
-        "citation": "BMES, Biomedical Engineering Society Annual Meeting in Minneapolis, Minnesota.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 5–8, 2016, Minneapolis, MN, USA",
         "publication_year": "2016",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Minneapolis, MN, USA",
+        "dates": "October 5–8, 2016"
     },
     {
         "title": "Physiological Assessment of Wound Healing using a Near-Infrared Optical Scanner.",
         "type": "Conference",
         "authors": "Anuradha Godavarty, Rebecca Kwasinki, Cristianne Fernandez, Yuanyuan Zhu, Edwin Robledo, F. Perez-Clavijo, <u><b>Ruogu Fang</b></u>",
-        "citation": "Biomedical Engineering Society Annual Meeting (BMES) in Minneapolis, Minnesota.",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 5–8, 2016, Minneapolis, MN, USA",
         "publication_year": "2016",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Minneapolis, MN, USA",
+        "dates": "October 5–8, 2016"
     },
     {
         "title": "Maximum Inner Product Search for Morphological Retrieval of Large-Scale Neuron Data",
         "type": "Conference",
         "authors": "Zhongyu Li, Fumin Shen, <strong>Ruogu Fang</strong>, Sailesh Conjeti, Amin Katouzian, Shaoting Zhang.",
-        "citation": "ISBI, IEEE International Symposium on Biomedical Imaging, Prague, Czech Republic",
+        "citation": "13th IEEE International Symposium on Biomedical Imaging (ISBI), April 13–16, 2016, Prague, Czech Republic",
         "publication_year": "2016",
         "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
@@ -1996,13 +2143,15 @@
             "sciencedirect": "http://ieeexplore.ieee.org/xpl/login.jsp?tp=&arnumber=7493340&url=http%3A%2F%2Fieeexplore.ieee.org%2Fxpls%2Fabs_all.jsp%3Farnumber%3D7493340"
         },
         "abstract": "Morphological retrieval is an effective approach to explore neurons' databases, as the morphology is correlated with neuronal types, regions, functions, etc. In this paper, we focus on the neuron identification and analysis via morphological retrieval. In our proposed framework, both global and local features are extracted to represent 3D neuron data. Then, compacted binary codes are generated from original features for efficient similarity search. As neuron cells usually have tree-topology structure, it is hard to distinguish different types of neuron simply via traditional binary coding or hashing methods based on Euclidean distance metric and/or linear hyperplanes. Thus, we propose a novel binary coding method based on the maximum inner product search (MIPS), which is not only more easier to learn the binary coding function, but also preserves the non-linear characteristics of neuron morphology data. We evaluate the proposed method on more than 17,000 neurons, by validating the retrieved neurons with associated cell types and brain regions. Experimental results show the superiority of our approach in neuron morphological retrieval compared with other state-of-the-art methods. Moreover, we demonstrate its potential use case in the identification and analysis of neuron characteristics.",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Prague, Czech Republic",
+        "dates": "April 13–16, 2016"
     },
     {
         "title": "Direct Estimation of Permeability Maps for Low-Dose CT Perfusion",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Ajay Gupta, Pina C. Sanelli",
-        "citation": "ISBI, IEEE International Symposium on Biomedical Imaging, Prague, Czech Republic",
+        "citation": "13th IEEE International Symposium on Biomedical Imaging (ISBI), April 13–16, 2016, Prague, Czech Republic",
         "publication_year": "2016",
         "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
@@ -2010,23 +2159,27 @@
             "sciencedirect": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=7493372&url=http%3A%2F%2Fieeexplore.ieee.org%2Fiel7%2F7486633%2F7493185%2F07493372.pdf%3Farnumber%3D7493372"
         },
         "abstract": "With the goal of achieving low radiation exposure from\n        medical imaging, computed tomography perfusion (CTP)\n        introduces challenging problems for both image reconstruction\n        and perfusion parameter estimation in the qualitative\n        and quantitative analyses. Conventional approaches address\n        the reconstruction and the estimation processes separately.\n        Since the hemodynamic parameter maps have much lower\n        dimensionality than the original sinogram data, estimating\n        hemodynamic parameters directly from sinogram will further\n        reduce radiation exposure and save computational resources\n        to reconstruct the intermediate time-series images. In this\n        work, we propose the first direct estimation framework for\n        CTP that integrates the time-series image reconstruction,\n        contrast conversion, hematocrit correction and hemodynamic\n        parameter estimation in one optimization function, which is\n        solved using an efficient algorithm. Evaluations on the digital\n        brain perfusion phantom and a clinical acute stroke subject\n        demonstrate that the proposed direct estimation framework\n        boosts the estimation accuracy remarkably in CTP scanning\n        with lower radiation exposure.",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Prague, Czech Republic",
+        "dates": "April 13–16, 2016"
     },
     {
         "title": "Automatic Segmentation of Lower Extremity Ulcers in Near-Infrared Optical Imaging",
         "type": "Conference",
         "authors": "<strong>Ruogu Fang</strong>, Xing Pang, Arash Dadkhah, Jiali Lei, Elizabeth Solis, Suset Rodriguesz, Francisco Perez-Clavijo, Stephen Wigley, Charles Buscemi, Anuradha Godvarty.",
-        "citation": "ISBI, IEEE International Symposium on Biomedical Imaging, Prague, Czech Republic",
+        "citation": "13th IEEE International Symposium on Biomedical Imaging (ISBI), April 13–16, 2016, Prague, Czech Republic",
         "publication_year": "2016",
         "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Prague, Czech Republic",
+        "dates": "April 13–16, 2016"
     },
     {
         "title": "Near-Infrared Optical Imaging and Wound Segmentation in Lower Extremity Ulcers",
         "type": "Conference",
         "authors": "Xing Pang, Arash Dadkhah, Jaili Lei, Elizabeth Solis, Suset Rodriguez, Francisco Perez-Clavijo, Stephen Wigley, <strong>Ruogu Fang</strong>, Anuradha Godvarty.",
-        "citation": "OSA, Optical Society of America Annual Meeting",
+        "citation": "Frontiers in Optics (FiO) / 100th OSA Annual Meeting, October 17–21, 2016, Rochester, NY, USA",
         "publication_year": "2016",
         "image_src": "img/pubs/OSA.png",
         "label_class": "primary",
@@ -2034,13 +2187,15 @@
             "sciencedirect": "http://8.18.37.105/abstract.cfm?uri=OTS-2016-JTu3A.43"
         },
         "abstract": "Near-Infrared (NIR) optical imaging can reveal tissue oxygenation of the wound, complementing the visual inspection of the surface granulation. Herein, graph cuts algorithm is applied to segment NIR images of the wound from its peripheries.",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "Rochester, NY, USA",
+        "dates": "October 17–21, 2016"
     },
     {
         "title": "Wound Size Measurement of Lower Extremity Ulcers Using Segmentation Algorithms",
         "type": "Conference",
         "authors": "Arash Dadkhah, Xing Pang, Elizabeth Solis, <strong>Ruogu Fang</strong>, Anuradha Godvarty.",
-        "citation": "SPIE Proceedings in Photonics West, San Francisco",
+        "citation": "SPIE Photonics West, February 13–18, 2016, San Francisco, CA, USA",
         "publication_year": "2016",
         "image_src": "img/pubs/SPIE.png",
         "label_class": "primary",
@@ -2048,7 +2203,9 @@
             "sciencedirect": "http://proceedings.spiedigitallibrary.org/proceeding.aspx?articleid=2501771"
         },
         "abstract": "Lower extremity ulcers are one of the most common complications that not only affect many people around the world but also have huge impact on economy since a large amount of resources are spent for treatment and prevention of the diseases. Clinical studies have shown that reduction in the wound size of 40% within 4 weeks is an acceptable progress in the healing process. Quantification of the wound size plays a crucial role in assessing the extent of healing and determining the treatment process. To date, wound healing is visually inspected and the wound size is measured from surface images. The extent of wound healing internally may vary from the surface. A near-infrared (NIR) optical imaging approach has been developed for non-contact imaging of wounds internally and differentiating healing from non-healing wounds. Herein, quantitative wound size measurements from NIR and white light images are estimated using a graph cuts and region growing image segmentation algorithms. The extent of the wound healing from NIR imaging of lower extremity ulcers in diabetic subjects are quantified and compared across NIR and white light images. NIR imaging and wound size measurements can play a significant role in potentially predicting the extent of internal healing, thus allowing better treatment plans when implemented for periodic imaging in future.",
-        "data_year": "2016"
+        "data_year": "2016",
+        "location": "San Francisco, CA, USA",
+        "dates": "February 13–18, 2016"
     },
     {
         "title": "Efficient 4D Non-Local Tensor Total-Variation for Low-Dose CT Perfusion Deconvolution",
@@ -2075,7 +2232,7 @@
         "external_links": {
             "sciencedirect": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7046356"
         },
-        "abstract": "Acute brain diseases such as acute strokes and\n        transit ischemic attacks are the leading causes of mortality and\n        morbidity worldwide, responsible for 9% of total death every\n        year. \u2018Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational\n        framework for hemodynamic parameters estimation\n        can save critical time for thrombolytic therapy. Meanwhile the\n        high level of accumulated radiation dosage due to continuous\n        image acquisition in CT perfusion (CTP) raised concerns on\n        patient safety and public health. However, low-radiation leads to\n        increased noise and artifacts which require more sophisticated\n        and time-consuming algorithms for robust estimation. In this\n        paper, we focus on developing a robust and efficient framework\n        to accurately estimate the perfusion parameters at low radiation\n        dosage. Specifically, we present a tensor total-variation (TTV)\n        technique which fuses the spatial correlation of the vascular\n        structure and the temporal continuation of the blood signal flow.\n        An efficient algorithm is proposed to find the solution with fast\n        convergence and reduced computational complexity. Extensive\n        evaluations are carried out in terms of sensitivity to noise levels,\n        estimation accuracy, contrast preservation, and performed on\n        digital perfusion phantom estimation, as well as in-vivo clinical\n        subjects. Our framework reduces the necessary radiation dose\n        to only 8% of the original level and outperforms the state-of-art\n        algorithms with peak signal-to-noise ratio improved by 32%. It\n        reduces the oscillation in the residue functions, corrects overestimation\n        of cerebral blood flow (CBF) and under-estimation of\n        mean transit time (MTT), and maintains the distinction between\n        the deficit and normal regions.",
+        "abstract": "Acute brain diseases such as acute strokes and\n        transit ischemic attacks are the leading causes of mortality and\n        morbidity worldwide, responsible for 9% of total death every\n        year. ‘Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational\n        framework for hemodynamic parameters estimation\n        can save critical time for thrombolytic therapy. Meanwhile the\n        high level of accumulated radiation dosage due to continuous\n        image acquisition in CT perfusion (CTP) raised concerns on\n        patient safety and public health. However, low-radiation leads to\n        increased noise and artifacts which require more sophisticated\n        and time-consuming algorithms for robust estimation. In this\n        paper, we focus on developing a robust and efficient framework\n        to accurately estimate the perfusion parameters at low radiation\n        dosage. Specifically, we present a tensor total-variation (TTV)\n        technique which fuses the spatial correlation of the vascular\n        structure and the temporal continuation of the blood signal flow.\n        An efficient algorithm is proposed to find the solution with fast\n        convergence and reduced computational complexity. Extensive\n        evaluations are carried out in terms of sensitivity to noise levels,\n        estimation accuracy, contrast preservation, and performed on\n        digital perfusion phantom estimation, as well as in-vivo clinical\n        subjects. Our framework reduces the necessary radiation dose\n        to only 8% of the original level and outperforms the state-of-art\n        algorithms with peak signal-to-noise ratio improved by 32%. It\n        reduces the oscillation in the residue functions, corrects overestimation\n        of cerebral blood flow (CBF) and under-estimation of\n        mean transit time (MTT), and maintains the distinction between\n        the deficit and normal regions.",
         "data_year": "2015"
     },
     {
@@ -2114,70 +2271,84 @@
         "publication_year": "2015",
         "image_src": "img/pubs/WoundHealing.jpg",
         "label_class": "primary",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "Hawks Cay, FL, USA",
+        "dates": "2015"
     },
     {
         "title": "Fast Preconditioning for Accelerated Multi-Contrast MRI Reconstruction",
         "type": "Conference",
         "authors": "Ruoyu Li, Yeqing Li, <strong>Ruogu Fang</strong>,Shaoting Zhang, Hao Pan, Junzhou Huang",
-        "citation": "MICCAI'15, In Proc. of the 18th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Munich, Germany",
+        "citation": "MICCAI'15, 18th International Conference on Medical Image Computing and Computer Assisted Intervention, October 5–9, 2015, Munich, Germany",
         "publication_year": "2015",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "Munich, Germany",
+        "dates": "October 5–9, 2015"
     },
     {
         "title": "Efficient 4D Non-Local Tensor Total-Variation for Low-Dose CT Perfusion Deconvolution",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Ming Ni, Junzhou Huang, Qianmu Li, and Tao Li",
-        "citation": "The 18th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Workshop on Medical Computer Vision, Munich, Germany",
+        "citation": "18th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Workshop on Medical Computer Vision, October 5–9, 2015, Munich, Germany",
         "publication_year": "2015",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "Munich, Germany",
+        "dates": "October 5–9, 2015"
     },
     {
         "title": "Robust Low-Dose CT Perfusion Deconvolution via Non-Local Tensor Total Variation",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Ming Ni, Junzhou Huang, Qianmu Li, Tao Li",
-        "citation": "BMES, Biomedical Engineering Society Annual Meeting, Tampa, FL",
+        "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 7–10, 2015, Tampa, FL, USA",
         "publication_year": "2015",
         "image_src": "img/pubs/BMES.jpg",
         "label_class": "primary",
         "abstract": "Stroke and cerebrovascular diseases are the leading cause of serious, long-term disability in the\n        United States. Computed tomography perfusion (CTP) is one of the most widely accepted imaging modality for\n        stroke care. However, the high radiation exposure of CTP has lead to increased cancer risk. Tensor total variation\n        (TTV)[1] has been proposed to stabilize the quantification of perfusion parameters by integrating the anatomical\n        structure correlation. Yet the locality limitation of the neighborhood region has led to noticeable absence or\n        inflation of the delicate structures which are critical indicators for the clinical diagnosis. In this work, we propose\n        a non-local tensor total variation (NL-TTV) deconvolution method to by incorporating the long-range dependency\n        and the global connections in the spatio-temporal domain",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "Tampa, FL, USA",
+        "dates": "October 7–10, 2015"
     },
     {
         "title": "4-D Spatio-Temporal MR Perfusion Deconvolution via Tensor Total Variation.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>",
-        "citation": "ISMRM'15, International Society for Magnetic Resonance in Medicine (ISMRM) Annual Meeting, Toronto, Canada. Oral presentation",
+        "citation": "ISMRM 23rd Annual Meeting & Exhibition, May 30 – June 5, 2015, Toronto, ON, Canada (Oral presentation)",
         "publication_year": "2015",
         "image_src": "img/pubs/MRM.jpg",
         "label_class": "primary",
         "abstract": "4-D dynamic susceptibility contrast (DSC) magnetic resonance imaging (MRI) is a well-established perfusion technique for non-invasive characterization of tissue\n        dynamics, with promising applications in assessing a wide range of diseases, as well as monitoring response of therapeutic interventions). DSC-MRI provides critical\n        real-time information by tracking the first-pass of an injected contrast-agent (e.g. gadolinium) with T2*-weighted MRI. The spatio-temproal data, consisting of contrast\n        concentration signals for each voxel of a volume, are deconvolved from the arterial input function (AIF) and then post-processed to generate perfusion parameter maps,\n        typically including the cerebral blood flow (CBF), cerebral blood volume (CBV), mean transit time (MTT) and time to peak (TTP). The most popular deconvolution\n        method is truncated singular value decomposition (TSVD)1,2 and its variants3\n        , which fail to exploit the spatio-temporal nature of the 4D data with both the anatomical\n        structure and the temporal continuation. This work adapts and demonstrates the feasibility of a 4-D tensor total variation (TTV) deconvolution approach, which has\n        been proposed for CT perfusion4\n        , to brain MR perfusion, with evaluation on synthetic data and clinical DSC-MRI data for glioblastomas, the most common type of\n        brain cancer. The method is guaranteed to convergence to global optimal because of the convex cost function and presents a more elegant framework of total variation\n        for the deconvolution, compared to recent efforts5,6 which either do not have a global optimal solution for the non-convex case or need to handcraft spatial and temporal\n        regularization terms.",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "Toronto, ON, Canada",
+        "dates": "May 30 – June 5, 2015"
     },
     {
         "title": "Leveraging Coupled Multi-Index for Scalable Retrieval of Mammographic Masses.",
         "type": "Conference",
         "authors": "Menglin Jiang, Shaoting Zhang, <strong>Ruogu Fang</strong>, Dimitris Metaxas.",
-        "citation": "ISBI'15, The IEEE International Symposium on Biomedical Imaging (ISBI), NYC, USA. Oral presentation 130 / 714 = 18%",
+        "citation": "12th IEEE International Symposium on Biomedical Imaging (ISBI'15), April 16–19, 2015, New York, NY, USA (Oral presentation, 130/714 = 18%)",
         "publication_year": "2015",
         "image_src": "img/pubs/Neurocomputing.png",
         "label_class": "primary",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "New York, NY, USA",
+        "dates": "April 16–19, 2015"
     },
     {
         "title": "A Spatio-Temporal Low-rank Total Variation Approach for Denoising Arterial Spin Labeling MRI Data",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>,Junzhou Huang, Wen-Ming Luh.",
-        "citation": "ISBI'15, The IEEE International Symposium on Biomedical Imaging (ISBI), NYC, USA",
+        "citation": "12th IEEE International Symposium on Biomedical Imaging (ISBI'15), April 16–19, 2015, New York, NY, USA",
         "publication_year": "2015",
         "image_src": "img/pubs/Neurocomputing.png",
         "label_class": "primary",
         "abstract": "Arterial spin labeling MRI (ASL-MRI) can provide quantitative\n        signals correlated to the cerebral blood flow and neural\n        activity. However, the low signal-to-noise ratio in ASL\n        requires repeated acquisitions to improve the signal reliability,\n        leading to prolonged scanning time. At fewer repetitions,\n        noise and corruptions arise due to motion and physiological\n        artifacts, introducing errors into the cerebral blood flow estimation.\n        We propose to recover the ASL-MRI data from\n        the noisy and corrupted observations at shorter scanning time\n        with a spatio-temporal low-rank total variation method. The\n        low-rank approximation uses the similarity of the repetitive\n        scans, and the total variation regularization considers the local\n        spatial consistency. We compare with the state-of-art robust\n        M-estimator for ASL cerebral blood flow map estimation.\n        Validation on simulated and real data demonstrate the\n        robustness of the proposed method at fewer scanning repetitions\n        and with random corruption",
-        "data_year": "2015"
+        "data_year": "2015",
+        "location": "New York, NY, USA",
+        "dates": "April 16–19, 2015"
     },
     {
         "title": "Improving Low-Dose Blood-Brain Barrier Permeability Quantification Using Sparse High-Dose Induced Prior for Patlak Model.",
@@ -2197,26 +2368,30 @@
         "title": "Tensor Total-Variation Regularized Deconvolution for Efficient Low-Dose CT Perfusion.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>,Pina Sanelli, Shaoting Zhang, Tsuhan Chen.",
-        "citation": "MICCAI'14, The 17th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Boston, USA",
+        "citation": "MICCAI'14, 17th International Conference on Medical Image Computing and Computer Assisted Intervention, September 14–18, 2014, Boston, MA, USA",
         "publication_year": "2014",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "http://users.cis.fiu.edu/~rfang/projects/ttv.html"
         },
-        "abstract": "Acute brain diseases such as acute stroke and transit ischemic attacks\n        are the leading causes of mortality and morbidity worldwide, responsible for 9%\n        of total death every year. \u2018Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational framework\n        for hemodynamic parameters estimation can save critical time for thrombolytic\n        therapy. Meanwhile the high level of accumulated radiation dosage due to\n        continuous image acquisition in CT perfusion (CTP) raised concerns on patient\n        safety and public health. However, low-radiation will lead to increased noise and\n        artifacts which require more sophisticated and time-consuming algorithms for\n        robust estimation. We propose a novel efficient framework using tensor totalvariation\n        (TTV) regularization to achieve both high efficiency and accuracy in\n        deconvolution for low-dose CTP. The method reduces the necessary radiation\n        dose to only 8% of the original level and outperforms the state-of-art algorithms\n        with estimation error reduced by 40%. It also corrects over-estimation of cerebral\n        blood flow (CBF) and under-estimation of mean transit time (MTT), at both normal\n        and reduced sampling rate. An efficient",
-        "data_year": "2014"
+        "abstract": "Acute brain diseases such as acute stroke and transit ischemic attacks\n        are the leading causes of mortality and morbidity worldwide, responsible for 9%\n        of total death every year. ‘Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational framework\n        for hemodynamic parameters estimation can save critical time for thrombolytic\n        therapy. Meanwhile the high level of accumulated radiation dosage due to\n        continuous image acquisition in CT perfusion (CTP) raised concerns on patient\n        safety and public health. However, low-radiation will lead to increased noise and\n        artifacts which require more sophisticated and time-consuming algorithms for\n        robust estimation. We propose a novel efficient framework using tensor totalvariation\n        (TTV) regularization to achieve both high efficiency and accuracy in\n        deconvolution for low-dose CTP. The method reduces the necessary radiation\n        dose to only 8% of the original level and outperforms the state-of-art algorithms\n        with estimation error reduced by 40%. It also corrects over-estimation of cerebral\n        blood flow (CBF) and under-estimation of mean transit time (MTT), at both normal\n        and reduced sampling rate. An efficient",
+        "data_year": "2014",
+        "location": "Boston, MA, USA",
+        "dates": "September 14–18, 2014"
     },
     {
         "title": "Anisotropic Tensor Total Variation Regularization For Low Dose Low CT Perfusion Deconvolution.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
-        "citation": "MICCAI'14, The 17th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Workshop on Sparsity Techniques in Medical Imaging, Boston, USA",
+        "citation": "MICCAI'14, 17th International Conference on Medical Image Computing and Computer Assisted Intervention, Workshop on Sparsity Techniques in Medical Imaging, September 14–18, 2014, Boston, MA, USA",
         "publication_year": "2014",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "abstract": "Tensor total variation (TTV) regularized deconvolution has been proposed\n        for robust low radiation dose CT perfusion. In this paper, we extended TTV\n        algorithm with anisotropic regularization weighting for the temporal and spatial\n        dimension. We evaluated TTV algorithm on synthetic dataset for bolus delay,\n        uniform region variability and contrast preservation, and on clinical dataset for\n        reduced sampling rate with visual and quantitative comparison. The extensive\n        experiments demonstrated promising results of TTV compared to baseline and\n        state-of-art algorithms in low-dose and low sampling rate CTP deconvolution\n        with insensitivity to bolus delay. This work further demonstrates the effectiveness\n        and potential of TTV algorithm's clinical usage for cerebrovascular diseases\n        with significantly reduced radiation exposure and improved patient safety.",
-        "data_year": "2014"
+        "data_year": "2014",
+        "location": "Boston, MA, USA",
+        "dates": "September 14–18, 2014"
     },
     {
         "title": "Towards Robust Deconvolution in Medical Imaging: Informatics, Diagnosis and Treatment.",
@@ -2247,57 +2422,67 @@
         "title": "Tissue-Specific Sparse Deconvolution for Low-Dose CT Perfusion",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>&gt;, Tsuhan Chen, Pina C. Sanelli",
-        "citation": "MICCAI'13, The 16th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Japan",
+        "citation": "MICCAI'13, 16th International Conference on Medical Image Computing and Computer Assisted Intervention, September 22–26, 2013, Nagoya, Japan",
         "publication_year": "2013",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "abstract": "Sparse perfusion deconvolution has been recently proposed to effectively\n        improve the image quality and diagnostic accuracy of low-dose perfusion\n        CT by extracting the complementary information from the high-dose perfusion\n        maps to restore the low-dose using a joint spatio-temporal model. However the\n        low-contrast tissue classes where infarct core and ischemic penumbra usually occur\n        in cerebral perfusion CT tend to be over-smoothed, leading to loss of essential\n        biomarkers. In this paper, we extend this line of work by introducing tissuespecific\n        sparse deconvolution to preserve the subtle perfusion information in the\n        low-contrast tissue classes by learning tissue-specific dictionaries for each tissue\n        class, and restore the low-dose perfusion maps by joining the tissue segments\n        reconstructed from the corresponding dictionaries. Extensive validation on clinical\n        datasets of patients with cerebrovascular disease demonstrates the superior\n        performance of our proposed method with the advantage of better differentiation\n        between abnormal and normal tissue in these patients.",
-        "data_year": "2013"
+        "data_year": "2013",
+        "location": "Nagoya, Japan",
+        "dates": "September 22–26, 2013"
     },
     {
         "title": "Kinship Classification by Modeling Facial Feature Heredity",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Andrew C. Gallagher, Tsuhan Chen, Alexander Loui",
-        "citation": "IEEE International Conference on Image Processing, Melbourne, Australia",
+        "citation": "IEEE International Conference on Image Processing (ICIP), September 15–18, 2013, Melbourne, Australia",
         "publication_year": "2013",
         "image_src": "img/pubs/ICIP.jpg",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www2.securecms.com/ICIP2013/"
         },
-        "data_year": "2013"
+        "data_year": "2013",
+        "location": "Melbourne, Australia",
+        "dates": "September 15–18, 2013"
     },
     {
         "title": "Sparsity-Based Deconvolution of Low-Dose Perfusion CT Using Learned Dictionaries.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
-        "citation": "MICCAI'12, The 15th Annual International Conference on Medical Image Computing and Computer Assisted Intervention, Nice, France. Lecture Notes in Computer Science Volume 7510, 2012, pp 272-280.",
+        "citation": "MICCAI'12, 15th International Conference on Medical Image Computing and Computer Assisted Intervention, October 1–5, 2012, Nice, France. Lecture Notes in Computer Science, Volume 7510, pp. 272–280",
         "publication_year": "2012",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
-        "data_year": "2012"
+        "data_year": "2012",
+        "location": "Nice, France",
+        "dates": "October 1–5, 2012"
     },
     {
         "title": "Sparsity-Based Deconvolution Of Low-Dose Brain Perfusion CT In Subarachnoid Hemorrhage Patients",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
-        "citation": "ISBI'12, The 9th International Symposium on Biomedical Imaging, pp. 872-875, Barcelona, Spain. Oral presentation.",
+        "citation": "ISBI'12, 9th IEEE International Symposium on Biomedical Imaging, May 2–5, 2012, Barcelona, Spain (Oral presentation)",
         "publication_year": "2012",
         "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
         "abstract": "Functional imaging serves as an important supplement to\n        anatomical imaging modalities such as MR and CT in\n        modern health care. In perfusion CT (CTP), hemodynamic\n        parameters are derived from the tracking of the first-pass of\n        the contrast bolus entering a tissue region of interest. In\n        practice, however, the post-processed parametric maps tend\n        to be noisy, especially in low-dose CTP, in part due to the\n        noisy contrast enhancement profile and oscillatory nature of\n        results generated by current computational methods. In this\n        paper, we propose a sparsity-based perfusion parameter\n        deconvolution approach that consists of a non-linear\n        processing based on sparsity prior in terms of residue\n        function dictionaries. Our simulated results from\n        numericaldata and experiments in aneurysmal subarachnoid\n        hemorrhage patients with clinical vasospasm show that the\n        algorithm improves the quality and reduces the noise of the\n        perfusion parametric maps in low-dose CTP, compared to\n        state-of-the-art methods",
-        "data_year": "2012"
+        "data_year": "2012",
+        "location": "Barcelona, Spain",
+        "dates": "May 2–5, 2012"
     },
     {
         "title": "Radiation dose reduction in computed tomography perfusion using spatial-temporal Bayesian methods.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Ashish Raj, Tsuhan Chen, Pina C. Sanelli",
-        "citation": "SPIE'12, In Proceedings of SPIE Medical Imaging, Volume 8313, Paper #831345",
+        "citation": "SPIE Medical Imaging 2012, February 4–9, 2012, San Diego, CA, USA. Proceedings Volume 8313, Paper #831345",
         "publication_year": "2012",
         "image_src": "img/pubs/SPIE.png",
         "label_class": "primary",
         "abstract": "In current computed tomography (CT) examinations, the associated X-ray radiation dose is of significant concern to\n        patients and operators, especially CT perfusion (CTP) imaging that has higher radiation dose due to its cine scanning\n        technique. A simple and cost-effective means to perform the examinations is to lower the milliampere-seconds (mAs)\n        parameter as low as reasonably achievable in data acquisition. However, lowering the mAs parameter will unavoidably\n        increase data noise and degrade CT perfusion maps greatly if no adequate noise control is applied during image\n        reconstruction. To capture the essential dynamics of CT perfusion, a simple spatial-temporal Bayesian method that uses\n        a piecewise parametric model of the residual function is used, and then the model parameters are estimated from a\n        Bayesian formulation of prior smoothness constraints on perfusion parameters. From the fitted residual function, reliable\n        CTP parameter maps are obtained from low dose CT data. The merit of this scheme exists in the combination of\n        analytical piecewise residual function with Bayesian framework using a simpler prior spatial constrain for CT perfusion\n        application. On a dataset of 22 patients, this dynamic spatial-temporal Bayesian model yielded an increase in signal-tonoise-ratio\n        (SNR) of 78% and a decrease in mean-square-error (MSE) of 40% at low dose radiation of 43mA.",
-        "data_year": "2012"
+        "data_year": "2012",
+        "location": "San Diego, CA, USA",
+        "dates": "February 4–9, 2012"
     },
     {
         "title": "System and Method For Interactive Segmentation On Mobile Devices in a Cloud Computing Environment",
@@ -2317,46 +2502,54 @@
         "title": "Segmentation of Liver Tumor Using Efficient Global Optimal Tree Metrics Graph Cuts",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Ramin Zabih, Ashish Raj, Tsuhan Chen",
-        "citation": "MICCAI'11, Abdominal Imaging, International Conference on Medical Image Computing and Computer Assisted Intervention, pp. 51-59",
+        "citation": "MICCAI'11, 14th International Conference on Medical Image Computing and Computer Assisted Intervention, Abdominal Imaging Workshop, September 18–22, 2011, Toronto, ON, Canada",
         "publication_year": "2011",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
         "abstract": "We propose a novel approach that applies global optimal tree-metrics\n        graph cuts algorithm on multi-phase contrast enhanced contrast enhanced MRI\n        for liver tumor segmentation. To address the difficulties caused by low\n        contrasted boundaries and high variability in liver tumor segmentation, we first\n        extract a set of features in multi-phase contrast enhanced MRI data and use\n        color-space mapping to reveal spatial-temporal information invisible in MRI\n        intensity images. Then we apply efficient tree-metrics graph cut algorithm on\n        multi-phase contrast enhanced MRI data to obtain global optimal labeling in an\n        unsupervised framework. Finally we use tree-pruning method to reduce the\n        number of available labels for liver tumor segmentation. Experiments on realworld\n        clinical data show encouraging results. This approach can be applied to\n        various medical imaging modalities and organs.",
-        "data_year": "2011"
+        "data_year": "2011",
+        "location": "Toronto, ON, Canada",
+        "dates": "September 18–22, 2011"
     },
     {
         "title": "Towards Computational Models of Kinship Verification.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>,  Kevin D. Tang, Noah Snavely, Tsuhan Chen.",
-        "citation": "ICIP'10, The 17th IEEE International Conference on Image Processing, Hong Kong. Oral presentation ICIP 2010 Best Paper Award",
+        "citation": "ICIP'10, 17th IEEE International Conference on Image Processing, September 26–29, 2010, Hong Kong, China (Oral presentation, Best Paper Award)",
         "publication_year": "2010",
         "image_src": "img/pubs/IEEE.png",
         "label_class": "primary",
         "external_links": {
             "sciencedirect": "https://www.newscientist.com/article/mg21228424.900-facial-recognition-software-spots-family-resemblance/#.U9VZz1ZMYhG"
         },
-        "abstract": "We tackle the challenge of kinship verification using novel\n        feature extraction and selection methods, automatically\n        classifying pairs of face images as \u201crelated\u201d or \u201cunrelated\u201d\n        (in terms of kinship). First, we conducted a controlled online\n        search to collect frontal face images of 150 pairs of public\n        figures and celebrities, along with images of their parents or\n        children. Next, we propose and evaluate a set of low-level\n        image features that for use in this classification problem.\n        After selecting the most discriminative inherited facial\n        features, we demonstrate a classification accuracy of 70.67%\n        on a test set of image pairs using K-Nearest-Neighbors.\n        Finally, we present an evaluation of human performance on\n        this problem.",
-        "data_year": "2010"
+        "abstract": "We tackle the challenge of kinship verification using novel\n        feature extraction and selection methods, automatically\n        classifying pairs of face images as “related” or “unrelated”\n        (in terms of kinship). First, we conducted a controlled online\n        search to collect frontal face images of 150 pairs of public\n        figures and celebrities, along with images of their parents or\n        children. Next, we propose and evaluate a set of low-level\n        image features that for use in this classification problem.\n        After selecting the most discriminative inherited facial\n        features, we demonstrate a classification accuracy of 70.67%\n        on a test set of image pairs using K-Nearest-Neighbors.\n        Finally, we present an evaluation of human performance on\n        this problem.",
+        "data_year": "2010",
+        "location": "Hong Kong, China",
+        "dates": "September 26–29, 2010"
     },
     {
         "title": "Tree-Metrics Graph Cuts For Brain MRI Segmentation With Tree Cutting.",
         "type": "Conference",
         "authors": "<u><b>Ruogu Fang</b></u>, Joyce Yu-hsin Chen, Ramin Zabih, Tsuhan Chen.",
-        "citation": "WNYIPW'10, IEEE Western New York Image Processing Workshop, pp. 10-13, Rochesester, NY. USA. Oral presentation",
+        "citation": "WNYIPW'10, IEEE Western New York Image Processing Workshop, November 2010, Rochester, NY, USA (Oral presentation)",
         "publication_year": "2010",
         "image_src": "img/pubs/IEEE.png",
         "label_class": "primary",
-        "abstract": "We tackle the problem of brain MRI image segmentation using\n        the tree-metric graph cuts (TM) algorithm, a novel image\n        segmentation algorithm, and introduce a \u201ctree-cutting\u201d\n        method to interpret the labeling returned by the TM algorithm\n        as tissue classification for the input brain MRI image.\n        The approach has three steps: 1) pre-processing, which\n        generates a tree of labels as input to the TM algorithm; 2) a\n        sweep of the TM algorithm, which returns a globally optimal\n        labeling with respect to the tree of labels; 3) post-processing,\n        which involves running the \u201ctree-cutting\u201d method to generate\n        a mapping from labels to tissue classes (GM, WM, CSF),\n        producing a meaningful brain MRI segmentation. The TM\n        algorithm produces a globally optimal labeling on tree metrics\n        in one sweep, unlike conventional methods such as EMS\n        and EM-style geo-cuts, which iterate the expectation maximization\n        algorithm to find hidden patterns and produce only\n        locally optimal labelings. When used with the \u201ctree-cutting\u201d\n        method, the TM algorithm produces brain MRI segmentations\n        that are as good as the Unified Segmentation algorithm used\n        by SPM8, using a much weaker prior. Comparison with the\n        current approaches shows that our method is faster and that\n        our overall segmentation accuracy is better.",
-        "data_year": "2010"
+        "abstract": "We tackle the problem of brain MRI image segmentation using\n        the tree-metric graph cuts (TM) algorithm, a novel image\n        segmentation algorithm, and introduce a “tree-cutting”\n        method to interpret the labeling returned by the TM algorithm\n        as tissue classification for the input brain MRI image.\n        The approach has three steps: 1) pre-processing, which\n        generates a tree of labels as input to the TM algorithm; 2) a\n        sweep of the TM algorithm, which returns a globally optimal\n        labeling with respect to the tree of labels; 3) post-processing,\n        which involves running the “tree-cutting” method to generate\n        a mapping from labels to tissue classes (GM, WM, CSF),\n        producing a meaningful brain MRI segmentation. The TM\n        algorithm produces a globally optimal labeling on tree metrics\n        in one sweep, unlike conventional methods such as EMS\n        and EM-style geo-cuts, which iterate the expectation maximization\n        algorithm to find hidden patterns and produce only\n        locally optimal labelings. When used with the “tree-cutting”\n        method, the TM algorithm produces brain MRI segmentations\n        that are as good as the Unified Segmentation algorithm used\n        by SPM8, using a much weaker prior. Comparison with the\n        current approaches shows that our method is faster and that\n        our overall segmentation accuracy is better.",
+        "data_year": "2010",
+        "location": "Rochester, NY, USA",
+        "dates": "November 2010"
     },
     {
         "title": "Adaptive Scale Robust Feature Density Approximation For Visual Object Representation And Tracking",
         "type": "Conference",
         "authors": "Chongyang Liu, <strong>Ruogu Fang</strong>, and Nelson H.C.Yung",
-        "citation": "IEEE International Conference on Computer Vision Theory and Applications, Lisboa, Portugal",
+        "citation": "4th International Conference on Computer Vision Theory and Applications (VISAPP), February 5–8, 2009, Lisboa, Portugal",
         "publication_year": "2009",
         "image_src": "img/pubs/IEEE.png",
         "label_class": "primary",
-        "data_year": "2009"
+        "data_year": "2009",
+        "location": "Lisboa, Portugal",
+        "dates": "February 5–8, 2009"
     }
 ]
