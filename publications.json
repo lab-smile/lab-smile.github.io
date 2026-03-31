@@ -141,6 +141,36 @@
         "data_year": "2026"
     },
     {
+        "title": "Brain Health Assessment Is Associated with Gait Performance in Older Adults",
+        "type": "Conference",
+        "authors": "Jaclyn A. Batteiger, Louis A. DeMark, Kameron Newton-Masucci, John B. Williamson, Adam J. Woods, <b>Ruogu Fang</b>, Aprinda I. Queen, Xiang-Yang Lou, Dorian K. Rose, David Clark, Emily J. Fox",
+        "citation": "2026 Combined Sections Meeting (CSM), February 13, 2026, Anaheim, CA, USA",
+        "publication_year": "February 2026",
+        "image_src": "img/pubs/APTA.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://apta.confex.com/apta/csm2026/meetingapp.cgi/Paper/51397"
+        },
+        "abstract": "Purpose/Hypothesis: Gait and executive function depend on overlapping neural networks that are vulnerable to age-related decline. Gait deficits often precede observable cognitive changes, and older adults are often referred for physical therapy prior to diagnosis of mild cognitive impairment (MCI). The Brain Health Assessment (BHA) is a computer-adaptive cognitive measure more sensitive to detecting MCI than the Montreal Cognitive Assessment (MoCA). This study compared relationships between cognitive performance (BHA vs. MoCA) and gait performance in 43 older adults suspected of having cognitive decline. Significant moderate associations were found between BHA composite score and fastest-comfortable walking speed (FCw; r=0.39, p=0.005), and BHA executive function and FCw (r=0.36, p=0.009). BHA outperformed the MoCA on composite, executive function, and language generation associations with gait. Findings suggest BHA may detect gait-cognition associations before MCI is detectable by MoCA, supporting its use for early identification of cognitive decline in physical therapy settings.",
+        "data_year": "2026",
+        "location": "Anaheim, CA, USA",
+        "dates": "February 13, 2026"
+    },
+    {
+        "title": "Neuroanatomical predictors of tDCS current distribution in cognitively healthy older adults",
+        "type": "Journal",
+        "authors": "Tyler Ann Busch, Kevin Iversen, Skylar Stolte, Gavin Hart, Jason Chen, Pratyush Shukla, Samantha Pedersen, Andrew O'Shea, Yunfeng Dai, Alejandro Albizu, Adam J. Woods, <b>Ruogu Fang</b>, Aprinda Indahlastari",
+        "citation": "Alzheimer's & Dementia, Vol. 21, e103172, December 2025. DOI: 10.1002/alz70856_103172",
+        "publication_year": "December 2025",
+        "image_src": "img/pubs/AA.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz70856_103172"
+        },
+        "abstract": "Background: Transcranial direct current stimulation (tDCS) is a promising intervention for age-related cognitive decline. Finite element method (FEM) modeling indicates that individual responses to tDCS vary due to individual anatomical differences, affecting delivered current density in the brain. Existing segmentation tools for head tissues are optimized for young adults, inaccurately reflecting older adult anatomy. This study created the largest dataset of manually segmented T1-weighted images from 367 cognitively healthy older adults to investigate how corrected tissue organization affects tDCS current distribution in the aging brain.",
+        "data_year": "2025"
+    },
+    {
         "title": "The Role of Artificial Intelligence in Deep Brain Stimulation",
         "type": "Journal",
         "authors": "Tejas Mehta, Venkat Lavu, Hao Gao, Tania Banerjee, Renjie Hu, <b>Ruogu Fang</b>, Joshua Wong",
