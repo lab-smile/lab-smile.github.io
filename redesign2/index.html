@@ -601,7 +601,7 @@
           </div>
 
           <div class="text-center mt-8 gsap-fade-up">
-            <button id="honors-toggle" onclick="(function(){var p=document.getElementById('honors-more'),b=document.getElementById('honors-toggle'),h=p.classList.contains('hidden');p.classList.toggle('hidden');b.textContent=h?'Show Less':'View All Honors';})()" class="btn-outline">View All Honors</button>
+            <button id="honors-toggle" aria-expanded="false" aria-controls="honors-more" onclick="(function(){var p=document.getElementById('honors-more'),b=document.getElementById('honors-toggle'),h=p.classList.contains('hidden');p.classList.toggle('hidden');b.setAttribute('aria-expanded',h?'true':'false');b.textContent=h?'Show Less':'View All Honors';})()" class="btn-outline">View All Honors</button>
           </div>
         </div>
       </div>

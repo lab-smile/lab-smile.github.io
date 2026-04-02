@@ -116,7 +116,7 @@
       html += `
         <article class="card card-uf-top mb-4">
           <div class="flex gap-5">
-            ${imgSrc ? `<div class="pub-thumb-wrap hidden sm:block flex-shrink-0"><img src="${escapeHtml(imgSrc)}" alt="" class="pub-thumb" loading="lazy"></div>` : ''}
+            ${imgSrc ? `<div class="pub-thumb-wrap hidden sm:block flex-shrink-0"><img src="${escapeHtml(imgSrc)}" alt="${escapeHtml(pub.title)}" class="pub-thumb" loading="lazy"></div>` : ''}
             <div class="flex-1 min-w-0">
               <div class="flex flex-wrap items-start gap-3">
                 <span class="inline-block px-2.5 py-0.5 text-xs font-semibold rounded-full ${badgeClass}">${escapeHtml(pub.type)}</span>

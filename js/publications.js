@@ -55,7 +55,7 @@ $(document).ready(async function() {
 
 function setupDropdown(publications) {
     const pubTypes = [...new Set(publications.map(pub => pub.type))];
-    const dropdown = $('<select>', { id: 'cd-dropdown', class: 'cd-select cd-dropdown' })
+    const dropdown = $('<select>', { id: 'cd-dropdown', class: 'cd-select cd-dropdown', 'aria-label': 'Filter by publication type' })
         .css({
             'padding': '12px 15px',
             'border-radius': '8px',
@@ -96,13 +96,14 @@ function setupDropdown(publications) {
 function renderPublications(publications, allPubsDiv) {
     const newPubDivs = publications.map(pub => createPublicationHTML(pub)).join('\n');
     allPubsDiv.innerHTML = newPubDivs;
+    allPubsDiv.setAttribute('aria-live', 'polite');
 }
 
 function createPublicationHTML(pub) {
     return `<div class="item mix ${pub.type}" data-year="${pub.data_year}">
                 <div class="pubmain">
                     <div class="pubassets">${pubAssets(pub)}</div>
-                    <div class="pubthumbnail"><img src="${pub.image_src}" alt="" style="max-width: 125px; max-height:125px;"></div>
+                    <div class="pubthumbnail"><img src="${pub.image_src}" alt="${pub.title}" style="max-width: 125px; max-height:125px;"></div>
                     <div class="pubcontent">
                         <h4 class="pubtitle">${pub.title}</h4>
                         <span class="label label-${pub.label_class}">${pub.type}</span>
@@ -119,13 +120,13 @@ function pubAssets(pub) {
     let assets = '';
     if (pub.external_links) {
         if (pub.external_links.sciencedirect) {
-            assets += `<a href="${pub.external_links.sciencedirect}" class="tooltips" target="_blank"><i class="fa fa-external-link"></i></a>`;
+            assets += `<a href="${pub.external_links.sciencedirect}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on ScienceDirect (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
         }
         if (pub.external_links.github) {
-            assets += `<a href="${pub.external_links.github}" class="tooltips" target="_blank"><i class="fa fa-github"></i></a>`;
+            assets += `<a href="${pub.external_links.github}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub (opens in new tab)"><i class="fa fa-github"></i></a>`;
         }
         if (pub.external_links.arxiv) {
-            assets += `<a href="${pub.external_links.arxiv}" class="tooltips" target="_blank"><i class="fa fa-book"></i></a>`;
+            assets += `<a href="${pub.external_links.arxiv}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on arXiv (opens in new tab)"><i class="fa fa-book"></i></a>`;
         }
     }
     return assets;

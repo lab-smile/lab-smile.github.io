@@ -24,7 +24,7 @@ $(document).ready(async function() {
 
 function setupSoftDropdown(softwares) {
     const softTypes = [...new Set(softwares.map(soft => soft.type))];
-    const dropdown = $('<select>', { id: 'cd-dropdown-1', class: 'cd-select cd-dropdown' })
+    const dropdown = $('<select>', { id: 'cd-dropdown-1', class: 'cd-select cd-dropdown', 'aria-label': 'Filter by software type' })
         .css({
             'padding': '12px 15px',
             'width':"100%",
@@ -66,6 +66,7 @@ function setupSoftDropdown(softwares) {
 function renderSoftwares(softwares, allSoftDivs) {
     const newsoftdivs = softwares.map(soft => createSoftwareHTML(soft)).join('\n');
     allSoftDivs.innerHTML = newsoftdivs;
+    allSoftDivs.setAttribute('aria-live', 'polite');
 }
 
 function createSoftwareHTML(pub) {
@@ -74,7 +75,7 @@ function createSoftwareHTML(pub) {
                 <div class="pubassets">
                     <a href="#" class="pubcollapse"><i class="fa fa-expand"></i></a>
                     ${pub.links.map(link => `
-                        <a href="${link.url}" class="tooltips" title="${link.type}" target="_blank">
+                        <a href="${link.url}" class="tooltips" title="${link.type}" target="_blank" rel="noopener noreferrer" aria-label="${link.type} repository (opens in new tab)">
                             <i class="${link.type === 'github' ? 'fa fa-github' : 'icon-codeocean'}"></i>
                         </a>
                     `).join('')}

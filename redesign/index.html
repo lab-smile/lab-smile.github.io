@@ -601,7 +601,7 @@
           </div>
 
           <div class="text-center mt-8 gsap-fade-up">
-            <button id="honors-toggle" onclick="(function(){var p=document.getElementById('honors-more'),b=document.getElementById('honors-toggle'),h=p.classList.contains('hidden');p.classList.toggle('hidden');b.textContent=h?'Show Less':'View All Honors';})()" class="btn-outline">View All Honors</button>
+            <button id="honors-toggle" aria-expanded="false" aria-controls="honors-more" onclick="(function(){var p=document.getElementById('honors-more'),b=document.getElementById('honors-toggle'),h=p.classList.contains('hidden');p.classList.toggle('hidden');b.textContent=h?'Show Less':'View All Honors';b.setAttribute('aria-expanded',h?'true':'false');})()" class="btn-outline">View All Honors</button>
           </div>
         </div>
       </div>
@@ -704,21 +704,21 @@
             <img src="../img/acknowlegements/UFII.png" alt="UF Informatics Institute" loading="lazy">
             <img src="../img/acknowlegements/CTSI.png" alt="Clinical and Translational Science Institute" loading="lazy">
             <img src="../img/acknowlegements/uf.png" alt="University of Florida" loading="lazy">
-            <img src="../img/acknowlegements/MBRF.png" alt="MBRF" loading="lazy">
+            <img src="../img/acknowlegements/MBRF.png" alt="McKnight Brain Research Foundation" loading="lazy">
             <img src="../img/acknowlegements/sbmt.png" alt="Society for Brain Mapping and Therapeutics" loading="lazy">
             <!-- Duplicated set for seamless loop -->
-            <img src="../img/acknowlegements/nih.jpg" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/nsf_logo.gif" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/DoD.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/DHS.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/nvidia.jpg" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/orau.jpg" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/Oracle.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/UFII.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/CTSI.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/uf.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/MBRF.png" alt="" aria-hidden="true" loading="lazy">
-            <img src="../img/acknowlegements/sbmt.png" alt="" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/nih.jpg" alt="National Institutes of Health" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/nsf_logo.gif" alt="National Science Foundation" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/DoD.png" alt="Department of Defense" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/DHS.png" alt="Department of Homeland Security" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/nvidia.jpg" alt="NVIDIA" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/orau.jpg" alt="Oak Ridge Associated Universities" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/Oracle.png" alt="Oracle" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/UFII.png" alt="UF Informatics Institute" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/CTSI.png" alt="Clinical and Translational Science Institute" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/uf.png" alt="University of Florida" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/MBRF.png" alt="McKnight Brain Research Foundation" aria-hidden="true" loading="lazy">
+            <img src="../img/acknowlegements/sbmt.png" alt="Society for Brain Mapping and Therapeutics" aria-hidden="true" loading="lazy">
           </div>
         </div>
       </div>

@@ -51,14 +51,19 @@
         }
     </script>
     <!--/Javascript files-->
+    <style>
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .sr-only-focusable:focus { position: static; width: auto; height: auto; padding: inherit; margin: inherit; overflow: visible; clip: auto; white-space: normal; }
+    </style>
 </head>
 
 <body>
+<a href="#main" class="sr-only sr-only-focusable" style="position:absolute;top:-40px;left:0;background:#03cc85;color:#fff;padding:8px 16px;z-index:10000;transition:top 0.3s;" onfocus="this.style.top='0'" onblur="this.style.top='-40px'">Skip to main content</a>
     <div id="wrapper">
 
         <!--Sidebar-->
         <a href="#sidebar" class="mobilemenu"><i class="fa fa-reorder"></i></a>
-        <div id="sidebar">
+        <div id="sidebar" role="navigation" aria-label="Main navigation">
             <div id="sidebar-wrapper">
                 <div id="sidebar-inner">
 
@@ -164,16 +169,16 @@
                     <!-- /Main navigation-->
 
                     <!-- Sidebar footer -->
-                    <div id="sidebar-footer">
+                    <div id="sidebar-footer" role="contentinfo">
                         <div class="social-icons">
                             <ul>
                                 <li><a href="https://scholar.google.com/citations?user=LVb46zEAAAAJ&hl=en"
-                                        target="_blank"><i class="fa fa-google"></i></a></li>
-                                <li><a href="https://github.com/lab-smile" target="_blank"><i
+                                        target="_blank" aria-label="Google Scholar (opens in new tab)"><i class="fa fa-google"></i></a></li>
+                                <li><a href="https://github.com/lab-smile" target="_blank" aria-label="GitHub (opens in new tab)"><i
                                             class="fa fa-github"></i></a></li>
-                                <li><a href="https://twitter.com/RuoguFang" target="_blank"><i
+                                <li><a href="https://twitter.com/RuoguFang" target="_blank" aria-label="Twitter (opens in new tab)"><i
                                             class="fa fa-twitter"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/ruogu-fang-a015bb15" target="_blank"><i
+                                <li><a href="https://www.linkedin.com/in/ruogu-fang-a015bb15" target="_blank" aria-label="LinkedIn (opens in new tab)"><i
                                             class="fa fa-linkedin"></i></a></li>
                             </ul>
                         </div>
@@ -186,7 +191,7 @@
         <!--/Sidebar-->
 
         <!--Main-->
-        <div id="main">
+        <div id="main" role="main">
 
             <!--About me-->
             <div id="biography" class="page home" data-pos="home">
@@ -199,7 +204,7 @@
                                 <div class="col-sm-2 visible-sm"></div>
                                 <div class="col-sm-8 col-md-5">
                                     <div class="biothumb">
-                                        <img alt="image" src="img/personal/personal-ufl.jpg" class="img-responsive">
+                                        <img alt="Portrait of Dr. Ruogu Fang" src="img/personal/personal-ufl.jpg" class="img-responsive">
 
                                         <!--
                                             <div class="overlay">
@@ -212,7 +217,7 @@
                                             -->
                                     </div>
                                     <div class="biothumb">
-                                        <img alt="image" src="img/misc/smilebanner.png" class="img-responsive"
+                                        <img alt="SMILE Lab banner" src="img/misc/smilebanner.png" class="img-responsive"
                                             style="padding-top:30px;padding-bottom:30px">
                                     </div>
 
@@ -1892,7 +1897,7 @@
                                                 <div class="subject">NSF Best REU and RET Poster Awards</div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="NSF REU Poster Award" class="thumbnail img-responsive"
                                                             src="img/personal/reu.jpg">
                                                     </div>
                                                     <div class="col-md-10">
@@ -1920,7 +1925,7 @@
                                                 </div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="ORAU Powe Award" class="thumbnail img-responsive"
                                                             src="img/personal/ORAU.jpg">
                                                     </div>
                                                     <div class="col-md-10">
@@ -1944,7 +1949,7 @@
                                                             class="fa fa-external-link"></i></a></div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="NSF CRII Award" class="thumbnail img-responsive"
                                                             src="img/personal/nsf.jpg">
                                                     </div>
                                                 </div>
@@ -1972,7 +1977,7 @@
                                                 </div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="Cornell University Hsien Wu and Daisy Yen Wu Memorial Award" class="thumbnail img-responsive"
                                                             src="img/personal/cu.jpg">
                                                     </div>
                                                     <div class="col-md-10">
@@ -1992,7 +1997,7 @@
                                                 <div class="subject">Student Travel	Award at MICCAI</div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive" src="img/personal/miccai.jpg" >
+                                                        <img alt="MICCAI conference photo" class="thumbnail img-responsive" src="img/personal/miccai.jpg" >
                                                     </div>
                                                     <div class="col-md-10">
                                                         Student	Travel Award at the	International Conference on	Medical	Image Computing	and Computer Assisted Intervention (MICCAI)	2014.
@@ -2023,7 +2028,7 @@
                                                 </div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="IEEE ICIP Best Paper Award" class="thumbnail img-responsive"
                                                             src="img/personal/icip.jpg">
                                                     </div>
                                                     <div class="col-md-10">
@@ -2056,7 +2061,7 @@
                                                 </div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="Cornell University Jacobs Fellowship" class="thumbnail img-responsive"
                                                             src="img/personal/cu.jpg">
                                                     </div>
                                                     <div class="col-md-10">
@@ -2432,7 +2437,7 @@
                                                 </div>
                                                 <div class="text row">
                                                     <div class="col-md-2">
-                                                        <img alt="image" class="thumbnail img-responsive"
+                                                        <img alt="NSF IIS CRII Award" class="thumbnail img-responsive"
                                                             src="img/personal/nsf.jpg">
                                                     </div>
                                                     <div class="col-md-10">
@@ -2905,18 +2910,18 @@
                                     <li class="open">
                                         <div class="data">
                                             <div class="">Our work is supported by:</div><br>
-                                            <img alt="image" src="img/acknowlegements/nsf_logo.gif">
-                                            <img alt="image" height="166" src="img/acknowlegements/nih.jpg">
-                                            <img alt="image" height="166" src="img/acknowlegements/DHS.png">
-                                            <img alt="image" height="166" src="img/acknowlegements/DoD.png">
-                                            <img alt="image" height="166" src="img/acknowlegements/orau.jpg">
-                                            <img alt="image" height="166" src="img/acknowlegements/nvidia.jpg">
-                                            <img alt="image" height="166" src="img/acknowlegements/Oracle.png">
-                                            <img alt="image" height="166" src="img/acknowlegements/sbmt.png">
-                                            <img alt="image" height="166" src="img/acknowlegements/uf.png">
-                                            <img alt="image" height="166" src="img/acknowlegements/UFII.png">
-                                            <img alt="image" height="166" src="img/acknowlegements/CTSI.png">
-                                            <img alt="image" height="140" src="img/acknowlegements/MBRF.png">
+                                            <img alt="National Science Foundation logo" src="img/acknowlegements/nsf_logo.gif">
+                                            <img alt="National Institutes of Health logo" height="166" src="img/acknowlegements/nih.jpg">
+                                            <img alt="Department of Homeland Security logo" height="166" src="img/acknowlegements/DHS.png">
+                                            <img alt="Department of Defense logo" height="166" src="img/acknowlegements/DoD.png">
+                                            <img alt="Oak Ridge Associated Universities logo" height="166" src="img/acknowlegements/orau.jpg">
+                                            <img alt="NVIDIA logo" height="166" src="img/acknowlegements/nvidia.jpg">
+                                            <img alt="Oracle logo" height="166" src="img/acknowlegements/Oracle.png">
+                                            <img alt="Society for Brain Mapping and Therapeutics logo" height="166" src="img/acknowlegements/sbmt.png">
+                                            <img alt="University of Florida logo" height="166" src="img/acknowlegements/uf.png">
+                                            <img alt="UF Informatics Institute logo" height="166" src="img/acknowlegements/UFII.png">
+                                            <img alt="Clinical and Translational Science Institute logo" height="166" src="img/acknowlegements/CTSI.png">
+                                            <img alt="McKnight Brain Research Foundation logo" height="140" src="img/acknowlegements/MBRF.png">
                                         </div>
                                     </li>
                                 </ul>
@@ -4571,7 +4576,7 @@
                             <h2 class="title">Research Summary</h2>
                             <div class="row">
                                 <div class="col-md-8">
-                                    <img alt="image" src="img/research/overvew.png" class="img-responsive">
+                                    <img alt="Research overview diagram" src="img/research/overvew.png" class="img-responsive">
                                 </div>
 
                                 <div class="col-md-4">
@@ -4586,7 +4591,7 @@
                                         <li>Medical Image Analysis</li>
                                     </ul>
                                 </div>
-                                <img alt="image" src="img/research/Tree.png" class="img-responsive">
+                                <img alt="Research areas tree diagram" src="img/research/Tree.png" class="img-responsive">
 
                             </div>
                         </div>
@@ -4607,7 +4612,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/h_-PrzSB9katVdr8e3amOA/project-details/10950672"
@@ -4674,7 +4679,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/com.png"
+                                                    <img alt="COM logo" src="img/acknowlegements/com.png"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="" class="tooltips" title="External link"
@@ -4700,7 +4705,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nsf_logo.gif"
+                                                    <img alt="NSF logo" src="img/acknowlegements/nsf_logo.gif"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2318984"
@@ -4780,7 +4785,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/LKlN8t-fd0Om6OfpeU551g/project-details/10635832"
@@ -4853,7 +4858,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/tWAuFz5sDk2J_ueWh8eukA/project-details/10170947"
@@ -4928,7 +4933,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nsf_logo.gif"
+                                                    <img alt="NSF logo" src="img/acknowlegements/nsf_logo.gif"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2123809"
@@ -5012,7 +5017,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/l0LOTy_1QkqWrBJcFCgkfg/project-details/10327393"
@@ -5081,7 +5086,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/OfbDWJ_vikqIQ9S-eped2w/project-details/10401614"" class="
@@ -5153,7 +5158,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/_3d8hDdWQk21uD8_SIp9lg/project-details/10304322"" class="
@@ -5229,7 +5234,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/dv2koRY3tka8ocrvkhPLRg/project-details/10304691"" class="
@@ -5285,7 +5290,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href=https://reporter.nih.gov/search/2iGcM0lYv0ij-ARmPp4z_A/project-details/10296986""
@@ -5343,7 +5348,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nih.jpg"
+                                                    <img alt="NIH logo" src="img/acknowlegements/nih.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://reporter.nih.gov/search/tmrKaiJCoEyFhnIugazINQ/project-details/1010686"
@@ -5410,7 +5415,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nsf_logo.gif"
+                                                    <img alt="NSF logo" src="img/acknowlegements/nsf_logo.gif"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1908299"
@@ -5457,7 +5462,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nsf_logo.gif"
+                                                    <img alt="NSF logo" src="img/acknowlegements/nsf_logo.gif"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1564892"
@@ -5502,7 +5507,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nsf_logo.gif"
+                                                    <img alt="NSF logo" src="img/acknowlegements/nsf_logo.gif"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1747783"
@@ -5564,7 +5569,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/nvidia.jpg"
+                                                    <img alt="NVIDIA logo" src="img/acknowlegements/nvidia.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.bme.ufl.edu/fang-and-ding-selected-for-uf-catalyst-fund/"
@@ -5611,7 +5616,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/UFII.png"
+                                                    <img alt="UF Informatics Institute logo" src="img/acknowlegements/UFII.png"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.bme.ufl.edu/bme-student-receives-ufii-graduate-student-fellowship/"
@@ -5656,7 +5661,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/UFII.png"
+                                                    <img alt="UF Informatics Institute logo" src="img/acknowlegements/UFII.png"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.bme.ufl.edu/fang-receives-uf-informatics-institute-seed-fund-grant/"
@@ -5723,7 +5728,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/UFII.png"
+                                                    <img alt="UF Informatics Institute logo" src="img/acknowlegements/UFII.png"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.ctsi.ufl.edu/research/funding-opportunities/pilot-project-awardees/"
@@ -5746,7 +5751,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/CTSI.png"
+                                                    <img alt="CTSI logo" src="img/acknowlegements/CTSI.png"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.bme.ufl.edu/bme-doctoral-students-awarded-nih-ctsi-tl1-predoctoral-fellowship/"
@@ -5768,7 +5773,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/CTSI.png"
+                                                    <img alt="CTSI logo" src="img/acknowlegements/CTSI.png"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="https://www.bme.ufl.edu/fang-receives-uf-informatics-institute-seed-fund-grant/"
@@ -5790,7 +5795,7 @@
                                         <div class="row">
                                             <div class="col-sm-6 col-md-3">
                                                 <div class="image">
-                                                    <img alt="image" src="img/acknowlegements/orau.jpg"
+                                                    <img alt="ORAU logo" src="img/acknowlegements/orau.jpg"
                                                         class="img-responsive">
                                                     <div class="imageoverlay">
                                                         <a href="" class="tooltips" target="_blank"><i
@@ -5852,6 +5857,7 @@
                             <div class="section-container">
                                 <div class="row">
                                     <div class="col-md-6">
+                                        <label for="inputPubs" class="sr-only">Search Publications</label>
                                         <input type="text" id="inputPubs" placeholder="Search Publications"
                                             class="form-control">
                                     </div>
@@ -6347,6 +6353,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://www.youtube.com/embed/cmRf8fHcz-Q"
+                                            title="Inside the SMILE Lab | University of Florida Research"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -6361,6 +6368,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://www.youtube.com/embed/MQynKFC2eUc"
+                                            title="Ruogu Fang PhD CPH Seminar 1 23 24"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -6375,6 +6383,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://www.youtube.com/embed/EDnPltfiS44"
+                                            title="AI across the BME curriculum at the University of Florida"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -6388,6 +6397,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://www.youtube.com/embed/xiMhkfVsnoU"
+                                            title="Leveraging artificial intelligence to improve healthcare"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -6402,6 +6412,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://player.vimeo.com/video/929634550?h=c358241f79"
+                                            title="National Academy of Science, Engineering, and Medicine Workshop"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -6415,6 +6426,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://www.youtube.com/embed/PlJhBRqmWeI"
+                                            title="UF Engineering - Forward and Up"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -6429,6 +6441,7 @@
                                             height="100%" frameborder="0" webkitallowfullscreen="" allowfullscreen=""
                                             mozallowfullscreen="" scrolling="no"
                                             src="https://assets.scrippsdigital.com/cms/video/player.html?video=https://content.uplynk.com/4e1d6642a5aa416ca57687e6eb23459f.m3u8&mp4=https://x-default-stgec.uplynk.com/ausw/slices/4e1/45bf940c346f431c9be273b8942ab6eb/4e1d6642a5aa416ca57687e6eb23459f/4e1d6642a5aa416ca57687e6eb23459f_e.mp4&purl=/news/local-news/supercomputer-at-the-university-of-florida-is-harnessing-the-awesome-power-of-ai&ads.iu=/6088/ssp.wfts/news/local-news/supercomputer-at-the-university-of-florida-is-harnessing-the-awesome-power-of-ai&ads.proxy=1&poster=https://x-default-stgec.uplynk.com/ausw/slices/4e1/45bf940c346f431c9be273b8942ab6eb/4e1d6642a5aa416ca57687e6eb23459f/poster_f23bd34a6ce842d3ac6ca926d20eacbb.jpg&title=Supercomputer%20at%20the%20University%20of%20Florida%20is%20harnessing%20the%20awesome%20power%20of%20AI&kw=ABC%20Action%20News%2CAI%2CAlzheimers%20%2CArtificial%20Intelligence%2CDr.%20Kevin%20Wang%2CDr.%20Ruogu%20Fang%2CFlorida%2CHiPerGator%2CMichael%20Paluska%2CNVIDIA&autoplay=true&contplay=*recent&mute=0&tags=Local%20News%2CHomepage%20Showcase%2CNewsletter%20Showcase%2CNews&section=Local%20News&cust_params=temp%3D%26weather%3D&host=abcactionnews.com&s=wfts&ex=1"
+                                            title="ABC Action News - Supercomputing AI"
                                             allow="autoplay; fullscreen"></iframe>
                                     </div>
 
@@ -7337,7 +7350,7 @@
                             <ul id="grid" class="grid">
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2024-10-29_MBIGroupPhotoLunch.jpg">
+                                        <img alt="MBI Group Photo Lunch 2024" src="img/gallery/2024-10-29_MBIGroupPhotoLunch.jpg">
                                         <a href="img/gallery/2024-10-29_MBIGroupPhotoLunch.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7351,7 +7364,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2024-10-29_MBIGroupPhotoEdited.png">
+                                        <img alt="MBI Group Photo 2024" src="img/gallery/2024-10-29_MBIGroupPhotoEdited.png">
                                         <a href="img/gallery/2024-10-29_MBIGroupPhotoEdited.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7365,7 +7378,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2024-10-29_MBIGroupPhoto.png">
+                                        <img alt="MBI Group Photo 2024" src="img/gallery/2024-10-29_MBIGroupPhoto.png">
                                         <a href="img/gallery/2024-10-29_MBIGroupPhoto.png" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7378,7 +7391,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2024-09-24_Seowung_Best_Poster_Award.jpeg">
+                                        <img alt="Seowung Best Poster Award 2024" src="img/gallery/2024-09-24_Seowung_Best_Poster_Award.jpeg">
                                         <a href="img/gallery/2024-09-24_Seowung_Best_Poster_Award.jpeg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7395,7 +7408,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2024-09-06_SmileLab10YearAnniversary.jpeg">
+                                        <img alt="SMILE Lab 10 Year Anniversary 2024" src="img/gallery/2024-09-06_SmileLab10YearAnniversary.jpeg">
                                         <a href="img/gallery/2024-09-06_SmileLab10YearAnniversary.jpeg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7410,7 +7423,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image"
+                                        <img alt="Skylar Stolte Gator Attribute Creativity Award 2024"
                                             src="img/gallery/2024-04-22_SkylarStolte_GatorAttributeCreativity.JPG">
                                         <a href="img/gallery/2024-04-22_SkylarStolte_GatorAttributeCreativity.JPG"
                                             class="popup-with-move-anim">
@@ -7427,7 +7440,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2024-04-17_AI Course Award.jpg">
+                                        <img alt="AI Course Award 2024" src="img/gallery/2024-04-17_AI Course Award.jpg">
                                         <a href="img/gallery/2024-04-17_AI Course Award.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7443,7 +7456,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2023-10-11_WILL Prize_MICCAI 2023.jpg">
+                                        <img alt="WILL Prize at MICCAI 2023" src="img/gallery/2023-10-11_WILL Prize_MICCAI 2023.jpg">
                                         <a href="img/gallery/2023-10-11_WILL Prize_MICCAI 2023.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7459,7 +7472,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2023-04-25_SeniorDesignShowcase_2.jpg">
+                                        <img alt="Senior Design Showcase 2023" src="img/gallery/2023-04-25_SeniorDesignShowcase_2.jpg">
                                         <a href="img/gallery/2023-04-25_SeniorDesignShowcase_2.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7475,7 +7488,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2023-04-25_SeniorDesignShowcase_1.jpg">
+                                        <img alt="Senior Design Showcase 2023" src="img/gallery/2023-04-25_SeniorDesignShowcase_1.jpg">
                                         <a href="img/gallery/2023-04-25_SeniorDesignShowcase_1.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7491,7 +7504,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2023-04-19_AI4Health.jpg">
+                                        <img alt="AI4Health Conference 2023" src="img/gallery/2023-04-19_AI4Health.jpg">
                                         <a href="img/gallery/2023-04-19_AI4Health.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7506,7 +7519,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2023-03-23_NeevaSeethi_PresidentialAward.jpg">
+                                        <img alt="Neeva Seethi Presidential Award 2023" src="img/gallery/2023-03-23_NeevaSeethi_PresidentialAward.jpg">
                                         <a href="img/gallery/2023-03-23_NeevaSeethi_PresidentialAward.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7522,7 +7535,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image"
+                                        <img alt="Lab Group Photo First Meeting Spring 2023"
                                             src="img/gallery/2023-01-13_Lab Group Photo First Meeting Spring 2023.png">
                                         <a href="img/gallery/2023-01-13_Lab Group Photo First Meeting Spring 2023.png"
                                             class="popup-with-move-anim">
@@ -7538,7 +7551,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-12-09_BME Holiday Party_1.png">
+                                        <img alt="BME Holiday Party 2022" src="img/gallery/2022-12-09_BME Holiday Party_1.png">
                                         <a href="img/gallery/2022-12-09_BME Holiday Party_1.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7552,7 +7565,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-12-06_BME3053C Class Finale.jpg">
+                                        <img alt="BME3053C Class Finale 2022" src="img/gallery/2022-12-06_BME3053C Class Finale.jpg">
                                         <a href="img/gallery/2022-12-06_BME3053C Class Finale.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7566,7 +7579,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-11-19_Thankgiving2022_3.png">
+                                        <img alt="Thanksgiving 2022" src="img/gallery/2022-11-19_Thankgiving2022_3.png">
                                         <a href="img/gallery/2022-11-19_Thankgiving2022_3.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7581,7 +7594,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-11-19_Thankgiving2022_2.png">
+                                        <img alt="Thanksgiving 2022" src="img/gallery/2022-11-19_Thankgiving2022_2.png">
                                         <a href="img/gallery/2022-11-19_Thankgiving2022_2.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7596,7 +7609,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-10-26_Halloween2022_5.png">
+                                        <img alt="Halloween 2022" src="img/gallery/2022-10-26_Halloween2022_5.png">
                                         <a href="img/gallery/2022-10-26_Halloween2022_5.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7611,7 +7624,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-10-26_Halloween2022_4.png">
+                                        <img alt="Halloween 2022" src="img/gallery/2022-10-26_Halloween2022_4.png">
                                         <a href="img/gallery/2022-10-26_Halloween2022_4.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7626,7 +7639,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-10-26_Halloween2022_3.png">
+                                        <img alt="Halloween 2022" src="img/gallery/2022-10-26_Halloween2022_3.png">
                                         <a href="img/gallery/2022-10-26_Halloween2022_3.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7642,7 +7655,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_1.png">
+                                        <img alt="Fall 2022 Lab Retreat" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_1.png">
                                         <a href="img/gallery/2022-08-27_Fall2022LabRetreatLunch_1.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7657,7 +7670,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_2.png">
+                                        <img alt="Fall 2022 Lab Retreat" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_2.png">
                                         <a href="img/gallery/2022-08-27_Fall2022LabRetreatLunch_2.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7673,7 +7686,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_3.png">
+                                        <img alt="Fall 2022 Lab Retreat" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_3.png">
                                         <a href="img/gallery/2022-08-27_Fall2022LabRetreatLunch_3.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7688,7 +7701,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_4.png">
+                                        <img alt="Fall 2022 Lab Retreat" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_4.png">
                                         <a href="img/gallery/2022-08-27_Fall2022LabRetreatLunch_4.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7703,7 +7716,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_5.png">
+                                        <img alt="Fall 2022 Lab Retreat" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_5.png">
                                         <a href="img/gallery/2022-08-27_Fall2022LabRetreatLunch_5.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7719,7 +7732,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_6.png">
+                                        <img alt="Fall 2022 Lab Retreat" src="img/gallery/2022-08-27_Fall2022LabRetreatLunch_6.png">
                                         <a href="img/gallery/2022-08-27_Fall2022LabRetreatLunch_6.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7735,7 +7748,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_1.jpg">
+                                        <img alt="First Group Meeting Fall 2022" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_1.jpg">
                                         <a href="img/gallery/2022-08-22_FirstGroupMeetingFall2022_1.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7751,7 +7764,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_2.jpg">
+                                        <img alt="First Group Meeting Fall 2022" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_2.jpg">
                                         <a href="img/gallery/2022-08-22_FirstGroupMeetingFall2022_2.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7767,7 +7780,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_3.jpg">
+                                        <img alt="First Group Meeting Fall 2022" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_3.jpg">
                                         <a href="img/gallery/2022-08-22_FirstGroupMeetingFall2022_3.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7782,7 +7795,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_4.jpg">
+                                        <img alt="First Group Meeting Fall 2022" src="img/gallery/2022-08-22_FirstGroupMeetingFall2022_4.jpg">
                                         <a href="img/gallery/2022-08-22_FirstGroupMeetingFall2022_4.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7798,7 +7811,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-04-22_hwcoe_award.jpg">
+                                        <img alt="HWCOE Award 2022" src="img/gallery/2022-04-22_hwcoe_award.jpg">
                                         <a href="img/gallery/2022-04-22_hwcoe_award.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7813,7 +7826,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image"
+                                        <img alt="Garrett Outstanding Research Award at UF BME 2022"
                                             src="img/gallery/2022-04-14_Garrett_Award_UFBME_Undergrad_Research.png">
                                         <a href="img/gallery/2022-04-14_Garrett_Award_UFBME_Undergrad_Research.png"
                                             class="popup-with-move-anim">
@@ -7830,7 +7843,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image"
+                                        <img alt="Garrett Poster at UF BME Undergraduate Research Day 2022"
                                             src="img/gallery/2022-04-14_Garrett_Poster_UFBME_Undergrad_Research.png">
                                         <a href="img/gallery/2022-04-14_Garrett_Poster_UFBME_Undergrad_Research.png"
                                             class="popup-with-move-anim">
@@ -7846,7 +7859,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image"
+                                        <img alt="UF Undergraduate Research Symposium 2022"
                                             src="img/gallery/2022-04-07_UF_Undergraduate_Research_Symposium.png">
                                         <a href="img/gallery/2022-04-07_UF_Undergraduate_Research_Symposium.png"
                                             class="popup-with-move-anim">
@@ -7862,7 +7875,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-04-03_Group_La-Chua-Trail.png">
+                                        <img alt="Group outing at La Chua Trail 2022" src="img/gallery/2022-04-03_Group_La-Chua-Trail.png">
                                         <a href="img/gallery/2022-04-03_Group_La-Chua-Trail.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7877,7 +7890,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2022-02-19_EscapeRoom.png">
+                                        <img alt="Team Escape Room 2022" src="img/gallery/2022-02-19_EscapeRoom.png">
                                         <a href="img/gallery/2022-02-19_EscapeRoom.png" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7893,7 +7906,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-12-21_PhDGraduation.jpg">
+                                        <img alt="PhD Graduation 2021" src="img/gallery/2021-12-21_PhDGraduation.jpg">
                                         <a href="img/gallery/2021-12-21_PhDGraduation.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7907,7 +7920,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-12-12_EndofYearLunch@YummyHouse.jpg">
+                                        <img alt="End of Year Lunch at Yummy House 2021" src="img/gallery/2021-12-12_EndofYearLunch@YummyHouse.jpg">
                                         <a href="img/gallery/2021-12-12_EndofYearLunch@YummyHouse.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7921,7 +7934,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-11-14_Rock climbing_DrFang.png">
+                                        <img alt="Dr. Fang rock climbing 2021" src="img/gallery/2021-11-14_Rock climbing_DrFang.png">
                                         <a href="img/gallery/2021-11-14_Rock climbing_DrFang.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7935,7 +7948,7 @@
                                 </li>
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-11-14_GarrettKyleBirthday.jpg">
+                                        <img alt="Garrett and Kyle Birthday 2021" src="img/gallery/2021-11-14_GarrettKyleBirthday.jpg">
                                         <a href="img/gallery/2021-11-14_GarrettKyleBirthday.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7950,7 +7963,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-11-14_BBQ@Lake Wauburg.jpg">
+                                        <img alt="BBQ at Lake Wauburg 2021" src="img/gallery/2021-11-14_BBQ@Lake Wauburg.jpg">
                                         <a href="img/gallery/2021-11-14_BBQ@Lake Wauburg.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -7965,7 +7978,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-11-14_BBQ.jpg">
+                                        <img alt="Lab BBQ 2021" src="img/gallery/2021-11-14_BBQ.jpg">
                                         <a href="img/gallery/2021-11-14_BBQ.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7979,7 +7992,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-10-28_Halloween.png">
+                                        <img alt="Halloween 2021" src="img/gallery/2021-10-28_Halloween.png">
                                         <a href="img/gallery/2021-10-28_Halloween.png" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -7993,7 +8006,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-10-08_UFBME@BMES.jpg">
+                                        <img alt="UF BME at BMES 2021" src="img/gallery/2021-10-08_UFBME@BMES.jpg">
                                         <a href="img/gallery/2021-10-08_UFBME@BMES.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8007,7 +8020,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-10-08_SMILE@BMES.jpg">
+                                        <img alt="SMILE Lab at BMES 2021" src="img/gallery/2021-10-08_SMILE@BMES.jpg">
                                         <a href="img/gallery/2021-10-08_SMILE@BMES.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8021,7 +8034,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2021-09-19_GrapePicking@LotusFarm.jpg">
+                                        <img alt="Grape Picking at Lotus Farm 2021" src="img/gallery/2021-09-19_GrapePicking@LotusFarm.jpg">
                                         <a href="img/gallery/2021-09-19_GrapePicking@LotusFarm.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -8036,7 +8049,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2020-05-21_KyleSeeDCECelebrate.png">
+                                        <img alt="Kyle See DCE Celebration 2020" src="img/gallery/2020-05-21_KyleSeeDCECelebrate.png">
                                         <a href="img/gallery/2020-05-21_KyleSeeDCECelebrate.png"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -8052,7 +8065,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2019-02-26_OutreachCadeMuseum.jpg">
+                                        <img alt="Outreach at Cade Museum 2019" src="img/gallery/2019-02-26_OutreachCadeMuseum.jpg">
                                         <a href="img/gallery/2019-02-26_OutreachCadeMuseum.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -8068,7 +8081,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2019-02-01_SMILELab.jpg">
+                                        <img alt="SMILE Lab group photo 2019" src="img/gallery/2019-02-01_SMILELab.jpg">
                                         <a href="img/gallery/2019-02-01_SMILELab.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8082,7 +8095,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2019-02-01_Group_smile.jpg">
+                                        <img alt="SMILE Lab group 2019" src="img/gallery/2019-02-01_Group_smile.jpg">
                                         <a href="img/gallery/2019-02-01_Group_smile.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8096,7 +8109,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2018-12-04_BME3053CPoster.jpg">
+                                        <img alt="BME3053C Poster 2018" src="img/gallery/2018-12-04_BME3053CPoster.jpg">
                                         <a href="img/gallery/2018-12-04_BME3053CPoster.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -8111,7 +8124,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2018-12-04_BME3053C_Poster_FirstPlace.jpg">
+                                        <img alt="BME3053C Poster First Place 2018" src="img/gallery/2018-12-04_BME3053C_Poster_FirstPlace.jpg">
                                         <a href="img/gallery/2018-12-04_BME3053C_Poster_FirstPlace.jpg"
                                             class="popup-with-move-anim">
                                             <div class="over">
@@ -8126,7 +8139,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2017-06_PicnicFIU.png">
+                                        <img alt="Picnic at FIU 2017" src="img/gallery/2017-06_PicnicFIU.png">
                                         <a href="img/gallery/2017-06_PicnicFIU.png" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8140,7 +8153,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image"
+                                        <img alt="Robin Sidhu Memorial Young Scientist Award at SBMT 2017"
                                             src="img/gallery/2017-04_Robin Sidhu Memorial Young Scientist Award@Society of Brain Mapping and Therapeutics.jpg">
                                         <a href="img/gallery/2017-04_Robin Sidhu Memorial Young Scientist Award@Society of Brain Mapping and Therapeutics.jpg"
                                             class="popup-with-move-anim">
@@ -8157,7 +8170,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2017-04_award@SBMT.jpg">
+                                        <img alt="Award at SBMT 2017" src="img/gallery/2017-04_award@SBMT.jpg">
                                         <a href="img/gallery/2017-04_award@SBMT.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8172,7 +8185,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2016-04_spring-mlcourse.jpg">
+                                        <img alt="Spring ML Course 2016" src="img/gallery/2016-04_spring-mlcourse.jpg">
                                         <a href="img/gallery/2016-04_spring-mlcourse.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
@@ -8186,7 +8199,7 @@
 
                                 <li>
                                     <div>
-                                        <img alt="image" src="img/gallery/2016-02-08_FIU_Group.jpg">
+                                        <img alt="FIU Group Photo 2016" src="img/gallery/2016-02-08_FIU_Group.jpg">
                                         <a href="img/gallery/2016-02-08_FIU_Group.jpg" class="popup-with-move-anim">
                                             <div class="over">
                                                 <div class="comein">
