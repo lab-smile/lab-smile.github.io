@@ -2009,3 +2009,38 @@ h3[class*="border-b"]::after {
     padding: 2rem 1.5rem;
   }
 }
+
+
+/* ═══════════════════════════════════════════════════
+   WCAG 2.2 AAA – Enhanced Contrast & Visual Presentation
+   ═══════════════════════════════════════════════════ */
+
+/* 1.4.6 Enhanced Contrast: boost lighter text for 7:1 on white */
+.page-header-subtitle { color: rgba(255,255,255,0.9) !important; }
+footer .text-stone-500 { color: #d6d3d1 !important; }
+footer .text-stone-400 { color: #d6d3d1 !important; }
+
+/* 1.4.8 Visual Presentation: line spacing, line width, no justify */
+main p, main li, main td, main dd { line-height: 1.8; max-width: 80ch; }
+main { text-align: left; }
+
+/* 2.4.13 Focus Appearance: Enhanced focus indicators */
+*:focus-visible {
+  outline: 3px solid #C9A84C !important;
+  outline-offset: 3px !important;
+  border-radius: 2px;
+}
+*:focus:not(:focus-visible) { outline: none; }
+
+/* 2.5.8 Target Size: 44px minimum for interactive elements */
+a, button, [role="button"], input, select, textarea {
+  min-height: 44px;
+}
+nav a, footer a, .breadcrumb-nav a, p a, li a, td a { min-height: auto; }
+
+/* Breadcrumb styling */
+.breadcrumb-nav a { color: #78716c; }
+.breadcrumb-nav a:hover { color: #C9A84C; }
+
+/* Abbreviation styling */
+abbr[title] { text-decoration: underline dotted; cursor: help; }

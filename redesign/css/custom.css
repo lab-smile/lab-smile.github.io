@@ -2009,3 +2009,54 @@ h3[class*="border-b"]::after {
     padding: 2rem 1.5rem;
   }
 }
+
+
+/* ═══════════════════════════════════════════════════
+   35. WCAG 2.2 AAA — Enhanced Contrast & Visual Presentation
+   ═══════════════════════════════════════════════════ */
+
+/* 1.4.6 Enhanced Contrast: Ensure all body text meets 7:1 ratio on white.
+   stone-700 (#44403c) on white = ~8.1:1 — already the body default.
+   Override lighter classes that fall below 7:1. */
+.page-header-subtitle { color: rgba(255,255,255,0.9) !important; }
+
+/* Footer text on dark background: stone-400 (#a8a29e) on stone-900 (#1c1917) = ~5.5:1 — passes 7:1 if we lighten */
+footer .text-stone-500,
+footer .text-stone-400 { color: #d6d3d1 !important; } /* stone-300: ~10:1 on stone-900 */
+
+/* 1.4.8 Visual Presentation: line spacing >= 1.5x, paragraph width <= 80ch, no justify */
+main p, main li, main td, main dd { line-height: 1.8; max-width: 80ch; }
+main { text-align: left; }
+
+/* 2.4.13 Focus Appearance (Enhanced): 3px solid focus ring, contrasting color */
+*:focus-visible {
+  outline: 3px solid var(--uf-blue) !important;
+  outline-offset: 3px !important;
+  border-radius: 2px;
+}
+*:focus:not(:focus-visible) { outline: none; }
+
+/* 2.5.8 Target Size (Minimum): 44x44px for all interactive elements */
+a, button, [role="button"], input, select, textarea {
+  min-height: 44px;
+}
+/* Inline links within prose content should not enforce min-height */
+main p a, main li a, main td a, main dd a,
+.news-text a, footer a {
+  min-height: auto;
+  display: inline;
+}
+nav a { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+
+/* Breadcrumb styling */
+.breadcrumb-nav ol { list-style: none; padding: 0; margin: 0; }
+.breadcrumb-nav a { color: var(--stone-500); text-decoration: none; }
+.breadcrumb-nav a:hover { color: var(--uf-blue); text-decoration: underline; }
+.breadcrumb-nav [aria-current="page"] { color: var(--stone-900); }
+
+/* Abbreviation styling for WCAG 3.1.4 */
+abbr[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  cursor: help;
+}
