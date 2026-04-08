@@ -42,15 +42,15 @@
     { id: 'sommerfeld',  name: 'Arnold Sommerfeld',         sub: 'K\u00f6nigsberg, 1891 \u00b7 1868\u20131951',            branch: 'merged',  badge: 'star', x: 0, y: 13.2 },
 
     // EE / Signal Processing
-    { id: 'guillemin',   name: 'Ernst A. Guillemin',        sub: 'Munich, 1926 \u00b7 1898\u20131970',                     branch: 'ee',      badge: 'star', x: 0, y: 14.6 },
-    { id: 'tuttle',      name: 'David F. Tuttle, Jr.',      sub: 'MIT, 1948 \u00b7 1914\u2013?',                             branch: 'ee',      badge: null,   x: 0, y: 15.6 },
-    { id: 'kuh',         name: 'Ernest S. Kuh',             sub: 'Stanford, 1952 \u00b7 1928\u20132015',                   branch: 'ee',      badge: 'nae',  x: 0, y: 16.6 },
-    { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013present',             branch: 'ee',      badge: 'nae',  x: 0, y: 17.6 },
-    { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013present',                   branch: 'ee',      badge: 'nae',  x: 0, y: 18.6 },
-    { id: 'chen',        name: 'Tsuhan Chen',               sub: 'Caltech, 1993 \u00b7 1966\u2013present',                branch: 'ee',      badge: null,   x: 0, y: 19.6 },
+    { id: 'guillemin',   name: 'Ernst A. Guillemin',        sub: 'Munich, 1926 \u00b7 1898\u20131970',                     branch: 'ee',      badge: 'star', x: 0, y: 15.2 },
+    { id: 'tuttle',      name: 'David F. Tuttle, Jr.',      sub: 'MIT, 1948 \u00b7 1914\u2013?',                             branch: 'ee',      badge: null,   x: 0, y: 16.2 },
+    { id: 'kuh',         name: 'Ernest S. Kuh',             sub: 'Stanford, 1952 \u00b7 1928\u20132015',                   branch: 'ee',      badge: 'nae',  x: 0, y: 17.2 },
+    { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013present',             branch: 'ee',      badge: 'nae',  x: 0, y: 18.2 },
+    { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013present',                   branch: 'ee',      badge: 'nae',  x: 0, y: 19.2 },
+    { id: 'chen',        name: 'Tsuhan Chen',               sub: 'Caltech, 1993 \u00b7 1966\u2013present',                branch: 'ee',      badge: null,   x: 0, y: 20.2 },
 
     // Current
-    { id: 'fang',        name: 'Ruogu Fang',                sub: 'Cornell, 2014 \u00b7 University of Florida',             branch: 'current', badge: null,   x: 0, y: 20.6 },
+    { id: 'fang',        name: 'Ruogu Fang',                sub: 'Cornell, 2014 \u00b7 University of Florida',             branch: 'current', badge: null,   x: 0, y: 21.2 },
   ];
 
   var EDGES = [
@@ -97,7 +97,7 @@
     { text: 'Gauss Branch',                 y: 1.9,   x: -1 },
     { text: 'Euler Branch',                 y: 1.9,   x: 1 },
     { text: 'Branches Merge',               y: 10.5,  x: 0 },
-    { text: 'EE & Signal Processing',       y: 14.0,  x: 0 },
+    { text: 'EE & Signal Processing',       y: 14.35, x: 0 },
   ];
 
   var DEFAULT_BRANCHES = {
@@ -266,10 +266,10 @@
       var tw = labelStr.length * 6.2 + 24;
       // White pill background so edges don't obscure the label
       lg.append('rect')
-        .attr('x', lx - tw / 2).attr('y', ly - 11)
-        .attr('width', tw).attr('height', 18)
-        .attr('rx', 9)
-        .attr('fill', '#fff').attr('opacity', 0.95);
+        .attr('x', lx - tw / 2).attr('y', ly - 12)
+        .attr('width', tw).attr('height', 22)
+        .attr('rx', 11)
+        .attr('fill', '#fff');
       lg.append('text')
         .attr('x', lx).attr('y', ly + 3)
         .attr('text-anchor', 'middle')
