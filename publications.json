@@ -1,5 +1,14 @@
 [
     {
+        "title": "Learning Optimal Treatment Strategies for Intraoperative Hypotension Using Deep Reinforcement Learning",
+        "type": "Journal",
+        "authors": "Esra Adiyeke, Tianqi Liu, Venkata Sai Dheeraj Naganaboina, Han Li, Tyler J. Loftus, Yuanfang Ren, Benjamin Shickel, Matthew M. Ruppert, Karandeep Singh, <b>Ruogu Fang</b>, Parisa Rashidi, Azra Bihorac, Tezcan Ozrazgat-Baslanti",
+        "citation": "Kidney360",
+        "publication_year": "2026",
+        "label_class": "warning",
+        "data_year": "2026"
+    },
+    {
         "title": "Machine Learning Prediction of Anxiety Response to Combined tDCS and Cognitive Training Using MRI-Derived Current Density Modeling in Older Adults",
         "type": "Conference",
         "authors": "Junfu Cheng, Skylar E. Stolte, Zeyun Zhao, Andrew O'Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
