@@ -45,9 +45,9 @@
     { id: 'guillemin',   name: 'Ernst A. Guillemin',        sub: 'Munich, 1926 \u00b7 1898\u20131970',                     branch: 'ee',      badge: 'star', x: 0, y: 14.6 },
     { id: 'tuttle',      name: 'David F. Tuttle, Jr.',      sub: 'MIT, 1948 \u00b7 1914\u2013?',                             branch: 'ee',      badge: null,   x: 0, y: 15.6 },
     { id: 'kuh',         name: 'Ernest S. Kuh',             sub: 'Stanford, 1952 \u00b7 1928\u20132015',                   branch: 'ee',      badge: 'nae',  x: 0, y: 16.6 },
-    { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013',                    branch: 'ee',      badge: 'nae',  x: 0, y: 17.6 },
-    { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013',                          branch: 'ee',      badge: 'nae',  x: 0, y: 18.6 },
-    { id: 'chen',        name: 'Tsuhan Chen',               sub: 'Caltech, 1993 \u00b7 1966\u2013',                       branch: 'ee',      badge: null,   x: 0, y: 19.6 },
+    { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013present',             branch: 'ee',      badge: 'nae',  x: 0, y: 17.6 },
+    { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013present',                   branch: 'ee',      badge: 'nae',  x: 0, y: 18.6 },
+    { id: 'chen',        name: 'Tsuhan Chen',               sub: 'Caltech, 1993 \u00b7 1966\u2013present',                branch: 'ee',      badge: null,   x: 0, y: 19.6 },
 
     // Current
     { id: 'fang',        name: 'Ruogu Fang',                sub: 'Cornell, 2014 \u00b7 University of Florida',             branch: 'current', badge: null,   x: 0, y: 20.6 },
@@ -93,11 +93,11 @@
   ];
 
   var SECTION_LABELS = [
-    { text: 'Common Ancestor',              y: -0.35, x: 0 },
-    { text: 'Gauss Branch',                 y: 1.85,  x: -1 },
-    { text: 'Euler Branch',                 y: 1.85,  x: 1 },
-    { text: 'Branches Merge',               y: 10.55, x: 0 },
-    { text: 'EE & Signal Processing',       y: 13.95, x: 0 },
+    { text: 'Common Ancestor',              y: -0.55, x: 0 },
+    { text: 'Gauss Branch',                 y: 1.9,   x: -1 },
+    { text: 'Euler Branch',                 y: 1.9,   x: 1 },
+    { text: 'Branches Merge',               y: 10.5,  x: 0 },
+    { text: 'EE & Signal Processing',       y: 14.0,  x: 0 },
   ];
 
   var DEFAULT_BRANCHES = {
@@ -126,11 +126,11 @@
     if (!container) return;
 
     // ── Layout constants ────────────────────────────────────────────────
-    var NODE_W = 250;
-    var NODE_H = 54;
-    var COL_GAP = 290;
-    var ROW_GAP = 66;
-    var MARGIN = { top: 40, right: 40, bottom: 40, left: 40 };
+    var NODE_W = 260;
+    var NODE_H = 56;
+    var COL_GAP = 300;
+    var ROW_GAP = 72;
+    var MARGIN = { top: 60, right: 40, bottom: 40, left: 40 };
 
     var minY = d3.min(NODES, function (d) { return d.y; });
     var maxY = d3.max(NODES, function (d) { return d.y; });
@@ -259,19 +259,19 @@
     var labG = g.append('g');
     SECTION_LABELS.forEach(function (lbl) {
       var lx = centerX + lbl.x * COL_GAP;
-      var ly = MARGIN.top + (lbl.y - minY) * ROW_GAP + NODE_H / 2;
+      var ly = MARGIN.top + (lbl.y - minY) * ROW_GAP;
       var labelStr = lbl.text.toUpperCase();
       var lg = labG.append('g').style('opacity', 0);
-      // Measure text width (approximate: ~6px per char at font-size 10)
-      var tw = labelStr.length * 6.5 + 16;
-      // White background behind label so edges don't obscure it
+      // Approximate text width for background
+      var tw = labelStr.length * 6.2 + 24;
+      // White pill background so edges don't obscure the label
       lg.append('rect')
-        .attr('x', lx - tw / 2).attr('y', ly - 10)
-        .attr('width', tw).attr('height', 16)
-        .attr('rx', 3)
-        .attr('fill', '#fff').attr('opacity', 0.92);
+        .attr('x', lx - tw / 2).attr('y', ly - 11)
+        .attr('width', tw).attr('height', 18)
+        .attr('rx', 9)
+        .attr('fill', '#fff').attr('opacity', 0.95);
       lg.append('text')
-        .attr('x', lx).attr('y', ly)
+        .attr('x', lx).attr('y', ly + 3)
         .attr('text-anchor', 'middle')
         .attr('fill', subtextColor)
         .attr('font-size', 10)
