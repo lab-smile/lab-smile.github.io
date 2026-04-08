@@ -33,50 +33,9 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
  <link rel="stylesheet" href="css/custom.css">
+ <script src="https://d3js.org/d3.v7.min.js"></script>
  <style>
-  /* Genealogy tree styles */
-  .gen-tree { display: flex; flex-direction: column; align-items: center; gap: 0; }
-  .gen-dn { width: 2px; height: 20px; background: #d6d3d1; }
-  .gen-dn-amber { background: #BA7517; }
-  .gen-dn-teal { background: #0F6E56; }
-  .gen-dn-purple { background: #534AB7; }
-  .gen-dn-blue { background: #185FA5; }
-  .gen-dn-coral { background: #993C1D; }
-
-  .gen-box {
-    padding: 8px 14px;
-    border-radius: 10px;
-    border: 1px solid;
-    text-align: center;
-    width: 270px;
-    flex-shrink: 0;
-    transition: transform 0.15s, box-shadow 0.15s;
-  }
-  .gen-box:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-  .gen-box-wide { width: 320px; }
-  .gen-box-me { width: 300px; border-width: 2px; }
-  .gen-box .name { font-size: 14px; font-weight: 600; line-height: 1.3; display: block; }
-  .gen-box .sub { font-size: 12px; margin-top: 2px; display: block; line-height: 1.4; }
-
-  .c-gray { background: #f5f5f4; border-color: #d6d3d1; }
-  .c-gray .name { color: #1c1917; }
-  .c-gray .sub { color: #57534e; }
-  .c-amber { background: #fef3c7; border-color: #BA7517; }
-  .c-amber .name { color: #451a03; }
-  .c-amber .sub { color: #78350f; }
-  .c-teal { background: #d1fae5; border-color: #0F6E56; }
-  .c-teal .name { color: #064e3b; }
-  .c-teal .sub { color: #065f46; }
-  .c-purple { background: #ede9fe; border-color: #534AB7; }
-  .c-purple .name { color: #3b0764; }
-  .c-purple .sub { color: #4c1d95; }
-  .c-blue { background: #dbeafe; border-color: #185FA5; }
-  .c-blue .name { color: #1e3a5f; }
-  .c-blue .sub { color: #1e40af; }
-  .c-coral { background: #fee2e2; border-color: #993C1D; }
-  .c-coral .name { color: #7f1d1d; }
-  .c-coral .sub { color: #991b1b; }
-
+  /* Table styles */
   .gen-badge-star {
     display: inline-flex; align-items: center; justify-content: center;
     font-size: 10px; font-weight: 600;
@@ -88,33 +47,6 @@
     font-size: 10px; font-weight: 600;
     background: #dbeafe; color: #1e40af; border: 1px solid #3b82f6;
     border-radius: 9999px; padding: 1px 6px; margin-left: 4px; vertical-align: middle;
-  }
-
-  .gen-fork-connector { position: relative; width: 100%; max-width: 700px; height: 28px; }
-  .gen-fork-connector::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 14px; background: #d6d3d1; transform: translateX(-50%); }
-  .gen-fork-connector::after { content: ''; position: absolute; top: 14px; left: calc(25% + 4px); right: calc(25% + 4px); height: 2px; background: #d6d3d1; }
-
-  .gen-fork-row { display: flex; justify-content: center; align-items: flex-start; gap: 0; width: 100%; max-width: 700px; }
-  .gen-branch { display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 0; }
-  .gen-branch-top { width: 2px; height: 14px; }
-  .gen-branch-label { font-size: 12px; font-weight: 500; margin-bottom: 8px; text-align: center; font-style: italic; }
-
-  .gen-merge-bar { position: relative; width: 100%; max-width: 700px; height: 28px; }
-  .gen-merge-bar::after { content: ''; position: absolute; top: 0; left: calc(25% + 4px); right: calc(25% + 4px); height: 2px; background: #d6d3d1; }
-  .gen-merge-bar::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 28px; background: #d6d3d1; transform: translateX(-50%); }
-
-  .gen-sib-fork { position: relative; width: 270px; height: 20px; }
-  .gen-sib-fork::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 10px; background: #BA7517; transform: translateX(-50%); }
-  .gen-sib-fork::after { content: ''; position: absolute; top: 10px; left: 24%; right: 24%; height: 2px; background: #BA7517; }
-  .gen-sib-merge { position: relative; width: 270px; height: 20px; }
-  .gen-sib-merge::before { content: ''; position: absolute; left: 50%; top: 10px; width: 2px; height: 10px; background: #BA7517; transform: translateX(-50%); }
-  .gen-sib-merge::after { content: ''; position: absolute; top: 0; left: 24%; right: 24%; height: 2px; background: #BA7517; }
-  .gen-sib-down { width: 2px; height: 10px; background: #BA7517; }
-  .gen-sib-row { display: flex; gap: 8px; justify-content: center; }
-
-  .gen-sec-label {
-    font-size: 11px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
-    color: #a8a29e; margin: 8px 0 6px; text-align: center;
   }
 
   /* Table portrait */
@@ -173,8 +105,9 @@
    <h2 class="text-2xl font-bold mb-2">Academic Family Tree</h2>
    <p class="text-stone-500 text-sm mb-8">Both advisor branches of Felix Klein shown. Gauss branch (left, green) via Plucker; Euler branch (right, amber) via Lipschitz.</p>
 
-   <div class="overflow-x-auto">
-   <div class="gen-tree" style="min-width:600px;">
+   <div id="genealogy-tree" style="width:100%; min-height:900px; position:relative;"></div>
+
+   <div style="display:none;"><!-- CSS tree replaced by D3 -->
 
      <!-- SHARED ROOT -->
      <div class="gen-sec-label" style="margin-top:0;">shared root</div>
@@ -290,8 +223,7 @@
        <span class="sub">Cornell &middot; University of Florida BME &middot; SMILE Lab</span>
      </div>
 
-   </div>
-   </div>
+   </div></div>
 
    <!-- Legend -->
    <div class="flex flex-wrap gap-3 mt-8 pt-6 border-t border-stone-100 text-xs text-stone-500">
@@ -301,7 +233,7 @@
      <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-full" style="background:#ede9fe;border:1px solid #534AB7;"></div>Merged</div>
      <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-full" style="background:#dbeafe;border:1px solid #185FA5;"></div>EE / Signal Processing</div>
      <div class="flex items-center gap-1.5"><div class="w-3 h-3 rounded-full" style="background:#fee2e2;border:1px solid #993C1D;"></div>Current</div>
-     <div class="flex items-center gap-1.5"><span class="gen-badge-star" style="margin:0;">&#9733;</span> Landmark figure</div>
+     <div class="flex items-center gap-1.5"><span style="color:#d97706;font-size:14px;">&#9733;</span> Landmark figure</div>
      <div class="flex items-center gap-1.5"><span class="gen-badge-nae" style="margin:0;">NAE</span> Natl. Academy of Engineering</div>
    </div>
 
@@ -385,6 +317,13 @@
          <td class="px-4 py-3"><div class="portrait-cell"><img src="../img/genealogy/gottfried_leibniz.jpg" alt="Gottfried Wilhelm Leibniz" class="portrait-img" loading="lazy"><div><span class="font-semibold text-stone-900">Gottfried W. Leibniz <span class="gen-badge-star">&#9733;</span></span><br><span class="text-xs text-stone-400">1646&ndash;1716</span></div></div></td>
          <td class="px-4 py-3 hidden md:table-cell text-stone-600">Altdorf &rarr; Berlin &middot; Hanover</td>
          <td class="px-4 py-3 hidden lg:table-cell text-stone-600">Co-inventor of calculus; logic; philosophy; 183,000+ academic descendants</td>
+       </tr>
+       <tr class="row-euler hover:bg-stone-50">
+         <td class="px-4 py-3"></td>
+         <td class="px-4 py-3 font-medium text-stone-800">1676</td>
+         <td class="px-4 py-3"><div class="portrait-cell"><div class="portrait-placeholder">PW</div><div><span class="font-semibold text-stone-900">Peter Werenfels</span><br><span class="text-xs text-stone-400">1627&ndash;1703</span></div></div></td>
+         <td class="px-4 py-3 hidden md:table-cell text-stone-600">Univ. Basel</td>
+         <td class="px-4 py-3 hidden lg:table-cell text-stone-600">Professor of Logic &amp; Latin; doctoral advisor of Jacob Bernoulli</td>
        </tr>
        <tr class="row-euler hover:bg-stone-50">
          <td class="px-4 py-3"></td>
@@ -576,5 +515,18 @@
  <div id="site-footer"></div>
  <script defer src="js/nav.js"></script>
  <script defer src="js/reveal.js"></script>
+ <script src="../js/genealogy-tree.js"></script>
+ <script>
+   document.addEventListener('DOMContentLoaded', function () {
+     initGenealogyTree('genealogy-tree', {
+       fontFamily: 'Inter, system-ui, sans-serif',
+       fontFamilyDisplay: 'Space Grotesk, Inter, system-ui, sans-serif',
+       accentColor: '#0021A5',
+       textColor: '#1c1917',
+       subtextColor: '#78716c',
+       imagePrefix: '../',
+     });
+   });
+ </script>
 </body>
 </html>
