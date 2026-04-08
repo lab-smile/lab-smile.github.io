@@ -39,8 +39,6 @@
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/publications.js"></script>
     <script type="text/javascript" src="js/software.js"></script>
-    <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="js/genealogy-tree.js"></script>
 
     <!-- Disabling secure policy for local development -->
     <script>
@@ -8674,7 +8672,62 @@
                     <div class="section">
                         <div class="section-container">
                             <style>
-                              /* Genealogy table scoped styles */
+                              /* Genealogy tree scoped styles */
+                              #genealogy .gen-tree { display: flex; flex-direction: column; align-items: center; gap: 0; padding: 20px 0; }
+                              #genealogy .gen-dn { width: 2px; height: 18px; background: #ccc; }
+                              #genealogy .gen-dn-amber { background: #BA7517; }
+                              #genealogy .gen-dn-teal { background: #0F6E56; }
+                              #genealogy .gen-dn-purple { background: #534AB7; }
+                              #genealogy .gen-dn-blue { background: #185FA5; }
+                              #genealogy .gen-dn-coral { background: #993C1D; }
+                              #genealogy .gen-box { padding: 7px 12px; border-radius: 8px; border: 1px solid; text-align: center; width: 250px; flex-shrink: 0; }
+                              #genealogy .gen-box .gname { font-size: 13px; font-weight: 600; display: block; line-height: 1.3; }
+                              #genealogy .gen-box .gsub { font-size: 11px; display: block; margin-top: 2px; line-height: 1.35; }
+                              #genealogy .gen-box-wide { width: 290px; }
+                              #genealogy .gen-box-me { width: 280px; border-width: 2px; }
+                              #genealogy .c-gray { background: #f5f5f4; border-color: #ccc; }
+                              #genealogy .c-gray .gname { color: #222; }
+                              #genealogy .c-gray .gsub { color: #666; }
+                              #genealogy .c-amber { background: #fef3c7; border-color: #BA7517; }
+                              #genealogy .c-amber .gname { color: #451a03; }
+                              #genealogy .c-amber .gsub { color: #78350f; }
+                              #genealogy .c-teal { background: #d1fae5; border-color: #0F6E56; }
+                              #genealogy .c-teal .gname { color: #064e3b; }
+                              #genealogy .c-teal .gsub { color: #065f46; }
+                              #genealogy .c-purple { background: #ede9fe; border-color: #534AB7; }
+                              #genealogy .c-purple .gname { color: #3b0764; }
+                              #genealogy .c-purple .gsub { color: #4c1d95; }
+                              #genealogy .c-blue { background: #dbeafe; border-color: #185FA5; }
+                              #genealogy .c-blue .gname { color: #1e3a5f; }
+                              #genealogy .c-blue .gsub { color: #1e40af; }
+                              #genealogy .c-coral { background: #fee2e2; border-color: #993C1D; }
+                              #genealogy .c-coral .gname { color: #7f1d1d; }
+                              #genealogy .c-coral .gsub { color: #991b1b; }
+                              #genealogy .gen-badge { display: inline-block; font-size: 9px; font-weight: 600; border-radius: 10px; padding: 1px 6px; margin-left: 3px; vertical-align: middle; }
+                              #genealogy .gen-badge-star { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
+                              #genealogy .gen-badge-nae { background: #dbeafe; color: #1e40af; border: 1px solid #3b82f6; }
+                              #genealogy .gen-fork { position: relative; width: 100%; max-width: 650px; height: 26px; }
+                              #genealogy .gen-fork::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 13px; background: #ccc; transform: translateX(-50%); }
+                              #genealogy .gen-fork::after { content: ''; position: absolute; top: 13px; left: calc(25% + 4px); right: calc(25% + 4px); height: 2px; background: #ccc; }
+                              #genealogy .gen-fork-row { display: flex; justify-content: center; align-items: flex-start; gap: 0; width: 100%; max-width: 650px; }
+                              #genealogy .gen-branch { display: flex; flex-direction: column; align-items: center; flex: 1; min-width: 0; }
+                              #genealogy .gen-branch-top { width: 2px; height: 13px; }
+                              #genealogy .gen-branch-label { font-size: 11px; font-weight: 500; margin-bottom: 6px; text-align: center; font-style: italic; }
+                              #genealogy .gen-merge { position: relative; width: 100%; max-width: 650px; height: 26px; }
+                              #genealogy .gen-merge::after { content: ''; position: absolute; top: 0; left: calc(25% + 4px); right: calc(25% + 4px); height: 2px; background: #ccc; }
+                              #genealogy .gen-merge::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 26px; background: #ccc; transform: translateX(-50%); }
+                              #genealogy .gen-sib-fork { position: relative; width: 250px; height: 18px; }
+                              #genealogy .gen-sib-fork::before { content: ''; position: absolute; left: 50%; top: 0; width: 2px; height: 9px; background: #BA7517; transform: translateX(-50%); }
+                              #genealogy .gen-sib-fork::after { content: ''; position: absolute; top: 9px; left: 24%; right: 24%; height: 2px; background: #BA7517; }
+                              #genealogy .gen-sib-merge { position: relative; width: 250px; height: 18px; }
+                              #genealogy .gen-sib-merge::before { content: ''; position: absolute; left: 50%; top: 9px; width: 2px; height: 9px; background: #BA7517; transform: translateX(-50%); }
+                              #genealogy .gen-sib-merge::after { content: ''; position: absolute; top: 0; left: 24%; right: 24%; height: 2px; background: #BA7517; }
+                              #genealogy .gen-sib-down { width: 2px; height: 9px; background: #BA7517; }
+                              #genealogy .gen-sib-row { display: flex; gap: 6px; justify-content: center; }
+                              #genealogy .gen-sec-label { font-size: 10px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #999; margin: 6px 0 4px; text-align: center; }
+                              #genealogy .gen-legend { display: flex; gap: 12px 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; font-size: 12px; color: #888; }
+                              #genealogy .gen-legend-item { display: flex; align-items: center; gap: 5px; }
+                              #genealogy .gen-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
                               #genealogy .gen-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 30px; }
                               #genealogy .gen-table thead th { background: #333; color: #fff; padding: 10px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
                               #genealogy .gen-table td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
@@ -8682,27 +8735,101 @@
                               #genealogy .gen-table .portrait-cell { display: flex; align-items: center; gap: 8px; }
                               #genealogy .gen-table .portrait-img { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid #eee; flex-shrink: 0; }
                               #genealogy .gen-table .portrait-placeholder { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: #999; background: #f5f5f4; border: 2px solid #eee; flex-shrink: 0; }
-                              #genealogy .gen-badge { display: inline-block; font-size: 9px; font-weight: 600; border-radius: 10px; padding: 1px 6px; margin-left: 3px; vertical-align: middle; }
-                              #genealogy .gen-badge-star { background: #fef3c7; color: #92400e; border: 1px solid #f59e0b; }
-                              #genealogy .gen-badge-nae { background: #dbeafe; color: #1e40af; border: 1px solid #3b82f6; }
                               #genealogy .row-root td:first-child { border-left: 3px solid #aaa; }
                               #genealogy .row-euler td:first-child { border-left: 3px solid #BA7517; }
                               #genealogy .row-gauss td:first-child { border-left: 3px solid #0F6E56; }
                               #genealogy .row-merged td:first-child { border-left: 3px solid #534AB7; }
                               #genealogy .row-ee td:first-child { border-left: 3px solid #185FA5; }
                               #genealogy .row-current td:first-child { border-left: 3px solid #993C1D; }
-                              #genealogy .gen-legend { display: flex; gap: 12px 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; font-size: 12px; color: #888; }
-                              #genealogy .gen-legend-item { display: flex; align-items: center; gap: 5px; }
-                              #genealogy .gen-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
                               @media (max-width: 768px) {
                                 #genealogy .gen-table .inst-cell, #genealogy .gen-table .contrib-cell { display: none; }
                               }
                             </style>
 
                             <h3>Academic Family Tree</h3>
-                            <p style="color:#888;font-size:13px;margin-bottom:15px;">Fork at Jakob Thomasius &middot; Gauss branch (left) via Pl&uuml;cker &middot; Euler branch (right) via Lipschitz. Click a node to highlight its lineage.</p>
+                            <p style="color:#888;font-size:13px;margin-bottom:15px;">Gauss branch (left, green) via Pl&uuml;cker &middot; Euler branch (right, amber) via Lipschitz</p>
 
-                            <div id="genealogy-tree" style="width:100%; min-height:900px; position:relative; background:#fff; border-radius:8px;"></div>
+                            <div style="overflow-x:auto;">
+                            <div class="gen-tree" style="min-width:550px;">
+
+                              <div class="gen-sec-label" style="margin-top:0;">shared root</div>
+                              <div class="gen-box c-gray"><span class="gname">Friedrich Leibniz</span><span class="gsub">Leipzig, 1622 &middot; 1597&ndash;1652</span></div>
+                              <div class="gen-dn"></div>
+                              <div class="gen-box c-gray"><span class="gname">Jakob Thomasius</span><span class="gsub">Leipzig, 1643 &middot; 1622&ndash;1684</span></div>
+                              <div class="gen-dn"></div>
+                              <div class="gen-box c-gray"><span class="gname">Otto Mencke</span><span class="gsub">Leipzig, 1666 &middot; 1644&ndash;1707</span></div>
+                              <div class="gen-dn"></div>
+                              <div class="gen-box c-gray"><span class="gname">J. C. Wichmannshausen</span><span class="gsub">Leipzig, 1685 &middot; 1663&ndash;1727</span></div>
+                              <div class="gen-dn"></div>
+                              <div class="gen-box c-gray"><span class="gname">Christian August Hausen</span><span class="gsub">Halle-Wittenberg, 1713 &middot; 1693&ndash;1743</span></div>
+                              <div class="gen-dn"></div>
+                              <div class="gen-box c-gray"><span class="gname">Abraham G. K&auml;stner</span><span class="gsub">Leipzig, 1739 &middot; 1719&ndash;1800</span></div>
+
+                              <div class="gen-fork"></div>
+                              <div class="gen-fork-row">
+                                <!-- GAUSS (LEFT) -->
+                                <div class="gen-branch">
+                                  <div class="gen-branch-top" style="background:#0F6E56;"></div>
+                                  <div class="gen-branch-label" style="color:#0F6E56;">via Pl&uuml;cker (1st advisor)</div>
+                                  <div class="gen-box c-teal"><span class="gname">Johann Friedrich Pfaff</span><span class="gsub">G&ouml;ttingen, 1786 &middot; 1765&ndash;1825</span></div>
+                                  <div class="gen-dn gen-dn-teal"></div>
+                                  <div class="gen-box c-teal"><span class="gname">Carl Friedrich Gauss <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Helmstedt, 1799 &middot; 1777&ndash;1855</span></div>
+                                  <div class="gen-dn gen-dn-teal"></div>
+                                  <div class="gen-box c-teal"><span class="gname">Christian L. Gerling</span><span class="gsub">G&ouml;ttingen, 1812 &middot; 1788&ndash;1864</span></div>
+                                  <div class="gen-dn gen-dn-teal"></div>
+                                  <div class="gen-box c-teal"><span class="gname">Julius Pl&uuml;cker</span><span class="gsub">Marburg, 1823 &middot; 1801&ndash;1868</span></div>
+                                  <div class="gen-dn gen-dn-teal" style="height:24px;"></div>
+                                </div>
+                                <!-- EULER (RIGHT) -->
+                                <div class="gen-branch">
+                                  <div class="gen-branch-top" style="background:#BA7517;"></div>
+                                  <div class="gen-branch-label" style="color:#BA7517;">via Lipschitz (2nd advisor)</div>
+                                  <div class="gen-box c-amber"><span class="gname">Gottfried W. Leibniz <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Altdorf, 1666 &middot; 1646&ndash;1716</span></div>
+                                  <div class="gen-dn gen-dn-amber"></div>
+                                  <div class="gen-box c-amber"><span class="gname">Jacob Bernoulli</span><span class="gsub">Basel, 1684 &middot; 1655&ndash;1705</span></div>
+                                  <div class="gen-dn gen-dn-amber"></div>
+                                  <div class="gen-box c-amber"><span class="gname">Johann Bernoulli</span><span class="gsub">Basel, 1694 &middot; 1667&ndash;1748</span></div>
+                                  <div class="gen-dn gen-dn-amber"></div>
+                                  <div class="gen-box c-amber"><span class="gname">Leonhard Euler <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Basel, 1726 &middot; 1707&ndash;1783</span></div>
+                                  <div class="gen-dn gen-dn-amber"></div>
+                                  <div class="gen-box c-amber"><span class="gname">J.-L. Lagrange <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Turin, ~1754 &middot; 1736&ndash;1813</span></div>
+                                  <div class="gen-sib-fork"></div>
+                                  <div class="gen-sib-row">
+                                    <div style="display:flex;flex-direction:column;align-items:center;"><div class="gen-sib-down"></div><div class="gen-box c-amber" style="width:115px;"><span class="gname" style="font-size:12px;">Fourier <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub" style="font-size:10px;">~1800</span></div><div class="gen-sib-down"></div></div>
+                                    <div style="display:flex;flex-direction:column;align-items:center;"><div class="gen-sib-down"></div><div class="gen-box c-amber" style="width:115px;"><span class="gname" style="font-size:12px;">Poisson <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub" style="font-size:10px;">~1800</span></div><div class="gen-sib-down"></div></div>
+                                  </div>
+                                  <div class="gen-sib-merge"></div>
+                                  <div class="gen-box c-amber"><span class="gname">Gustav Dirichlet <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Bonn, 1827 &middot; 1805&ndash;1859</span></div>
+                                  <div class="gen-dn gen-dn-amber"></div>
+                                  <div class="gen-box c-amber"><span class="gname">Rudolf Lipschitz</span><span class="gsub">Berlin, 1853 &middot; 1832&ndash;1903</span></div>
+                                  <div class="gen-dn gen-dn-amber" style="height:24px;"></div>
+                                </div>
+                              </div>
+
+                              <div class="gen-merge"></div>
+                              <div class="gen-box c-purple gen-box-wide"><span class="gname">Felix Klein <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Bonn, 1868 &middot; 1849&ndash;1925 &middot; Erlangen Program</span></div>
+                              <div class="gen-dn gen-dn-purple"></div>
+                              <div class="gen-box c-purple"><span class="gname">Ferdinand von Lindemann <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Erlangen, 1873 &middot; 1852&ndash;1939</span></div>
+                              <div class="gen-dn gen-dn-purple"></div>
+                              <div class="gen-box c-purple"><span class="gname">Arnold Sommerfeld <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">K&ouml;nigsberg, 1891 &middot; 1868&ndash;1951</span></div>
+                              <div class="gen-dn gen-dn-blue"></div>
+
+                              <div class="gen-sec-label">electrical engineering &amp; signal processing</div>
+                              <div class="gen-box c-blue"><span class="gname">Ernst A. Guillemin <span class="gen-badge gen-badge-star">&#9733;</span></span><span class="gsub">Munich, 1926 &middot; MIT</span></div>
+                              <div class="gen-dn gen-dn-blue"></div>
+                              <div class="gen-box c-blue"><span class="gname">David Fears Tuttle, Jr.</span><span class="gsub">MIT, 1948 &middot; Stanford</span></div>
+                              <div class="gen-dn gen-dn-blue"></div>
+                              <div class="gen-box c-blue"><span class="gname">Ernest S. Kuh <span class="gen-badge gen-badge-nae">NAE</span></span><span class="gsub">Stanford, 1952 &middot; UC Berkeley</span></div>
+                              <div class="gen-dn gen-dn-blue"></div>
+                              <div class="gen-box c-blue"><span class="gname">Sanjit K. Mitra <span class="gen-badge gen-badge-nae">NAE</span></span><span class="gsub">UC Berkeley, 1962 &middot; UCSB</span></div>
+                              <div class="gen-dn gen-dn-blue"></div>
+                              <div class="gen-box c-blue"><span class="gname">P. P. Vaidyanathan <span class="gen-badge gen-badge-nae">NAE</span></span><span class="gsub">UCSB, 1982 &middot; Caltech</span></div>
+                              <div class="gen-dn gen-dn-blue"></div>
+                              <div class="gen-box c-blue"><span class="gname">Tsuhan Chen</span><span class="gsub">Caltech, 1993 &middot; Cornell / NUS</span></div>
+                              <div class="gen-dn gen-dn-coral"></div>
+                              <div class="gen-box c-coral gen-box-me"><span class="gname">Ruogu Fang</span><span class="gsub">Cornell &middot; University of Florida BME &middot; SMILE Lab</span></div>
+                            </div>
+                            </div>
 
                             <!-- Legend -->
                             <div class="gen-legend">
@@ -8732,8 +8859,8 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                <!-- SHARED ROOT — just 2 entries -->
-                                <tr class="sep-row"><td colspan="5">Common Root &mdash; shared ancestor of both branches</td></tr>
+                                <!-- SHARED ROOT -->
+                                <tr class="sep-row"><td colspan="5">Shared Root &mdash; common ancestor of both branches</td></tr>
 
                                 <tr class="row-root">
                                   <td>Root</td>
@@ -8747,71 +8874,39 @@
                                   <td>1643</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">JT</div><div><strong>Jakob Thomasius</strong><br><span style="font-size:11px;color:#999;">1622&ndash;1684</span></div></div></td>
                                   <td class="inst-cell">Univ. Leipzig</td>
-                                  <td class="contrib-cell">Philosopher; advised both Mencke (Gauss line) and G.W. Leibniz (Euler line)</td>
+                                  <td class="contrib-cell">Philosopher and jurist; mentor to Gottfried Leibniz</td>
                                 </tr>
-
-                                <!-- GAUSS BRANCH — includes Mencke through Plücker -->
-                                <tr class="sep-row"><td colspan="5" style="background:#d1fae5;color:#0F6E56;">Gauss Branch &mdash; Thomasius &rarr; Mencke &rarr; &hellip; &rarr; Pl&uuml;cker (1st advisor to Klein)</td></tr>
-
-                                <tr class="row-gauss">
-                                  <td style="color:#0F6E56;font-size:11px;">Gauss</td>
+                                <tr class="row-root">
+                                  <td></td>
                                   <td>1666</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">OM</div><div><strong>Otto Mencke</strong><br><span style="font-size:11px;color:#999;">1644&ndash;1707</span></div></div></td>
                                   <td class="inst-cell">Univ. Leipzig</td>
                                   <td class="contrib-cell">Founded <em>Acta Eruditorum</em> (1682), Germany&rsquo;s first scientific journal</td>
                                 </tr>
-                                <tr class="row-gauss">
+                                <tr class="row-root">
                                   <td></td>
                                   <td>1685</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">JW</div><div><strong>J. C. Wichmannshausen</strong><br><span style="font-size:11px;color:#999;">1663&ndash;1727</span></div></div></td>
                                   <td class="inst-cell">Univ. Leipzig</td>
                                   <td class="contrib-cell">Philosopher; dissertation on divorce according to natural law</td>
                                 </tr>
-                                <tr class="row-gauss">
+                                <tr class="row-root">
                                   <td></td>
                                   <td>1713</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">CH</div><div><strong>Christian August Hausen</strong><br><span style="font-size:11px;color:#999;">1693&ndash;1743</span></div></div></td>
                                   <td class="inst-cell">Halle-Wittenberg</td>
                                   <td class="contrib-cell">Mathematician and physicist; early research on electricity</td>
                                 </tr>
-                                <tr class="row-gauss">
+                                <tr class="row-root">
                                   <td></td>
                                   <td>1739</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">AK</div><div><strong>Abraham G. K&auml;stner</strong><br><span style="font-size:11px;color:#999;">1719&ndash;1800</span></div></div></td>
                                   <td class="inst-cell">Leipzig &rarr; G&ouml;ttingen</td>
-                                  <td class="contrib-cell">Encyclopedic mathematician; prominent G&ouml;ttingen professor</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1786</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/johann_pfaff.jpg" alt="Johann Friedrich Pfaff" class="portrait-img" loading="lazy"><div><strong>Johann Friedrich Pfaff</strong><br><span style="font-size:11px;color:#999;">1765&ndash;1825</span></div></div></td>
-                                  <td class="inst-cell">G&ouml;ttingen &rarr; Helmstedt</td>
-                                  <td class="contrib-cell">Pfaffian differential systems; Gauss&rsquo;s formal doctoral advisor</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1799</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/carl_gauss.jpg" alt="Carl Friedrich Gauss" class="portrait-img" loading="lazy"><div><strong>Carl Friedrich Gauss <span class="gen-badge gen-badge-star">&#9733;</span></strong><br><span style="font-size:11px;color:#999;">1777&ndash;1855</span></div></div></td>
-                                  <td class="inst-cell">Helmstedt &rarr; G&ouml;ttingen</td>
-                                  <td class="contrib-cell">&ldquo;Prince of Mathematicians&rdquo;; fundamental theorem of algebra; 127,000+ descendants</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1812</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/christian_gerling.jpg" alt="Christian Ludwig Gerling" class="portrait-img" loading="lazy"><div><strong>Christian L. Gerling</strong><br><span style="font-size:11px;color:#999;">1788&ndash;1864</span></div></div></td>
-                                  <td class="inst-cell">G&ouml;ttingen &rarr; Marburg</td>
-                                  <td class="contrib-cell">Geodesy and astronomy; extensive correspondence with Gauss</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1823</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/julius_plucker.jpg" alt="Julius Pl&uuml;cker" class="portrait-img" loading="lazy"><div><strong>Julius Pl&uuml;cker</strong><br><span style="font-size:11px;color:#999;">1801&ndash;1868</span></div></div></td>
-                                  <td class="inst-cell">Marburg &rarr; Bonn</td>
-                                  <td class="contrib-cell">Line geometry; analytic geometry; 1st (primary) advisor to Felix Klein</td>
+                                  <td class="contrib-cell">Encyclopedic mathematician; branches into Pfaff (Gauss) and Euler lines</td>
                                 </tr>
 
                                 <!-- EULER BRANCH -->
-                                <tr class="sep-row"><td colspan="5" style="background:#fef3c7;color:#BA7517;">Euler Branch &mdash; Thomasius &rarr; G.W. Leibniz &rarr; &hellip; &rarr; Lipschitz (2nd advisor to Klein)</td></tr>
+                                <tr class="sep-row"><td colspan="5" style="background:#fef3c7;color:#BA7517;">Euler Branch &mdash; via Lipschitz (2nd advisor to Felix Klein)</td></tr>
 
                                 <tr class="row-euler">
                                   <td style="color:#BA7517;font-size:11px;">Euler</td>
@@ -9087,20 +9182,6 @@
             <div id="overlay"></div>
         </div>
     </div>
-    <script>
-      // Initialize D3 genealogy tree when DOM is ready
-      document.addEventListener('DOMContentLoaded', function() {
-        if (typeof initGenealogyTree === 'function') {
-          initGenealogyTree('genealogy-tree', {
-            fontFamily: '"Open Sans", Arial, sans-serif',
-            fontFamilyDisplay: '"Open Sans", Arial, sans-serif',
-            accentColor: '#03cc85',
-            textColor: '#333333',
-            subtextColor: '#777777',
-          });
-        }
-      });
-    </script>
 </body>
 
 </html>
