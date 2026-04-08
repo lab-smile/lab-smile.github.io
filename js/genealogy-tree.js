@@ -96,7 +96,7 @@
     { text: 'Gauss Branch',                 y: 2.0,   x: -1 },
     { text: 'Euler Branch',                 y: 2.0,   x: 1 },
     { text: 'Branches Merge',               y: 11.6,  x: 0 },
-    { text: 'EE & Signal Processing',       y: 15.2,  x: 0 },
+    { text: 'EE & Signal Processing',       y: 15.6,  x: 0 },
   ];
 
   var DEFAULT_BRANCHES = {
@@ -136,7 +136,15 @@
     var minY = d3.min(NODES, function (d) { return d.y; });
     var maxY = d3.max(NODES, function (d) { return d.y; });
     var totalH = MARGIN.top + (maxY - minY) * ROW_GAP + NODE_H + MARGIN.bottom;
-    var totalW = MARGIN.left + COL_GAP * 2 + NODE_W + MARGIN.right;
+    // Compute width from actual node extents to avoid clipping
+    var maxX = d3.max(NODES, function (d) { return d.x; });
+    var minX = d3.min(NODES, function (d) { return d.x; });
+    var totalW = MARGIN.left + (maxX - minX) * COL_GAP + NODE_W + MARGIN.right;
+    // Ensure enough room when nodes sit at fractional x (e.g. Poisson at 1.38)
+    var extraRight = d3.max(NODES, function (d) { return d.x * COL_GAP + nw(d) / 2; }) || 0;
+    var extraLeft = d3.min(NODES, function (d) { return d.x * COL_GAP - nw(d) / 2; }) || 0;
+    var neededW = (extraRight - extraLeft) + MARGIN.left + MARGIN.right;
+    if (neededW > totalW) totalW = neededW;
     var centerX = totalW / 2;
 
     function nw(node) { return node.w || NODE_W; }
