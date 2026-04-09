@@ -24,7 +24,7 @@
 
     // Euler branch (right)
     { id: 'gw_leibniz',  name: 'Gottfried W. Leibniz',     sub: 'Altdorf, 1666 \u00b7 1646\u20131716',         branch: 'euler',   badge: 'star', x: 1, y: 2.8,   photo: 'gottfried_leibniz.jpg' },
-    { id: 'werenfels',   name: 'Peter Werenfels',           sub: 'Basel, 1676 \u00b7 1627\u20131703',           branch: 'euler',   badge: null,   x: 1, y: 3.8,   photo: null },
+    { id: 'malebranche', name: 'Nicolas Malebranche',        sub: 'Paris, ~1690 \u00b7 1638\u20131715',          branch: 'euler',   badge: null,   x: 1, y: 3.8,   photo: 'nicolas_malebranche.jpg' },
     { id: 'j_bernoulli', name: 'Jacob Bernoulli',           sub: 'Basel, 1684 \u00b7 1655\u20131705',           branch: 'euler',   badge: null,   x: 1, y: 4.8,   photo: 'jacob_bernoulli.jpg' },
     { id: 'joh_bernoulli', name: 'Johann Bernoulli',        sub: 'Basel, 1694 \u00b7 1667\u20131748',           branch: 'euler',   badge: null,   x: 1, y: 5.8,   photo: 'johann_bernoulli.jpg' },
     { id: 'euler',       name: 'Leonhard Euler',            sub: 'Basel, 1726 \u00b7 1707\u20131783',           branch: 'euler',   badge: 'star', x: 1, y: 6.8,   photo: 'leonhard_euler.jpg' },
@@ -65,8 +65,8 @@
     { source: 'gauss',     target: 'gerling' },
     { source: 'gerling',   target: 'plucker' },
     // Euler (corrected: Leibniz → Werenfels → Jacob Bernoulli)
-    { source: 'gw_leibniz',   target: 'werenfels' },
-    { source: 'werenfels',    target: 'j_bernoulli' },
+    { source: 'gw_leibniz',   target: 'malebranche' },
+    { source: 'malebranche',  target: 'j_bernoulli' },
     { source: 'j_bernoulli',  target: 'joh_bernoulli' },
     { source: 'joh_bernoulli', target: 'euler' },
     { source: 'euler',        target: 'lagrange' },
@@ -356,9 +356,8 @@
       if (d.badge === 'star') {
         nameEl.append('tspan')
           .attr('fill', '#d97706')
-          .attr('font-size', 14)
-          .attr('font-weight', 700)
-          .text(' *');
+          .attr('font-size', 13)
+          .text(' \u2605');
       }
     });
 
