@@ -128,6 +128,9 @@ function pubAssets(pub) {
         if (pub.external_links.arxiv) {
             assets += `<a href="${pub.external_links.arxiv}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on arXiv (opens in new tab)"><i class="fa fa-book"></i></a>`;
         }
+        if (pub.external_links.biorxiv) {
+            assets += `<a href="${pub.external_links.biorxiv}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on bioRxiv (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
+        }
     }
     return assets;
 }
