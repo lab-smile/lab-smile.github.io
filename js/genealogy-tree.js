@@ -133,21 +133,16 @@
     var PHOTO_SIZE = 32;
     var TEXT_X = 52;
 
+    function nw(node) { return node.w || NODE_W; }
+
     var minY = d3.min(NODES, function (d) { return d.y; });
     var maxY = d3.max(NODES, function (d) { return d.y; });
     var totalH = MARGIN.top + (maxY - minY) * ROW_GAP + NODE_H + MARGIN.bottom;
     // Compute width from actual node extents to avoid clipping
-    var maxX = d3.max(NODES, function (d) { return d.x; });
-    var minX = d3.min(NODES, function (d) { return d.x; });
-    var totalW = MARGIN.left + (maxX - minX) * COL_GAP + NODE_W + MARGIN.right;
-    // Ensure enough room when nodes sit at fractional x (e.g. Poisson at 1.38)
-    var extraRight = d3.max(NODES, function (d) { return d.x * COL_GAP + nw(d) / 2; }) || 0;
-    var extraLeft = d3.min(NODES, function (d) { return d.x * COL_GAP - nw(d) / 2; }) || 0;
-    var neededW = (extraRight - extraLeft) + MARGIN.left + MARGIN.right;
-    if (neededW > totalW) totalW = neededW;
+    var extraRight = d3.max(NODES, function (d) { return d.x * COL_GAP + nw(d) / 2; });
+    var extraLeft = d3.min(NODES, function (d) { return d.x * COL_GAP - nw(d) / 2; });
+    var totalW = (extraRight - extraLeft) + MARGIN.left + MARGIN.right;
     var centerX = totalW / 2;
-
-    function nw(node) { return node.w || NODE_W; }
 
     function px(node) {
       return {
@@ -193,13 +188,15 @@
     gm.append('feMergeNode').attr('in', 'b');
     gm.append('feMergeNode').attr('in', 'SourceGraphic');
 
-    // Circular clip for photos
+    // Circular clip for photos (positioned to match image placement in node)
+    var photoCx = 14 + PHOTO_SIZE / 2;
+    var photoCy = (NODE_H - PHOTO_SIZE) / 2 + PHOTO_SIZE / 2;
     NODES.forEach(function (d) {
       if (d.photo) {
         defs.append('clipPath')
           .attr('id', 'cp-' + containerId + '-' + d.id)
           .append('circle')
-          .attr('cx', PHOTO_SIZE / 2).attr('cy', PHOTO_SIZE / 2).attr('r', PHOTO_SIZE / 2);
+          .attr('cx', photoCx).attr('cy', photoCy).attr('r', PHOTO_SIZE / 2);
       }
     });
 
@@ -360,7 +357,8 @@
         nameEl.append('tspan')
           .attr('fill', '#d97706')
           .attr('font-size', 14)
-          .text(' \u2605');
+          .attr('font-weight', 700)
+          .text(' *');
       }
     });
 
