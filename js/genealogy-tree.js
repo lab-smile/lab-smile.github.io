@@ -40,12 +40,12 @@
     { id: 'sommerfeld',  name: 'Arnold Sommerfeld',         sub: 'K\u00f6nigsberg, 1891 \u00b7 1868\u20131951', branch: 'merged',  badge: 'star', x: 0, y: 14.4,  photo: 'arnold_sommerfeld.jpg' },
 
     // EE / Signal Processing
-    { id: 'guillemin',   name: 'Ernst A. Guillemin',        sub: 'Munich, 1926 \u00b7 1898\u20131970',          branch: 'ee',      badge: 'star', x: 0, y: 16.0,  photo: null },
+    { id: 'guillemin',   name: 'Ernst A. Guillemin',        sub: 'Munich, 1926 \u00b7 1898\u20131970',          branch: 'ee',      badge: 'star', x: 0, y: 16.0,  photo: 'ernst_guillemin.jpg' },
     { id: 'tuttle',      name: 'David F. Tuttle, Jr.',      sub: 'MIT, 1948 \u00b7 1914\u2013?',                branch: 'ee',      badge: null,   x: 0, y: 17.0,  photo: null },
-    { id: 'kuh',         name: 'Ernest S. Kuh',             sub: 'Stanford, 1952 \u00b7 1928\u20132015',        branch: 'ee',      badge: 'nae',  x: 0, y: 18.0,  photo: null },
-    { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013present',  branch: 'ee',      badge: 'nae',  x: 0, y: 19.0,  photo: null },
-    { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013present',        branch: 'ee',      badge: 'nae',  x: 0, y: 20.0,  photo: null },
-    { id: 'chen',        name: 'Tsuhan Chen',               sub: 'Caltech, 1993 \u00b7 1966\u2013present',     branch: 'ee',      badge: null,   x: 0, y: 21.0,  photo: null },
+    { id: 'kuh',         name: 'Ernest S. Kuh',             sub: 'Stanford, 1952 \u00b7 1928\u20132015',        branch: 'ee',      badge: 'nae',  x: 0, y: 18.0,  photo: 'ernest_kuh.jpg' },
+    { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013present',  branch: 'ee',      badge: 'nae',  x: 0, y: 19.0,  photo: 'sanjit_mitra.jpg' },
+    { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013present',        branch: 'ee',      badge: 'nae',  x: 0, y: 20.0,  photo: 'pp_vaidyanathan.jpg' },
+    { id: 'chen',        name: 'Tsuhan Chen',               sub: 'Caltech, 1993 \u00b7 1966\u2013present',     branch: 'ee',      badge: null,   x: 0, y: 21.0,  photo: 'tsuhan_chen.jpg' },
 
     // Current
     { id: 'fang',        name: 'Ruogu Fang',                sub: 'Cornell, 2014 \u00b7 University of Florida',  branch: 'current', badge: null,   x: 0, y: 22.4,  photo: 'ruogu_fang.jpg' },
