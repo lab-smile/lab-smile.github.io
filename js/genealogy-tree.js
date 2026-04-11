@@ -157,19 +157,22 @@
     // ── SVG (static — no zoom/pan) ─────────────────────────────────────
     container.innerHTML = '';
     container.style.position = 'relative';
-    container.style.minHeight = totalH * 0.55 + 'px';
-    // Mobile: allow horizontal scroll so the tree never shrinks unreadably
+    // Mobile: horizontal scroll wrapper — tree renders at full width, never shrinks unreadably
     container.style.overflowX = 'auto';
     container.style.webkitOverflowScrolling = 'touch';
 
     var svgWrap = d3.select(container).append('div')
-      .style('min-width', totalW + 'px');
+      .style('min-width', totalW + 'px')
+      .style('max-width', totalW + 'px')
+      .style('position', 'relative');
 
     var svg = svgWrap
       .append('svg')
-      .attr('width', '100%')
+      .attr('width', totalW)
+      .attr('height', totalH)
       .attr('viewBox', '0 0 ' + totalW + ' ' + totalH)
       .attr('preserveAspectRatio', 'xMidYMin meet')
+      .style('display', 'block')
       .style('font-family', fontFamily);
 
     // Defs
@@ -406,8 +409,8 @@
         } catch (e) {}
       });
 
-    // ── Tooltip ─────────────────────────────────────────────────────────
-    var tip = d3.select(container).append('div')
+    // ── Tooltip (inside svgWrap so it scrolls with content) ─────────────
+    var tip = svgWrap.append('div')
       .style('position', 'absolute').style('pointer-events', 'none')
       .style('padding', '8px 12px').style('background', 'rgba(15,15,15,0.92)')
       .style('color', '#fff').style('border-radius', '8px').style('font-size', '12px')
@@ -444,11 +447,11 @@
           merged: 'Klein\u2013Sommerfeld', ee: 'EE & Signal Processing', current: 'Present' })[d.branch];
         tip.html('<strong>' + d.name + '</strong><br>' + d.sub + '<br><span style="opacity:.6">' + bl + '</span>');
         tip.style('opacity', 1);
-        var r = container.getBoundingClientRect();
+        var r = svgWrap.node().getBoundingClientRect();
         tip.style('left', (ev.clientX - r.left + 12) + 'px').style('top', (ev.clientY - r.top - 10) + 'px');
       })
       .on('mousemove', function (ev) {
-        var r = container.getBoundingClientRect();
+        var r = svgWrap.node().getBoundingClientRect();
         tip.style('left', (ev.clientX - r.left + 12) + 'px').style('top', (ev.clientY - r.top - 10) + 'px');
       })
       .on('mouseleave', function (ev, d) {
