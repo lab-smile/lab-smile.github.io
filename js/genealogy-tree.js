@@ -29,8 +29,8 @@
     { id: 'joh_bernoulli', name: 'Johann Bernoulli',        sub: 'Basel, 1694 \u00b7 1667\u20131748',           branch: 'euler',   badge: null,   x: 1, y: 5.8,   photo: 'johann_bernoulli.jpg' },
     { id: 'euler',       name: 'Leonhard Euler',            sub: 'Basel, 1726 \u00b7 1707\u20131783',           branch: 'euler',   badge: 'star', x: 1, y: 6.8,   photo: 'leonhard_euler.jpg' },
     { id: 'lagrange',    name: 'Joseph-Louis Lagrange',     sub: 'Turin, ~1754 \u00b7 1736\u20131813',          branch: 'euler',   badge: 'star', x: 1, y: 7.8,   photo: 'joseph_lagrange.jpg' },
-    { id: 'fourier',     name: 'Fourier',                    sub: '~1800 \u00b7 1768\u20131830',                  branch: 'euler',   badge: 'star', x: 0.62, y: 8.8, w: 155, photo: 'joseph_fourier.jpg' },
-    { id: 'poisson',     name: 'Poisson',                   sub: '~1800 \u00b7 1781\u20131840',                  branch: 'euler',   badge: 'star', x: 1.38, y: 8.8, w: 155, photo: 'simeon_poisson.jpg' },
+    { id: 'fourier',     name: 'Joseph Fourier',             sub: '~1800 \u00b7 1768\u20131830',                  branch: 'euler',   badge: 'star', x: 0.62, y: 8.8, w: 175, photo: 'joseph_fourier.jpg' },
+    { id: 'poisson',     name: 'Sim\u00e9on Poisson',       sub: '~1800 \u00b7 1781\u20131840',                  branch: 'euler',   badge: 'star', x: 1.38, y: 8.8, w: 175, photo: 'simeon_poisson.jpg' },
     { id: 'dirichlet',   name: 'G. Lejeune Dirichlet',      sub: 'Bonn, 1827 \u00b7 1805\u20131859',           branch: 'euler',   badge: 'star', x: 1, y: 9.8,   photo: 'gustav_dirichlet.jpg' },
     { id: 'lipschitz',   name: 'Rudolf Lipschitz',          sub: 'Berlin, 1853 \u00b7 1832\u20131903',          branch: 'euler',   badge: null,   x: 1, y: 10.8,  photo: 'rudolf_lipschitz.jpg' },
 
@@ -158,8 +158,14 @@
     container.innerHTML = '';
     container.style.position = 'relative';
     container.style.minHeight = totalH * 0.55 + 'px';
+    // Mobile: allow horizontal scroll so the tree never shrinks unreadably
+    container.style.overflowX = 'auto';
+    container.style.webkitOverflowScrolling = 'touch';
 
-    var svg = d3.select(container)
+    var svgWrap = d3.select(container).append('div')
+      .style('min-width', totalW + 'px');
+
+    var svg = svgWrap
       .append('svg')
       .attr('width', '100%')
       .attr('viewBox', '0 0 ' + totalW + ' ' + totalH)
