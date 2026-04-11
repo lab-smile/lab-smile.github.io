@@ -500,5 +500,10 @@
     labG.selectAll('g').transition()
       .delay(function (d, i) { return i * 80 + 100; })
       .duration(350).style('opacity', 1);
+
+    // Center the tree horizontally on load so the root node is visible
+    setTimeout(function () {
+      container.scrollLeft = Math.round((totalW - container.clientWidth) / 2);
+    }, 0);
   };
 })();

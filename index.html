@@ -8699,8 +8699,14 @@
                               #genealogy .row-merged td:first-child { border-left: 3px solid #534AB7; }
                               #genealogy .row-ee td:first-child { border-left: 3px solid #185FA5; }
                               #genealogy .row-current td:first-child { border-left: 3px solid #993C1D; }
-                              @media (max-width: 768px) {
+                              @media (max-width: 600px) {
                                 #genealogy .gen-table .inst-cell, #genealogy .gen-table .contrib-cell { display: none; }
+                                #genealogy .gen-table thead tr th:first-child,
+                                #genealogy .gen-table tbody tr:not(.sep-row) td:first-child { display: none; }
+                                #genealogy .gen-table td, #genealogy .gen-table th { padding: 6px 8px; }
+                                #genealogy .gen-table .portrait-cell { flex-wrap: nowrap; }
+                                #genealogy .gen-table .portrait-cell > div { word-break: break-word; min-width: 0; overflow-wrap: break-word; }
+                                #genealogy .gen-table { font-size: 12px; }
                               }
                             </style>
 
