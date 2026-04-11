@@ -268,6 +268,17 @@ h1, h2, h3, .heading {
 .header-transparent:not(.header-solid) #site-header a[aria-label*="CV"] {
   background: var(--uf-blue) !important;
 }
+/* Mobile drawer links must stay readable regardless of header transparency */
+.header-transparent #site-header .mobile-drawer [data-nav-link] {
+  color: var(--stone-700) !important;
+}
+.header-transparent #site-header .mobile-drawer [data-nav-link][aria-current="page"] {
+  color: var(--uf-blue) !important;
+}
+.header-transparent #site-header .mobile-drawer a[aria-label*="CV"] {
+  background: transparent !important;
+  color: var(--uf-blue) !important;
+}
 
 /* Nav links - blue underline hover */
 [data-nav-link] {
