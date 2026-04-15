@@ -8665,7 +8665,7 @@
                             <h2 class="title">Academic Genealogy</h2>
                             <div class="row">
                                 <div class="col-md-8">
-                                    <p>A chain of mentorship spanning four centuries, from Friedrich Leibniz (1622) to present. Both advisor branches of Felix Klein are shown, tracing through Euler and Gauss back to a common root. Data sourced from the <a href="https://www.mathgenealogy.org/" target="_blank">Mathematics Genealogy Project</a>.</p>
+                                    <p>A chain of mentorship spanning four centuries, from Friedrich Leibniz (1622) to present. Both advisor branches of Felix Klein are shown: the Gauss branch (via Mencke &rarr; Pfaff &rarr; Gauss &rarr; Pl&uuml;cker) and the Euler branch (via Gottfried Leibniz &rarr; Euler &rarr; Lagrange &rarr; Dirichlet &rarr; Lipschitz), both descending from Jakob Thomasius. Data sourced from the <a href="https://www.mathgenealogy.org/" target="_blank">Mathematics Genealogy Project</a>.</p>
                                 </div>
                             </div>
                         </div>
@@ -8737,7 +8737,7 @@
 
                             <!-- Complete Lineage Table -->
                             <h3 style="margin-top:35px;">Complete Academic Lineage</h3>
-                            <p style="color:#888;font-size:13px;margin-bottom:15px;">From Friedrich Leibniz (1622) to Ruogu Fang &mdash; four centuries of mentorship.</p>
+                            <p style="color:#888;font-size:13px;margin-bottom:15px;">From Friedrich Leibniz (1622) to Ruogu Fang &mdash; four centuries of mentorship. The tree forks at Jakob Thomasius into the Gauss branch (left) and Euler branch (right), merging at Felix Klein.</p>
 
                             <div style="overflow-x:auto;">
                             <table class="gen-table">
@@ -8766,35 +8766,67 @@
                                   <td>1643</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">JT</div><div><strong>Jakob Thomasius</strong><br><span style="font-size:11px;color:#999;">1622&ndash;1684</span></div></div></td>
                                   <td class="inst-cell">Univ. Leipzig</td>
-                                  <td class="contrib-cell">Philosopher and jurist; mentor to Gottfried Leibniz</td>
+                                  <td class="contrib-cell">Philosopher and jurist; mentor to both Mencke (Gauss line) and Gottfried Leibniz (Euler line)</td>
                                 </tr>
-                                <tr class="row-root">
-                                  <td></td>
+
+                                <!-- GAUSS BRANCH -->
+                                <tr class="sep-row"><td colspan="5" style="background:#d1fae5;color:#0F6E56;">Gauss Branch &mdash; via Pl&uuml;cker (1st advisor to Felix Klein)</td></tr>
+
+                                <tr class="row-gauss">
+                                  <td style="color:#0F6E56;font-size:11px;">Gauss</td>
                                   <td>1666</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">OM</div><div><strong>Otto Mencke</strong><br><span style="font-size:11px;color:#999;">1644&ndash;1707</span></div></div></td>
                                   <td class="inst-cell">Univ. Leipzig</td>
                                   <td class="contrib-cell">Founded <em>Acta Eruditorum</em> (1682), Germany&rsquo;s first scientific journal</td>
                                 </tr>
-                                <tr class="row-root">
+                                <tr class="row-gauss">
                                   <td></td>
                                   <td>1685</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">JW</div><div><strong>J. C. Wichmannshausen</strong><br><span style="font-size:11px;color:#999;">1663&ndash;1727</span></div></div></td>
                                   <td class="inst-cell">Univ. Leipzig</td>
                                   <td class="contrib-cell">Philosopher; dissertation on divorce according to natural law</td>
                                 </tr>
-                                <tr class="row-root">
+                                <tr class="row-gauss">
                                   <td></td>
                                   <td>1713</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">CH</div><div><strong>Christian August Hausen</strong><br><span style="font-size:11px;color:#999;">1693&ndash;1743</span></div></div></td>
                                   <td class="inst-cell">Halle-Wittenberg</td>
                                   <td class="contrib-cell">Mathematician and physicist; early research on electricity</td>
                                 </tr>
-                                <tr class="row-root">
+                                <tr class="row-gauss">
                                   <td></td>
                                   <td>1739</td>
                                   <td><div class="portrait-cell"><div class="portrait-placeholder">AK</div><div><strong>Abraham G. K&auml;stner</strong><br><span style="font-size:11px;color:#999;">1719&ndash;1800</span></div></div></td>
                                   <td class="inst-cell">Leipzig &rarr; G&ouml;ttingen</td>
-                                  <td class="contrib-cell">Encyclopedic mathematician; branches into Pfaff (Gauss) and Euler lines</td>
+                                  <td class="contrib-cell">Encyclopedic mathematician; advisor to Pfaff (who advised Gauss)</td>
+                                </tr>
+                                <tr class="row-gauss">
+                                  <td></td>
+                                  <td>1786</td>
+                                  <td><div class="portrait-cell"><img src="img/genealogy/johann_pfaff.jpg" alt="Johann Friedrich Pfaff" class="portrait-img" loading="lazy"><div><strong>Johann Friedrich Pfaff</strong><br><span style="font-size:11px;color:#999;">1765&ndash;1825</span></div></div></td>
+                                  <td class="inst-cell">G&ouml;ttingen &rarr; Helmstedt</td>
+                                  <td class="contrib-cell">Pfaffian differential systems; Gauss&rsquo;s formal doctoral advisor</td>
+                                </tr>
+                                <tr class="row-gauss">
+                                  <td></td>
+                                  <td>1799</td>
+                                  <td><div class="portrait-cell"><img src="img/genealogy/carl_gauss.jpg" alt="Carl Friedrich Gauss" class="portrait-img" loading="lazy"><div><strong>Carl Friedrich Gauss <span class="gen-badge gen-badge-star">&#9733;</span></strong><br><span style="font-size:11px;color:#999;">1777&ndash;1855</span></div></div></td>
+                                  <td class="inst-cell">Helmstedt &rarr; G&ouml;ttingen</td>
+                                  <td class="contrib-cell">&ldquo;Prince of Mathematicians&rdquo;; fundamental theorem of algebra; 127,000+ descendants</td>
+                                </tr>
+                                <tr class="row-gauss">
+                                  <td></td>
+                                  <td>1812</td>
+                                  <td><div class="portrait-cell"><img src="img/genealogy/christian_gerling.jpg" alt="Christian Ludwig Gerling" class="portrait-img" loading="lazy"><div><strong>Christian L. Gerling</strong><br><span style="font-size:11px;color:#999;">1788&ndash;1864</span></div></div></td>
+                                  <td class="inst-cell">G&ouml;ttingen &rarr; Marburg</td>
+                                  <td class="contrib-cell">Geodesy and astronomy; extensive correspondence with Gauss</td>
+                                </tr>
+                                <tr class="row-gauss">
+                                  <td></td>
+                                  <td>1823</td>
+                                  <td><div class="portrait-cell"><img src="img/genealogy/julius_plucker.jpg" alt="Julius Plucker" class="portrait-img" loading="lazy"><div><strong>Julius Pl&uuml;cker</strong><br><span style="font-size:11px;color:#999;">1801&ndash;1868</span></div></div></td>
+                                  <td class="inst-cell">Marburg &rarr; Bonn</td>
+                                  <td class="contrib-cell">Line geometry; analytic geometry; 1st (primary) advisor to Felix Klein</td>
                                 </tr>
 
                                 <!-- EULER BRANCH -->
@@ -8871,38 +8903,6 @@
                                   <td class="contrib-cell">Lipschitz continuity; Clifford algebras; 2nd advisor to Felix Klein</td>
                                 </tr>
 
-                                <!-- GAUSS BRANCH -->
-                                <tr class="sep-row"><td colspan="5" style="background:#d1fae5;color:#0F6E56;">Gauss Branch &mdash; via Pl&uuml;cker (1st advisor to Felix Klein)</td></tr>
-
-                                <tr class="row-gauss">
-                                  <td style="color:#0F6E56;font-size:11px;">Gauss</td>
-                                  <td>1786</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/johann_pfaff.jpg" alt="Johann Friedrich Pfaff" class="portrait-img" loading="lazy"><div><strong>Johann Friedrich Pfaff</strong><br><span style="font-size:11px;color:#999;">1765&ndash;1825</span></div></div></td>
-                                  <td class="inst-cell">G&ouml;ttingen &rarr; Helmstedt</td>
-                                  <td class="contrib-cell">Pfaffian differential systems; Gauss&rsquo;s formal doctoral advisor</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1799</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/carl_gauss.jpg" alt="Carl Friedrich Gauss" class="portrait-img" loading="lazy"><div><strong>Carl Friedrich Gauss <span class="gen-badge gen-badge-star">&#9733;</span></strong><br><span style="font-size:11px;color:#999;">1777&ndash;1855</span></div></div></td>
-                                  <td class="inst-cell">Helmstedt &rarr; G&ouml;ttingen</td>
-                                  <td class="contrib-cell">&ldquo;Prince of Mathematicians&rdquo;; fundamental theorem of algebra; 127,000+ descendants</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1812</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/christian_gerling.jpg" alt="Christian Ludwig Gerling" class="portrait-img" loading="lazy"><div><strong>Christian L. Gerling</strong><br><span style="font-size:11px;color:#999;">1788&ndash;1864</span></div></div></td>
-                                  <td class="inst-cell">G&ouml;ttingen &rarr; Marburg</td>
-                                  <td class="contrib-cell">Geodesy and astronomy; extensive correspondence with Gauss</td>
-                                </tr>
-                                <tr class="row-gauss">
-                                  <td></td>
-                                  <td>1823</td>
-                                  <td><div class="portrait-cell"><img src="img/genealogy/julius_plucker.jpg" alt="Julius Plucker" class="portrait-img" loading="lazy"><div><strong>Julius Pl&uuml;cker</strong><br><span style="font-size:11px;color:#999;">1801&ndash;1868</span></div></div></td>
-                                  <td class="inst-cell">Marburg &rarr; Bonn</td>
-                                  <td class="contrib-cell">Line geometry; analytic geometry; 1st (primary) advisor to Felix Klein</td>
-                                </tr>
-
                                 <!-- MERGED -->
                                 <tr class="sep-row"><td colspan="5" style="background:#ede9fe;color:#534AB7;">Both Branches Merge at Felix Klein</td></tr>
 
@@ -8941,7 +8941,7 @@
                                 <tr class="row-ee">
                                   <td></td>
                                   <td>1948</td>
-                                  <td><div class="portrait-cell"><div class="portrait-placeholder">DT</div><div><strong>David Fears Tuttle, Jr.</strong><br><span style="font-size:11px;color:#999;">1914&ndash;?</span></div></div></td>
+                                   <td><div class="portrait-cell"><img src="img/genealogy/david_tuttle.jpg" alt="David Fears Tuttle, Jr." class="portrait-img" loading="lazy"><strong>David Fears Tuttle, Jr.</strong><br><span style="font-size:11px;color:#999;">1914&ndash;?</span></div></div></td>
                                   <td class="inst-cell">MIT &rarr; Stanford</td>
                                   <td class="contrib-cell">Network synthesis; authored classic textbooks; Stanford legend</td>
                                 </tr>
