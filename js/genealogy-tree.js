@@ -9,14 +9,14 @@
   // ── Scholar data ──────────────────────────────────────────────────────
   var NODES = [
     // Shared root (center)
-    { id: 'f_leibniz',   name: 'Friedrich Leibniz',       sub: 'Leipzig, 1622 \u00b7 1597\u20131652',          branch: 'root',    badge: null,   x: 0, y: 0,    photo: null },
-    { id: 'thomasius',   name: 'Jakob Thomasius',          sub: 'Leipzig, 1643 \u00b7 1622\u20131684',          branch: 'root',    badge: null,   x: 0, y: 1,    photo: null },
+    { id: 'f_leibniz',   name: 'Friedrich Leibniz',       sub: 'Leipzig, 1622 \u00b7 1597\u20131652',          branch: 'root',    badge: null,   x: 0, y: 0,    photo: 'friedrich_leibniz.jpg' },
+    { id: 'thomasius',   name: 'Jakob Thomasius',          sub: 'Leipzig, 1643 \u00b7 1622\u20131684',          branch: 'root',    badge: null,   x: 0, y: 1,    photo: 'jakob_thomasius.jpg' },
 
     // Gauss branch (left)
-    { id: 'mencke',      name: 'Otto Mencke',              sub: 'Leipzig, 1666 \u00b7 1644\u20131707',          branch: 'gauss',   badge: null,   x: -1, y: 2.8,  photo: null },
-    { id: 'wichmanns',   name: 'J. C. Wichmannshausen',    sub: 'Leipzig, 1685 \u00b7 1663\u20131727',          branch: 'gauss',   badge: null,   x: -1, y: 3.8,  photo: null },
-    { id: 'hausen',      name: 'Christian A. Hausen',       sub: 'Halle-Wittenberg, 1713 \u00b7 1693\u20131743', branch: 'gauss',   badge: null,   x: -1, y: 4.8,  photo: null },
-    { id: 'kastner',     name: 'Abraham G. K\u00e4stner',  sub: 'Leipzig, 1739 \u00b7 1719\u20131800',          branch: 'gauss',   badge: null,   x: -1, y: 5.8,  photo: null },
+    { id: 'mencke',      name: 'Otto Mencke',              sub: 'Leipzig, 1666 \u00b7 1644\u20131707',          branch: 'gauss',   badge: null,   x: -1, y: 2.8,  photo: 'otto_mencke.jpg' },
+    { id: 'wichmanns',   name: 'J. C. Wichmannshausen',    sub: 'Leipzig, 1685 \u00b7 1663\u20131727',          branch: 'gauss',   badge: null,   x: -1, y: 3.8,  photo: 'wichmannshausen.jpg' },
+    { id: 'hausen',      name: 'Christian A. Hausen',       sub: 'Halle-Wittenberg, 1713 \u00b7 1693\u20131743', branch: 'gauss',   badge: null,   x: -1, y: 4.8,  photo: 'christian_hausen.jpg' },
+    { id: 'kastner',     name: 'Abraham G. K\u00e4stner',  sub: 'Leipzig, 1739 \u00b7 1719\u20131800',          branch: 'gauss',   badge: null,   x: -1, y: 5.8,  photo: 'abraham_kastner.jpg' },
     { id: 'pfaff',       name: 'Johann Friedrich Pfaff',    sub: 'G\u00f6ttingen, 1786 \u00b7 1765\u20131825',  branch: 'gauss',   badge: null,   x: -1, y: 6.8,  photo: 'johann_pfaff.jpg' },
     { id: 'gauss',       name: 'Carl Friedrich Gauss',      sub: 'Helmstedt, 1799 \u00b7 1777\u20131855',       branch: 'gauss',   badge: 'star', x: -1, y: 7.8,  photo: 'carl_gauss.jpg' },
     { id: 'gerling',     name: 'Christian L. Gerling',      sub: 'G\u00f6ttingen, 1812 \u00b7 1788\u20131864',  branch: 'gauss',   badge: null,   x: -1, y: 8.8,  photo: 'christian_gerling.jpg' },
@@ -41,7 +41,7 @@
 
     // EE / Signal Processing
     { id: 'guillemin',   name: 'Ernst A. Guillemin',        sub: 'Munich, 1926 \u00b7 1898\u20131970',          branch: 'ee',      badge: 'star', x: 0, y: 16.0,  photo: 'ernst_guillemin.jpg' },
-    { id: 'tuttle',      name: 'David F. Tuttle, Jr.',      sub: 'MIT, 1948 \u00b7 1914\u2013?',                branch: 'ee',      badge: null,   x: 0, y: 17.0,  photo: null },
+    { id: 'tuttle',      name: 'David F. Tuttle, Jr.',      sub: 'MIT, 1948 \u00b7 1914\u2013?',                branch: 'ee',      badge: null,   x: 0, y: 17.0,  photo: 'david_tuttle.jpg' },
     { id: 'kuh',         name: 'Ernest S. Kuh',             sub: 'Stanford, 1952 \u00b7 1928\u20132015',        branch: 'ee',      badge: 'nae',  x: 0, y: 18.0,  photo: 'ernest_kuh.jpg' },
     { id: 'mitra',       name: 'Sanjit K. Mitra',           sub: 'UC Berkeley, 1962 \u00b7 1935\u2013present',  branch: 'ee',      badge: 'nae',  x: 0, y: 19.0,  photo: 'sanjit_mitra.jpg' },
     { id: 'vaidyanathan', name: 'P. P. Vaidyanathan',       sub: 'UCSB, 1982 \u00b7 1954\u2013present',        branch: 'ee',      badge: 'nae',  x: 0, y: 20.0,  photo: 'pp_vaidyanathan.jpg' },
