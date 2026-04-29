@@ -142,7 +142,7 @@
         "image_src": "img/pubs/SPIE.png",
         "label_class": "primary",
         "external_links": {
-            "sciencedirect": "https://spie.org/medical-imaging/presentation/Integrating-retinal-fundus-imaging-and-computable-phenotypes-for-subphenotype-discovery/13926-89"
+            "sciencedirect": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13926/3087349/Integrating-retinal-fundus-imaging-and-computable-phenotypes-for-subphenotype-discovery/10.1117/12.3087349.full"
         },
         "abstract": "Alzheimer’s disease (AD) exhibits clinical heterogeneity, necessitating improved subtyping methods. We combine fundus imaging and computable phenotypes to identify AD subphenotypes linked to early- and late-onset disease. Retinal biomarkers are extracted and analyzed using machine learning, revealing distinct associations with disease progression. A large language model (LLM) then integrates these features to classify AD subphenotypes and suggest clinical next steps. Our approach demonstrates how non-invasive retinal imaging and AI-driven diagnostics can enhance early AD detection and personalized care. This work bridges ophthalmology, neurology, and AI, offering a scalable tool for precision medicine in neurodegenerative disease.",
         "data_year": "2026",
