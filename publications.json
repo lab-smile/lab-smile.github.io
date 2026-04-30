@@ -1,5 +1,15 @@
 [
     {
+        "title": "Prediction of Alzheimer's Disease Risk Factors from Retinal Images via Deep Learning: Development and Validation of Biologically Relevant Morphological Associations in the UK Biobank",
+        "type": "Journal",
+        "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+        "citation": "Journal of Alzheimer's Disease (JAD), 2026, In Press",
+        "publication_year": "2026",
+        "image_src": "img/pubs/JAD.png",
+        "label_class": "warning",
+        "data_year": "2026"
+    },
+    {
         "title": "From Edges to Meaning: Semantic Line Sketches as a Cognitive Scaffold for Ancient Pictograph Invention",
         "type": "Preprint",
         "authors": "Seowung Leem, Lin Gu, <u><b>Ruogu Fang</b></u>",
