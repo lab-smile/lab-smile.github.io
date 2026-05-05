@@ -38,14 +38,17 @@
         "data_year": "2026"
     },
     {
-        "title": "Learning Optimal Treatment Strategies for Intraoperative Hypotension Using Deep Reinforcement Learning",
+        "title": "Reinforcement Learning for Intraoperative Hypotension Management with Consideration to Postoperative Acute Kidney Injury",
         "type": "Journal",
         "authors": "Esra Adiyeke, Tianqi Liu, Venkata Sai Dheeraj Naganaboina, Han Li, Tyler J. Loftus, Yuanfang Ren, Benjamin Shickel, Matthew M. Ruppert, Karandeep Singh, <b>Ruogu Fang</b>, Parisa Rashidi, Azra Bihorac, Tezcan Ozrazgat-Baslanti",
         "citation": "Kidney360",
         "publication_year": "2026",
         "image_src": "img/pubs/Kidney360.png",
         "label_class": "warning",
-        "data_year": "2026"
+        "data_year": "2026",
+        "external_links": {
+            "sciencedirect": "https://journals.lww.com/kidney360/abstract/9900/reinforcement_learning_for_intraoperative.936.aspx"
+        }
     },
     {
         "title": "Machine Learning Prediction of Anxiety Response to Combined tDCS and Cognitive Training Using MRI-Derived Current Density Modeling in Older Adults",
