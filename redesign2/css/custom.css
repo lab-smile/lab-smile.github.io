@@ -1402,7 +1402,7 @@ select:hover, input[type="search"]:hover {
 }
 .pagination-btn.active {
   background: var(--uf-orange);
-  color: #fff;
+  color: #fff !important;
   border-color: var(--uf-blue);
   box-shadow: 0 2px 8px rgba(201, 168, 76, 0.25);
 }
@@ -1988,6 +1988,34 @@ h3[class*="border-b"]::after {
   background: var(--stone-50) !important;
   border: 1px solid var(--border-color);
 }
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 0.1875rem 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+  cursor: default;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.chip:hover {
+  transform: translateY(-1px);
+  opacity: 0.82;
+}
+.chip-blue { background-color: #4A90D9 !important; }
+.chip-green { background-color: #5BAD72 !important; }
+.chip-orange { background-color: #E8843A !important; }
+.chip-purple { background-color: #9B59B6 !important; }
+.chip-red { background-color: #E05252 !important; }
+.chip-teal { background-color: #3AAFA9 !important; }
 
 
 /* ═══════════════════════════════════════════════════
