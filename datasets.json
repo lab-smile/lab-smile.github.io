@@ -1,0 +1,387 @@
+[
+    {
+        "id": "ukbiobank",
+        "name": "UK Biobank",
+        "short_name": "UKB",
+        "description": "Large-scale biomedical database with genetic and health data from ~500,000 UK participants, including brain MRI, retinal imaging, and genomics. A flagship resource for population-level studies of aging, neurodegeneration, and cardiovascular disease.",
+        "access_url": "https://www.ukbiobank.ac.uk/",
+        "modality": [
+            "Neuroimaging",
+            "Retinal Imaging",
+            "Genomics",
+            "Clinical"
+        ],
+        "disease_focus": [
+            "Alzheimer's Disease",
+            "Parkinson's Disease",
+            "Aging",
+            "Cardiovascular"
+        ],
+        "label_class": "primary",
+        "keywords": [
+            "UK Biobank",
+            "UKB",
+            "UK biobank",
+            "United Kingdom Biobank"
+        ]
+    },
+    {
+        "id": "adni",
+        "name": "Alzheimer's Disease Neuroimaging Initiative",
+        "short_name": "ADNI",
+        "description": "Multicenter longitudinal study tracking Alzheimer's disease progression using MRI, PET, biomarkers, and cognitive assessments across hundreds of research sites.",
+        "access_url": "https://adni.loni.usc.edu/",
+        "modality": [
+            "Neuroimaging",
+            "PET",
+            "Biomarkers",
+            "Cognitive Assessment"
+        ],
+        "disease_focus": [
+            "Alzheimer's Disease",
+            "MCI",
+            "Dementia"
+        ],
+        "label_class": "warning",
+        "keywords": [
+            "ADNI",
+            "Alzheimer's Disease Neuroimaging Initiative",
+            "Alzheimer's Disease Neuroimaging"
+        ]
+    },
+    {
+        "id": "nacc",
+        "name": "National Alzheimer's Coordinating Center",
+        "short_name": "NACC",
+        "description": "Longitudinal clinical and neuropathological data from Alzheimer's Disease Research Centers across the US, supporting research on dementia onset and progression.",
+        "access_url": "https://naccdata.org/",
+        "modality": [
+            "Clinical",
+            "Neuroimaging",
+            "Neuropathology"
+        ],
+        "disease_focus": [
+            "Alzheimer's Disease",
+            "Dementia",
+            "Cognitive Aging"
+        ],
+        "label_class": "warning",
+        "keywords": [
+            "NACC",
+            "National Alzheimer's Coordinating Center",
+            "National Alzheimer's Coordinating"
+        ]
+    },
+    {
+        "id": "allofus",
+        "name": "All of Us Research Program",
+        "short_name": "All of Us",
+        "description": "NIH precision medicine initiative collecting health data from 1M+ diverse US participants including electronic health records, genomics, wearables, and surveys.",
+        "access_url": "https://allofus.nih.gov/",
+        "modality": [
+            "EHR",
+            "Genomics",
+            "Wearables",
+            "Surveys"
+        ],
+        "disease_focus": [
+            "Precision Medicine",
+            "Population Health",
+            "Diverse Cohorts"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "All of Us",
+            "AllofUs",
+            "All Of Us",
+            "AoU"
+        ]
+    },
+    {
+        "id": "ahead",
+        "name": "AHEAD Study",
+        "short_name": "AHEAD",
+        "description": "Asset and Health Dynamics Among the Oldest Old — longitudinal study tracking health, wealth, and cognitive function in older Americans to understand aging trajectories.",
+        "access_url": "https://hrs.isr.umich.edu/data-products/ahead",
+        "modality": [
+            "Clinical",
+            "Cognitive Assessment",
+            "Survey"
+        ],
+        "disease_focus": [
+            "Aging",
+            "Cognitive Decline",
+            "Population Health"
+        ],
+        "label_class": "success",
+        "keywords": [
+            "Asset and Health Dynamics Among the Oldest Old",
+            "Asset and Health Dynamics"
+        ]
+    },
+    {
+        "id": "habs",
+        "name": "Harvard Aging Brain Study",
+        "short_name": "HABS",
+        "description": "Longitudinal neuroimaging study examining the earliest changes in the aging brain and preclinical Alzheimer's disease using MRI and amyloid PET imaging.",
+        "access_url": "https://habs.mgh.harvard.edu/",
+        "modality": [
+            "Neuroimaging",
+            "PET",
+            "Cognitive Assessment"
+        ],
+        "disease_focus": [
+            "Alzheimer's Disease",
+            "Preclinical AD",
+            "Aging"
+        ],
+        "label_class": "warning",
+        "keywords": [
+            "HABS",
+            "Harvard Aging Brain Study",
+            "Harvard Aging Brain"
+        ]
+    },
+    {
+        "id": "abcd",
+        "name": "Adolescent Brain Cognitive Development",
+        "short_name": "ABCD",
+        "description": "Largest long-term study of brain development and child health in the US, following 10,000+ children from ages 9–10 into early adulthood with MRI, cognitive, and behavioral assessments.",
+        "access_url": "https://abcdstudy.org/",
+        "modality": [
+            "Neuroimaging",
+            "Cognitive Assessment",
+            "Behavioral"
+        ],
+        "disease_focus": [
+            "Brain Development",
+            "Mental Health",
+            "Substance Use"
+        ],
+        "label_class": "success",
+        "keywords": [
+            "ABCD",
+            "Adolescent Brain Cognitive Development",
+            "ABCD Study",
+            "ABCD study"
+        ]
+    },
+    {
+        "id": "drive",
+        "name": "DRIVE: Digital Retinal Images for Vessel Extraction",
+        "short_name": "DRIVE",
+        "description": "Public benchmark of 40 retinal fundus photographs for retinal vessel segmentation, widely used to evaluate automated vessel detection algorithms.",
+        "access_url": "https://drive.grand-challenge.org/",
+        "modality": [
+            "Retinal Imaging",
+            "Fundus Photography"
+        ],
+        "disease_focus": [
+            "Diabetic Retinopathy",
+            "Retinal Vessel Segmentation"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "DRIVE dataset",
+            "DRIVE and STARE",
+            "DRIVE database",
+            "namely, DRIVE"
+        ]
+    },
+    {
+        "id": "stare",
+        "name": "STARE: Structured Analysis of the Retina",
+        "short_name": "STARE",
+        "description": "Retinal image database containing 20 fundus photographs with manually labeled vessel segmentations, a foundational benchmark for retinal analysis research.",
+        "access_url": "http://cecas.clemson.edu/~ahoover/stare/",
+        "modality": [
+            "Retinal Imaging",
+            "Fundus Photography"
+        ],
+        "disease_focus": [
+            "Retinal Vessel Segmentation",
+            "Optic Disc Detection"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "STARE dataset",
+            "DRIVE and STARE",
+            "STARE database",
+            "namely, DRIVE"
+        ]
+    },
+    {
+        "id": "brats",
+        "name": "BraTS: Brain Tumor Segmentation Challenge",
+        "short_name": "BraTS",
+        "description": "Annual benchmark challenge providing multimodal MRI scans of gliomas for training and evaluating brain tumor segmentation algorithms.",
+        "access_url": "https://www.synapse.org/brats",
+        "modality": [
+            "Neuroimaging",
+            "MRI"
+        ],
+        "disease_focus": [
+            "Brain Tumor",
+            "Glioma",
+            "Segmentation"
+        ],
+        "label_class": "primary",
+        "keywords": [
+            "BraTS",
+            "Brain Tumor Segmentation challenge",
+            "Brain Tumor Segmentation (BraTS)"
+        ]
+    },
+    {
+        "id": "atlas",
+        "name": "ATLAS: Anatomical Tracings of Lesions After Stroke",
+        "short_name": "ATLAS v2.0",
+        "description": "Open-source dataset of T1-weighted MRI scans with manually segmented stroke lesions, supporting development of automated lesion segmentation methods.",
+        "access_url": "https://fcon_1000.projects.nitrc.org/indi/retro/atlas.html",
+        "modality": [
+            "Neuroimaging",
+            "MRI"
+        ],
+        "disease_focus": [
+            "Stroke",
+            "Lesion Segmentation"
+        ],
+        "label_class": "primary",
+        "keywords": [
+            "ATLAS v2.0",
+            "Anatomical Tracings of Lesions After Stroke",
+            "ATLAS v2"
+        ]
+    },
+    {
+        "id": "idrid",
+        "name": "IDRiD: Indian Diabetic Retinopathy Image Dataset",
+        "short_name": "IDRiD",
+        "description": "First dataset representative of Indian diabetic retinopathy patients, providing pixel-level annotations for retinal lesions and optic disc/cup. Co-organized by SMILE Lab.",
+        "access_url": "https://idrid.grand-challenge.org/",
+        "modality": [
+            "Retinal Imaging",
+            "Fundus Photography"
+        ],
+        "disease_focus": [
+            "Diabetic Retinopathy",
+            "Retinal Lesion Segmentation"
+        ],
+        "label_class": "success",
+        "keywords": [
+            "IDRiD",
+            "Indian Diabetic Retinopathy Image Dataset",
+            "Diabetic Retinopathy – Segmentation and Grading Challenge"
+        ]
+    },
+    {
+        "id": "iaps",
+        "name": "International Affective Picture System",
+        "short_name": "IAPS",
+        "description": "Standardized affective image set widely used in emotion, attention, psychophysiology, EEG, and fMRI studies, with normative ratings for valence, arousal, and dominance.",
+        "access_url": "http://csea.phhp.ufl.edu/Media.html",
+        "modality": [
+            "Natural Images",
+            "Affective Stimuli",
+            "Psychophysiology"
+        ],
+        "disease_focus": [
+            "Emotion",
+            "Attention",
+            "Affective Neuroscience"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "IAPS",
+            "International Affective Picture System",
+            "International Affective Pictures System"
+        ]
+    },
+    {
+        "id": "refuge",
+        "name": "REFUGE: Retinal Fundus Glaucoma Challenge",
+        "short_name": "REFUGE",
+        "description": "Retinal fundus image benchmark for glaucoma classification, optic disc/cup segmentation, and fovea localization, with expert annotations for challenge evaluation.",
+        "access_url": "https://refuge.grand-challenge.org/",
+        "modality": [
+            "Retinal Imaging",
+            "Fundus Photography"
+        ],
+        "disease_focus": [
+            "Glaucoma",
+            "Optic Disc Segmentation",
+            "Optic Cup Segmentation"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "REFUGE",
+            "Retinal Fundus Glaucoma Challenge",
+            "REFUGE Challenge"
+        ]
+    },
+    {
+        "id": "drishti-gs",
+        "name": "Drishti-GS Fundus Image Dataset",
+        "short_name": "Drishti-GS",
+        "description": "Public retinal fundus dataset for optic nerve head analysis, glaucoma assessment, and optic disc/cup segmentation with expert annotations.",
+        "access_url": "http://cvit.iiit.ac.in/projects/mip/drishti-gs/mip-dataset2/Home.php",
+        "modality": [
+            "Retinal Imaging",
+            "Fundus Photography"
+        ],
+        "disease_focus": [
+            "Glaucoma",
+            "Optic Disc Segmentation",
+            "Optic Cup Segmentation"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "Drishti-GS",
+            "Drishti GS",
+            "Drishti-GS1"
+        ]
+    },
+    {
+        "id": "rim-one-r3",
+        "name": "RIM-ONE r3",
+        "short_name": "RIM-ONE r3",
+        "description": "Retinal fundus image release used for glaucoma and optic nerve head analysis, including normal and glaucomatous cases with optic disc/cup annotations.",
+        "access_url": "http://medimrg.webs.ull.es/research/downloads/",
+        "modality": [
+            "Retinal Imaging",
+            "Fundus Photography"
+        ],
+        "disease_focus": [
+            "Glaucoma",
+            "Optic Disc Segmentation",
+            "Optic Cup Segmentation"
+        ],
+        "label_class": "info",
+        "keywords": [
+            "RIM-ONE r3",
+            "Rim-One-r3",
+            "RIM ONE r3"
+        ]
+    },
+    {
+        "id": "imagenet",
+        "name": "ImageNet",
+        "short_name": "ImageNet",
+        "description": "Large-scale image database organized according to the WordNet hierarchy, widely used for computer vision model pretraining and object recognition benchmarks.",
+        "access_url": "https://www.image-net.org/",
+        "modality": [
+            "Natural Images",
+            "Computer Vision"
+        ],
+        "disease_focus": [
+            "Object Recognition",
+            "Representation Learning"
+        ],
+        "label_class": "primary",
+        "keywords": [
+            "ImageNet",
+            "ILSVRC",
+            "ImageNet database"
+        ]
+    }
+]
