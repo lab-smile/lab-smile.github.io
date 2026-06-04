@@ -12,7 +12,7 @@
     {
         "title": "A Single Reference-Guided Adaptation of Foundation Model Predictions for High-Performance Image Segmentation",
         "type": "Journal",
-        "authors": "Yizheng Chen, Sheng Liu, Junyan Liu, Lequan Yu, <u><b>Ruogu Fang</b></u>, James Zou, Michael Francis Gensheimer, Lei Xing",
+        "authors": "Yizheng Chen, Sheng Liu, Junyan Liu, Lequan Yu, <b>Ruogu Fang</b>, James Zou, Michael Francis Gensheimer, Lei Xing",
         "citation": "IEEE Transactions on Biomedical Engineering, 2026",
         "publication_year": "2026",
         "image_src": "img/pubs/IEEE_TBME.jpg",

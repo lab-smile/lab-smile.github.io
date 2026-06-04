@@ -18,7 +18,10 @@
       if (prefersReducedMotion) {
         document.querySelectorAll('[data-counter]').forEach(function (el) {
           var target = parseInt(el.getAttribute('data-counter'), 10);
-          el.textContent = target + '+';
+          var prefix = el.getAttribute('data-counter-prefix') || '';
+          var suffix = el.getAttribute('data-counter-suffix');
+          if (suffix === null) suffix = '+';
+          el.textContent = prefix + target + suffix;
         });
       }
       return;
@@ -129,6 +132,9 @@
     // ─── Counter Animations ────────────────────────
     document.querySelectorAll('[data-counter]').forEach(function (el) {
       var target = parseInt(el.getAttribute('data-counter'), 10);
+      var prefix = el.getAttribute('data-counter-prefix') || '';
+      var suffix = el.getAttribute('data-counter-suffix');
+      if (suffix === null) suffix = '+';
       var obj = { val: 0 };
 
       gsap.to(obj, {
@@ -141,7 +147,7 @@
           once: true,
         },
         onUpdate: function () {
-          el.textContent = Math.round(obj.val) + '+';
+          el.textContent = prefix + Math.round(obj.val) + suffix;
         },
       });
     });
