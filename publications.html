@@ -3,9 +3,9 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="description" content="Software, tools, and datasets from the SMILE Lab at Vanderbilt University">
- <title>Software | SMILE Lab</title>
- <link rel="shortcut icon" href="../img/misc/ufl.png">
+ <meta name="description" content="Publications from the SMILE Lab at Vanderbilt University">
+ <title>Publications | SMILE Lab</title>
+ <link rel="shortcut icon" href="img/misc/ufl.png">
  <script src="https://cdn.tailwindcss.com"></script>
  <script>
  tailwind.config = {
@@ -43,52 +43,59 @@
    <ol class="flex items-center gap-2 text-sm text-stone-500">
      <li><a href="index.html" class="hover:text-uf-blue transition-colors">Home</a></li>
      <li aria-hidden="true">/</li>
-     <li aria-current="page" class="text-stone-900 font-medium">Software</li>
+     <li aria-current="page" class="text-stone-900 font-medium">Publications</li>
    </ol>
  </nav>
  <!-- Page Header -->
- <section class="page-header" aria-labelledby="page-title">
+ <section class="page-header">
    <div class="page-header-grid"></div>
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
        <div class="page-header-label">
-         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
          SMILE Lab
        </div>
-       <h1 id="page-title">Software</h1>
-       <p class="page-header-subtitle">Open-source code, tools, and datasets from <span id="software-count">0</span> projects developed at the SMILE Lab.</p>
+       <h1>Publications</h1>
+       <p class="page-header-subtitle">Over <span id="pub-count">300</span> peer-reviewed publications in top journals and conferences.</p>
        <div class="page-header-accent"></div>
    </div>
    <div class="page-header-bottom"></div>
  </section>
 
  <!-- Filter Bar -->
- <section class="sticky top-0 z-20 bg-white border-b border-stone-200 shadow-sm" aria-label="Software filters">
+ <section class="sticky top-0 z-20 bg-white border-b border-stone-200 shadow-sm">
  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
  <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
  <div class="flex flex-wrap gap-3 flex-1">
- <label for="filter-type" class="sr-only">Filter by type</label>
+ <select id="filter-year" aria-label="Filter by year" class="px-3 py-2 border border-stone-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-uf-blue">
+ <option value="">All Years</option>
+ </select>
  <select id="filter-type" aria-label="Filter by type" class="px-3 py-2 border border-stone-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-uf-blue">
  <option value="">All Types</option>
  </select>
+ <div class="relative flex-1 min-w-[200px]">
+ <label for="filter-search" class="sr-only">Search publications</label>
+ <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+ <input id="filter-search" type="search" placeholder="Search title, authors, keywords..."
+ class="w-full pl-10 pr-3 py-2 border border-stone-300 rounded-lg bg-white text-sm focus:outline-none focus:ring-2 focus:ring-uf-blue">
+ </div>
  </div>
  <div class="flex items-center gap-3">
- <span id="result-count" class="text-sm text-stone-500 whitespace-nowrap" aria-live="polite"></span>
+ <span id="result-count" class="text-sm text-stone-500 whitespace-nowrap"></span>
  <button id="clear-filters" class="text-sm text-uf-blue hover:underline font-medium whitespace-nowrap">Clear</button>
  </div>
  </div>
  </div>
  </section>
 
- <!-- Software Cards -->
- <section class="py-8" aria-label="Software list">
+ <!-- Publications List -->
+ <section class="py-8">
  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
- <div id="software-loading" class="text-center py-12">
- <div class="spinner mx-auto" role="status" aria-label="Loading software">
- <span class="sr-only">Loading software...</span>
+ <div id="publications-loading" class="text-center py-12">
+ <div class="spinner mx-auto"></div>
+ <p class="mt-3 text-sm text-stone-500">Loading publications...</p>
  </div>
- <p class="mt-3 text-sm text-stone-500">Loading software...</p>
- </div>
- <div id="software-list" aria-live="polite"></div>
+ <div id="publications-list" class="space-y-4" aria-live="polite"></div>
+ <div id="publications-pagination" class="flex justify-center gap-2 mt-8 flex-wrap"></div>
  </div>
  </section>
  </main>
@@ -96,6 +103,6 @@
  <div id="site-footer"></div>
  <script defer src="js/nav.js"></script>
  <script defer src="js/reveal.js"></script>
- <script defer src="js/software.js"></script>
+ <script defer src="js/publications.js"></script>
 </body>
 </html>

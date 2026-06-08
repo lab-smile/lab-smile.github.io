@@ -17,6 +17,9 @@
         "publication_year": "2026",
         "image_src": "img/pubs/IEEE_TBME.jpg",
         "label_class": "warning",
+        "external_links": {
+            "IEEE": "https://ieeexplore.ieee.org/document/11551852"
+        },
         "data_year": "2026"
     },
     {
