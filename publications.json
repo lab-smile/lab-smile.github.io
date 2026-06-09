@@ -1,5 +1,15 @@
 [
     {
+        "title": "Associative Emotional Learning in Convolutional Neural Networks",
+        "type": "Journal",
+        "authors": "",
+        "citation": "Neural Computation, 2026, In Press. Accepted June 9, 2026",
+        "publication_year": "2026",
+        "image_src": "img/pubs/NeuralComputation.png",
+        "label_class": "warning",
+        "data_year": "2026"
+    },
+    {
         "title": "Primary Prevention of Parkinson’s Disease: Proceedings, the 8 C’s and a Position Statement from the Parkinson’s Disease Prevention Think Tank",
         "type": "Journal",
         "authors": "",
