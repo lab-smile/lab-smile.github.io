@@ -134,6 +134,9 @@ function pubAssets(pub) {
         if (pub.external_links.biorxiv) {
             assets += `<a href="${pub.external_links.biorxiv}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on bioRxiv (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
         }
+        if (pub.external_links.IEEE) {
+            assets += `<a href="${pub.external_links.IEEE}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on IEEE (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
+        }
     }
     return assets;
 }
