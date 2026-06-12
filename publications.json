@@ -1,5 +1,15 @@
 [
     {
+        "title": "Editorial: Women in Brain Imaging and Stimulation in the Era of Artificial Intelligence",
+        "type": "Journal",
+        "authors": "Wen Li, <b>Ruogu Fang</b>",
+        "citation": "Frontiers in Human Neuroscience, 2026. Accepted June 11, 2026",
+        "publication_year": "2026",
+        "image_src": "img/pubs/frontiers-in-human-neuroscience.png",
+        "label_class": "warning",
+        "data_year": "2026"
+    },
+    {
         "title": "Associative Emotional Learning in Convolutional Neural Networks",
         "type": "Journal",
         "authors": "",
