@@ -30,13 +30,16 @@
         "data_year": "2026"
     },
     {
-        "title": "Prediction of Alzheimer's Disease Risk Factors from Retinal Images via Deep Learning: Development and Validation of Biologically Relevant Morphological Associations in the UK Biobank",
+        "title": "Prediction of Alzheimer's disease risk factors from retinal images via deep learning: Development and validation of biologically relevant morphological associations in the UK Biobank",
         "type": "Journal",
-        "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
-        "citation": "Journal of Alzheimer's Disease (JAD), 2026, In Press",
+        "authors": "Seowung Leem, Yunchao Yang, Adam J. Woods and <u><b>Ruogu Fang</b></u>",
+        "citation": "Journal of Alzheimer's Disease, June 16, 2026. DOI: 10.1177/13872877261457650",
         "publication_year": "2026",
         "image_src": "img/pubs/JAD.png",
         "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://journals.sagepub.com/doi/10.1177/13872877261457650"
+        },
         "data_year": "2026"
     },
     {
