@@ -263,7 +263,8 @@
         "image_src": "img/pubs/AA.jpg",
         "label_class": "warning",
         "external_links": {
-            "sciencedirect": "https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz70856_103172"
+            "sciencedirect": "https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz70856_103172",
+            "PMC": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12742042/"
         },
         "abstract": "Background: Transcranial direct current stimulation (tDCS) is a promising intervention for age-related cognitive decline. Finite element method (FEM) modeling indicates that individual responses to tDCS vary due to individual anatomical differences, affecting delivered current density in the brain. Existing segmentation tools for head tissues are optimized for young adults, inaccurately reflecting older adult anatomy. This study created the largest dataset of manually segmented T1-weighted images from 367 cognitively healthy older adults to investigate how corrected tissue organization affects tDCS current distribution in the aging brain.",
         "data_year": "2025"
