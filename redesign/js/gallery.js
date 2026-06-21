@@ -44,6 +44,50 @@
       if (e.key === 'ArrowLeft') navigate(-1);
       if (e.key === 'ArrowRight') navigate(1);
     });
+
+    initMasonry();
+  }
+
+  // Grid-span masonry: keeps chronological (left-to-right) order while sizing
+  // each item's row span from its image plus caption height.
+  function layoutMasonry() {
+    const grid = document.querySelector('.gallery-masonry');
+    if (!grid) return;
+    const styles = getComputedStyle(grid);
+    const rowHeight = parseFloat(styles.gridAutoRows) || 10;
+    const rowGap = parseFloat(styles.rowGap) || 0;
+    grid.querySelectorAll('.gallery-item').forEach((item) => {
+      const img = item.querySelector('img');
+      if (img && !img.complete) return; // keep fallback span until lazy img loads
+      const caption = item.querySelector('p');
+      const captionStyles = caption ? getComputedStyle(caption) : null;
+      const captionHeight = caption
+        ? caption.getBoundingClientRect().height +
+          parseFloat(captionStyles.marginTop || 0) +
+          parseFloat(captionStyles.marginBottom || 0)
+        : 0;
+      const height = (img || item).getBoundingClientRect().height + captionHeight;
+      if (!height) return;
+      const span = Math.ceil((height + rowGap) / (rowHeight + rowGap));
+      item.style.gridRowEnd = 'span ' + span;
+    });
+  }
+
+  function initMasonry() {
+    const grid = document.querySelector('.gallery-masonry');
+    if (!grid) return;
+    grid.querySelectorAll('img').forEach((img) => {
+      if (img.complete) return;
+      img.addEventListener('load', layoutMasonry);
+      img.addEventListener('error', layoutMasonry);
+    });
+    layoutMasonry();
+    window.addEventListener('load', layoutMasonry);
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(layoutMasonry, 150);
+    });
   }
 
   function openLightbox(idx) {
@@ -71,7 +115,11 @@
     const item = galleryItems[currentIndex];
     if (!item) return;
     const src = item.getAttribute('data-full') || item.querySelector('img')?.src;
-    const caption = item.getAttribute('data-caption') || '';
+    const caption =
+      item.getAttribute('data-caption') ||
+      item.querySelector('p')?.textContent.trim() ||
+      item.querySelector('img')?.alt ||
+      '';
     if (lightboxImg) {
       lightboxImg.src = src;
       lightboxImg.alt = caption;

@@ -99,6 +99,15 @@ function renderPublications(publications, allPubsDiv) {
     allPubsDiv.setAttribute('aria-live', 'polite');
 }
 
+function formatPublicationCitation(citation) {
+    if (!citation) return '';
+
+    return citation.replace(
+        /Biomedical Engineering Society \(BMES\) Annual Meeting/g,
+        'Biomedical Engineering Society Annual Meeting (BMES)'
+    );
+}
+
 function createPublicationHTML(pub) {
     return `<div class="item mix ${pub.type}" data-year="${pub.data_year}">
                 <div class="pubmain">
@@ -108,7 +117,7 @@ function createPublicationHTML(pub) {
                         <h4 class="pubtitle">${pub.title}</h4>
                         <span class="label label-${pub.label_class}">${pub.type}</span>
                         <div class="pubauthor">${pub.authors}</div>
-                        <div class="pubcite">${pub.citation}</div>
+                        <div class="pubcite">${formatPublicationCitation(pub.citation)}</div>
                         <div class="pubdate">Publication Year: ${pub.publication_year || 'N/A'}</div>
                     </div>
                 </div>
@@ -154,8 +163,14 @@ function setupSearch(searchInput, publications) {
         $('.item').each(function() {
             const title = $(this).find('.pubtitle').text().toLowerCase();
             const authors = $(this).find('.pubauthor').text().toLowerCase();
+            const citation = $(this).find('.pubcite').text().toLowerCase();
             const year = $(this).data('year').toString();
-            $(this).toggle(title.includes(searchTerm) || authors.includes(searchTerm) || year.includes(searchTerm));
+            $(this).toggle(
+                title.includes(searchTerm) ||
+                authors.includes(searchTerm) ||
+                citation.includes(searchTerm) ||
+                year.includes(searchTerm)
+            );
         });
     });
 }

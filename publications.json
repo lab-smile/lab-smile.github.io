@@ -1,5 +1,15 @@
 [
     {
+        "title": "REVEAL++: Differentiable Phenotypic Grouping for Vision–Language Retinal Modeling of Alzheimer’s Disease Risk",
+        "type": "Conference",
+        "authors": "Ethan Meidinger*, Seowung Leem*, Zeyun Zhao*, <b>Ruogu Fang</b>",
+        "citation": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Strasbourg, France, September 2026 (accepted; 28% acceptance rate, 10 pages)",
+        "publication_year": "September 2026",
+        "image_src": "img/pubs/MICCAI.jpg",
+        "label_class": "primary",
+        "data_year": "2026"
+    },
+    {
         "title": "Editorial: Women in Brain Imaging and Stimulation in the Era of Artificial Intelligence",
         "type": "Journal",
         "authors": "Wen Li, <b>Ruogu Fang</b>",

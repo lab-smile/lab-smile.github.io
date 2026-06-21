@@ -1,6 +1,6 @@
 /* ══════════════════════════════════════════════════════════
    SMILE Lab — Visual Enhancement Layer
-   redesign/ · UF Blue + Orange · Modern Academic
+  redesign/ · Black + Gold · Editorial Luxury
    Appends to custom.css — overrides only specific selectors.
    ══════════════════════════════════════════════════════════ */
 
@@ -13,7 +13,7 @@
   top: 0; left: 0;
   width: 100%; height: 2px;
   z-index: 9999;
-  background: linear-gradient(90deg, var(--uf-blue), var(--uf-orange));
+  background: linear-gradient(90deg, #111111, #C9A84C, #111111);
   transform-origin: left;
   transform: scaleX(0);
   pointer-events: none;
@@ -22,72 +22,93 @@
 
 
 /* ─────────────────────────────────────────────────────────
-   2. HERO — Richer depth with dot grid + layered orbs
+   2. HERO — Deep black with gold light leaks + fine grid
    ───────────────────────────────────────────────────────── */
 #hero {
   background:
-    radial-gradient(rgba(255, 255, 255, 0.038) 1px, transparent 1px),
+    /* Fine gold line grid */
+    repeating-linear-gradient(
+      90deg,
+      rgba(201, 168, 76, 0.026) 0px,
+      rgba(201, 168, 76, 0.026) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      rgba(201, 168, 76, 0.026) 0px,
+      rgba(201, 168, 76, 0.026) 1px,
+      transparent 1px,
+      transparent 40px
+    ),
+    /* Deep warm-black gradient */
     linear-gradient(160deg,
-      #000826 0%,
-      #000d4d 15%,
-      #001580 35%,
-      #0021A5 60%,
-      #001040 85%,
-      #07060c 100%);
-  background-size: 30px 30px, 100% 100%;
+      #000000 0%,
+      #0a0a0a 20%,
+      #0d0b08 40%,
+      #111008 60%,
+      #080700 80%,
+      #000000 100%);
 }
 
-/* More dramatic orb 1 — deep blue/violet */
+/* Gold light leak — upper left */
 #hero::before {
   background:
-    radial-gradient(ellipse 75% 85% at 10% 35%,
-      rgba(0, 80, 220, 0.28) 0%, transparent 65%),
-    radial-gradient(ellipse 35% 35% at 75% 10%,
-      rgba(250, 70, 22, 0.08) 0%, transparent 60%);
-  animation: enh-orb1 14s ease-in-out infinite alternate;
+    radial-gradient(ellipse 65% 75% at 8% 30%,
+      rgba(201, 168, 76, 0.10) 0%,
+      rgba(150, 110, 20, 0.05) 40%,
+      transparent 70%),
+    radial-gradient(ellipse 35% 35% at 85% 80%,
+      rgba(201, 168, 76, 0.06) 0%,
+      transparent 60%);
+  animation: gold-orb-1 16s ease-in-out infinite alternate;
 }
-@keyframes enh-orb1 {
-  0%   { opacity: 0.7; transform: translate(0, 0)    scale(1);    }
-  33%  { opacity: 0.9; transform: translate(2%, -4%) scale(1.06); }
-  100% { opacity: 1;   transform: translate(3%, -2%) scale(1.04); }
+@keyframes gold-orb-1 {
+  0%   { opacity: 0.6; transform: translate(0, 0)    scale(1);    }
+  50%  { opacity: 0.9; transform: translate(3%, -5%) scale(1.08); }
+  100% { opacity: 0.7; transform: translate(-2%, 3%) scale(1.02); }
 }
 
-/* Orb 2 — warm orange/red */
+/* Gold light leak — lower right */
 #hero::after {
   background:
-    radial-gradient(ellipse 55% 55% at 85% 65%,
-      rgba(250, 70, 22, 0.18) 0%, transparent 60%),
-    radial-gradient(ellipse 25% 25% at 55% 85%,
-      rgba(0, 33, 165, 0.10) 0%, transparent 70%);
-  animation: enh-orb2 18s ease-in-out infinite alternate;
+    radial-gradient(ellipse 50% 60% at 88% 60%,
+      rgba(201, 168, 76, 0.09) 0%,
+      transparent 65%),
+    radial-gradient(ellipse 20% 20% at 40% 85%,
+      rgba(100, 80, 0, 0.06) 0%,
+      transparent 70%);
+  animation: gold-orb-2 20s ease-in-out infinite alternate;
 }
-@keyframes enh-orb2 {
-  0%   { opacity: 0.4; transform: translate(0, 0)    scale(1);    }
-  50%  { opacity: 0.85; transform: translate(-4%, 3%) scale(1.1); }
-  100% { opacity: 0.55; transform: translate(2%, -1%) scale(0.95); }
+@keyframes gold-orb-2 {
+  0%   { opacity: 0.5; transform: translate(0, 0)    scale(1);    }
+  50%  { opacity: 0.8; transform: translate(-5%, 4%) scale(1.12); }
+  100% { opacity: 0.55; transform: translate(3%, -2%) scale(0.95); }
 }
 
-/* Grain texture overlay for cinematic depth */
+/* More prominent grain — letterpress fine art feel */
 .hero-grain {
   position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 2;
-  opacity: 0.032;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 180px 180px;
+  opacity: 0.055;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+  mix-blend-mode: overlay;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   3. HERO TAG — Light sweep shimmer
+   3. HERO TAG — Gold shimmer sweep
    ───────────────────────────────────────────────────────── */
 .hero-tag {
   position: relative;
   overflow: hidden;
-  background: rgba(250, 70, 22, 0.08);
-  border-color: rgba(250, 70, 22, 0.35);
+  background: rgba(201, 168, 76, 0.07);
+  border-color: rgba(201, 168, 76, 0.38);
   letter-spacing: 0.22em;
+  color: #d4b96a;
 }
 .hero-tag::after {
   content: '';
@@ -96,11 +117,11 @@
   left: -60%; width: 40%;
   background: linear-gradient(90deg,
     transparent,
-    rgba(255, 255, 255, 0.28),
+    rgba(201, 168, 76, 0.32),
     transparent);
-  animation: hero-tag-sweep 5s ease-in-out infinite;
+  animation: gold-tag-sweep 5s ease-in-out infinite;
 }
-@keyframes hero-tag-sweep {
+@keyframes gold-tag-sweep {
   0%, 40% { left: -60%; opacity: 0; }
   41%      { opacity: 1; }
   70%, 100% { left: 120%; opacity: 0; }
@@ -108,16 +129,18 @@
 
 
 /* ─────────────────────────────────────────────────────────
-   4. HERO BUTTONS — Blue→Orange gradient transition
+   4. HERO BUTTONS — Gold primary, ghost secondary
    ───────────────────────────────────────────────────────── */
 .btn-hero-primary {
   background: linear-gradient(135deg,
-    var(--uf-blue-light),
-    var(--uf-blue),
-    var(--uf-blue-dark));
+    #d4b96a 0%,
+    #C9A84C 50%,
+    #a8891f 100%);
+  color: #080600;
+  font-weight: 700;
   box-shadow:
-    0 4px 20px rgba(0, 33, 165, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    0 4px 24px rgba(201, 168, 76, 0.42),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
   position: relative;
   overflow: hidden;
 }
@@ -125,73 +148,76 @@
   content: '';
   position: absolute; inset: 0;
   background: linear-gradient(135deg,
-    rgba(250, 70, 22, 0.88),
-    rgba(209, 58, 18, 0.96));
+    rgba(255, 255, 255, 0.18),
+    transparent 55%);
   opacity: 0;
-  transition: opacity 0.35s ease;
+  transition: opacity 0.3s ease;
 }
 .btn-hero-primary:hover::after { opacity: 1; }
 .btn-hero-primary:hover {
+  background: linear-gradient(135deg, #e0c878 0%, #d4b96a 50%, #b89025 100%);
   box-shadow:
-    0 8px 32px rgba(250, 70, 22, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    0 8px 36px rgba(201, 168, 76, 0.58),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
   transform: translateY(-3px);
-  background: var(--uf-blue); /* fallback if after not supported */
+  color: #050400;
 }
-/* Keep children above the ::after overlay */
 .btn-hero-primary > * { position: relative; z-index: 1; }
 .btn-hero-primary svg { position: relative; z-index: 1; }
 
 .btn-hero-secondary {
-  border-color: rgba(255, 255, 255, 0.25);
+  border-color: rgba(201, 168, 76, 0.30);
+  color: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 }
 .btn-hero-secondary:hover {
-  background: rgba(250, 70, 22, 0.15);
-  border-color: rgba(255, 100, 60, 0.6);
-  box-shadow: 0 4px 20px rgba(250, 70, 22, 0.2);
+  border-color: rgba(201, 168, 76, 0.72);
+  background: rgba(201, 168, 76, 0.10);
+  color: #d4b96a;
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.22);
   transform: translateY(-2px);
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   5. HERO STATS GLASS — Premium dark glass
+   5. HERO STATS GLASS — Dark glass with gold rim
    ───────────────────────────────────────────────────────── */
 .hero-stats-glass {
-  background: rgba(0, 6, 30, 0.62);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-top-color: rgba(255, 255, 255, 0.22);
+  background: rgba(8, 6, 0, 0.65);
+  border: 1px solid rgba(201, 168, 76, 0.18);
+  border-top-color: rgba(201, 168, 76, 0.32);
   box-shadow:
-    0 10px 48px rgba(0, 0, 0, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.16),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    0 12px 48px rgba(0, 0, 0, 0.52),
+    inset 0 1px 0 rgba(201, 168, 76, 0.16),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.32);
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   6. HERO PHOTO — Film-frame border
+   6. HERO PHOTO — Warm film frame with gold rim
    ───────────────────────────────────────────────────────── */
 #hero .relative.rounded-2xl.overflow-hidden.shadow-2xl {
+  border-radius: 1rem !important;
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.14),
-    0 4px 8px rgba(0, 0, 0, 0.3),
-    0 24px 64px rgba(0, 0, 0, 0.45),
-    0 8px 24px rgba(0, 33, 165, 0.3);
+    0 0 0 1px rgba(201, 168, 76, 0.20),
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 24px 72px rgba(0, 0, 0, 0.62),
+    0 8px 24px rgba(201, 168, 76, 0.10);
   transition: box-shadow 0.6s ease, transform 0.6s ease;
 }
 #hero .relative.rounded-2xl.overflow-hidden.shadow-2xl:hover {
   box-shadow:
-    0 0 0 1px rgba(250, 70, 22, 0.3),
-    0 4px 8px rgba(0, 0, 0, 0.3),
-    0 28px 80px rgba(0, 0, 0, 0.5),
-    0 8px 24px rgba(250, 70, 22, 0.25);
+    0 0 0 1px rgba(201, 168, 76, 0.38),
+    0 4px 8px rgba(0, 0, 0, 0.4),
+    0 28px 80px rgba(0, 0, 0, 0.68),
+    0 8px 24px rgba(201, 168, 76, 0.22);
   transform: scale(1.012);
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   7. RESEARCH FEAT CARDS — Clean 2×2 grid (blue/orange)
+   7. RESEARCH FEAT CARDS — Clean 2×2 grid (black/gold)
    ───────────────────────────────────────────────────────── */
 
 .research-feat-card {
@@ -215,7 +241,7 @@
   content: '';
   position: absolute;
   left: 0; top: 0; bottom: 0; width: 3px;
-  background: linear-gradient(180deg, #0021A5, #FA4616);
+  background: linear-gradient(180deg, #C9A84C, #8a6515);
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -225,9 +251,9 @@
 .research-feat-card:hover {
   transform: translateY(-5px);
   box-shadow:
-    0 20px 48px rgba(0, 33, 165, 0.12),
-    0 4px 16px rgba(0, 33, 165, 0.06);
-  border-color: rgba(0, 33, 165, 0.2);
+    0 20px 48px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(201, 168, 76, 0.15);
+  border-color: rgba(201, 168, 76, 0.3);
 }
 
 /* Icon box */
@@ -235,53 +261,54 @@
   width: 2.75rem;
   height: 2.75rem;
   border-radius: 0.625rem;
-  background: rgba(0, 33, 165, 0.08);
+  background: rgba(201, 168, 76, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0021A5;
+  color: #b8962a;
   transition:
     background 0.35s ease,
     color 0.35s ease,
     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 .research-feat-card:hover .feat-icon-box {
-  background: #0021A5;
-  color: #ffffff;
+  background: #C9A84C;
+  color: #111111;
   transform: scale(1.1) rotate(-4deg);
 }
 
 /* Ghost number */
 .feat-num {
-  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  font-size: 0.6875rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  color: rgba(0, 0, 0, 0.15);
+  font-style: italic;
+  letter-spacing: 0.04em;
+  color: rgba(201, 168, 76, 0.25);
   user-select: none;
   transition: color 0.3s ease;
 }
 .research-feat-card:hover .feat-num {
-  color: rgba(0, 33, 165, 0.35);
+  color: rgba(201, 168, 76, 0.55);
 }
 
 /* Title */
 .feat-title {
-  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  font-size: 1.0625rem;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.125rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  color: #0c0c14;
+  color: #111111;
   line-height: 1.3;
   transition: color 0.3s ease;
 }
-.research-feat-card:hover .feat-title { color: #0021A5; }
+.research-feat-card:hover .feat-title { color: #8a6515; }
 
 /* Description */
 .feat-desc {
+  font-family: 'Lora', Georgia, serif;
   font-size: 0.875rem;
-  line-height: 1.65;
-  color: rgba(28, 28, 40, 0.6);
+  line-height: 1.7;
+  color: rgba(17, 17, 17, 0.55);
   margin-top: 0.625rem;
   flex-grow: 1;
 }
@@ -294,8 +321,8 @@
   margin-top: 1.25rem;
   font-size: 0.8125rem;
   font-weight: 600;
-  letter-spacing: 0.01em;
-  color: #0021A5;
+  letter-spacing: 0.04em;
+  color: #111111;
   transition: gap 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s ease;
 }
 .feat-link svg {
@@ -303,7 +330,7 @@
 }
 .research-feat-card:hover .feat-link {
   gap: 0.625rem;
-  color: #FA4616;
+  color: #C9A84C;
 }
 .research-feat-card:hover .feat-link svg {
   transform: translateX(4px);
@@ -311,10 +338,10 @@
 
 
 /* ─────────────────────────────────────────────────────────
-   8. VIDEO SECTION — Lab in Action
+   8. VIDEO SECTION — Dark editorial with gold accents
    ───────────────────────────────────────────────────────── */
 .video-section {
-  background: var(--stone-950);
+  background: #060400;
   position: relative;
   overflow: hidden;
 }
@@ -323,19 +350,20 @@
   position: absolute; inset: 0;
   background:
     radial-gradient(ellipse 60% 60% at 15% 50%,
-      rgba(0, 33, 165, 0.15) 0%, transparent 70%),
+      rgba(201, 168, 76, 0.06) 0%, transparent 70%),
     radial-gradient(ellipse 40% 40% at 85% 50%,
-      rgba(250, 70, 22, 0.10) 0%, transparent 60%);
+      rgba(201, 168, 76, 0.04) 0%, transparent 60%);
   pointer-events: none;
 }
 .video-section .section-label {
-  color: var(--uf-orange) !important;
+  color: #C9A84C !important;
 }
 .video-section h2 {
   color: var(--white) !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
 }
 .video-section h2.heading-accent-center::after {
-  background: linear-gradient(90deg, var(--uf-blue), var(--uf-orange)) !important;
+  background: linear-gradient(90deg, #111, #C9A84C) !important;
   margin-top: 1.25rem;
 }
 
@@ -344,23 +372,23 @@
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
   overflow: hidden;
-  border-radius: 0.875rem;
+  border-radius: 0.75rem;
   box-shadow:
-    0 0 0 1px rgba(255, 255, 255, 0.08),
-    0 32px 80px rgba(0, 0, 0, 0.6),
-    0 8px 24px rgba(0, 33, 165, 0.3);
+    0 0 0 1px rgba(201, 168, 76, 0.18),
+    0 32px 80px rgba(0, 0, 0, 0.72),
+    0 8px 24px rgba(201, 168, 76, 0.08);
 }
 .video-embed-wrap iframe {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   border: none;
-  border-radius: 0.875rem;
+  border-radius: 0.75rem;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   9. NEWS ITEMS — Gradient left border reveal
+   9. NEWS ITEMS — Gold left border reveal
    ───────────────────────────────────────────────────────── */
 .news-item {
   position: relative;
@@ -373,9 +401,9 @@
   content: '';
   position: absolute;
   left: 0; top: 12%; bottom: 12%;
-  width: 3px;
-  background: linear-gradient(180deg, var(--uf-blue), var(--uf-orange));
-  border-radius: 3px;
+  width: 2px;
+  background: linear-gradient(180deg, #111111, #C9A84C);
+  border-radius: 2px;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 0.28s var(--ease);
@@ -383,34 +411,34 @@
 .news-item:hover {
   border-left-color: transparent !important;
   background: linear-gradient(135deg,
-    rgba(236, 242, 255, 0.9) 0%,
-    rgba(255, 255, 255, 0.75) 100%) !important;
+    rgba(248, 244, 236, 0.95) 0%,
+    rgba(255, 255, 255, 0.85) 100%) !important;
   transform: translateX(6px);
-  box-shadow: -4px 0 0 var(--uf-blue);
+  box-shadow: -3px 0 0 #C9A84C;
 }
 .news-item:hover::before { transform: scaleY(1); }
 
 
 /* ─────────────────────────────────────────────────────────
-   10. QUOTE CALLOUT — More editorial
+   10. QUOTE CALLOUT — Luxurious serif editorial
    ───────────────────────────────────────────────────────── */
 .quote-callout {
   background: linear-gradient(135deg,
-    var(--uf-blue-bg) 0%,
-    rgba(255, 245, 242, 0.45) 100%) !important;
-  border-left: 3px solid var(--uf-orange) !important;
+    rgba(248, 243, 230, 0.92) 0%,
+    rgba(255, 252, 244, 0.72) 100%) !important;
+  border-left: 2px solid #C9A84C !important;
   border-radius: 0 var(--radius-md) var(--radius-md) 0;
   padding: 1.625rem 1.875rem !important;
   position: relative;
 }
 .quote-callout::before {
   content: '\201C' !important;
-  font-family: Georgia, 'Times New Roman', serif !important;
-  font-size: 6.5rem !important;
-  color: rgba(0, 33, 165, 0.07) !important;
+  font-family: 'Playfair Display', Georgia, serif !important;
+  font-size: 7.5rem !important;
+  color: rgba(201, 168, 76, 0.13) !important;
   position: absolute !important;
-  top: -1.25rem !important;
-  left: 1rem !important;
+  top: -1.75rem !important;
+  left: 0.5rem !important;
   line-height: 1 !important;
   opacity: 1 !important;
   z-index: 0;
@@ -419,21 +447,21 @@
 
 
 /* ─────────────────────────────────────────────────────────
-   11. SECTION ALT — Richer blue-tinted gradient
+   11. SECTION ALT — Warm cream gradient
    ───────────────────────────────────────────────────────── */
 .section-alt {
   background: linear-gradient(
     180deg,
-    #e8eefb 0%,
-    #eff3fa 30%,
-    #f4f6f9 70%,
-    var(--stone-50) 100%
+    #f5f0e8 0%,
+    #f7f4ed 30%,
+    #f9f6f1 70%,
+    #fafaf9 100%
   ) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   12. AFFILIATION CARDS — Spring lift on hover
+   12. AFFILIATION CARDS — Warm hover with gold ring
    ───────────────────────────────────────────────────────── */
 .affiliation-card {
   transition:
@@ -444,15 +472,18 @@
 .affiliation-card:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 8px 24px rgba(0, 33, 165, 0.12),
-    0 0 0 1px rgba(0, 33, 165, 0.06);
-  border-color: rgba(0, 33, 165, 0.15) !important;
+    0 8px 24px rgba(0, 0, 0, 0.1),
+    0 0 0 1px rgba(201, 168, 76, 0.18);
+  border-color: rgba(201, 168, 76, 0.22) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   13. AWARD CARDS — Spring lift
+   13. AWARD CARDS — Gold gradient bar + spring lift
    ───────────────────────────────────────────────────────── */
+.award-card::before {
+  background: linear-gradient(90deg, #111111, #C9A84C) !important;
+}
 .award-card {
   transition:
     transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -461,105 +492,99 @@
 .award-card:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow:
-    0 14px 36px rgba(0, 33, 165, 0.16),
-    0 4px 8px rgba(0, 33, 165, 0.06);
+    0 14px 36px rgba(0, 0, 0, 0.14),
+    0 0 0 1px rgba(201, 168, 76, 0.22) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   14. HEADING ACCENTS — Sharper gradient line
+   14. HEADING ACCENTS — Gold-to-black gradient
    ───────────────────────────────────────────────────────── */
 .heading-accent::after,
 .heading-accent-center::after {
   background: linear-gradient(
     90deg,
-    var(--uf-blue),
-    var(--uf-orange) 70%,
+    #111111,
+    #C9A84C 60%,
     transparent 100%) !important;
-  height: 3px !important;
+  height: 2px !important;
   border-radius: 0 !important;
-  width: 44px !important;
+  width: 52px !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   15. ABOUT POSITIONS BOX — Rich UF Blue gradient
+   15. ABOUT POSITIONS BOX — Rich dark editorial
    ───────────────────────────────────────────────────────── */
 .about-positions-box {
   background: linear-gradient(
     135deg,
-    #001a7a 0%,
-    var(--uf-blue) 55%,
-    #2040d0 100%
+    #0d0b08 0%,
+    #111008 50%,
+    #0a0900 100%
   ) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  border-top-color: rgba(255, 255, 255, 0.2) !important;
+  border: 1px solid rgba(201, 168, 76, 0.15) !important;
+  border-top-color: rgba(201, 168, 76, 0.32) !important;
   box-shadow:
-    0 8px 32px rgba(0, 33, 165, 0.32),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    0 8px 32px rgba(0, 0, 0, 0.32),
+    inset 0 1px 0 rgba(201, 168, 76, 0.13);
 }
 .about-positions-box::before {
-  top: 0 !important; left: 0 !important;
-  width: 100% !important; height: 3px !important;
-  border-radius: 0 !important;
-  background: linear-gradient(90deg,
-    var(--uf-orange),
-    var(--uf-orange-light),
-    var(--uf-orange)) !important;
+  display: none !important;
 }
-.about-positions-box h3 { color: #ffffff !important; }
-.about-positions-box p  { color: rgba(255, 255, 255, 0.78) !important; }
+.about-positions-box h3 { color: #d4b96a !important; }
+.about-positions-box p  { color: rgba(255, 255, 255, 0.74) !important; }
 .about-positions-box a  {
-  color: #ff9070 !important;
+  color: #C9A84C !important;
   font-weight: 600 !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   16. FOOTER — Deep rich dark
+   16. FOOTER — Deep editorial black
    ───────────────────────────────────────────────────────── */
 footer {
   background: linear-gradient(
     180deg,
-    #0d0c12 0%,
-    #08070e 100%
+    #0a0900 0%,
+    #060500 100%
   ) !important;
 }
 footer::before {
   background: linear-gradient(
     90deg,
-    var(--uf-blue),
-    var(--uf-orange) 50%,
-    var(--uf-blue)
+    #111111,
+    #C9A84C 50%,
+    #111111
   ) !important;
-  height: 3px !important;
+  height: 2px !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   17. CARD BASE — Richer layered shadow
+   17. CARD BASE — Warm shadow system
    ───────────────────────────────────────────────────────── */
 .card {
-  border: 1px solid rgba(0, 33, 165, 0.06) !important;
+  border: 1px solid rgba(0, 0, 0, 0.065) !important;
   box-shadow:
-    0 1px 2px rgba(0, 33, 165, 0.04),
-    0 2px 8px rgba(0, 33, 165, 0.03),
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 2px 8px rgba(0, 0, 0, 0.04),
     inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
 }
 .card:hover {
   box-shadow:
-    0 14px 44px rgba(0, 33, 165, 0.13),
-    0 4px 16px rgba(0, 33, 165, 0.06),
+    0 14px 44px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(201, 168, 76, 0.07),
     inset 0 1px 0 rgba(255, 255, 255, 1) !important;
-  border-color: rgba(0, 33, 165, 0.1) !important;
+  border-color: rgba(201, 168, 76, 0.14) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   18. MEMBER CARDS — Spring lift + gradient underline
+   18. MEMBER CARDS — Gold underline reveal + lift
    ───────────────────────────────────────────────────────── */
 .member-card {
-  box-shadow: 0 2px 12px rgba(0, 33, 165, 0.07) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
   border-bottom: none !important;
   transition:
     transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
@@ -570,64 +595,69 @@ footer::before {
   content: '';
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, var(--uf-blue), var(--uf-orange));
+  height: 2px;
+  background: linear-gradient(90deg, #111111, #C9A84C);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
 }
 .member-card:hover::after { transform: scaleX(1); }
 .member-card:hover {
   transform: translateY(-8px) !important;
-  box-shadow: 0 22px 52px rgba(0, 33, 165, 0.2) !important;
+  box-shadow:
+    0 20px 52px rgba(0, 0, 0, 0.18),
+    0 0 0 1px rgba(201, 168, 76, 0.10) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   19. SECTION LABEL — Vivid orange
+   19. SECTION LABEL — Gold
    ───────────────────────────────────────────────────────── */
 .section-label {
-  color: var(--uf-orange) !important;
+  color: #C9A84C !important;
   letter-spacing: 0.18em;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   20. FEATURED BADGES — Premium pill with spring hover
+   20. FEATURED BADGES — Warm parchment pills
    ───────────────────────────────────────────────────────── */
 .featured-badge {
-  border-radius: 0.25rem !important;
+  border-radius: 0.2rem !important;
   letter-spacing: 0.04em;
   font-size: 0.68rem !important;
+  background: rgba(252, 248, 240, 0.92) !important;
+  border-color: rgba(201, 168, 76, 0.22) !important;
+  color: #6b5a2a !important;
   transition:
     transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1),
-    box-shadow 0.25s ease,
-    border-color 0.25s ease !important;
+    box-shadow 0.25s ease !important;
 }
 .featured-badge:hover {
   transform: translateY(-2px) scale(1.04) !important;
-  box-shadow: 0 4px 14px rgba(0, 33, 165, 0.13) !important;
-  border-color: rgba(0, 33, 165, 0.22) !important;
-  color: var(--uf-blue) !important;
+  box-shadow: 0 4px 14px rgba(201, 168, 76, 0.2) !important;
+  border-color: rgba(201, 168, 76, 0.48) !important;
+  color: #8b6f1a !important;
+  background: rgba(255, 252, 240, 1) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   21. CTA BOX — Deep blue with animated orange orb
+   21. CTA BOX — Dark editorial with gold orb
    ───────────────────────────────────────────────────────── */
 .cta-box {
   background: linear-gradient(
     135deg,
-    #000826 0%,
-    #000d4d 35%,
-    #001a7a 70%,
-    #000826 100%
+    #080600 0%,
+    #0d0b08 40%,
+    #100d04 70%,
+    #060400 100%
   ) !important;
-  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border: 1px solid rgba(201, 168, 76, 0.13) !important;
+  border-top-color: rgba(201, 168, 76, 0.28) !important;
   box-shadow:
-    0 24px 80px rgba(0, 33, 165, 0.38),
-    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+    0 24px 80px rgba(0, 0, 0, 0.52),
+    inset 0 1px 0 rgba(201, 168, 76, 0.09);
   overflow: hidden;
 }
 .cta-box::after {
@@ -637,47 +667,57 @@ footer::before {
   width: 420px !important; height: 420px !important;
   border-radius: 50% !important;
   background: radial-gradient(circle,
-    rgba(250, 70, 22, 0.13) 0%,
+    rgba(201, 168, 76, 0.09) 0%,
     transparent 65%) !important;
-  animation: cta-orb-float 13s ease-in-out infinite alternate;
+  animation: gold-cta-orb 14s ease-in-out infinite alternate;
   pointer-events: none;
 }
-@keyframes cta-orb-float {
+@keyframes gold-cta-orb {
   0%   { transform: translate(0, 0) scale(1); }
-  100% { transform: translate(-6%, -10%) scale(1.25); }
+  100% { transform: translate(-6%, -8%) scale(1.25); }
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   22. ALUMNI CARDS
+   22. ALUMNI CARDS — Gold left accent
    ───────────────────────────────────────────────────────── */
 .alumni-card {
+  border-left: 2px solid rgba(201, 168, 76, 0.20) !important;
   transition:
     transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
     box-shadow 0.3s ease,
     border-color 0.3s ease !important;
 }
 .alumni-card:hover {
+  border-left-color: #C9A84C !important;
   transform: translateX(4px) !important;
-  box-shadow: 0 4px 16px rgba(0, 33, 165, 0.1) !important;
-  border-left-color: var(--uf-orange) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.09) !important;
 }
 
 
 /* ─────────────────────────────────────────────────────────
-   23. SELECTION COLOR
+   23. SELECTION COLOR — Warm gold
    ───────────────────────────────────────────────────────── */
 ::selection {
-  background: rgba(0, 33, 165, 0.18);
-  color: var(--stone-900);
+  background: rgba(201, 168, 76, 0.22);
+  color: #0d0b06;
 }
 
 
-/* (section 24 removed — old research card label no longer used) */
+/* ─────────────────────────────────────────────────────────
+   24. NAV BAR SCROLLED — Warm white
+   ───────────────────────────────────────────────────────── */
+.site-nav-bar.header-scrolled {
+  background: rgba(255, 252, 248, 0.9) !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07) !important;
+}
+
+
+/* (section 25 removed — old research card label no longer used) */
 
 
 /* ─────────────────────────────────────────────────────────
-   25. BUTTON ACTIVE STATE — Subtle press
+   26. BUTTON ACTIVE STATE
    ───────────────────────────────────────────────────────── */
 .btn-hero-primary:active,
 .btn-hero-secondary:active,
