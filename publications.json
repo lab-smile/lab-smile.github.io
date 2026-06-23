@@ -1,5 +1,15 @@
 [
     {
+        "title": "Biologically Inspired Deep Neural Network Models for Visual Emotion Processing",
+        "type": "Journal",
+        "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <b>Ruogu Fang</b>",
+        "citation": "Network Neuroscience, 2026. Accepted.",
+        "publication_year": "2026",
+        "image_src": "img/pubs/TaylorFrancis.jpg",
+        "label_class": "warning",
+        "data_year": "2026"
+    },
+    {
         "title": "REVEAL++: Differentiable Phenotypic Grouping for Vision–Language Retinal Modeling of Alzheimer’s Disease Risk",
         "type": "Conference",
         "authors": "Ethan Meidinger*, Seowung Leem*, Zeyun Zhao*, <b>Ruogu Fang</b>",
