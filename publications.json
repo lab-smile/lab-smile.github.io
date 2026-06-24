@@ -16,13 +16,18 @@
     {
         "title": "Biologically Inspired Deep Neural Network Models for Visual Emotion Processing",
         "type": "Journal",
-        "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <b>Ruogu Fang</b>",
+        "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
         "citation": "Network Neuroscience, 2026. Accepted.",
         "publication_year": "2026",
         "image_src": "img/pubs/NetworkNeuroscience.png",
         "label_class": "warning",
-        "data_year": "2026"
+        "external_links": {
+            "arxiv": "https://www.biorxiv.org/content/10.1101/2025.10.20.683439v1"
+        },
+        "abstract": "The perception of opportunities and threats in complex visual scenes represents one of the main functions of the human visual system. The underlying neurophysiology is often studied by having observers view pictures varying in affective content. While deep neural networks (DNNs) have shown promise in modeling visual recognition of objects, their capacity to model visual affective processing remains to be better understood. In this study, we proposed a biologically inspired deep neural network model, referred to as the Visual Cortex Amygdala (VCA) model, that integrates a vision transformer with an amygdala-mimetic module designed to reflect both the anatomical hierarchy and self-attention-based computational mechanisms of the human brain. We evaluated the model along three dimensions: (1) predictive accuracy for emotional valence and arousal, (2) representational alignment with human amygdala activity, and (3)neural mechanisms of emotion representation. Our results showed that (1) the model can predict with high accuracy human emotion ratings on 1,182 images from the International Affective Picture System (IAPS) dataset (valence: r ≈ 0.9; arousal: r ≈ 0.7), (2) the model’s internal representations aligned with functional Magnetic Resonance Imaging (fMRI) data from the human amygdala, and (3) at the single neuron level, the amygdala module evolved emotion selectivity, and at the neuronal population level, the representational geometry became progressively more aligned with psychological models of emotion. Additional issues explored included (1) the effect of visual encoding and (2) the effect of structure and computational mechanisms on emotional assessment.",
+      "data_year": "2026"
     },
+
     {
         "title": "REVEAL++: Differentiable Phenotypic Grouping for Vision–Language Retinal Modeling of Alzheimer’s Disease Risk",
         "type": "Conference",
@@ -343,20 +348,6 @@
             "sciencedirect": "https://doi.org/10.1038/s43588-025-00911-9"
         },
         "abstract": "Dynamic brain data are becoming increasingly accessible, providing a gateway to understanding the inner workings of the brain in living participants. However, the size and complexity of the data pose a challenge in extracting meaningful information across various data sources. Here we introduce a generalizable unsupervised deep manifold learning for exploration of neurocognitive and behavioral patterns. Unlike existing methods that extract patterns directly from the input data, the proposed brain-dynamic convolutional-network-based embedding (BCNE) captures brain-state trajectories by analyzing temporospatial correlations within the data and applying manifold learning. The results demonstrate that BCNE effectively delineates scene transitions, underscores the involvement of different brain regions in memory and narrative processing, distinguishes dynamic learning processes and identifies differences between active and passive behaviors. BCNE provides an effective tool for exploring general neuroscience inquiries or individual-specific patterns.",
-        "data_year": "2025"
-    },
-    {
-        "title": "Biologically Inspired Deep Neural Network Models for Visual Emotion Processing",
-        "type": "Preprint",
-        "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
-        "citation": "",
-        "publication_year": "October 2025",
-        "image_src": "img/pubs/BIORXIV.jpg",
-        "label_class": "warning",
-        "external_links": {
-            "arxiv": "https://www.biorxiv.org/content/10.1101/2025.10.20.683439v1"
-        },
-        "abstract": "The perception of opportunities and threats in complex visual scenes represents one of the main functions of the human visual system. The underlying neurophysiology is often studied by having observers view pictures varying in affective content. While deep neural networks (DNNs) have shown promise in modeling visual recognition of objects, their capacity to model visual affective processing remains to be better understood. In this study, we proposed a biologically inspired deep neural network model, referred to as the Visual Cortex Amygdala (VCA) model, that integrates a vision transformer with an amygdala-mimetic module designed to reflect both the anatomical hierarchy and self-attention-based computational mechanisms of the human brain. We evaluated the model along three dimensions: (1) predictive accuracy for emotional valence and arousal, (2) representational alignment with human amygdala activity, and (3)neural mechanisms of emotion representation. Our results showed that (1) the model can predict with high accuracy human emotion ratings on 1,182 images from the International Affective Picture System (IAPS) dataset (valence: r ≈ 0.9; arousal: r ≈ 0.7), (2) the model’s internal representations aligned with functional Magnetic Resonance Imaging (fMRI) data from the human amygdala, and (3) at the single neuron level, the amygdala module evolved emotion selectivity, and at the neuronal population level, the representational geometry became progressively more aligned with psychological models of emotion. Additional issues explored included (1) the effect of visual encoding and (2) the effect of structure and computational mechanisms on emotional assessment.",
         "data_year": "2025"
     },
     {
