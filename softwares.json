@@ -1,5 +1,136 @@
 [
     {
+        "year": "2026",
+        "type": "Code",
+        "title": "Brain-AI-101",
+        "description": "Interactive neuroscience and AI learning platform that turns neurons, networks, filters, and feedback into guided web experiences.",
+        "citation": null,
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/Brain-AI-101"
+        }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": "Code",
+        "title": "DeepRetinaADRisk",
+        "description": "Prediction of Alzheimer's disease risk factors from retinal images via deep learning.",
+        "citation": "Seowung Leem, Yunchao Yang, Adam J. Woods, and Ruogu Fang. \"Prediction of Alzheimer's disease risk factors from retinal images via deep learning: Development and validation of biologically relevant morphological associations in the UK Biobank\" In Journal of Alzheimer's Disease, June 16, 2026. DOI: 10.1177/13872877261457650",
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/DeepRetinaADRisk"
+        }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": "Code",
+        "title": "tDCS J-map Outcome Prediction",
+        "description": "Machine-learning pipeline for predicting tDCS response from MNI-registered current-density direction maps.",
+        "citation": null,
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/tDCS_Jmap_Outcome_Prediction"
+        }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": "Code",
+        "title": "CROWN",
+        "description": "Web platform for whole-head MRI segmentation and transcranial electrical stimulation modeling.",
+        "citation": "Chintan K. Acharya, Dev Rakesh Patel, Skylar E. Stolte, Aprinda Indahlastari, and Ruogu Fang. \"Comprehensive Reconstruction Of Whole-head Neuromodulation (CROWN): A Browser-Based Platform for Automated 11-Tissue MRI Segmentation and Individualized tDCS Current Density Modeling\" In NYC Neuromodulation Conference, July 31-August 2, 2026, New York, NY, USA",
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/CROWN"
+        }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": "Code",
+        "title": "Affective Batch Annotation",
+        "description": "Batch-based affective image annotation tools for multimodal and LLM-based valence-arousal evaluation.",
+        "citation": null,
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/affective-batch-annotation"
+        }
+        ]
+    },
+    {
+        "year": "2025",
+        "type": "Code",
+        "title": "DOMINO CLI",
+        "description": "Standalone CLI for processing NIfTI files with DOMINO and DOMINO++ models.",
+        "citation": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. \"DOMINO: Domain-aware loss for deep learning calibration\" In Software Impacts, Feb 2023. Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, and Ruogu Fang. \"DOMINO++: Domain-aware Loss Regularization for Deep Learning Generalizability\" In MICCAI, 2023",
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/domino-cli"
+        }
+        ]
+    },
+    {
+        "year": "2025",
+        "type": "Code",
+        "title": "GRACE CLI",
+        "description": "Standalone CLI for processing NIfTI files with the GRACE whole-head segmentation model.",
+        "citation": "Stolte, Skylar E. and Indahlastari, Aprinda and Chen, Jason and Albizu, Alejandro and Dunn, Ayden and Pederson, Samantha and See, Kyle B. and Woods, Adam J. and Fang, Ruogu. \"Precise and Rapid Whole-Head Segmentation from Magnetic Resonance Images of Older Adults using Deep Learning\" Imaging NeuroScience, March 2024",
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/grace-cli"
+        }
+        ]
+    },
+    {
+        "year": "2025",
+        "type": "Code",
+        "title": "Less Is More",
+        "description": "Real-time transdermal alcohol content artifact rejection and calibrated blood alcohol concentration estimation pipeline.",
+        "citation": null,
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/less-is-more"
+        }
+        ]
+    },
+    {
+        "year": "2025",
+        "type": "Code",
+        "title": "TRACE",
+        "description": "Python tool for extracting ancestry-related information from biomedical literature using language models, regular expressions, and Cellosaurus metadata.",
+        "citation": "Alison M. Veintimilla, Chintan K. Acharya, Connie J. Mulligan, Ruogu Fang, and Erika Moore. \"TRACE: applying AI language models to extract ancestry information from curated biomedical literature\" In Frontiers in Digital Health, September 2025",
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/TRACE"
+        }
+        ]
+    },
+    {
+        "year": "2024",
+        "type": "Code",
+        "title": "DeepDynaForecast",
+        "description": "Phylogenetic-informed graph deep learning algorithm for forecasting epidemic transmission dynamics.",
+        "citation": "Chaoyue Sun, Ruogu Fang, Marco Salemi, Mattia Prosperi, and Brittany Rife Magalis. \"DeepDynaForecast: Phylogenetic-informed graph deep learning for epidemic transmission dynamic prediction\" In PLOS Computational Biology, 2024",
+        "links": [
+        {
+            "type": "github",
+            "url": "https://github.com/lab-smile/DeepDynaForecast"
+        }
+        ]
+    },
+
+    {
         "year": "2024",
         "type": "Code",
         "title": "BrainSegFounder",
