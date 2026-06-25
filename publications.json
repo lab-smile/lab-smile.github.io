@@ -36,6 +36,9 @@
         "publication_year": "September 2026",
         "image_src": "img/pubs/MICCAI.jpg",
         "label_class": "primary",
+        "external_links": {
+            "arxiv": "https://arxiv.org/abs/2606.19522"
+        },
         "data_year": "2026"
     },
     {
