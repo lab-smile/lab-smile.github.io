@@ -49,6 +49,9 @@
         "publication_year": "2026",
         "image_src": "img/pubs/frontiers-in-human-neuroscience.png",
         "label_class": "warning",
+        "external_links": {
+            "sciencedirect": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1904700/full"
+        },
         "data_year": "2026"
     },
     {
