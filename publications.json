@@ -1,5 +1,19 @@
 [
     {
+        "title": "Concept2Brain: An AI model for predicting neurophysiological responses to text and pictures",
+        "type": "Journal",
+        "authors": "Alejandro Santos-Mayo, Faith Gilbert, Arash Mirifar, Anna-Lena Tebbe, <b>Ruogu Fang</b>, Mingzhou Ding, Andreas Keil",
+        "citation": "Nature Communications, 2026. Accepted for publication.",
+        "publication_year": "2026",
+        "image_src": "img/pubs/NATURE.jpg",
+        "label_class": "warning",
+        "external_links": {
+            "biorxiv": "https://www.biorxiv.org/content/10.1101/2025.08.04.668476v1"
+        },
+        "abstract": "The current growth of artificial intelligence (AI) tools provides an unprecedented opportunity to extract deeper insights from neurophysiological data while also enabling the reproduction and prediction of brain responses to a wide range of events and situations. Here, we introduce the Concept2Brain model, a deep network architecture designed to generate synthetic electrophysiological responses to semantic/emotional information conveyed through pictures or text. Leveraging AI solutions like CLIP from OpenAI, the model generates a representation of pictorial or language input and maps it into an electrophysiological latent space. We demonstrate that this openly available resource generates synthetic neural responses that closely resemble those observed in studies of naturalistic scene perception. The Concept2Brain model is provided as a web service tool for creating open and reproducible EEG datasets, allowing users to predict brain responses to any semantic concept or picture. Beyond its applied functionality, it also paves the way for AI-driven modeling of brain activity, offering new possibilities for studying how the brain represents the world.",
+        "data_year": "2026"
+    },
+    {
         "title": "Emotional Responses to Naturalistic and AI-generated Affective Pictures: A Systematic Comparison",
         "type": "Journal",
         "authors": "Faith Gilbert, Fan Yang, Ethan Smith, Sarah Gardy, Andrew Farkas, Mingzhou Ding, <b>Ruogu Fang</b>, Andreas Keil",
@@ -463,20 +477,6 @@
             "sciencedirect": "https://doi.org/10.48550/arXiv.2509.06969"
         },
         "abstract": "Physical activity is a modifiable lifestyle factor with potential to support cognitive resilience. However, the association of moderate-to-vigorous physical activity (MVPA) intensity, and timing, with cognitive function and region-specific brain structure remain poorly understood. We analyzed data from 45,892 UK Biobank participants aged 60 years and older with valid wrist-worn accelerometer data, cognitive testing, and structural brain MRI. MVPA was measured both continuously (mins per week) and categorically (thresholded using >=150 min/week based on WHO guidelines). Associations with cognitive performance and regional brain volumes were evaluated using multivariable linear models adjusted for demographic, socioeconomic, and health-related covariates. We conducted secondary analyses on MVPA timing and subgroup effects. Higher MVPA was associated with better performance across cognitive domains, including reasoning, memory, executive function, and processing speed. These associations persisted in fully adjusted models and were higher among participants meeting WHO guidelines. Greater MVPA was also associated with subcortical brain regions (caudate, putamen, pallidum, thalamus), as well as regional gray matter volumes involved in emotion, working memory, and perceptual processing. Secondary analyses showed that MVPA at any time of day was associated with cognitive functions and brain volume particularly in the midday-afternoon and evening. Sensitivity analysis shows consistent findings across subgroups, with evidence of dose-response relationships. Higher MVPA is associated with preserved brain structure and enhanced cognitive function in later life. Public health strategies to increase MVPA may support healthy cognitive aging and generate substantial economic benefits, with global gains projected to reach USD 760 billion annually by 2050.",
-        "data_year": "2025"
-    },
-    {
-        "title": "Concept2Brain: An AI model for predicting subject-level neurophysiological responses to text and pictures",
-        "type": "Preprint",
-        "authors": "Alejandro Santos-Mayo, Faith Gilbert, Arash Mirifar, Anna-Lena Tebbe, <b>Ruogu Fang</b>, Mingzhou Ding, Andreas Keil",
-        "citation": "",
-        "publication_year": "August 2025",
-        "image_src": "img/pubs/arxiv.png",
-        "label_class": "warning",
-        "external_links": {
-            "sciencedirect": "https://www.biorxiv.org/content/10.1101/2025.08.04.668476v1"
-        },
-        "abstract": "The current growth of artificial intelligence (AI) tools provides an unprecedented opportunity to extract deeper insights from neurophysiological data while also enabling the reproduction and prediction of brain responses to a wide range of events and situations. Here, we introduce the Concept2Brain model, a deep network architecture designed to generate synthetic electrophysiological responses to semantic/emotional information conveyed through pictures or text. Leveraging AI solutions like CLIP from OpenAI, the model generates a representation of pictorial or language input and maps it into an electrophysiological latent space. We demonstrate that this openly available resource generates synthetic neural responses that closely resemble those observed in studies of naturalistic scene perception. The Concept2Brain model is provided as a web service tool for creating open and reproducible EEG datasets, allowing users to predict brain responses to any semantic concept or picture. Beyond its applied functionality, it also paves the way for AI-driven modeling of brain activity, offering new possibilities for studying how the brain represents the world.",
         "data_year": "2025"
     },
     {
