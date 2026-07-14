@@ -115,34 +115,6 @@
         "data_year": "2026"
     },
     {
-        "title": "From Edges to Meaning: Semantic Line Sketches as a Cognitive Scaffold for Ancient Pictograph Invention",
-        "type": "Preprint",
-        "authors": "Seowung Leem, Lin Gu, <u><b>Ruogu Fang</b></u>",
-        "citation": "arXiv preprint arXiv:2604.12865, April 2026",
-        "publication_year": "April 2026",
-        "image_src": "img/pubs/arxiv.png",
-        "label_class": "info",
-        "external_links": {
-            "arxiv": "https://arxiv.org/abs/2604.12865"
-        },
-        "abstract": "Humans readily recognize objects from sparse line drawings, a capacity that appears early in development and persists across cultures, suggesting neural rather than purely learned origins. Yet the computational mechanism by which the brain transforms high-level semantic knowledge into low-level visual symbols remains poorly understood. Here we propose that ancient pictographic writing emerged from the brain's intrinsic tendency to compress visual input into stable, boundary-based abstractions. We construct a biologically inspired digital twin of the visual hierarchy that encodes an image into low-level features, generates a contour sketch, and iteratively refines it through top-down feedback guided by semantic representations, mirroring the feedforward and recurrent architecture of the human visual cortex. The resulting symbols bear striking structural resemblance to early pictographs across culturally distant writing systems, including Egyptian hieroglyphs, Chinese oracle bone characters, and proto-cuneiform, and offer candidate interpretations for undeciphered scripts. Our findings support a neuro-computational origin of pictographic writing and establish a framework in which AI can recapitulate the cognitive processes by which humans first externalized perception into symbols.",
-        "data_year": "2026"
-    },
-    {
-        "title": "Visual Emotion Perception in a Deep Neural Network Model with Both Bottom-Up and Top-Down Connections",
-        "type": "Preprint",
-        "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <u><b>Ruogu Fang</b></u>",
-        "citation": "bioRxiv, April 8, 2026. DOI: 10.64898/2026.04.06.716704",
-        "publication_year": "April 2026",
-        "image_src": "img/pubs/BIORXIV.jpg",
-        "label_class": "info",
-        "external_links": {
-            "biorxiv": "https://www.biorxiv.org/content/10.64898/2026.04.06.716704v1"
-        },
-        "abstract": "Emotion reshapes perception by modulating sensory processing through top-down feedback, a process referred to as emotional perception. The computational mechanisms by which distinct affective signals influence visual representations however remain poorly understood. Here, we use a deep neural network to simulate this process and test mechanistic hypotheses about how top-down feedback guides emotional perception. Most existing models treat the perception of emotional content as a static, feedforward task, overlooking the dynamic interplay between internal states, external goals, and sensory input that characterizes affective perception in the brain. We introduce EmoFB, a biologically inspired model that integrates an affective system with a visual processing hierarchy through two functionally distinct feedback signals: intrinsic feedback, arising from the model's own affective appraisal of perceptual input, and external steering, conveying contextual priors such as task expectations or target categories. We evaluated EmoFB on three tasks varying in perceptual ambiguity (Single Image, Side-by-Side, and Overlay). External steering exerted the strongest influence, not only improving recognition under challenging conditions but also restructuring internal representations by sharpening category-specific clustering in feature space. Crucially, top-down feedback increased brain/model representational similarity, strengthening alignment with human fMRI responses across early visual cortex, ventral visual areas, and the amygdala. EmoFB provides a computational framework for testing neurocognitive theories of emotion appraisal and top-down feedback modulation. It bridges affective neuroscience and artificial intelligence, offering mechanistic insight into how emotional signals shape perception in both brains and machines.",
-        "data_year": "2026"
-    },
-    {
         "title": "Reinforcement Learning for Intraoperative Hypotension Management with Consideration to Postoperative Acute Kidney Injury",
         "type": "Journal",
         "authors": "Esra Adiyeke, Tianqi Liu, Venkata Sai Dheeraj Naganaboina, Han Li, Tyler J. Loftus, Yuanfang Ren, Benjamin Shickel, Matthew M. Ruppert, Karandeep Singh, <b>Ruogu Fang</b>, Parisa Rashidi, Azra Bihorac, Tezcan Ozrazgat-Baslanti",
@@ -252,6 +224,66 @@
         "dates": "July 8–10, 2026"
     },
     {
+        "title": "Evaluation of Model-Generated Saliency Maps for Affective Scenes",
+        "type": "Conference",
+        "authors": "Simona Sartan, Yujun Chen, Peng Liu, <b>Ruogu Fang</b>, Mingzhou Ding",
+        "citation": "Vision Sciences Society Annual Meeting (VSS 2026), Poster 56.343, May 19, 2026, St. Pete Beach, FL, USA",
+        "publication_year": "May 19, 2026",
+        "image_src": "img/pubs/VSS.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.visionsciences.org/presentation/?id=4359"
+        },
+        "abstract": "Saliency maps are bottom-up, image-computable priority maps that highlight locations in natural scenes likely to attract visual attention. Deep learning-based saliency models, trained predominantly on emotionally-neutral images, have demonstrated strong performance in predicting human gaze patterns. Whether these models capture visual features that convey emotional significance in affective scenes is unclear. We addressed this by combining saliency-guided occlusion with large language model (LLM)-based emotion evaluation to test whether saliency maps from these models encode emotion-relevant information. Saliency maps for affective scenes from the International Affective Picture System (IAPS) were generated using three deep saliency models: DeepGaze IIE (Linardos et al., 2021), SalFBNet (Ding et al., 2022), and TranSalNet (Lou et al., 2022). A human eye-tracking saliency baseline from the EMOd dataset (Fan et al., 2018) was included for comparison. Three conditions were tested: occlusion guided by the original saliency map, occlusion of randomly relocated saliency patches preserving patch size and shape, and occlusion at random locations. Valence and arousal ratings for each occluded image were obtained from ChatGPT-3.5 using structured prompts. Correlation between LLM ratings and normative IAPS ratings were computed across occlusion levels. The results showed that saliency-guided occlusion produced steeper declines in both valence and arousal correlations compared to the two control conditions, confirming that model-identified salient regions carry emotionally-significant information. This effect was more pronounced for arousal than valence, suggesting that valence-relevant information is more spatially distributed across a scene. Performance under saliency-guided occlusion converged with the human gaze baseline, indicating that neutral scene-trained models identify regions that overlap with those prioritized by human visual attention. These findings demonstrate that (1) saliency models trained on neutral content capture emotionally-critical visual locations in affective scenes and (2) LLM-based ratings offer a scalable and efficient alternative to human ratings for affective image analysis.",
+        "data_year": "2026",
+        "location": "St. Pete Beach, FL, USA",
+        "dates": "May 19, 2026"
+    },
+    {
+        "title": "Neural Responses to Natural Versus AI-generated Affective Images",
+        "type": "Conference",
+        "authors": "Yujun Chen, <b>Ruogu Fang</b>, Andreas Keil, Mingzhou Ding",
+        "citation": "Vision Sciences Society Annual Meeting (VSS 2026), Poster 23.331, May 16, 2026, St. Pete Beach, FL, USA",
+        "publication_year": "May 16, 2026",
+        "image_src": "img/pubs/VSS.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.visionsciences.org/presentation/?id=3764"
+        },
+        "abstract": "The International Affective Picture System (IAPS) contains 1,182 well-characterized photographs depicting natural scenes varying in affective content. These pictures are used extensively in affective neuroscience to investigate the neural correlates of emotional processing. Recently, in an effort to augment this dataset, we have begun to generate synthetic emotional images by combining IAPS pictures and diffusion-based AI models. The goal of this study is to compare the neural responses to IAPS pictures and matching AI-generated images. The stimulus set consisted of 60 IAPS pictures (20 pleasant, 20 neutral, 20 unpleasant) and 60 matching AI-generated images (20 pleasant, 20 neutral, 20 unpleasant). In a recording session, a total of 30 IAPS pictures and 30 matching AI-generated images were presented in random order, where each image was displayed for 3 seconds with neighboring images separated by an interval of 2.8 to 3.5 seconds. Each experiment consisted of 10 recording sessions spread over two days. The fMRI data was recorded on a 3T Siemens Prisma scanner. Pupil responses to image presentation were monitored using an MRI-compatible Eyelink1000 Eyetracker. Our preliminary analysis of the fMRI data (N=28) showed that (1) both the IAPS pictures and the matching AI-generated images activated higher-order visual areas such as OTJ and components of the anterior emotion network such as the insula and (2) in the retinotopic visual cortex including V1, MVPA (Multivariate Pattern Analysis) classifiers built to decode emotional categories from voxel patterns activated by IAPS pictures could be used to decode emotional categories from voxel patterns activated by AI-generated images and vice versa, suggesting that the IAPS pictures and the matching AI images evoked similar neural responses in the brain. Efforts to confirm these findings are underway by recruiting additional participants. Analysis is also being expanded to include the comparison of such measures as functional connectivity and pupillometry.",
+        "data_year": "2026",
+        "location": "St. Pete Beach, FL, USA",
+        "dates": "May 16, 2026"
+    },
+    {
+        "title": "From Edges to Meaning: Semantic Line Sketches as a Cognitive Scaffold for Ancient Pictograph Invention",
+        "type": "Preprint",
+        "authors": "Seowung Leem, Lin Gu, <b>Ruogu Fang</b>",
+        "citation": "arXiv preprint arXiv:2604.12865, April 2026",
+        "publication_year": "April 2026",
+        "image_src": "img/pubs/arxiv.png",
+        "label_class": "info",
+        "external_links": {
+            "arxiv": "https://arxiv.org/abs/2604.12865"
+        },
+        "abstract": "Humans readily recognize objects from sparse line drawings, a capacity that appears early in development and persists across cultures, suggesting neural rather than purely learned origins. Yet the computational mechanism by which the brain transforms high-level semantic knowledge into low-level visual symbols remains poorly understood. Here we propose that ancient pictographic writing emerged from the brain's intrinsic tendency to compress visual input into stable, boundary-based abstractions. We construct a biologically inspired digital twin of the visual hierarchy that encodes an image into low-level features, generates a contour sketch, and iteratively refines it through top-down feedback guided by semantic representations, mirroring the feedforward and recurrent architecture of the human visual cortex. The resulting symbols bear striking structural resemblance to early pictographs across culturally distant writing systems, including Egyptian hieroglyphs, Chinese oracle bone characters, and proto-cuneiform, and offer candidate interpretations for undeciphered scripts. Our findings support a neuro-computational origin of pictographic writing and establish a framework in which AI can recapitulate the cognitive processes by which humans first externalized perception into symbols.",
+        "data_year": "2026"
+    },
+    {
+        "title": "Visual Emotion Perception in a Deep Neural Network Model with Both Bottom-Up and Top-Down Connections",
+        "type": "Preprint",
+        "authors": "Peng Liu, Ke Bo, Yujun Chen, Andreas Keil, Mingzhou Ding, <b>Ruogu Fang</b>",
+        "citation": "bioRxiv, April 8, 2026. DOI: 10.64898/2026.04.06.716704",
+        "publication_year": "April 2026",
+        "image_src": "img/pubs/BIORXIV.jpg",
+        "label_class": "info",
+        "external_links": {
+            "biorxiv": "https://www.biorxiv.org/content/10.64898/2026.04.06.716704v1"
+        },
+        "abstract": "Emotion reshapes perception by modulating sensory processing through top-down feedback, a process referred to as emotional perception. The computational mechanisms by which distinct affective signals influence visual representations however remain poorly understood. Here, we use a deep neural network to simulate this process and test mechanistic hypotheses about how top-down feedback guides emotional perception. Most existing models treat the perception of emotional content as a static, feedforward task, overlooking the dynamic interplay between internal states, external goals, and sensory input that characterizes affective perception in the brain. We introduce EmoFB, a biologically inspired model that integrates an affective system with a visual processing hierarchy through two functionally distinct feedback signals: intrinsic feedback, arising from the model's own affective appraisal of perceptual input, and external steering, conveying contextual priors such as task expectations or target categories. We evaluated EmoFB on three tasks varying in perceptual ambiguity (Single Image, Side-by-Side, and Overlay). External steering exerted the strongest influence, not only improving recognition under challenging conditions but also restructuring internal representations by sharpening category-specific clustering in feature space. Crucially, top-down feedback increased brain/model representational similarity, strengthening alignment with human fMRI responses across early visual cortex, ventral visual areas, and the amygdala. EmoFB provides a computational framework for testing neurocognitive theories of emotion appraisal and top-down feedback modulation. It bridges affective neuroscience and artificial intelligence, offering mechanistic insight into how emotional signals shape perception in both brains and machines.",
+        "data_year": "2026"
+    },
+    {
         "title": "Integrating Retinal Fundus Imaging and Computable Phenotypes for Subphenotype Discovery and LLM-Assisted Early and Late Onset Alzheimer's Diagnosis",
         "type": "Conference",
         "authors": "Zhimin Zong, <u><b>Ruogu Fang</b></u>",
@@ -266,6 +298,22 @@
         "data_year": "2026",
         "location": "Vancouver, BC, Canada",
         "dates": "February 15–19, 2026"
+    },
+    {
+        "title": "Brain Health Assessment Is Associated with Gait Performance in Older Adults",
+        "type": "Conference",
+        "authors": "Jaclyn A. Batteiger, Louis A. DeMark, Kameron Newton-Masucci, John B. Williamson, Adam J. Woods, <b>Ruogu Fang</b>, Aprinda I. Queen, Xiang-Yang Lou, Dorian K. Rose, David Clark, Emily J. Fox",
+        "citation": "2026 Combined Sections Meeting (CSM), February 13, 2026, Anaheim, CA, USA",
+        "publication_year": "February 2026",
+        "image_src": "img/pubs/APTA.png",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://apta.confex.com/apta/csm2026/meetingapp.cgi/Paper/51397"
+        },
+        "abstract": "Purpose/Hypothesis: Gait and executive function depend on overlapping neural networks that are vulnerable to age-related decline. Gait deficits often precede observable cognitive changes, and older adults are often referred for physical therapy prior to diagnosis of mild cognitive impairment (MCI). The Brain Health Assessment (BHA) is a computer-adaptive cognitive measure more sensitive to detecting MCI than the Montreal Cognitive Assessment (MoCA). This study compared relationships between cognitive performance (BHA vs. MoCA) and gait performance in 43 older adults suspected of having cognitive decline. Significant moderate associations were found between BHA composite score and fastest-comfortable walking speed (FCw; r=0.39, p=0.005), and BHA executive function and FCw (r=0.36, p=0.009). BHA outperformed the MoCA on composite, executive function, and language generation associations with gait. Findings suggest BHA may detect gait-cognition associations before MCI is detectable by MoCA, supporting its use for early identification of cognitive decline in physical therapy settings.",
+        "data_year": "2026",
+        "location": "Anaheim, CA, USA",
+        "dates": "February 13, 2026"
     },
     {
         "title": "Diagnostically competitive performance of a physiology-informed generative multi-task network for contrast-free CT perfusion",
@@ -298,22 +346,6 @@
         "data_year": "2026"
     },
     {
-        "title": "Brain Health Assessment Is Associated with Gait Performance in Older Adults",
-        "type": "Conference",
-        "authors": "Jaclyn A. Batteiger, Louis A. DeMark, Kameron Newton-Masucci, John B. Williamson, Adam J. Woods, <b>Ruogu Fang</b>, Aprinda I. Queen, Xiang-Yang Lou, Dorian K. Rose, David Clark, Emily J. Fox",
-        "citation": "2026 Combined Sections Meeting (CSM), February 13, 2026, Anaheim, CA, USA",
-        "publication_year": "February 2026",
-        "image_src": "img/pubs/APTA.png",
-        "label_class": "primary",
-        "external_links": {
-            "sciencedirect": "https://apta.confex.com/apta/csm2026/meetingapp.cgi/Paper/51397"
-        },
-        "abstract": "Purpose/Hypothesis: Gait and executive function depend on overlapping neural networks that are vulnerable to age-related decline. Gait deficits often precede observable cognitive changes, and older adults are often referred for physical therapy prior to diagnosis of mild cognitive impairment (MCI). The Brain Health Assessment (BHA) is a computer-adaptive cognitive measure more sensitive to detecting MCI than the Montreal Cognitive Assessment (MoCA). This study compared relationships between cognitive performance (BHA vs. MoCA) and gait performance in 43 older adults suspected of having cognitive decline. Significant moderate associations were found between BHA composite score and fastest-comfortable walking speed (FCw; r=0.39, p=0.005), and BHA executive function and FCw (r=0.36, p=0.009). BHA outperformed the MoCA on composite, executive function, and language generation associations with gait. Findings suggest BHA may detect gait-cognition associations before MCI is detectable by MoCA, supporting its use for early identification of cognitive decline in physical therapy settings.",
-        "data_year": "2026",
-        "location": "Anaheim, CA, USA",
-        "dates": "February 13, 2026"
-    },
-    {
         "title": "Neuroanatomical predictors of tDCS current distribution in cognitively healthy older adults",
         "type": "Journal",
         "authors": "Tyler Ann Busch, Kevin Iversen, Skylar Stolte, Gavin Hart, Jason Chen, Pratyush Shukla, Samantha Pedersen, Andrew O'Shea, Yunfeng Dai, Alejandro Albizu, Adam J. Woods, <b>Ruogu Fang</b>, Aprinda Indahlastari",
@@ -341,6 +373,22 @@
         },
         "abstract": "Deep brain stimulation (DBS) is a highly effective treatment for movement disorders like Parkinson'sdisease, essential tremor, and dystonia. However, the current multidisciplinary workflow for implantingand programming DBS is often complex, which can lead to improperly placed leads, suboptimalsymptom management, and increased procedure time, ultimately resulting in poor patient outcomes.There is a pressing need for a more streamlined, accurate, reproducible, and personalized approachto DBS therapy. Artificial intelligence (AI), which can analyze complex data and identify patterns withremarkable speed, holds significant promise as a tool to address these challenges. This narrativereview explores the current and future applications of AI in improving the entire DBS workflow, fromsurgical planning and lead placement to post-operative programming, with the goal of enhancingclinical efficiency and achieving better, more personalized outcomes for patients with movementdisorders",
         "data_year": "2025"
+    },
+    {
+        "title": "Neural Responses to Natural Versus AI-generated Affective Images",
+        "type": "Conference",
+        "authors": "Yujun Chen, <u><b>Ruogu Fang</b></u>, Andreas Keil, Mingzhou Ding",
+        "citation": "Society for Neuroscience Annual Meeting (Neuroscience 2025), Program No. PSTR180.04/BB2, November 17, 2025, San Diego, CA, USA",
+        "publication_year": "November 17, 2025",
+        "image_src": "img/pubs/SfN.jpeg",
+        "label_class": "primary",
+        "external_links": {
+            "sciencedirect": "https://www.sfn.org/-/media/SfN/Documents/NEW-SfN/Meetings/Neuroscience-2025/Abstracts-and-Sessions/Abstract-PDFs/SFN25_Abstracts-PDF-Posters_MON_AM_Final.pdf#page=669"
+        },
+        "abstract": "The International Affective Picture System (IAPS) contains 1,182 well-characterized photographs depicting natural scenes varying in affective content. These pictures are used extensively in affective neuroscience to investigate the neural correlates of emotional processing. Recently, in an effort to augment this dataset, we have begun to generate synthetic emotional images by combining IAPS pictures and diffusion-based AI models. The goal of this study is to compare the neural responses to IAPS pictures and matching AI-generated images. The stimulus set consisted of 60 IAPS pictures (20 pleasant, 20 neutral, 20 unpleasant) and 60 matching AI-generated images (20 pleasant, 20 neutral, 20 unpleasant). In a recording session, a total of 30 IAPS pictures and 30 matching AI-generated images were presented in random order, where each image was displayed for 3 seconds with neighboring images separated by an interval of 2.8 to 3.5 seconds. Each experiment consisted of 10 recording sessions spread over two days. The fMRI data was recorded on a 3T Siemens Prisma scanner. Pupil responses to image presentation were monitored using an MRI-compatible Eyelink1000 Eyetracker. Our preliminary analysis of the fMRI data (N=10) showed that (1) both the IAPS pictures and the matching AI-generated images activated higher-order visual areas such as OTJ and components of the anterior emotion network such as the insula and (2) in the retinotopic visual cortex including V1, MVPA (Multivariate Pattern Analysis) classifiers built to decode emotional categories from voxel patterns activated by IAPS pictures could be used to decode emotional categories from voxel patterns activated by AI-generated images and vice versa, suggesting that the IAPS pictures and the matching AI images evoked similar neural responses in the brain. Efforts to confirm these findings are underway by recruiting additional participants. Analysis is also being expanded to include the comparison of such measures as functional connectivity and pupillometry.",
+        "data_year": "2025",
+        "location": "San Diego, CA, USA",
+        "dates": "November 17, 2025"
     },
     {
         "title": "The Importance of Tissue Identity in Modeling Transcranial Direct Current Stimulation",
