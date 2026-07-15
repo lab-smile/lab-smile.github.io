@@ -5,7 +5,7 @@
         "authors": "Alejandro Santos-Mayo, Faith Gilbert, Arash Mirifar, Anna-Lena Tebbe, <b>Ruogu Fang</b>, Mingzhou Ding, Andreas Keil",
         "citation": "Nature Communications, 2026. Accepted for publication.",
         "publication_year": "2026",
-        "image_src": "img/pubs/NATURE.jpg",
+        "image_src": "img/pubs/NatureCommunications.jpg",
         "label_class": "warning",
         "external_links": {
             "biorxiv": "https://www.biorxiv.org/content/10.1101/2025.08.04.668476v1"
@@ -84,7 +84,7 @@
         "authors": "Sneha Mantri, Rhoda Au, Anastasia Barnes, James Beck, Kathleen Blake, Wendy Dahl, Briana de Miranda, E. Ray Dorsey, <b>Ruogu Fang</b>, J. Daniel Fenn, Sue J. Goldie, Samuel M. Goldman, Paulina Gonzalez-Latapi, Diego Guarin, Brittany Kryzyzanowski, Nicole Lessard, Andi Lipstein Fristedt, Tejas R. Mehta, Monica Norcini, Peggy Borum, Jennifer L. Purks, Dawn Schiehser, Michael A. Schwarzschild, Caroline M. Tanner, Alexis Temkin, J. Bryan Unruh, Chris Vulpe, Kristin Wallock, Cordelia Walz, Michael S. Okun",
         "citation": "npj Parkinson’s Disease, 2026",
         "publication_year": "2026",
-        "image_src": "img/pubs/NATURE.jpg",
+        "image_src": "img/pubs/npjParkinsonsDisease.png",
         "label_class": "warning",
         "data_year": "2026"
     },
@@ -547,7 +547,7 @@
         "authors": "Diandra P. Ojo*, Cameron Celeste, Dion Ming, <u><b>Ruogu Fang</b></u>†, <u>Ivana K. Parker</u>† († co-corresponding authors)",
         "citation": "npj Women’s Health",
         "publication_year": "2025",
-        "image_src": "img/pubs/nature.digitalmedicine.png",
+        "image_src": "img/pubs/npjWomenshealth.png",
         "label_class": "warning",
         "external_links": {
             "sciencedirect": "https://www.nature.com/articles/s44294-025-00092-w"
@@ -2449,7 +2449,7 @@
         "authors": "<u><b>Ruogu Fang</b></u>,Haodi Jiang, Junzhou Huang.",
         "citation": "CMIG, Elsevier Journal of Computerized Medical Imaging and Graphics, vol.46, no.1, pp. 64-72",
         "publication_year": "2015",
-        "image_src": "img/pubs/IEEEMedical.jpg",
+        "image_src": "img/pubs/CMIG.gif",
         "label_class": "warning",
         "external_links": {
             "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S0895611115000890"
@@ -2525,7 +2525,7 @@
         "authors": "Menglin Jiang, Shaoting Zhang, <strong>Ruogu Fang</strong>, Dimitris Metaxas.",
         "citation": "12th IEEE International Symposium on Biomedical Imaging (ISBI'15), April 16–19, 2015, New York, NY, USA (Oral presentation, 130/714 = 18%)",
         "publication_year": "2015",
-        "image_src": "img/pubs/Neurocomputing.png",
+        "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
         "data_year": "2015",
         "location": "New York, NY, USA",
@@ -2537,7 +2537,7 @@
         "authors": "<u><b>Ruogu Fang</b></u>,Junzhou Huang, Wen-Ming Luh.",
         "citation": "12th IEEE International Symposium on Biomedical Imaging (ISBI'15), April 16–19, 2015, New York, NY, USA",
         "publication_year": "2015",
-        "image_src": "img/pubs/Neurocomputing.png",
+        "image_src": "img/pubs/IEEEImaging.png",
         "label_class": "primary",
         "abstract": "Arterial spin labeling MRI (ASL-MRI) can provide quantitative\n        signals correlated to the cerebral blood flow and neural\n        activity. However, the low signal-to-noise ratio in ASL\n        requires repeated acquisitions to improve the signal reliability,\n        leading to prolonged scanning time. At fewer repetitions,\n        noise and corruptions arise due to motion and physiological\n        artifacts, introducing errors into the cerebral blood flow estimation.\n        We propose to recover the ASL-MRI data from\n        the noisy and corrupted observations at shorter scanning time\n        with a spatio-temporal low-rank total variation method. The\n        low-rank approximation uses the similarity of the repetitive\n        scans, and the total variation regularization considers the local\n        spatial consistency. We compare with the state-of-art robust\n        M-estimator for ASL cerebral blood flow map estimation.\n        Validation on simulated and real data demonstrate the\n        robustness of the proposed method at fewer scanning repetitions\n        and with random corruption",
         "data_year": "2015",
@@ -2740,7 +2740,7 @@
         "authors": "Chongyang Liu, <strong>Ruogu Fang</strong>, and Nelson H.C.Yung",
         "citation": "4th International Conference on Computer Vision Theory and Applications (VISAPP), February 5–8, 2009, Lisboa, Portugal",
         "publication_year": "2009",
-        "image_src": "img/pubs/IEEE.png",
+        "image_src": "img/pubs/scitepress.png",
         "label_class": "primary",
         "data_year": "2009",
         "location": "Lisboa, Portugal",
