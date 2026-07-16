@@ -99,7 +99,8 @@
         "image_src": "img/pubs/JAD.png",
         "label_class": "warning",
         "external_links": {
-            "sciencedirect": "https://journals.sagepub.com/doi/10.1177/13872877261457650"
+            "sciencedirect": "https://journals.sagepub.com/doi/10.1177/13872877261457650",
+            "arxiv": "https://arxiv.org/abs/2605.00665"
         },
         "data_year": "2026"
     },
