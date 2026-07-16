@@ -126,28 +126,42 @@ function createPublicationHTML(pub) {
 }
 
 function pubAssets(pub) {
-    let assets = '';
-    if (pub.external_links) {
-        if (pub.external_links.sciencedirect) {
-            assets += `<a href="${pub.external_links.sciencedirect}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on ScienceDirect (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
-        }
-        if (pub.external_links.github) {
-            assets += `<a href="${pub.external_links.github}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on GitHub (opens in new tab)"><i class="fa fa-github"></i></a>`;
-        }
-        if (pub.external_links.arxiv) {
-            assets += `<a href="${pub.external_links.arxiv}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on arXiv (opens in new tab)"><i class="fa fa-book"></i></a>`;
-        }
-        if (pub.external_links.preprint) {
-            assets += `<a href="${pub.external_links.preprint}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View preprint (opens in new tab)"><i class="fa fa-file-text-o"></i></a>`;
-        }
-        if (pub.external_links.biorxiv) {
-            assets += `<a href="${pub.external_links.biorxiv}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on bioRxiv (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
-        }
-        if (pub.external_links.IEEE) {
-            assets += `<a href="${pub.external_links.IEEE}" class="tooltips" target="_blank" rel="noopener noreferrer" aria-label="View on IEEE (opens in new tab)"><i class="fa fa-external-link"></i></a>`;
-        }
-    }
-    return assets;
+    if (!pub.external_links || typeof pub.external_links !== 'object') return '';
+
+    const labels = {
+        arxiv: 'arXiv',
+        biorxiv: 'bioRxiv',
+        github: 'GitHub',
+        ieee: 'IEEE',
+        mit: 'MIT Press',
+        pmc: 'PubMed Central',
+        preprint: 'Preprint',
+        sciencedirect: 'ScienceDirect'
+    };
+    const icons = {
+        arxiv: 'fa-book',
+        github: 'fa-github',
+        preprint: 'fa-file-text-o'
+    };
+
+    return Object.entries(pub.external_links).map(([key, url]) => {
+        if (typeof url !== 'string' || !url.trim()) return '';
+
+        const normalizedKey = key.toLowerCase();
+        const label = labels[normalizedKey] || key;
+        const icon = icons[normalizedKey] || 'fa-external-link';
+        const linkLabel = `View on ${label} (opens in new tab)`;
+
+        return `<a href="${escapeAttribute(url)}" class="tooltips" target="_blank" rel="noopener noreferrer" title="${escapeAttribute(label)}" aria-label="${escapeAttribute(linkLabel)}"><i class="fa ${icon}" aria-hidden="true"></i></a>`;
+    }).join('');
+}
+
+function escapeAttribute(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/"/g, '&quot;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
 }
 
 function filterPublicationsByType(selectedType) {
@@ -183,6 +197,5 @@ function setupSorting(publications, allPubsDiv, searchInput) {
         searchInput.trigger('keyup'); // Reapply filtering after sorting
     });
 }
-
 
 
