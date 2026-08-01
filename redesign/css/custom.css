@@ -2052,3 +2052,276 @@ nav a, footer a, .breadcrumb-nav a, p a, li a, td a { min-height: auto; }
 
 /* Abbreviation styling */
 abbr[title] { text-decoration: underline dotted; cursor: help; }
+
+/* ═══════════════════════════════════════════════════
+   LATEST HIGHLIGHTS
+   ═══════════════════════════════════════════════════ */
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1.5rem;
+}
+
+.highlight-card {
+  background: var(--white);
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--duration) var(--ease);
+}
+.highlight-card:hover {
+  border-color: rgba(17, 17, 17, 0.16);
+  box-shadow: 0 8px 32px rgba(17, 17, 17, 0.1);
+  transform: translateY(-2px);
+}
+
+.highlight-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.highlight-media {
+  display: block;
+  aspect-ratio: 16 / 10;
+  background-color: var(--uf-blue-bg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: transform var(--duration) var(--ease);
+}
+.highlight-card:hover .highlight-media {
+  transform: scale(1.03);
+}
+
+.highlight-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.highlight-date {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #8a6d16;
+  letter-spacing: 0.02em;
+}
+
+.highlight-text {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+/* ═══════════════════════════════════════════════════
+   AFFILIATIONS — primary cards + affiliated-faculty panel
+   ═══════════════════════════════════════════════════ */
+
+/* The primary appointment should outrank the visiting ones. */
+.affiliation-card {
+  position: relative;
+  border-left: 3px solid transparent;
+}
+.affiliation-card-primary {
+  border-left-color: var(--uf-orange);
+  background: linear-gradient(100deg, var(--uf-orange-bg) 0%, var(--white) 45%);
+}
+
+.affiliation-badge-primary {
+  background: var(--uf-orange-bg);
+  color: var(--uf-orange-dark);
+  border-color: rgba(201, 168, 76, 0.35);
+}
+
+.affiliation-panel {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem;
+}
+
+.affiliation-panel-head,
+.reviewer-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.875rem;
+  margin-bottom: 0.25rem;
+  border-bottom: 1px solid var(--stone-100);
+}
+
+.affiliation-panel-title,
+.reviewer-title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.affiliation-count,
+.reviewer-count {
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.affiliation-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.affiliation-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0 0.75rem 1.125rem;
+  border-bottom: 1px solid var(--stone-100);
+  position: relative;
+  transition: padding-left var(--duration) var(--ease), color var(--duration) var(--ease);
+}
+.affiliation-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* Gold marker replaces the repeated "Affiliated Faculty" label. */
+.affiliation-row::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 1.15rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 9999px;
+  background: rgba(201, 168, 76, 0.5);
+  transition: background var(--duration) var(--ease), transform var(--duration) var(--ease);
+}
+.affiliation-row:hover::before {
+  background: var(--uf-orange);
+  transform: scale(1.4);
+}
+.affiliation-row:hover {
+  padding-left: 1.375rem;
+}
+
+.affiliation-org {
+  font-size: 0.875rem;
+  color: var(--text-body);
+  line-height: 1.5;
+}
+
+.affiliation-row-lead .affiliation-org {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.affiliation-role {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--uf-orange-dark);
+  white-space: nowrap;
+}
+
+/* ═══════════════════════════════════════════════════
+   PROFESSIONAL SERVICE — timeline rail + reviewer panel
+   ═══════════════════════════════════════════════════ */
+
+.service-list {
+  position: relative;
+  padding-left: 1.5rem;
+}
+/* Continuous rail behind the year markers. */
+.service-list::before {
+  content: '';
+  position: absolute;
+  left: 0.3125rem;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  width: 1px;
+  background: linear-gradient(180deg, rgba(201, 168, 76, 0.45), rgba(201, 168, 76, 0.08));
+}
+
+.service-list .service-item {
+  position: relative;
+  border-bottom: none;
+  padding: 0.875rem 0;
+  gap: 1.25rem;
+}
+
+.service-list .service-item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 1.3rem;
+  width: 11px;
+  height: 11px;
+  border-radius: 9999px;
+  background: var(--white);
+  border: 2px solid rgba(201, 168, 76, 0.55);
+  transition: all var(--duration) var(--ease);
+}
+.service-list .service-item:hover::before {
+  background: var(--uf-orange);
+  border-color: var(--uf-orange);
+  transform: scale(1.15);
+}
+
+.service-list .service-years {
+  color: var(--uf-orange-dark);
+  min-width: 3.25rem;
+}
+
+.service-list .service-role {
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+.service-list .service-org {
+  margin-top: 0.125rem;
+}
+
+.reviewer-panel {
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.reviewer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.reviewer-tag {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-body);
+  background: var(--stone-50);
+  border: 1px solid var(--stone-200);
+  border-radius: 9999px;
+  padding: 0.4375rem 0.9375rem;
+  transition: all var(--duration) var(--ease);
+}
+.reviewer-tag:hover {
+  color: var(--uf-orange-dark);
+  background: var(--uf-orange-bg);
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-1px);
+}

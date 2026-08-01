@@ -2,6 +2,10 @@
  * Publications page - Fetch, filter, search, and paginate publications from JSON.
  */
 (function () {
+  // data/ and img/ live at the repository root; redesign/ pages sit one level below.
+  const IN_REDESIGN = /\/redesign\//.test(window.location.pathname);
+  const DATA_DIR = IN_REDESIGN ? '../data/' : 'data/';
+  const ASSET_PREFIX = IN_REDESIGN ? '../' : '';
   const PER_PAGE = 20;
   let allPubs = [];
   let filtered = [];
@@ -13,7 +17,7 @@
     if (!container) return;
 
     try {
-      const resp = await fetch('../publications.json');
+      const resp = await fetch(DATA_DIR + 'publications.json');
       if (!resp.ok) throw new Error('Failed to load publications');
       allPubs = await resp.json();
 
@@ -108,7 +112,7 @@
         lastYear = year;
       }
 
-      const imgSrc = pub.image_src ? `../${pub.image_src}` : '';
+      const imgSrc = pub.image_src ? ASSET_PREFIX + pub.image_src : '';
 
       html += `
         <article class="card card-uf-top mb-4">

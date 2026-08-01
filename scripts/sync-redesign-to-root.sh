@@ -3,10 +3,14 @@
 # sync-redesign-to-root.sh
 #
 # Promotes the canonical redesign/ source to the repo root (what GitHub Pages
-# serves). redesign/ pages live one level below root and reach shared assets
-# (img/, publications.json, softwares.json, CV_Fang.pdf, ...) via "../". At root
-# those "../" would point above the repo, so this script strips the "../" prefix
-# from the copied files.
+# serves). redesign/ pages live one level below root and reach shared media
+# assets (img/, CV_Fang.pdf, ...) and the shared content data (data/*.json) via
+# "../". At root, "../" would point above the repo, so this script strips that
+# prefix from the copied files.
+#
+# data/ is NOT copied: it already lives at the repo root and is the single
+# source of truth for both sites. The JS resolves it at runtime, so no rewrite
+# is needed there either.
 #
 # redesign/ is NEVER modified — it stays canonical with "../" intact.
 # This script makes NO git changes. Review the diff, then commit yourself.
@@ -38,18 +42,19 @@ echo "Syncing redesign/ -> root ..."
 # 1. Copy HTML pages to root.
 cp "$SRC"/*.html "$ROOT"/
 
-# 2. Copy css/, js/, components/ (overwrites root copies of same-named files).
-#    NOTE: js/genealogy-tree.js is a SHARED root asset (referenced by
-#    redesign/genealogy.html as ../js/genealogy-tree.js). It is NOT in
-#    redesign/js/, so it is intentionally preserved at root by this copy.
+# 2. Copy css/, js/, and components/ (overwrites root copies of same-named
+#    files). redesign/js/genealogy-tree.js is a copy of the root file kept in
+#    sync by redesign/scripts/refresh-content-snapshot.sh, so overwriting the
+#    root one with it is a no-op.
 mkdir -p "$ROOT/css" "$ROOT/js" "$ROOT/components"
 cp "$SRC"/css/* "$ROOT/css/"
 cp "$SRC"/js/* "$ROOT/js/"
 cp "$SRC"/components/* "$ROOT/components/"
 
-# 3. Strip "../" from the copied root files (root is one level up from redesign/).
+# 3. Strip "../" from the copied HTML (root is one level up from redesign/).
 #    CDN https:// links have no "../"; CSS holds only data-URI url() (no "../").
-for f in "$ROOT"/*.html "$ROOT"/components/*.html "$ROOT"/js/publications.js "$ROOT"/js/software.js; do
+#    JS is left alone: it derives its own prefix from window.location at runtime.
+for f in "$ROOT"/*.html "$ROOT"/components/*.html; do
   [[ -f "$f" ]] && sed_inplace 's|\.\./||g' "$f"
 done
 

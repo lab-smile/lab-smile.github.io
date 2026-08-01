@@ -7,6 +7,27 @@
   background: #fafaf9;
 }
 
+.canonical-research-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.canonical-research-overview {
+  order: 1;
+}
+
+.canonical-research-projects {
+  order: 2;
+}
+
+.canonical-research-grants {
+  order: 3;
+}
+
+.canonical-research-patents {
+  order: 4;
+}
+
 .canonical-sync {
   color: #44403c;
   font-family: Lora, Georgia, serif;
@@ -105,6 +126,19 @@
   text-underline-offset: 2px;
 }
 
+.canonical-sync a.member-card-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.canonical-sync a.member-card-link .member-linked-name {
+  text-decoration: underline;
+  text-decoration-color: #c9a84c;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .canonical-sync img {
   max-width: 100%;
   height: auto;
@@ -164,7 +198,6 @@
 }
 
 .canonical-sync .timeline > li,
-.canonical-sync .ul-withdetails > li,
 .canonical-sync .ul-dates > li,
 .canonical-sync .ul-dates-gray > li {
   display: grid;
@@ -175,6 +208,44 @@
   border: 1px solid #e7e5e4;
   border-radius: .75rem;
   background: #fff;
+}
+
+.canonical-sync .ul-withdetails {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.canonical-sync .ul-withdetails > li {
+  display: block;
+  margin: 0 0 1rem;
+  padding: 1.25rem;
+  border: 1px solid #e7e5e4;
+  border-radius: .75rem;
+  background: #fff;
+}
+
+.canonical-sync .ul-withdetails > li > .row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 14rem) minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.canonical-sync .ul-withdetails .image {
+  display: flex;
+  justify-content: center;
+}
+
+.canonical-sync .ul-withdetails .image img {
+  width: 100%;
+  max-width: 12rem;
+  max-height: 7rem;
+  object-fit: contain;
+}
+
+.canonical-sync .ul-withdetails .details {
+  margin-top: 1rem;
 }
 
 .canonical-sync .timeline .date,
@@ -212,10 +283,10 @@
 .canonical-sync .posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1rem;
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
 }
 
-.canonical-sync .post,
 .canonical-sync .canonical-record {
   padding: 1.25rem;
   border: 1px solid #e7e5e4;
@@ -223,9 +294,94 @@
   background: #fff;
 }
 
+/* Media cards: the default site relies on a hover animation that slides the
+   text over a full-bleed image. Without it the cards need a fixed thumbnail
+   band, equal heights, and a clamped excerpt, or each one grows to the length
+   of its own text. */
+.canonical-sync .post {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e7e5e4;
+  border-radius: .75rem;
+  background: #fff;
+}
+
+.canonical-sync .post__image {
+  height: 8rem;
+  flex: none;
+  background-color: #faf9f7;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-bottom: 1px solid #e7e5e4;
+}
+
+.canonical-sync .post__image-empty {
+  display: none;
+}
+
+.canonical-sync .post__content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.25rem;
+}
+
+.canonical-sync .post__inside {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.canonical-sync .post__title {
+  margin: 0 0 .35rem;
+  color: #8a6d16;
+  font-size: .95rem;
+  font-weight: 700;
+}
+
 .canonical-sync .post__excerpt_title {
+  margin: 0 0 .5rem;
   color: #1c1917;
   font-weight: 700;
+  line-height: 1.35;
+}
+
+.canonical-sync .post__excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 0;
+  color: #57534e;
+  font-size: .9rem;
+}
+
+/* The call-to-action is an <a> wrapping a <button>; the anchor is the flex
+   child, so it carries the spacer that pins the row to the bottom of the card. */
+.canonical-sync .post__inside > a:last-child {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.canonical-sync .post__button {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .45rem .9rem;
+  border: 1px solid #d8cba3;
+  border-radius: .5rem;
+  background: #fdfbf5;
+  color: #8a6d16;
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.canonical-sync .post__button:hover {
+  background: #f7f1e2;
 }
 
 .canonical-sync iframe {
@@ -289,6 +445,165 @@
   gap: 1rem;
 }
 
+.research-disclosure-list {
+  display: grid;
+  gap: .875rem;
+}
+
+.research-disclosure {
+  overflow: clip;
+  border: 1px solid #e7e5e4;
+  border-radius: .875rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(28, 25, 23, .04);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.research-disclosure[open] {
+  border-color: rgba(201, 168, 76, .65);
+  box-shadow: 0 8px 24px rgba(28, 25, 23, .08);
+}
+
+.research-disclosure-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.25rem;
+  gap: 1rem;
+  align-items: center;
+  min-height: 5.25rem;
+  padding: 1.15rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.research-project-disclosure .research-disclosure-summary {
+  grid-template-columns: 5.5rem minmax(0, 1fr) 1.25rem;
+}
+
+.research-disclosure-summary::-webkit-details-marker {
+  display: none;
+}
+
+.research-disclosure-summary:hover {
+  background: #fafaf9;
+}
+
+.research-disclosure-summary:focus-visible {
+  outline: 3px solid rgba(201, 168, 76, .45);
+  outline-offset: -3px;
+}
+
+.research-disclosure-image {
+  display: flex;
+  width: 5.5rem;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  padding: .4rem;
+  border-radius: .5rem;
+  background: #fafaf9;
+}
+
+.research-disclosure-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.research-disclosure-copy {
+  display: block;
+  min-width: 0;
+}
+
+.research-disclosure-meta {
+  display: block;
+  margin-bottom: .3rem;
+  color: #8a6d16;
+  font-family: Lora, Georgia, serif;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.research-disclosure-title {
+  display: block;
+  color: #1c1917;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.research-disclosure-indicator {
+  position: relative;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.research-disclosure-indicator::before,
+.research-disclosure-indicator::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: .85rem;
+  height: 2px;
+  border-radius: 2px;
+  background: #8a6d16;
+  content: "";
+  transform: translate(-50%, -50%);
+  transition: transform .2s ease;
+}
+
+.research-disclosure-indicator::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.research-disclosure[open] .research-disclosure-indicator::after {
+  transform: translate(-50%, -50%) rotate(0deg);
+}
+
+.research-disclosure-body {
+  padding: 1.25rem;
+  border-top: 1px solid #e7e5e4;
+  background: #fafaf9;
+}
+
+.research-disclosure-details > :last-child,
+.research-disclosure-details > :last-child > :last-child,
+.research-disclosure-empty {
+  margin-bottom: 0;
+}
+
+.research-record-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-top: 1rem;
+}
+
+.canonical-sync .research-record-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: .45rem .75rem;
+  border: 1px solid rgba(201, 168, 76, .55);
+  border-radius: 999px;
+  color: #6b5310;
+  background: #fff;
+  font-size: .82rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.canonical-sync .research-record-link:hover {
+  border-color: #c9a84c;
+  color: #1c1917;
+  background: #fff8e8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .canonical-record h3 {
   margin-top: 0;
 }
@@ -319,10 +634,32 @@
   }
 
   .canonical-sync .timeline > li,
-  .canonical-sync .ul-withdetails > li,
   .canonical-sync .ul-dates > li,
   .canonical-sync .ul-dates-gray > li,
   .canonical-sync .member {
     grid-template-columns: 1fr;
+  }
+
+  .canonical-sync .ul-withdetails > li > .row {
+    grid-template-columns: 1fr;
+  }
+
+  .research-project-disclosure .research-disclosure-summary {
+    grid-template-columns: 3.75rem minmax(0, 1fr) 1rem;
+    gap: .75rem;
+    padding: 1rem;
+  }
+
+  .research-disclosure-image {
+    width: 3.75rem;
+    height: 3.25rem;
+  }
+
+  .research-grant-disclosure .research-disclosure-summary {
+    grid-template-columns: minmax(0, 1fr) 1rem;
+  }
+
+  .research-disclosure-body {
+    padding: 1rem;
   }
 }

@@ -1,0 +1,172 @@
+[
+   {
+      "details_html" : "<div><h5>Funding: National Institutes of Health, National Institute of Mental Health (NIMH)</h5><h5>Amount: $3.5M</h5><h5>Role: Multiple Principal Investigator (MPI)</h5></div>",
+      "links" : [],
+      "title_html" : "R01MH112558: MyAPS: Development and Validation of an AI Platform for Generating Emotional Pictures",
+      "year" : "2026"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation</h5><h5>Amount: $890,113</h5><h5>Duration: 2026-2029</h5><h5>Role: Co-Principal Investigator (PI: Odegaard)</h5></div>",
+      "links" : [],
+      "title_html" : "BCS-2617585: Understanding the Role of Metacognitive Sensitivity in Human-AI Joint Decision-Making",
+      "year" : "2026"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation (AI Supplement to NCS-FO Award)</h5><h5>Amount: $183,999</h5><h5>Role: Principal Investigator</h5></div>",
+      "links" : [],
+      "title_html" : "NCS-FO-2318984 (AI Supplement): Brain × AI 101: A Neuroscience-AI Curriculum Toolkit for High School AI Education",
+      "year" : "2026"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of General Medical Sciences (NIGMS)</h5><h5>Amount: $2,560,101</h5><h5>Role: Co-I (PI: Azra Bihoric, Benjamin Shickel, Yulia Strekalova)</h5></div>",
+      "links" : [],
+      "title_html" : "R25GM155478: Artificial Intelligence Passport for Biomedical Research: Digital Experiential Learning Community for Upskilling in Artificial Intelligence for Biomedical, Behavioral and Clinical Research",
+      "year" : "2024"
+   },
+   {
+      "details_html" : "<div><h5>Funding: University of Florida</h5><h5>Amount: $86,500</h5><h5>Role: Co-I (PI: Tezcan Ozrazgat Baslanti, Co-I: Jessica Ray) </h5></div>",
+      "links" : [],
+      "title_html" : "DRPD-ROF2023: Learning optimal treatment strategies for hypotension in critical care patients with acute kidney injury using artificial intelligence",
+      "year" : "2023"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation, Integrative Strategies for Understanding Neural and Cognitive Systems (NCS)</h5><h5>Amount: $920,000</h5><h5>Role: Principal Investigator</h5></div>",
+      "links" : [],
+      "title_html" : "NCS-FO-2318984: Brain-Informed Goal-Oriented and Bidirectional Deep Emotion Inference",
+      "year" : "2023"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Aging (NIA)</h5><h5>Amount: $4.8M</h5><h5>Role: Co-I (PI: David Clark, University of Florida)</h5></div>",
+      "links" : [],
+      "title_html" : "R01AG081477: Cognitively engaging walking exercise and neuromodulation to enhance brain function in older adults",
+      "year" : "2023"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Allergy and Infectious Diseases (NIAID)</h5><h5>Amount: $10.7M ($1.95M to UF)</h5><h5>Role: Co-I (PI: Gayle E. Woloschak, Northwestern University) </h5></div>",
+      "links" : [],
+      "title_html" : "P01AI165380: Multi-Scale Evaluation and Mitigation of Toxicities Following Internal Radionuclide Contamination",
+      "year" : "2022"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Aging (NIA)</h5><h5>Amount: $2.9M</h5><h5>Role: Principal Investigator (MPI: Ruogu Fang &amp; Adam Woods)</h5></div>",
+      "links" : [],
+      "title_html" : "RF1AG071469: Mechanisms, response heterogeneity and dosing from MRI-derived electric field models in tDCS augmented cognitive training: a secondary data analysis of the ACT study (R01-equivalent)",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation, Smart and Connected Health [<a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=2123809\" target=\"_blank\">Link</a>]</h5><h5>Amount: $1.2M ($840K to UF)</h5><h5>Duration: 2021-2025</h5><h5>Role: Co-Principal Investigator (PI: My Thai)</h5></div>",
+      "links" : [
+         {
+            "label" : "NSF Award",
+            "url" : "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2123809"
+         }
+      ],
+      "title_html" : "IIS-2123809: Collaborative Research: SCH: Trustworthy and Explainable AI for Neurodegenerative Diseases",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute on Alcohol Abuse and Alcoholism (NIAAA)</h5><h5>Amount: $2.5M</h5><h5>Role: Co-Investigator (PI: Samuel Wu, Robert Cook)</h5></div>",
+      "links" : [],
+      "title_html" : "U24AA029959: Southern HIV and Alcohol Research Consortium Biomedical Data Repository",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute on Alcohol Abuse and Alcoholism (NIAAA)</h5><h5>Amount: $3M</h5><h5>Role: Co-Investigator (PI: Samuel Wu)</h5></div>",
+      "links" : [],
+      "title_html" : "P01AA029547: SHARE Program: Innovations in Translational Behavioral Science to Improve Self- management of HIV and Alcohol Reaching Emerging adults",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute on Alcohol Abuse and Alcoholism (NIAAA)</h5><h5>Amount: $6.6M</h5><h5>Role: Co-Investigator (PI: Robert Cook)</h5></div>",
+      "links" : [],
+      "title_html" : "P01AA029543: Interventions to improve alcohol-related comorbidities along the gut-brain axis in persons with HIV infection",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Mental Health (NIMH)</h5><h5>Amount: $2.3M</h5><h5>Role: Co-Investigator (MPI: Mingzhou Ding &amp; Andreas Keil)</h5></div>",
+      "links" : [],
+      "title_html" : "R01MH125615: Acquisition, extinction, and recall of attention biases to threat: Computational modeling and multimodal brain imaging",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Neurological Disorders and Stroke (NINDS)</h5><h5>Amount: $5.2M</h5><h5>Role: Co-investigator (PI: David Vaillancourt)</h5></div>",
+      "links" : [],
+      "title_html" : "U01NS119562: Web-based Automated Imaging Differentiation of Parkinsonism",
+      "year" : "2021"
+   },
+   {
+      "details_html" : "<div><h5>Funding: NVIDIA - Universit of Florida</h5><h5>Amount: $50,000</h5><h5>Role: Principal Investigator (Co-PI: Mingzhou Ding)</h5></div>",
+      "links" : [],
+      "title_html" : "Artificial Intelligence Catalyst Award: VCA-DNN: Neuroscience-Inspired Artificial Intelligence for Visual Emotion Recognition",
+      "year" : "2020"
+   },
+   {
+      "details_html" : "<div><h5>Funding: University of Florida</h5><h5>Role: Mentor (Mentee: Peng Liu)</h5></div>",
+      "links" : [],
+      "title_html" : "UFII: Biology and Cognition Inspired Deep Learning",
+      "year" : "2020"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation <a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=1908299&amp;HistoricalAwards=false\"><i class=\"fa fa-external-link\"></i></a></h5><h5>Amount: $823,000</h5><h5>Role: Principal Investigator (Co-PI: Mingzhou Ding)</h5></div>",
+      "links" : [
+         {
+            "label" : "NSF Award",
+            "url" : "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1908299&HistoricalAwards=false"
+         }
+      ],
+      "title_html" : "IIS-1908299 III: Small: Modeling Multi-Level Connectivity of Brain Dynamics",
+      "year" : "2019"
+   },
+   {
+      "details_html" : "<div><h5>Funding: University of Florida</h5><h5>Amount: $40,000</h5><h5>Role: Co-Principal Investigator (PI: Yonghui Wu)</h5></div>",
+      "links" : [],
+      "title_html" : "UFII Junior SEED Award: Multimodal Visual-Text Learning from Clinical Narrative and Image for Early Detection of Diabetic Retinopathy",
+      "year" : "2019"
+   },
+   {
+      "details_html" : "<div><h5>Funding: University of Florida</h5><h5>Amount: $60,000</h5><h5>Role: Co-Principal Investigator (PI: Yan Gong)</h5></div>",
+      "links" : [],
+      "title_html" : "UFII-CTSI Pilot Award: Toward prevention of cardiotoxicity in cancer: a multimodal approach leveraging genomics, images and clinical data",
+      "year" : "2019"
+   },
+   {
+      "details_html" : "<div><h5>Funding: University of Florida</h5><h5>Role: Mentor (Mentee: Kyle B. See)</h5></div>",
+      "links" : [],
+      "title_html" : "NIH CTSI TL1: Predicting short-term and long-term effects of spinal cord stimulation: implications for clinical practice",
+      "year" : "2019"
+   },
+   {
+      "details_html" : "<div><h5>Funding: University of Florida</h5><h5>Amount: $75,000</h5><h5>Role: Principal Investigator</h5></div>",
+      "links" : [],
+      "title_html" : "UFII-CTSI Pilot Award: PrecisionDose:Personalized Radiation Dose Optimization for Multimodal Imaging",
+      "year" : "2018"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation (<a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=1747783\" target=\"_blank\">NSF Abstract</a>)</h5><h5>Amount: $1,050,478</h5><h5>Role: Senior Personnel (PI: Dapeng Wu)</h5></div>",
+      "links" : [
+         {
+            "label" : "NSF Abstract",
+            "url" : "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1747783"
+         }
+      ],
+      "title_html" : "Phase I IUCRC University of Florida: Center for Big Learning",
+      "year" : "2018"
+   },
+   {
+      "details_html" : "<div><h5>Funding: Oak Ridge Associated Universities (ORAU)</h5><h5>Amoung: $10,000</h5><h5>Role: Principal Investigator</h5></div>",
+      "links" : [],
+      "title_html" : "Ralph E. Powe Junior Faculty Enhancement Award",
+      "year" : "2016"
+   },
+   {
+      "details_html" : "<div><h5>Funding: National Science Foundation</h5><h5>Amount: $190,991</h5><h5>Role: Principal Investigator</h5></div><div class=\"text row\"><div class=\"col-md-2\"><img alt=\"NSF IIS CRII Award\" class=\"thumbnail img-responsive\" src=\"img/personal/nsf.jpg\" /></div><div class=\"col-md-10\"><p>Brain dynamics, which reflects the healthy or pathological states of the brain with quantifiable, reproducible, and indicative dynamics values, remains the least understood and studied area of brain science despite its intrinsic and critical importance to the brain. Unlike other brain information such as the structural and sequential dimensions that have all been extensively studied with models and methods successfully developed, the 5th dimension, dynamics, has only very recently started receiving systematic analysis from the research community. The state-of-the-art models suffer from several fundamental limitations that have critically inhibited the accuracy and reliability of the dynamic parameters' computation. First, dynamic parameters are derived from each voxel of the brain spatially independently, and thus miss the fundamental spatial information since the brain is connected? Second, current models rely solely on single-patient data to estimate the dynamic parameters without exploiting the big medical data consisting of billions of patients with similar diseases. </p><p>This project aims to develop a framework for data-driven brain dynamics characterization, modeling and evaluation that includes the new concept of a 5th dimension – brain dynamics – to complement the structural 4-D brain for a complete picture. The project studies how dynamic computing of the brain as a distinct problem from the image reconstruction and de-noising of convention models, and analyzes the impact of different models for the dynamics analysis. A data-driven, scalable framework will be developed to depict the functionality and dynamics of the brain. This framework enables full utilization of 4-D brain spatio-temporal data and big medical data, resulting in accurate estimations of the dynamics of the brain that are not reflected in the voxel-independent models and the single patient models. The model and framework will be evaluated on both simulated and real dual-dose computed tomography perfusion image data and then compared with the state-of-the-art methods for brain dynamics computation by leveraging collaborations with Florida International University Herbert Wertheim College of Medicine, NewYork-Presbyterian Hospital / Weill Cornell Medical College (WCMC) and Northwell School of Medicine at Hofstra University. The proposed research will significantly advance the state-of-the-art in quantifying and analyzing brain structure and dynamics, and the interplay between the two for brain disease diagnosis, including both the acute and chronic diseases. This unified approach brings together fields of Computer Science, Bioengineering, Cognitive Neuroscience and Neuroradiology to create a framework for precisely measuring and analyzing the 5th dimension – brain dynamics – integrated with the 4-D brain with three dimensions from spatial data and one dimension from temporal data. Results from the project will be incorporated into graduate-level multi-disciplinary courses in machine learning, computational neuroscience and medical image analysis. This project will open up several new research directions in the domain of brain analysis, and will educate and nurture young researchers, advance the involvement of underrepresented minorities in computer science research, and equip them with new insights, models and tools for developing future research in brain dynamics in a minority serving university.</p></div></div>",
+      "links" : [
+         {
+            "label" : "NSF Award",
+            "url" : "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1564892"
+         }
+      ],
+      "title_html" : "IIS-1564892 CRII: Characterizing, Modeling and Evaluating Brain Dynamics<a href=\"https://www.nsf.gov/awardsearch/showAward?AWD_ID=1564892\"></a>",
+      "year" : "2016"
+   }
+]

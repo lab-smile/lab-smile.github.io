@@ -3,7 +3,7 @@ $(document).ready(async function() {
 
     const fetchSoftwares = async () => {
         try {
-            const response = await fetch('softwares.json');
+            const response = await fetch('data/softwares.json');
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }

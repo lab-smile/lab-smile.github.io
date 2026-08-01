@@ -2,6 +2,10 @@
  * Gallery - Lightbox and lazy loading for photo gallery.
  */
 (function () {
+  // data/ lives at the repository root; redesign/ pages sit one level below it.
+  const DATA_DIR = /\/redesign\//.test(window.location.pathname) ? '../data/' : 'data/';
+  const currentScript = document.currentScript;
+  const assetPrefix = currentScript ? (currentScript.dataset.assetPrefix || '') : '../';
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const lightboxCaption = document.getElementById('lightbox-caption');
@@ -12,7 +16,64 @@
   let galleryItems = [];
   let currentIndex = 0;
 
-  function init() {
+  function assetUrl(value) {
+    if (!value || /^(?:[a-z]+:|\/\/|#|\.\.\/)/i.test(value) || !assetPrefix) return value;
+    return `${assetPrefix}${value}`;
+  }
+
+  function captionText(captionHtml) {
+    const holder = document.createElement('span');
+    holder.innerHTML = captionHtml;
+    return holder.textContent.trim();
+  }
+
+  function galleryItem(record) {
+    const item = document.createElement('div');
+    const fullImage = assetUrl(record.full_image || record.image);
+    const caption = captionText(record.caption_html);
+    item.className = 'gallery-item';
+    item.dataset.gallery = '';
+    item.dataset.full = fullImage;
+    item.dataset.caption = caption;
+    item.tabIndex = 0;
+    item.setAttribute('role', 'button');
+    item.setAttribute('aria-label', `View: ${caption}`);
+
+    const image = document.createElement('img');
+    image.src = assetUrl(record.image);
+    image.alt = record.alt;
+    image.loading = 'lazy';
+    image.className = 'w-full rounded-lg cursor-pointer hover:opacity-90 transition-opacity';
+
+    const text = document.createElement('p');
+    text.className = 'text-xs text-stone-500 mt-1';
+    text.innerHTML = record.caption_html;
+
+    item.append(image, text);
+    return item;
+  }
+
+  async function loadGallery() {
+    const grid = document.getElementById('gallery-grid');
+    if (!grid) return;
+
+    const response = await fetch(DATA_DIR + 'gallery.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error('Gallery data could not be loaded');
+    const records = await response.json();
+    grid.replaceChildren(...records.map(galleryItem));
+
+    document.dispatchEvent(new CustomEvent('gallery-data-rendered', {
+      detail: { count: records.length },
+    }));
+  }
+
+  async function init() {
+    try {
+      await loadGallery();
+    } catch (error) {
+      console.error('Gallery rendering failed:', error);
+    }
+
     galleryItems = Array.from(document.querySelectorAll('[data-gallery]'));
 
     galleryItems.forEach((item, idx) => {

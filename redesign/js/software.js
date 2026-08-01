@@ -2,6 +2,8 @@
  * Software page - Fetch, filter, and render software cards from JSON.
  */
 (function () {
+  // data/ lives at the repository root; redesign/ pages sit one level below it.
+  const DATA_DIR = /\/redesign\//.test(window.location.pathname) ? '../data/' : 'data/';
   let allSoftware = [];
   let filtered = [];
 
@@ -11,7 +13,7 @@
     if (!container) return;
 
     try {
-      const resp = await fetch('../softwares.json');
+      const resp = await fetch(DATA_DIR + 'softwares.json');
       if (!resp.ok) throw new Error('Failed to load software data');
       allSoftware = await resp.json();
 
