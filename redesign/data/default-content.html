@@ -5096,34 +5096,36 @@
                     <div class="section">
                         <div class="section-container">
                             <style>
-                              /* Genealogy styles (tree replaced by D3) */
-                              #genealogy .gen-badge { display: inline-block; font-size: 9px; font-weight: 600; border-radius: 10px; padding: 1px 6px; margin-left: 3px; vertical-align: middle; }
-                              #genealogy .gen-badge-star { background: none; border: none; color: #d97706; padding: 0; font-size: 13px; margin-left: 2px; }
-                              #genealogy .gen-badge-nae { background: #dbeafe; color: #1e40af; border: 1px solid #3b82f6; }
-                              #genealogy .gen-legend { display: flex; gap: 12px 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; font-size: 12px; color: #888; }
-                              #genealogy .gen-legend-item { display: flex; align-items: center; gap: 5px; }
-                              #genealogy .gen-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
-                              #genealogy .gen-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 30px; }
-                              #genealogy .gen-table thead th { background: #333; color: #fff; padding: 10px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
-                              #genealogy .gen-table td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
-                              #genealogy .gen-table .sep-row td { background: #f5f5f4; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; padding: 6px 12px; }
-                              #genealogy .gen-table .portrait-cell { display: flex; align-items: center; gap: 8px; }
-                              #genealogy .gen-table .portrait-img { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid #eee; flex-shrink: 0; }
-                              #genealogy .gen-table .portrait-placeholder { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: #999; background: #f5f5f4; border: 2px solid #eee; flex-shrink: 0; }
-                              #genealogy .row-root td:first-child { border-left: 3px solid #aaa; }
-                              #genealogy .row-euler td:first-child { border-left: 3px solid #BA7517; }
-                              #genealogy .row-gauss td:first-child { border-left: 3px solid #0F6E56; }
-                              #genealogy .row-merged td:first-child { border-left: 3px solid #534AB7; }
-                              #genealogy .row-ee td:first-child { border-left: 3px solid #185FA5; }
-                              #genealogy .row-current td:first-child { border-left: 3px solid #993C1D; }
+                              /* Genealogy styles (tree replaced by D3). Unscoped from #genealogy: canonical-sync.js
+                                 mirrors this markup+style into redesign/genealogy.html inside a section that has
+                                 no id="genealogy", so an ID-scoped selector would silently match nothing there. */
+                              .gen-badge { display: inline-block; font-size: 9px; font-weight: 600; border-radius: 10px; padding: 1px 6px; margin-left: 3px; vertical-align: middle; }
+                              .gen-badge-star { background: none; border: none; color: #d97706; padding: 0; font-size: 13px; margin-left: 2px; }
+                              .gen-badge-nae { background: #dbeafe; color: #1e40af; border: 1px solid #3b82f6; }
+                              .gen-legend { display: flex; gap: 12px 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px; font-size: 12px; color: #888; }
+                              .gen-legend-item { display: flex; align-items: center; gap: 5px; }
+                              .gen-legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+                              .gen-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 30px; }
+                              .gen-table thead th { background: #333; color: #fff; padding: 10px 12px; text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+                              .gen-table td { padding: 8px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+                              .gen-table .sep-row td { background: #f5f5f4; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: #888; padding: 6px 12px; }
+                              .gen-table .portrait-cell { display: flex; align-items: center; gap: 8px; }
+                              .gen-table .portrait-img { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid #eee; flex-shrink: 0; }
+                              .gen-table .portrait-placeholder { width: 40px; height: 40px; min-width: 40px; min-height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; color: #999; background: #f5f5f4; border: 2px solid #eee; flex-shrink: 0; }
+                              .row-root td:first-child { border-left: 3px solid #aaa; }
+                              .row-euler td:first-child { border-left: 3px solid #BA7517; }
+                              .row-gauss td:first-child { border-left: 3px solid #0F6E56; }
+                              .row-merged td:first-child { border-left: 3px solid #534AB7; }
+                              .row-ee td:first-child { border-left: 3px solid #185FA5; }
+                              .row-current td:first-child { border-left: 3px solid #993C1D; }
                               @media (max-width: 600px) {
-                                #genealogy .gen-table .inst-cell, #genealogy .gen-table .contrib-cell { display: none; }
-                                #genealogy .gen-table thead tr th:first-child,
-                                #genealogy .gen-table tbody tr:not(.sep-row) td:first-child { display: none; }
-                                #genealogy .gen-table td, #genealogy .gen-table th { padding: 6px 8px; }
-                                #genealogy .gen-table .portrait-cell { flex-wrap: nowrap; }
-                                #genealogy .gen-table .portrait-cell > div { word-break: break-word; min-width: 0; overflow-wrap: break-word; }
-                                #genealogy .gen-table { font-size: 12px; }
+                                .gen-table .inst-cell, .gen-table .contrib-cell { display: none; }
+                                .gen-table thead tr th:first-child,
+                                .gen-table tbody tr:not(.sep-row) td:first-child { display: none; }
+                                .gen-table td, .gen-table th { padding: 6px 8px; }
+                                .gen-table .portrait-cell { flex-wrap: nowrap; }
+                                .gen-table .portrait-cell > div { word-break: break-word; min-width: 0; overflow-wrap: break-word; }
+                                .gen-table { font-size: 12px; }
                               }
                             </style>
 
