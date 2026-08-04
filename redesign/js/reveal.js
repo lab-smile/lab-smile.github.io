@@ -3,17 +3,65 @@
  * Parallax hero, scroll-linked fade-ins, counter animations, staggered reveals
  */
 (function () {
-  function init() {
-    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var gsapAvailable = false;
 
-    // Check if GSAP is loaded or user prefers reduced motion
-    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined' || prefersReducedMotion) {
-      // Fallback: show everything immediately without animation
-      document.querySelectorAll('.gsap-fade-up, .gsap-fade-in, .gsap-slide-left, .gsap-slide-right, .gsap-scale-in, .fade-up, .stagger-children').forEach(function (el) {
+  // Content fetched asynchronously (news, highlights) can be inserted into the
+  // DOM after this script's initial scan. Elements gaining `.gsap-fade-up`
+  // after that point would otherwise stay at the CSS default of opacity:0
+  // forever, since ScrollTrigger only knows about elements present when it
+  // was set up. This re-scans for any not-yet-processed elements and reveals
+  // them, called both at init and whenever new content is rendered.
+  function revealFadeUps() {
+    var elements = Array.prototype.filter.call(
+      document.querySelectorAll('.gsap-fade-up'),
+      function (el) { return !el.classList.contains('gsap-revealed'); }
+    );
+    if (!elements.length) return;
+
+    elements.forEach(function (el) { el.classList.add('gsap-revealed'); });
+
+    if (!gsapAvailable) {
+      elements.forEach(function (el) {
         el.style.opacity = '1';
         el.style.transform = 'none';
         el.classList.add('visible');
       });
+      return;
+    }
+
+    elements.forEach(function (el) {
+      gsap.fromTo(el,
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1, y: 0,
+          duration: 0.8,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: el,
+            start: 'top 88%',
+            once: true,
+          },
+        }
+      );
+    });
+  }
+
+  function init() {
+    var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    gsapAvailable = !(typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') && !prefersReducedMotion;
+
+    document.addEventListener('news-data-rendered', revealFadeUps);
+    document.addEventListener('highlights-data-rendered', revealFadeUps);
+
+    // Check if GSAP is loaded or user prefers reduced motion
+    if (!gsapAvailable) {
+      // Fallback: show everything immediately without animation
+      document.querySelectorAll('.gsap-fade-in, .gsap-slide-left, .gsap-slide-right, .gsap-scale-in, .fade-up, .stagger-children').forEach(function (el) {
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        el.classList.add('visible');
+      });
+      revealFadeUps();
       // Still run counters immediately (no animation) if reduced motion
       if (prefersReducedMotion) {
         document.querySelectorAll('[data-counter]').forEach(function (el) {
@@ -45,21 +93,7 @@
     }
 
     // ─── Fade Up Elements ──────────────────────────
-    gsap.utils.toArray('.gsap-fade-up').forEach(function (el) {
-      gsap.fromTo(el,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1, y: 0,
-          duration: 0.8,
-          ease: 'power2.out',
-          scrollTrigger: {
-            trigger: el,
-            start: 'top 88%',
-            once: true,
-          },
-        }
-      );
-    });
+    revealFadeUps();
 
     // ─── Fade In Elements ──────────────────────────
     gsap.utils.toArray('.gsap-fade-in').forEach(function (el) {

@@ -107,6 +107,10 @@
     const records = await response.json();
 
     container.replaceChildren(...records.map(highlightCard));
+
+    document.dispatchEvent(new CustomEvent('highlights-data-rendered', {
+      detail: { count: records.length },
+    }));
   }
 
   function showFailure(error) {
