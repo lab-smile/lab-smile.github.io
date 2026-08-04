@@ -430,28 +430,18 @@
     mount.appendChild(patents);
   }
 
-  function initializeGenealogy() {
-    if (typeof window.initGenealogyTree !== 'function') return;
-    const tree = document.getElementById('genealogy-tree');
-    if (!tree) return;
-    tree.innerHTML = '';
-    window.initGenealogyTree('genealogy-tree', {
-      fontFamily: 'Lora, Georgia, serif',
-      fontFamilyDisplay: 'Playfair Display, Georgia, serif',
-      accentColor: '#C9A84C',
-      textColor: '#1c1917',
-      subtextColor: '#78716c',
-      imagePrefix: ASSET_PREFIX,
-    });
-  }
-
   async function synchronize() {
     const currentPage = pageName();
     if (currentPage === 'index.html' ||
         currentPage === 'gallery.html' ||
         currentPage === 'publications.html' ||
         currentPage === 'software.html' ||
-        currentPage === 'accessibility.html') {
+        currentPage === 'accessibility.html' ||
+        currentPage === 'team.html' ||
+        currentPage === 'teaching.html' ||
+        currentPage === 'contact.html' ||
+        currentPage === 'openings.html' ||
+        currentPage === 'genealogy.html') {
       return;
     }
 
@@ -461,27 +451,11 @@
     const source = new DOMParser().parseFromString(html, 'text/html');
 
     switch (currentPage) {
-      case 'team.html':
-        syncSinglePage(source, 'team', 'Canonical team');
-        break;
       case 'research.html':
         await syncResearch(source);
         break;
-      case 'teaching.html':
-        syncSinglePage(source, 'teaching', 'Canonical teaching');
-        break;
       case 'media.html':
         syncMedia(source);
-        break;
-      case 'openings.html':
-        syncSinglePage(source, 'openings', 'Canonical openings');
-        break;
-      case 'genealogy.html':
-        syncSinglePage(source, 'genealogy', 'Canonical academic genealogy');
-        initializeGenealogy();
-        break;
-      case 'contact.html':
-        syncSinglePage(source, 'contact', 'Canonical contact information');
         break;
       default:
         break;

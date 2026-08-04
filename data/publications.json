@@ -1,5 +1,48 @@
 [
    {
+      "title": "Multi-Modal Contrastive Representation Learning for Preclinical AD Prediction",
+      "type": "Conference",
+      "authors": "Ethan Elio Meidinger*, Seowung Leem, <u><b>Ruogu Fang</b></u>",
+      "citation": "Biomedical Engineering Society (BMES) Annual Meeting, Orlando, FL, October 21-24, 2026",
+      "publication_year": "October 2026",
+      "image_src": "img/pubs/BMES.jpg",
+      "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://www.bmes.org/2026/annualmeeting"
+      },
+      "data_year": "2026",
+      "location": "Orlando, FL, USA",
+      "dates": "October 21-24, 2026"
+   },
+   {
+      "title": "Baseline Neuroimaging and Machine Learning Predict Pain Relief Following BAT-Paired tDCS in Knee Osteoarthritis",
+      "type": "Conference",
+      "authors": "Zeyun Zhao*, Junfu Cheng*, Kimberly Sibille, Samuel Wu, Roland Staud, Angela Mickle, Selenia Rubio, Robert Sorge, Kevin Riggs, Fadel Zeidan, Hyochol Ahn, Adam Woods, Jared Tanner, Song Lai, Burel Goodin, Roger Fillingim, <u><b>Ruogu Fang</b></u>",
+      "citation": "Biomedical Engineering Society (BMES) Annual Meeting, Orlando, FL, October 21-24, 2026",
+      "publication_year": "October 2026",
+      "image_src": "img/pubs/BMES.jpg",
+      "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://www.bmes.org/2026/annualmeeting"
+      },
+      "data_year": "2026",
+      "location": "Orlando, FL, USA",
+      "dates": "October 21-24, 2026"
+   },
+   {
+      "title": "Clinico-Demographic Predictors of Anxiety Treatment Response to Transcranial Direct Current Stimulation and Cognitive Training in Older Adults",
+      "type": "Conference",
+      "authors": "Junfu Cheng*, Zeyun Zhao*, Andrew O'Shea, Aprinda Indahlastari, Adam Woods, <u><b>Ruogu Fang</b></u>",
+      "citation": "Biomedical Engineering Society (BMES) Annual Meeting, 2026",
+      "publication_year": "2026",
+      "image_src": "img/pubs/BMES.jpg",
+      "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://www.bmes.org/2026/annualmeeting"
+      },
+      "data_year": "2026"
+   },
+   {
       "title": "Machine learning and individual variability in electrical field characteristics predict tDCS treatment response for anxiety in older adults in the ACT trial",
       "type": "Journal",
       "authors": "Junfu Cheng, Skylar E. Stolte, Zeyun Zhao, Andrew O'Shea, Aprinda Indahlastari, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
