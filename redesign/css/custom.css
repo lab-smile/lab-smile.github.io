@@ -1825,13 +1825,11 @@ h3[class*="border-b"]::after {
 .logo-marquee img {
   max-height: 50px;
   width: auto;
-  filter: grayscale(100%);
-  opacity: 0.45;
+  opacity: 0.85;
   transition: all 0.5s var(--ease);
   flex-shrink: 0;
 }
 .logo-marquee img:hover {
-  filter: grayscale(0%);
   opacity: 1;
   transform: scale(1.08);
 }
@@ -2283,7 +2281,13 @@ abbr[title] { text-decoration: underline dotted; cursor: help; }
 
 .service-list .service-years {
   color: var(--uf-orange-dark);
-  min-width: 3.25rem;
+  /* Fixed (not min-) width: service-item is a flex row, so a longer label
+     like "2023–2025" was growing just that row's year column and pushing
+     its role/org text out of alignment with every other row's. A shared
+     fixed width, sized to the widest label, keeps the second column
+     starting at the same x position on every row. */
+  width: 4.5rem;
+  flex-shrink: 0;
 }
 
 .service-list .service-role {

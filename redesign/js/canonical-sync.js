@@ -210,29 +210,71 @@
     return container.childElementCount ? container : null;
   }
 
+  const EXTERNAL_LINK_ICON_PATH = 'M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14';
+
+  function externalLinkIcon() {
+    const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('aria-hidden', 'true');
+    const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('stroke-linejoin', 'round');
+    path.setAttribute('stroke-width', '2');
+    path.setAttribute('d', EXTERNAL_LINK_ICON_PATH);
+    svg.appendChild(path);
+    return svg;
+  }
+
+  // Funded projects render each link as the same bordered icon+text chip
+  // publications.js uses for arXiv/ScienceDirect/etc — rather than the plain
+  // gold pill grants and patents use, so a project's link reads as "here's
+  // where to go for more," not just another inline tag. Chips are appended
+  // straight into the row passed in (no label, no wrapper) so the toggle
+  // (see projectRecord) can sit right next to them on the same line.
+  function appendLinkChips(container, links) {
+    if (!Array.isArray(links) || links.length === 0) return false;
+
+    const seen = new Set();
+    const unique = links.filter(link => {
+      if (!link || !link.url || seen.has(link.url)) return false;
+      seen.add(link.url);
+      return true;
+    });
+
+    unique.forEach(link => {
+      const anchor = document.createElement('a');
+      anchor.className = 'research-project-link-chip';
+      anchor.href = link.url;
+      anchor.target = '_blank';
+      anchor.rel = 'noopener';
+      anchor.appendChild(externalLinkIcon());
+      anchor.appendChild(document.createTextNode(link.label || 'Related link'));
+      container.appendChild(anchor);
+    });
+
+    return unique.length > 0;
+  }
+
   function hasMeaningfulContent(html) {
     const holder = document.createElement('div');
     holder.innerHTML = html || '';
     return Boolean(holder.textContent.trim() || holder.querySelector('img, video, iframe'));
   }
 
+  // Grants render as a plain <details>/<summary> disclosure: the whole
+  // title row is the click target, and a footer bar below the title toggles
+  // the collapsible body. See projectRecord for funded projects, which need
+  // a structurally different layout (always-visible links between the title
+  // and the collapsible extra detail — a footer toggle can't sit inside a
+  // closed <details> and still be visible, so it isn't built on one row).
   function disclosureRecord(options) {
     const disclosure = document.createElement('details');
     disclosure.className = `research-disclosure ${options.variant || ''}`.trim();
 
     const summary = document.createElement('summary');
     summary.className = 'research-disclosure-summary';
-
-    if (options.image) {
-      const imageWrap = document.createElement('span');
-      imageWrap.className = 'research-disclosure-image';
-      const image = document.createElement('img');
-      image.src = options.image;
-      image.alt = options.imageAlt || '';
-      image.loading = 'lazy';
-      imageWrap.appendChild(image);
-      summary.appendChild(imageWrap);
-    }
 
     const copy = document.createElement('span');
     copy.className = 'research-disclosure-copy';
@@ -248,12 +290,23 @@
     title.className = 'research-disclosure-title';
     title.innerHTML = options.titleHtml;
     copy.appendChild(title);
-    summary.appendChild(copy);
 
-    const indicator = document.createElement('span');
-    indicator.className = 'research-disclosure-indicator';
-    indicator.setAttribute('aria-hidden', 'true');
-    summary.appendChild(indicator);
+    // Footer bar toggle: a divider-topped strip under the title rather than
+    // stray text, so it reads as a control — see the CSS for the
+    // open/closed label swap (pure :open selector, no JS state).
+    const toggleBar = document.createElement('span');
+    toggleBar.className = 'research-disclosure-toggle-label';
+    toggleBar.setAttribute('aria-hidden', 'true');
+    const closed = document.createElement('span');
+    closed.className = 'toggle-label-closed';
+    closed.textContent = 'Show more ⌄';
+    const open = document.createElement('span');
+    open.className = 'toggle-label-open';
+    open.textContent = 'Show less ⌃';
+    toggleBar.append(closed, open);
+    copy.appendChild(toggleBar);
+
+    summary.appendChild(copy);
 
     const body = document.createElement('div');
     body.className = 'research-disclosure-body';
@@ -268,15 +321,92 @@
     const links = recordLinks(options.links);
     if (links) body.appendChild(links);
 
-    if (!body.childElementCount) {
-      const empty = document.createElement('p');
-      empty.className = 'research-disclosure-empty';
-      empty.textContent = 'No additional details are currently available.';
-      body.appendChild(empty);
-    }
-
     disclosure.append(summary, body);
     return disclosure;
+  }
+
+  let projectDisclosureCount = 0;
+
+  // Funded projects: title stays outside the collapsible content and is
+  // always visible. Link chips and the "Show more" button sit together on
+  // one always-visible row right under it. The expandable panel is a sibling
+  // of that row so it always occupies the full card width when revealed.
+  function projectRecord(options) {
+    const card = document.createElement('div');
+    card.className = 'research-project-card';
+
+    const header = document.createElement('div');
+    header.className = 'research-project-card-header';
+
+    if (options.image) {
+      const imageWrap = document.createElement('span');
+      imageWrap.className = 'research-disclosure-image';
+      const image = document.createElement('img');
+      image.src = options.image;
+      image.alt = options.imageAlt || '';
+      image.loading = 'lazy';
+      imageWrap.appendChild(image);
+      header.appendChild(imageWrap);
+    }
+
+    const title = document.createElement('span');
+    title.className = 'research-disclosure-title';
+    title.innerHTML = options.titleHtml;
+    header.appendChild(title);
+
+    card.appendChild(header);
+
+    const hasText = hasMeaningfulContent(options.detailsHtml);
+    const row = document.createElement('div');
+    row.className = 'research-project-links-row';
+    const hasLinks = appendLinkChips(row, options.links);
+
+    if (hasText) {
+      projectDisclosureCount += 1;
+      const buttonId = `research-project-toggle-${projectDisclosureCount}`;
+      const panelId = `research-project-details-${projectDisclosureCount}`;
+
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.id = buttonId;
+      toggle.className = 'research-project-toggle-inline';
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-controls', panelId);
+      const closed = document.createElement('span');
+      closed.className = 'toggle-label-closed';
+      closed.textContent = 'Show more ⌄';
+      const open = document.createElement('span');
+      open.className = 'toggle-label-open';
+      open.textContent = 'Show less ⌃';
+      toggle.append(closed, open);
+
+      const body = document.createElement('div');
+      body.id = panelId;
+      body.className = 'research-disclosure-body research-project-toggle-body';
+      body.setAttribute('role', 'region');
+      body.setAttribute('aria-labelledby', buttonId);
+      body.hidden = true;
+      const details = document.createElement('div');
+      details.className = 'research-disclosure-details';
+      details.innerHTML = options.detailsHtml;
+      body.appendChild(details);
+
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        body.hidden = expanded;
+        card.classList.toggle('research-project-card-expanded', !expanded);
+      });
+
+      row.appendChild(toggle);
+      card.append(row, body);
+    }
+
+    if (hasLinks && !hasText) {
+      card.appendChild(row);
+    }
+
+    return card;
   }
 
   function fundedProjectsSection(projects) {
@@ -293,9 +423,7 @@
     const list = document.createElement('div');
     list.className = 'research-disclosure-list';
     projects.forEach(project => {
-      list.appendChild(disclosureRecord({
-        variant: 'research-project-disclosure',
-        meta: 'Funded project',
+      list.appendChild(projectRecord({
         titleHtml: project.title_html,
         image: project.image,
         imageAlt: project.image_alt,

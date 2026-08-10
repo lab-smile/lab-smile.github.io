@@ -4,6 +4,69 @@
  */
 (function () {
   var gsapAvailable = false;
+  var findRevealActive = false;
+  var revealSelector = [
+    '.gsap-fade-up',
+    '.gsap-fade-in',
+    '.gsap-slide-left',
+    '.gsap-slide-right',
+    '.gsap-scale-in',
+    '.fade-up',
+    '.stagger-children',
+    '.research-card',
+    '.logo-bar',
+  ].join(', ');
+
+  // Native browser find can jump directly into the middle of a reveal
+  // element without passing the scroll position where ScrollTrigger expects
+  // to start its animation. Once find is opened, prioritize readable/searchable
+  // content and reveal every pending element immediately.
+  function revealAllForBrowserFind() {
+    findRevealActive = true;
+    gsapAvailable = false;
+
+    var elements = Array.prototype.slice.call(document.querySelectorAll(revealSelector));
+    var staggeredChildren = Array.prototype.slice.call(
+      document.querySelectorAll('.stagger-children > *')
+    );
+    var animatedElements = elements.concat(staggeredChildren);
+
+    if (typeof ScrollTrigger !== 'undefined' && typeof ScrollTrigger.getAll === 'function') {
+      ScrollTrigger.getAll().forEach(function (trigger) {
+        var target = trigger.trigger;
+        if (target && target.matches && target.matches(revealSelector)) {
+          trigger.kill();
+        }
+      });
+    }
+
+    if (typeof gsap !== 'undefined' && typeof gsap.killTweensOf === 'function') {
+      gsap.killTweensOf(animatedElements);
+    }
+
+    elements.forEach(function (el) {
+      el.classList.add('visible', 'gsap-revealed');
+      el.style.opacity = '1';
+
+      if (!el.matches('.research-card, .logo-bar')) {
+        el.style.transform = 'none';
+      } else {
+        el.style.removeProperty('transform');
+      }
+    });
+
+    staggeredChildren.forEach(function (el) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+      el.style.transitionDelay = '0s';
+    });
+  }
+
+  document.addEventListener('keydown', function (event) {
+    if ((event.ctrlKey || event.metaKey) && (event.key || '').toLowerCase() === 'f') {
+      revealAllForBrowserFind();
+    }
+  }, true);
 
   // Content fetched asynchronously (news, highlights) can be inserted into the
   // DOM after this script's initial scan. Elements gaining `.gsap-fade-up`
@@ -48,7 +111,8 @@
 
   function init() {
     var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    gsapAvailable = !(typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') && !prefersReducedMotion;
+    gsapAvailable = !(typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') &&
+      !prefersReducedMotion && !findRevealActive;
 
     document.addEventListener('news-data-rendered', revealFadeUps);
     document.addEventListener('highlights-data-rendered', revealFadeUps);
@@ -63,7 +127,7 @@
       });
       revealFadeUps();
       // Still run counters immediately (no animation) if reduced motion
-      if (prefersReducedMotion) {
+      if (prefersReducedMotion || findRevealActive) {
         document.querySelectorAll('[data-counter]').forEach(function (el) {
           var target = parseInt(el.getAttribute('data-counter'), 10);
           var prefix = el.getAttribute('data-counter-prefix') || '';
@@ -232,7 +296,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+      }, { threshold: 0, rootMargin: '0px' });
 
       document.querySelectorAll('.fade-up, .stagger-children').forEach(function (el) {
         observer.observe(el);

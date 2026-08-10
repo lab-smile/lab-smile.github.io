@@ -464,6 +464,31 @@
   box-shadow: 0 8px 24px rgba(28, 25, 23, .08);
 }
 
+/* Funded projects: one bordered card holds the static header, the
+   always-visible links, and the collapsible panel — see projectRecord. */
+.research-project-card {
+  overflow: clip;
+  border: 1px solid #e7e5e4;
+  border-radius: .875rem;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(28, 25, 23, .04);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.research-project-card-expanded {
+  border-color: rgba(201, 168, 76, .65);
+  box-shadow: 0 8px 24px rgba(28, 25, 23, .08);
+}
+
+.research-project-card-header {
+  display: grid;
+  grid-template-columns: 5.5rem minmax(0, 1fr);
+  gap: 1rem;
+  align-items: center;
+  min-height: 5.25rem;
+  padding: 1.15rem 1.25rem;
+}
+
 .research-disclosure-summary {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 1.25rem;
@@ -475,8 +500,50 @@
   list-style: none;
 }
 
-.research-project-disclosure .research-disclosure-summary {
-  grid-template-columns: 5.5rem minmax(0, 1fr) 1.25rem;
+/* Grants have no corner chevron (see .research-disclosure-toggle-label) —
+   copy is the only column. */
+.research-grant-disclosure .research-disclosure-summary {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+/* Funded projects use a button in the links row and a separate full-width
+   panel below it. Keeping the panel outside the flex row prevents expanded
+   copy from appearing beside the toggle. */
+.research-project-toggle-inline {
+  display: inline-flex;
+  align-items: center;
+  padding: .4rem .7rem;
+  border: 0;
+  border-radius: .5rem;
+  color: #8a6d16;
+  background: transparent;
+  font-family: Lora, Georgia, serif;
+  font-size: .8rem;
+  font-weight: 700;
+  line-height: inherit;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+
+.research-project-toggle-inline:hover {
+  background: #fff8e8;
+}
+
+.research-project-toggle-inline:focus-visible {
+  outline: 3px solid rgba(201, 168, 76, .45);
+  outline-offset: -1px;
+}
+
+.research-project-toggle-inline .toggle-label-open {
+  display: none;
+}
+
+.research-project-toggle-inline[aria-expanded="true"] .toggle-label-closed {
+  display: none;
+}
+
+.research-project-toggle-inline[aria-expanded="true"] .toggle-label-open {
+  display: inline;
 }
 
 .research-disclosure-summary::-webkit-details-marker {
@@ -534,32 +601,76 @@
   line-height: 1.45;
 }
 
-.research-disclosure-indicator {
+/* Marks, inline right after the title text it belongs to, that this record
+   has a related link — otherwise that's only discoverable after opening
+   the disclosure. Sits in the text flow (not a separate summary column)
+   so it reads as part of the title rather than a stray floating icon. */
+.research-disclosure-link-flag {
+  display: inline-block;
   position: relative;
-  width: 1.1rem;
-  height: 1.1rem;
+  top: .15em;
+  width: .85em;
+  height: .85em;
+  margin-left: .4em;
 }
 
-.research-disclosure-indicator::before,
-.research-disclosure-indicator::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: .85rem;
-  height: 2px;
-  border-radius: 2px;
-  background: #8a6d16;
+.research-disclosure-link-flag::before {
   content: "";
-  transform: translate(-50%, -50%);
-  transition: transform .2s ease;
+  position: absolute;
+  inset: 0;
+  background: #8a6d16;
+  opacity: .8;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'%3E%3C/path%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'%3E%3C/path%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-.research-disclosure-indicator::after {
-  transform: translate(-50%, -50%) rotate(90deg);
+/* Expand affordance for both grants and projects: a footer bar under the
+   title (grants) or standing alone as the whole toggle row (projects, see
+   .research-project-toggle) instead of a corner chevron. Both label states
+   render; CSS (not JS) swaps which one shows off the parent <details>'s
+   native [open] attribute. */
+.research-disclosure-toggle-label {
+  display: block;
+  margin-top: .35rem;
+  color: #8a6d16;
+  font-family: Lora, Georgia, serif;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .02em;
 }
 
-.research-disclosure[open] .research-disclosure-indicator::after {
-  transform: translate(-50%, -50%) rotate(0deg);
+.research-disclosure-toggle-label .toggle-label-open {
+  display: none;
+}
+
+.research-disclosure[open] .research-disclosure-toggle-label .toggle-label-closed {
+  display: none;
+}
+
+.research-disclosure[open] .research-disclosure-toggle-label .toggle-label-open {
+  display: inline;
+}
+
+/* Grants: the toggle label bleeds to the card's edges (undoing the summary's
+   own padding) so it reads as a divided footer strip rather than a second
+   line of body text under the title. */
+.research-grant-disclosure .research-disclosure-toggle-label {
+  display: flex;
+  justify-content: center;
+  margin: 1rem -1.25rem -1.15rem;
+  padding: .65rem 1.25rem;
+  border-top: 1px solid #e7e5e4;
+  background: #fafaf9;
+  transition: background .15s ease, border-color .15s ease;
+}
+
+.research-grant-disclosure .research-disclosure-summary:hover .research-disclosure-toggle-label {
+  background: #fff8e8;
+  border-top-color: rgba(201, 168, 76, .4);
+}
+
+.research-grant-disclosure[open] .research-disclosure-toggle-label {
+  border-top-color: transparent;
 }
 
 .research-disclosure-body {
@@ -569,8 +680,7 @@
 }
 
 .research-disclosure-details > :last-child,
-.research-disclosure-details > :last-child > :last-child,
-.research-disclosure-empty {
+.research-disclosure-details > :last-child > :last-child {
   margin-bottom: 0;
 }
 
@@ -602,6 +712,58 @@
   background: #fff8e8;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+/* Funded projects: link chips and the toggle (see .research-project-toggle-
+   inline) share one row directly below the title — the same bordered
+   icon+text chip look publications.js uses for arXiv/
+   ScienceDirect/etc, so a project link reads as "go here for more" rather
+   than another inline tag. No label, no divider between the chips and the
+   toggle — they're the same row. */
+.research-project-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem .75rem;
+  padding: .85rem 1.25rem 1.1rem;
+  background: #fff;
+}
+
+/* The expandable panel is a sibling of the flex row, so its block layout
+   naturally fills the card instead of competing for horizontal row space. */
+.research-project-toggle-body {
+  width: 100%;
+}
+
+.research-project-toggle-body[hidden] {
+  display: none;
+}
+
+.research-project-link-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .4rem .7rem;
+  border: 1px solid #e7e5e4;
+  border-radius: .5rem;
+  color: #57534e;
+  background: #fafaf9;
+  font-size: .8rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color .15s ease, color .15s ease, background .15s ease;
+}
+
+.research-project-link-chip:hover {
+  border-color: #8a6d16;
+  color: #8a6d16;
+  background: #fff8e8;
+}
+
+.research-project-link-chip svg {
+  width: .85rem;
+  height: .85rem;
+  flex-shrink: 0;
 }
 
 .canonical-record h3 {
@@ -644,8 +806,8 @@
     grid-template-columns: 1fr;
   }
 
-  .research-project-disclosure .research-disclosure-summary {
-    grid-template-columns: 3.75rem minmax(0, 1fr) 1rem;
+  .research-project-card-header {
+    grid-template-columns: 3.75rem minmax(0, 1fr);
     gap: .75rem;
     padding: 1rem;
   }
@@ -655,11 +817,12 @@
     height: 3.25rem;
   }
 
-  .research-grant-disclosure .research-disclosure-summary {
-    grid-template-columns: minmax(0, 1fr) 1rem;
-  }
-
   .research-disclosure-body {
     padding: 1rem;
   }
+
+  .research-project-links-row {
+    padding: .75rem 1rem 1rem;
+  }
+
 }
