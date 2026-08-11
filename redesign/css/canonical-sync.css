@@ -16,6 +16,48 @@
   order: 1;
 }
 
+.canonical-research-overview .research-summary-interests {
+  margin: 0 0 1.75rem;
+}
+
+.canonical-research-overview .research-summary-interests h3 {
+  margin: 0 0 .85rem;
+  font-size: 1.1rem;
+}
+
+.canonical-research-overview .research-summary-interests ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .65rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.canonical-research-overview .research-summary-interests li {
+  margin: 0;
+  padding: .45rem .8rem;
+  border: 1px solid #ded7c4;
+  border-radius: 999px;
+  background: #faf8f1;
+  color: #5f4b0e;
+  font-size: .9rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.canonical-research-overview .research-summary-visuals {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.canonical-research-overview .research-summary-visuals img {
+  display: block;
+  width: 100%;
+  border: 1px solid #e7e5e4;
+  border-radius: .75rem;
+}
+
 .canonical-research-projects {
   order: 2;
 }
@@ -624,11 +666,8 @@
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'%3E%3C/path%3E%3Cpath d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
 }
 
-/* Expand affordance for both grants and projects: a footer bar under the
-   title (grants) or standing alone as the whole toggle row (projects, see
-   .research-project-toggle) instead of a corner chevron. Both label states
-   render; CSS (not JS) swaps which one shows off the parent <details>'s
-   native [open] attribute. */
+/* Expand affordance for grants and projects. Both label states render; CSS
+   swaps which one shows from the disclosure's native [open] attribute. */
 .research-disclosure-toggle-label {
   display: block;
   margin-top: .35rem;
@@ -651,26 +690,21 @@
   display: inline;
 }
 
-/* Grants: the toggle label bleeds to the card's edges (undoing the summary's
-   own padding) so it reads as a divided footer strip rather than a second
-   line of body text under the title. */
+/* Match the Funded Projects inline control: left aligned beneath the title,
+   with no divider or full-width footer treatment. */
 .research-grant-disclosure .research-disclosure-toggle-label {
-  display: flex;
-  justify-content: center;
-  margin: 1rem -1.25rem -1.15rem;
-  padding: .65rem 1.25rem;
-  border-top: 1px solid #e7e5e4;
-  background: #fafaf9;
-  transition: background .15s ease, border-color .15s ease;
+  display: inline-flex;
+  align-items: center;
+  margin: .75rem 0 0 -.7rem;
+  padding: .4rem .7rem;
+  border: 0;
+  border-radius: .5rem;
+  background: transparent;
+  transition: background .15s ease;
 }
 
 .research-grant-disclosure .research-disclosure-summary:hover .research-disclosure-toggle-label {
   background: #fff8e8;
-  border-top-color: rgba(201, 168, 76, .4);
-}
-
-.research-grant-disclosure[open] .research-disclosure-toggle-label {
-  border-top-color: transparent;
 }
 
 .research-disclosure-body {

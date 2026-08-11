@@ -263,12 +263,9 @@
     return Boolean(holder.textContent.trim() || holder.querySelector('img, video, iframe'));
   }
 
-  // Grants render as a plain <details>/<summary> disclosure: the whole
-  // title row is the click target, and a footer bar below the title toggles
-  // the collapsible body. See projectRecord for funded projects, which need
-  // a structurally different layout (always-visible links between the title
-  // and the collapsible extra detail — a footer toggle can't sit inside a
-  // closed <details> and still be visible, so it isn't built on one row).
+  // Grants render as a native <details>/<summary> disclosure. The visible
+  // label is styled like the Funded Projects inline toggle, while the entire
+  // summary remains a generous native click target.
   function disclosureRecord(options) {
     const disclosure = document.createElement('details');
     disclosure.className = `research-disclosure ${options.variant || ''}`.trim();
@@ -291,9 +288,8 @@
     title.innerHTML = options.titleHtml;
     copy.appendChild(title);
 
-    // Footer bar toggle: a divider-topped strip under the title rather than
-    // stray text, so it reads as a control — see the CSS for the
-    // open/closed label swap (pure :open selector, no JS state).
+    // Inline toggle label under the title. CSS swaps its open/closed state
+    // from the parent <details> element's native [open] attribute.
     const toggleBar = document.createElement('span');
     toggleBar.className = 'research-disclosure-toggle-label';
     toggleBar.setAttribute('aria-hidden', 'true');
