@@ -51,12 +51,11 @@
   gap: 1.5rem;
 }
 
-.canonical-research-overview .research-summary-visuals img {
-  display: block;
-  width: 100%;
+.canonical-research-overview .research-summary-visuals > img {
   border: 1px solid #e7e5e4;
   border-radius: .75rem;
 }
+
 
 .canonical-research-projects {
   order: 2;

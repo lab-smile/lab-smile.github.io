@@ -2329,3 +2329,13 @@ abbr[title] { text-decoration: underline dotted; cursor: help; }
   border-color: rgba(201, 168, 76, 0.4);
   transform: translateY(-1px);
 }
+/* Preserve the native 4:3 research artwork without stretching or upscaling. */
+.research-infographic {
+  display: block;
+  width: 100%;
+  max-width: 1448px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  margin-inline: auto;
+}
