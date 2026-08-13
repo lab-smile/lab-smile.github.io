@@ -1,191 +1,18 @@
 /**
- * Vanderbilt content synchronization.
+ * Renders the Funded Projects, Grants & Awards, and Patents sections on
+ * research.html from the shared data/ JSON files.
  *
- * Vanderbilt reads a local snapshot of the verified default-site content.
- * This keeps the two presentations independent at runtime while preserving
- * exact wording and record parity at the time the snapshot is refreshed.
- * Only shared asset paths are rebased for the redesign/ directory.
+ * Split out of the old canonical-sync.js mirroring pipeline: this page's
+ * prose overview is now static markup (see research.html), and this script
+ * only owns the three JSON-driven record lists appended after it. Patents
+ * are the "Patents" rows of data/publications.json, not a file of their own.
  */
 (function () {
   'use strict';
 
-  const currentScript = document.currentScript;
-  const ASSET_PREFIX = currentScript ? (currentScript.dataset.assetPrefix || '') : '../';
-  const CANONICAL_PAGE = 'data/default-content.html';
-  // data/ lives at the repository root; redesign/ pages sit one level below it.
-  const DATA_DIR = /\/redesign\//.test(window.location.pathname) ? '../data/' : 'data/';
-  const PROJECTS_DATA = DATA_DIR + 'projects.json';
-  const GRANTS_DATA = DATA_DIR + 'grants.json';
-  // Patents are the "Patents" rows of the shared publications file, not a file of their own.
-  const PUBLICATIONS_DATA = DATA_DIR + 'publications.json';
-
-  function pageName() {
-    const name = window.location.pathname.split('/').pop();
-    return name || 'index.html';
-  }
-
-  function isExternalReference(value) {
-    return /^(?:[a-z]+:|\/\/|#)/i.test(value);
-  }
-
-  function rebaseReference(value) {
-    if (!value || isExternalReference(value) || value.startsWith('../') || !ASSET_PREFIX) return value;
-    return `${ASSET_PREFIX}${value}`;
-  }
-
-  // The default site paints media-card thumbnails through .post__image--NAME
-  // rules in css/style.css, which the redesign does not load. Resolve them here
-  // instead so the paths pick up ASSET_PREFIX like every other asset.
-  const MEDIA_THUMBS = {
-    'alligator': 'img/media/alligator.png',
-    'appliedradiology': 'img/media/appliedradiology.png',
-    'bignewsnetwork': 'img/media/bignewsnetwork.png',
-    'eyesmart': 'img/media/eyesmart.png',
-    'dotmed': 'img/media/dotmed.png',
-    'FIU-news': 'img/media/FIU-news.png',
-    'forbes': 'img/media/forbes.png',
-    'ivanhoe': 'img/media/ivanhoe-interview.png',
-    'mscp': 'img/media/mscp-logo.png',
-    'nationalacademies': 'img/media/nationalacademies.png',
-    'nationalgeographic': 'img/media/nationalgeographic.png',
-    'newscientist': 'img/media/newscientist.png',
-    'rsipvision': 'img/media/rsipvision.jpg',
-    'rsna': 'img/media/rsna.png',
-    'sciencedaily': 'img/media/sciencedaily.png',
-    'scitechdaily': 'img/media/scitechdaily.png',
-    'techtuesday': 'img/media/techtuesday-interview.png',
-    'ufepi': 'img/media/ufepi.png',
-    'ufaicurr': 'img/media/ufaicurr.png',
-    'ufai': 'img/media/ufai.png',
-    'cph': 'img/media/CPH.jpg',
-    'uf': 'img/media/uf.png',
-    'ufdementia': 'img/media/ufhealth-interview.png',
-    'ufparkinson': 'img/media/ufengineering-news.png',
-    'ufengineering': 'img/media/ufengineering-newsvideo.png',
-    'thewashingtonpost': 'img/media/thewashingtonpost.png',
-    'wcjb': 'img/media/abcwcjb20-interview.png',
-    'wfts': 'img/media/abcwfts-interview.png',
-    'wplg': 'img/media/abclocal10tv-interview.png',
-    'ufnvidia': 'img/media/nvidia-hackathon.png',
-    'hwcoeaward': 'img/media/hwcoe_award2022.jpg',
-    'acm': 'img/personal/acm.png',
-    'cvnews': 'img/media/cvnews.jpeg',
-    'inside': 'img/media/inside.jpg',
-  };
-
-  function applyMediaThumbnails(root) {
-    root.querySelectorAll('.post__image').forEach(element => {
-      const modifier = Array.from(element.classList)
-        .map(name => name.startsWith('post__image--') ? name.slice('post__image--'.length) : null)
-        .find(name => name && MEDIA_THUMBS[name]);
-      if (!modifier) {
-        element.classList.add('post__image-empty');
-        return;
-      }
-      element.style.backgroundImage = `url("${ASSET_PREFIX}${MEDIA_THUMBS[modifier]}")`;
-    });
-  }
-
-  function prepareCanonicalContent(root) {
-    root.querySelectorAll('script').forEach(script => script.remove());
-    applyMediaThumbnails(root);
-
-    root.querySelectorAll('a').forEach(anchor => {
-      const member = anchor.querySelector(':scope > .member');
-      if (!member) return;
-      anchor.classList.add('member-card-link');
-      const name = member.querySelector('.bio h3');
-      if (name) name.classList.add('member-linked-name');
-    });
-
-    root.querySelectorAll('[src]').forEach(element => {
-      element.setAttribute('src', rebaseReference(element.getAttribute('src')));
-    });
-    root.querySelectorAll('[href]').forEach(element => {
-      element.setAttribute('href', rebaseReference(element.getAttribute('href')));
-    });
-    root.querySelectorAll('[poster]').forEach(element => {
-      element.setAttribute('poster', rebaseReference(element.getAttribute('poster')));
-    });
-    root.querySelectorAll('[data-full]').forEach(element => {
-      element.setAttribute('data-full', rebaseReference(element.getAttribute('data-full')));
-    });
-    root.querySelectorAll('[style]').forEach(element => {
-      const style = element.getAttribute('style');
-      element.setAttribute(
-        'style',
-        style.replace(
-          /url\((['"]?)(?![a-z]+:|\/\/|\.\.\/|#)([^'")]+)\1\)/gi,
-          (_match, quote, value) => `url(${quote}${ASSET_PREFIX}${value}${quote})`
-        )
-      );
-    });
-
-    return root;
-  }
-
-  function canonicalPage(source, id, label) {
-    const page = source.querySelector(`#${id}`);
-    if (!page) throw new Error(`Canonical section #${id} was not found`);
-
-    const wrapper = document.createElement('section');
-    wrapper.className = 'canonical-sync canonical-page-copy';
-    wrapper.dataset.canonicalSection = id;
-    wrapper.setAttribute('aria-label', label);
-    wrapper.innerHTML = page.innerHTML;
-    return prepareCanonicalContent(wrapper);
-  }
-
-  function contentMount(main, keepSelector) {
-    let mount = main.querySelector('#canonical-sync-root');
-    if (mount) mount.remove();
-
-    Array.from(main.children).forEach(child => {
-      if (!child.matches(keepSelector)) child.remove();
-    });
-
-    mount = document.createElement('div');
-    mount.id = 'canonical-sync-root';
-    mount.className = 'canonical-sync-root';
-    main.appendChild(mount);
-    return mount;
-  }
-
-  // Each redesign page already has its own hero title. Drop the copied title
-  // when it repeats the hero, and the whole header block if nothing else is left
-  // in it. Any subtitle or intro copy the header carries survives. Section
-  // dividers on multi-section pages never match the hero, so they stay.
-  function removeDuplicateHeader(section) {
-    const header = section.querySelector('.pageheader');
-    const hero = document.querySelector('#main-content .page-header h1');
-    if (!header || !hero) return;
-
-    const normalize = text => text.replace(/\s+/g, ' ').trim().toLowerCase();
-    const title = header.querySelector('h1, h2');
-    if (!title || normalize(title.textContent) !== normalize(hero.textContent)) return;
-
-    title.remove();
-    if (!normalize(header.textContent) && !header.querySelector('img, video, iframe')) {
-      header.remove();
-    }
-  }
-
-  function syncSinglePage(source, id, label) {
-    const main = document.getElementById('main-content');
-    if (!main) return;
-    const mount = contentMount(main, 'nav.breadcrumb-nav, section.page-header');
-    const section = canonicalPage(source, id, label);
-    removeDuplicateHeader(section);
-    mount.appendChild(section);
-  }
-
-  function syncMedia(source) {
-    const main = document.getElementById('main-content');
-    if (!main) return;
-    const mount = contentMount(main, 'nav.breadcrumb-nav, section.page-header');
-    mount.appendChild(canonicalPage(source, 'video', 'Canonical videos'));
-    mount.appendChild(canonicalPage(source, 'media', 'Canonical media coverage'));
-  }
+  const PROJECTS_DATA = 'data/projects.json';
+  const GRANTS_DATA = 'data/grants.json';
+  const PUBLICATIONS_DATA = 'data/publications.json';
 
   function recordLinks(links) {
     if (!Array.isArray(links) || links.length === 0) return null;
@@ -407,7 +234,7 @@
 
   function fundedProjectsSection(projects) {
     const section = document.createElement('section');
-    section.className = 'canonical-sync canonical-record-section';
+    section.className = 'canonical-sync canonical-record-section canonical-research-projects';
     section.dataset.canonicalSection = 'projects';
     section.setAttribute('aria-labelledby', 'canonical-projects-heading');
 
@@ -428,7 +255,7 @@
       }));
     });
     section.appendChild(list);
-    return prepareCanonicalContent(section);
+    return section;
   }
 
   function linkLabel(label, url) {
@@ -457,7 +284,7 @@
 
   function patentSection(patents) {
     const section = document.createElement('section');
-    section.className = 'canonical-sync canonical-record-section';
+    section.className = 'canonical-sync canonical-record-section canonical-research-patents';
     section.dataset.canonicalSection = 'patents';
     section.setAttribute('aria-labelledby', 'canonical-patents-heading');
 
@@ -486,7 +313,7 @@
 
   function grantsSection(grants) {
     const section = document.createElement('section');
-    section.className = 'canonical-sync canonical-record-section';
+    section.className = 'canonical-sync canonical-record-section canonical-research-grants';
     section.dataset.canonicalSection = 'grants';
     section.setAttribute('aria-labelledby', 'canonical-grants-heading');
 
@@ -507,98 +334,42 @@
       }));
     });
     section.appendChild(list);
-    return prepareCanonicalContent(section);
+    return section;
   }
 
-  async function syncResearch(source) {
-    const main = document.getElementById('main-content');
-    if (!main) return;
+  async function init() {
+    const mount = document.getElementById('canonical-sync-root');
+    if (!mount) return;
 
-    const [projectsResponse, grantsResponse, publicationsResponse] = await Promise.all([
-      fetch(PROJECTS_DATA, { cache: 'no-store' }),
-      fetch(GRANTS_DATA, { cache: 'no-store' }),
-      fetch(PUBLICATIONS_DATA, { cache: 'no-store' }),
-    ]);
-    if (!projectsResponse.ok) throw new Error('Funded project data could not be loaded');
-    if (!grantsResponse.ok) throw new Error('Grant data could not be loaded');
-    if (!publicationsResponse.ok) throw new Error('Publication data could not be loaded');
-    const [projectsData, grantsData, publicationsData] = await Promise.all([
-      projectsResponse.json(),
-      grantsResponse.json(),
-      publicationsResponse.json(),
-    ]);
-    const patentsData = patentRecords(publicationsData);
+    try {
+      const [projectsResponse, grantsResponse, publicationsResponse] = await Promise.all([
+        fetch(PROJECTS_DATA, { cache: 'no-store' }),
+        fetch(GRANTS_DATA, { cache: 'no-store' }),
+        fetch(PUBLICATIONS_DATA, { cache: 'no-store' }),
+      ]);
+      if (!projectsResponse.ok) throw new Error('Funded project data could not be loaded');
+      if (!grantsResponse.ok) throw new Error('Grant data could not be loaded');
+      if (!publicationsResponse.ok) throw new Error('Publication data could not be loaded');
+      const [projectsData, grantsData, publicationsData] = await Promise.all([
+        projectsResponse.json(),
+        grantsResponse.json(),
+        publicationsResponse.json(),
+      ]);
+      const patentsData = patentRecords(publicationsData);
 
-    const mount = contentMount(main, 'nav.breadcrumb-nav, section.page-header');
-    mount.classList.add('canonical-research-content');
-
-    const research = canonicalPage(source, 'research', 'Canonical research');
-    research.classList.add('canonical-research-overview');
-    const fundedHeading = Array.from(research.querySelectorAll('h3'))
-      .find(element => element.textContent.trim() === 'Funded Projects');
-    const legacyFundedSection = fundedHeading && fundedHeading.closest('.section');
-    if (legacyFundedSection) legacyFundedSection.remove();
-
-    const projects = fundedProjectsSection(projectsData);
-    projects.classList.add('canonical-research-projects');
-
-    const grants = grantsSection(grantsData);
-    grants.classList.add('canonical-research-grants');
-
-    const patents = patentSection(patentsData);
-    patents.classList.add('canonical-research-patents');
-
-    mount.appendChild(research);
-    mount.appendChild(projects);
-    mount.appendChild(grants);
-    mount.appendChild(patents);
-  }
-
-  async function synchronize() {
-    const currentPage = pageName();
-    if (currentPage === 'index.html' ||
-        currentPage === 'gallery.html' ||
-        currentPage === 'publications.html' ||
-        currentPage === 'software.html' ||
-        currentPage === 'accessibility.html' ||
-        currentPage === 'team.html' ||
-        currentPage === 'teaching.html' ||
-        currentPage === 'contact.html' ||
-        currentPage === 'openings.html' ||
-        currentPage === 'genealogy.html') {
-      return;
+      mount.appendChild(fundedProjectsSection(projectsData));
+      mount.appendChild(grantsSection(grantsData));
+      mount.appendChild(patentSection(patentsData));
+      document.dispatchEvent(new CustomEvent('research-dynamic-ready'));
+    } catch (error) {
+      console.error('Research record rendering failed:', error);
+      document.body.classList.add('canonical-sync-failed');
     }
-
-    const response = await fetch(CANONICAL_PAGE, { cache: 'no-store' });
-    if (!response.ok) throw new Error('Canonical page could not be loaded');
-    const html = await response.text();
-    const source = new DOMParser().parseFromString(html, 'text/html');
-
-    switch (currentPage) {
-      case 'research.html':
-        await syncResearch(source);
-        break;
-      case 'media.html':
-        syncMedia(source);
-        break;
-      default:
-        break;
-    }
-
-    document.body.classList.add('canonical-sync-complete');
-    document.dispatchEvent(new CustomEvent('canonical-content-synchronized', {
-      detail: { page: currentPage },
-    }));
-  }
-
-  function showFailure(error) {
-    console.error('Canonical content synchronization failed:', error);
-    document.body.classList.add('canonical-sync-failed');
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => synchronize().catch(showFailure));
+    document.addEventListener('DOMContentLoaded', init);
   } else {
-    synchronize().catch(showFailure);
+    init();
   }
 })();

@@ -2,8 +2,8 @@
  * Gallery - Lightbox and lazy loading for photo gallery.
  */
 (function () {
-  // data/ lives at the repository root; redesign/ pages sit one level below it.
-  const DATA_DIR = /\/redesign\//.test(window.location.pathname) ? '../data/' : 'data/';
+  // data/ is a sibling of this page at the repository root.
+  const DATA_DIR = 'data/';
   const currentScript = document.currentScript;
   const assetPrefix = currentScript ? (currentScript.dataset.assetPrefix || '') : '../';
   const lightbox = document.getElementById('lightbox');

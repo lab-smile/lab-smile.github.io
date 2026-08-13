@@ -1,14 +1,33 @@
 /**
- * Renders the JSON-driven sections of the single-page site: news, grants,
- * funded projects, and the photo gallery.
+ * Renders the JSON-driven sections of the archived single-page UF site: news,
+ * grants, funded projects, and the photo gallery.
  *
- * data/ is the single source of truth, shared with redesign/. The markup built
- * here mirrors what used to be hand-written in index.html, so the existing
- * Bootstrap/jQuery styling and plugins keep working.
+ * data/ is the single source of truth, shared with the live site — this page
+ * reads the same repo-root data/ everyone else does, just one level down. The
+ * markup built here mirrors what used to be hand-written in index.html, so the
+ * existing Bootstrap/jQuery styling and plugins keep working.
  */
 
-// redesign/ pages sit one level below the data directory; root pages sit beside it.
-const DATA_DIR = /\/redesign\//.test(window.location.pathname) ? '../data/' : 'data/';
+// legacy/index.html sits one level below the shared repo-root data/.
+const DATA_DIR = '../data/';
+
+// Image paths in the JSON are repo-root-relative (e.g. "img/media/foo.png"),
+// but legacy/index.html sits one level below the repo root, so every image
+// path coming out of the JSON needs "../" added before it lands in the DOM.
+const ASSET_PREFIX = '../';
+
+function assetUrl(path) {
+    return path ? ASSET_PREFIX + path : path;
+}
+
+// grants.json / projects.json details_html occasionally embeds its own
+// root-relative <img src="img/..."> markup. Rebase those the same way.
+function rebaseHtml(html) {
+    return String(html == null ? '' : html).replace(
+        /((?:src|href)=["'])img\//g,
+        `$1${ASSET_PREFIX}img/`
+    );
+}
 
 async function fetchJSON(name) {
     try {
@@ -43,7 +62,7 @@ function renderNews(items, container) {
 ++++++++++++++++++++++++++++++++++++++*/
 function renderHighlights(items, container) {
     container.innerHTML = items.map(item =>
-        `<li style="background-image: url('${attr(item.image)}');">
+        `<li style="background-image: url('${attr(assetUrl(item.image))}');">
             <div>
                 <a href="${attr(item.url)}" target="_blank" rel="noopener">
                     <h3>${item.date}</h3>
@@ -64,7 +83,7 @@ function renderGrants(items, container) {
             <div class="circle"></div>
             <div class="data">
                 <div class="subject">${item.title_html}</div>
-                ${item.details_html}
+                ${rebaseHtml(item.details_html)}
             </div>
         </li>`
     ).join('\n');
@@ -88,7 +107,7 @@ function renderProjects(items, container) {
             <div class="row">
                 <div class="col-sm-6 col-md-3">
                     <div class="image">
-                        <img alt="${attr(item.image_alt)}" src="${attr(item.image)}" class="img-responsive">
+                        <img alt="${attr(item.image_alt)}" src="${attr(assetUrl(item.image))}" class="img-responsive">
                         <div class="imageoverlay">
                             <a href="${attr(overlay)}" class="tooltips" title="External link" target="_blank"><i class="fa fa-search"></i></a>
                         </div>
@@ -101,7 +120,7 @@ function renderProjects(items, container) {
                     </div>
                 </div>
             </div>
-            <div class="details">${item.details_html}</div>
+            <div class="details">${rebaseHtml(item.details_html)}</div>
         </li>`;
     }).join('\n');
 }
@@ -127,8 +146,8 @@ function renderGallery(items, container) {
     container.innerHTML = items.map(item =>
         `<li>
             <div>
-                <img alt="${attr(item.alt)}" src="${attr(item.image)}">
-                <a href="${attr(item.full_image || item.image)}" class="popup-with-move-anim">
+                <img alt="${attr(item.alt)}" src="${attr(assetUrl(item.image))}">
+                <a href="${attr(assetUrl(item.full_image || item.image))}" class="popup-with-move-anim">
                     <div class="over">
                         <div class="comein">
                             <h3>${item.caption_html}</h3>

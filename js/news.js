@@ -6,10 +6,9 @@
  */
 (function () {
   'use strict';
-  // data/ and img/ live at the repository root; redesign/ pages sit one level below.
-  const IN_REDESIGN = /\/redesign\//.test(window.location.pathname);
-  const DATA_DIR = IN_REDESIGN ? '../data/' : 'data/';
-  const ASSET_PREFIX = IN_REDESIGN ? '../' : '';
+  // data/ and img/ are siblings of this page at the repository root.
+  const DATA_DIR = 'data/';
+  const ASSET_PREFIX = '';
 
   const INITIAL_NEWS_COUNT = 12;
 

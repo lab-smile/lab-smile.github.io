@@ -42,7 +42,7 @@
     { id: 'vaidyanathan', name: 'P. P. Vaidyanathan', sub: 'UCSB, 1982 · 1954–present', branch: 'ee', badge: 'nae', x: 0, y: 20.0, photo: 'pp_vaidyanathan.jpg' },
     { id: 'chen', name: 'Tsuhan Chen', sub: 'Caltech, 1993 · 1966–present', branch: 'ee', badge: null, x: 0, y: 21.0, photo: 'tsuhan_chen.jpg' },
 
-    { id: 'fang', name: 'Ruogu Fang', sub: 'Cornell, 2014 · Vanderbilt University', branch: 'current', badge: null, x: 0, y: 22.4, photo: 'ruogu_fang.jpg' }
+    { id: 'fang', name: 'Ruogu Fang', sub: 'Cornell, 2014 · University of Florida', branch: 'current', badge: null, x: 0, y: 22.4, photo: 'ruogu_fang.jpg' }
   ];
 
   var EDGES = [
