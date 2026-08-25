@@ -1,5 +1,35 @@
 [
    {
+      "title": "A Multimodal Vision-Language Model Expert Agent for Symptom-Informed Precision tDCS Dosing in Older Adults With Anxiety",
+      "type": "Conference",
+      "authors": "Tara Sahni, August Zhang*, Junfu Cheng, <u><b>Ruogu Fang</b></u>",
+      "citation": "Biomedical Engineering Society (BMES) Annual Meeting, Orlando, FL, October 21-24, 2026",
+      "publication_year": "October 2026",
+      "image_src": "img/pubs/BMES.jpg",
+      "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://www.bmes.org/2026/annualmeeting"
+      },
+      "data_year": "2026",
+      "location": "Orlando, FL, USA",
+      "dates": "October 21-24, 2026"
+   },
+   {
+      "title": "Improving Iron Mass Estimation in Magnetic Particle Imaging Using Deep Learning Modeling",
+      "type": "Conference",
+      "authors": "Peter Kowalski*, <b>Ruogu Fang</b>, Hayden Good, Carlos M Rinaldi-Ramos",
+      "citation": "Biomedical Engineering Society (BMES) Annual Meeting, Orlando, FL, October 21-24, 2026",
+      "publication_year": "October 2026",
+      "image_src": "img/pubs/BMES.jpg",
+      "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://www.bmes.org/2026/annualmeeting"
+      },
+      "data_year": "2026",
+      "location": "Orlando, FL, USA",
+      "dates": "October 21-24, 2026"
+   },
+   {
       "title": "Multi-Modal Contrastive Representation Learning for Preclinical AD Prediction",
       "type": "Conference",
       "authors": "Ethan Elio Meidinger*, Seowung Leem, <u><b>Ruogu Fang</b></u>",
