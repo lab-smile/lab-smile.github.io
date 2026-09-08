@@ -139,7 +139,8 @@
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
-         "arxiv": "https://arxiv.org/abs/2606.19522"
+         "arxiv": "https://arxiv.org/abs/2606.19522",
+         "github": "https://github.com/lab-smile/REVEALpp"
       },
       "data_year": "2026"
    },
