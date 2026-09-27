@@ -1,5 +1,9 @@
 [
    {
+      "content_html": "<em>Neurology Today</em> features Dr. Fang and SMILE Lab's research in &ldquo;Deep Learning Model Reads Alzheimer's Risk Factors From Retinal Photos.&rdquo; [<a href=\"https://neurologytoday.aan.com/doi/10.1097/01.wnt.0001258728.23407.f8\" target=\"_blank\" rel=\"noopener\">Neurology Today</a>]",
+      "date": "09/17/2026"
+   },
+   {
       "content_html": "Dr. Fang joins Vanderbilt as a Full Professor in the Biomedical Engineering Department. [<a href=\"https://news.vanderbilt.edu/2026/09/24/new-faculty-new-professors-share-why-they-chose-vanderbilt/\" target=\"_blank\" rel=\"noopener\">News</a>] [<a href=\"https://engineering.vanderbilt.edu/2026/05/15/leading-researcher-in-brain-inspired-ai-and-neuroimaging-joins-vanderbilt-school-of-engineering/\" target=\"_blank\" rel=\"noopener\">Vanderbilt Engineering</a>]",
       "date": "08/16/2026"
    },
@@ -8,7 +12,7 @@
       "date": "08/12/2026"
    },
    {
-      "content_html": "Two abstracts from our lab are accepted for presentation at the <a href=\"https://www.bmes.org/2026/annualmeeting\" target=\"_blank\" rel=\"noopener\">Biomedical Engineering Society (BMES) Annual Meeting</a>, October 21&ndash;24, 2026, in Orlando, FL:<ul style=\"list-style: disc; margin: 0.5rem 0 0; padding-left: 1.25rem;\"><li>A Multimodal Vision-Language Model Expert Agent for Symptom-Informed Precision tDCS Dosing in Older Adults With Anxiety</li><li>Improving Iron Mass Estimation in Magnetic Particle Imaging Using Deep Learning Modeling</li></ul>",
+      "content_html": "Five abstracts from our lab are accepted for presentation at the <a href=\"https://www.bmes.org/2026/annualmeeting\" target=\"_blank\" rel=\"noopener\">Biomedical Engineering Society (BMES) Annual Meeting</a>, October 21&ndash;24, 2026, in Orlando, FL:<ul style=\"list-style: disc; margin: 0.5rem 0 0; padding-left: 1.25rem;\"><li>Regular abstracts:<ul style=\"list-style: circle; margin: 0.25rem 0 0; padding-left: 1.25rem;\"><li>Multi-Modal Contrastive Representation Learning for Preclinical AD Prediction</li><li>Baseline Neuroimaging and Machine Learning Predict Pain Relief Following BAT-Paired tDCS in Knee Osteoarthritis</li><li>Clinico-Demographic Predictors of Anxiety Treatment Response to Transcranial Direct Current Stimulation and Cognitive Training in Older Adults</li></ul></li><li>Undergraduate session:<ul style=\"list-style: circle; margin: 0.25rem 0 0; padding-left: 1.25rem;\"><li>A Multimodal Vision-Language Model Expert Agent for Symptom-Informed Precision tDCS Dosing in Older Adults With Anxiety</li><li>Improving Iron Mass Estimation in Magnetic Particle Imaging Using Deep Learning Modeling</li></ul></li></ul>",
       "date": "08/04/2026"
    },
    {
