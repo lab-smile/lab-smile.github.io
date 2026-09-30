@@ -1,5 +1,19 @@
 [
    {
+      "title": "Neuroanatomical predictors of frontal tDCS current distribution in cognitively healthy older adults",
+      "type": "Journal",
+      "authors": "Tyler A. Busch, Skylar E. Stolte, Yunfeng Dai, Andrew O'Shea, Kevin Iversen, Samantha Pedersen, Gavin Hart, Jason Chen, Pratyush Shukla, Alejandro Albizu, <b>Ruogu Fang</b>, Adam J. Woods, Aprinda Indahlastari",
+      "citation": "NeuroImage, Vol. 341, 122243, November 2026. DOI: 10.1016/j.neuroimage.2026.122243",
+      "publication_year": "November 2026",
+      "image_src": "img/pubs/NeuroImage.gif",
+      "label_class": "warning",
+      "external_links": {
+         "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1053811926005586?via%3Dihub"
+      },
+      "abstract": "Transcranial direct current stimulation (tDCS) is a noninvasive neuromodulation technique with the potential to mitigate age-related cognitive decline, yet most models do not account for the substantial anatomical variability of older adults. We aimed to identify neuroanatomical predictors of brain current density (Jbrain) during bilateral frontal tDCS using individualized, high-fidelity head models. We constructed 11-tissue MRI-based models in 367 cognitively healthy older adults (mean age = 71.64 years), representing, to our knowledge, the largest manually corrected 11-tissue dataset of this kind to date. The segmentations were derived from T1-weighted MRI acquired at two sites and refined using atlas-guided manual correction. Bilateral frontal tDCS (F3-F4, 2 mA) was simulated, and Jbrain was analyzed using LASSO regression within frontal regions of interest and whole-brain voxel-wise regression. LASSO models explained 40-49% of current-density variance (R² = 0.399-0.494). Cortical bone volume was the strongest negative predictor across all frontal regions (partial η² ≤ 0.30), followed by subcutaneous fat (partial η² ≤ 0.14), whereas the brain-to-intracranial volume ratio, a proxy for atrophy, was the strongest positive predictor (partial η² ≤ 0.14). Voxel-wise analyses confirmed widespread tissue-current density associations (whole-brain F-contrast, k = 1,203,710 voxels; peaks in frontal pole and occipital fusiform gyrus, F > 376, p < 0.001 FWE), with cancellous bone showing four significant negative clusters (largest k = 595, temporal fusiform cortex, t = 6.06, p < 0.001). These findings demonstrate that bone, fat, and atrophy are key determinants of current delivery during frontal tDCS in older adults and highlight the importance of anatomically individualized modeling to inform future dose-tailoring approaches. Results should be interpreted in the context of the scan acquisition parameters reported in this paper.",
+      "data_year": "2026"
+   },
+   {
       "title": "A Multimodal Vision-Language Model Expert Agent for Symptom-Informed Precision tDCS Dosing in Older Adults With Anxiety",
       "type": "Conference",
       "authors": "Tara Sahni, August Zhang*, Junfu Cheng, <u><b>Ruogu Fang</b></u>",
