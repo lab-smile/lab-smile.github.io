@@ -1,5 +1,18 @@
 [
    {
+      "title": "Causal discovery identifies pathways linking physical activity to dementia risk in the UK BioBank",
+      "type": "Preprint",
+      "authors": "Wasif Khan, Panayiotis V. Benos, Joshua K. Wong, <u><b>Ruogu Fang</b></u>",
+      "citation": "arXiv preprint arXiv:2610.02221, 2026. Under submission.",
+      "publication_year": "2026",
+      "image_src": "img/pubs/arxiv.png",
+      "label_class": "info",
+      "external_links": {
+         "arxiv": "https://arxiv.org/abs/2610.02221"
+      },
+      "data_year": "2026"
+   },
+   {
       "title": "A Survey of Recent Advances in Computational Models and Machine Learning Applications in Neurostimulation",
       "type": "Journal",
       "authors": "Zeyun Zhao†, Junfu Cheng†, Wasif Khan, Ying Zhang, Kaleb Smith, Lei Xing, <u><b>Ruogu Fang</b></u>∗",
