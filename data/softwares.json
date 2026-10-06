@@ -2,6 +2,19 @@
     {
         "year": "2026",
         "type": "Code",
+        "title": "REVEAL++",
+        "description": "Vision-language retinal modeling that aligns fundus images with clinical risk narratives using differentiable phenotypic grouping for Alzheimer's disease risk prediction.",
+        "citation": "Ethan Meidinger, Seowung Leem, Zeyun Zhao, and Ruogu Fang. \"REVEAL++: Differentiable Phenotypic Grouping for Vision–Language Retinal Modeling of Alzheimer’s Disease Risk\" In MICCAI, 2026",
+        "links": [
+            {
+                "type": "github",
+                "url": "https://github.com/lab-smile/REVEALpp"
+            }
+        ]
+    },
+    {
+        "year": "2026",
+        "type": "Code",
         "title": "Brain-AI-101",
         "description": "Interactive neuroscience and AI learning platform that turns neurons, networks, filters, and feedback into guided web experiences.",
         "citation": null,
