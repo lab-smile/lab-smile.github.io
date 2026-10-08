@@ -1,5 +1,20 @@
 [
    {
+      "title": "An Agentic Multimodal Digital Care Team for Dementia Diagnosis",
+      "type": "Conference",
+      "authors": "",
+      "citation": "AD/PD™ 2027, accepted poster presentation.",
+      "publication_year": "March 2027",
+      "image_src": "img/pubs/ADPD2027.jpg",
+      "label_class": "primary",
+      "external_links": {
+         "conference": "https://adpd.kenes.com/"
+      },
+      "data_year": "2027",
+      "location": "Barcelona, Spain (and online)",
+      "dates": "March 16-20, 2027"
+   },
+   {
       "title": "Causal discovery identifies pathways linking physical activity to dementia risk in the UK BioBank",
       "type": "Preprint",
       "authors": "Wasif Khan, Panayiotis V. Benos, Joshua K. Wong, <u><b>Ruogu Fang</b></u>",
