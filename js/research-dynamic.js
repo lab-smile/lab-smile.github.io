@@ -276,7 +276,7 @@
         const links = external && typeof external === 'object'
           ? Object.keys(external).sort()
               .filter(key => typeof external[key] === 'string' && external[key].trim())
-              .map(key => ({ label: linkLabel(key, external[key]), url: external[key] }))
+              .map(key => ({ label: linkLabel(/^sciencedirect$/i.test(key) ? '' : key, external[key]), url: external[key] }))
           : [];
         return Object.assign({}, publication, { links });
       });

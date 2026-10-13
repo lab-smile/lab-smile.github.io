@@ -178,12 +178,37 @@
     }
   }
 
+  const KEY_LABELS = {
+    arxiv: 'arXiv', biorxiv: 'bioRxiv', medrxiv: 'medRxiv', preprint: 'Preprint',
+    github: 'GitHub', ieee: 'IEEE Xplore', mit: 'MIT Press', pmc: 'PMC',
+    conference: 'Conference'
+  };
+
+  // "sciencedirect" is a historical catch-all key for publisher links, so name the link by its host.
+  const HOST_LABELS = [
+    [/sciencedirect\.com/, 'ScienceDirect'], [/ieeexplore\.ieee\.org/, 'IEEE Xplore'],
+    [/direct\.mit\.edu/, 'MIT Press'], [/nature\.com/, 'Nature'], [/springer/, 'Springer'],
+    [/frontiersin\.org/, 'Frontiers'], [/bmes\.org/, 'Conference'], [/sfn\.org/, 'Conference'],
+    [/miccai\.org/, 'MICCAI'], [/openreview\.net/, 'OpenReview'], [/dl\.acm\.org/, 'ACM'],
+    [/doi\.org/, 'DOI'], [/arxiv\.org/, 'arXiv'], [/biorxiv\.org/, 'bioRxiv'],
+    [/wiley\.com/, 'Wiley'], [/spie/, 'SPIE'], [/google\.com\/patents/, 'Patent'],
+    [/academic\.oup\.com/, 'Oxford Academic'], [/plos\.org/, 'PLOS'],
+    [/cambridge\.org/, 'Cambridge'], [/biomedcentral\.com/, 'BMC']
+  ];
+
+  function linkLabel(key, url) {
+    if (key.toLowerCase() === 'sciencedirect') {
+      const hit = HOST_LABELS.find(([re]) => re.test(url));
+      return hit ? hit[1] : 'Link';
+    }
+    return KEY_LABELS[key.toLowerCase()] || key.charAt(0).toUpperCase() + key.slice(1);
+  }
+
   function renderLinks(links) {
     if (!links || typeof links !== 'object') return '';
     return Object.entries(links).map(([key, url]) => {
       if (!url) return '';
-      const label = key.charAt(0).toUpperCase() + key.slice(1);
-      const icon = key === 'arxiv' ? 'arXiv' : key === 'preprint' ? 'Preprint' : label;
+      const icon = linkLabel(key, url);
       return `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1 text-xs font-medium rounded-md border border-stone-200 text-stone-600 hover:border-uf-blue hover:text-uf-blue hover:bg-uf-blue/5 transition-colors">
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
         ${icon}
