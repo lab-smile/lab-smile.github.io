@@ -147,6 +147,7 @@
       "image_src": "img/pubs/NatureCommunications.jpg",
       "label_class": "warning",
       "external_links": {
+         "sciencedirect": "https://www.nature.com/articles/s41467-026-75653-x",
          "biorxiv": "https://www.biorxiv.org/content/10.1101/2025.08.04.668476v1"
       },
       "abstract": "The current growth of artificial intelligence (AI) tools provides an unprecedented opportunity to extract deeper insights from neurophysiological data while also enabling the reproduction and prediction of brain responses to a wide range of events and situations. Here, we introduce the Concept2Brain model, a deep network architecture designed to generate synthetic electrophysiological responses to semantic/emotional information conveyed through pictures or text. Leveraging AI solutions like CLIP from OpenAI, the model generates a representation of pictorial or language input and maps it into an electrophysiological latent space. We demonstrate that this openly available resource generates synthetic neural responses that closely resemble those observed in studies of naturalistic scene perception. The Concept2Brain model is provided as a web service tool for creating open and reproducible EEG datasets, allowing users to predict brain responses to any semantic concept or picture. Beyond its applied functionality, it also paves the way for AI-driven modeling of brain activity, offering new possibilities for studying how the brain represents the world.",
@@ -161,6 +162,7 @@
       "image_src": "img/pubs/emotion.gif",
       "label_class": "warning",
       "external_links": {
+         "sciencedirect": "https://doi.org/10.1037/emo0001735",
          "biorxiv": "https://www.biorxiv.org/content/10.1101/2025.11.03.686276v1"
       },
       "abstract": "Pictures depicting naturalistic scenes are widely used in studies of human emotion. However, the practical use of affective pictures is limited by several factors, including the difficulty of obtaining content-diverse, high-quality, openly accessible, and standardized stimuli that are necessary for specific research questions. The use of artificially generated (AI) pictures could address this limitation, but it is unclear if AI-generated pictures evoke reliable emotional responses. The present study sought to address these challenges by comparing emotional responses to AI-generated pictures with responses to original, standardized, pictures. In two study iterations, standardized pictures containing pleasant, neutral, and unpleasant content were selected from the International Affective Picture System (IAPS) and other sources. Then, a matched AI-counterpart was created for each original picture using generative deep neural networks. A total of 109 participants viewed the picture sets while pupil diameter and electroencephalogram (EEG) were recorded. Evaluative ratings of hedonic valence and emotional arousal were also collected. For both AI and original exemplars, pictures depicting emotional content elicited stronger responses than neutral content for ratings and EEG-derived variables, with weaker effect sizes for the AI-generated pictures. Furthermore, picture-level analyses found that ratings and EEG measures were strongly correlated between matched AI and original pictures. Pupil data also showed the expected content effects in study iteration 2, but not in iteration 1. Together, this initial study suggests that AI-generated picture sets can effectively elicit well-established self-reported affect and physiological responses, presenting a promising avenue for future studies of human emotion.",
@@ -187,10 +189,12 @@
       "type": "Conference",
       "authors": "Ethan Meidinger*, Seowung Leem*, Zeyun Zhao*, <u><b>Ruogu Fang</b></u>",
       "citation": "International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), Strasbourg, France, September 2026 (accepted; 28% acceptance rate, 10 pages)",
+      "abstract": "The retina offers a noninvasive window into neurodegenerative disease, capturing subtle structural patterns associated with a risk of future cognitive decline. Vision-language alignment frameworks such as REVEAL have shown that pairing retinal fundus images with structured clinical risk narratives improves early prediction of Alzheimer's disease (AD). A key design choice in these approaches is the use of phenotypic grouping, where individuals with similar risk profiles are treated as multi-positive pairs during contrastive learning. However, existing methods operationalize phenotypic similarity as a discrete construct, relying on hard group assignments that impose rigid supervision and decouple group formation from representation learning. We propose a continuous formulation of phenotypic structure within contrastive learning. Rather than assigning samples to fixed clusters, we model inter-subject similarity as a differentiable weighting function derived from intra-modality embedding similarities in both retinal images and risk profiles. These weights define soft multi-positive relationships through a continuous aggregation operator, enabling graded supervision that reflects the spectrum nature of disease risk. We further introduce a soft-target contrastive objective that jointly learns cross-modal alignment and phenotypic structure in an end-to-end manner. Evaluated on UK Biobank retinal imaging data for incident AD prediction, the proposed framework consistently outperforms discrete group-based contrastive learning and standard vision-language baselines. By treating phenotypic similarity as a learnable, continuous signal rather than a fixed grouping rule, our approach provides a principled and robust foundation for population-scale neurodegenerative risk modeling from multi-modal retinal and clinical data.",
       "publication_year": "September 2026",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-032-38059-3_50",
          "arxiv": "https://arxiv.org/abs/2606.19522",
          "github": "https://github.com/lab-smile/REVEALpp"
       },
@@ -214,9 +218,14 @@
       "type": "Journal",
       "authors": "Seowung Leem, Andreas Keil, Mingzhou Ding†, <b><u>Ruogu Fang</u>†</b>",
       "citation": "Neural Computation, 2026, In Press. Accepted June 9, 2026",
+      "abstract": "Associative emotional learning enables organisms to adaptively link pleasant or unpleasant outcomes to the presence of predictive stimuli. Whereas computational models such as the Rescorla-Wagner model have shed light on this important function, the limitations of these models are also known, especially when they are applied to neural data. The advent of deep neural networks has opened another avenue for modeling associative emotional learning. In this work we proposed a deep neural network model of visual valence processing, consisting of a visual module that encodes complex natural scenes and a module that recognizes their emotional significance in terms of valence, a key dimension of emotion, and tested a novel Pavlovian learning paradigm on the model. The results showed that with learning, the model reproduced several observations from human associative learning studies, including association formation and generalization, and that the neural representations of the conditioned and the unconditioned stimuli became increasingly aligned both at the single unit and at the neural population level. Comparison between the model and human experimental data provided further validation of our approach. This study thus suggests that deep neural network models, when combined with appropriate learning algorithms, can be used to model behavioral and neural signatures of associative emotion/valence learning.",
       "publication_year": "2026",
       "image_src": "img/pubs/NeuralComputation.png",
       "label_class": "warning",
+      "external_links": {
+         "mit": "https://direct.mit.edu/neco/article-abstract/doi/10.1162/NECO.a.1580/139104/Associative-Emotional-Learning-in-Convolutional",
+         "arxiv": "https://arxiv.org/abs/2607.19327"
+      },
       "data_year": "2026"
    },
    {
@@ -224,9 +233,13 @@
       "type": "Journal",
       "authors": "Sneha Mantri, Rhoda Au, Anastasia Barnes, James Beck, Kathleen Blake, Wendy Dahl, Briana de Miranda, E. Ray Dorsey, <b>Ruogu Fang</b>, J. Daniel Fenn, Sue J. Goldie, Samuel M. Goldman, Paulina Gonzalez-Latapi, Diego Guarin, Brittany Kryzyzanowski, Nicole Lessard, Andi Lipstein Fristedt, Tejas R. Mehta, Monica Norcini, Peggy Borum, Jennifer L. Purks, Dawn Schiehser, Michael A. Schwarzschild, Caroline M. Tanner, Alexis Temkin, J. Bryan Unruh, Chris Vulpe, Kristin Wallock, Cordelia Walz, Michael S. Okun",
       "citation": "npj Parkinson’s Disease, 2026",
+      "abstract": "This Perspective outlines the challenges addressed at the first Annual Parkinson’s Disease (PD) Prevention Think Tank, held on November 20–21, 2025 in Gainesville, Florida at the Fixel Institute. Over the course of two days, attendees from a wide variety of disciplines, including movement disorders neurology, environmental sciences, agriculture, public policy, public health, patient advocate groups, and more, discussed the current state of primary prevention research in PD, examined the lessons learned from prevention research in other disorders, and identified necessary regulatory and policy actions for moving toward primary prevention of PD. Eight key components of primary prevention are identified (8 C’s): accurately Count incidence and prevalence, Conduct longitudinal cohort studies, induce policy Change, Counsel on individual behavior change, Communicate clearly with the general public and with key stakeholders, form multi-centric Coalitions across neurodegenerative disorders, apply Cross-disciplinary approaches, and provide sustained financial Commitment to support ongoing prevention and mitigation efforts. These proceedings serve as an initial call-to-action for at-risk individuals, the clinicians who care for them, and for policymakers.",
       "publication_year": "2026",
       "image_src": "img/pubs/npjParkinsonsDisease.png",
       "label_class": "warning",
+      "external_links": {
+         "sciencedirect": "https://www.nature.com/articles/s41531-026-01437-1"
+      },
       "data_year": "2026"
    },
    {
@@ -614,6 +627,7 @@
       "image_src": "img/pubs/ICCV2025.png",
       "label_class": "primary",
       "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/iccv51701.2025.00967",
          "arxiv": "https://arxiv.org/pdf/2508.14461",
          "github": "https://siwensun.github.io/ouroboros-project/"
       },
@@ -646,6 +660,7 @@
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-032-05182-0_43",
          "arxiv": "https://arxiv.org/abs/2506.20741",
          "github": "https://github.com/Y-Research-SBU/OTSurv"
       },
@@ -965,7 +980,8 @@
       "image_src": "img/pubs/bioinformatics.gif",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://academic.oup.com/bib/article/25/4/bbae284/7693952"
+         "sciencedirect": "https://academic.oup.com/bib/article/25/4/bbae284/7693952",
+         "arxiv": "https://arxiv.org/abs/2312.07899"
       },
       "abstract": "Morphological profiling is a valuable tool in phenotypic drug discovery. The advent of high-throughput automated imaging has enabled the capturing of a wide range of morphological features of cells or organisms in response to perturbations at the single-cell resolution. Concurrently, significant advances in machine learning and deep learning, especially in computer vision, have led to substantial improvements in analyzing large-scale high-content images at high-throughput. These efforts have facilitated understanding of compound mechanism-of-action (MOA), drug repurposing, characterization of cell morphodynamics under perturbation, and ultimately contributing to the development of novel therapeutics. In this review, we provide a comprehensive overview of the recent advances in the field of morphological profiling. We summarize the image profiling analysis workflow, survey a broad spectrum of analysis strategies encompassing feature engineering- and deep learning-based approaches, and introduce publicly available benchmark datasets. We place a particular emphasis on the application of deep learning in this pipeline, covering cell segmentation, image representation learning, and multimodal learning. Additionally, we illuminate the application of morphological profiling in phenotypic drug discovery and highlight potential challenges and opportunities in this field.",
       "data_year": "2024"
@@ -992,6 +1008,7 @@
       "image_src": "img/pubs/PLOS_CB.PNG",
       "label_class": "warning",
       "external_links": {
+         "sciencedirect": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011351",
          "github": "https://github.com/lab-smile/DeepDynaForcast"
       },
       "abstract": "In the midst of an outbreak or sustained epidemic, reliable prediction of transmission risks and patterns of spread is critical to inform public health programs. Projections of transmission growth or decline among specific risk groups can aid in optimizing interventions, particularly when resources are limited. Phylogenetic trees have been widely used in the detection of transmission chains and high-risk populations. Moreover, tree topology and the incorporation of population parameters (phylodynamics) can be useful in reconstructing the evolutionary dynamics of an epidemic across space and time among individuals. We now demonstrate the utility of phylodynamic trees for transmission modeling and forecasting, developing a phylogeny-based deep learning system, referred to as \\textit{DeepDynaForecast}. Our approach leverages a primal-dual graph learning structure with shortcut multi-layer aggregation, which is suited for the early identification and prediction of transmission dynamics in emerging high-risk groups. We demonstrate the accuracy of \\textit{DeepDynaForecast} using simulated outbreak data and the utility of the learned model using empirical, large-scale data from the human immunodeficiency virus epidemic in Florida between 2012 and 2020. Our framework is available as open-source software (MIT license) at github.com/lab-smile/DeepDynaForcast.",
@@ -1053,7 +1070,8 @@
       "label_class": "warning",
       "external_links": {
          "sciencedirect": "https://link.springer.com/article/10.1038/s41598-024-54251-1?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20240213&utm_content=10.1038/s41598-024-54251-1",
-         "github": "https://github.com/lab-smile/RetinaPD"
+         "github": "https://github.com/lab-smile/RetinaPD",
+         "arxiv": "https://arxiv.org/abs/2302.06727"
       },
       "abstract": "Parkinson’s disease is the world’s fastest-growing neurological disorder. Research to elucidate the mechanisms of Parkinson’s disease and automate diagnostics would greatly improve the treatment of patients with Parkinson’s disease. Current diagnostic methods are expensive and have limited availability. Considering the insidious and preclinical onset and progression of the disease, a desirable screening should be diagnostically accurate even before the onset of symptoms to allow medical interventions. We highlight retinal fundus imaging, often termed a window to the brain, as a diagnostic screening modality for Parkinson’s disease. We conducted a systematic evaluation of conventional machine learning and deep learning techniques to classify Parkinson’s disease from UK Biobank fundus imaging. Our results suggest Parkinson’s disease individuals can be differentiated from age and gender-matched healthy subjects with 68% accuracy. This accuracy is maintained when predicting either prevalent or incident Parkinson’s disease. Explainability and trustworthiness are enhanced by visual attribution maps of localized biomarkers and quantified metrics of model robustness to data perturbations.",
       "data_year": "2024"
@@ -1148,12 +1166,14 @@
       "type": "Conference",
       "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
       "citation": "26th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 8–12, 2023, Vancouver, BC, Canada",
+      "abstract": "Out-of-distribution (OOD) generalization poses a serious challenge for modern deep learning (DL). OOD data consists of test data that is significantly different from the model's training data. DL models that perform well on in-domain test data could struggle on OOD data. Overcoming this discrepancy is essential to the reliable deployment of DL. Proper model calibration decreases the number of spurious connections that are made between model features and class outputs. Hence, calibrated DL can improve OOD generalization by only learning features that are truly indicative of the respective classes. Previous work proposed domain-aware model calibration (DOMINO) to improve DL calibration, but it lacks designs for model generalizability to OOD data. In this work, we propose DOMINO++, a dual-guidance and dynamic domain-aware loss regularization focused on OOD generalizability. DOMINO++ integrates expert-guided and data-guided knowledge in its regularization. Unlike DOMINO which imposed a fixed scaling and regularization rate, DOMINO++ designs a dynamic scaling factor and an adaptive regularization rate. Comprehensive evaluations compare DOMINO++ with DOMINO and the baseline model for head tissue segmentation from magnetic resonance images (MRIs) on OOD data. The OOD data consists of synthetic noisy and rotated datasets, as well as real data using a different MRI scanner from a separate site. DOMINO++'s superior performance demonstrates its potential to improve the trustworthy deployment of DL on real clinical data.",
       "publication_year": "October 08-12, 2023",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
          "sciencedirect": "https://conferences.miccai.org/2023/papers/219-Paper3114.html",
-         "github": "https://github.com/lab-smile/DOMINOplusplus"
+         "github": "https://github.com/lab-smile/DOMINOplusplus",
+         "arxiv": "https://arxiv.org/abs/2308.10453"
       },
       "data_year": "2023",
       "location": "Vancouver, BC, Canada",
@@ -1240,7 +1260,8 @@
       "image_src": "img/pubs/IEEE.png",
       "label_class": "primary",
       "external_links": {
-         "sciencedirect": "https://icdcs2023.icdcs.org/"
+         "sciencedirect": "https://icdcs2023.icdcs.org/",
+         "arxiv": "https://arxiv.org/abs/2212.01977"
       },
       "abstract": "Neural network pruning is an essential technique for reducing the size and complexity of deep neural networks, enabling large-scale models on devices with limited resources. However, existing pruning approaches heavily rely on training data for guiding the pruning strategies, making them ineffective for federated learning over distributed and confidential datasets. Additionally, the memory- and computation-intensive pruning process becomes infeasible for recourse-constrained devices in federated learning. To address these challenges, we propose FedTiny, a distributed pruning framework for federated learning that generates specialized tiny models for memory- and computing-constrained devices. We introduce two key modules in FedTiny to adaptively search coarse- and finer-pruned specialized models to fit deployment scenarios with sparse and cheap local computation. First, an adaptive batch normalization selection module is designed to mitigate biases in pruning caused by the heterogeneity of local data. Second, a lightweight progressive pruning module aims to finer prune the models under strict memory and computational budgets, allowing the pruning policy for each layer to be gradually determined rather than evaluating the overall model structure. The experimental results demonstrate the effectiveness of FedTiny, which outperforms state-of-the-art approaches, particularly when compressing deep models to extremely sparse tiny models. FedTiny achieves an accuracy improvement of 2.61% while significantly reducing the computational cost by 95.91% and the memory footprint by 94.01% compared to state-of-the-art methods.",
       "data_year": "2023",
@@ -1257,7 +1278,8 @@
       "label_class": "warning",
       "external_links": {
          "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S2665963823000155",
-         "github": "https://github.com/lab-smile/DOMINO"
+         "github": "https://github.com/lab-smile/DOMINO",
+         "arxiv": "https://arxiv.org/abs/2302.05142"
       },
       "abstract": "Model calibration measures the agreement between the predicted probability estimates and the true correctness likelihood. Proper model calibration is vital for high-risk applications. Unfortunately, modern deep neural networks are poorly calibrated, compromising trustworthiness and reliability. Medical image segmentation particularly suffers from this due to the natural uncertainty of tissue boundaries. This is exasperated by their loss functions, which favor overconfidence in the majority classes. We address these challenges with DOMINO, a domain-aware model calibration method that leverages the semantic confusability and hierarchical similarity between class labels. Our experiments demonstrate that our DOMINO-calibrated deep neural networks outperform non-calibrated models and state-of-the-art morphometric methods in head image segmentation. Our results show that our method can consistently achieve better calibration, higher accuracy, and faster inference times than these methods, especially on rarer classes. This performance is attributed to our domain-aware regularization to inform semantic model calibration. These findings show the importance of semantic ties between class labels in building confidence in deep learning models. The framework has the potential to improve the trustworthiness and reliability of generic medical image segmentation models.",
       "data_year": "2023"
@@ -1338,12 +1360,14 @@
       "type": "Conference",
       "authors": "Skylar Stolte, Kyle Volle, Aprinda Indahlastari, Alejandro Albizu, Adam Woods, Kevin Brink, Matthew Hale, <u><b>Ruogu Fang</b></u>",
       "citation": "25th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), September 18–22, 2022, Singapore",
+      "abstract": "Model calibration measures the agreement between the predicted probability estimates and the true correctness likelihood. Proper model calibration is vital for high-risk applications. Unfortunately, modern deep neural networks are poorly calibrated, compromising trustworthiness and reliability. Medical image segmentation particularly suffers from this due to the natural uncertainty of tissue boundaries. This is exasperated by their loss functions, which favor overconfidence in the majority classes. We address these challenges with DOMINO, a domain-aware model calibration method that leverages the semantic confusability and hierarchical similarity between class labels. Our experiments demonstrate that our DOMINO-calibrated deep neural networks outperform non-calibrated models and state-of-the-art morphometric methods in head image segmentation. Our results show that our method can consistently achieve better calibration, higher accuracy, and faster inference times than these methods, especially on rarer classes. This performance is attributed to our domain-aware regularization to inform semantic model calibration. These findings show the importance of semantic ties between class labels in building confidence in deep learning models. The framework has the potential to improve the trustworthiness and reliability of generic medical image segmentation models. The code for this article is available at: https://github.com/lab-smile/DOMINO.",
       "publication_year": "September 18-22, 2022",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
          "sciencedirect": "https://conferences.miccai.org/2022/papers/170-Paper1693.html",
-         "github": "https://github.com/lab-smile/DOMINO"
+         "github": "https://github.com/lab-smile/DOMINO",
+         "arxiv": "https://arxiv.org/abs/2209.06077"
       },
       "data_year": "2022",
       "location": "Singapore",
@@ -1482,7 +1506,8 @@
       "image_src": "img/pubs/Neurocomputing.png",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S0925231221015642"
+         "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S0925231221015642",
+         "arxiv": "https://arxiv.org/abs/2110.02417"
       },
       "abstract": "Recently, deep neural networks have demonstrated comparable and even better performance than board-certified ophthalmologists in well-annotated datasets. However, the diversity of retinal imaging devices poses a significant challenge: domain shift, which leads to performance degradation when applying the deep learning models trained on one domain to new testing domains. In this paper, we propose a multi-scale input along with multiple domain adaptors applied hierarchically in both feature and output spaces. The proposed training strategy and novel unsupervised domain adaptation framework, called Collaborative Adversarial Domain Adaptation (CADA), can effectively overcome the challenge. Multi-scale inputs can reduce the information loss due to the pooling layers used in the network for feature extraction, while our proposed CADA is an interactive paradigm that presents an exquisite collaborative adaptation through both adversarial learning and ensembling weights at different network layers. In particular, to produce a better prediction for the unlabeled target domain data, we simultaneously achieve domain invariance and model generalizability via adversarial learning at multi-scale outputs from different levels of network layers and maintaining an exponential moving average (EMA) of the historical weights during training. Without annotating any sample from the target domain, multiple adversarial losses in encoder and decoder layers guide the extraction of domain-invariant features to confuse the domain classifier. Meanwhile, the ensembling of weights via EMA reduces the uncertainty of adapting multiple discriminator learning. Comprehensive experimental results demonstrate that our CADA model incorporating multi-scale input training can overcome performance degradation and outperform state-of-the-art domain adaptation methods in segmenting retinal optic disc and cup from fundus images stemming from the REFUGE, Drishti-GS, and Rim-One-r3 datasets. The code will be available at https://github.com/cswin/CADA",
       "data_year": "2021"
@@ -1510,7 +1535,8 @@
       "image_src": "img/pubs/TCFD.jpeg",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://link.springer.com/article/10.1007/s00162-021-00593-9"
+         "sciencedirect": "https://link.springer.com/article/10.1007/s00162-021-00593-9",
+         "arxiv": "https://arxiv.org/abs/2005.05363"
       },
       "abstract": "Fluid flow around a random distribution of stationary spherical particles is a problem of substantial importance in the study of dispersed multiphase flows. In this paper we present a machine learning methodology using Generative Adversarial Network framework and Convolutional Neural Network architecture to recreate particle-resolved fluid flow around a random distribution of monodispersed particles. The model was applied to various Reynolds number and par- ticle volume fraction combinations spanning over a range of [2.69, 172.96] and [0.11, 0.45] respectively. Test performance of the model for the studied cases is very promising. \nKeywords: Pseudo-turbulence, Multiphase Flow prediction, Generative Adversarial Network (GAN), Convolutional Neural Network (CNN)",
       "data_year": "2021"
@@ -1837,9 +1863,13 @@
       "type": "Conference",
       "authors": "Yao Xiao, Keith R. Peters, W. Christopher Fox, John H. Rees, Dhanashree A. Rajderkar, Manuel M. Arreola, Izabella Barreto, Wesley E. Bolch, <u><b>Ruogu Fang</b></u>",
       "citation": "IEEE International Symposium on Biomedical Imaging (ISBI), April 3–7, 2020, Iowa City, IA, USA",
+      "abstract": "Multimodal CT scans, including non-contrast CT, CT perfusion, and CT angiography, are widely used in acute stroke diagnosis and therapeutic planning. While each imaging modality has its advantage in brain cross-sectional feature visualizations, the varying image resolution of different modalities hinders the ability of the radiologist to discern consistent but subtle suspicious findings. Besides, higher image quality requires a high radiation dose, leading to increases in health risks such as cataract formation and cancer induction. In this work, we propose a deep learning-based method Transfer-GAN that utilizes generative adversarial networks and transfer learning to improve multimodal CT image resolution and to lower the necessary radiation exposure. Through extensive experiments, we demonstrate that transfer learning from multimodal CT provides substantial visualization and quantity enhancement compare to the training without learning the prior knowledge.",
       "publication_year": "April 3-7, 2020",
       "image_src": "img/pubs/IEEEImaging.png",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/isbi45749.2020.9098322"
+      },
       "data_year": "2020",
       "location": "Iowa City, IA, USA",
       "dates": "April 3–7, 2020"
@@ -1923,7 +1953,8 @@
       "image_src": "img/pubs/MIA.gif",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841519301100"
+         "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841519301100",
+         "arxiv": "https://arxiv.org/abs/1910.03667"
       },
       "abstract": "Glaucoma is one of the leading causes of irreversible but preventable blindness in working age populations. Color fundus photography (CFP) is the most cost-effective imaging modality to screen for retinal disorders. However, its application to glaucoma has been limited to the computation of a few related biomarkers such as the vertical cup-to-disc ratio. Deep learning approaches, although widely applied for medical image analysis, have not been extensively used for glaucoma assessment due to the limited size of the available data sets. Furthermore, the lack of a standardize benchmark strategy makes difficult to compare existing methods in a uniform way. In order to overcome these issues we set up the Retinal Fundus Glaucoma Challenge, REFUGE (https://refuge.grand-challenge.org), held in conjunction with MICCAI 2018. The challenge consisted of two primary tasks, namely optic disc/cup segmentation and glaucoma classification. As part of REFUGE, we have publicly released a data set of 1200 fundus images with ground truth segmentations and clinical glaucoma labels, currently the largest existing one. We have also built an evaluation framework to ease and ensure fairness in the comparison of different models, encouraging the development of novel techniques in the field. 12 teams qualified and participated in the online challenge. This paper summarizes their methods and analyzes their corresponding results. In particular, we observed that two of the top-ranked teams outperformed two human experts in the glaucoma classification task. Furthermore, the segmentation results were in general consistent with the ground truth annotations, with complementary outcomes that can be further exploited by ensembling the results.",
       "data_year": "2020"
@@ -1972,9 +2003,13 @@
       "type": "Journal",
       "authors": "Xi Yang, Jiang Bian, <strong>Ruogu Fang</strong>, Ragnhildur I. Bjarnadottir, William R. Hogan, and Yonghui Wu",
       "citation": "Journal of the American Medical Informatics Association",
+      "abstract": "Objective: To develop a natural language processing system that identifies relations of medications with adverse drug events from clinical narratives. This project is part of the 2018 n2c2 challenge.Materials and Methods: We developed a novel clinical named entity recognition method based on an recurrent convolutional neural network and compared it to a recurrent neural network implemented using the long-short term memory architecture, explored methods to integrate medical knowledge as embedding layers in neural networks, and investigated 3 machine learning models, including support vector machines, random forests and gradient boosting for relation classification. The performance of our system was evaluated using annotated data and scripts provided by the 2018 n2c2 organizers.Results: Our system was among the top ranked. Our best model submitted during this challenge (based on recurrent neural networks and support vector machines) achieved lenient F1 scores of 0.9287 for concept extraction (ranked third), 0.9459 for relation classification (ranked fourth), and 0.8778 for the end-to-end relation extraction (ranked second). We developed a novel named entity recognition model based on a recurrent convolutional neural network and further investigated gradient boosting for relation classification. The new methods improved the lenient F1 scores of the 3 subtasks to 0.9292, 0.9633, and 0.8880, respectively, which are comparable to the best performance reported in this challenge.Conclusion: This study demonstrated the feasibility of using machine learning methods to extract the relations of medications with adverse drug events from clinical narratives.",
       "publication_year": "2019",
       "image_src": "img/pubs/JAMIA.jpg",
       "label_class": "warning",
+      "external_links": {
+         "sciencedirect": "https://academic.oup.com/jamia/article-abstract/27/1/65/5555856"
+      },
       "data_year": "2019"
    },
    {
@@ -2036,11 +2071,14 @@
       "type": "Conference",
       "authors": "Peng Liu, Bin Kong, Zhongyu Li, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
       "citation": "22nd International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 13–17, 2019, Shenzhen, China",
+      "abstract": "Recently, deep neural networks have demonstrated comparable and even better performance with board-certified ophthalmologists in well-annotated datasets. However, the diversity of retinal imaging devices poses a significant challenge: domain shift, which leads to performance degradation when applying the deep learning models to new testing domains. In this paper, we propose a novel unsupervised domain adaptation framework, called Collaborative Feature Ensembling Adaptation (CFEA), to effectively overcome this challenge. Our proposed CFEA is an interactive paradigm which presents an exquisite of collaborative adaptation through both adversarial learning and ensembling weights. In particular, we simultaneously achieve domain-invariance and maintain an exponential moving average of the historical predictions, which achieves a better prediction for the unlabeled data, via ensembling weights during training. Without annotating any sample from the target domain, multiple adversarial losses in encoder and decoder layers guide the extraction of domain-invariant features to confuse the domain classifier and meanwhile benefit the ensembling of smoothing weights. Comprehensive experimental results demonstrate that our CFEA model can overcome performance degradation and outperform the state-of-the-art methods in segmenting retinal optic disc and cup from fundus images. \\textit{Code is available at \\url{https://github.com/cswin/AWC}}.",
       "publication_year": "2019",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
-         "github": "https://github.com/cswin/AWC"
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-030-32254-0_58",
+         "github": "https://github.com/cswin/AWC",
+         "arxiv": "https://arxiv.org/abs/1910.07638"
       },
       "data_year": "2019",
       "location": "Shenzhen, China",
@@ -2054,6 +2092,9 @@
       "publication_year": "2019",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-030-32226-7_5"
+      },
       "data_year": "2019",
       "location": "Shenzhen, China",
       "dates": "October 13–17, 2019"
@@ -2171,6 +2212,9 @@
       "image_src": "img/pubs/MLMI.jpg",
       "label_class": "primary",
       "abstract": "The quality of fundus images is critical for diabetic retinopathy diagnosis. The evaluation of fundus image quality can be affected by several factors, including image artifact, clarity, and field definition. In this paper, we propose a multi-task deep learning framework for automated assessment of fundus image quality. The network can classify whether an image is gradable, together with interpretable information about quality factors. The proposed method uses images in both rectangular and polar coordinates, and fine-tunes the network from trained model grading of diabetic retinopathy. The detection of optic disk and fovea assists learning the field definition task through coarse-to-fine feature encoding. The experimental results demonstrate that our framework outperform single-task convolutional neural networks and reject ungradable images in automated diabetic retinopathy diagnostic systems.",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-030-00919-9_4"
+      },
       "data_year": "2018",
       "location": "Granada, Spain",
       "dates": "September 16, 2018"
@@ -2276,9 +2320,14 @@
       "type": "Conference",
       "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
       "citation": "15th IEEE International Symposium on Biomedical Imaging (ISBI), April 4–7, 2018, Washington, D.C., USA",
+      "abstract": "With substantial public concerns on potential cancer risks and health hazards caused by the accumulated radiation exposure in medical imaging, reducing radiation dose in X-ray based medical imaging such as Computed Tomography Perfusion (CTP) has raised significant research interests. In this paper, we embrace the deep Convolutional Neural Networks (CNN) based approaches and introduce Smoothed Dense-Convolution Neural Network (SDCNet) to recover high-dose quality CTP images from low-dose ones. SDCNet is composed of sub-network blocks cascaded by skip-connections to infer the noise (differentials) from paired low/high-dose CT scans. SDCNet can effectively remove the noise in real low-dose CT scans and enhance the quality of medical images. We evaluate the proposed architecture on thousands of CT perfusion frames for both reconstructed image denoising and perfusion map quantification including cerebral blood flow (CBF) and cerebral blood volume (CBV). SDCNet achieves high performance in both visual and quantitative results with promising computational efficiency, comparing favorably with state-of-the-art approaches. \\textit{The code is available at \\url{https://github.com/cswin/RC-Nets}}.",
       "publication_year": "2018",
       "image_src": "img/pubs/IEEEImaging.png",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/isbi.2018.8363590",
+         "arxiv": "https://arxiv.org/abs/1910.08364"
+      },
       "data_year": "2018",
       "location": "Washington, D.C., USA",
       "dates": "April 4–7, 2018"
@@ -2374,6 +2423,9 @@
       "image_src": "img/pubs/Pattern_Recognition.gif",
       "label_class": "warning",
       "abstract": "Morphological retrieval is an effective approach to explore large-scale neuronal databases, as the morphology is correlated with neuronal types, regions, functions, etc. In this paper, we focus on the neuron identification and analysis via morphological retrieval. In our proposed framework, multiple features are extracted to represent 3D neuron data. Because each feature reflects different levels of similarity between neurons, we group features into different hierarchies to compute the similarity matrix. Then, compact binary codes are generated from hierarchical features for efficient similarity search. Since neuronal cells usually have tree-topology structure, it is hard to distinguish different types of neurons simply via traditional binary coding or hashing methods based on Euclidean distance metric and/or linear hyperplanes. Therefore, we employ an asymmetric binary coding strategy based on the maximum inner product search (MIPS), which not only makes it easier to learn the binary coding functions, but also preserves the non-linear characteristics of the neuron morphological data. We evaluate the proposed method on more than 17,000 neurons, by validating the retrieved neurons with associated cell types and brain regions. Experimental results show the superiority of our approach in neuron morphological retrieval compared with other state-of-the-art methods. Moreover, we demonstrate its potential use cases in the identification and analysis of neuron characteristics from large neuron databases.",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1016/j.patcog.2016.09.041"
+      },
       "data_year": "2017"
    },
    {
@@ -2619,6 +2671,9 @@
       "publication_year": "2015",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-319-24571-3_84"
+      },
       "data_year": "2015",
       "location": "Munich, Germany",
       "dates": "October 5–9, 2015"
@@ -2631,6 +2686,9 @@
       "publication_year": "2015",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-319-42016-5_16"
+      },
       "data_year": "2015",
       "location": "Munich, Germany",
       "dates": "October 5–9, 2015"
@@ -2666,9 +2724,13 @@
       "type": "Conference",
       "authors": "Menglin Jiang, Shaoting Zhang, <strong>Ruogu Fang</strong>, Dimitris Metaxas.",
       "citation": "12th IEEE International Symposium on Biomedical Imaging (ISBI'15), April 16–19, 2015, New York, NY, USA (Oral presentation, 130/714 = 18%)",
+      "abstract": "Content-based image retrieval techniques have shown great value in computer-aided diagnosis of mammographic masses. Many existing approaches adopt several features to better characterize mammographic regions. However, most of them fuse features through feature concatenation or result-level combination, which cannot fully exert the discriminative power of different features and also sacrifices the overall computational efficiency. To address these drawbacks, we propose to utilize coupled multi-index for index-level feature fusion. Specifically, complementary local features are extracted from the same locations of mammographic regions. Then, they are separately quantized using the “bag of words” (BoW) approach. Finally, quantized features are inserted into a two-dimensional inverted index, with each feature corresponding to one dimension. Experiments are carried out on a large dataset constructed from the digital database for screening mammography (DDSM). Results demonstrate that our approach not only achieves better retrieval precision and diagnostic accuracy than individual features do, but also improves the overall efficiency and scalability.",
       "publication_year": "2015",
       "image_src": "img/pubs/IEEEImaging.png",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/isbi.2015.7163867"
+      },
       "data_year": "2015",
       "location": "New York, NY, USA",
       "dates": "April 16–19, 2015"
@@ -2682,6 +2744,9 @@
       "image_src": "img/pubs/IEEEImaging.png",
       "label_class": "primary",
       "abstract": "Arterial spin labeling MRI (ASL-MRI) can provide quantitative\n        signals correlated to the cerebral blood flow and neural\n        activity. However, the low signal-to-noise ratio in ASL\n        requires repeated acquisitions to improve the signal reliability,\n        leading to prolonged scanning time. At fewer repetitions,\n        noise and corruptions arise due to motion and physiological\n        artifacts, introducing errors into the cerebral blood flow estimation.\n        We propose to recover the ASL-MRI data from\n        the noisy and corrupted observations at shorter scanning time\n        with a spatio-temporal low-rank total variation method. The\n        low-rank approximation uses the similarity of the repetitive\n        scans, and the total variation regularization considers the local\n        spatial consistency. We compare with the state-of-art robust\n        M-estimator for ASL cerebral blood flow map estimation.\n        Validation on simulated and real data demonstrate the\n        robustness of the proposed method at fewer scanning repetitions\n        and with random corruption",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/isbi.2015.7163920"
+      },
       "data_year": "2015",
       "location": "New York, NY, USA",
       "dates": "April 16–19, 2015"
@@ -2763,6 +2828,9 @@
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "abstract": "Sparse perfusion deconvolution has been recently proposed to effectively\n        improve the image quality and diagnostic accuracy of low-dose perfusion\n        CT by extracting the complementary information from the high-dose perfusion\n        maps to restore the low-dose using a joint spatio-temporal model. However the\n        low-contrast tissue classes where infarct core and ischemic penumbra usually occur\n        in cerebral perfusion CT tend to be over-smoothed, leading to loss of essential\n        biomarkers. In this paper, we extend this line of work by introducing tissuespecific\n        sparse deconvolution to preserve the subtle perfusion information in the\n        low-contrast tissue classes by learning tissue-specific dictionaries for each tissue\n        class, and restore the low-dose perfusion maps by joining the tissue segments\n        reconstructed from the corresponding dictionaries. Extensive validation on clinical\n        datasets of patients with cerebrovascular disease demonstrates the superior\n        performance of our proposed method with the advantage of better differentiation\n        between abnormal and normal tissue in these patients.",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-642-40811-3_15"
+      },
       "data_year": "2013",
       "location": "Nagoya, Japan",
       "dates": "September 22–26, 2013"
@@ -2787,9 +2855,13 @@
       "type": "Conference",
       "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli.",
       "citation": "MICCAI'12, 15th International Conference on Medical Image Computing and Computer Assisted Intervention, October 1–5, 2012, Nice, France. Lecture Notes in Computer Science, Volume 7510, pp. 272–280",
+      "abstract": "Computational tomography perfusion (CTP) is an important functional imaging modality in the evaluation of cerebrovascular diseases, such as stroke and vasospasm. However, the post-processed parametric maps of blood flow tend to be noisy, especially in low-dose CTP, due to the noisy contrast enhancement profile and the oscillatory nature of the results generated by the current computational methods. In this paper, we propose a novel sparsity-base deconvolution method to estimate cerebral blood flow in CTP performed at low-dose. We first built an overcomplete dictionary from high-dose perfusion maps and then performed deconvolution-based hemodynamic parameters estimation on the low-dose CTP data. Our method is validated on a clinical dataset of ischemic patients. The results show that we achieve superior performance than existing methods, and potentially improve the differentiation between normal and ischemic tissue in the brain.",
       "publication_year": "2012",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-642-33415-3_34"
+      },
       "data_year": "2012",
       "location": "Nice, France",
       "dates": "October 1–5, 2012"
@@ -2803,6 +2875,9 @@
       "image_src": "img/pubs/IEEEImaging.png",
       "label_class": "primary",
       "abstract": "Functional imaging serves as an important supplement to\n        anatomical imaging modalities such as MR and CT in\n        modern health care. In perfusion CT (CTP), hemodynamic\n        parameters are derived from the tracking of the first-pass of\n        the contrast bolus entering a tissue region of interest. In\n        practice, however, the post-processed parametric maps tend\n        to be noisy, especially in low-dose CTP, in part due to the\n        noisy contrast enhancement profile and oscillatory nature of\n        results generated by current computational methods. In this\n        paper, we propose a sparsity-based perfusion parameter\n        deconvolution approach that consists of a non-linear\n        processing based on sparsity prior in terms of residue\n        function dictionaries. Our simulated results from\n        numericaldata and experiments in aneurysmal subarachnoid\n        hemorrhage patients with clinical vasospasm show that the\n        algorithm improves the quality and reduces the noise of the\n        perfusion parametric maps in low-dose CTP, compared to\n        state-of-the-art methods",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/isbi.2012.6235687"
+      },
       "data_year": "2012",
       "location": "Barcelona, Spain",
       "dates": "May 2–5, 2012"
@@ -2816,6 +2891,9 @@
       "image_src": "img/pubs/SPIE.png",
       "label_class": "primary",
       "abstract": "In current computed tomography (CT) examinations, the associated X-ray radiation dose is of significant concern to\n        patients and operators, especially CT perfusion (CTP) imaging that has higher radiation dose due to its cine scanning\n        technique. A simple and cost-effective means to perform the examinations is to lower the milliampere-seconds (mAs)\n        parameter as low as reasonably achievable in data acquisition. However, lowering the mAs parameter will unavoidably\n        increase data noise and degrade CT perfusion maps greatly if no adequate noise control is applied during image\n        reconstruction. To capture the essential dynamics of CT perfusion, a simple spatial-temporal Bayesian method that uses\n        a piecewise parametric model of the residual function is used, and then the model parameters are estimated from a\n        Bayesian formulation of prior smoothness constraints on perfusion parameters. From the fitted residual function, reliable\n        CTP parameter maps are obtained from low dose CT data. The merit of this scheme exists in the combination of\n        analytical piecewise residual function with Bayesian framework using a simpler prior spatial constrain for CT perfusion\n        application. On a dataset of 22 patients, this dynamic spatial-temporal Bayesian model yielded an increase in signal-tonoise-ratio\n        (SNR) of 78% and a decrease in mean-square-error (MSE) of 40% at low dose radiation of 43mA.",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1117/12.911563"
+      },
       "data_year": "2012",
       "location": "San Diego, CA, USA",
       "dates": "February 4–9, 2012"
@@ -2843,6 +2921,9 @@
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "abstract": "We propose a novel approach that applies global optimal tree-metrics\n        graph cuts algorithm on multi-phase contrast enhanced contrast enhanced MRI\n        for liver tumor segmentation. To address the difficulties caused by low\n        contrasted boundaries and high variability in liver tumor segmentation, we first\n        extract a set of features in multi-phase contrast enhanced MRI data and use\n        color-space mapping to reveal spatial-temporal information invisible in MRI\n        intensity images. Then we apply efficient tree-metrics graph cut algorithm on\n        multi-phase contrast enhanced MRI data to obtain global optimal labeling in an\n        unsupervised framework. Finally we use tree-pruning method to reduce the\n        number of available labels for liver tumor segmentation. Experiments on realworld\n        clinical data show encouraging results. This approach can be applied to\n        various medical imaging modalities and organs.",
+      "external_links": {
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-642-28557-8_7"
+      },
       "data_year": "2011",
       "location": "Toronto, ON, Canada",
       "dates": "September 18–22, 2011"
@@ -2872,6 +2953,9 @@
       "image_src": "img/pubs/IEEE.png",
       "label_class": "primary",
       "abstract": "We tackle the problem of brain MRI image segmentation using\n        the tree-metric graph cuts (TM) algorithm, a novel image\n        segmentation algorithm, and introduce a “tree-cutting”\n        method to interpret the labeling returned by the TM algorithm\n        as tissue classification for the input brain MRI image.\n        The approach has three steps: 1) pre-processing, which\n        generates a tree of labels as input to the TM algorithm; 2) a\n        sweep of the TM algorithm, which returns a globally optimal\n        labeling with respect to the tree of labels; 3) post-processing,\n        which involves running the “tree-cutting” method to generate\n        a mapping from labels to tissue classes (GM, WM, CSF),\n        producing a meaningful brain MRI segmentation. The TM\n        algorithm produces a globally optimal labeling on tree metrics\n        in one sweep, unlike conventional methods such as EMS\n        and EM-style geo-cuts, which iterate the expectation maximization\n        algorithm to find hidden patterns and produce only\n        locally optimal labelings. When used with the “tree-cutting”\n        method, the TM algorithm produces brain MRI segmentations\n        that are as good as the Unified Segmentation algorithm used\n        by SPM8, using a much weaker prior. Comparison with the\n        current approaches shows that our method is faster and that\n        our overall segmentation accuracy is better.",
+      "external_links": {
+         "sciencedirect": "https://doi.org/10.1109/wnyipw.2010.5649772"
+      },
       "data_year": "2010",
       "location": "Rochester, NY, USA",
       "dates": "November 2010"
@@ -2881,9 +2965,13 @@
       "type": "Conference",
       "authors": "Chongyang Liu, <strong>Ruogu Fang</strong>, and Nelson H.C.Yung",
       "citation": "4th International Conference on Computer Vision Theory and Applications (VISAPP), February 5–8, 2009, Lisboa, Portugal",
+      "abstract": "Feature density approximation (FDA) based visual object appearance representation is emerging as an effective method for object tracking, but its challenges come from object’s complex motion (e.g. scaling, rotation) and the consequent object’s appearance variation. The traditional adaptive FDA methods extract features in fixed scales ignoring the object’s scale variation, and update FDA by sequential Maximum Likelihood estimation, which lacks robustness for sparse data. In this paper, to solve the above challenges, a robust multi-scale adaptive FDA object representation method is proposed for tracking, and its robust FDA updating method is provided. This FDA achieve robustness by extracting features in the selected scale and estimating feature density using a new likelihood function defined both by feature set and the feature’s effectiveness probability. In FDA updating, robustness is achieved updating FDA in a Bayesian way by MAP-EM algorithm using density prior knowledge extracted from historical density. Object complex motion (e.g. scaling and rotation) is solved by correlating object appearance with its spatial alignment. Experimental results show that this method is efficient for complex motion, and robust in adapting the object appearance variation caused by changing scale, illumination, pose and viewing angel.",
       "publication_year": "2009",
       "image_src": "img/pubs/scitepress.png",
       "label_class": "primary",
+      "external_links": {
+         "sciencedirect": "https://www.scitepress.org/Link.aspx?doi=10.5220/0001802805350540"
+      },
       "data_year": "2009",
       "location": "Lisboa, Portugal",
       "dates": "February 5–8, 2009"
