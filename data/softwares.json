@@ -61,6 +61,18 @@
         {
             "type": "github",
             "url": "https://github.com/lab-smile/CROWN"
+        },
+        {
+            "type": "demo video",
+            "url": "https://www.youtube.com/watch?v=5lte8NtWCP8"
+        },
+        {
+            "type": "CROWN app live",
+            "url": "https://crown-toolkit.vercel.app/"
+        },
+        {
+            "type": "CROWN DICOM",
+            "url": "https://crown-dicom.vercel.app/"
         }
         ]
     },
