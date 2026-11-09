@@ -15,6 +15,19 @@
       "dates": "March 16-20, 2027"
    },
    {
+      "title": "Differentiation of PD, MSA and PSP using clinical data from the prospective AIDP cohort",
+      "type": "Journal",
+      "authors": "Tao Xie, David E. Vaillancourt, Angelos Barmpoutis, Chuanhong Liao, Samuel S. Wu, Jesse C. DeSimone, Hannah Hardegree, Robin Chen, Todd B. Parrish, Weien Wang, Eric Molho, John C. Morgan, David K. Simon, Burton L. Scott, Liana S. Rosenthal, Joseph Seemiller, Stephen N. Gomperts, Anna Goodheart, Rizwan S. Akhtar, David Grimes, Sol De Jesus, Natividad Stover, Ece Bayram, Amy Lin, Adolfo Ramirez-Zamora, Stefan Prokop, <b>Ruogu Fang</b>, John T. Slevin, Prabesh Kanel, Nicolaas I. Bohnen, Paul Tuite, Stephen Aradi, Antonio P. Strafella, Nathaniel Bendahan, Mustafa S. Siddiqui, Albert A. Davis, Xuemei Huang, Jill L. Ostrem, Hubert Fernandez, Irene Litvan, Robert A. Hauser, Alexander Pantelyat, Nikolaus R. McFarland, Michael S. Okun, Alicia Leader, Áine Russell, Hannah Babcock, Cynthia Poon, Eda Yilmaz, Aiko K. De Arth, Ivan Guan, Hanna Lancerio, C. Chauncey Spears, Jaimie Barr, Matthew Salcedo, Erica Botting, Guangwei Du",
+      "citation": "Clinical Parkinsonism & Related Disorders, Vol. 15, 100518, 2026. DOI: 10.1016/j.prdoa.2026.100518",
+      "publication_year": "2026",
+      "image_src": "img/pubs/clinical-parkinsonism-related-disorders.jpg",
+      "label_class": "warning",
+      "external_links": {
+         "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S2590112526000988"
+      },
+      "data_year": "2026"
+   },
+   {
       "title": "Causal discovery identifies pathways linking physical activity to dementia risk in the UK BioBank",
       "type": "Preprint",
       "authors": "Wasif Khan, Panayiotis V. Benos, Joshua K. Wong, <u><b>Ruogu Fang</b></u>",
