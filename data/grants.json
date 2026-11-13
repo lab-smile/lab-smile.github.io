@@ -36,7 +36,7 @@
       "year" : "2023"
    },
    {
-      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Aging (NIA)</h5><h5>Amount: $4.8M</h5><h5>Role: Co-I (PI: David Clark, University of Florida)</h5></div>",
+      "details_html" : "<div><h5>Funding: National Institute of Health, National Institute of Aging (NIA)</h5><h5>Amount: $4.8M</h5><h5>Role: Site PI (PI: David Clark, University of Florida)</h5></div>",
       "links" : [],
       "title_html" : "R01AG081477: Cognitively engaging walking exercise and neuromodulation to enhance brain function in older adults",
       "year" : "2023"
@@ -155,7 +155,9 @@
    {
       "details_html" : "<div><h5>Funding: Oak Ridge Associated Universities (ORAU)</h5><h5>Amoung: $10,000</h5><h5>Role: Principal Investigator</h5></div>",
       "links" : [],
-      "title_html" : "Ralph E. Powe Junior Faculty Enhancement Award",
+      "title_html" : "Ralph E. Powe Junior Faculty Enhancement Award: Modeling, Estimating and Reasoning in Limited Data Brain",
+      "image" : "img/acknowlegements/orau.jpg",
+      "image_alt" : "Oak Ridge Associated Universities (ORAU) logo",
       "year" : "2016"
    },
    {

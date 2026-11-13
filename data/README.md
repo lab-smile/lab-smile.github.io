@@ -15,12 +15,18 @@ add the prefix they need.
 | `softwares.json` | `js/software.js`, `legacy/js/software.js` | `year`, `type`, `title`, `description`, `citation`, `links[]` |
 | `news.json` | `js/news.js`, `legacy/js/content.js` | `date`, `content_html` |
 | `highlights.json` | `js/news.js`, `legacy/js/content.js` | `date`, `image`, `url`, `content_html` |
-| `grants.json` | `js/research-dynamic.js`, `legacy/js/content.js` | `year`, `title_html`, `details_html`, `links[]` |
+| `grants.json` | `js/research-dynamic.js`, `legacy/js/content.js` | `year`, `title_html`, `details_html`, `links[]`, optional `image` / `image_alt` |
 | `projects.json` | `js/research-dynamic.js`, `legacy/js/content.js` | `title_html`, `image`, `image_alt`, `details_html`, `links[]` |
 | `gallery.json` | `js/gallery.js`, `legacy/js/content.js` | `image`, `full_image`, `alt`, `caption_html` |
 
 `*_html` fields hold inline HTML and are inserted verbatim — keep the markup
 minimal and well-formed.
+
+On `research.html`, grants and projects are combined into one Grants & Awards
+list. Matching award numbers (with supplements kept separate) or normalized
+titles bring funding details, descriptions, images, and links into one card.
+Unmatched entries from either file are retained. Grant array order comes first,
+followed by unmatched projects.
 
 ## links
 

@@ -1,10 +1,10 @@
 /**
- * Renders the Funded Projects, Grants & Awards, and Patents sections on
+ * Renders the combined Grants & Awards and Patents sections on
  * research.html from the shared data/ JSON files.
  *
  * Split out of the old canonical-sync.js mirroring pipeline: this page's
  * prose overview is now static markup (see research.html), and this script
- * only owns the three JSON-driven record lists appended after it. Patents
+ * only owns the two JSON-driven record lists appended after it. Patents
  * are the "Patents" rows of data/publications.json, not a file of their own.
  */
 (function () {
@@ -54,10 +54,8 @@
     return svg;
   }
 
-  // Funded projects render each link as the same bordered icon+text chip
-  // publications.js uses for arXiv/ScienceDirect/etc — rather than the plain
-  // gold pill grants and patents use, so a project's link reads as "here's
-  // where to go for more," not just another inline tag. Chips are appended
+  // Grant cards render each link as the same bordered icon+text chip
+  // publications.js uses for arXiv/ScienceDirect/etc. Chips are appended
   // straight into the row passed in (no label, no wrapper) so the toggle
   // (see projectRecord) can sit right next to them on the same line.
   function appendLinkChips(container, links) {
@@ -90,67 +88,9 @@
     return Boolean(holder.textContent.trim() || holder.querySelector('img, video, iframe'));
   }
 
-  // Grants render as a native <details>/<summary> disclosure. The visible
-  // label is styled like the Funded Projects inline toggle, while the entire
-  // summary remains a generous native click target.
-  function disclosureRecord(options) {
-    const disclosure = document.createElement('details');
-    disclosure.className = `research-disclosure ${options.variant || ''}`.trim();
-
-    const summary = document.createElement('summary');
-    summary.className = 'research-disclosure-summary';
-
-    const copy = document.createElement('span');
-    copy.className = 'research-disclosure-copy';
-
-    if (options.meta) {
-      const meta = document.createElement('span');
-      meta.className = 'research-disclosure-meta';
-      meta.textContent = options.meta;
-      copy.appendChild(meta);
-    }
-
-    const title = document.createElement('span');
-    title.className = 'research-disclosure-title';
-    title.innerHTML = options.titleHtml;
-    copy.appendChild(title);
-
-    // Inline toggle label under the title. CSS swaps its open/closed state
-    // from the parent <details> element's native [open] attribute.
-    const toggleBar = document.createElement('span');
-    toggleBar.className = 'research-disclosure-toggle-label';
-    toggleBar.setAttribute('aria-hidden', 'true');
-    const closed = document.createElement('span');
-    closed.className = 'toggle-label-closed';
-    closed.textContent = 'Show more ⌄';
-    const open = document.createElement('span');
-    open.className = 'toggle-label-open';
-    open.textContent = 'Show less ⌃';
-    toggleBar.append(closed, open);
-    copy.appendChild(toggleBar);
-
-    summary.appendChild(copy);
-
-    const body = document.createElement('div');
-    body.className = 'research-disclosure-body';
-
-    if (hasMeaningfulContent(options.detailsHtml)) {
-      const details = document.createElement('div');
-      details.className = 'research-disclosure-details';
-      details.innerHTML = options.detailsHtml;
-      body.appendChild(details);
-    }
-
-    const links = recordLinks(options.links);
-    if (links) body.appendChild(links);
-
-    disclosure.append(summary, body);
-    return disclosure;
-  }
-
   let projectDisclosureCount = 0;
 
-  // Funded projects: title stays outside the collapsible content and is
+  // Grant cards: title stays outside the collapsible content and is
   // always visible. Link chips and the "Show more" button sit together on
   // one always-visible row right under it. The expandable panel is a sibling
   // of that row so it always occupies the full card width when revealed.
@@ -172,10 +112,20 @@
       header.appendChild(imageWrap);
     }
 
+    const copy = document.createElement('span');
+    copy.className = 'research-disclosure-copy';
+    if (options.meta) {
+      const meta = document.createElement('span');
+      meta.className = 'research-disclosure-meta';
+      meta.textContent = options.meta;
+      copy.appendChild(meta);
+    }
     const title = document.createElement('span');
     title.className = 'research-disclosure-title';
     title.innerHTML = options.titleHtml;
-    header.appendChild(title);
+    copy.appendChild(title);
+    header.appendChild(copy);
+    if (!options.image) header.classList.add('research-project-card-header-text-only');
 
     card.appendChild(header);
 
@@ -232,30 +182,36 @@
     return card;
   }
 
-  function fundedProjectsSection(projects) {
-    const section = document.createElement('section');
-    section.className = 'canonical-sync canonical-record-section canonical-research-projects';
-    section.dataset.canonicalSection = 'projects';
-    section.setAttribute('aria-labelledby', 'canonical-projects-heading');
-
-    const heading = document.createElement('h2');
-    heading.id = 'canonical-projects-heading';
-    heading.textContent = 'Funded Projects';
-    section.appendChild(heading);
-
-    const list = document.createElement('div');
-    list.className = 'research-disclosure-list';
-    projects.forEach(project => {
-      list.appendChild(projectRecord({
-        titleHtml: project.title_html,
-        image: project.image,
-        imageAlt: project.image_alt,
-        detailsHtml: project.details_html,
-        links: project.links,
-      }));
+  // Match formatting variants by award number, keeping supplements distinct.
+  // Awards without numbers use normalized titles (some have an extra prefix).
+  function matchingProject(grant, projects) {
+    const normalize = title => title.replace(/<[^>]*>/g, '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    const title = normalize(grant.title_html);
+    const awardNumber = grant.title_html.match(/\d{6,7}/);
+    return projects.find(project => {
+      const projectTitle = normalize(project.title_html);
+      if (title === projectTitle) return true;
+      if (awardNumber) {
+        const projectNumber = project.title_html.match(/\d{6,7}/);
+        return projectNumber && awardNumber[0] === projectNumber[0]
+          && /supplement/i.test(grant.title_html) === /supplement/i.test(project.title_html);
+      }
+      return title.includes(projectTitle) || projectTitle.includes(title);
     });
-    section.appendChild(list);
-    return section;
+  }
+
+  function combinedGrants(grants, projects) {
+    const remaining = new Set(projects);
+    const records = grants.map(grant => {
+      const project = matchingProject(grant, [...remaining]);
+      if (!project) return grant;
+      remaining.delete(project);
+      return Object.assign({}, project, grant, {
+        details_html: (grant.details_html || '') + (project.details_html || ''),
+        links: [...(project.links || []), ...(grant.links || [])],
+      });
+    });
+    return records.concat([...remaining]);
   }
 
   function linkLabel(label, url) {
@@ -325,8 +281,9 @@
     const list = document.createElement('div');
     list.className = 'research-disclosure-list canonical-grants-list';
     grants.forEach(grant => {
-      list.appendChild(disclosureRecord({
-        variant: 'research-grant-disclosure',
+      list.appendChild(projectRecord({
+        image: grant.image,
+        imageAlt: grant.image_alt,
         meta: grant.year,
         titleHtml: grant.title_html,
         detailsHtml: grant.details_html,
@@ -357,8 +314,7 @@
       ]);
       const patentsData = patentRecords(publicationsData);
 
-      mount.appendChild(fundedProjectsSection(projectsData));
-      mount.appendChild(grantsSection(grantsData));
+      mount.appendChild(grantsSection(combinedGrants(grantsData, projectsData)));
       mount.appendChild(patentSection(patentsData));
       document.dispatchEvent(new CustomEvent('research-dynamic-ready'));
     } catch (error) {

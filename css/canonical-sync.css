@@ -57,16 +57,12 @@
 }
 
 
-.canonical-research-projects {
+.canonical-research-grants {
   order: 2;
 }
 
-.canonical-research-grants {
-  order: 3;
-}
-
 .canonical-research-patents {
-  order: 4;
+  order: 3;
 }
 
 .canonical-sync {
@@ -528,6 +524,10 @@
   align-items: center;
   min-height: 5.25rem;
   padding: 1.15rem 1.25rem;
+}
+
+.research-project-card-header.research-project-card-header-text-only {
+  grid-template-columns: minmax(0, 1fr);
 }
 
 .research-disclosure-summary {
