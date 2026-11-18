@@ -15,6 +15,20 @@
       "dates": "March 16-20, 2027"
    },
    {
+      "title": "Brain AI Scientist: An Evidence-Based Multi-Agent System for Translational Neuroimaging in Precision Psychiatry",
+      "type": "Preprint",
+      "authors": "Zeyun Zhao, Lin Gu, <u><b>Ruogu Fang</b></u>",
+      "citation": "arXiv preprint arXiv:2611.18634, 2026.",
+      "publication_year": "2026",
+      "image_src": "img/pubs/arxiv.png",
+      "label_class": "info",
+      "external_links": {
+         "arxiv": "https://arxiv.org/abs/2611.18634"
+      },
+      "abstract": "Resting-state functional magnetic resonance imaging (rs-fMRI) has revealed widespread brain-network alterations in psychiatric disorders, yet translating these findings into individualized clinical decision support remains challenging. Here we introduce Brain AI Scientist, an autonomous multi-agent framework that integrates patient-specific fMRI, clinical information, and scientific evidence through retrieval, verification, and prioritization. Guided by Research Domain Criteria and evidence-based medicine, it builds traceable chains linking phenotypes, anatomical abnormalities, biomarkers, mechanisms, interventions, and validation strategies. In a representative autism case, Brain AI Scientist generated 37 anatomical hypotheses, retained 26 after literature verification, and derived 65 evidence-supported biomarkers from 90 unique publications to generate patient-specific treatment and validation guidance. Across 17 autism spectrum disorder cases, it outperformed GPT-3.5 baselines with and without fMRI impression in evidence grounding, personalization, clinical actionability, and biomarker-treatment reasoning. Brain AI Scientist therefore provides an auditable framework for translating patient-specific neuroimaging into individualized clinical decision support for precision psychiatry.",
+      "data_year": "2026"
+   },
+   {
       "title": "Cerebra: A Multidisciplinary AI Board for Multimodal Dementia Characterization and Risk Assessment",
       "type": "Journal",
       "authors": "Sheng Liu, Long Chen, Zeyun Zhao, Qinglin Gou, Qingyue Wei, Arjun Masurkar, Kevin M. Spiegler, Philip Kuball, Stefania C. Bray, Megan Bernath, Deanna R. Willis, Jiang Bian, Lei Xing, Eric Topol, Kyunghyun Cho, Yu Huang, <b>Ruogu Fang</b>, Narges Razavian, James Zou",
