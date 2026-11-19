@@ -281,7 +281,8 @@
       "label_class": "warning",
       "external_links": {
          "mit": "https://direct.mit.edu/neco/article-abstract/doi/10.1162/NECO.a.1580/139104/Associative-Emotional-Learning-in-Convolutional",
-         "arxiv": "https://arxiv.org/abs/2607.19327"
+         "arxiv": "https://arxiv.org/abs/2607.19327",
+         "github": "https://github.com/lab-smile/FearConditioningAI"
       },
       "data_year": "2026"
    },
@@ -309,7 +310,8 @@
       "label_class": "warning",
       "external_links": {
          "sciencedirect": "https://journals.sagepub.com/doi/10.1177/13872877261457650",
-         "arxiv": "https://arxiv.org/abs/2605.00665"
+         "arxiv": "https://arxiv.org/abs/2605.00665",
+         "github": "https://github.com/lab-smile/DeepRetinaADRisk"
       },
       "data_year": "2026"
    },
@@ -1051,7 +1053,7 @@
       "label_class": "warning",
       "external_links": {
          "sciencedirect": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011351",
-         "github": "https://github.com/lab-smile/DeepDynaForcast"
+         "github": "https://github.com/lab-smile/DeepDynaForecast"
       },
       "abstract": "In the midst of an outbreak or sustained epidemic, reliable prediction of transmission risks and patterns of spread is critical to inform public health programs. Projections of transmission growth or decline among specific risk groups can aid in optimizing interventions, particularly when resources are limited. Phylogenetic trees have been widely used in the detection of transmission chains and high-risk populations. Moreover, tree topology and the incorporation of population parameters (phylodynamics) can be useful in reconstructing the evolutionary dynamics of an epidemic across space and time among individuals. We now demonstrate the utility of phylodynamic trees for transmission modeling and forecasting, developing a phylogeny-based deep learning system, referred to as \\textit{DeepDynaForecast}. Our approach leverages a primal-dual graph learning structure with shortcut multi-layer aggregation, which is suited for the early identification and prediction of transmission dynamics in emerging high-risk groups. We demonstrate the accuracy of \\textit{DeepDynaForecast} using simulated outbreak data and the utility of the learned model using empirical, large-scale data from the human immunodeficiency virus epidemic in Florida between 2012 and 2020. Our framework is available as open-source software (MIT license) at github.com/lab-smile/DeepDynaForcast.",
       "data_year": "2024"
@@ -1095,7 +1097,8 @@
       "image_src": "img/pubs/scitepress.png",
       "label_class": "primary",
       "external_links": {
-         "sciencedirect": "https://doi.org/10.5220/0012375400003657"
+         "sciencedirect": "https://doi.org/10.5220/0012375400003657",
+         "github": "https://github.com/lab-smile/HIV_Risk_Pred"
       },
       "abstract": "Improving the diagnosis of HIV is a fundamental objective of the Ending the HIV Epidemic initiative, as it represents the initial step toward treatment and achieving undetectable status, thereby reducing transmission. To attain these objectives effectively, it is crucial to identify the groups most susceptible to HIV, allowing interventions to be tailored to their specific needs. In this study, we developed a predictive model designed to assess individual HIV risk within a high-risk contact network predicting treatment or at-risk leveraging surveillance data collected through routine HIV case interviews in Florida. Unique to our analysis, we explored the incorporation of behavioral network information with Graph Neural Networks to enhance the predictive capacity for identifying individuals within the treatment or intervention categories, when compared to models that mainly consider conventional HIV risk factors. Our deployed Graph Isomorphism Network achieved 77.3% and 73.2% balanced accuracy in inductive and transductive learning scenarios respectively, outperforming the traditional prediction algorithms that do not leverage the network structure. We then used our model to further investigate the importance of demographic and behavioral factors in the HIV risk prediction process. Our findings provide valuable insights for healthcare practitioners and policymakers in their efforts to combat HIV infection.",
       "data_year": "2024",
@@ -1127,7 +1130,8 @@
       "image_src": "img/pubs/IMAGNeuro.png",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00090/119208/Precise-and-Rapid-Whole-Head-Segmentation-from"
+         "sciencedirect": "https://direct.mit.edu/imag/article/doi/10.1162/imag_a_00090/119208/Precise-and-Rapid-Whole-Head-Segmentation-from",
+         "github": "https://github.com/lab-smile/GRACE"
       },
       "abstract": "Whole-head segmentation from Magnetic Resonance Images (MRI) establishes the foundation for individualized computational models using finite element method (FEM). This foundation paves the path for computer-aided solutions in fields, particularly in non-invasive brain stimulation. Most current automatic head segmentation tools are developed using healthy young adults. Thus, they may neglect the older population that is more prone to age-related structural decline such as brain atrophy. In this work, we present a new deep learning method called GRACE, which stands for General, Rapid, And Comprehensive whole-hEad tissue segmentation. GRACE is trained and validated on a novel dataset that consists of 177 manually corrected MR-derived reference segmentations that have undergone meticulous manual review. Each T1-weighted MRI volume is segmented into 11 tissue types, including white matter, grey matter, eyes, cerebrospinal fluid, air, blood vessel, cancellous bone, cortical bone, skin, fat, and muscle. To the best of our knowledge, this work contains the largest manually corrected dataset to date in terms of number of MRIs and segmented tissues. GRACE outperforms five freely available software tools and a traditional 3D U-Net on a five-tissue segmentation task. On this task, GRACE achieves an average Hausdorff Distance of 0.21, which exceeds the runner-up at an average Hausdorff Distance of 0.36. GRACE can segment a whole-head MRI in about 3 seconds, while the fastest software tool takes about 3 minutes. In summary, GRACE segments a spectrum of tissue types from older adults T1-MRI scans at favorable accuracy and speed. The trained GRACE model is optimized on older adult heads to enable high-precision modeling in age-related brain disorders. To support open science, the GRACE code and trained weights will be made available online and open to the research community upon publication.",
       "data_year": "2024"
@@ -1214,7 +1218,7 @@
       "label_class": "primary",
       "external_links": {
          "sciencedirect": "https://conferences.miccai.org/2023/papers/219-Paper3114.html",
-         "github": "https://github.com/lab-smile/DOMINOplusplus",
+         "github": "https://github.com/lab-smile/DOMINOPlusPlus",
          "arxiv": "https://arxiv.org/abs/2308.10453"
       },
       "data_year": "2023",
@@ -1549,7 +1553,8 @@
       "label_class": "warning",
       "external_links": {
          "sciencedirect": "https://www.sciencedirect.com/science/article/abs/pii/S0925231221015642",
-         "arxiv": "https://arxiv.org/abs/2110.02417"
+         "arxiv": "https://arxiv.org/abs/2110.02417",
+         "github": "https://github.com/lab-smile/CADA"
       },
       "abstract": "Recently, deep neural networks have demonstrated comparable and even better performance than board-certified ophthalmologists in well-annotated datasets. However, the diversity of retinal imaging devices poses a significant challenge: domain shift, which leads to performance degradation when applying the deep learning models trained on one domain to new testing domains. In this paper, we propose a multi-scale input along with multiple domain adaptors applied hierarchically in both feature and output spaces. The proposed training strategy and novel unsupervised domain adaptation framework, called Collaborative Adversarial Domain Adaptation (CADA), can effectively overcome the challenge. Multi-scale inputs can reduce the information loss due to the pooling layers used in the network for feature extraction, while our proposed CADA is an interactive paradigm that presents an exquisite collaborative adaptation through both adversarial learning and ensembling weights at different network layers. In particular, to produce a better prediction for the unlabeled target domain data, we simultaneously achieve domain invariance and model generalizability via adversarial learning at multi-scale outputs from different levels of network layers and maintaining an exponential moving average (EMA) of the historical weights during training. Without annotating any sample from the target domain, multiple adversarial losses in encoder and decoder layers guide the extraction of domain-invariant features to confuse the domain classifier. Meanwhile, the ensembling of weights via EMA reduces the uncertainty of adapting multiple discriminator learning. Comprehensive experimental results demonstrate that our CADA model incorporating multi-scale input training can overcome performance degradation and outperform state-of-the-art domain adaptation methods in segmenting retinal optic disc and cup from fundus images stemming from the REFUGE, Drishti-GS, and Rim-One-r3 datasets. The code will be available at https://github.com/cswin/CADA",
       "data_year": "2021"
@@ -1697,7 +1702,8 @@
       "image_src": "img/pubs/journal_of%20clinical%20and%20translational%20science.jpg",
       "label_class": "primary",
       "external_links": {
-         "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/66361-tl1-team-approach-to-predicting-response-to-spinal-cord-stimulation-for-chronic-low-back-pain/DDE70E18EAF3E88623DFC9F5645CC278"
+         "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/66361-tl1-team-approach-to-predicting-response-to-spinal-cord-stimulation-for-chronic-low-back-pain/DDE70E18EAF3E88623DFC9F5645CC278",
+         "github": "https://github.com/lab-smile/EEGAILab"
       },
       "data_year": "2021"
    },
@@ -1812,7 +1818,8 @@
       "image_src": "img/pubs/journal_of%20clinical%20and%20translational%20science.jpg",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/4085-tl1-team-approach-to-predicting-shortterm-and-longterm-effects-of-spinal-cord-stimulation/9040EFDA2EB3ABE295E5B662DC0F4C33#article"
+         "sciencedirect": "https://www.cambridge.org/core/journals/journal-of-clinical-and-translational-science/article/4085-tl1-team-approach-to-predicting-shortterm-and-longterm-effects-of-spinal-cord-stimulation/9040EFDA2EB3ABE295E5B662DC0F4C33#article",
+         "github": "https://github.com/lab-smile/EEGAILab"
       },
       "abstract": "OBJECTIVES/GOALS: Spinal cord stimulation (SCS) is an intervention for patients with chronic back pain. Technological advances have led to renewed optimism in the field, but mechanisms of action in the brain remain poorly understood. We hypothesize that SCS outcomes will be associated with changes in neural oscillations.\n\n            METHODS/STUDY POPULATION: The goal of our team project is to test patients who receive SCS at 3 times points: baseline, at day 7 during the trial period, and day 180 after a permanent system has been implanted. At each time point participants will complete 10 minutes of eyes closed, resting electroencephalography (EEG). EEG will be collected with the ActiveTwo system, a 128-electrode cap, and a 256 channel AD box from BioSemi. Traditional machine learning methods such as support vector machine and more complex models including deep learning will be used to generate interpretable features within resting EEG signals.\n\n            RESULTS/ANTICIPATED RESULTS: Through machine learning, we anticipate that SCS will have a significant effect on resting alpha and beta power in sensorimotor cortex. DISCUSSION/SIGNIFICANCE OF\n\n            IMPACT: This collaborative project will further the application of machine learning in cognitive neuroscience and allow us to better understand how therapies for chronic pain alter resting brain activity.",
       "data_year": "2020"
@@ -2063,7 +2070,8 @@
       "image_src": "img/pubs/MIA.gif",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841518307734?dgcid=author"
+         "sciencedirect": "https://www.sciencedirect.com/science/article/pii/S1361841518307734?dgcid=author",
+         "github": "https://github.com/lab-smile/EvoNet"
       },
       "abstract": "Deep convolutional neural networks offer state-of-the-art performance for medical image analysis. However, their architectures are manually designed for particular problems. On the one hand, a manual designing process requires many trials to tune a large number of hyperparameters and is thus quite a time-consuming task. On the other hand, the fittest hyperparameters that can adapt to source data properties (e.g., sparsity, noisy features) are not able to be quickly identified for target data properties. For instance, the realistic noise in medical images is usually mixed and complicated, and sometimes unknown, leading to challenges in applying existing methods directly and creating effective denoising neural networks easily. In this paper, we present a Genetic Algorithm (GA)-based network evolution approach to search for the fittest genes to optimize network structures automatically. We expedite the evolutionary process through an experience-based greedy exploration strategy and transfer learning. Our evolutionary algorithm procedure has flexibility, which allows taking advantage of current state-of-the-art modules (e.g., residual blocks) to search for promising neural networks. We evaluate our framework on a classic medical image analysis task: denoising. The experimental results on computed tomography perfusion (CTP) image denoising demonstrate the capability of the method to select the fittest genes for building high-performance networks, named EvoNets. Our results outperform state-of-the-art methods consistently at various noise levels.",
       "data_year": "2019"
@@ -2660,7 +2668,8 @@
       "image_src": "img/pubs/IEEEMedical.jpg",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7046356"
+         "sciencedirect": "http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7046356",
+         "github": "https://github.com/lab-smile/ttv"
       },
       "abstract": "Acute brain diseases such as acute strokes and\n        transit ischemic attacks are the leading causes of mortality and\n        morbidity worldwide, responsible for 9% of total death every\n        year. ‘Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational\n        framework for hemodynamic parameters estimation\n        can save critical time for thrombolytic therapy. Meanwhile the\n        high level of accumulated radiation dosage due to continuous\n        image acquisition in CT perfusion (CTP) raised concerns on\n        patient safety and public health. However, low-radiation leads to\n        increased noise and artifacts which require more sophisticated\n        and time-consuming algorithms for robust estimation. In this\n        paper, we focus on developing a robust and efficient framework\n        to accurately estimate the perfusion parameters at low radiation\n        dosage. Specifically, we present a tensor total-variation (TTV)\n        technique which fuses the spatial correlation of the vascular\n        structure and the temporal continuation of the blood signal flow.\n        An efficient algorithm is proposed to find the solution with fast\n        convergence and reduced computational complexity. Extensive\n        evaluations are carried out in terms of sensitivity to noise levels,\n        estimation accuracy, contrast preservation, and performed on\n        digital perfusion phantom estimation, as well as in-vivo clinical\n        subjects. Our framework reduces the necessary radiation dose\n        to only 8% of the original level and outperforms the state-of-art\n        algorithms with peak signal-to-noise ratio improved by 32%. It\n        reduces the oscillation in the residue functions, corrects overestimation\n        of cerebral blood flow (CBF) and under-estimation of\n        mean transit time (MTT), and maintains the distinction between\n        the deficit and normal regions.",
       "data_year": "2015"
@@ -2816,7 +2825,8 @@
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
-         "sciencedirect": "http://users.cis.fiu.edu/~rfang/projects/ttv.html"
+         "sciencedirect": "http://users.cis.fiu.edu/~rfang/projects/ttv.html",
+         "github": "https://github.com/lab-smile/ttv"
       },
       "abstract": "Acute brain diseases such as acute stroke and transit ischemic attacks\n        are the leading causes of mortality and morbidity worldwide, responsible for 9%\n        of total death every year. ‘Time is brain' is a widely accepted concept in acute\n        cerebrovascular disease treatment. Efficient and accurate computational framework\n        for hemodynamic parameters estimation can save critical time for thrombolytic\n        therapy. Meanwhile the high level of accumulated radiation dosage due to\n        continuous image acquisition in CT perfusion (CTP) raised concerns on patient\n        safety and public health. However, low-radiation will lead to increased noise and\n        artifacts which require more sophisticated and time-consuming algorithms for\n        robust estimation. We propose a novel efficient framework using tensor totalvariation\n        (TTV) regularization to achieve both high efficiency and accuracy in\n        deconvolution for low-dose CTP. The method reduces the necessary radiation\n        dose to only 8% of the original level and outperforms the state-of-art algorithms\n        with estimation error reduced by 40%. It also corrects over-estimation of cerebral\n        blood flow (CBF) and under-estimation of mean transit time (MTT), at both normal\n        and reduced sampling rate. An efficient",
       "data_year": "2014",
@@ -2856,7 +2866,8 @@
       "image_src": "img/pubs/MIA.gif",
       "label_class": "warning",
       "external_links": {
-         "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S1361841513000194"
+         "sciencedirect": "http://www.sciencedirect.com/science/article/pii/S1361841513000194",
+         "github": "https://github.com/lab-smile/SPD"
       },
       "abstract": "Computed tomography perfusion (CTP) is an important functional imaging modality in the evaluation of cerebrovascular diseases,\n        particularly in acute stroke and vasospasm. However, the post-processed parametric maps of blood flow tend to be noisy,\n        especially in low-dose CTP, due to the noisy contrast enhancement profile and the oscillatory nature of the results generated by\n        the current computational methods. In this paper, we propose a robust sparse perfusion deconvolution method (SPD) to estimate\n        cerebral blood flow in CTP performed at low radiation dose. We first build a dictionary from high-dose perfusion maps using online\n        dictionary learning and then perform deconvolution-based hemodynamic parameters estimation on the low-dose CTP data. Our\n        method is validated on clinical data of patients with normal and pathological CBF maps. The results show that we achieve superior\n        performance than existing methods, and potentially improve the differentiation between normal and ischemic tissue in the brain.",
       "data_year": "2013"
@@ -2902,7 +2913,8 @@
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
       "external_links": {
-         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-642-33415-3_34"
+         "sciencedirect": "https://link.springer.com/chapter/10.1007/978-3-642-33415-3_34",
+         "github": "https://github.com/lab-smile/SPD"
       },
       "data_year": "2012",
       "location": "Nice, France",
