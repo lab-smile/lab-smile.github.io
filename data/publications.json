@@ -177,7 +177,8 @@
       "image_src": "img/pubs/BMES.jpg",
       "label_class": "primary",
       "external_links": {
-         "sciencedirect": "https://www.bmes.org/2026/annualmeeting"
+         "sciencedirect": "https://www.bmes.org/2026/annualmeeting",
+         "github": "https://github.com/lab-smile/tdcs_clinico_demo_prediction"
       },
       "data_year": "2026"
    },
@@ -351,7 +352,10 @@
       "label_class": "primary",
       "data_year": "2026",
       "location": "New York, NY, USA",
-      "dates": "July 31 – August 2, 2026"
+      "dates": "July 31 – August 2, 2026",
+      "external_links": {
+         "github": "https://github.com/lab-smile/tDCS_Jmap_Outcome_Prediction"
+      }
    },
    {
       "title": "Predicting Response to Combined BAT and tDCS in Knee Osteoarthritis Using Machine Learning and Baseline Neuroimaging",
@@ -375,7 +379,10 @@
       "label_class": "primary",
       "data_year": "2026",
       "location": "New York, NY, USA",
-      "dates": "July 31 – August 2, 2026"
+      "dates": "July 31 – August 2, 2026",
+      "external_links": {
+         "github": "https://github.com/lab-smile/CROWN"
+      }
    },
    {
       "title": "Editorial: Artificial Intelligence in Biomedical Engineering",
@@ -539,7 +546,8 @@
       "label_class": "warning",
       "external_links": {
          "sciencedirect": "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2026.1703004/full",
-         "arxiv": "https://arxiv.org/html/2505.22673v1"
+         "arxiv": "https://arxiv.org/html/2505.22673v1",
+         "github": "https://github.com/lab-smile/MAGIC"
       },
       "abstract": "Perfusion imaging is extensively utilized to assess hemodynamic status and tissue perfusion in various organs. Computed tomography perfusion (CTP) imaging plays a key role in the early assessment and planning of stroke treatment. While CTP provides essential perfusion parameters to identify abnormal blood flow in the brain. However, CTP can be expensive with limited accessibility, and the use of contrast agents in CTP can lead to allergic reactions and adverse side effects. To address these challenges, we propose a novel deep learning framework called Multitask Automated Generation of Intermodal CT perfusion maps (MAGIC). This framework combines generative artificial intelligence and physiological information to map non-contrast computed tomography (CT) imaging to multiple contrast-free CTP imaging maps. We demonstrate enhanced image fidelity by incorporating physiological characteristics into the loss terms. Our network was trained and validated using CT image data from patients referred for stroke at UF Health and demonstrated robustness to abnormalities in brain perfusion activity. A double-blinded study was conducted involving seven experienced neuroradiologists and vascular neurologists. This study validated MAGIC's visual quality and diagnostic accuracy showing favorable performance compared to clinical perfusion imaging with intravenous contrast injection. Overall, MAGIC holds great promise in revolutionizing healthcare by offering contrast-free, cost-effective, and rapid perfusion imaging.",
       "data_year": "2026"
