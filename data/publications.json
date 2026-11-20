@@ -1,5 +1,18 @@
 [
    {
+      "title": "Characterizing Age-Conditioned Affective Reasoning in Vision-Language Models",
+      "type": "Preprint",
+      "authors": "Shahriyar Zaman Ridoy, Azmine Toushik Wasi, Lin Gu, <u><b>Ruogu Fang</b></u>",
+      "citation": "arXiv preprint arXiv:2611.25593, 2026. Under review.",
+      "publication_year": "2026",
+      "image_src": "img/pubs/arxiv.png",
+      "label_class": "info",
+      "external_links": {
+         "arxiv": "https://arxiv.org/abs/2611.25593"
+      },
+      "data_year": "2026"
+   },
+   {
       "title": "An Agentic Multimodal Digital Care Team for Dementia Diagnosis",
       "type": "Conference",
       "authors": "Qinglin Gou, Zeyun Zhao, Xuguang Ai, <b>Ruogu Fang</b>, Jiang Bian, Yu Huang",
@@ -92,6 +105,9 @@
       "publication_year": "2026",
       "image_src": "img/pubs/jbhireview.png",
       "label_class": "warning",
+      "external_links": {
+         "github": "https://github.com/zeyunZhao/Supplementary-for-the-Survey"
+      },
       "data_year": "2026"
    },
    {
