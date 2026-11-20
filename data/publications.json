@@ -92,6 +92,9 @@
       "publication_year": "2026",
       "image_src": "img/pubs/jbhireview.png",
       "label_class": "warning",
+      "external_links": {
+         "github": "https://github.com/zeyunZhao/Supplementary-for-the-Survey"
+      },
       "data_year": "2026"
    },
    {
