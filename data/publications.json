@@ -1,18 +1,5 @@
 [
    {
-      "title": "Characterizing Age-Conditioned Affective Reasoning in Vision-Language Models",
-      "type": "Preprint",
-      "authors": "Shahriyar Zaman Ridoy, Azmine Toushik Wasi, Lin Gu, <u><b>Ruogu Fang</b></u>",
-      "citation": "arXiv preprint arXiv:2611.25593, 2026. Under review.",
-      "publication_year": "2026",
-      "image_src": "img/pubs/arxiv.png",
-      "label_class": "info",
-      "external_links": {
-         "arxiv": "https://arxiv.org/abs/2611.25593"
-      },
-      "data_year": "2026"
-   },
-   {
       "title": "An Agentic Multimodal Digital Care Team for Dementia Diagnosis",
       "type": "Conference",
       "authors": "Qinglin Gou, Zeyun Zhao, Xuguang Ai, <b>Ruogu Fang</b>, Jiang Bian, Yu Huang",
@@ -26,6 +13,19 @@
       "data_year": "2027",
       "location": "Barcelona, Spain (and online)",
       "dates": "March 16-20, 2027"
+   },
+   {
+      "title": "Characterizing Age-Conditioned Affective Reasoning in Vision-Language Models",
+      "type": "Preprint",
+      "authors": "Shahriyar Zaman Ridoy, Azmine Toushik Wasi, Lin Gu, <u><b>Ruogu Fang</b></u>",
+      "citation": "arXiv preprint arXiv:2611.25593, 2026. Under review.",
+      "publication_year": "2026",
+      "image_src": "img/pubs/arxiv.png",
+      "label_class": "info",
+      "external_links": {
+         "arxiv": "https://arxiv.org/abs/2611.25593"
+      },
+      "data_year": "2026"
    },
    {
       "title": "Brain AI Scientist: An Evidence-Based Multi-Agent System for Translational Neuroimaging in Precision Psychiatry",
