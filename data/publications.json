@@ -2,7 +2,7 @@
    {
       "title": "An Agentic Multimodal Digital Care Team for Dementia Diagnosis",
       "type": "Conference",
-      "authors": "Qinglin Gou<sup>1</sup>, Zeyun Zhao<sup>2,3</sup>, Xuguang Ai<sup>4</sup>, <b>Ruogu Fang</b><sup>2,3</sup>, Jiang Bian<sup>4,5</sup>, Yu Huang<sup>4,5</sup>",
+      "authors": "Qinglin Gou, Zeyun Zhao, Xuguang Ai, <b>Ruogu Fang</b>, Jiang Bian, Yu Huang",
       "citation": "International Conference on Alzheimer's and Parkinson's Diseases and related neurological disorders (AD/PD™ 2027), accepted poster presentation.",
       "publication_year": "March 2027",
       "image_src": "img/pubs/ADPD2027-1.png",
@@ -540,7 +540,7 @@
    {
       "title": "Diagnostically competitive performance of a physiology-informed generative multi-task network for contrast-free CT perfusion",
       "type": "Journal",
-      "authors": "Wasif Khan, Kyle B. See, Simon Kato, Ziqian Huang, Amy Lazarte, Kyle Douglas, Xiangyang Lou, Teng J. Peng, Dhanashree Rajderkar, John Rees, Pina Sanelli,Amita Singh, Ibrahim Tuna, Christina A. Wilson, <b><u>Ruogu Fang</b></u>",
+      "authors": "Wasif Khan, Kyle B. See, Simon Kato, Ziqian Huang, Amy Lazarte, Kyle Douglas, Xiangyang Lou, Teng J. Peng, Dhanashree Rajderkar, John Rees, Pina Sanelli, Amita Singh, Ibrahim Tuna, Christina A. Wilson, <b><u>Ruogu Fang</u></b>",
       "citation": "Frontiers in Human Neuroscience",
       "publication_year": "January 2026",
       "image_src": "img/pubs/frontiers-in-human-neuroscience.png",
@@ -674,7 +674,7 @@
    {
       "title": "Impacts of Head Tissue Variability on Predicted Current Density in Aging Brains",
       "type": "Conference",
-      "authors": "Hart G.M., Silva G. L., Busch T.A., Iversen K. D., <b> Fang R.</b>, Woods A., Queen A. I.",
+      "authors": "Hart G.M., Silva G. L., Busch T.A., Iversen K. D., <b>Fang R.</b>, Woods A., Queen A. I.",
       "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 8–12, 2025, San Diego, CA, USA",
       "publication_year": "October 2025",
       "image_src": "img/pubs/BMES.jpg",
@@ -699,7 +699,7 @@
          "arxiv": "https://arxiv.org/pdf/2508.14461",
          "github": "https://siwensun.github.io/ouroboros-project/"
       },
-      "abstract": "While multi-step diffusion models have advanced both forward and inverse rendering, existing approaches often treat these problems independently, leading to cycle inconsistency and slow inference speed. In this work, we presentOuroboros, a framework composed of two single-step diffusion models that handle forward and inverse rendering with mutual reinforcement. Our approach extends intrinsic decomposition to both indoor and outdoor scenes and introduces a cycle consistency mechanism that ensures coherence between forward and inverse rendering outputs. Experimental results demonstrate state-of-the-art performance across diverse scenes while achieving substantially faster inference speed compared to other diffusion-based methods. We also demonstrate that Ouroboroscan transfer*Equal contribution.†Corresponding authors.to video decomposition in a training-free manner, reducing temporal inconsistency in video sequences while maintaining high-quality per-frame inverse rendering.",
+      "abstract": "While multi-step diffusion models have advanced both forward and inverse rendering, existing approaches often treat these problems independently, leading to cycle inconsistency and slow inference speed. In this work, we present Ouroboros, a framework composed of two single-step diffusion models that handle forward and inverse rendering with mutual reinforcement. Our approach extends intrinsic decomposition to both indoor and outdoor scenes and introduces a cycle consistency mechanism that ensures coherence between forward and inverse rendering outputs. Experimental results demonstrate state-of-the-art performance across diverse scenes while achieving substantially faster inference speed compared to other diffusion-based methods. We also demonstrate that Ouroboros can transfer to video decomposition in a training-free manner, reducing temporal inconsistency in video sequences while maintaining high-quality per-frame inverse rendering.",
       "data_year": "2025",
       "location": "Honolulu, HI, USA",
       "dates": "October 19–23, 2025"
@@ -784,7 +784,7 @@
    {
       "title": "Automated Imaging Differentiation for Parkinsonism",
       "type": "Journal",
-      "authors": "David E. Vaillancourt, Angelos Barmpoutis, Samuel S. Wu, Jesse C. DeSimone, Marissa Schauder, Robin Chen, Todd B. Parrish, Wei-en Wang, Eric Molho, John C. Morgan, David K. Simon, Burton L. Scott, Liana S. Rosenthal, Stephen N. Gomperts, Rizwan S. Akhtar, David Grimes, Sol De Jesus, Natividad Stover, Ece Bayram, Adolfo Ramirez-Zamora, Stefan Prokop, <b> Ruogu Fang</b>, John T. Slevin, Prabesh Kanel, Nicolaas I. Bohnen, Paul Tuite, Stephen Aradi, Antonio P. Strafella, Mustafa S. Siddiqui, Albert A. Davis, Xuemei Huang, Jill L. Ostrem, Hubert Fernandez, Irene Litvan, Robert A. Hauser, Alexander Pantelyat, Nikolaus R. McFarland, Tao Xie, Michael S. Okun, and the AIDP Study Group",
+      "authors": "David E. Vaillancourt, Angelos Barmpoutis, Samuel S. Wu, Jesse C. DeSimone, Marissa Schauder, Robin Chen, Todd B. Parrish, Wei-en Wang, Eric Molho, John C. Morgan, David K. Simon, Burton L. Scott, Liana S. Rosenthal, Stephen N. Gomperts, Rizwan S. Akhtar, David Grimes, Sol De Jesus, Natividad Stover, Ece Bayram, Adolfo Ramirez-Zamora, Stefan Prokop, <b>Ruogu Fang</b>, John T. Slevin, Prabesh Kanel, Nicolaas I. Bohnen, Paul Tuite, Stephen Aradi, Antonio P. Strafella, Mustafa S. Siddiqui, Albert A. Davis, Xuemei Huang, Jill L. Ostrem, Hubert Fernandez, Irene Litvan, Robert A. Hauser, Alexander Pantelyat, Nikolaus R. McFarland, Tao Xie, Michael S. Okun, and the AIDP Study Group",
       "citation": "JAMA Neurology | Original Investigation | AI IN NEUROLOGY",
       "publication_year": "2025",
       "image_src": "img/pubs/JAMA_Neurology.png",
@@ -799,7 +799,7 @@
       "title": "Practical considerations in modeling tDCS in older adults",
       "type": "Conference",
       "authors": "Aprinda Indahlastari, Alejandro Albizu, Skylar Stolte, <b>Ruogu Fang</b>, Adam Woods",
-      "citation": "6th International Brain Stimulation Conference | Kobe, Japan <br> Brain Stimulation, volume 18, issue 1, pages 332-333 (2025)",
+      "citation": "6th International Brain Stimulation Conference | Kobe, Japan; Brain Stimulation, volume 18, issue 1, pages 332-333 (2025)",
       "publication_year": "February 23–26, 2025",
       "image_src": "img/pubs/BrainStimulation2025.png",
       "label_class": "primary",
@@ -814,8 +814,8 @@
    {
       "title": "Building tDCS Digital Twins: AI-Powered Prediction of Personalized Electrical Field Maps from MRI",
       "type": "Conference",
-      "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods,<u><b> Ruogu Fang </b></u>",
-      "citation": "6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan ",
+      "authors": "Skylar E. Stolte, Aprinda Indahlastari, Alejandro Albizu, Adam J. Woods, <u><b>Ruogu Fang</b></u>",
+      "citation": "6th International Brain Stimulation Conference, 23–26 February 2025 | Kobe, Japan",
       "publication_year": "23–26 February 2025",
       "image_src": "img/pubs/BrainStimulation2025.png",
       "label_class": "primary",
@@ -830,7 +830,7 @@
    {
       "title": "Baseline Clinical Markers and Machine Learning-Based Prediction of tDCS Treatment Outcomes in Anxiety Disorders",
       "type": "Conference",
-      "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b> Ruogu Fang </b></u>",
+      "authors": "Junfu Cheng, Daniel Rodriguez, Aprinda Indahlastari, Adam Woods, <u><b>Ruogu Fang</b></u>",
       "citation": "6th International Brain Stimulation Conference, February 23–26, 2025, Kobe, Japan",
       "publication_year": "23–26 February 2025",
       "image_src": "img/pubs/BrainStimulation2025.png",
@@ -860,7 +860,7 @@
    {
       "title": "Baseline Clinical Characteristics and Machine Learning Predict tDCS Treatment Outcomes for Anxiety",
       "type": "Conference",
-      "authors": "Daniel Rodriguez, Junfu Cheng, Skylar Stolte, Aprinda Queen, Adam Woods,<b><u>Ruogu Fang</u></b>",
+      "authors": "Daniel Rodriguez, Junfu Cheng, Skylar Stolte, Aprinda Queen, Adam Woods, <b><u>Ruogu Fang</u></b>",
       "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 23–26, 2024, Baltimore, MD, USA",
       "publication_year": "2024",
       "image_src": "img/pubs/BMES.jpg",
@@ -876,7 +876,7 @@
    {
       "title": "Comparison of GRACE and SynthSeg Deep Learning Models for Whole-Head Brain Segmentation",
       "type": "Conference",
-      "authors": "Jason Chen, Veronica Ramos, Skylar Stolte, Aprinda Indahlastari, Adam Woods,<b><u>Ruogu Fang</u></b>",
+      "authors": "Jason Chen, Veronica Ramos, Skylar Stolte, Aprinda Indahlastari, Adam Woods, <b><u>Ruogu Fang</u></b>",
       "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 23–26, 2024, Baltimore, MD, USA",
       "publication_year": "2024",
       "image_src": "img/pubs/BMES.jpg",
@@ -889,7 +889,7 @@
    {
       "title": "Phylogenetic-informed graph deep learning to classify dynamic transmission clusters in infectious disease epidemics",
       "type": "Journal",
-      "authors": "Chaoyue Sun, Yanjun Li, Simone Marini, Alberto Riva, Dapeng Oliver Wu, <b>Ruogu Fang </b>, Marco Salemi, Brittany Rife Magalis",
+      "authors": "Chaoyue Sun, Yanjun Li, Simone Marini, Alberto Riva, Dapeng Oliver Wu, <b>Ruogu Fang</b>, Marco Salemi, Brittany Rife Magalis",
       "citation": "Bioinformatics Advances, Volume 4, Issue 1, 2024",
       "publication_year": "November 2024",
       "image_src": "img/pubs/BioinformaticsAdvances.png",
@@ -978,7 +978,7 @@
    {
       "title": "Neural Responses to Natural Versus AI-generated Affective Images",
       "type": "Abstract",
-      "authors": "Yujun Chen, Faith Gilbert, Ethan Smith, <b><u>Ruogu Fang </u></b>, Andreas Keil, Mingzhou Ding",
+      "authors": "Yujun Chen, Faith Gilbert, Ethan Smith, <b><u>Ruogu Fang</u></b>, Andreas Keil, Mingzhou Ding",
       "citation": "Vision Sciences Society Annual Meeting Abstract  |   September 2024",
       "publication_year": "September 2024",
       "image_src": "img/pubs/VSS.png",
@@ -1064,7 +1064,7 @@
          "sciencedirect": "https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1011351",
          "github": "https://github.com/lab-smile/DeepDynaForecast"
       },
-      "abstract": "In the midst of an outbreak or sustained epidemic, reliable prediction of transmission risks and patterns of spread is critical to inform public health programs. Projections of transmission growth or decline among specific risk groups can aid in optimizing interventions, particularly when resources are limited. Phylogenetic trees have been widely used in the detection of transmission chains and high-risk populations. Moreover, tree topology and the incorporation of population parameters (phylodynamics) can be useful in reconstructing the evolutionary dynamics of an epidemic across space and time among individuals. We now demonstrate the utility of phylodynamic trees for transmission modeling and forecasting, developing a phylogeny-based deep learning system, referred to as \\textit{DeepDynaForecast}. Our approach leverages a primal-dual graph learning structure with shortcut multi-layer aggregation, which is suited for the early identification and prediction of transmission dynamics in emerging high-risk groups. We demonstrate the accuracy of \\textit{DeepDynaForecast} using simulated outbreak data and the utility of the learned model using empirical, large-scale data from the human immunodeficiency virus epidemic in Florida between 2012 and 2020. Our framework is available as open-source software (MIT license) at github.com/lab-smile/DeepDynaForcast.",
+      "abstract": "In the midst of an outbreak or sustained epidemic, reliable prediction of transmission risks and patterns of spread is critical to inform public health programs. Projections of transmission growth or decline among specific risk groups can aid in optimizing interventions, particularly when resources are limited. Phylogenetic trees have been widely used in the detection of transmission chains and high-risk populations. Moreover, tree topology and the incorporation of population parameters (phylodynamics) can be useful in reconstructing the evolutionary dynamics of an epidemic across space and time among individuals. We now demonstrate the utility of phylodynamic trees for transmission modeling and forecasting, developing a phylogeny-based deep learning system, referred to as DeepDynaForecast. Our approach leverages a primal-dual graph learning structure with shortcut multi-layer aggregation, which is suited for the early identification and prediction of transmission dynamics in emerging high-risk groups. We demonstrate the accuracy of DeepDynaForecast using simulated outbreak data and the utility of the learned model using empirical, large-scale data from the human immunodeficiency virus epidemic in Florida between 2012 and 2020. Our framework is available as open-source software (MIT license) at github.com/lab-smile/DeepDynaForcast.",
       "data_year": "2024"
    },
    {
@@ -1117,7 +1117,7 @@
    {
       "title": "Deep Learning Predicts Prevalent and Incident Parkinson’s Disease From UK Biobank Fundus Imaging",
       "type": "Journal",
-      "authors": "Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora4 Jinghua Chen, Yulin Li, <u><b>Ruogu Fang</b></u>",
+      "authors": "Charlie Tran, Kai Shen, Kang Liu, Akshay Ashok, Adolfo Ramirez-Zamora, Jinghua Chen, Yulin Li, <u><b>Ruogu Fang</b></u>",
       "citation": "Nature Scientific Reports",
       "publication_year": "2024",
       "image_src": "img/pubs/SciReports.jpg",
@@ -1175,7 +1175,7 @@
    {
       "title": "Ethnic disparity in diagnosing asymptomatic bacterial vaginosis using machine learning",
       "type": "Journal",
-      "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra P. Ojo, Emma Drobina, Adetola F. Louis-Jacques, Juan E. Gilbert, <u><b>Ruogu Fang</b></u>†, Ivana Parker † <br/>\n            († co-corresponding authors)",
+      "authors": "Cameron Celeste, Dion Ming, Justin Broce, Diandra P. Ojo, Emma Drobina, Adetola F. Louis-Jacques, Juan E. Gilbert, <u><b>Ruogu Fang</b></u>†, Ivana Parker † <br/> († co-corresponding authors)",
       "citation": "Nature npj Digital Medicine",
       "publication_year": "November 2023",
       "image_src": "img/pubs/nature.digitalmedicine.png",
@@ -1267,7 +1267,7 @@
    {
       "title": "Building and Evaluating an AI Generated, Standardized Affective Picture Dataset",
       "type": "Conference",
-      "authors": "Faith E Gilbert, Ethan Smith, Hannah M Engle, Caitlin M Traiser, Arash Mirifar, Christian Panitz, Jourdan Pouliot, Laura C Ahumada Hernandez, , Mingzhou Ding, <b>Ruogu Fang</b>, <u>Andreas Keil</u>",
+      "authors": "Faith E Gilbert, Ethan Smith, Hannah M Engle, Caitlin M Traiser, Arash Mirifar, Christian Panitz, Jourdan Pouliot, Laura C Ahumada Hernandez, Mingzhou Ding, <b>Ruogu Fang</b>, <u>Andreas Keil</u>",
       "citation": "Society for Psychophysiological Research 63rd Annual Meeting, September 27 – October 1, 2023, New Orleans, LA, USA",
       "publication_year": "September 27 - October 1, 2023",
       "image_src": "img/pubs/SPR.png",
@@ -1600,7 +1600,7 @@
    {
       "title": "A deep neural network for emotion perception",
       "type": "Conference",
-      "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding†, <u><b>Ruogu Fang</b></u>†, <br/>  († co-corresponding authors)",
+      "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding†, <u><b>Ruogu Fang</b></u>†, <br/> († co-corresponding authors)",
       "citation": "Montreal AI & Neuroscience Annual Meeting   November 29-30, Montreal, Canada",
       "publication_year": "November 29-30, 2021",
       "image_src": "img/pubs/MAIN2021.png",
@@ -1615,7 +1615,7 @@
    {
       "title": "Emergence of emotion selectivity in deep neural networks trained to recognize visual objects",
       "type": "Conference",
-      "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding†, <u><b>Ruogu Fang</b></u>†,  <br/>  († co-corresponding authors)",
+      "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, Mingzhou Ding†, <u><b>Ruogu Fang</b></u>†, <br/> († co-corresponding authors)",
       "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
       "publication_year": "November 8-16, 2021",
       "image_src": "img/pubs/SfN.jpeg",
@@ -1630,7 +1630,7 @@
    {
       "title": "A deep neural network model for emotion perception",
       "type": "Conference",
-      "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>†, Mingzhou Ding† <br/>  († co-corresponding authors)",
+      "authors": "Peng Liu, Ke Bo, Lihan Cui, Yujun Chen, Charlie Tran, <u><b>Ruogu Fang</b></u>†, Mingzhou Ding† <br/> († co-corresponding authors)",
       "citation": "Society of Neuroscience (SfN) Annual Meeting   Virtual: November 8-11, In-Person: November 13-16, Chicago, IL",
       "publication_year": "November 8-16, 2021",
       "image_src": "img/pubs/SfN.jpeg",
@@ -1991,7 +1991,7 @@
    {
       "title": "IDRiD: Diabetic Retinopathy – Segmentation and Grading Challenge",
       "type": "Journal",
-      "authors": "Prasanna Porwal, Samiksha Pachade, Manesh Kokare, Girish Deshmukh, Jaemin Son, Woong Bae, Lihong Liu, Jianzong Wang, Xinhui Liu, Liangxin Gao, TianBo Wu, Jing Xiao, Fengyan Wang, Baocai Yin, Yunzhi Wang, Gopichandh Danala, Linsheng He, Yoon Ho Choi, Yeong Chan Lee, Sang-Hyuk Jung, Zhongyu Li, Xiaodan Sui, Junyan Wu, Xiaolong Li, Ting Zhou, Janos Toth, Agnes Baran, Avinash Kori, Sai Saketh Chennamsetty, Mohammed Safwan, Varghese Alex, Xingzheng Lyu,r, Li Cheng,D, Qinhao Chu, Pengcheng Li, Xin Ji, Sanyuan Zhang, Yaxin Shen, Ling Dai$, Oindrila Saha, Rachana Sathish, Tânia Melo, Teresa Araújo, Balazs Harangi, Bin Sheng, <strong>Ruogu Fang</strong>, Debdoot Sheet, Andras Hajdu, Yuanjie Zheng, Ana Maria Mendonça, Shaoting Zhang, Aurélio Campilho, Bin Zheng, Dinggang Shen, Luca Giancardo, Gwenolé Quellec, Fabrice Mériaudeau",
+      "authors": "Prasanna Porwal, Samiksha Pachade, Manesh Kokare, Girish Deshmukh, Jaemin Son, Woong Bae, Lihong Liu, Jianzong Wang, Xinhui Liu, Liangxin Gao, TianBo Wu, Jing Xiao, Fengyan Wang, Baocai Yin, Yunzhi Wang, Gopichandh Danala, Linsheng He, Yoon Ho Choi, Yeong Chan Lee, Sang-Hyuk Jung, Zhongyu Li, Xiaodan Sui, Junyan Wu, Xiaolong Li, Ting Zhou, Janos Toth, Agnes Baran, Avinash Kori, Sai Saketh Chennamsetty, Mohammed Safwan, Varghese Alex, Xingzheng Lyu, Li Cheng, Qinhao Chu, Pengcheng Li, Xin Ji, Sanyuan Zhang, Yaxin Shen, Ling Dai, Oindrila Saha, Rachana Sathish, Tânia Melo, Teresa Araújo, Balazs Harangi, Bin Sheng, <strong>Ruogu Fang</strong>, Debdoot Sheet, Andras Hajdu, Yuanjie Zheng, Ana Maria Mendonça, Shaoting Zhang, Aurélio Campilho, Bin Zheng, Dinggang Shen, Luca Giancardo, Gwenolé Quellec, Fabrice Mériaudeau",
       "citation": "Medical Image Analysis, volume 59",
       "publication_year": "2020",
       "image_src": "img/pubs/MIA.gif",
@@ -2044,7 +2044,7 @@
       "data_year": "2019"
    },
    {
-      "title": "Development and Validation of the Automated Imaging Diﬀerentiation in Parkinsonism (AID-P): A Multi-Site Machine Learning Study",
+      "title": "Development and Validation of the Automated Imaging Differentiation in Parkinsonism (AID-P): A Multi-Site Machine Learning Study",
       "type": "Journal",
       "authors": "Derek B. Archer, ..., <strong>Ruogu Fang</strong>, ..., David E. Vaillancourt",
       "citation": "The Lancet Digital Health",
@@ -2103,7 +2103,7 @@
       "title": "Automatic Choroid Layer Segmentation from Optical Coherence Tomography Images Using Deep Learning",
       "type": "Journal",
       "authors": "Saleha Masood, <strong>Ruogu Fang</strong>, Huating Li, Bin Sheng, Ping Li, Akash Mathavan, Xiangning Wang, Po Yang, Qiang Wu, Jing Qin, and Weiping Jia",
-      "citation": "Nature Scientiﬁc Reports, 9(1):3058",
+      "citation": "Nature Scientific Reports, 9(1):3058",
       "publication_year": "2019",
       "image_src": "img/pubs/NATURE.jpg",
       "label_class": "warning",
@@ -2130,7 +2130,7 @@
       "type": "Conference",
       "authors": "Peng Liu, Bin Kong, Zhongyu Li, Shaoting Zhang, <u><b>Ruogu Fang</b></u>",
       "citation": "22nd International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI), October 13–17, 2019, Shenzhen, China",
-      "abstract": "Recently, deep neural networks have demonstrated comparable and even better performance with board-certified ophthalmologists in well-annotated datasets. However, the diversity of retinal imaging devices poses a significant challenge: domain shift, which leads to performance degradation when applying the deep learning models to new testing domains. In this paper, we propose a novel unsupervised domain adaptation framework, called Collaborative Feature Ensembling Adaptation (CFEA), to effectively overcome this challenge. Our proposed CFEA is an interactive paradigm which presents an exquisite of collaborative adaptation through both adversarial learning and ensembling weights. In particular, we simultaneously achieve domain-invariance and maintain an exponential moving average of the historical predictions, which achieves a better prediction for the unlabeled data, via ensembling weights during training. Without annotating any sample from the target domain, multiple adversarial losses in encoder and decoder layers guide the extraction of domain-invariant features to confuse the domain classifier and meanwhile benefit the ensembling of smoothing weights. Comprehensive experimental results demonstrate that our CFEA model can overcome performance degradation and outperform the state-of-the-art methods in segmenting retinal optic disc and cup from fundus images. \\textit{Code is available at \\url{https://github.com/cswin/AWC}}.",
+      "abstract": "Recently, deep neural networks have demonstrated comparable and even better performance with board-certified ophthalmologists in well-annotated datasets. However, the diversity of retinal imaging devices poses a significant challenge: domain shift, which leads to performance degradation when applying the deep learning models to new testing domains. In this paper, we propose a novel unsupervised domain adaptation framework, called Collaborative Feature Ensembling Adaptation (CFEA), to effectively overcome this challenge. Our proposed CFEA is an interactive paradigm which presents an exquisite of collaborative adaptation through both adversarial learning and ensembling weights. In particular, we simultaneously achieve domain-invariance and maintain an exponential moving average of the historical predictions, which achieves a better prediction for the unlabeled data, via ensembling weights during training. Without annotating any sample from the target domain, multiple adversarial losses in encoder and decoder layers guide the extraction of domain-invariant features to confuse the domain classifier and meanwhile benefit the ensembling of smoothing weights. Comprehensive experimental results demonstrate that our CFEA model can overcome performance degradation and outperform the state-of-the-art methods in segmenting retinal optic disc and cup from fundus images. Code is available at https://github.com/cswin/AWC.",
       "publication_year": "2019",
       "image_src": "img/pubs/MICCAI.jpg",
       "label_class": "primary",
@@ -2291,7 +2291,7 @@
       "dates": "October 17–20, 2018"
    },
    {
-      "title": "Eﬃcient Multi Modality Medical Image Joint Recosntruction via Vectorized Gradient",
+      "title": "Efficient Multi Modality Medical Image Joint Reconstruction via Vectorized Gradient",
       "type": "Conference",
       "authors": "Yao Xiao, Yun Liang, Yunmei Chen, Xiaojing Ye, <u><b>Ruogu Fang</b></u>",
       "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 17–20, 2018, Atlanta, GA, USA",
@@ -2315,7 +2315,7 @@
       "dates": "October 17–20, 2018"
    },
    {
-      "title": "Decision Tree-based Classiﬁcation for Diﬀerentiating System Lupus Erythematosus and Mixed Connective Tissue Disease",
+      "title": "Decision Tree-based Classification for Differentiating System Lupus Erythematosus and Mixed Connective Tissue Disease",
       "type": "Conference",
       "authors": "Kyle B. See, <u><b>Ruogu Fang</b></u>",
       "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 17–20, 2018, Atlanta, GA, USA",
@@ -2379,7 +2379,7 @@
       "type": "Conference",
       "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
       "citation": "15th IEEE International Symposium on Biomedical Imaging (ISBI), April 4–7, 2018, Washington, D.C., USA",
-      "abstract": "With substantial public concerns on potential cancer risks and health hazards caused by the accumulated radiation exposure in medical imaging, reducing radiation dose in X-ray based medical imaging such as Computed Tomography Perfusion (CTP) has raised significant research interests. In this paper, we embrace the deep Convolutional Neural Networks (CNN) based approaches and introduce Smoothed Dense-Convolution Neural Network (SDCNet) to recover high-dose quality CTP images from low-dose ones. SDCNet is composed of sub-network blocks cascaded by skip-connections to infer the noise (differentials) from paired low/high-dose CT scans. SDCNet can effectively remove the noise in real low-dose CT scans and enhance the quality of medical images. We evaluate the proposed architecture on thousands of CT perfusion frames for both reconstructed image denoising and perfusion map quantification including cerebral blood flow (CBF) and cerebral blood volume (CBV). SDCNet achieves high performance in both visual and quantitative results with promising computational efficiency, comparing favorably with state-of-the-art approaches. \\textit{The code is available at \\url{https://github.com/cswin/RC-Nets}}.",
+      "abstract": "With substantial public concerns on potential cancer risks and health hazards caused by the accumulated radiation exposure in medical imaging, reducing radiation dose in X-ray based medical imaging such as Computed Tomography Perfusion (CTP) has raised significant research interests. In this paper, we embrace the deep Convolutional Neural Networks (CNN) based approaches and introduce Smoothed Dense-Convolution Neural Network (SDCNet) to recover high-dose quality CTP images from low-dose ones. SDCNet is composed of sub-network blocks cascaded by skip-connections to infer the noise (differentials) from paired low/high-dose CT scans. SDCNet can effectively remove the noise in real low-dose CT scans and enhance the quality of medical images. We evaluate the proposed architecture on thousands of CT perfusion frames for both reconstructed image denoising and perfusion map quantification including cerebral blood flow (CBF) and cerebral blood volume (CBV). SDCNet achieves high performance in both visual and quantitative results with promising computational efficiency, comparing favorably with state-of-the-art approaches. The code is available at https://github.com/cswin/RC-Nets.",
       "publication_year": "2018",
       "image_src": "img/pubs/IEEEImaging.png",
       "label_class": "primary",
@@ -2448,7 +2448,7 @@
    {
       "title": "A Simple and Realistic Simulation Method for Low-Dose CT.",
       "type": "Conference",
-      "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>&gt;",
+      "authors": "Peng Liu, <u><b>Ruogu Fang</b></u>",
       "citation": "Biomedical Engineering Society (BMES) Annual Meeting, October 11–14, 2017, Phoenix, AZ, USA",
       "publication_year": "2017",
       "image_src": "img/pubs/BMES.jpg",
@@ -2700,7 +2700,7 @@
    {
       "title": "Tissue-Specific Sparse Deconvolution for Brain CT Perfusion.",
       "type": "Journal",
-      "authors": "<u><b>Ruogu Fang</b></u>,Haodi Jiang, Junzhou Huang.",
+      "authors": "<u><b>Ruogu Fang</b></u>, Haodi Jiang, Junzhou Huang.",
       "citation": "CMIG, Elsevier Journal of Computerized Medical Imaging and Graphics, vol.46, no.1, pp. 64-72",
       "publication_year": "2015",
       "image_src": "img/pubs/CMIG.gif",
@@ -2726,7 +2726,7 @@
    {
       "title": "Fast Preconditioning for Accelerated Multi-Contrast MRI Reconstruction",
       "type": "Conference",
-      "authors": "Ruoyu Li, Yeqing Li, <strong>Ruogu Fang</strong>,Shaoting Zhang, Hao Pan, Junzhou Huang",
+      "authors": "Ruoyu Li, Yeqing Li, <strong>Ruogu Fang</strong>, Shaoting Zhang, Hao Pan, Junzhou Huang",
       "citation": "MICCAI'15, 18th International Conference on Medical Image Computing and Computer Assisted Intervention, October 5–9, 2015, Munich, Germany",
       "publication_year": "2015",
       "image_src": "img/pubs/MICCAI.jpg",
@@ -2798,7 +2798,7 @@
    {
       "title": "A Spatio-Temporal Low-rank Total Variation Approach for Denoising Arterial Spin Labeling MRI Data",
       "type": "Conference",
-      "authors": "<u><b>Ruogu Fang</b></u>,Junzhou Huang, Wen-Ming Luh.",
+      "authors": "<u><b>Ruogu Fang</b></u>, Junzhou Huang, Wen-Ming Luh.",
       "citation": "12th IEEE International Symposium on Biomedical Imaging (ISBI'15), April 16–19, 2015, New York, NY, USA",
       "publication_year": "2015",
       "image_src": "img/pubs/IEEEImaging.png",
@@ -2828,7 +2828,7 @@
    {
       "title": "Tensor Total-Variation Regularized Deconvolution for Efficient Low-Dose CT Perfusion.",
       "type": "Conference",
-      "authors": "<u><b>Ruogu Fang</b></u>,Pina Sanelli, Shaoting Zhang, Tsuhan Chen.",
+      "authors": "<u><b>Ruogu Fang</b></u>, Pina Sanelli, Shaoting Zhang, Tsuhan Chen.",
       "citation": "MICCAI'14, 17th International Conference on Medical Image Computing and Computer Assisted Intervention, September 14–18, 2014, Boston, MA, USA",
       "publication_year": "2014",
       "image_src": "img/pubs/MICCAI.jpg",
@@ -2858,7 +2858,7 @@
    {
       "title": "Towards Robust Deconvolution in Medical Imaging: Informatics, Diagnosis and Treatment.",
       "type": "PhD Dissertation",
-      "authors": "<strong> Ruogu Fang</strong>",
+      "authors": "<strong>Ruogu Fang</strong>",
       "citation": "School of Electrical and Computer Engineering, Cornell University",
       "publication_year": "2014",
       "image_src": "img/pubs/Cornell.png",
@@ -2884,7 +2884,7 @@
    {
       "title": "Tissue-Specific Sparse Deconvolution for Low-Dose CT Perfusion",
       "type": "Conference",
-      "authors": "<u><b>Ruogu Fang</b></u>&gt;, Tsuhan Chen, Pina C. Sanelli",
+      "authors": "<u><b>Ruogu Fang</b></u>, Tsuhan Chen, Pina C. Sanelli",
       "citation": "MICCAI'13, 16th International Conference on Medical Image Computing and Computer Assisted Intervention, September 22–26, 2013, Nagoya, Japan",
       "publication_year": "2013",
       "image_src": "img/pubs/MICCAI.jpg",
@@ -2964,7 +2964,7 @@
    {
       "title": "System and Method For Interactive Segmentation On Mobile Devices in a Cloud Computing Environment",
       "type": "Patents",
-      "authors": "<strong> Ruogu Fang</strong>,Leo Grady, Gianluca Paladini.",
+      "authors": "<strong>Ruogu Fang</strong>, Leo Grady, Gianluca Paladini.",
       "citation": "Siemens Corporation. U.S. Patent No: US20130272587 A1, WO2012027259 A2, WO2012027259 A3. Published on March 1, 2012.",
       "publication_year": "2012",
       "image_src": "img/pubs/Patent.jpg",
@@ -2994,7 +2994,7 @@
    {
       "title": "Towards Computational Models of Kinship Verification.",
       "type": "Conference",
-      "authors": "<u><b>Ruogu Fang</b></u>,  Kevin D. Tang, Noah Snavely, Tsuhan Chen.",
+      "authors": "<u><b>Ruogu Fang</b></u>, Kevin D. Tang, Noah Snavely, Tsuhan Chen.",
       "citation": "ICIP'10, 17th IEEE International Conference on Image Processing, September 26–29, 2010, Hong Kong, China (Oral presentation, Best Paper Award)",
       "publication_year": "2010",
       "image_src": "img/pubs/IEEE.png",
